@@ -25,7 +25,9 @@ import hashlib
 from importlib import metadata as package_metadata
 import inspect
 import json
+import os
 from pathlib import Path
+import re
 import sys
 import time
 import unicodedata
@@ -67,6 +69,19 @@ def sha256_text(text: str) -> str:
 def deterministic_u64(*parts: object) -> int:
     payload = "\x1f".join(str(part) for part in parts)
     return int.from_bytes(hashlib.sha256(payload.encode("utf-8")).digest()[:8], "big")
+
+
+def obviously_mutable_revision(revision: str) -> bool:
+    normalized = revision.strip().casefold()
+    return normalized in {"main", "master"} or normalized.startswith("refs/heads/")
+
+
+def immutable_hub_commit(revision: object) -> bool:
+    return bool(re.fullmatch(r"[0-9a-fA-F]{40,64}", str(revision or "")))
+
+
+def valid_token_matching_execution(world_size: int, visible_cuda_devices: int) -> bool:
+    return world_size == 1 and visible_cuda_devices <= 1
 
 
 def normalized_tokens(text: str) -> list[str]:
@@ -334,10 +349,30 @@ def run_self_tests(_args) -> int:
         token_candidates, selected_count=4, tolerance=0.01
     )
     token_test = float(exposure["summary"]["relative_spread"]) <= 0.01
-    passed = all(script_tests.values()) and token_test
+    revision_tests = {
+        "rejects_main": obviously_mutable_revision("main"),
+        "rejects_master": obviously_mutable_revision("master"),
+        "rejects_refs_heads": obviously_mutable_revision("refs/heads/release"),
+        "accepts_immutable_commit": immutable_hub_commit("a" * 40),
+        "rejects_noncommit_tag": not immutable_hub_commit("v1.0"),
+    }
+    execution_mode_tests = {
+        "accepts_single_process_one_gpu": valid_token_matching_execution(1, 1),
+        "accepts_single_process_cpu": valid_token_matching_execution(1, 0),
+        "rejects_distributed_world_size": not valid_token_matching_execution(2, 1),
+        "rejects_multiple_visible_gpus": not valid_token_matching_execution(1, 2),
+    }
+    passed = (
+        all(script_tests.values())
+        and token_test
+        and all(revision_tests.values())
+        and all(execution_mode_tests.values())
+    )
     payload = {
         "status": "passed" if passed else "failed",
         "wrong_script_behavior": script_tests,
+        "revision_handling": revision_tests,
+        "execution_mode": execution_mode_tests,
         "token_exposure_balance": {
             "passed": token_test,
             "exposure": exposure,
@@ -348,10 +383,31 @@ def run_self_tests(_args) -> int:
 
 
 def prepare(args) -> int:
+    if obviously_mutable_revision(args.revision):
+        raise SystemExit(
+            "--revision must not be a mutable branch such as main, master, "
+            "or refs/heads/*."
+        )
     try:
         from datasets import load_dataset
+        from huggingface_hub import HfApi
     except ModuleNotFoundError as exc:
-        raise SystemExit("prepare requires the datasets package") from exc
+        raise SystemExit(
+            "prepare requires datasets and huggingface_hub"
+        ) from exc
+
+    dataset_id = "ai4bharat/samanantar"
+    try:
+        dataset_info = HfApi().dataset_info(dataset_id, revision=args.revision)
+    except Exception as exc:
+        raise SystemExit(
+            f"Could not resolve dataset revision {args.revision!r} for {dataset_id}."
+        ) from exc
+    resolved_dataset_revision = getattr(dataset_info, "sha", None)
+    if not immutable_hub_commit(resolved_dataset_revision):
+        raise SystemExit(
+            "The dataset hub did not resolve --revision to an immutable commit."
+        )
 
     week4_root = args.week4_root.resolve()
     sys.path.insert(0, str(week4_root))
@@ -398,11 +454,11 @@ def prepare(args) -> int:
     )
 
     stream = load_dataset(
-        "ai4bharat/samanantar",
+        dataset_id,
         args.language,
         split="train",
         streaming=True,
-        revision=args.revision,
+        revision=resolved_dataset_revision,
     )
     clusterer = SourceClusterer(args.cluster_threshold, args.num_perm, args.seed)
     counters = Counter()
@@ -570,9 +626,10 @@ def prepare(args) -> int:
 
     manifest = {
         "classification": "Samanantar cleaning-policy micro-proxy preparation; not 1B/3B",
-        "dataset_id": "ai4bharat/samanantar",
+        "dataset_id": dataset_id,
         "language_pair": f"en->{args.language}",
-        "requested_revision": args.revision,
+        "requested_dataset_revision": args.revision,
+        "resolved_dataset_revision": resolved_dataset_revision,
         "seed": args.seed,
         "raw_limit": args.raw_limit,
         "arm_treatments": {
@@ -628,6 +685,26 @@ def train(args) -> int:
             "train requires torch, transformers, sentencepiece, datasets, and sacrebleu"
         ) from exc
 
+    try:
+        environment_world_size = int(os.environ.get("WORLD_SIZE", "1"))
+    except ValueError as exc:
+        raise SystemExit("WORLD_SIZE must be an integer.") from exc
+    world_size = (
+        int(torch.distributed.get_world_size())
+        if torch.distributed.is_available() and torch.distributed.is_initialized()
+        else environment_world_size
+    )
+    visible_cuda_devices = int(torch.cuda.device_count()) if torch.cuda.is_available() else 0
+    if world_size != 1:
+        raise SystemExit(
+            "Token-exposure matching requires single-process execution (WORLD_SIZE=1)."
+        )
+    if not valid_token_matching_execution(world_size, visible_cuda_devices):
+        raise SystemExit(
+            "Token-exposure matching requires at most one visible GPU; set "
+            "CUDA_VISIBLE_DEVICES to one device."
+        )
+
     data_dir = args.data_dir.resolve()
     output_dir = args.output_dir.resolve()
     if output_dir.exists() and any(output_dir.iterdir()):
@@ -635,25 +712,34 @@ def train(args) -> int:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     manifest = json.loads((data_dir / "preparation_manifest.json").read_text(encoding="utf-8"))
+    resolved_dataset_revision = manifest.get("resolved_dataset_revision")
+    if not immutable_hub_commit(resolved_dataset_revision):
+        raise RuntimeError(
+            "preparation_manifest.json lacks an immutable resolved dataset revision."
+        )
     language = manifest["language_pair"].split("->", 1)[1]
     language_name = LANGUAGE_NAMES[language]
     validation_rows = load_jsonl(data_dir / "heldout.jsonl")
-    tokenizer = AutoTokenizer.from_pretrained(
-        args.model_name, revision=args.model_revision
-    )
     model_config = AutoConfig.from_pretrained(
         args.model_name, revision=args.model_revision
     )
     resolved_model_revision = getattr(model_config, "_commit_hash", None)
-    if not resolved_model_revision:
+    if not immutable_hub_commit(resolved_model_revision):
         raise RuntimeError(
             "The model hub did not resolve --model-revision to an immutable commit."
         )
+    tokenizer = AutoTokenizer.from_pretrained(
+        args.model_name, revision=resolved_model_revision
+    )
     resolved_tokenizer_revision = (
         getattr(tokenizer, "_commit_hash", None)
         or getattr(tokenizer, "init_kwargs", {}).get("_commit_hash")
         or resolved_model_revision
     )
+    if not immutable_hub_commit(resolved_tokenizer_revision):
+        raise RuntimeError(
+            "The tokenizer did not resolve to an immutable model commit."
+        )
 
     def encode_rows(rows: list[dict]):
         sources = [f"translate English to {language_name}: {row['source']}" for row in rows]
@@ -712,6 +798,12 @@ def train(args) -> int:
 
     results = {
         "classification": "Samanantar cleaning-policy micro-proxy; not 1B/3B",
+        "world_size": world_size,
+        "visible_cuda_devices": visible_cuda_devices,
+        "scheduled_examples_per_arm": scheduled_examples,
+        "dataset_id": manifest["dataset_id"],
+        "requested_dataset_revision": manifest["requested_dataset_revision"],
+        "resolved_dataset_revision": resolved_dataset_revision,
         "model_name": args.model_name,
         "requested_model_revision": args.model_revision,
         "resolved_model_revision": resolved_model_revision,
@@ -742,7 +834,7 @@ def train(args) -> int:
         train_data = Dataset.from_dict(encode_rows(train_rows))
         validation_data = Dataset.from_dict(encode_rows(validation_rows))
         model = AutoModelForSeq2SeqLM.from_pretrained(
-            args.model_name, revision=args.model_revision
+            args.model_name, revision=resolved_model_revision
         )
         loaded_revision = getattr(model.config, "_commit_hash", None)
         if loaded_revision != resolved_model_revision:
@@ -909,7 +1001,10 @@ def build_parser() -> argparse.ArgumentParser:
     prep.add_argument(
         "--revision",
         required=True,
-        help="Resolved immutable Samanantar commit; do not use a mutable branch for a new experiment.",
+        help=(
+            "Requested immutable Samanantar revision. Mutable branches are rejected; "
+            "the resolved commit is recorded."
+        ),
     )
     prep.add_argument("--raw-limit", type=int, default=60_000)
     prep.add_argument("--train-per-arm", type=int, default=10_000)

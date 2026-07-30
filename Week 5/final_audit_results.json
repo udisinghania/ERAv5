@@ -1,0 +1,598 @@
+{
+  "status": "passed",
+  "classification": "final document, accounting, evidence, path, syntax, and smoke-test audit",
+  "week5_root": "C:\\Users\\udisi\\Documents\\Codex\\2026-07-31\\i-need-you-to-continue-my\\outputs\\Week_5",
+  "week4_root": "D:\\ERAv5\\Week_4",
+  "artifact_sha256": {
+    "readme": "9be35d91a30e203c645158dbfdd0a387bbc321071f5366d1092c819f39773817",
+    "results_template": "1012100a0064f60fc17bddad96fc2844ec8db356a75558e332e39e2f642b4806",
+    "additional_experiments": "67e37387b42f307117a59a411ce84d9433d8a7546ee437a26f81f13fdbd47942",
+    "week4_audit": "7bdb8a01c61a2731eddad11f0319f14ca34d8af0091ebf653c6e62f02deb4fac",
+    "microproxy_script": "792a5e89c05c5b9f1314425effb2617dcb24b59a3ee97fa1ff4a7ff77800cf3d"
+  },
+  "checks_passed": 91,
+  "checks_total": 91,
+  "checks": [
+    {
+      "name": "required_local_files_exist",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "pre_anneal_mix_sums_100",
+      "passed": true,
+      "detail": "100.0"
+    },
+    {
+      "name": "total_mix_sums_100",
+      "passed": true,
+      "detail": "100.00"
+    },
+    {
+      "name": "indic_tiers_sum_100",
+      "passed": true,
+      "detail": "100"
+    },
+    {
+      "name": "anneal_components_sum_100",
+      "passed": true,
+      "detail": "100"
+    },
+    {
+      "name": "reasoning_band_split_sums_100",
+      "passed": true,
+      "detail": "100"
+    },
+    {
+      "name": "reasoning_effort_split_sums_100",
+      "passed": true,
+      "detail": "100"
+    },
+    {
+      "name": "lane_budget_defense_sums_100",
+      "passed": true,
+      "detail": "100.0"
+    },
+    {
+      "name": "indic_gap_decomposition_reconciles",
+      "passed": true,
+      "detail": "77.767186933"
+    },
+    {
+      "name": "stage_Seed_reconciles",
+      "passed": true,
+      "detail": "5.000"
+    },
+    {
+      "name": "stage_General_reconciles",
+      "passed": true,
+      "detail": "55.000"
+    },
+    {
+      "name": "stage_Reasoning_reconciles",
+      "passed": true,
+      "detail": "20.0"
+    },
+    {
+      "name": "stage_Long-context_reconciles",
+      "passed": true,
+      "detail": "18.000"
+    },
+    {
+      "name": "phase_weighted_columns_reconcile",
+      "passed": true,
+      "detail": [
+        "51.94",
+        "9.80",
+        "9.80",
+        "9.800",
+        "8.330",
+        "7.84",
+        "0.490"
+      ]
+    },
+    {
+      "name": "five_stage_total_sums_100",
+      "passed": true,
+      "detail": "100"
+    },
+    {
+      "name": "1b_arm_A_sums_100",
+      "passed": true,
+      "detail": "100.00"
+    },
+    {
+      "name": "1b_arm_B_sums_100",
+      "passed": true,
+      "detail": "100.00"
+    },
+    {
+      "name": "1b_arm_C_sums_100",
+      "passed": true,
+      "detail": "100.0"
+    },
+    {
+      "name": "1b_arm_D_sums_100",
+      "passed": true,
+      "detail": "100.0"
+    },
+    {
+      "name": "1b_arm_E_sums_100",
+      "passed": true,
+      "detail": "100.0"
+    },
+    {
+      "name": "1b_arm_F_sums_100",
+      "passed": true,
+      "detail": "100.0"
+    },
+    {
+      "name": "3b_control_sums_100",
+      "passed": true,
+      "detail": "100.00"
+    },
+    {
+      "name": "samanantar_translated_only",
+      "passed": true,
+      "detail": "Samanantar is counted only as **Indic translated**"
+    },
+    {
+      "name": "protected_indic_queue",
+      "passed": true,
+      "detail": "Protected Indic and Agentic queues"
+    },
+    {
+      "name": "protected_agentic_queue",
+      "passed": true,
+      "detail": "Protected Indic and Agentic queues"
+    },
+    {
+      "name": "lane_local_selection",
+      "passed": true,
+      "detail": "normalized within a lane/subqueue"
+    },
+    {
+      "name": "quota_tracking",
+      "passed": true,
+      "detail": "quota ledger"
+    },
+    {
+      "name": "starvation_condition",
+      "passed": true,
+      "detail": "A lane is starved"
+    },
+    {
+      "name": "translation_gap",
+      "passed": true,
+      "detail": "translated acquisition"
+    },
+    {
+      "name": "synthetic_generation_gap",
+      "passed": true,
+      "detail": "synthetic generation"
+    },
+    {
+      "name": "agentic_environment_mask",
+      "passed": true,
+      "detail": "environment/execution state"
+    },
+    {
+      "name": "agentic_verifier_mask",
+      "passed": true,
+      "detail": "verifier, reward, grader"
+    },
+    {
+      "name": "formal_results_not_claimed",
+      "passed": true,
+      "detail": "No model result or promotion decision is claimed"
+    },
+    {
+      "name": "micro_proxy_not_formal_proxy",
+      "passed": true,
+      "detail": "not a 1B/3B mixture proxy"
+    },
+    {
+      "name": "seed_17",
+      "passed": true,
+      "detail": "**seed 17**"
+    },
+    {
+      "name": "seed_29",
+      "passed": true,
+      "detail": "**seed 29**"
+    },
+    {
+      "name": "named_benchmark_mapping_exists",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "opus_optimizer_update_proxy_direction_exists",
+      "passed": true,
+      "detail": "optimizer-induced update projected onto proxy direction plus stochastic sampling"
+    },
+    {
+      "name": "opus_starvation_o0_o1_o2_exists",
+      "passed": true,
+      "detail": [
+        "O0",
+        "O1",
+        "O2"
+      ]
+    },
+    {
+      "name": "reasoning_order_r0_r1_r2_exists",
+      "passed": true,
+      "detail": [
+        "R0",
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "name": "tier_a_agentic_anneal_exclusivity_exists",
+      "passed": true,
+      "detail": "Tier-A inaccessible before Anneal; pre-Anneal limited to admitted Tier-B/C or executable synthetic"
+    },
+    {
+      "name": "readme_results_template_seeds_agree",
+      "passed": true,
+      "detail": {
+        "readme": [
+          17,
+          29
+        ],
+        "results_3b": [
+          "17",
+          "29",
+          "17",
+          "29"
+        ],
+        "results_1b": [
+          "17; 29 if promoted",
+          "17; 29 if promoted",
+          "17; 29 if promoted",
+          "17; 29 if promoted",
+          "17; 29 if promoted",
+          "17; 29 if promoted"
+        ],
+        "results_selectors": [
+          "17, 29",
+          "17, 29",
+          "17, 29",
+          "17, 29",
+          "17, 29",
+          "17, 29"
+        ]
+      }
+    },
+    {
+      "name": "lane_budget_training_shape_defense_exists",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "hierarchical_quota_language_source_caps_exists",
+      "passed": true,
+      "detail": "hierarchical subqueues, source cap, and bounded quota debt"
+    },
+    {
+      "name": "opus_selector_scaling_gate_exists",
+      "passed": true,
+      "detail": "bounded exact selector plus 240B surrogate promotion gate"
+    },
+    {
+      "name": "nonoverlapping_primary_lane_ledger_exists",
+      "passed": true,
+      "detail": "global cluster assignment plus deterministic primary-lane precedence"
+    },
+    {
+      "name": "token_origin_deny_mask_exists",
+      "passed": true,
+      "detail": "origin mask overrides role after packing/truncation"
+    },
+    {
+      "name": "no_forbidden_all_token_loss_path",
+      "passed": true,
+      "detail": "all formal arms preserve the forbidden-origin deny-mask"
+    },
+    {
+      "name": "curriculum_transition_stability_gates_exist",
+      "passed": true,
+      "detail": "boundary blend, rate cap, and context stability gates"
+    },
+    {
+      "name": "reasoning_order_same_candidates_only_order_changes",
+      "passed": true,
+      "detail": "same candidate IDs, counts, and non-reasoning order"
+    },
+    {
+      "name": "three_b_locks_one_b_winner",
+      "passed": true,
+      "detail": "O-series winner is primary; optional treatments require an executed, passed 1B gate"
+    },
+    {
+      "name": "readme_results_thresholds_agree",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_ambiguous_placeholder_remains",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "missing_lanes_state_zero_locally_admitted_supply",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "pending_retokenization_distinct_from_absent_supply",
+      "passed": true,
+      "detail": "| Indic | 78.4B | about 0.210937689B translated; exact count pending |"
+    },
+    {
+      "name": "unexecuted_experiments_have_explicit_state",
+      "passed": true,
+      "detail": {
+        "readme_status_count": 3,
+        "results_status_count": 4
+      }
+    },
+    {
+      "name": "readme_has_no_blank_observed_result_matrix",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "results_template_does_not_encode_unexecuted_results_as_zero",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "evidence_state_vocabulary_is_explicit",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "design_tradeoff_section_present_and_concise",
+      "passed": true,
+      "detail": {
+        "words": 259
+      }
+    },
+    {
+      "name": "current_data_gate_is_explicit",
+      "passed": true,
+      "detail": "blocked gate, local translated-only evidence, and no invented threshold"
+    },
+    {
+      "name": "one_primary_1b_and_one_primary_3b_are_named",
+      "passed": true,
+      "detail": "primary O0/O1/O2 hypothesis plus locked-winner 3B confirmation"
+    },
+    {
+      "name": "secondary_experiments_preserved_in_supplement",
+      "passed": true,
+      "detail": "R0/R1/R2 and 1B-A through 1B-F"
+    },
+    {
+      "name": "next_executable_cleaning_gate_exists",
+      "passed": true,
+      "detail": "immutable dataset/tokenizer revisions and exact per-language token inventory"
+    },
+    {
+      "name": "research_basis_section_present_and_concise",
+      "passed": true,
+      "detail": {
+        "words": 360
+      }
+    },
+    {
+      "name": "required_core_research_ids_and_curriculum_boundary",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "required_scientific_limitation_statement",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "adjacent_papers_excluded",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "main_readme_within_concision_target",
+      "passed": true,
+      "detail": {
+        "words": 3666
+      }
+    },
+    {
+      "name": "difficulty_B0_has_row",
+      "passed": true,
+      "detail": "B0"
+    },
+    {
+      "name": "difficulty_B1_has_row",
+      "passed": true,
+      "detail": "B1"
+    },
+    {
+      "name": "difficulty_B2_has_row",
+      "passed": true,
+      "detail": "B2"
+    },
+    {
+      "name": "difficulty_B3_has_row",
+      "passed": true,
+      "detail": "B3"
+    },
+    {
+      "name": "difficulty_B4_has_row",
+      "passed": true,
+      "detail": "B4"
+    },
+    {
+      "name": "difficulty_B5_has_row",
+      "passed": true,
+      "detail": "B5"
+    },
+    {
+      "name": "reasoning_Short_has_row",
+      "passed": true,
+      "detail": "Short"
+    },
+    {
+      "name": "reasoning_Medium_has_row",
+      "passed": true,
+      "detail": "Medium"
+    },
+    {
+      "name": "reasoning_Long_has_row",
+      "passed": true,
+      "detail": "Long"
+    },
+    {
+      "name": "reasoning_Ultra_has_row",
+      "passed": true,
+      "detail": "Ultra"
+    },
+    {
+      "name": "syntax_validate_plan.py",
+      "passed": true,
+      "detail": "AST parsed"
+    },
+    {
+      "name": "syntax_samanantar_cleaning_ablation.py",
+      "passed": true,
+      "detail": "AST parsed"
+    },
+    {
+      "name": "syntax_final_audit.py",
+      "passed": true,
+      "detail": "AST parsed"
+    },
+    {
+      "name": "week4_evidence_paths_exist",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "validator_reproducible_two_runs",
+      "passed": true,
+      "detail": {
+        "validator_return_codes": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "stated_samanantar_statistics_match_evidence",
+      "passed": true,
+      "detail": {
+        "raw_translation_pairs": 5141227,
+        "stage_a_surviving_pairs": 4763996,
+        "stage_b_retained_translations": 4020129,
+        "pre_lsh_hubs": 2977126,
+        "final_hubs": 2972462,
+        "clean_token_estimator_output": 215294331,
+        "train_rows": 2912312,
+        "validation_rows": 60150
+      }
+    },
+    {
+      "name": "experiment_cli_smoke_test",
+      "passed": true,
+      "detail": {
+        "return_code": 0
+      }
+    },
+    {
+      "name": "microproxy_behavioral_self_tests_pass",
+      "passed": true,
+      "detail": {
+        "status": "passed",
+        "wrong_script_behavior": {
+          "valid_target_script": true,
+          "all_english": true,
+          "mixed_english_indic_fails": true,
+          "empty": true,
+          "punctuation_only": true
+        },
+        "revision_handling": {
+          "rejects_main": true,
+          "rejects_master": true,
+          "rejects_refs_heads": true,
+          "accepts_immutable_commit": true,
+          "rejects_noncommit_tag": true
+        },
+        "execution_mode": {
+          "accepts_single_process_one_gpu": true,
+          "accepts_single_process_cpu": true,
+          "rejects_distributed_world_size": true,
+          "rejects_multiple_visible_gpus": true
+        },
+        "token_exposure_balance": {
+          "passed": true,
+          "exposure": {
+            "A": {
+              "selected_examples": 4,
+              "source_nonpadding_tokens": 200,
+              "target_nonpadding_tokens": 200,
+              "supervised_tokens": 200,
+              "combined_nonpadding_tokens": 400
+            },
+            "B": {
+              "selected_examples": 4,
+              "source_nonpadding_tokens": 200,
+              "target_nonpadding_tokens": 200,
+              "supervised_tokens": 200,
+              "combined_nonpadding_tokens": 400
+            },
+            "C": {
+              "selected_examples": 4,
+              "source_nonpadding_tokens": 200,
+              "target_nonpadding_tokens": 200,
+              "supervised_tokens": 200,
+              "combined_nonpadding_tokens": 400
+            },
+            "summary": {
+              "target_combined_tokens": 400,
+              "relative_spread": 0.0,
+              "tolerance": 0.01
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "microproxy_rejects_mutable_dataset_revision",
+      "passed": true,
+      "detail": {
+        "return_code": 1,
+        "stderr": "--revision must not be a mutable branch such as main, master, or refs/heads/*.\n"
+      }
+    },
+    {
+      "name": "microproxy_model_revision_is_required",
+      "passed": true,
+      "detail": {
+        "return_code": 2
+      }
+    },
+    {
+      "name": "microproxy_records_pinned_revisions_versions_and_tokens",
+      "passed": true,
+      "detail": "pinned dataset/model/tokenizer provenance, single-process schedule, and per-arm token exposure"
+    },
+    {
+      "name": "microproxy_loads_from_resolved_commits",
+      "passed": true,
+      "detail": "dataset stream, tokenizer, and model loads are anchored to resolved commits"
+    }
+  ]
+}

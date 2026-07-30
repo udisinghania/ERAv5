@@ -189,7 +189,7 @@ Status: **Planned—not executed**. This is a compact cleaning-policy test, not 
 | B | A plus Week 4 normalization |
 | C | B plus script/language/alignment/quality/PII/decontamination/dedup |
 
-Use an immutable Samanantar revision and pinned model/tokenizer revision. Arms are parent/cluster-disjoint, share one clean held-out set, and use identical optimizer steps, batch construction, checkpoint, and decoding. Before training, the script tokenizes all candidates and deterministically selects the scheduled examples so combined non-padding source-plus-target exposure differs by **<=1%** across arms; it records source, target, supervised, and combined counts.
+Use an immutable Samanantar revision and pinned model/tokenizer revision. Arms are parent/cluster-disjoint, share one clean held-out set, and use identical optimizer steps, batch construction, checkpoint, and decoding. Token-exposure matching requires `WORLD_SIZE=1` and at most one visible GPU; the result records the world size. Before training, the script tokenizes all candidates and deterministically selects the scheduled examples so combined non-padding source-plus-target exposure differs by **<=1%** across arms; it records source, target, supervised, and combined counts.
 
 Metrics are validation cross-entropy, chrF, sacreBLEU, wrong-script, source-copy, empty/repeated output, unique target-token yield, retention, wall time, and peak memory. Confirm C over A with **>=+1.0 chrF**, **>=25% relative wrong-script reduction**, **>=20% relative source-copy reduction**, loss no worse than **+2%**, and **>=70% retention**. Refute or revise if chrF gain is **<+0.2**, either validity rate worsens, loss worsens by **>2%**, or retention is **<70%**.
 
@@ -224,9 +224,9 @@ Train two 3B arms for **60B selected tokens each**, using **seeds 17 and 29** wi
 | Arm | Recipe |
 |---|---|
 | 3B-A control | 57.25% General, 10% Science/Math, 10% Code, 10% Reasoning, 8.5% Long, 4% Indic, 0.25% Agentic; flat schedule; required mask |
-| 3B-B locked winner | Recipe hash containing only selector, mixture, curriculum, reasoning-order, and masking choices that passed their 1B gates |
+| 3B-B locked winner | Apply the primary O-series winner to the otherwise frozen base recipe; add an optional treatment only if its corresponding optional 1B experiment was executed and passed |
 
-The 3B run introduces no new treatment. Confirm if the two-seed mean improves macro Indic by **>=+1.5 pp**, Agentic success by **>=+1.0 pp**, Reasoning by **>=+1.0 pp**, and Long-context evidence accuracy by **>=+1.0 pp**, while General+Code is no worse than **-0.5 pp**, with paired item-bootstrap intervals excluding zero for gains. Refute if either seed reverses a gain by **>0.5 pp**, any mean intended gain is **<+0.5 pp**, General+Code regresses by **>1.0 pp**, or training is unstable.
+The primary 3B-B treatment is the O-series winner applied to the otherwise frozen base recipe. Mixture, curriculum, reasoning-order, or masking treatments may enter 3B-B only when their corresponding optional 1B experiments were actually executed and passed. An unexecuted secondary treatment remains fixed to the declared base recipe and is not a 1B winner. The 3B run introduces no new treatment. Confirm if the two-seed mean improves macro Indic by **>=+1.5 pp**, Agentic success by **>=+1.0 pp**, Reasoning by **>=+1.0 pp**, and Long-context evidence accuracy by **>=+1.0 pp**, while General+Code is no worse than **-0.5 pp**, with paired item-bootstrap intervals excluding zero for gains. Refute if either seed reverses a gain by **>0.5 pp**, any mean intended gain is **<+0.5 pp**, General+Code regresses by **>1.0 pp**, or training is unstable.
 
 The detailed R0/R1/R2 reasoning-order test and 1B-A through 1B-F mixture/curriculum/masking screen are preserved in `ADDITIONAL_EXPERIMENTS.md` and run only if resources permit. `RESULTS_TEMPLATE.md` remains the future execution register.
 

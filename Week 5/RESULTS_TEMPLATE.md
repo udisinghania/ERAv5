@@ -37,8 +37,10 @@ This is a micro-proxy for the Week 4 cleaning decision, not a 1B/3B mixture prox
 | Field | Arm A | Arm B | Arm C |
 |---|---|---|---|
 | Treatment | Schema/non-null/non-empty only | A + Week 4 normalization | B + language/script/alignment/quality/PII/decontamination/dedup |
-| Dataset revision | Pending revision resolution | Same resolved revision as A | Same resolved revision as A |
+| Requested dataset revision | Assigned at execution; mutable branches prohibited | Same request as A | Same request as A |
+| Resolved dataset commit | Assigned at execution; immutable | Same resolved commit as A | Same resolved commit as A |
 | Model/tokenizer identifier and resolved revision | Assigned at execution | Same pinned revision as A | Same pinned revision as A |
+| Distributed world size | 1 required | 1 required | 1 required |
 | Parent/cluster leakage | Must be 0 | Must be 0 | Must be 0 |
 | Train examples | Assigned at execution; equal-size | Same count as A | Same count as A |
 | Optimizer steps | Assigned at execution; fixed | Same count as A | Same count as A |
@@ -136,12 +138,14 @@ Overall status: **Planned—not executed**.
 
 Overall status: **Planned—not executed**.
 
+The primary 3B-B treatment applies the O-series winner to the otherwise frozen base recipe. Optional mixture, curriculum, reasoning-order, or masking treatments may enter 3B-B only when their corresponding optional 1B experiments were actually executed and passed. An unexecuted secondary treatment remains fixed to the declared base recipe and must not be recorded as a 1B winner.
+
 | Arm | Run ID | Seed | Tokens | Indic | Agentic | Reasoning | Long-context | General+Code | Status |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
 | 3B-A control | Assigned at execution | 17 | 60B planned | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Planned—not executed |
 | 3B-A control | Assigned at execution | 29 | 60B planned | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Planned—not executed |
-| 3B-B locked 1B winner | Assigned at execution | 17 | 60B planned | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Planned—not executed |
-| 3B-B locked 1B winner | Assigned at execution | 29 | 60B planned | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Planned—not executed |
+| 3B-B locked O-series winner | Assigned at execution | 17 | 60B planned | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Planned—not executed |
+| 3B-B locked O-series winner | Assigned at execution | 29 | 60B planned | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Not available—experiment not executed | Planned—not executed |
 
 ### 3B gate calculation
 

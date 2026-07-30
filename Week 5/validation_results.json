@@ -1,0 +1,585 @@
+{
+  "classification": "evidence-and-accounting systems validation; not a model proxy",
+  "status": "passed",
+  "week4_root": "D:\\ERAv5\\Week_4",
+  "authoritative_run": "D:\\ERAv5\\Week_4\\twm_pilot_500k_v1",
+  "artifact_sha256": {
+    "report": "59bfca1b62bfa28eeb139fce48581ec566d69213c5a24d2a4a35f1c41832830b",
+    "manifest": "6c70ace1901622c39a0df6e5fb7072b22e2821ceb82a6198fa9fd0ad272b3f61",
+    "split_manifest": "e5e5801d709fda4c9ece3db1ab1f4bfc90849262d5cbed7a5fc2c8374b0c7b31",
+    "run_state": "eb16fbdcdadf27d079bfad0eb6c1f1218529f62cb57deb622e5da617d19d97e9",
+    "readme": "9be35d91a30e203c645158dbfdd0a387bbc321071f5366d1092c819f39773817",
+    "results_template": "1012100a0064f60fc17bddad96fc2844ec8db356a75558e332e39e2f642b4806",
+    "additional_experiments": "67e37387b42f307117a59a411ce84d9433d8a7546ee437a26f81f13fdbd47942",
+    "week4_audit": "7bdb8a01c61a2731eddad11f0319f14ca34d8af0091ebf653c6e62f02deb4fac",
+    "microproxy_script": "792a5e89c05c5b9f1314425effb2617dcb24b59a3ee97fa1ff4a7ff77800cf3d"
+  },
+  "inventory_classification": {
+    "indic_verified_native": "Missing local supply",
+    "indic_unverified_native": "Missing local supply",
+    "indic_translated": "Partially supported by Week 4 AI4Bharat Samanantar",
+    "indic_synthetic": "Missing local supply",
+    "general_web": "Missing local supply",
+    "code": "Missing local supply",
+    "science_and_mathematics": "Missing local supply",
+    "agentic": "Missing local supply",
+    "explicit_reasoning": "Missing local supply",
+    "long_context": "Missing local supply"
+  },
+  "measured": {
+    "raw_translation_pairs": 5141227,
+    "stage_a_surviving_pairs": 4763996,
+    "stage_b_retained_translations": 4020129,
+    "pre_lsh_hubs": 2977126,
+    "final_hubs": 2972462,
+    "alignment_drops": 41864,
+    "lid_drops": 37927,
+    "quality_drops": 297440,
+    "decontamination_drops": 0,
+    "pii_redactions": 4616,
+    "lsh_drops": 4664,
+    "candidate_comparisons": 219227124,
+    "candidate_limit_hits": 947,
+    "clean_token_estimator_output": 215294331,
+    "train_rows": 2912312,
+    "validation_rows": 60150
+  },
+  "derived": {
+    "stage_a_retention_percent": 92.66262703436358,
+    "stage_b_translations_over_raw_percent": 78.19396031336488,
+    "lsh_drop_percent": 0.15666115575894335,
+    "estimated_train_tokens_row_fraction_assumption": 210937689,
+    "translated_coverage_per_1t_percent": 0.8968439158163265,
+    "total_indic_coverage_per_1t_percent": 0.269053174744898
+  },
+  "evidence_status": {
+    "raw_word_count": "Not recorded",
+    "raw_token_count": "Not recorded",
+    "frozen_v5_clean_tokens": "Pending frozen-V5 retokenization",
+    "unique_corpus_token_types": "Not measured",
+    "verified_native_indic_supply": "Missing local supply",
+    "unverified_native_indic_supply": "Missing local supply",
+    "synthetic_indic_supply": "Missing local supply",
+    "agentic_supply": "Missing local supply",
+    "reasoning_supply": "Missing local supply",
+    "long_context_supply": "Missing local supply"
+  },
+  "checks": [
+    {
+      "name": "pre_mix_sums_100",
+      "passed": true,
+      "detail": "100.00"
+    },
+    {
+      "name": "indic_split_sums_100",
+      "passed": true,
+      "detail": "100"
+    },
+    {
+      "name": "anneal_split_sums_100",
+      "passed": true,
+      "detail": "100"
+    },
+    {
+      "name": "reasoning_band_split_sums_100",
+      "passed": true,
+      "detail": "100"
+    },
+    {
+      "name": "reasoning_effort_split_sums_100",
+      "passed": true,
+      "detail": "100"
+    },
+    {
+      "name": "lane_budget_defense_sums_100",
+      "passed": true,
+      "detail": "100.00"
+    },
+    {
+      "name": "indic_gap_decomposition_reconciles",
+      "passed": true,
+      "detail": "77.767186933"
+    },
+    {
+      "name": "samanantar_only_indic_translated",
+      "passed": true,
+      "detail": [
+        "indic_translated"
+      ]
+    },
+    {
+      "name": "named_benchmark_mapping_exists",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "opus_optimizer_update_proxy_direction_exists",
+      "passed": true,
+      "detail": "optimizer-induced update projected onto proxy direction plus stochastic sampling"
+    },
+    {
+      "name": "opus_starvation_o0_o1_o2_exists",
+      "passed": true,
+      "detail": [
+        "O0",
+        "O1",
+        "O2"
+      ]
+    },
+    {
+      "name": "reasoning_order_r0_r1_r2_exists",
+      "passed": true,
+      "detail": [
+        "R0",
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "name": "tier_a_agentic_anneal_exclusivity_exists",
+      "passed": true,
+      "detail": "Tier-A inaccessible before Anneal; pre-Anneal limited to admitted Tier-B/C or executable synthetic"
+    },
+    {
+      "name": "readme_results_template_seeds_agree",
+      "passed": true,
+      "detail": {
+        "readme": [
+          17,
+          29
+        ],
+        "results_3b": [
+          "17",
+          "29",
+          "17",
+          "29"
+        ],
+        "results_1b": [
+          "17; 29 if promoted",
+          "17; 29 if promoted",
+          "17; 29 if promoted",
+          "17; 29 if promoted",
+          "17; 29 if promoted",
+          "17; 29 if promoted"
+        ],
+        "results_selectors": [
+          "17, 29",
+          "17, 29",
+          "17, 29",
+          "17, 29",
+          "17, 29",
+          "17, 29"
+        ]
+      }
+    },
+    {
+      "name": "lane_budget_training_shape_defense_exists",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "hierarchical_quota_language_source_caps_exists",
+      "passed": true,
+      "detail": "hierarchical subqueues, source cap, and bounded quota debt"
+    },
+    {
+      "name": "opus_selector_scaling_gate_exists",
+      "passed": true,
+      "detail": "bounded exact selector plus 240B surrogate promotion gate"
+    },
+    {
+      "name": "nonoverlapping_primary_lane_ledger_exists",
+      "passed": true,
+      "detail": "global cluster assignment plus deterministic primary-lane precedence"
+    },
+    {
+      "name": "token_origin_deny_mask_exists",
+      "passed": true,
+      "detail": "origin mask overrides role after packing/truncation"
+    },
+    {
+      "name": "no_forbidden_all_token_loss_path",
+      "passed": true,
+      "detail": "all formal arms preserve the forbidden-origin deny-mask"
+    },
+    {
+      "name": "curriculum_transition_stability_gates_exist",
+      "passed": true,
+      "detail": "boundary blend, rate cap, and context stability gates"
+    },
+    {
+      "name": "reasoning_order_same_candidates_only_order_changes",
+      "passed": true,
+      "detail": "same candidate IDs, counts, and non-reasoning order"
+    },
+    {
+      "name": "three_b_locks_one_b_winner",
+      "passed": true,
+      "detail": "O-series winner is primary; optional treatments require an executed, passed 1B gate"
+    },
+    {
+      "name": "readme_results_thresholds_agree",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_ambiguous_placeholder_remains",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "missing_lanes_state_zero_locally_admitted_supply",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "pending_retokenization_distinct_from_absent_supply",
+      "passed": true,
+      "detail": "| Indic | 78.4B | about 0.210937689B translated; exact count pending |"
+    },
+    {
+      "name": "unexecuted_experiments_have_explicit_state",
+      "passed": true,
+      "detail": {
+        "readme_status_count": 3,
+        "results_status_count": 4
+      }
+    },
+    {
+      "name": "readme_has_no_blank_observed_result_matrix",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "results_template_does_not_encode_unexecuted_results_as_zero",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "evidence_state_vocabulary_is_explicit",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "design_tradeoff_section_present_and_concise",
+      "passed": true,
+      "detail": {
+        "words": 259
+      }
+    },
+    {
+      "name": "current_data_gate_is_explicit",
+      "passed": true,
+      "detail": "blocked gate, local translated-only evidence, and no invented threshold"
+    },
+    {
+      "name": "one_primary_1b_and_one_primary_3b_are_named",
+      "passed": true,
+      "detail": "primary O0/O1/O2 hypothesis plus locked-winner 3B confirmation"
+    },
+    {
+      "name": "secondary_experiments_preserved_in_supplement",
+      "passed": true,
+      "detail": "R0/R1/R2 and 1B-A through 1B-F"
+    },
+    {
+      "name": "next_executable_cleaning_gate_exists",
+      "passed": true,
+      "detail": "immutable dataset/tokenizer revisions and exact per-language token inventory"
+    },
+    {
+      "name": "research_basis_section_present_and_concise",
+      "passed": true,
+      "detail": {
+        "words": 360
+      }
+    },
+    {
+      "name": "required_core_research_ids_and_curriculum_boundary",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "required_scientific_limitation_statement",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "adjacent_papers_excluded",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "main_readme_within_concision_target",
+      "passed": true,
+      "detail": {
+        "words": 3666
+      }
+    },
+    {
+      "name": "microproxy_behavioral_self_tests_pass",
+      "passed": true,
+      "detail": {
+        "status": "passed",
+        "wrong_script_behavior": {
+          "valid_target_script": true,
+          "all_english": true,
+          "mixed_english_indic_fails": true,
+          "empty": true,
+          "punctuation_only": true
+        },
+        "revision_handling": {
+          "rejects_main": true,
+          "rejects_master": true,
+          "rejects_refs_heads": true,
+          "accepts_immutable_commit": true,
+          "rejects_noncommit_tag": true
+        },
+        "execution_mode": {
+          "accepts_single_process_one_gpu": true,
+          "accepts_single_process_cpu": true,
+          "rejects_distributed_world_size": true,
+          "rejects_multiple_visible_gpus": true
+        },
+        "token_exposure_balance": {
+          "passed": true,
+          "exposure": {
+            "A": {
+              "selected_examples": 4,
+              "source_nonpadding_tokens": 200,
+              "target_nonpadding_tokens": 200,
+              "supervised_tokens": 200,
+              "combined_nonpadding_tokens": 400
+            },
+            "B": {
+              "selected_examples": 4,
+              "source_nonpadding_tokens": 200,
+              "target_nonpadding_tokens": 200,
+              "supervised_tokens": 200,
+              "combined_nonpadding_tokens": 400
+            },
+            "C": {
+              "selected_examples": 4,
+              "source_nonpadding_tokens": 200,
+              "target_nonpadding_tokens": 200,
+              "supervised_tokens": 200,
+              "combined_nonpadding_tokens": 400
+            },
+            "summary": {
+              "target_combined_tokens": 400,
+              "relative_spread": 0.0,
+              "tolerance": 0.01
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "microproxy_rejects_mutable_dataset_revision",
+      "passed": true,
+      "detail": {
+        "return_code": 1,
+        "stderr": "--revision must not be a mutable branch such as main, master, or refs/heads/*.\n"
+      }
+    },
+    {
+      "name": "microproxy_model_revision_is_required",
+      "passed": true,
+      "detail": {
+        "return_code": 2,
+        "stderr": "                           [--max-source-length MAX_SOURCE_LENGTH]\n                                             [--max-target-length MAX_TARGET_LENGTH]\n                                             [--min-script-fraction MIN_SCRIPT_FRACTION]\n                                             [--token-exposure-tolerance TOKEN_EXPOSURE_TOLERANCE]\n                                             [--seed SEED]\nsamanantar_cleaning_ablation.py train: error: the following arguments are required: --model-revision\n"
+      }
+    },
+    {
+      "name": "microproxy_records_pinned_revisions_versions_and_tokens",
+      "passed": true,
+      "detail": "pinned dataset/model/tokenizer provenance, single-process schedule, and per-arm token exposure"
+    },
+    {
+      "name": "microproxy_loads_from_resolved_commits",
+      "passed": true,
+      "detail": "dataset stream, tokenizer, and model loads are anchored to resolved commits"
+    },
+    {
+      "name": "stage_totals_sum_98",
+      "passed": true,
+      "detail": "98.000"
+    },
+    {
+      "name": "seed_row_reconciles",
+      "passed": true,
+      "detail": {
+        "components": "5.000",
+        "declared": "5.000"
+      }
+    },
+    {
+      "name": "seed_indic_floor",
+      "passed": true,
+      "detail": "0.08"
+    },
+    {
+      "name": "seed_agentic_floor",
+      "passed": true,
+      "detail": "0.005"
+    },
+    {
+      "name": "general_row_reconciles",
+      "passed": true,
+      "detail": {
+        "components": "55.000",
+        "declared": "55.000"
+      }
+    },
+    {
+      "name": "general_indic_floor",
+      "passed": true,
+      "detail": "0.08"
+    },
+    {
+      "name": "general_agentic_floor",
+      "passed": true,
+      "detail": "0.005"
+    },
+    {
+      "name": "reasoning_row_reconciles",
+      "passed": true,
+      "detail": {
+        "components": "20.000",
+        "declared": "20.000"
+      }
+    },
+    {
+      "name": "reasoning_indic_floor",
+      "passed": true,
+      "detail": "0.08"
+    },
+    {
+      "name": "reasoning_agentic_floor",
+      "passed": true,
+      "detail": "0.005"
+    },
+    {
+      "name": "long_context_row_reconciles",
+      "passed": true,
+      "detail": {
+        "components": "18.000",
+        "declared": "18.000"
+      }
+    },
+    {
+      "name": "long_context_indic_floor",
+      "passed": true,
+      "detail": "0.08"
+    },
+    {
+      "name": "long_context_agentic_floor",
+      "passed": true,
+      "detail": "0.005"
+    },
+    {
+      "name": "stage_column_general",
+      "passed": true,
+      "detail": {
+        "actual": "51.940",
+        "expected": "51.940"
+      }
+    },
+    {
+      "name": "stage_column_science_math",
+      "passed": true,
+      "detail": {
+        "actual": "9.800",
+        "expected": "9.800"
+      }
+    },
+    {
+      "name": "stage_column_code",
+      "passed": true,
+      "detail": {
+        "actual": "9.800",
+        "expected": "9.800"
+      }
+    },
+    {
+      "name": "stage_column_reasoning",
+      "passed": true,
+      "detail": {
+        "actual": "9.800",
+        "expected": "9.800"
+      }
+    },
+    {
+      "name": "stage_column_long",
+      "passed": true,
+      "detail": {
+        "actual": "8.330",
+        "expected": "8.330"
+      }
+    },
+    {
+      "name": "stage_column_indic",
+      "passed": true,
+      "detail": {
+        "actual": "7.840",
+        "expected": "7.840"
+      }
+    },
+    {
+      "name": "stage_column_agentic",
+      "passed": true,
+      "detail": {
+        "actual": "0.490",
+        "expected": "0.490"
+      }
+    },
+    {
+      "name": "total_budget_reconciles",
+      "passed": true,
+      "detail": "100.000"
+    },
+    {
+      "name": "stage_a_drop_identity",
+      "passed": true,
+      "detail": {
+        "raw_minus_survivors": 377231,
+        "sum_drop_reasons": 377231
+      }
+    },
+    {
+      "name": "stage_c_input_matches_stage_b_hubs",
+      "passed": true,
+      "detail": 2977126
+    },
+    {
+      "name": "stage_c_survivor_identity",
+      "passed": true,
+      "detail": 2972462
+    },
+    {
+      "name": "report_manifest_match",
+      "passed": true,
+      "detail": 2972462
+    },
+    {
+      "name": "external_manifest_match",
+      "passed": true,
+      "detail": 2972462
+    },
+    {
+      "name": "split_rows_match_manifest",
+      "passed": true,
+      "detail": 2972462
+    },
+    {
+      "name": "run_complete",
+      "passed": true,
+      "detail": {
+        "stage_a_languages": 11,
+        "stage_b_buckets": 256,
+        "stage_c": true,
+        "stage_d": true
+      }
+    }
+  ]
+}
