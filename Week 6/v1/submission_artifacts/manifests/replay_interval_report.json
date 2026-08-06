@@ -1,0 +1,1467 @@
+{
+  "batches_replayed": 28,
+  "crosses_crash_boundary": true,
+  "entries": [
+    {
+      "batch_index": 112,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "d028e9ad1747f9ac813184accf15e529df5d50063a1941c73062240a470d9456",
+        "loss_mask": "28d6fd226ef22897a3161a1eacd274adc76a33719b52906b48b6bc50ff188e39",
+        "position_ids": "e47046dd1f8adab48c081649c51b1f7b190773a30c8fe4fc4eefec6ea5636d86",
+        "segment_ids": "f68ee868669f1a869cbfa2cdc1c102d5afa3b7428afd94ee97c72f8d42408a3c"
+      },
+      "reconstruction_proof_hash": "sha256:a1430e77e9952736b6a10869e0044b6dd338f4fec01b1bcdde02f04a210c2d07",
+      "replay_payload_hashes": {
+        "input_ids": "d028e9ad1747f9ac813184accf15e529df5d50063a1941c73062240a470d9456",
+        "loss_mask": "28d6fd226ef22897a3161a1eacd274adc76a33719b52906b48b6bc50ff188e39",
+        "position_ids": "e47046dd1f8adab48c081649c51b1f7b190773a30c8fe4fc4eefec6ea5636d86",
+        "segment_ids": "f68ee868669f1a869cbfa2cdc1c102d5afa3b7428afd94ee97c72f8d42408a3c"
+      },
+      "sequence_indices": [
+        330,
+        72,
+        643,
+        472
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 84736,
+          "global_token_start": 84480,
+          "sequence_index": 330
+        },
+        {
+          "global_token_end_exclusive": 18688,
+          "global_token_start": 18432,
+          "sequence_index": 72
+        },
+        {
+          "global_token_end_exclusive": 164864,
+          "global_token_start": 164608,
+          "sequence_index": 643
+        },
+        {
+          "global_token_end_exclusive": 121088,
+          "global_token_start": 120832,
+          "sequence_index": 472
+        }
+      ]
+    },
+    {
+      "batch_index": 113,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "76bce7aae6cb220dbfe931d74f397a6b07f5c39d564459cccc55554c79bf45af",
+        "loss_mask": "bd5876338d9f7cd6355f21717d42cbc3b4853ff7ebf60774e19330bb0562d904",
+        "position_ids": "b50911a18a7b4fffef6fb6b92077ae8d1f4d1706a8bdad42485d6d97987acd9e",
+        "segment_ids": "913772e70172b27b4155bb265515cce66ace5597328462fa76d986201321237f"
+      },
+      "reconstruction_proof_hash": "sha256:287628f24da90c1c94bba4dda83388b2215a38642df424a00b077c10ed78199f",
+      "replay_payload_hashes": {
+        "input_ids": "76bce7aae6cb220dbfe931d74f397a6b07f5c39d564459cccc55554c79bf45af",
+        "loss_mask": "bd5876338d9f7cd6355f21717d42cbc3b4853ff7ebf60774e19330bb0562d904",
+        "position_ids": "b50911a18a7b4fffef6fb6b92077ae8d1f4d1706a8bdad42485d6d97987acd9e",
+        "segment_ids": "913772e70172b27b4155bb265515cce66ace5597328462fa76d986201321237f"
+      },
+      "sequence_indices": [
+        333,
+        344,
+        588,
+        242
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 85504,
+          "global_token_start": 85248,
+          "sequence_index": 333
+        },
+        {
+          "global_token_end_exclusive": 88320,
+          "global_token_start": 88064,
+          "sequence_index": 344
+        },
+        {
+          "global_token_end_exclusive": 150784,
+          "global_token_start": 150528,
+          "sequence_index": 588
+        },
+        {
+          "global_token_end_exclusive": 62208,
+          "global_token_start": 61952,
+          "sequence_index": 242
+        }
+      ]
+    },
+    {
+      "batch_index": 114,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "02a127be26c461c141ed6817ecdb4dd8680ba4bd49dd80d04f881e3c614b709f",
+        "loss_mask": "b44f89b71c855fe9b5583b5c4561d3790f36eb6ec35ff7f7529a5dd367c1b7ef",
+        "position_ids": "e374c852feb048c13dce65f13cd9a406e5aabeabe753c4a748f398c56a0fe75c",
+        "segment_ids": "7ac8c0308452ad876d2388583799906b4cd7eff30f762b5e4a4103d865173ab5"
+      },
+      "reconstruction_proof_hash": "sha256:4ebee07e30f3b641f3c457d95b9162401437b2b8a05a595da8a81b66c41c39a9",
+      "replay_payload_hashes": {
+        "input_ids": "02a127be26c461c141ed6817ecdb4dd8680ba4bd49dd80d04f881e3c614b709f",
+        "loss_mask": "b44f89b71c855fe9b5583b5c4561d3790f36eb6ec35ff7f7529a5dd367c1b7ef",
+        "position_ids": "e374c852feb048c13dce65f13cd9a406e5aabeabe753c4a748f398c56a0fe75c",
+        "segment_ids": "7ac8c0308452ad876d2388583799906b4cd7eff30f762b5e4a4103d865173ab5"
+      },
+      "sequence_indices": [
+        271,
+        448,
+        356,
+        523
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 69632,
+          "global_token_start": 69376,
+          "sequence_index": 271
+        },
+        {
+          "global_token_end_exclusive": 114944,
+          "global_token_start": 114688,
+          "sequence_index": 448
+        },
+        {
+          "global_token_end_exclusive": 91392,
+          "global_token_start": 91136,
+          "sequence_index": 356
+        },
+        {
+          "global_token_end_exclusive": 134144,
+          "global_token_start": 133888,
+          "sequence_index": 523
+        }
+      ]
+    },
+    {
+      "batch_index": 115,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "fd1ec4ef7909977b3d18ae5020b604cce506e6f9872767bc2b7daa03e61b0245",
+        "loss_mask": "4c3e35c74ef8ba6b2351ea3cb15784e208267a65f7f6e9b9e0642cf9c3f3042a",
+        "position_ids": "38daf990160b8bc2acdc8b34dbe10496b1955756e62415be773086065d85fc01",
+        "segment_ids": "2849188c373976ac5e475a754a439170547abe866dcea71e654763d582d81c6c"
+      },
+      "reconstruction_proof_hash": "sha256:73fc854770d48c6c58e06d1ae3e7621fea92b852bd438e0eb0b9aa966823dbfb",
+      "replay_payload_hashes": {
+        "input_ids": "fd1ec4ef7909977b3d18ae5020b604cce506e6f9872767bc2b7daa03e61b0245",
+        "loss_mask": "4c3e35c74ef8ba6b2351ea3cb15784e208267a65f7f6e9b9e0642cf9c3f3042a",
+        "position_ids": "38daf990160b8bc2acdc8b34dbe10496b1955756e62415be773086065d85fc01",
+        "segment_ids": "2849188c373976ac5e475a754a439170547abe866dcea71e654763d582d81c6c"
+      },
+      "sequence_indices": [
+        413,
+        492,
+        354,
+        94
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 105984,
+          "global_token_start": 105728,
+          "sequence_index": 413
+        },
+        {
+          "global_token_end_exclusive": 126208,
+          "global_token_start": 125952,
+          "sequence_index": 492
+        },
+        {
+          "global_token_end_exclusive": 90880,
+          "global_token_start": 90624,
+          "sequence_index": 354
+        },
+        {
+          "global_token_end_exclusive": 24320,
+          "global_token_start": 24064,
+          "sequence_index": 94
+        }
+      ]
+    },
+    {
+      "batch_index": 116,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "6b2e42ff445c1ad1f1c317373b98f335eb4c200a8458b72d8632523c1fc42a2e",
+        "loss_mask": "e26ea7cb6710b3089fc326848b73f96ec42ef7e9b3ce7710f33209fd6f5dec4e",
+        "position_ids": "4332db91a19e09330b75d0c292cb397410e7aa382bc30f9538e89f6bbb8cc64a",
+        "segment_ids": "5a5179feb87b22fa82aa3fb244ffa9fcd7a4136f7fbc327b27dc652a98f79fc2"
+      },
+      "reconstruction_proof_hash": "sha256:01e5931472f990034108a7a3d974a3850a38878e1ab479dd422d0fabe39fe76d",
+      "replay_payload_hashes": {
+        "input_ids": "6b2e42ff445c1ad1f1c317373b98f335eb4c200a8458b72d8632523c1fc42a2e",
+        "loss_mask": "e26ea7cb6710b3089fc326848b73f96ec42ef7e9b3ce7710f33209fd6f5dec4e",
+        "position_ids": "4332db91a19e09330b75d0c292cb397410e7aa382bc30f9538e89f6bbb8cc64a",
+        "segment_ids": "5a5179feb87b22fa82aa3fb244ffa9fcd7a4136f7fbc327b27dc652a98f79fc2"
+      },
+      "sequence_indices": [
+        364,
+        290,
+        276,
+        543
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 93440,
+          "global_token_start": 93184,
+          "sequence_index": 364
+        },
+        {
+          "global_token_end_exclusive": 74496,
+          "global_token_start": 74240,
+          "sequence_index": 290
+        },
+        {
+          "global_token_end_exclusive": 70912,
+          "global_token_start": 70656,
+          "sequence_index": 276
+        },
+        {
+          "global_token_end_exclusive": 139264,
+          "global_token_start": 139008,
+          "sequence_index": 543
+        }
+      ]
+    },
+    {
+      "batch_index": 117,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "4d4245816503089e9dbb2db84efef1a437632118bce121f669ae687d3af525d1",
+        "loss_mask": "fce71fbf86d0370a0365895f18a9290a1640d38d3fc86f45bbf739c857981388",
+        "position_ids": "4c13a13583ec3ed64c37a89eb258db47c0d0af081ad95069ecdb5e6a046e933f",
+        "segment_ids": "ac0b1e4d00cfae4eb1cc587fc7cd4c3b416b8ccff56c0b26bdbc8a12c015f58c"
+      },
+      "reconstruction_proof_hash": "sha256:11fc3d5e2c51a4d2f2a3932430c4d212964dc525174d56ad8fc87fd1395a03d7",
+      "replay_payload_hashes": {
+        "input_ids": "4d4245816503089e9dbb2db84efef1a437632118bce121f669ae687d3af525d1",
+        "loss_mask": "fce71fbf86d0370a0365895f18a9290a1640d38d3fc86f45bbf739c857981388",
+        "position_ids": "4c13a13583ec3ed64c37a89eb258db47c0d0af081ad95069ecdb5e6a046e933f",
+        "segment_ids": "ac0b1e4d00cfae4eb1cc587fc7cd4c3b416b8ccff56c0b26bdbc8a12c015f58c"
+      },
+      "sequence_indices": [
+        652,
+        328,
+        411,
+        457
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 167168,
+          "global_token_start": 166912,
+          "sequence_index": 652
+        },
+        {
+          "global_token_end_exclusive": 84224,
+          "global_token_start": 83968,
+          "sequence_index": 328
+        },
+        {
+          "global_token_end_exclusive": 105472,
+          "global_token_start": 105216,
+          "sequence_index": 411
+        },
+        {
+          "global_token_end_exclusive": 117248,
+          "global_token_start": 116992,
+          "sequence_index": 457
+        }
+      ]
+    },
+    {
+      "batch_index": 118,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "9d22ce3e3039e14875ae407797144f0e5effe0302eba1152ffeedb86b6ef0585",
+        "loss_mask": "85e2f3a3a528792d38e113dac9d45d840ddd26c6d9b796b96cee9006154ef824",
+        "position_ids": "28b684bfb4e411ef729b6bd39e9e5210ebc4fce57d88d77179d66b53f3c1271c",
+        "segment_ids": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+      },
+      "reconstruction_proof_hash": "sha256:6160fc82467eedb3a4bd7cbf364a0d635a4042cde4f6e0495296af96670b9075",
+      "replay_payload_hashes": {
+        "input_ids": "9d22ce3e3039e14875ae407797144f0e5effe0302eba1152ffeedb86b6ef0585",
+        "loss_mask": "85e2f3a3a528792d38e113dac9d45d840ddd26c6d9b796b96cee9006154ef824",
+        "position_ids": "28b684bfb4e411ef729b6bd39e9e5210ebc4fce57d88d77179d66b53f3c1271c",
+        "segment_ids": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+      },
+      "sequence_indices": [
+        426,
+        528,
+        210,
+        312
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 109312,
+          "global_token_start": 109056,
+          "sequence_index": 426
+        },
+        {
+          "global_token_end_exclusive": 135424,
+          "global_token_start": 135168,
+          "sequence_index": 528
+        },
+        {
+          "global_token_end_exclusive": 54016,
+          "global_token_start": 53760,
+          "sequence_index": 210
+        },
+        {
+          "global_token_end_exclusive": 80128,
+          "global_token_start": 79872,
+          "sequence_index": 312
+        }
+      ]
+    },
+    {
+      "batch_index": 119,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "164e974bbc811c754456207186fc333d0ad261b287a3fb5aab18e4ed367a54c4",
+        "loss_mask": "e21c73775c3f0159a5e52f3735504ed26b99151d2d23a769a14a43b4f2e55b50",
+        "position_ids": "78a8e3d5a18ca4db57a6fce592aad85c3f1d06e4594757977b30313b8afc5e9f",
+        "segment_ids": "ff215e24be6f8bf4f49545a681822eea07d96e2b25cffc988f5801d23f5bcf12"
+      },
+      "reconstruction_proof_hash": "sha256:80cd83a2d2015a606ff68baf5767f28e5c75288f0d38c8c3a8b88b70c9be5106",
+      "replay_payload_hashes": {
+        "input_ids": "164e974bbc811c754456207186fc333d0ad261b287a3fb5aab18e4ed367a54c4",
+        "loss_mask": "e21c73775c3f0159a5e52f3735504ed26b99151d2d23a769a14a43b4f2e55b50",
+        "position_ids": "78a8e3d5a18ca4db57a6fce592aad85c3f1d06e4594757977b30313b8afc5e9f",
+        "segment_ids": "ff215e24be6f8bf4f49545a681822eea07d96e2b25cffc988f5801d23f5bcf12"
+      },
+      "sequence_indices": [
+        137,
+        288,
+        559,
+        700
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 35328,
+          "global_token_start": 35072,
+          "sequence_index": 137
+        },
+        {
+          "global_token_end_exclusive": 73984,
+          "global_token_start": 73728,
+          "sequence_index": 288
+        },
+        {
+          "global_token_end_exclusive": 143360,
+          "global_token_start": 143104,
+          "sequence_index": 559
+        },
+        {
+          "global_token_end_exclusive": 179456,
+          "global_token_start": 179200,
+          "sequence_index": 700
+        }
+      ]
+    },
+    {
+      "batch_index": 120,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "834193ca649480935def68e8628cee4a08b198567eb6ce28b6a0065df8ca5c86",
+        "loss_mask": "89cfaa9d771c11383f24f870c98c449bf3fe17ce07023b46e52c728f9ad9054a",
+        "position_ids": "cd07ef61e2176b7c5e3dfa4fc33cc679e26723dc68412ce0bdfcf84142872268",
+        "segment_ids": "02128d0ffd4c7b767be677e847d818f1ce4f5274e09c7658fdaeff87e2463672"
+      },
+      "reconstruction_proof_hash": "sha256:3dcfbaa944d021066c88587ae3de058753dc5709a28037be9bfa535d60d461fb",
+      "replay_payload_hashes": {
+        "input_ids": "834193ca649480935def68e8628cee4a08b198567eb6ce28b6a0065df8ca5c86",
+        "loss_mask": "89cfaa9d771c11383f24f870c98c449bf3fe17ce07023b46e52c728f9ad9054a",
+        "position_ids": "cd07ef61e2176b7c5e3dfa4fc33cc679e26723dc68412ce0bdfcf84142872268",
+        "segment_ids": "02128d0ffd4c7b767be677e847d818f1ce4f5274e09c7658fdaeff87e2463672"
+      },
+      "sequence_indices": [
+        86,
+        569,
+        223,
+        675
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 22272,
+          "global_token_start": 22016,
+          "sequence_index": 86
+        },
+        {
+          "global_token_end_exclusive": 145920,
+          "global_token_start": 145664,
+          "sequence_index": 569
+        },
+        {
+          "global_token_end_exclusive": 57344,
+          "global_token_start": 57088,
+          "sequence_index": 223
+        },
+        {
+          "global_token_end_exclusive": 173056,
+          "global_token_start": 172800,
+          "sequence_index": 675
+        }
+      ]
+    },
+    {
+      "batch_index": 121,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "d283acf58266a2e6a679d2423a44fb6b3f60acd5c2ba1c028807d02823e7df93",
+        "loss_mask": "24dd9eb3095b56a45217f36a7f93dd5d853819a7d3850a288aa077e3342b984e",
+        "position_ids": "0d89e0007abb87cd98c2c038a9ce26b256766b6b5d70ff9bba0235f528e6e1d6",
+        "segment_ids": "466e3bbe3bde2fbfad8e8b032f3aa35ba55ccc28d0475af127f92e28e9d10e94"
+      },
+      "reconstruction_proof_hash": "sha256:c34f34e1983110ab49986c2e09c1461fe7d46f2ff78d9175a3d05bda33d7f14a",
+      "replay_payload_hashes": {
+        "input_ids": "d283acf58266a2e6a679d2423a44fb6b3f60acd5c2ba1c028807d02823e7df93",
+        "loss_mask": "24dd9eb3095b56a45217f36a7f93dd5d853819a7d3850a288aa077e3342b984e",
+        "position_ids": "0d89e0007abb87cd98c2c038a9ce26b256766b6b5d70ff9bba0235f528e6e1d6",
+        "segment_ids": "466e3bbe3bde2fbfad8e8b032f3aa35ba55ccc28d0475af127f92e28e9d10e94"
+      },
+      "sequence_indices": [
+        699,
+        509,
+        598,
+        169
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 179200,
+          "global_token_start": 178944,
+          "sequence_index": 699
+        },
+        {
+          "global_token_end_exclusive": 130560,
+          "global_token_start": 130304,
+          "sequence_index": 509
+        },
+        {
+          "global_token_end_exclusive": 153344,
+          "global_token_start": 153088,
+          "sequence_index": 598
+        },
+        {
+          "global_token_end_exclusive": 43520,
+          "global_token_start": 43264,
+          "sequence_index": 169
+        }
+      ]
+    },
+    {
+      "batch_index": 122,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "33b54b50d8a99d25fd0f6859df5c94a987c68ac5f4bd60bbd998b217784be055",
+        "loss_mask": "3d125c448737ec7479f1667b86753059b0d6e5aa0270d2de5ba48122727d0d65",
+        "position_ids": "6a52c4fcfc2fa658971c573dc3fa982cc46a8c3a04fc06dc9babcd8dbcd4b682",
+        "segment_ids": "aa87a8b83313c2105fdc0e2756c0c252b607b7cbd750ce7c06dc0f209545035d"
+      },
+      "reconstruction_proof_hash": "sha256:f0dedf496cf1cad2fe3f850cee10a376e6000263f61a470992050fe56482bd8b",
+      "replay_payload_hashes": {
+        "input_ids": "33b54b50d8a99d25fd0f6859df5c94a987c68ac5f4bd60bbd998b217784be055",
+        "loss_mask": "3d125c448737ec7479f1667b86753059b0d6e5aa0270d2de5ba48122727d0d65",
+        "position_ids": "6a52c4fcfc2fa658971c573dc3fa982cc46a8c3a04fc06dc9babcd8dbcd4b682",
+        "segment_ids": "aa87a8b83313c2105fdc0e2756c0c252b607b7cbd750ce7c06dc0f209545035d"
+      },
+      "sequence_indices": [
+        357,
+        73,
+        87,
+        202
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 91648,
+          "global_token_start": 91392,
+          "sequence_index": 357
+        },
+        {
+          "global_token_end_exclusive": 18944,
+          "global_token_start": 18688,
+          "sequence_index": 73
+        },
+        {
+          "global_token_end_exclusive": 22528,
+          "global_token_start": 22272,
+          "sequence_index": 87
+        },
+        {
+          "global_token_end_exclusive": 51968,
+          "global_token_start": 51712,
+          "sequence_index": 202
+        }
+      ]
+    },
+    {
+      "batch_index": 123,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "8e76e607925dc5c6c06bfcbbbacc449ef7c8a4b82319db0a3e77291e6d1ac788",
+        "loss_mask": "7c756276df7bd20988608f08366bf2821be04d6992dcf448b48e88a9e230c680",
+        "position_ids": "e0fa430a6ba60ad0a319b0bb1fae2c0835f95d96b1aa22f821629e82f39a7c22",
+        "segment_ids": "affcdb0203d2297c747d0e3050fbbe345f3fb38decc59401560d9b6f211a9cfd"
+      },
+      "reconstruction_proof_hash": "sha256:b628336f53ad89e0b7104f14ca51d6cc5c13182bf1e5437722f116122cba2436",
+      "replay_payload_hashes": {
+        "input_ids": "8e76e607925dc5c6c06bfcbbbacc449ef7c8a4b82319db0a3e77291e6d1ac788",
+        "loss_mask": "7c756276df7bd20988608f08366bf2821be04d6992dcf448b48e88a9e230c680",
+        "position_ids": "e0fa430a6ba60ad0a319b0bb1fae2c0835f95d96b1aa22f821629e82f39a7c22",
+        "segment_ids": "affcdb0203d2297c747d0e3050fbbe345f3fb38decc59401560d9b6f211a9cfd"
+      },
+      "sequence_indices": [
+        431,
+        329,
+        676,
+        461
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 110592,
+          "global_token_start": 110336,
+          "sequence_index": 431
+        },
+        {
+          "global_token_end_exclusive": 84480,
+          "global_token_start": 84224,
+          "sequence_index": 329
+        },
+        {
+          "global_token_end_exclusive": 173312,
+          "global_token_start": 173056,
+          "sequence_index": 676
+        },
+        {
+          "global_token_end_exclusive": 118272,
+          "global_token_start": 118016,
+          "sequence_index": 461
+        }
+      ]
+    },
+    {
+      "batch_index": 124,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "f3d3cd9a906c4fcfe7d109e977b9452646439e50869c65e8b5b321de037e4897",
+        "loss_mask": "a6805746c7ba757939746b501ed600966f65022dfb333ed976dc32e4041112fc",
+        "position_ids": "bbcf3cc9ba8f0235f5308f4cab227703ff0bd6a3b5744e551dc96f73a9febf8e",
+        "segment_ids": "83aab5ea5f926fc2215c4a33f0cbfdfff9c09616f36f59a811d920a552f702f9"
+      },
+      "reconstruction_proof_hash": "sha256:bf2a81f5442d3c10737517ae58555cc6178cd85ed71328e90363d1b0cf5a81e0",
+      "replay_payload_hashes": {
+        "input_ids": "f3d3cd9a906c4fcfe7d109e977b9452646439e50869c65e8b5b321de037e4897",
+        "loss_mask": "a6805746c7ba757939746b501ed600966f65022dfb333ed976dc32e4041112fc",
+        "position_ids": "bbcf3cc9ba8f0235f5308f4cab227703ff0bd6a3b5744e551dc96f73a9febf8e",
+        "segment_ids": "83aab5ea5f926fc2215c4a33f0cbfdfff9c09616f36f59a811d920a552f702f9"
+      },
+      "sequence_indices": [
+        380,
+        318,
+        669,
+        170
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 97536,
+          "global_token_start": 97280,
+          "sequence_index": 380
+        },
+        {
+          "global_token_end_exclusive": 81664,
+          "global_token_start": 81408,
+          "sequence_index": 318
+        },
+        {
+          "global_token_end_exclusive": 171520,
+          "global_token_start": 171264,
+          "sequence_index": 669
+        },
+        {
+          "global_token_end_exclusive": 43776,
+          "global_token_start": 43520,
+          "sequence_index": 170
+        }
+      ]
+    },
+    {
+      "batch_index": 125,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "b59555f39b98c73e8d54543e90d3fd99f5b3f8ceb9d0c0e78e5f711813bf5b69",
+        "loss_mask": "e9ea8b2ee2dea78adf88001c5a97fce5f6babded1e2e655ff508dd709466884f",
+        "position_ids": "3a8e33d9af29ccd760b28a83daddf2d8c8d77cea9658fa2747220401b477a92b",
+        "segment_ids": "ae752888da70ea6eb222a7ddd7151f050e385b22c1d62bc74d8630a8bc897e84"
+      },
+      "reconstruction_proof_hash": "sha256:03c9f87e311619af8233886688b2b10d3336cacb80d2d9261af77edf85a5b391",
+      "replay_payload_hashes": {
+        "input_ids": "b59555f39b98c73e8d54543e90d3fd99f5b3f8ceb9d0c0e78e5f711813bf5b69",
+        "loss_mask": "e9ea8b2ee2dea78adf88001c5a97fce5f6babded1e2e655ff508dd709466884f",
+        "position_ids": "3a8e33d9af29ccd760b28a83daddf2d8c8d77cea9658fa2747220401b477a92b",
+        "segment_ids": "ae752888da70ea6eb222a7ddd7151f050e385b22c1d62bc74d8630a8bc897e84"
+      },
+      "sequence_indices": [
+        501,
+        96,
+        307,
+        122
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 128512,
+          "global_token_start": 128256,
+          "sequence_index": 501
+        },
+        {
+          "global_token_end_exclusive": 24832,
+          "global_token_start": 24576,
+          "sequence_index": 96
+        },
+        {
+          "global_token_end_exclusive": 78848,
+          "global_token_start": 78592,
+          "sequence_index": 307
+        },
+        {
+          "global_token_end_exclusive": 31488,
+          "global_token_start": 31232,
+          "sequence_index": 122
+        }
+      ]
+    },
+    {
+      "batch_index": 126,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "3018c09ec54bb5a41e8b7f8987cddd6b5683754a05e11dc7cb781c852793466b",
+        "loss_mask": "432a9392910923365e7a03347ba954211aba0ec1d6aabc6351c49d091424be77",
+        "position_ids": "07fda769ddb637c850b9fd3f6bd8431d66a0905369b7112a418f9aa4f051b0bd",
+        "segment_ids": "56cc6efecad3920bee080571845aedd3aafc3f7c0310d7ce87a33a35d38f63b1"
+      },
+      "reconstruction_proof_hash": "sha256:0d54093b67f03086972b16ff259e3d33b3e63ecd586ff128b1aa29cb63ec3724",
+      "replay_payload_hashes": {
+        "input_ids": "3018c09ec54bb5a41e8b7f8987cddd6b5683754a05e11dc7cb781c852793466b",
+        "loss_mask": "432a9392910923365e7a03347ba954211aba0ec1d6aabc6351c49d091424be77",
+        "position_ids": "07fda769ddb637c850b9fd3f6bd8431d66a0905369b7112a418f9aa4f051b0bd",
+        "segment_ids": "56cc6efecad3920bee080571845aedd3aafc3f7c0310d7ce87a33a35d38f63b1"
+      },
+      "sequence_indices": [
+        139,
+        663,
+        490,
+        172
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 35840,
+          "global_token_start": 35584,
+          "sequence_index": 139
+        },
+        {
+          "global_token_end_exclusive": 169984,
+          "global_token_start": 169728,
+          "sequence_index": 663
+        },
+        {
+          "global_token_end_exclusive": 125696,
+          "global_token_start": 125440,
+          "sequence_index": 490
+        },
+        {
+          "global_token_end_exclusive": 44288,
+          "global_token_start": 44032,
+          "sequence_index": 172
+        }
+      ]
+    },
+    {
+      "batch_index": 127,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "5edf33fae341837cd33cfb9f817bb72401cc2f4541b27520ab0c09030050c198",
+        "loss_mask": "85e2f3a3a528792d38e113dac9d45d840ddd26c6d9b796b96cee9006154ef824",
+        "position_ids": "28b684bfb4e411ef729b6bd39e9e5210ebc4fce57d88d77179d66b53f3c1271c",
+        "segment_ids": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+      },
+      "reconstruction_proof_hash": "sha256:9e9f2a59455c7ab087703d83fac308f694f1ceb0f52e184e36665735cd6a9fe2",
+      "replay_payload_hashes": {
+        "input_ids": "5edf33fae341837cd33cfb9f817bb72401cc2f4541b27520ab0c09030050c198",
+        "loss_mask": "85e2f3a3a528792d38e113dac9d45d840ddd26c6d9b796b96cee9006154ef824",
+        "position_ids": "28b684bfb4e411ef729b6bd39e9e5210ebc4fce57d88d77179d66b53f3c1271c",
+        "segment_ids": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+      },
+      "sequence_indices": [
+        145,
+        180,
+        358,
+        508
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 37376,
+          "global_token_start": 37120,
+          "sequence_index": 145
+        },
+        {
+          "global_token_end_exclusive": 46336,
+          "global_token_start": 46080,
+          "sequence_index": 180
+        },
+        {
+          "global_token_end_exclusive": 91904,
+          "global_token_start": 91648,
+          "sequence_index": 358
+        },
+        {
+          "global_token_end_exclusive": 130304,
+          "global_token_start": 130048,
+          "sequence_index": 508
+        }
+      ]
+    },
+    {
+      "batch_index": 128,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "82c095b271bac212b0d12f410c306796eb5ef409fef5b1d9dca074d0bf033544",
+        "loss_mask": "098662b024069404978e4d6dfe0f1add0113d067cc2dfda2119d652e38fa5748",
+        "position_ids": "72dd53932616a8f03608a031883a4625458a22c06310360855be06356cc61aa2",
+        "segment_ids": "2d7c7c224d91f90cea6c0f2a3938952882efb8e1f21d205419e88a4d4083d283"
+      },
+      "reconstruction_proof_hash": "sha256:64765d224554922b010912173faff65fc6e7fa0559183a720a71cf46a23d67c2",
+      "replay_payload_hashes": {
+        "input_ids": "82c095b271bac212b0d12f410c306796eb5ef409fef5b1d9dca074d0bf033544",
+        "loss_mask": "098662b024069404978e4d6dfe0f1add0113d067cc2dfda2119d652e38fa5748",
+        "position_ids": "72dd53932616a8f03608a031883a4625458a22c06310360855be06356cc61aa2",
+        "segment_ids": "2d7c7c224d91f90cea6c0f2a3938952882efb8e1f21d205419e88a4d4083d283"
+      },
+      "sequence_indices": [
+        394,
+        451,
+        199,
+        238
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 101120,
+          "global_token_start": 100864,
+          "sequence_index": 394
+        },
+        {
+          "global_token_end_exclusive": 115712,
+          "global_token_start": 115456,
+          "sequence_index": 451
+        },
+        {
+          "global_token_end_exclusive": 51200,
+          "global_token_start": 50944,
+          "sequence_index": 199
+        },
+        {
+          "global_token_end_exclusive": 61184,
+          "global_token_start": 60928,
+          "sequence_index": 238
+        }
+      ]
+    },
+    {
+      "batch_index": 129,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "2d341358cb9df0f32f983780e2aea4189f130f148c0382ade857ffb300910cf8",
+        "loss_mask": "260ada548d5f053a135a8298bc4fd25d1ca0003fe0790287245dc2278c77d032",
+        "position_ids": "f891abe0b7ced1d35ae1f037ba07ab897e88db0210409d9ed3d60363fba596c6",
+        "segment_ids": "0d2bff733370171ee343b992d975bc0a0e68cb7b0a924007e4a3d4f502fb9b74"
+      },
+      "reconstruction_proof_hash": "sha256:8be1331e79ac19301b63b6482da3b388602021eef95cd403b0f4b3e15287e466",
+      "replay_payload_hashes": {
+        "input_ids": "2d341358cb9df0f32f983780e2aea4189f130f148c0382ade857ffb300910cf8",
+        "loss_mask": "260ada548d5f053a135a8298bc4fd25d1ca0003fe0790287245dc2278c77d032",
+        "position_ids": "f891abe0b7ced1d35ae1f037ba07ab897e88db0210409d9ed3d60363fba596c6",
+        "segment_ids": "0d2bff733370171ee343b992d975bc0a0e68cb7b0a924007e4a3d4f502fb9b74"
+      },
+      "sequence_indices": [
+        317,
+        550,
+        212,
+        530
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 81408,
+          "global_token_start": 81152,
+          "sequence_index": 317
+        },
+        {
+          "global_token_end_exclusive": 141056,
+          "global_token_start": 140800,
+          "sequence_index": 550
+        },
+        {
+          "global_token_end_exclusive": 54528,
+          "global_token_start": 54272,
+          "sequence_index": 212
+        },
+        {
+          "global_token_end_exclusive": 135936,
+          "global_token_start": 135680,
+          "sequence_index": 530
+        }
+      ]
+    },
+    {
+      "batch_index": 130,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "5c4013795d23f129666257bca84abd4e91aa9c66b4312c808fb4afcd0fd27b4a",
+        "loss_mask": "21e6011f6c1dba8c5a6725a7e11f4ef0ad6eda3d8001da2ddc369de049167055",
+        "position_ids": "3617bd4eb0f8c21f62901de66c02df8d2710563506292a9157c6cd697db570f4",
+        "segment_ids": "7b7e91b6b40f2dbb4ffb6d76b3d04622ccedebf4b934351d5b6cad294867f406"
+      },
+      "reconstruction_proof_hash": "sha256:058efdde52f2654d4717bf875d38ac69934a75d8f82d705215ccccbb963ebdeb",
+      "replay_payload_hashes": {
+        "input_ids": "5c4013795d23f129666257bca84abd4e91aa9c66b4312c808fb4afcd0fd27b4a",
+        "loss_mask": "21e6011f6c1dba8c5a6725a7e11f4ef0ad6eda3d8001da2ddc369de049167055",
+        "position_ids": "3617bd4eb0f8c21f62901de66c02df8d2710563506292a9157c6cd697db570f4",
+        "segment_ids": "7b7e91b6b40f2dbb4ffb6d76b3d04622ccedebf4b934351d5b6cad294867f406"
+      },
+      "sequence_indices": [
+        434,
+        596,
+        515,
+        608
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 111360,
+          "global_token_start": 111104,
+          "sequence_index": 434
+        },
+        {
+          "global_token_end_exclusive": 152832,
+          "global_token_start": 152576,
+          "sequence_index": 596
+        },
+        {
+          "global_token_end_exclusive": 132096,
+          "global_token_start": 131840,
+          "sequence_index": 515
+        },
+        {
+          "global_token_end_exclusive": 155904,
+          "global_token_start": 155648,
+          "sequence_index": 608
+        }
+      ]
+    },
+    {
+      "batch_index": 131,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "8f6423d8dfb79dc3201a95c944a87b6a8dbe7ffa1d0c9bf9f7ba767f0ce7703c",
+        "loss_mask": "72809696019940d350935e3ab7726be3f994b71df91f1be6fffae3efac42ba65",
+        "position_ids": "a9d384fac9f3934fce469e2f43042b236bf4a7be8598729fe360f54480239f8c",
+        "segment_ids": "52c7674854eca437f5e9799887cc2a66a9f4e4d00faa5cb8d50105f5859002ff"
+      },
+      "reconstruction_proof_hash": "sha256:64b4d528beab8735b2b0e0f3833faaed5927b2d6096ae0d6148c10cab9575020",
+      "replay_payload_hashes": {
+        "input_ids": "8f6423d8dfb79dc3201a95c944a87b6a8dbe7ffa1d0c9bf9f7ba767f0ce7703c",
+        "loss_mask": "72809696019940d350935e3ab7726be3f994b71df91f1be6fffae3efac42ba65",
+        "position_ids": "a9d384fac9f3934fce469e2f43042b236bf4a7be8598729fe360f54480239f8c",
+        "segment_ids": "52c7674854eca437f5e9799887cc2a66a9f4e4d00faa5cb8d50105f5859002ff"
+      },
+      "sequence_indices": [
+        267,
+        243,
+        640,
+        152
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 68608,
+          "global_token_start": 68352,
+          "sequence_index": 267
+        },
+        {
+          "global_token_end_exclusive": 62464,
+          "global_token_start": 62208,
+          "sequence_index": 243
+        },
+        {
+          "global_token_end_exclusive": 164096,
+          "global_token_start": 163840,
+          "sequence_index": 640
+        },
+        {
+          "global_token_end_exclusive": 39168,
+          "global_token_start": 38912,
+          "sequence_index": 152
+        }
+      ]
+    },
+    {
+      "batch_index": 132,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "35e25d199b41b807bdb6390fb679a122cd16697a8ff579d9b4eb5b4ec6cad4b0",
+        "loss_mask": "69374eb24edf4ce8eb18632a179423e7c21438a30c8e63d6e2349add90432954",
+        "position_ids": "28b684bfb4e411ef729b6bd39e9e5210ebc4fce57d88d77179d66b53f3c1271c",
+        "segment_ids": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+      },
+      "reconstruction_proof_hash": "sha256:d92df2f463e3de335c9d57afbc41d1272406244a4dc36d17966ce94b0c8ee4af",
+      "replay_payload_hashes": {
+        "input_ids": "35e25d199b41b807bdb6390fb679a122cd16697a8ff579d9b4eb5b4ec6cad4b0",
+        "loss_mask": "69374eb24edf4ce8eb18632a179423e7c21438a30c8e63d6e2349add90432954",
+        "position_ids": "28b684bfb4e411ef729b6bd39e9e5210ebc4fce57d88d77179d66b53f3c1271c",
+        "segment_ids": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+      },
+      "sequence_indices": [
+        581,
+        423,
+        489,
+        443
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 148992,
+          "global_token_start": 148736,
+          "sequence_index": 581
+        },
+        {
+          "global_token_end_exclusive": 108544,
+          "global_token_start": 108288,
+          "sequence_index": 423
+        },
+        {
+          "global_token_end_exclusive": 125440,
+          "global_token_start": 125184,
+          "sequence_index": 489
+        },
+        {
+          "global_token_end_exclusive": 113664,
+          "global_token_start": 113408,
+          "sequence_index": 443
+        }
+      ]
+    },
+    {
+      "batch_index": 133,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "26c4c4a48910385e856423498adec9ae55879105ef2b86d18689537843dc266a",
+        "loss_mask": "cb7352f1cafff79cd4e4d1f42d65114ac535c1e266749ba0eba4553d9741f6f8",
+        "position_ids": "e4059976ba4bba30a3cb803ed063c929ff40b3413c76ffe53e2e9dac2c45841f",
+        "segment_ids": "ccd9168d04bd3f258c9393308a31790b6831dc5c3599719eb30ccd2ec3624aee"
+      },
+      "reconstruction_proof_hash": "sha256:7bff2e47050d65a57fc1204909c3204d197591c642c5effea1c8b24c485cb456",
+      "replay_payload_hashes": {
+        "input_ids": "26c4c4a48910385e856423498adec9ae55879105ef2b86d18689537843dc266a",
+        "loss_mask": "cb7352f1cafff79cd4e4d1f42d65114ac535c1e266749ba0eba4553d9741f6f8",
+        "position_ids": "e4059976ba4bba30a3cb803ed063c929ff40b3413c76ffe53e2e9dac2c45841f",
+        "segment_ids": "ccd9168d04bd3f258c9393308a31790b6831dc5c3599719eb30ccd2ec3624aee"
+      },
+      "sequence_indices": [
+        136,
+        337,
+        164,
+        287
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 35072,
+          "global_token_start": 34816,
+          "sequence_index": 136
+        },
+        {
+          "global_token_end_exclusive": 86528,
+          "global_token_start": 86272,
+          "sequence_index": 337
+        },
+        {
+          "global_token_end_exclusive": 42240,
+          "global_token_start": 41984,
+          "sequence_index": 164
+        },
+        {
+          "global_token_end_exclusive": 73728,
+          "global_token_start": 73472,
+          "sequence_index": 287
+        }
+      ]
+    },
+    {
+      "batch_index": 134,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "ad006cc8a51463c6cd8b172a50899db60a9c788563837f66f109630b57415c43",
+        "loss_mask": "2e3bf5f9916f45d4806b24c4925e00c0300100f9eb6f7c2b0240aa2caeb5674b",
+        "position_ids": "6a0496c128beb6db79b533d3450669779eda2b8711fe90c17411c6584225d427",
+        "segment_ids": "cc610ec18782f6d28d94f5edbf99231159e305887cf0ff6daf246931a09f1597"
+      },
+      "reconstruction_proof_hash": "sha256:476c4d86b835ceda946b0941cb0fa1d338f9ea5b8677e26cdb10f41dd0ea6242",
+      "replay_payload_hashes": {
+        "input_ids": "ad006cc8a51463c6cd8b172a50899db60a9c788563837f66f109630b57415c43",
+        "loss_mask": "2e3bf5f9916f45d4806b24c4925e00c0300100f9eb6f7c2b0240aa2caeb5674b",
+        "position_ids": "6a0496c128beb6db79b533d3450669779eda2b8711fe90c17411c6584225d427",
+        "segment_ids": "cc610ec18782f6d28d94f5edbf99231159e305887cf0ff6daf246931a09f1597"
+      },
+      "sequence_indices": [
+        646,
+        685,
+        460,
+        498
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 165632,
+          "global_token_start": 165376,
+          "sequence_index": 646
+        },
+        {
+          "global_token_end_exclusive": 175616,
+          "global_token_start": 175360,
+          "sequence_index": 685
+        },
+        {
+          "global_token_end_exclusive": 118016,
+          "global_token_start": 117760,
+          "sequence_index": 460
+        },
+        {
+          "global_token_end_exclusive": 127744,
+          "global_token_start": 127488,
+          "sequence_index": 498
+        }
+      ]
+    },
+    {
+      "batch_index": 135,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "75f01ad75b0aa2116d81238ca12e9e2db9f7c87cd188b72c692dee8ca46cb4db",
+        "loss_mask": "6a70e9e7ad26718d6009fe4372bcb34cd6d77dff1658e782e5e29cf4fa7b471c",
+        "position_ids": "e614f95d4425dd0b128f0d7e906e1dba0a14c35aeca04d039f26bb272b76636f",
+        "segment_ids": "912e2f8b62dc51b4cd87295e7d714f6440632cf83689f83112dbe1c91b987b7f"
+      },
+      "reconstruction_proof_hash": "sha256:c94d1e69d2a7757219551b285e6ebfbef5b086b3ee9d56426c991d4eb5a327c5",
+      "replay_payload_hashes": {
+        "input_ids": "75f01ad75b0aa2116d81238ca12e9e2db9f7c87cd188b72c692dee8ca46cb4db",
+        "loss_mask": "6a70e9e7ad26718d6009fe4372bcb34cd6d77dff1658e782e5e29cf4fa7b471c",
+        "position_ids": "e614f95d4425dd0b128f0d7e906e1dba0a14c35aeca04d039f26bb272b76636f",
+        "segment_ids": "912e2f8b62dc51b4cd87295e7d714f6440632cf83689f83112dbe1c91b987b7f"
+      },
+      "sequence_indices": [
+        246,
+        373,
+        404,
+        103
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 63232,
+          "global_token_start": 62976,
+          "sequence_index": 246
+        },
+        {
+          "global_token_end_exclusive": 95744,
+          "global_token_start": 95488,
+          "sequence_index": 373
+        },
+        {
+          "global_token_end_exclusive": 103680,
+          "global_token_start": 103424,
+          "sequence_index": 404
+        },
+        {
+          "global_token_end_exclusive": 26624,
+          "global_token_start": 26368,
+          "sequence_index": 103
+        }
+      ]
+    },
+    {
+      "batch_index": 136,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "5fb558392e412fb4eaa73820aabbbc96e62ab3bd9cb4077915b67cfc18d6ff6e",
+        "loss_mask": "85e2f3a3a528792d38e113dac9d45d840ddd26c6d9b796b96cee9006154ef824",
+        "position_ids": "28b684bfb4e411ef729b6bd39e9e5210ebc4fce57d88d77179d66b53f3c1271c",
+        "segment_ids": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+      },
+      "reconstruction_proof_hash": "sha256:097c4adcf7054cde6a08da75c516136addfa4edfd8ebe1b463040b15ca4c879e",
+      "replay_payload_hashes": {
+        "input_ids": "5fb558392e412fb4eaa73820aabbbc96e62ab3bd9cb4077915b67cfc18d6ff6e",
+        "loss_mask": "85e2f3a3a528792d38e113dac9d45d840ddd26c6d9b796b96cee9006154ef824",
+        "position_ids": "28b684bfb4e411ef729b6bd39e9e5210ebc4fce57d88d77179d66b53f3c1271c",
+        "segment_ids": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+      },
+      "sequence_indices": [
+        409,
+        156,
+        397,
+        119
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 104960,
+          "global_token_start": 104704,
+          "sequence_index": 409
+        },
+        {
+          "global_token_end_exclusive": 40192,
+          "global_token_start": 39936,
+          "sequence_index": 156
+        },
+        {
+          "global_token_end_exclusive": 101888,
+          "global_token_start": 101632,
+          "sequence_index": 397
+        },
+        {
+          "global_token_end_exclusive": 30720,
+          "global_token_start": 30464,
+          "sequence_index": 119
+        }
+      ]
+    },
+    {
+      "batch_index": 137,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "81ed23c2996041440012d399a9f045abba127045ca429c4a3916578a9ff6919e",
+        "loss_mask": "499e9a746e3f09999f9ac36b1a9d6897cc83a35794e2ac59f957d6007c384ff3",
+        "position_ids": "5bc77daa27798b5330ada5b36cff9b8082440e45bc7f8e400052ccc221c67ae6",
+        "segment_ids": "d50e717735c9e9264368f03004142e3cf51a4f042f5f116f0882a28cde168ad0"
+      },
+      "reconstruction_proof_hash": "sha256:f8135b020ced302d9de214528cbabd7a0ddcbee41b2f36357dd538aebdfa71a7",
+      "replay_payload_hashes": {
+        "input_ids": "81ed23c2996041440012d399a9f045abba127045ca429c4a3916578a9ff6919e",
+        "loss_mask": "499e9a746e3f09999f9ac36b1a9d6897cc83a35794e2ac59f957d6007c384ff3",
+        "position_ids": "5bc77daa27798b5330ada5b36cff9b8082440e45bc7f8e400052ccc221c67ae6",
+        "segment_ids": "d50e717735c9e9264368f03004142e3cf51a4f042f5f116f0882a28cde168ad0"
+      },
+      "sequence_indices": [
+        665,
+        658,
+        626,
+        360
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 170496,
+          "global_token_start": 170240,
+          "sequence_index": 665
+        },
+        {
+          "global_token_end_exclusive": 168704,
+          "global_token_start": 168448,
+          "sequence_index": 658
+        },
+        {
+          "global_token_end_exclusive": 160512,
+          "global_token_start": 160256,
+          "sequence_index": 626
+        },
+        {
+          "global_token_end_exclusive": 92416,
+          "global_token_start": 92160,
+          "sequence_index": 360
+        }
+      ]
+    },
+    {
+      "batch_index": 138,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "567d8fda32b48aa75382339481b4ab0b2d8ea495e6b5d65238d49812e1f42ea5",
+        "loss_mask": "d8334c75ee74fb464812d55ebcdc41afa9360de16d0108f768390a7afb2513d7",
+        "position_ids": "23e226503d0c80c0d5cadf2db74d76c494ee996b61063afdf848b98eed3d9d83",
+        "segment_ids": "eb13a8b0fea2e4227a82575374881a4dbe14397566f3dc6b1fbea51170f6462a"
+      },
+      "reconstruction_proof_hash": "sha256:cd006ae2b8d9c38c37e16e49bee557b8c270efff051a1667a6fff2d2430af94d",
+      "replay_payload_hashes": {
+        "input_ids": "567d8fda32b48aa75382339481b4ab0b2d8ea495e6b5d65238d49812e1f42ea5",
+        "loss_mask": "d8334c75ee74fb464812d55ebcdc41afa9360de16d0108f768390a7afb2513d7",
+        "position_ids": "23e226503d0c80c0d5cadf2db74d76c494ee996b61063afdf848b98eed3d9d83",
+        "segment_ids": "eb13a8b0fea2e4227a82575374881a4dbe14397566f3dc6b1fbea51170f6462a"
+      },
+      "sequence_indices": [
+        341,
+        661,
+        531,
+        425
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 87552,
+          "global_token_start": 87296,
+          "sequence_index": 341
+        },
+        {
+          "global_token_end_exclusive": 169472,
+          "global_token_start": 169216,
+          "sequence_index": 661
+        },
+        {
+          "global_token_end_exclusive": 136192,
+          "global_token_start": 135936,
+          "sequence_index": 531
+        },
+        {
+          "global_token_end_exclusive": 109056,
+          "global_token_start": 108800,
+          "sequence_index": 425
+        }
+      ]
+    },
+    {
+      "batch_index": 139,
+      "comparisons": {
+        "batch_id_matched": true,
+        "payload_hashes_matched": true,
+        "proof_hashes_matched": true,
+        "sequence_ids_matched": true,
+        "token_spans_matched": true
+      },
+      "original_payload_hashes": {
+        "input_ids": "c95bc8672f4d4e241875abbbdddd292ab28c249af9b9e77c46f8ec18d5cee972",
+        "loss_mask": "c0b510a21380692557cdb84209fb3377e0314287b33345370ca408c02aafc8c4",
+        "position_ids": "4ad590af50aec05caa48b3a321bbb5bf228359f587ec07bc15915cb0ddc213e1",
+        "segment_ids": "7e3eeb2015676dc7368ec2261f17326fc02eebbc014ffd47cfb2f74cb166a6ec"
+      },
+      "reconstruction_proof_hash": "sha256:77356921d14b82577b62ea54f1bf339888aa8325f57b768b5234b70d4fc86c6c",
+      "replay_payload_hashes": {
+        "input_ids": "c95bc8672f4d4e241875abbbdddd292ab28c249af9b9e77c46f8ec18d5cee972",
+        "loss_mask": "c0b510a21380692557cdb84209fb3377e0314287b33345370ca408c02aafc8c4",
+        "position_ids": "4ad590af50aec05caa48b3a321bbb5bf228359f587ec07bc15915cb0ddc213e1",
+        "segment_ids": "7e3eeb2015676dc7368ec2261f17326fc02eebbc014ffd47cfb2f74cb166a6ec"
+      },
+      "sequence_indices": [
+        325,
+        207,
+        692,
+        165
+      ],
+      "status": "PASS",
+      "token_spans": [
+        {
+          "global_token_end_exclusive": 83456,
+          "global_token_start": 83200,
+          "sequence_index": 325
+        },
+        {
+          "global_token_end_exclusive": 53248,
+          "global_token_start": 52992,
+          "sequence_index": 207
+        },
+        {
+          "global_token_end_exclusive": 177408,
+          "global_token_start": 177152,
+          "sequence_index": 692
+        },
+        {
+          "global_token_end_exclusive": 42496,
+          "global_token_start": 42240,
+          "sequence_index": 165
+        }
+      ]
+    }
+  ],
+  "interval_end_batch_index_exclusive": 140,
+  "interval_report_hash": "sha256:9c56a8d55862c2034f23267b5d9727e5c6599de6330ca728be3143d01b679a5d",
+  "interval_start_batch_index": 112,
+  "schema_version": 1,
+  "status": "PASS"
+}

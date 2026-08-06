@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "policy_id": "remaining-lanes-cleaning-v1",
+  "status": "experimental_until_lane_review",
+  "principles": [
+    "preserve numeric supervision and technical identifiers",
+    "mask emails and secrets in structured numeric sources",
+    "use explicit-context phone masking only for public reference text",
+    "split oversized parents at paragraph or line boundaries instead of slicing"
+  ],
+  "sources": [
+    {"source_id": "wikipedia_long_en", "pii_mode": "public_reference", "chunking": "boundary_v2"},
+    {"source_id": "openwebmath_science_math", "pii_mode": "structured_numeric", "chunking": "boundary_v2"},
+    {"source_id": "codeparrot_permissive_python", "pii_mode": "structured_numeric", "chunking": "boundary_v2"},
+    {"source_id": "gsm8k_reasoning_train", "pii_mode": "structured_numeric", "chunking": "boundary_v2"},
+    {"source_id": "sangraha_verified_hindi", "pii_mode": "public_reference", "chunking": "boundary_v2"},
+    {"source_id": "sangraha_unverified_hindi", "pii_mode": "public_reference", "chunking": "boundary_v2"},
+    {"source_id": "sangraha_synthetic_hindi", "pii_mode": "structured_numeric", "chunking": "boundary_v2"},
+    {"source_id": "assignment4_samanantar_translated", "pii_mode": "baseline_locked", "chunking": "baseline_locked"},
+    {"source_id": "hermes_function_calling", "pii_mode": "structured_numeric", "chunking": "boundary_v2"},
+    {"source_id": "hermes_json_agentic", "pii_mode": "structured_numeric", "chunking": "boundary_v2"},
+    {"source_id": "hermes_glaive_function_calling", "pii_mode": "structured_numeric", "chunking": "boundary_v2"}
+  ]
+}

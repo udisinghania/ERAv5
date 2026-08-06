@@ -1,0 +1,105 @@
+{
+  "backend": {
+    "allow_tf32": false,
+    "cuda_available": false,
+    "cuda_runtime": null,
+    "deterministic_algorithms": true,
+    "device": "CPU",
+    "device_name": "CPU",
+    "device_type": "cpu",
+    "fallback_used": false,
+    "precision": "float32",
+    "request": "cpu",
+    "torch_cuda_runtime": null,
+    "torch_version": "2.5.1+cpu"
+  },
+  "batch_plan_hash": "sha256:158ae9939c5502b256449cce5aaff4c026775a980c7b8241ede10cb11faab749",
+  "batch_report_sha256": "28191c56f99160fc1dc5849b7d9e5eeca98cd83c0ac6a092e7e7617dd27a6d51",
+  "component_hashes": {
+    "consumption_ledger": "ff4a5093e10291a6f08bf3781cc957b8143940535f9485f6983dd0223bd7c2df",
+    "final_checkpoint": "d721c30b555717f41b74cebb18a70aa7d55272d83ac81c10d89f84fbcb35dffe",
+    "learning_ledger": "bc664c9fbf7791bcdb7eab67dafa102e7fea6aca42b59e3a0c4de6bb4a5c3f6c",
+    "validation_probe": "140cbea76f8000dc184da7c49643f2ac48d182c172132b95d92d6309ea6e9795"
+  },
+  "consumption_index": {
+    "canonical_uncompressed_sha256": "2468cbab6910a874d6357cf08a9044466a8c7214c1faf28d12d2ec6f1c538148",
+    "compressed_bytes": 91837,
+    "compressed_sha256": "ff4a5093e10291a6f08bf3781cc957b8143940535f9485f6983dd0223bd7c2df",
+    "records": 302,
+    "uncompressed_bytes": 386104
+  },
+  "final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+  "final_validation": {
+    "cross_entropy_nats": 5.78570556640625,
+    "loss_bearing_tokens": 889,
+    "perplexity": 325.61169975987104
+  },
+  "initial_parameter_hash": "sha256:ad2a20c43670bd17d2d846ead05cbb8e6d77983640ca6907d031379c818cbec1",
+  "initial_validation": {
+    "cross_entropy_nats": 9.048855781555176,
+    "loss_bearing_tokens": 889,
+    "perplexity": 8508.796430614244
+  },
+  "learning_index": {
+    "canonical_uncompressed_sha256": "f6601fc0db61eb374824980632cf71e1e2625e47f2b6b822d24ba1e05fc72fee",
+    "compressed_bytes": 72046,
+    "compressed_sha256": "bc664c9fbf7791bcdb7eab67dafa102e7fea6aca42b59e3a0c4de6bb4a5c3f6c",
+    "records": 302,
+    "uncompressed_bytes": 375966
+  },
+  "ledger_tails": {
+    "consumption": "sha256:9114e3ecccd126806aa1a0e7fbefed83b983ef745d6b585fa73be21119ae6ccc",
+    "learning": "sha256:8e9b56c28448aef1c9f53296fa6307c29d25e642a6048e19f62bbf582857fdc7"
+  },
+  "loss_bearing_tokens": 262144,
+  "loss_tracking_granularity": "microbatch_and_sequence",
+  "microbatches": 302,
+  "model_parameters": 1509888,
+  "optimizer_updates": 77,
+  "packing_hash": "sha256:2baf444b2fccdec3702af6e3c317ca9e2e7110c9781399a5261c4b87d1fa57e7",
+  "paths": {
+    "consumption_ledger": "artifacts/training_v1/consumption_ledger.jsonl.gz",
+    "final_checkpoint": "artifacts/training_v1/final_checkpoint.pt",
+    "learning_ledger": "artifacts/training_v1/learning_ledger.jsonl.gz",
+    "performance": "artifacts/training_v1/performance.json",
+    "validation_probe": "artifacts/training_v1/validation_probe.json"
+  },
+  "peak_accelerator_memory_bytes": 0,
+  "peak_gpu_memory_bytes": 0,
+  "performance": {
+    "accelerator_synchronized_at_boundaries": true,
+    "batch_plan_hash": "sha256:158ae9939c5502b256449cce5aaff4c026775a980c7b8241ede10cb11faab749",
+    "clock": "time.perf_counter_ns",
+    "cuda_synchronized_at_boundaries": false,
+    "device": "CPU",
+    "device_type": "cpu",
+    "elapsed_nanoseconds": 16250944300,
+    "elapsed_seconds": 16.2509443,
+    "loss_bearing_tokens": 262144,
+    "microbatches": 302,
+    "nonpadding_tokens": 299492,
+    "nonpadding_tokens_per_second": 18429.20598774066,
+    "optimizer_updates": 77,
+    "packing_utilization": 0.9732867096505824,
+    "peak_accelerator_memory_bytes": 0,
+    "peak_gpu_memory_bytes": 0,
+    "physical_tokens": 307712,
+    "physical_tokens_per_second": 18935.022748185776,
+    "run_id": "era6-tiny-transformer-v1",
+    "schema_version": 1,
+    "status": "PASS",
+    "timing_scope": "synchronized_cpu_training_loop_including_batch_load_forward_backward_optimizer_and_ledger_construction_excluding_validation_and_artifact_writes",
+    "useful_loss_bearing_tokens_per_second": 16131.001076657434,
+    "useful_loss_fraction": 0.8519134775374376
+  },
+  "performance_report_sha256": "888f952de7ade0eeb14685458fc1232e0ff7025feb1b9b57030a4b7bde3137d0",
+  "run_id": "era6-tiny-transformer-v1",
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be",
+  "training_config_sha256": "afdeb3883fb2e21b1ee242286ca80b21e1350615538129cdf9ef06bd16f82447",
+  "training_cross_entropy_nats": 6.1801037922869,
+  "training_hash": "sha256:bbfb6159ec339375c81fc90a65048bc3da9438fb64ea0dfc6fdbadb8da6a4991",
+  "validation_loss_change": -3.263150215148926,
+  "validation_probe_hash": "sha256:07f8187db2fe02ece10a46acb892e8b6ca1859deff87666df64b8ae186aa07a1"
+}

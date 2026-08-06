@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "capability_lane": "code",
+    "cleaning_pipeline_hash": "sha256:fb68af7ce2dba96fce832c8abd73c7ab2b3a696d5adead2d653462d9ea8957f3",
+    "content_hash": "sha256:519d1848e7ea1bc17e379d1d690b304fb8a5a854f31582169cfcb6649a488cf3",
+    "dedup_status": "passed",
+    "eval_overlap_status": "clear",
+    "extra": {
+      "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+      "index_canonical_uncompressed_sha256": "dd8878f77f2c1400ec3fcd3cfc8d684c3f0ceff9fdb1ae6f25ad4e652a4171d1",
+      "index_path": "data/tokenized_v1/code/train/index.jsonl.gz",
+      "index_sha256": "3c56accd266b7d122c9ca3d369a0ce7380da4d68fc2a1b451ea88ebe971e5f80",
+      "input_artifact": "data/frozen_corpus_v1/code/train.jsonl.gz",
+      "input_compressed_sha256": "67a656d65b6aa3a256b46a944059ce93328aa237d35c6d44aaa260910fe9f8c1",
+      "loss_path": "data/tokenized_v1/code/train/loss.uint8.bin",
+      "loss_policy_records": {
+        "full_text_causal": 3592
+      },
+      "tokens_path": "data/tokenized_v1/code/train/tokens.uint16.bin",
+      "tokens_sha256": "f8a88ad9b2075b9b53424719cfc833f2f9aba1fd2a361e483baaeb111110efac"
+    },
+    "language_distribution": {
+      "python": 3592
+    },
+    "loss_bearing_token_count": 10804453,
+    "loss_mask_hash": "sha256:2750a0330e068eb09e2bcddef5d71cb96e14b7f93bbc97373291a8b7d2e7adbb",
+    "parent_manifest_ids": [],
+    "permission": "train",
+    "pii_screen_status": "passed_human_reviewed",
+    "position_policy": "document_reset_causal",
+    "record_count": 3592,
+    "shard_id": "code-train-v1",
+    "source_lock_hashes": [
+      "sha256:375b72c3a543d876718b92c455658c681f9bc3b6c5185fc662395f1b5ed4ec93"
+    ],
+    "token_count": 10808045,
+    "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be"
+  },
+  "manifest_hash": "sha256:d6fdc693d6a23bdcebdb314c2a9af9fbb5f6a280fa26d19d73c39873866afbb6",
+  "schema_version": 1
+}

@@ -1,0 +1,91 @@
+{
+  "admitted_signal_summary": {
+    "alpha_fraction": {
+      "max": 0.8641114982578397,
+      "median": 0.7861018387237226,
+      "min": 0.40860215053763443,
+      "p05": 0.7280692599142893,
+      "p95": 0.8190414638240724
+    },
+    "character_entropy_bits": {
+      "max": 5.4543509529212795,
+      "median": 4.663988580880708,
+      "min": 4.240599828204116,
+      "p05": 4.43334614699567,
+      "p95": 4.915402717306113
+    },
+    "characters": {
+      "max": 8000.0,
+      "median": 1887.5,
+      "min": 400.0,
+      "p05": 480.55,
+      "p95": 8000.0
+    },
+    "compression_ratio": {
+      "max": 0.6912225705329154,
+      "median": 0.4883206226721303,
+      "min": 0.13892604624498375,
+      "p05": 0.40005861806182286,
+      "p95": 0.6018892871834047
+    },
+    "duplicate_line_fraction": {
+      "max": 0.6272040302267002,
+      "median": 0.0,
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 0.058823529411764705
+    },
+    "list_line_fraction": {
+      "max": 0.5238095238095238,
+      "median": 0.0,
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 0.0
+    },
+    "paragraphs": {
+      "max": 96.0,
+      "median": 10.0,
+      "min": 2.0,
+      "p05": 5.0,
+      "p95": 26.0
+    },
+    "repeated_trigram_fraction": {
+      "max": 0.6161137440758293,
+      "median": 0.03915047084752554,
+      "min": 0.0,
+      "p05": 0.0,
+      "p95": 0.13713037177919662
+    },
+    "words": {
+      "max": 1557.0,
+      "median": 303.5,
+      "min": 49.0,
+      "p05": 74.0,
+      "p95": 1330.0
+    }
+  },
+  "baseline_tag": "corpus-v0",
+  "counts": {
+    "fail_current_cleaner": 768,
+    "pass_current_cleaner": 4032,
+    "pii_redacted": 80,
+    "raw_candidates": 4800,
+    "selected_snapshot": 4000,
+    "truncated": 443,
+    "truncated_mid_boundary": 434
+  },
+  "flag_counts": {
+    "character_truncated": 443,
+    "disambiguation_page": 179,
+    "duplicate_lines": 36,
+    "list_dominant": 1,
+    "low_language_content": 2,
+    "pii_pattern_redacted": 80,
+    "repetitive_language": 10,
+    "short_document": 768,
+    "truncated_mid_boundary": 434
+  },
+  "policy_status": "diagnostic_only",
+  "schema_version": 1,
+  "source_id": "wikipedia_general_en"
+}

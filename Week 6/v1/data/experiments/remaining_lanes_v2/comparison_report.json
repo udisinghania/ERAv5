@@ -1,0 +1,497 @@
+{
+  "inputs": {
+    "policy_sha256": "e6bd62a0b6110d136f5f6bdd6da94795d65f948e558cc6b3789c37c90a8a2518"
+  },
+  "policy": {
+    "human_review_actions": [
+      {
+        "action": "mask_explicit_bank_accounts",
+        "parent_upstream_id": "5d8428585046edef47a2abb8630431b0e3b23fb3",
+        "reason": "named private fraud victim with exposed bank account numbers",
+        "source_id": "sangraha_verified_hindi"
+      },
+      {
+        "action": "retain_explicit_phone_mask",
+        "parent_upstream_id": "607393391270fd15d3e1d1d6a252e9fb756f7bb42533639021f0788122718463",
+        "reason": "repeated WhatsApp business contact is a true phone number",
+        "source_id": "sangraha_unverified_hindi"
+      },
+      {
+        "action": "exclude_parent",
+        "parent_upstream_id": "181fc620ce792c0efc0d69c7cad402c6c6716852c120c9e29b16b8046177c9d2",
+        "reason": "garbled duplicated numeric source text",
+        "source_id": "sangraha_synthetic_hindi"
+      },
+      {
+        "action": "exclude_parent_pending_source_check",
+        "parent_upstream_id": "9951ed19a17f07076709a9fa53a23c36c4f373cd1dedf440c95f9f7cc7fa8c92",
+        "reason": "anomalous OCR-merged verse numbering",
+        "source_id": "sangraha_verified_hindi"
+      },
+      {
+        "action": "replace_false_phone_marker_with_250000",
+        "parent_upstream_id": "89530342c4770bf63ea47f65386b788c2e91b77eebccbc93745d4107903a0eb2",
+        "reason": "the paired English state provides the exact public-health statistic",
+        "source_id": "assignment4_samanantar_translated"
+      }
+    ],
+    "policy_id": "remaining-lanes-cleaning-v2",
+    "principles": [
+      "preserve numeric supervision and technical identifiers",
+      "do not blanket-restore numbers that occur in explicit phone context",
+      "mask explicit bank-account numbers in public-reference text",
+      "quarantine human-reviewed corrupt or unresolved source parents",
+      "preserve reviewed structural boundaries while lane-specific validators remain explicit"
+    ],
+    "schema_version": 2,
+    "sources": [
+      {
+        "chunking": "boundary_v2",
+        "pii_mode": "public_reference_v2",
+        "source_id": "wikipedia_long_en"
+      },
+      {
+        "chunking": "boundary_v2",
+        "pii_mode": "structured_numeric",
+        "source_id": "openwebmath_science_math"
+      },
+      {
+        "chunking": "boundary_v2",
+        "pii_mode": "structured_numeric",
+        "source_id": "codeparrot_permissive_python"
+      },
+      {
+        "chunking": "boundary_v2",
+        "pii_mode": "structured_numeric",
+        "source_id": "gsm8k_reasoning_train"
+      },
+      {
+        "chunking": "boundary_v2",
+        "excluded_parent_upstream_ids": [
+          "9951ed19a17f07076709a9fa53a23c36c4f373cd1dedf440c95f9f7cc7fa8c92"
+        ],
+        "pii_mode": "public_reference_v2",
+        "source_id": "sangraha_verified_hindi"
+      },
+      {
+        "chunking": "boundary_v2",
+        "pii_mode": "public_reference_v2",
+        "source_id": "sangraha_unverified_hindi"
+      },
+      {
+        "chunking": "boundary_v2",
+        "excluded_parent_upstream_ids": [
+          "181fc620ce792c0efc0d69c7cad402c6c6716852c120c9e29b16b8046177c9d2"
+        ],
+        "pii_mode": "structured_numeric",
+        "source_id": "sangraha_synthetic_hindi"
+      },
+      {
+        "adjudicated_replacements": [
+          {
+            "expected_occurrences": 1,
+            "new": "250,000",
+            "old": "[PHONE]",
+            "reason": "cross-lingual state explicitly supplies the masked Hindi public-health statistic",
+            "upstream_id": "89530342c4770bf63ea47f65386b788c2e91b77eebccbc93745d4107903a0eb2"
+          }
+        ],
+        "chunking": "baseline_locked",
+        "pii_mode": "baseline_locked",
+        "source_id": "assignment4_samanantar_translated"
+      },
+      {
+        "chunking": "boundary_v2",
+        "pii_mode": "structured_numeric",
+        "source_id": "hermes_function_calling"
+      },
+      {
+        "chunking": "boundary_v2",
+        "pii_mode": "structured_numeric",
+        "source_id": "hermes_json_agentic"
+      },
+      {
+        "chunking": "boundary_v2",
+        "pii_mode": "structured_numeric",
+        "source_id": "hermes_glaive_function_calling"
+      }
+    ],
+    "status": "candidate_after_human_review"
+  },
+  "policy_hash": "sha256:e11a916f44ef6c6c620e0b7bddbd5c675eec7eeb5830e434f2ac9f141ca6d037",
+  "schema_version": 2,
+  "sources": [
+    {
+      "artifact": {
+        "canonical_uncompressed_sha256": "b835ce6329b4c2087a2b68ef341993fc46a1c1803875dea5e6b762a194e6da10",
+        "compressed_bytes": 5470285,
+        "compressed_sha256": "ec95ce50fabc4f626fd7bc6c993a3edf3372f0bde30b9f4fa333fde10ce8678c",
+        "path": "data/experiments/remaining_lanes_v2/wikipedia_long_en.jsonl.gz",
+        "records": 1341,
+        "uncompressed_bytes": 15219993
+      },
+      "lane": "long_context",
+      "source_id": "wikipedia_long_en",
+      "summary": {
+        "baseline_characters": 10852320,
+        "baseline_phone_markers": 72,
+        "chunk_boundary_counts": {
+          "line": 2,
+          "paragraph": 1339
+        },
+        "excluded_parents": 0,
+        "experiment_characters": 13871637,
+        "experiment_phone_markers": 0,
+        "parents": 1000,
+        "parents_split": 236,
+        "pii_counts": {
+          "email": 0,
+          "financial_account": 0,
+          "ipv4": 0,
+          "phone": 0,
+          "secret": 0
+        },
+        "records": 1341,
+        "recovered_phone_markers": 72,
+        "status": "rebuilt_from_cached_raw_parent"
+      }
+    },
+    {
+      "artifact": {
+        "canonical_uncompressed_sha256": "7f729e54f7db46cfcfab8f1d2bd6c1085d93c109488f4e0e62b49e2c575aa869",
+        "compressed_bytes": 7060276,
+        "compressed_sha256": "444db047fb84af0655fa93319be6af3004c8f8ed9429b2897fd65adde7262182",
+        "path": "data/experiments/remaining_lanes_v2/openwebmath_science_math.jsonl.gz",
+        "records": 2898,
+        "uncompressed_bytes": 21295689
+      },
+      "lane": "science_math",
+      "source_id": "openwebmath_science_math",
+      "summary": {
+        "baseline_characters": 9796390,
+        "baseline_phone_markers": 1884,
+        "chunk_boundary_counts": {
+          "line": 74,
+          "paragraph": 2559,
+          "sentence": 261,
+          "word": 4
+        },
+        "excluded_parents": 0,
+        "experiment_characters": 17987739,
+        "experiment_phone_markers": 0,
+        "parents": 2000,
+        "parents_split": 318,
+        "pii_counts": {
+          "email": 104,
+          "ipv4": 0,
+          "phone": 0,
+          "secret": 3
+        },
+        "records": 2898,
+        "recovered_phone_markers": 1884,
+        "status": "rebuilt_from_cached_raw_parent"
+      }
+    },
+    {
+      "artifact": {
+        "canonical_uncompressed_sha256": "968aa91641ac3e092b2b48ed9b75634c274e7b786ccd5154ef18d57e0c2f7a5d",
+        "compressed_bytes": 7864218,
+        "compressed_sha256": "8bc425b520ff1cac62a085766f91dd82b7273b2131b76a2271e3f0fb473442a8",
+        "path": "data/experiments/remaining_lanes_v2/codeparrot_permissive_python.jsonl.gz",
+        "records": 4099,
+        "uncompressed_bytes": 30414615
+      },
+      "lane": "code",
+      "source_id": "codeparrot_permissive_python",
+      "summary": {
+        "baseline_characters": 15596792,
+        "baseline_phone_markers": 2593,
+        "chunk_boundary_counts": {
+          "line": 27,
+          "paragraph": 4072
+        },
+        "excluded_parents": 0,
+        "experiment_characters": 25185395,
+        "experiment_phone_markers": 0,
+        "parents": 3000,
+        "parents_split": 490,
+        "pii_counts": {
+          "email": 723,
+          "ipv4": 0,
+          "phone": 0,
+          "secret": 270
+        },
+        "records": 4099,
+        "recovered_phone_markers": 2593,
+        "status": "rebuilt_from_cached_raw_parent"
+      }
+    },
+    {
+      "artifact": {
+        "canonical_uncompressed_sha256": "c66431088392edd0842e445c742ed2a6855acce8ee6618fb7f458b784ed2c960",
+        "compressed_bytes": 1039116,
+        "compressed_sha256": "8d2a73cbafcff50f3e46c81b7ae68d6d6a4c2b2abc0afe629e342dfaea23e943",
+        "path": "data/experiments/remaining_lanes_v2/gsm8k_reasoning_train.jsonl.gz",
+        "records": 3000,
+        "uncompressed_bytes": 4180429
+      },
+      "lane": "reasoning",
+      "source_id": "gsm8k_reasoning_train",
+      "summary": {
+        "baseline_characters": 1627737,
+        "baseline_phone_markers": 264,
+        "chunk_boundary_counts": {
+          "paragraph": 3000
+        },
+        "excluded_parents": 0,
+        "experiment_characters": 1627622,
+        "experiment_phone_markers": 0,
+        "parents": 3000,
+        "parents_split": 0,
+        "pii_counts": {
+          "email": 0,
+          "ipv4": 0,
+          "phone": 0,
+          "secret": 0
+        },
+        "records": 3000,
+        "recovered_phone_markers": 264,
+        "status": "rebuilt_from_cached_raw_parent"
+      }
+    },
+    {
+      "artifact": {
+        "canonical_uncompressed_sha256": "24adc535b94a24240bc55bb8b1f26d6da3b0db5328622f16a357d312fc800a17",
+        "compressed_bytes": 2682822,
+        "compressed_sha256": "002f04101e38262f9c8d06382351896a7c682b9f54bb9f9dc291d53cfdae49a8",
+        "path": "data/experiments/remaining_lanes_v2/sangraha_verified_hindi.jsonl.gz",
+        "records": 2089,
+        "uncompressed_bytes": 12710912
+      },
+      "lane": "indic",
+      "source_id": "sangraha_verified_hindi",
+      "summary": {
+        "baseline_characters": 3965091,
+        "baseline_phone_markers": 23,
+        "chunk_boundary_counts": {
+          "line": 149,
+          "paragraph": 1940
+        },
+        "excluded_parents": 1,
+        "experiment_characters": 4333143,
+        "experiment_phone_markers": 2,
+        "parents": 1999,
+        "parents_split": 59,
+        "pii_counts": {
+          "email": 2,
+          "financial_account": 2,
+          "ipv4": 0,
+          "phone": 2,
+          "secret": 0
+        },
+        "records": 2089,
+        "recovered_phone_markers": 21,
+        "status": "rebuilt_from_cached_raw_parent"
+      }
+    },
+    {
+      "artifact": {
+        "canonical_uncompressed_sha256": "90c62b78251500a63bd41062566e027b06496a5f50d65ca2ef6e819bf23902c6",
+        "compressed_bytes": 1598944,
+        "compressed_sha256": "9c8f70322d0fe6a823c104084873eae2904171013239ffae1994da41b87be03c",
+        "path": "data/experiments/remaining_lanes_v2/sangraha_unverified_hindi.jsonl.gz",
+        "records": 1073,
+        "uncompressed_bytes": 7714504
+      },
+      "lane": "indic",
+      "source_id": "sangraha_unverified_hindi",
+      "summary": {
+        "baseline_characters": 2324126,
+        "baseline_phone_markers": 20,
+        "chunk_boundary_counts": {
+          "line": 84,
+          "paragraph": 964,
+          "sentence": 18,
+          "word": 7
+        },
+        "excluded_parents": 0,
+        "experiment_characters": 2681763,
+        "experiment_phone_markers": 11,
+        "parents": 1000,
+        "parents_split": 38,
+        "pii_counts": {
+          "email": 4,
+          "financial_account": 0,
+          "ipv4": 0,
+          "phone": 11,
+          "secret": 0
+        },
+        "records": 1073,
+        "recovered_phone_markers": 9,
+        "status": "rebuilt_from_cached_raw_parent"
+      }
+    },
+    {
+      "artifact": {
+        "canonical_uncompressed_sha256": "a102dc8cc2272b5cde2256b679a941188c4b0439206c4127c5b7548680efa82e",
+        "compressed_bytes": 1942659,
+        "compressed_sha256": "0ae2572fd77a776926640694ec52e2d1a84e853d1654bb2ae300da1cc6eddc1e",
+        "path": "data/experiments/remaining_lanes_v2/sangraha_synthetic_hindi.jsonl.gz",
+        "records": 1177,
+        "uncompressed_bytes": 9588255
+      },
+      "lane": "indic",
+      "source_id": "sangraha_synthetic_hindi",
+      "summary": {
+        "baseline_characters": 2437016,
+        "baseline_phone_markers": 48,
+        "chunk_boundary_counts": {
+          "line": 234,
+          "paragraph": 917,
+          "sentence": 24,
+          "word": 2
+        },
+        "excluded_parents": 1,
+        "experiment_characters": 3383161,
+        "experiment_phone_markers": 0,
+        "parents": 999,
+        "parents_split": 83,
+        "pii_counts": {
+          "email": 0,
+          "ipv4": 0,
+          "phone": 0,
+          "secret": 0
+        },
+        "records": 1177,
+        "recovered_phone_markers": 48,
+        "status": "rebuilt_from_cached_raw_parent"
+      }
+    },
+    {
+      "artifact": {
+        "canonical_uncompressed_sha256": "ee6b1e5e2ccf249c201984806d8575ca836c966f353156db06f641dd8c18141b",
+        "compressed_bytes": 305544,
+        "compressed_sha256": "792348a4466f191455fb43562569403a14c173ae34e7e595f9d9d4ba92afd956",
+        "path": "data/experiments/remaining_lanes_v2/assignment4_samanantar_translated.jsonl.gz",
+        "records": 1000,
+        "uncompressed_bytes": 1352801
+      },
+      "lane": "indic",
+      "source_id": "assignment4_samanantar_translated",
+      "summary": {
+        "adjudicated_replacements": 1,
+        "baseline_characters": 279260,
+        "baseline_phone_markers": 1,
+        "chunk_boundary_counts": {
+          "baseline": 1000
+        },
+        "experiment_characters": 279260,
+        "experiment_phone_markers": 0,
+        "parents": 1000,
+        "records": 1000,
+        "recovered_phone_markers": 1,
+        "status": "baseline_locked_with_human_adjudicated_repair"
+      }
+    },
+    {
+      "artifact": {
+        "canonical_uncompressed_sha256": "5b564dfabf7a97d33f71e9fb3847274ddfc529625262337c3a5ed5f0d1cca3f9",
+        "compressed_bytes": 2829514,
+        "compressed_sha256": "b3e018a2397a382d4bd01017b3c86708ad33c6266fb9e3d6054c118c418f8c77",
+        "path": "data/experiments/remaining_lanes_v2/hermes_function_calling.jsonl.gz",
+        "records": 1035,
+        "uncompressed_bytes": 10066912
+      },
+      "lane": "agentic",
+      "source_id": "hermes_function_calling",
+      "summary": {
+        "baseline_characters": 8801780,
+        "baseline_phone_markers": 942,
+        "chunk_boundary_counts": {
+          "line": 66,
+          "paragraph": 969
+        },
+        "excluded_parents": 0,
+        "experiment_characters": 8814930,
+        "experiment_phone_markers": 0,
+        "parents": 1000,
+        "parents_split": 35,
+        "pii_counts": {
+          "email": 408,
+          "ipv4": 0,
+          "phone": 0,
+          "secret": 2
+        },
+        "records": 1035,
+        "recovered_phone_markers": 942,
+        "status": "rebuilt_from_cached_raw_parent"
+      }
+    },
+    {
+      "artifact": {
+        "canonical_uncompressed_sha256": "f8e529e8f00cac9e93d48326ba4965cee5590c0d655e9e7d10b03cc82ae10d80",
+        "compressed_bytes": 390903,
+        "compressed_sha256": "05542f6b157e5b2fe7dc1e5b58f99f301f0509da90dcc506153710fb2ef66919",
+        "path": "data/experiments/remaining_lanes_v2/hermes_json_agentic.jsonl.gz",
+        "records": 500,
+        "uncompressed_bytes": 1751176
+      },
+      "lane": "agentic",
+      "source_id": "hermes_json_agentic",
+      "summary": {
+        "baseline_characters": 1247677,
+        "baseline_phone_markers": 182,
+        "chunk_boundary_counts": {
+          "paragraph": 500
+        },
+        "excluded_parents": 0,
+        "experiment_characters": 1248529,
+        "experiment_phone_markers": 0,
+        "parents": 500,
+        "parents_split": 0,
+        "pii_counts": {
+          "email": 35,
+          "ipv4": 0,
+          "phone": 0,
+          "secret": 0
+        },
+        "records": 500,
+        "recovered_phone_markers": 182,
+        "status": "rebuilt_from_cached_raw_parent"
+      }
+    },
+    {
+      "artifact": {
+        "canonical_uncompressed_sha256": "ba69ab9564a0d37e98de8659049de28d33246f56345366ae651edf1ac621e4f7",
+        "compressed_bytes": 411445,
+        "compressed_sha256": "a979d44778a2a7013446e7b99d06df04ca63f2900b117cc4b45734e52a749f3f",
+        "path": "data/experiments/remaining_lanes_v2/hermes_glaive_function_calling.jsonl.gz",
+        "records": 500,
+        "uncompressed_bytes": 2007917
+      },
+      "lane": "agentic",
+      "source_id": "hermes_glaive_function_calling",
+      "summary": {
+        "baseline_characters": 1484846,
+        "baseline_phone_markers": 8,
+        "chunk_boundary_counts": {
+          "paragraph": 500
+        },
+        "excluded_parents": 0,
+        "experiment_characters": 1484881,
+        "experiment_phone_markers": 0,
+        "parents": 500,
+        "parents_split": 0,
+        "pii_counts": {
+          "email": 1,
+          "ipv4": 0,
+          "phone": 0,
+          "secret": 0
+        },
+        "records": 500,
+        "recovered_phone_markers": 8,
+        "status": "rebuilt_from_cached_raw_parent"
+      }
+    }
+  ]
+}

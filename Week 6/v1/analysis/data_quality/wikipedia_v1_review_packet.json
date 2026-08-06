@@ -1,0 +1,2325 @@
+{
+  "cap_analysis": {
+    "all_B0_combined": {
+      "cap_would_bind": false,
+      "configured_cap": 0.05,
+      "records": 428,
+      "unconstrained_weighted_share": 0.019394422744038933,
+      "weighted_records": 107.0
+    },
+    "general_disambiguation": {
+      "cap_would_bind": false,
+      "configured_cap": 0.02,
+      "records": 106,
+      "unconstrained_weighted_share": 0.004803291614177867,
+      "weighted_records": 26.5
+    },
+    "general_short": {
+      "cap_would_bind": true,
+      "configured_cap": 0.01,
+      "records": 304,
+      "unconstrained_weighted_share": 0.013775477836887467,
+      "weighted_records": 76.0
+    },
+    "general_structured_low_prose": {
+      "cap_would_bind": false,
+      "configured_cap": 0.02,
+      "records": 48,
+      "unconstrained_weighted_share": 0.0021750754479296,
+      "weighted_records": 12.0
+    }
+  },
+  "policy_id": "wikipedia-general-quality-v1",
+  "population": {
+    "band_counts": {
+      "B0": 428,
+      "B1": 30,
+      "B2": 1407,
+      "B3": 1782,
+      "B4": 1551
+    },
+    "boundary_counts": {
+      "paragraph": 5188,
+      "sentence": 9,
+      "word": 1
+    },
+    "records": 5198,
+    "weighted_records": 5517.05
+  },
+  "purpose": "Human validation gate before adapting quality rules to other lanes",
+  "review_rubric": {
+    "boolean_fields": [
+      "meaningful_language",
+      "coherent_and_complete",
+      "band_agrees",
+      "cap_group_agrees",
+      "pii_safe",
+      "boundary_clean"
+    ],
+    "decision_values": [
+      "keep",
+      "downweight",
+      "reject"
+    ],
+    "instruction": "Review text, not just numeric signals. Record disagreements and revise rules only after patterns recur."
+  },
+  "sample_count": 50,
+  "samples": [
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "43169101",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_45a8b97da0ddb01566a0128b",
+      "sample_id": "band_B0:rec_45a8b97da0ddb01566a0128b",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8133333333333334,
+        "character_entropy_bits": 4.532911623837881,
+        "characters": 300,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 5,
+        "repeated_trigram_fraction": 0.0,
+        "words": 44
+      },
+      "stratum": "band_B0",
+      "text_end_preview": "Squamura maculata Squamura maculata is a moth in the family Cossidae. It is found on Sumatra, Borneo, Java and possibly in Cambodia. The habitat consists of lowland and lower montane forests. References Natural History Museum Lepidoptera generic names catalog Metarbelinae Moths described in 1890",
+      "text_preview": "Squamura maculata Squamura maculata is a moth in the family Cossidae. It is found on Sumatra, Borneo, Java and possibly in Cambodia. The habitat consists of lowland and lower montane forests. References Natural History Museum Lepidoptera generic names catalog Metarbelinae Moths described in 1890",
+      "text_start_preview": "Squamura maculata Squamura maculata is a moth in the family Cossidae. It is found on Sumatra, Borneo, Java and possibly in Cambodia. The habitat consists of lowland and lower montane forests. References Natural History Museum Lepidoptera generic names catalog Metarbelinae Moths described in 1890",
+      "title": "Squamura maculata"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "55354046",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_6443b2a91b1e712485aaf906",
+      "sample_id": "band_B0:rec_6443b2a91b1e712485aaf906",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7807807807807807,
+        "character_entropy_bits": 4.454509403342484,
+        "characters": 333,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 4,
+        "repeated_trigram_fraction": 0.020408163265306145,
+        "words": 51
+      },
+      "stratum": "band_B0",
+      "text_end_preview": "Erlau (disambiguation) Erlau is a municipality in the district of Mittelsachsen in Saxony in Germany. Erlau may also refer to: Erlau (Freising), a district of Freising, Bavaria, Germany Erlau (river), a river of Bavaria, Germany Erlau (Hasidic dynasty), a Haredi dynasty of Hungarian origin Eger (German: Erlau), a city in Hungary",
+      "text_preview": "Erlau (disambiguation) Erlau is a municipality in the district of Mittelsachsen in Saxony in Germany. Erlau may also refer to: Erlau (Freising), a district of Freising, Bavaria, Germany Erlau (river), a river of Bavaria, Germany Erlau (Hasidic dynasty), a Haredi dynasty of Hungarian origin Eger (German: Erlau), a city in Hungary",
+      "text_start_preview": "Erlau (disambiguation) Erlau is a municipality in the district of Mittelsachsen in Saxony in Germany. Erlau may also refer to: Erlau (Freising), a district of Freising, Bavaria, Germany Erlau (river), a river of Bavaria, Germany Erlau (Hasidic dynasty), a Haredi dynasty of Hungarian origin Eger (German: Erlau), a city in Hungary",
+      "title": "Erlau (disambiguation)"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "38599531",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_061a91271010b01de8db059e",
+      "sample_id": "band_B0:rec_061a91271010b01de8db059e",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7907608695652174,
+        "character_entropy_bits": 4.74063439071836,
+        "characters": 368,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 4,
+        "repeated_trigram_fraction": 0.039215686274509776,
+        "words": 53
+      },
+      "stratum": "band_B0",
+      "text_end_preview": "Malekabad, Bazoft Malekabad (, also Romanized as Mālekābād) is a village in Doab Rural District, Bazoft District, Kuhrang County, Chaharmahal and Bakhtiari Province, Iran. At the 2006 census, its population was 65, in 15 families. The village is populated by Lurs. References Populated places in Kuhrang County Luri settlements in Chaharmahal and Bakhtiari Province",
+      "text_preview": "Malekabad, Bazoft Malekabad (, also Romanized as Mālekābād) is a village in Doab Rural District, Bazoft District, Kuhrang County, Chaharmahal and Bakhtiari Province, Iran. At the 2006 census, its population was 65, in 15 families. The village is populated by Lurs. References Populated places in Kuhrang County Luri settlements in Chaharmahal and Bakhtiari Province",
+      "text_start_preview": "Malekabad, Bazoft Malekabad (, also Romanized as Mālekābād) is a village in Doab Rural District, Bazoft District, Kuhrang County, Chaharmahal and Bakhtiari Province, Iran. At the 2006 census, its population was 65, in 15 families. The village is populated by Lurs. References Populated places in Kuhrang County Luri settlements in Chaharmahal and Bakhtiari Province",
+      "title": "Malekabad, Bazoft"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "disambiguation_page"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "3932924",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_5c7410e05b75d2407038f5fe",
+      "sample_id": "band_B0:rec_5c7410e05b75d2407038f5fe",
+      "sampling_cap_groups": [
+        "general_disambiguation"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.785140562248996,
+        "character_entropy_bits": 4.72171930260376,
+        "characters": 498,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 4,
+        "repeated_trigram_fraction": 0.0,
+        "words": 81
+      },
+      "stratum": "band_B0",
+      "text_end_preview": "SW5 SW5 may refer to: SW postcode area Earl's Court, a district in the Royal Borough of Kensington and Chelsea in central London SW5 tram, a class of electric trams, some built by the Melbourne & Metropolitan Tramways Board, but most modified from the W2 tram by the Metropolitan Transit Authority. Star Wars Episode V: The Empire Strikes Back, a 1980 American epic space opera film directed by Irvin Kershner Fernvale LRT station, Singapore See also S5W SWV (disambiguation) SW (disambiguation)",
+      "text_preview": "SW5 SW5 may refer to: SW postcode area Earl's Court, a district in the Royal Borough of Kensington and Chelsea in central London SW5 tram, a class of electric trams, some built by the Melbourne & Metropolitan Tramways Board, but most modified from the W2 tram by the Metropolitan Transit Authority. Star Wars Episode V: The Empire Strikes Back, a 1980 American epic space opera film directed by Irvin Kershner Fernvale LRT station, Singapore See also S5W SWV (disambiguation) SW (disambiguation)",
+      "text_start_preview": "SW5 SW5 may refer to: SW postcode area Earl's Court, a district in the Royal Borough of Kensington and Chelsea in central London SW5 tram, a class of electric trams, some built by the Melbourne & Metropolitan Tramways Board, but most modified from the W2 tram by the Metropolitan Transit Authority. Star Wars Episode V: The Empire Strikes Back, a 1980 American epic space opera film directed by Irvin Kershner Fernvale LRT station, Singapore See also S5W SWV (disambiguation) SW (disambiguation)",
+      "title": "SW5"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 7,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 1,
+      "flags": [
+        "duplicate_lines"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "72035",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_1e73f80f2cc795aca5699bd3",
+      "sample_id": "band_B0:rec_1e73f80f2cc795aca5699bd3",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7885750156936597,
+        "character_entropy_bits": 4.672387457123701,
+        "characters": 7965,
+        "duplicate_line_fraction": 0.37142857142857144,
+        "list_line_fraction": 0.0,
+        "paragraphs": 26,
+        "repeated_trigram_fraction": 0.036951501154734445,
+        "words": 1301
+      },
+      "stratum": "band_B0",
+      "text_end_preview": "…Nippon Professional Baseball, consists of two leagues of 6 teams each. The country's national team has also been successful, having won two Olympic medals (bronze and silver), while the World Championships team never placed worse than 5th in its 13 appearances, winning second place once and third place three times. Recently, several Japanese players have also entered the U.S. major leagues, such as Hideo Nomo, Kazuhiro Sasaki, Ichiro Suzuki, Hideki Matsui, Kazuo Matsui, Tadahito Iguchi, Kenji Johjima, Daisuke Matsuzaka, Yu Darvish, Masahiro Tanaka, and Shohei Ohtani. Japan defeated Korea to become champions of the second World Baseball Classic on March 23, 2009, in Los Angeles. Philippines",
+      "text_preview": "History of baseball outside the United States Baseball was open only to male amateurs in 1992 and 1996. As a result, the Americans and other nations where professional baseball is developed relied on collegiate players, while Cubans used their most experienced veterans, who technically were considered amateurs, as while they nominally held other jobs, they in fact trained full-time. In 2000, pros were admitted, but the MLB refused to release its players in 2000, 2004, and 2008, and the situation changed only a little: the Cubans still used their best players, while the Americans started using minor leaguers. The IOC cited the absence of the best players as the main reason for baseball being…",
+      "text_start_preview": "History of baseball outside the United States Baseball was open only to male amateurs in 1992 and 1996. As a result, the Americans and other nations where professional baseball is developed relied on collegiate players, while Cubans used their most experienced veterans, who technically were considered amateurs, as while they nominally held other jobs, they in fact trained full-time. In 2000, pros were admitted, but the MLB refused to release its players in 2000, 2004, and 2008, and the situation changed only a little: the Cubans still used their best players, while the Americans started using minor leaguers. The IOC cited the absence of the best players as the main reason for baseball being…",
+      "title": "History of baseball outside the United States"
+    },
+    {
+      "band": "B1",
+      "chunk_count": 3,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 2,
+      "flags": [
+        "short_continuation_chunk"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "410649",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_c4bc84475b6c1e62f93e8870",
+      "sample_id": "band_B1:rec_c4bc84475b6c1e62f93e8870",
+      "sampling_cap_groups": [],
+      "sampling_weight": 0.5,
+      "signals": {
+        "alpha_fraction": 0.8831168831168831,
+        "character_entropy_bits": 4.334732567051937,
+        "characters": 77,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.0,
+        "words": 9
+      },
+      "stratum": "band_B1",
+      "text_end_preview": "Caning BDSM activities Corporal punishments School punishments Whipping Pain",
+      "text_preview": "Caning BDSM activities Corporal punishments School punishments Whipping Pain",
+      "text_start_preview": "Caning BDSM activities Corporal punishments School punishments Whipping Pain",
+      "title": "Caning"
+    },
+    {
+      "band": "B1",
+      "chunk_count": 2,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 1,
+      "flags": [
+        "short_continuation_chunk"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "34631256",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_ae69d83984afd2f4d93eb5ea",
+      "sample_id": "band_B1:rec_ae69d83984afd2f4d93eb5ea",
+      "sampling_cap_groups": [],
+      "sampling_weight": 0.5,
+      "signals": {
+        "alpha_fraction": 0.835820895522388,
+        "character_entropy_bits": 4.50240643303909,
+        "characters": 201,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.0,
+        "words": 29
+      },
+      "stratum": "band_B1",
+      "text_end_preview": "Saint Seiya Omega Omega 2012 anime television series debuts Anime spin-offs Comics spin-offs Classical mythology in popular culture Shōnen manga TV Asahi original programming Toei Animation television",
+      "text_preview": "Saint Seiya Omega Omega 2012 anime television series debuts Anime spin-offs Comics spin-offs Classical mythology in popular culture Shōnen manga TV Asahi original programming Toei Animation television",
+      "text_start_preview": "Saint Seiya Omega Omega 2012 anime television series debuts Anime spin-offs Comics spin-offs Classical mythology in popular culture Shōnen manga TV Asahi original programming Toei Animation television",
+      "title": "Saint Seiya Omega"
+    },
+    {
+      "band": "B1",
+      "chunk_count": 2,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 1,
+      "flags": [
+        "short_continuation_chunk"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "59450333",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_8e1c8aed3ca58ad319fb49c9",
+      "sample_id": "band_B1:rec_8e1c8aed3ca58ad319fb49c9",
+      "sampling_cap_groups": [],
+      "sampling_weight": 0.5,
+      "signals": {
+        "alpha_fraction": 0.8049792531120332,
+        "character_entropy_bits": 4.556195432955578,
+        "characters": 241,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.15625,
+        "words": 34
+      },
+      "stratum": "band_B1",
+      "text_end_preview": "Gérard Condé 1947 births Living people Musicians from Nancy, France 20th-century French composers 21st-century French composers French male composers French music critics 20th-century French male musicians 21st-century French male musicians",
+      "text_preview": "Gérard Condé 1947 births Living people Musicians from Nancy, France 20th-century French composers 21st-century French composers French male composers French music critics 20th-century French male musicians 21st-century French male musicians",
+      "text_start_preview": "Gérard Condé 1947 births Living people Musicians from Nancy, France 20th-century French composers 21st-century French composers French male composers French music critics 20th-century French male musicians 21st-century French male musicians",
+      "title": "Gérard Condé"
+    },
+    {
+      "band": "B1",
+      "chunk_count": 3,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 2,
+      "flags": [
+        "short_continuation_chunk"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "28226831",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_2a36908894ea2b829621ce20",
+      "sample_id": "band_B1:rec_2a36908894ea2b829621ce20",
+      "sampling_cap_groups": [],
+      "sampling_weight": 0.5,
+      "signals": {
+        "alpha_fraction": 0.8179347826086957,
+        "character_entropy_bits": 4.744475110561202,
+        "characters": 368,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.061224489795918324,
+        "words": 51
+      },
+      "stratum": "band_B1",
+      "text_end_preview": "Kenneth Leighton 1929 births 1988 deaths British classical composers Alumni of The Queen's College, Oxford Academics of the University of Leeds Academics of the University of Edinburgh British classical pianists Musicians from Wakefield 20th-century classical pianists 20th-century English composers 20th-century British composers Fellows of Worcester College, Oxford",
+      "text_preview": "Kenneth Leighton 1929 births 1988 deaths British classical composers Alumni of The Queen's College, Oxford Academics of the University of Leeds Academics of the University of Edinburgh British classical pianists Musicians from Wakefield 20th-century classical pianists 20th-century English composers 20th-century British composers Fellows of Worcester College, Oxford",
+      "text_start_preview": "Kenneth Leighton 1929 births 1988 deaths British classical composers Alumni of The Queen's College, Oxford Academics of the University of Leeds Academics of the University of Edinburgh British classical pianists Musicians from Wakefield 20th-century classical pianists 20th-century English composers 20th-century British composers Fellows of Worcester College, Oxford",
+      "title": "Kenneth Leighton"
+    },
+    {
+      "band": "B1",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "low_language_content"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "64826879",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_34f4d41048223267e0a6d0c6",
+      "sample_id": "band_B1:rec_34f4d41048223267e0a6d0c6",
+      "sampling_cap_groups": [],
+      "sampling_weight": 0.5,
+      "signals": {
+        "alpha_fraction": 0.4460674157303371,
+        "character_entropy_bits": 4.98998875354312,
+        "characters": 1780,
+        "duplicate_line_fraction": 0.0967741935483871,
+        "list_line_fraction": 0.0,
+        "paragraphs": 9,
+        "repeated_trigram_fraction": 0.16077170418006426,
+        "words": 313
+      },
+      "stratum": "band_B1",
+      "text_end_preview": "…Winners (1): 2014 Runners-up (1): 2004 Women Austrian Bundesliga Winners (20): 1948–49, 1957–58, 1978, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1992, 1998–99, 2002–03, 2011–12, 2012–13, 2013–14, 2014–15, 2015–16, 2016–17, 2017–18 Austrian Indoor Bundesliga Winners (21): 1958–59, 1980, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1992, 1997–98, 2009–10, 2010–11, 2011–12, 2013–14, 2014–15, 2015–16, 2016–17, 2017–18, 2018–19, 2019–20 EuroHockey Indoor Club Trophy Winners (3): 2011, 2015, 2019 EuroHockey Cup Winners Trophy Winners (1): 1992 References External links Field hockey clubs in Austria Field hockey clubs established in 1919 1919 establishments in Austria Sports clubs and teams in Vienna",
+      "text_preview": "SV Arminen Sportvereinigung Arminen Wien also known as SV Arminen or simply Arminen is an Austrian professional field hockey club based in Vienna. It competes in the Austrian Bundesliga which they have won a record 19 times in the men's competition. Their home ground is the Waldstadion and they were founded on 24 April 1919. The first men's team regularly plays in the Euro Hockey League. In the past, the club also had other sports but since 1938 they only have hockey. Honours Men Austrian Bundesliga Winners (20): 1945–46, 1946–47, 1947–48, 1948–49, 1950–51, 1952–53, 1976, 1980, 1983, 1985, 1986, 1987, 1988, 2012–13, 2013–14, 2015–16, 2016–17, 2017–18, 2018–19, 2021–22 EuroHockey Club Trophy…",
+      "text_start_preview": "SV Arminen Sportvereinigung Arminen Wien also known as SV Arminen or simply Arminen is an Austrian professional field hockey club based in Vienna. It competes in the Austrian Bundesliga which they have won a record 19 times in the men's competition. Their home ground is the Waldstadion and they were founded on 24 April 1919. The first men's team regularly plays in the Euro Hockey League. In the past, the club also had other sports but since 1938 they only have hockey. Honours Men Austrian Bundesliga Winners (20): 1945–46, 1946–47, 1947–48, 1948–49, 1950–51, 1952–53, 1976, 1980, 1983, 1985, 1986, 1987, 1988, 2012–13, 2013–14, 2015–16, 2016–17, 2017–18, 2018–19, 2021–22 EuroHockey Club Trophy…",
+      "title": "SV Arminen"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "12355291",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_03bdb9c44cb2ba82eeb627e8",
+      "sample_id": "band_B2:rec_03bdb9c44cb2ba82eeb627e8",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.83,
+        "character_entropy_bits": 4.499702011655992,
+        "characters": 400,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 4,
+        "repeated_trigram_fraction": 0.0,
+        "words": 57
+      },
+      "stratum": "band_B2",
+      "text_end_preview": "Pholidocarpus macrocarpus Pholidocarpus macrocarpus is a species of flowering plant in the family Arecaceae. It is found in Peninsular Malaysia, Sumatra, and Thailand. It is threatened by habitat loss. References macrocarpus Trees of Thailand Trees of Peninsular Malaysia Trees of Sumatra Plants described in 1886 Vulnerable plants Taxa named by Odoardo Beccari Taxonomy articles created by Polbot",
+      "text_preview": "Pholidocarpus macrocarpus Pholidocarpus macrocarpus is a species of flowering plant in the family Arecaceae. It is found in Peninsular Malaysia, Sumatra, and Thailand. It is threatened by habitat loss. References macrocarpus Trees of Thailand Trees of Peninsular Malaysia Trees of Sumatra Plants described in 1886 Vulnerable plants Taxa named by Odoardo Beccari Taxonomy articles created by Polbot",
+      "text_start_preview": "Pholidocarpus macrocarpus Pholidocarpus macrocarpus is a species of flowering plant in the family Arecaceae. It is found in Peninsular Malaysia, Sumatra, and Thailand. It is threatened by habitat loss. References macrocarpus Trees of Thailand Trees of Peninsular Malaysia Trees of Sumatra Plants described in 1886 Vulnerable plants Taxa named by Odoardo Beccari Taxonomy articles created by Polbot",
+      "title": "Pholidocarpus macrocarpus"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "54561063",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_bcea09d708f62ebb47ec76c5",
+      "sample_id": "band_B2:rec_bcea09d708f62ebb47ec76c5",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.8181818181818182,
+        "character_entropy_bits": 4.597256168525334,
+        "characters": 539,
+        "duplicate_line_fraction": 0.14285714285714285,
+        "list_line_fraction": 0.0,
+        "paragraphs": 9,
+        "repeated_trigram_fraction": 0.13636363636363635,
+        "words": 68
+      },
+      "stratum": "band_B2",
+      "text_end_preview": "1981 World Orienteering Championships The 1981 World Orienteering Championships, the 9th World Orienteering Championships, were held in Thun, Switzerland, 3–5 September 1981. The championships had four events: individual contests for men and women, and relays for men and women. Medalists Results Men's individual Women's individual References World Orienteering Championships World Orienteering Championships International sports competitions hosted by Switzerland World Orienteering Championships Orienteering in Switzerland Thun",
+      "text_preview": "1981 World Orienteering Championships The 1981 World Orienteering Championships, the 9th World Orienteering Championships, were held in Thun, Switzerland, 3–5 September 1981. The championships had four events: individual contests for men and women, and relays for men and women. Medalists Results Men's individual Women's individual References World Orienteering Championships World Orienteering Championships International sports competitions hosted by Switzerland World Orienteering Championships Orienteering in Switzerland Thun",
+      "text_start_preview": "1981 World Orienteering Championships The 1981 World Orienteering Championships, the 9th World Orienteering Championships, were held in Thun, Switzerland, 3–5 September 1981. The championships had four events: individual contests for men and women, and relays for men and women. Medalists Results Men's individual Women's individual References World Orienteering Championships World Orienteering Championships International sports competitions hosted by Switzerland World Orienteering Championships Orienteering in Switzerland Thun",
+      "title": "1981 World Orienteering Championships"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "62054326",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_0adcd203d204c2b0d86b7028",
+      "sample_id": "band_B2:rec_0adcd203d204c2b0d86b7028",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.8150208623087621,
+        "character_entropy_bits": 4.507261209288806,
+        "characters": 719,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 7,
+        "repeated_trigram_fraction": 0.061855670103092786,
+        "words": 99
+      },
+      "stratum": "band_B2",
+      "text_end_preview": "…eration of Asia The Asian Fencing Confederation (AFC) or Fencing Confederation of Asia (FCA) is an international body created in 1988, charged with the promotion and development of fencing in Asia. It organises the Asian Fencing Championships annually, in all levels: seniors, juniors and cadet, under 23 and veterans. Colonel Houshmand Almasi, President of the Iranian Fencing Federation, was the first president of the organisation. See also Fédération Internationale d'Escrime Asian Fencing Championships References External links Asian Fencing Confederation, official site Fencing organizations Sports governing bodies in Asia 1988 establishments in Asia Sports organizations established in 1988",
+      "text_preview": "Fencing Confederation of Asia The Asian Fencing Confederation (AFC) or Fencing Confederation of Asia (FCA) is an international body created in 1988, charged with the promotion and development of fencing in Asia. It organises the Asian Fencing Championships annually, in all levels: seniors, juniors and cadet, under 23 and veterans. Colonel Houshmand Almasi, President of the Iranian Fencing Federation, was the first president of the organisation. See also Fédération Internationale d'Escrime Asian Fencing Championships References External links Asian Fencing Confederation, official site Fencing organizations Sports governing bodies in Asia 1988 establishments in Asia Sports organizations estab…",
+      "text_start_preview": "Fencing Confederation of Asia The Asian Fencing Confederation (AFC) or Fencing Confederation of Asia (FCA) is an international body created in 1988, charged with the promotion and development of fencing in Asia. It organises the Asian Fencing Championships annually, in all levels: seniors, juniors and cadet, under 23 and veterans. Colonel Houshmand Almasi, President of the Iranian Fencing Federation, was the first president of the organisation. See also Fédération Internationale d'Escrime Asian Fencing Championships References External links Asian Fencing Confederation, official site Fencing organizations Sports governing bodies in Asia 1988 establishments in Asia Sports organizations estab…",
+      "title": "Fencing Confederation of Asia"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "6864475",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_d1366521feb8055f8fbd5372",
+      "sample_id": "band_B2:rec_d1366521feb8055f8fbd5372",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.7492029755579172,
+        "character_entropy_bits": 4.784998785128257,
+        "characters": 941,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 7,
+        "repeated_trigram_fraction": 0.006329113924050667,
+        "words": 160
+      },
+      "stratum": "band_B2",
+      "text_end_preview": "…s. On May 9, 1924, May came in to pitch the top of the 9th inning in a home game against the Boston Braves at Forbes Field. He pitched a scoreless inning, with one strikeout, but the Pirates lost 10–7. His lifetime ERA stands at 0.00. His manager was future Hall of Famer Bill McKechnie. Other notable teammates who would one day be members of the Baseball Hall of Fame were Max Carey, Kiki Cuyler, Rabbit Maranville, and Pie Traynor. May died in his hometown of Bakersfield, California at the age of 84. External links Baseball Reference Retrosheet Major League Baseball pitchers Baseball players from Bakersfield, California Pittsburgh Pirates players Pueblo Braves players 1899 births 1984 deaths",
+      "text_preview": "Buckshot May William Herbert \"Buckshot\" May (December 13, 1899 – March 15, 1984) was a Major League Baseball pitcher who appeared in one game for the Pittsburgh Pirates in 1924. The 24-year-old right-hander stood 6'2\" and weighed 169 lbs. On May 9, 1924, May came in to pitch the top of the 9th inning in a home game against the Boston Braves at Forbes Field. He pitched a scoreless inning, with one strikeout, but the Pirates lost 10–7. His lifetime ERA stands at 0.00. His manager was future Hall of Famer Bill McKechnie. Other notable teammates who would one day be members of the Baseball Hall of Fame were Max Carey, Kiki Cuyler, Rabbit Maranville, and Pie Traynor. May died in his hometown of…",
+      "text_start_preview": "Buckshot May William Herbert \"Buckshot\" May (December 13, 1899 – March 15, 1984) was a Major League Baseball pitcher who appeared in one game for the Pittsburgh Pirates in 1924. The 24-year-old right-hander stood 6'2\" and weighed 169 lbs. On May 9, 1924, May came in to pitch the top of the 9th inning in a home game against the Boston Braves at Forbes Field. He pitched a scoreless inning, with one strikeout, but the Pirates lost 10–7. His lifetime ERA stands at 0.00. His manager was future Hall of Famer Bill McKechnie. Other notable teammates who would one day be members of the Baseball Hall of Fame were Max Carey, Kiki Cuyler, Rabbit Maranville, and Pie Traynor. May died in his hometown of…",
+      "title": "Buckshot May"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 3,
+      "chunk_end_boundary": "word",
+      "chunk_index": 1,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "26694500",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_33b86bd9804f01429f869656",
+      "sample_id": "band_B2:rec_33b86bd9804f01429f869656",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.7025506376594148,
+        "character_entropy_bits": 4.894717639689536,
+        "characters": 7998,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.2216699801192843,
+        "words": 1008
+      },
+      "stratum": "band_B2",
+      "text_end_preview": "…gdianus Sugonjaev, 1968 Anagyrus sophax Noyes & Menezes 2000 Anagyrus spaici (Hoffer, 1970) Anagyrus spica (Girault 1921) Anagyrus subalbipes Ishii, 1928 Anagyrus subflaviceps (Girault 1915) Anagyrus subnigricornis Ishii, 1928 Anagyrus subproximus (Silvestri, 1915) Anagyrus subtilis Noyes & Hayat, 1994 Anagyrus sucro Noyes, 2000 Anagyrus suia Noyes, 2000 Anagyrus surekhae Noyes & Menezes 2000 Anagyrus swezeyi Timberlake, 1919 Anagyrus tamaricicola Trjapitzin, 1968 Anagyrus tanystis De Santis, 1964 Anagyrus telon Noyes & Menezes 2000 Anagyrus tenuis Noyes & Hayat, 1994 Anagyrus terebratus (Howard 1894) Anagyrus thailandicus (Myartseva, 1979) Anagyrus theana Noyes, 2000 Anagyrus theon Noyes &",
+      "text_preview": "Anagyrus Anagyrus abatos (Noyes & Menezes, 2000) Anagyrus abdulrassouli (Myartseva, Sugonjaev & Trjapitzin, 1982) Anagyrus abyssinicus Compere, 1939 Anagyrus aceris Noyes & Hayat, 1994 Anagyrus aciculatus (Blanchard, 1940) Anagyrus adamsoni Timberlake, 1941 Anagyrus aega Noyes, 2000 Anagyrus aegyptiacus Moursi, 1948 Anagyrus agraensis Saraswat 1975 Anagyrus alami Hayat 1970 Anagyrus albatus Myartseva, 1982 Anagyrus aligarhensis Agarwal & Alam 1959 Anagyrus almoriensis Shafee, Alam & Agarwal, 1975 Anagyrus amnicus Prinsloo, 1985 Anagyrus amoenus Compere, 1939 Anagyrus amudaryensis (Myartseva, 1982) Anagyrus ananatis Gahan, 1949 Anagyrus antoninae Timberlake, 1920 Anagyrus aper Noyes & Meneze…",
+      "text_start_preview": "Anagyrus Anagyrus abatos (Noyes & Menezes, 2000) Anagyrus abdulrassouli (Myartseva, Sugonjaev & Trjapitzin, 1982) Anagyrus abyssinicus Compere, 1939 Anagyrus aceris Noyes & Hayat, 1994 Anagyrus aciculatus (Blanchard, 1940) Anagyrus adamsoni Timberlake, 1941 Anagyrus aega Noyes, 2000 Anagyrus aegyptiacus Moursi, 1948 Anagyrus agraensis Saraswat 1975 Anagyrus alami Hayat 1970 Anagyrus albatus Myartseva, 1982 Anagyrus aligarhensis Agarwal & Alam 1959 Anagyrus almoriensis Shafee, Alam & Agarwal, 1975 Anagyrus amnicus Prinsloo, 1985 Anagyrus amoenus Compere, 1939 Anagyrus amudaryensis (Myartseva, 1982) Anagyrus ananatis Gahan, 1949 Anagyrus antoninae Timberlake, 1920 Anagyrus aper Noyes & Meneze…",
+      "title": "Anagyrus"
+    },
+    {
+      "band": "B3",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1646558",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_315b8627ee867d144dfab4e2",
+      "sample_id": "band_B3:rec_315b8627ee867d144dfab4e2",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.15,
+      "signals": {
+        "alpha_fraction": 0.7983333333333333,
+        "character_entropy_bits": 4.619236461112706,
+        "characters": 1200,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 7,
+        "repeated_trigram_fraction": 0.03804347826086951,
+        "words": 186
+      },
+      "stratum": "band_B3",
+      "text_end_preview": "…ment of Society for Peace (MSP) Said Sadi, candidate of the secularist Rally for Culture and Democracy Noureddine Boukrouh, candidate of the Party of Algerian Renewal (PRA) Conduct Delegations of observers came from the Arab League, the African Union, and the United Nations, and reported no major problems. The Armed Islamic Group had threatened to kill voters, but the elections passed with few attacks. Voter turnout was high, despite the three largest parties of the 1991 parliamentary elections (the Islamic Salvation Front, National Liberation Front and Socialist Forces Front) calling for a boycott. Results References Algerian Civil War Presidential elections in Algeria Presidential Algeria",
+      "text_preview": "1995 Algerian presidential election Presidential elections were held in Algeria on 16 November 1995, in the midst of the Algerian Civil War. The result was a victory for Liamine Zeroual, head of the High Council of State at the time, who won 61% of the vote. The Armed Islamic Group of Algeria threatened to kill anyone who voted, with the slogan \"one vote, one bullet\", but official voter turnout was 74.9%. Candidates Liamine Zeroual, independent Mahfoud Nahnah, candidate of the Islamist Movement of Society for Peace (MSP) Said Sadi, candidate of the secularist Rally for Culture and Democracy Noureddine Boukrouh, candidate of the Party of Algerian Renewal (PRA) Conduct Delegations of observer…",
+      "text_start_preview": "1995 Algerian presidential election Presidential elections were held in Algeria on 16 November 1995, in the midst of the Algerian Civil War. The result was a victory for Liamine Zeroual, head of the High Council of State at the time, who won 61% of the vote. The Armed Islamic Group of Algeria threatened to kill anyone who voted, with the slogan \"one vote, one bullet\", but official voter turnout was 74.9%. Candidates Liamine Zeroual, independent Mahfoud Nahnah, candidate of the Islamist Movement of Society for Peace (MSP) Said Sadi, candidate of the secularist Rally for Culture and Democracy Noureddine Boukrouh, candidate of the Party of Algerian Renewal (PRA) Conduct Delegations of observer…",
+      "title": "1995 Algerian presidential election"
+    },
+    {
+      "band": "B3",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "12355035",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_5f1f77df010cc9301a40d5be",
+      "sample_id": "band_B3:rec_5f1f77df010cc9301a40d5be",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.15,
+      "signals": {
+        "alpha_fraction": 0.7807971014492754,
+        "character_entropy_bits": 4.675592892887019,
+        "characters": 1656,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 8,
+        "repeated_trigram_fraction": 0.018248175182481785,
+        "words": 276
+      },
+      "stratum": "band_B3",
+      "text_end_preview": "…that there are rarely additional copies of the vocal parts. Furthermore, the presence, absence and omission of solo and tutti markings in scores, as well as the ambiguity in their meaning, brings further doubt to the question of whether Bach used more than one singer per part or not. The initialism OVPP was first coined in the Internet mailing list \"The Bach Recordings Discussion Group\" in the mid 1990s by Steven Langley Guy. The initialism seems to have been adopted more widely since that time. References Sources Rifkin, Joshua. 1982. “Bach's Chorus: A Preliminary Report”. The Musical Times 123 (1677). Musical Times Publications Ltd.: 747–54. doi:10.2307/961592. Choral music Baroque music",
+      "text_preview": "One voice per part In music, one voice per part (OVPP) is the practice of performing choral music with a single voice on each vocal line. In the specific context of Johann Sebastian Bach's works it is also known as the Rifkin hypothesis, set forth in Joshua Rifkin's 1982 article and expanded in Andrew Parrott's book The Essential Bach Choir. Choral works featuring SATB (soprano, alto, tenor and bass) vocal parts are consequently sung by four singers when this approach is adopted. The first conductor to strongly advocate this approach to the music of Bach was the American pianist and conductor Joshua Rifkin in the 1980s. The use of solo voices in the choral music of Bach has also found champ…",
+      "text_start_preview": "One voice per part In music, one voice per part (OVPP) is the practice of performing choral music with a single voice on each vocal line. In the specific context of Johann Sebastian Bach's works it is also known as the Rifkin hypothesis, set forth in Joshua Rifkin's 1982 article and expanded in Andrew Parrott's book The Essential Bach Choir. Choral works featuring SATB (soprano, alto, tenor and bass) vocal parts are consequently sung by four singers when this approach is adopted. The first conductor to strongly advocate this approach to the music of Bach was the American pianist and conductor Joshua Rifkin in the 1980s. The use of solo voices in the choral music of Bach has also found champ…",
+      "title": "One voice per part"
+    },
+    {
+      "band": "B3",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "14641619",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_845a793a0368a85d7164bd39",
+      "sample_id": "band_B3:rec_845a793a0368a85d7164bd39",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.15,
+      "signals": {
+        "alpha_fraction": 0.8012849931161083,
+        "character_entropy_bits": 4.767291953269063,
+        "characters": 2179,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 11,
+        "repeated_trigram_fraction": 0.04748603351955305,
+        "words": 360
+      },
+      "stratum": "band_B3",
+      "text_end_preview": "…Jackie Mason David Mitchell Paul Mooney (Episode 1 only) Graham Norton Paul O'Grady Simon Pegg Vic Reeves Paul Rodriguez (Episode 3 only) Alexei Sayle Jimmy Tarbuck David Walliams Robert Webb Paul Whitehouse Robin Williams Marc Wootton Comedians featured in clips: Episode 1: Richard Pryor, Frankie Howerd, Harpo Marx, Dudley Moore and Peter Cook, Les Dawson and Roy Barraclough, and Ade Edmondson. Episode 2: Lenny Bruce, Woody Allen, Steve Martin, Spike Milligan, and Dick Emery. Episode 3: George Carlin, Lee Evans, and Wilson, Keppel and Betty References External links 2007 British television series debuts 2007 British television series endings BBC television comedy BBC television talk shows",
+      "text_preview": "Dawn French's Boys Who Do Comedy Dawn French's Boys Who Do Comedy is a British TV series in which comedian Dawn French interviews her favourite male comedians about how they came to be comedians. It is a follow-up and counterpart to Dawn French's Girls Who Do Comedy. The full BBC One series consists of three 30-minute programmes with 35 comedians, sewn together as if they were a single discussion. Programme 1 is about how family and early life influenced their careers, programme 2 is about the comedians' early careers, and programme 3 is about the experience of standing on stage in front of an audience. The decision was taken early in the production process to film with three cameras, large…",
+      "text_start_preview": "Dawn French's Boys Who Do Comedy Dawn French's Boys Who Do Comedy is a British TV series in which comedian Dawn French interviews her favourite male comedians about how they came to be comedians. It is a follow-up and counterpart to Dawn French's Girls Who Do Comedy. The full BBC One series consists of three 30-minute programmes with 35 comedians, sewn together as if they were a single discussion. Programme 1 is about how family and early life influenced their careers, programme 2 is about the comedians' early careers, and programme 3 is about the experience of standing on stage in front of an audience. The decision was taken early in the production process to film with three cameras, large…",
+      "title": "Dawn French's Boys Who Do Comedy"
+    },
+    {
+      "band": "B3",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1930544",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_5c264dc79c327293bbb29d97",
+      "sample_id": "band_B3:rec_5c264dc79c327293bbb29d97",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.15,
+      "signals": {
+        "alpha_fraction": 0.7733065057008719,
+        "character_entropy_bits": 4.693252793171957,
+        "characters": 2982,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 11,
+        "repeated_trigram_fraction": 0.030060120240480992,
+        "words": 501
+      },
+      "stratum": "band_B3",
+      "text_end_preview": "…equently used pencil artists on the strip, working primarily as an inker, though he often drew entire stories when time permitted. Barry's first Phantom daily strip was published on August 21, 1961 and his last on September 3, 1994. He replaced Bill Lignante on the Sundays. His first Phantom Sunday page was published on May 20, 1962 and his last on September 18, 1994. References Further reading Strickler, Dave. Syndicated Comic Strips and Artists, 1924-1995: The Complete Index. Cambria, California: Comics Access, 1995. External links Billy Ireland Cartoon Library & Museum Art Database 1928 births American comics artists Inkpot Award winners Living people High School of Art and Design alumni",
+      "text_preview": "Sy Barry Seymour \"Sy\" Barry (born March 12, 1928) is an American comic-book and comic-strip artist, best known for being the artist of the strip The Phantom for more than three decades. Biography Sy Barry was born in New York City in 1928, and is the brother of comics artist Dan Barry, who drew the Flash Gordon comic strip. Sy Barry attended high school at the School of Industrial Art in Manhattan, New York City beginning in 1943. His first job as an artist was working on the comic book Famous Funnies. Barry began his professional career as his brother's art assistant, and by the late 1940s was working on his own as a freelance comic-book artist, primarily as an inker for publishers includi…",
+      "text_start_preview": "Sy Barry Seymour \"Sy\" Barry (born March 12, 1928) is an American comic-book and comic-strip artist, best known for being the artist of the strip The Phantom for more than three decades. Biography Sy Barry was born in New York City in 1928, and is the brother of comics artist Dan Barry, who drew the Flash Gordon comic strip. Sy Barry attended high school at the School of Industrial Art in Manhattan, New York City beginning in 1943. His first job as an artist was working on the comic book Famous Funnies. Barry began his professional career as his brother's art assistant, and by the late 1940s was working on his own as a freelance comic-book artist, primarily as an inker for publishers includi…",
+      "title": "Sy Barry"
+    },
+    {
+      "band": "B3",
+      "chunk_count": 3,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 1,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1930500",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_e7d38c411cbeccc16d8e3f76",
+      "sample_id": "band_B3:rec_e7d38c411cbeccc16d8e3f76",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.15,
+      "signals": {
+        "alpha_fraction": 0.7171360020204571,
+        "character_entropy_bits": 4.912302474026798,
+        "characters": 7919,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.008928571428571428,
+        "paragraphs": 7,
+        "repeated_trigram_fraction": 0.1586582048957389,
+        "words": 1105
+      },
+      "stratum": "band_B3",
+      "text_end_preview": "…wards, Toronto: Genie Award for Best Theatrical Short Film, 1964 Celebration (1966) La Plata International Children's Film Festival, La Plata, Argentina: First Prize, Special Films, 1967 A Matter of Fat 22nd Canadian Film Awards, Toronto: Best Film Over 30 Minutes, 1970 Atlanta Film Festival, Atlanta: Gold Medal, 1971 Atlanta Film Festival, Atlanta: Special Jury Award, 1971 American Film and Video Festival, New York: Blue Ribbon, 1971 Jack of Hearts (1985) Chicago International Children's Film Festival, Chicago: Second Prize - Live-Action Film Under 30 Minutes, 1986 National Educational Media Network Competition, Oakland, California: Honorable Mention, Literary Adaptations, Elementary, 1986",
+      "text_preview": "William Weintraub - documentary short, John Howe 1957 Million Dollar Smile - TV series episode, David Boisseau 1957 - writer Storm Clouds Over the Colonies - documentary short, Ronald Dick 1957 - writer Ten Days That Shook the Commonwealth - documentary short, Ronald Dick 1957 - writer Poverty and Plenty - documentary short, John Howe 1957 - writer Road to Independence - documentary short, Ronald Dick 1957 - writer They Called It White Man’s Burden - documentary short, John Howe 1957 - writer Black and White in South Africa - documentary short, John Howe & Ronald Dick 1957 - writer First Novel - documentary short, Donald Wilder 1958 - writer School for the Stage - documentary short, Julian…",
+      "text_start_preview": "William Weintraub - documentary short, John Howe 1957 Million Dollar Smile - TV series episode, David Boisseau 1957 - writer Storm Clouds Over the Colonies - documentary short, Ronald Dick 1957 - writer Ten Days That Shook the Commonwealth - documentary short, Ronald Dick 1957 - writer Poverty and Plenty - documentary short, John Howe 1957 - writer Road to Independence - documentary short, Ronald Dick 1957 - writer They Called It White Man’s Burden - documentary short, John Howe 1957 - writer Black and White in South Africa - documentary short, John Howe & Ronald Dick 1957 - writer First Novel - documentary short, Donald Wilder 1958 - writer School for the Stage - documentary short, Julian…",
+      "title": "William Weintraub"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1930350",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_c3d848e8cc61e334dfb42ada",
+      "sample_id": "band_B4:rec_c3d848e8cc61e334dfb42ada",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.8297925518620345,
+        "character_entropy_bits": 4.546551316892625,
+        "characters": 4001,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 14,
+        "repeated_trigram_fraction": 0.07829181494661919,
+        "words": 564
+      },
+      "stratum": "band_B4",
+      "text_end_preview": "…State Board of Education Professional Standards and Practices Commission Office of Food and Nutrition Programs Special Education Advisory Panel State Boards of Private Schools Power Library Power Library is the online portal to Pennsylvania libraries, a service of the Office of Commonwealth Libraries, Pennsylvania Department of Education. Secretaries of Education See also List of Pennsylvania state agencies State education agency References External links Official website 1837 establishments in Pennsylvania Educational administration Government agencies established in 1837 Education, Department of Department State agencies of Pennsylvania State departments of education of the United States",
+      "text_preview": "Pennsylvania Department of Education The Pennsylvania Department of Education is the executive department of the state charged with publicly funded preschool, K-12 and adult educational budgeting, management and guidelines. As the state education agency, its activities are directed by the governor appointed Pennsylvania's Secretary of Education. The agency is headquartered at 333 Market Street in Harrisburg. The Pennsylvania Department of Education oversees 500 public school districts of Pennsylvania, over 170 public charter schools (2019), Career and Technology Centers/Vocational Technical schools, 29 Intermediate Units, the education of youth in State Juvenile Correctional Institutions, a…",
+      "text_start_preview": "Pennsylvania Department of Education The Pennsylvania Department of Education is the executive department of the state charged with publicly funded preschool, K-12 and adult educational budgeting, management and guidelines. As the state education agency, its activities are directed by the governor appointed Pennsylvania's Secretary of Education. The agency is headquartered at 333 Market Street in Harrisburg. The Pennsylvania Department of Education oversees 500 public school districts of Pennsylvania, over 170 public charter schools (2019), Career and Technology Centers/Vocational Technical schools, 29 Intermediate Units, the education of youth in State Juvenile Correctional Institutions, a…",
+      "title": "Pennsylvania Department of Education"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "28226387",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_5c1dc9c64b216114d8ac6502",
+      "sample_id": "band_B4:rec_5c1dc9c64b216114d8ac6502",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.7832129963898917,
+        "character_entropy_bits": 4.721033200355118,
+        "characters": 5540,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 23,
+        "repeated_trigram_fraction": 0.07158590308370039,
+        "words": 910
+      },
+      "stratum": "band_B4",
+      "text_end_preview": "…ines de Ciudad del Carmen players Durham Bulls players Frisco RoughRiders players Generales de Durango players Hickory Crawdads players Leones de Yucatán players Leones del Escogido players American expatriate baseball players in the Dominican Republic Long Island Ducks players Major League Baseball pitchers Mexican League baseball pitchers Nippon Professional Baseball pitchers Northern Kentucky Norse baseball players Peoria Javelinas players Pericos de Puebla players Seattle Mariners players Spokane Indians players Baseball players from Covington, Kentucky Tacoma Rainiers players Tampa Bay Rays players Tokyo Yakult Swallows players Toros del Este players West Tennessee Diamond Jaxx players",
+      "text_preview": "Josh Lueke Joshua William Lueke (born December 5, 1984) is an American former professional baseball relief pitcher. He played in Major League Baseball (MLB) for the Seattle Mariners and Tampa Bay Rays, and in Nippon Professional Baseball (NPB) for the Tokyo Yakult Swallows. His impending retirement from professional baseball was announced prior to the upcoming 2022-2023 winter season of the Mexican Pacific League. Professional career Texas Rangers Lueke was drafted by the Texas Rangers in the 16th round of the 2007 Major League Baseball Draft. He played for the Spokane Indians, Clinton LumberKings, and Bakersfield Blaze. Seattle Mariners On July 9, 2010, Lueke was traded to the Seattle Mari…",
+      "text_start_preview": "Josh Lueke Joshua William Lueke (born December 5, 1984) is an American former professional baseball relief pitcher. He played in Major League Baseball (MLB) for the Seattle Mariners and Tampa Bay Rays, and in Nippon Professional Baseball (NPB) for the Tokyo Yakult Swallows. His impending retirement from professional baseball was announced prior to the upcoming 2022-2023 winter season of the Mexican Pacific League. Professional career Texas Rangers Lueke was drafted by the Texas Rangers in the 16th round of the 2007 Major League Baseball Draft. He played for the Spokane Indians, Clinton LumberKings, and Bakersfield Blaze. Seattle Mariners On July 9, 2010, Lueke was traded to the Seattle Mari…",
+      "title": "Josh Lueke"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1646356",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_69bc7238cb45b0c83990605c",
+      "sample_id": "band_B4:rec_69bc7238cb45b0c83990605c",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.775926180966809,
+        "character_entropy_bits": 4.71432386104001,
+        "characters": 7261,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 25,
+        "repeated_trigram_fraction": 0.03950617283950619,
+        "words": 1217
+      },
+      "stratum": "band_B4",
+      "text_end_preview": "…red another blow when he lost his wife. He was taken to the hospice of the Brothers of Saint-Jean de Dieu where he died on 8 March 1887. His son, Paul Féval (1860–1933) also became a prolific writer. References Sources Author and Book info.com External links Paul Féval père - Bibliographie complète at Roman-Feuilleton & HARD-BOILED site (Comprehensive Bibliographies by Vladimir Matuschenko) 1816 births 1887 deaths Writers from Rennes 19th-century French dramatists and playwrights French fantasy writers French crime fiction writers French historical novelists French horror writers University of Rennes alumni 19th-century French novelists French male novelists 19th-century French male writers",
+      "text_preview": "Paul Féval, père Paul Henri Corentin Féval, père (29 September 1816 - 8 March 1887) was a French novelist and dramatist. He was the author of popular swashbuckler novels such as Le Loup blanc (1843) and the perennial best-seller Le Bossu (1857). He also penned the seminal vampire fiction novels Le Chevalier Ténèbre (1860), La Vampire (1865) and La Ville Vampire (1874) and wrote several celebrated novels about his native Brittany and Mont Saint-Michel such as La Fée des Grèves (1850). Féval's greatest claim to fame, however, is as one of the fathers of modern crime fiction. Because of its themes and characters, his novel Jean Diable (1862) can claim to be the world's first modern novel of de…",
+      "text_start_preview": "Paul Féval, père Paul Henri Corentin Féval, père (29 September 1816 - 8 March 1887) was a French novelist and dramatist. He was the author of popular swashbuckler novels such as Le Loup blanc (1843) and the perennial best-seller Le Bossu (1857). He also penned the seminal vampire fiction novels Le Chevalier Ténèbre (1860), La Vampire (1865) and La Ville Vampire (1874) and wrote several celebrated novels about his native Brittany and Mont Saint-Michel such as La Fée des Grèves (1850). Féval's greatest claim to fame, however, is as one of the fathers of modern crime fiction. Because of its themes and characters, his novel Jean Diable (1862) can claim to be the world's first modern novel of de…",
+      "title": "Paul Féval, père"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 3,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "72000",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_9c8bc2c37a124f2487c7379f",
+      "sample_id": "band_B4:rec_9c8bc2c37a124f2487c7379f",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.7859631015352858,
+        "character_entropy_bits": 4.6053905613609345,
+        "characters": 7751,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 19,
+        "repeated_trigram_fraction": 0.055512118842846014,
+        "words": 1281
+      },
+      "stratum": "band_B4",
+      "text_end_preview": "…s lynching there in 1916. These lynchings were conducted outside the justice system, by mobs or small groups working alone. Nineteen of the victims were Black; two were White. (A 2015 report by the Equal Justice Initiative, based in Montgomery, Alabama, had identified 18 lynchings. The Historical Commission documented three more, including two white men.) In September 2017, the county commission approved plans to place markers with the names of the victims in the county. (See linked article for names of these individuals.) They are working with the Historical Commission and cities to discuss how best to achieve this. A state historical marker on the Newberry Lynchings was dedicated in 2019.",
+      "text_preview": "Alachua County, Florida Alachua County ( ) is a county in the north central portion of the U.S. state of Florida. As of the 2020 census, the population was 278,468. The county seat is Gainesville, the home of the University of Florida since 1906, when the campus opened with 106 students. Alachua County is part of the Gainesville Metropolitan Statistical Area. The county is known for its diverse culture, local music, and artisans. Much of its economy revolves around the university, which had nearly 55,000 students in the fall of 2016. History Prehistory and early European settlements The first people known to have entered the area of Alachua County were Paleo-Indians, who left artifacts in t…",
+      "text_start_preview": "Alachua County, Florida Alachua County ( ) is a county in the north central portion of the U.S. state of Florida. As of the 2020 census, the population was 278,468. The county seat is Gainesville, the home of the University of Florida since 1906, when the campus opened with 106 students. Alachua County is part of the Gainesville Metropolitan Statistical Area. The county is known for its diverse culture, local music, and artisans. Much of its economy revolves around the university, which had nearly 55,000 students in the fall of 2016. History Prehistory and early European settlements The first people known to have entered the area of Alachua County were Paleo-Indians, who left artifacts in t…",
+      "title": "Alachua County, Florida"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 2,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65813420",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_cb56ee5cedef255783cbbef2",
+      "sample_id": "band_B4:rec_cb56ee5cedef255783cbbef2",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.789,
+        "character_entropy_bits": 4.589257057513592,
+        "characters": 8000,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 25,
+        "repeated_trigram_fraction": 0.059194948697711136,
+        "words": 1269
+      },
+      "stratum": "band_B4",
+      "text_end_preview": "…988–1989 Non-commissioned officers' training school, 1992–1995 Military Academy, Army, 2008–2009 USMC Command and Staff College, 2014–2015 United States Army War College. Authorship Kristoffersen wrote the book Jegerånden- Å lede i fred, krise og krig [ The Jäger spirit – to lead in peace, crisis and war] (2020). Awards and decorations Kristoffersen is one of Norway's most highly decorated soldiers still on active duty. He has received the following awards: Norwegian medals and awards Foreign decorations Other awards Personal life Kristoffersen lives with his wife Linn-Therece Johansen Kristoffersen and has four children from two former marriages. His interests include hunting and football.",
+      "text_preview": "Eirik Kristoffersen Eirik Johan Kristoffersen (born 3 April 1969) is a Norwegian Army General who serves as the head of the Norwegian Armed Forces. He is a former Chief of the Norwegian Army and Norwegian Home Guard, and Chief of the Armed Forces' Special Command (FSK). Kristoffersen is the first Norwegian Chief of Defence since World War II, with battle experience. He was awarded the War Cross with Sword in 2011 for his service in Afghanistan. Military career Kristoffersen enrolled in non-commissioned officers' in 1988 and served as squad leader in the Engineer Battalion. After a few months studying engineering in college, he returned to military service in 1989 and served as squad leader…",
+      "text_start_preview": "Eirik Kristoffersen Eirik Johan Kristoffersen (born 3 April 1969) is a Norwegian Army General who serves as the head of the Norwegian Armed Forces. He is a former Chief of the Norwegian Army and Norwegian Home Guard, and Chief of the Armed Forces' Special Command (FSK). Kristoffersen is the first Norwegian Chief of Defence since World War II, with battle experience. He was awarded the War Cross with Sword in 2011 for his service in Afghanistan. Military career Kristoffersen enrolled in non-commissioned officers' in 1988 and served as squad leader in the Engineer Battalion. After a few months studying engineering in college, he returned to military service in 1989 and served as squad leader…",
+      "title": "Eirik Kristoffersen"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "43169101",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_45a8b97da0ddb01566a0128b",
+      "sample_id": "cap_general_short:rec_45a8b97da0ddb01566a0128b",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8133333333333334,
+        "character_entropy_bits": 4.532911623837881,
+        "characters": 300,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 5,
+        "repeated_trigram_fraction": 0.0,
+        "words": 44
+      },
+      "stratum": "cap_general_short",
+      "text_end_preview": "Squamura maculata Squamura maculata is a moth in the family Cossidae. It is found on Sumatra, Borneo, Java and possibly in Cambodia. The habitat consists of lowland and lower montane forests. References Natural History Museum Lepidoptera generic names catalog Metarbelinae Moths described in 1890",
+      "text_preview": "Squamura maculata Squamura maculata is a moth in the family Cossidae. It is found on Sumatra, Borneo, Java and possibly in Cambodia. The habitat consists of lowland and lower montane forests. References Natural History Museum Lepidoptera generic names catalog Metarbelinae Moths described in 1890",
+      "text_start_preview": "Squamura maculata Squamura maculata is a moth in the family Cossidae. It is found on Sumatra, Borneo, Java and possibly in Cambodia. The habitat consists of lowland and lower montane forests. References Natural History Museum Lepidoptera generic names catalog Metarbelinae Moths described in 1890",
+      "title": "Squamura maculata"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "44402902",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_167c1695757cf8c53e9a1e4a",
+      "sample_id": "cap_general_short:rec_167c1695757cf8c53e9a1e4a",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7577639751552795,
+        "character_entropy_bits": 4.612655344877397,
+        "characters": 322,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 5,
+        "repeated_trigram_fraction": 0.0,
+        "words": 56
+      },
+      "stratum": "cap_general_short",
+      "text_end_preview": "Scoparia denigata Scoparia denigata is a moth in the family Crambidae. It was described by Harrison Gray Dyar Jr. in 1929. It has been recorded from the US state of Arizona. The wingspan is 14–18 mm. Adults are light gray brown. Adults have been recorded on wing in August. References Moths described in 1929 Scorparia",
+      "text_preview": "Scoparia denigata Scoparia denigata is a moth in the family Crambidae. It was described by Harrison Gray Dyar Jr. in 1929. It has been recorded from the US state of Arizona. The wingspan is 14–18 mm. Adults are light gray brown. Adults have been recorded on wing in August. References Moths described in 1929 Scorparia",
+      "text_start_preview": "Scoparia denigata Scoparia denigata is a moth in the family Crambidae. It was described by Harrison Gray Dyar Jr. in 1929. It has been recorded from the US state of Arizona. The wingspan is 14–18 mm. Adults are light gray brown. Adults have been recorded on wing in August. References Moths described in 1929 Scorparia",
+      "title": "Scoparia denigata"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "19750270",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_96648c9349db8e9b6e68065c",
+      "sample_id": "cap_general_short:rec_96648c9349db8e9b6e68065c",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8252148997134671,
+        "character_entropy_bits": 4.511248773811533,
+        "characters": 349,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 6,
+        "repeated_trigram_fraction": 0.019607843137254943,
+        "words": 53
+      },
+      "stratum": "cap_general_short",
+      "text_end_preview": "Schiahorn The Schiahorn is a mountain of the Plessur Alps, overlooking Davos in the canton of Graubünden. The Schiahorn is located just east of the Strela Pass, where the summit normal route starts. References External links Schiahorn on Hikr Mountains of the Alps Mountains of Graubünden Mountains of Switzerland Two-thousanders of Switzerland",
+      "text_preview": "Schiahorn The Schiahorn is a mountain of the Plessur Alps, overlooking Davos in the canton of Graubünden. The Schiahorn is located just east of the Strela Pass, where the summit normal route starts. References External links Schiahorn on Hikr Mountains of the Alps Mountains of Graubünden Mountains of Switzerland Two-thousanders of Switzerland",
+      "text_start_preview": "Schiahorn The Schiahorn is a mountain of the Plessur Alps, overlooking Davos in the canton of Graubünden. The Schiahorn is located just east of the Strela Pass, where the summit normal route starts. References External links Schiahorn on Hikr Mountains of the Alps Mountains of Graubünden Mountains of Switzerland Two-thousanders of Switzerland",
+      "title": "Schiahorn"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65814461",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_a976f219c0f470cee2163e6b",
+      "sample_id": "cap_general_short:rec_a976f219c0f470cee2163e6b",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7828418230563002,
+        "character_entropy_bits": 4.6017204467766355,
+        "characters": 373,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 6,
+        "repeated_trigram_fraction": 0.0,
+        "words": 54
+      },
+      "stratum": "cap_general_short",
+      "text_end_preview": "Everett Whittingham Everett Whittingham (born 25 February 1954) is a Jamaican cricketer. He played in one first-class and three List A matches for the Jamaican cricket team from 1980 to 1985. See also List of Jamaican representative cricketers References External links 1954 births Living people Jamaican cricketers Jamaica cricketers Cricketers from Kingston, Jamaica",
+      "text_preview": "Everett Whittingham Everett Whittingham (born 25 February 1954) is a Jamaican cricketer. He played in one first-class and three List A matches for the Jamaican cricket team from 1980 to 1985. See also List of Jamaican representative cricketers References External links 1954 births Living people Jamaican cricketers Jamaica cricketers Cricketers from Kingston, Jamaica",
+      "text_start_preview": "Everett Whittingham Everett Whittingham (born 25 February 1954) is a Jamaican cricketer. He played in one first-class and three List A matches for the Jamaican cricket team from 1980 to 1985. See also List of Jamaican representative cricketers References External links 1954 births Living people Jamaican cricketers Jamaica cricketers Cricketers from Kingston, Jamaica",
+      "title": "Everett Whittingham"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "38599884",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_de1c9f1a6e73920fa42b73ee",
+      "sample_id": "cap_general_short:rec_de1c9f1a6e73920fa42b73ee",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7894736842105263,
+        "character_entropy_bits": 4.732605474140093,
+        "characters": 399,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 4,
+        "repeated_trigram_fraction": 0.049180327868852514,
+        "words": 63
+      },
+      "stratum": "cap_general_short",
+      "text_end_preview": "Abbas-e Aliabad Abbas-e Aliabad (, also Romanized as ʿAbbās-e ʿAlīābād) is a village in Dasht-e Zarrin Rural District, in the Central District of Kuhrang County, Chaharmahal and Bakhtiari Province, Iran. At the 2006 census, its population was 18, in 5 families. The village is populated by Lurs. References Populated places in Kuhrang County Luri settlements in Chaharmahal and Bakhtiari Province",
+      "text_preview": "Abbas-e Aliabad Abbas-e Aliabad (, also Romanized as ʿAbbās-e ʿAlīābād) is a village in Dasht-e Zarrin Rural District, in the Central District of Kuhrang County, Chaharmahal and Bakhtiari Province, Iran. At the 2006 census, its population was 18, in 5 families. The village is populated by Lurs. References Populated places in Kuhrang County Luri settlements in Chaharmahal and Bakhtiari Province",
+      "text_start_preview": "Abbas-e Aliabad Abbas-e Aliabad (, also Romanized as ʿAbbās-e ʿAlīābād) is a village in Dasht-e Zarrin Rural District, in the Central District of Kuhrang County, Chaharmahal and Bakhtiari Province, Iran. At the 2006 census, its population was 18, in 5 families. The village is populated by Lurs. References Populated places in Kuhrang County Luri settlements in Chaharmahal and Bakhtiari Province",
+      "title": "Abbas-e Aliabad"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "disambiguation_page",
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "8459657",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_76a398ebb1743f537331f253",
+      "sample_id": "cap_general_disambiguation:rec_76a398ebb1743f537331f253",
+      "sampling_cap_groups": [
+        "general_short",
+        "general_disambiguation"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.6821192052980133,
+        "character_entropy_bits": 4.776192258555274,
+        "characters": 302,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 4,
+        "repeated_trigram_fraction": 0.0,
+        "words": 45
+      },
+      "stratum": "cap_general_disambiguation",
+      "text_end_preview": "Robert Easton Robert Easton may refer to: Robert Easton (actor) (1930–2011), American actor and dialect coach Robert Easton (bass) (1898–1987), British bass singer Robert Easton (athlete) (born 1960/61), Canadian Paralympic athlete See also Robert Easton Burns (1805–1863), Canadian lawyer and judge",
+      "text_preview": "Robert Easton Robert Easton may refer to: Robert Easton (actor) (1930–2011), American actor and dialect coach Robert Easton (bass) (1898–1987), British bass singer Robert Easton (athlete) (born 1960/61), Canadian Paralympic athlete See also Robert Easton Burns (1805–1863), Canadian lawyer and judge",
+      "text_start_preview": "Robert Easton Robert Easton may refer to: Robert Easton (actor) (1930–2011), American actor and dialect coach Robert Easton (bass) (1898–1987), British bass singer Robert Easton (athlete) (born 1960/61), Canadian Paralympic athlete See also Robert Easton Burns (1805–1863), Canadian lawyer and judge",
+      "title": "Robert Easton"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "disambiguation_page",
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "30578051",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_a27cd97f14bfcd0f5d44b7f9",
+      "sample_id": "cap_general_disambiguation:rec_a27cd97f14bfcd0f5d44b7f9",
+      "sampling_cap_groups": [
+        "general_short",
+        "general_disambiguation"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7619047619047619,
+        "character_entropy_bits": 4.686874586833371,
+        "characters": 378,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 3,
+        "repeated_trigram_fraction": 0.0,
+        "words": 52
+      },
+      "stratum": "cap_general_disambiguation",
+      "text_end_preview": "Emily Martin Emily Martin may refer to: Emily Martin (1884–1962), aka Emily Dutton, South Australian musician and socialite Emily Martin (anthropologist) (born 1944), sinologist, anthropologist, and feminist Emily Martin (rower) (born 1979), Australian rower Emily Martin (diver), British diver Emily Winfield Martin, American artist and author-illustrator of children's books",
+      "text_preview": "Emily Martin Emily Martin may refer to: Emily Martin (1884–1962), aka Emily Dutton, South Australian musician and socialite Emily Martin (anthropologist) (born 1944), sinologist, anthropologist, and feminist Emily Martin (rower) (born 1979), Australian rower Emily Martin (diver), British diver Emily Winfield Martin, American artist and author-illustrator of children's books",
+      "text_start_preview": "Emily Martin Emily Martin may refer to: Emily Martin (1884–1962), aka Emily Dutton, South Australian musician and socialite Emily Martin (anthropologist) (born 1944), sinologist, anthropologist, and feminist Emily Martin (rower) (born 1979), Australian rower Emily Martin (diver), British diver Emily Winfield Martin, American artist and author-illustrator of children's books",
+      "title": "Emily Martin"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "disambiguation_page"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "26694185",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_e74cba94c7ccf9211a9189e2",
+      "sample_id": "cap_general_disambiguation:rec_e74cba94c7ccf9211a9189e2",
+      "sampling_cap_groups": [
+        "general_disambiguation"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7217068645640075,
+        "character_entropy_bits": 4.661916936297544,
+        "characters": 539,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 3,
+        "repeated_trigram_fraction": 0.13636363636363635,
+        "words": 90
+      },
+      "stratum": "cap_general_disambiguation",
+      "text_end_preview": "One Mississippi One Mississippi may refer to: One Mississippi (Brendan Benson album), 1996 One Mississippi (J Church album), 2000 One Mississippi (TV series), a 2016 American television series \"One Mississippi\", a song on the 2003 album Jillbilly by Jill King \"One Mississippi\", a song on the 2013 album Bring You Back by Brett Eldredge \"One Mississippi\", a song on the 2017 album So Good by Zara Larsson \"One Mississippi\", a song on the 2020 album My Mississippi Reunion by Steve Azar \"One Mississippi\" (song), a 2021 song by Kane Brown",
+      "text_preview": "One Mississippi One Mississippi may refer to: One Mississippi (Brendan Benson album), 1996 One Mississippi (J Church album), 2000 One Mississippi (TV series), a 2016 American television series \"One Mississippi\", a song on the 2003 album Jillbilly by Jill King \"One Mississippi\", a song on the 2013 album Bring You Back by Brett Eldredge \"One Mississippi\", a song on the 2017 album So Good by Zara Larsson \"One Mississippi\", a song on the 2020 album My Mississippi Reunion by Steve Azar \"One Mississippi\" (song), a 2021 song by Kane Brown",
+      "text_start_preview": "One Mississippi One Mississippi may refer to: One Mississippi (Brendan Benson album), 1996 One Mississippi (J Church album), 2000 One Mississippi (TV series), a 2016 American television series \"One Mississippi\", a song on the 2003 album Jillbilly by Jill King \"One Mississippi\", a song on the 2013 album Bring You Back by Brett Eldredge \"One Mississippi\", a song on the 2017 album So Good by Zara Larsson \"One Mississippi\", a song on the 2020 album My Mississippi Reunion by Steve Azar \"One Mississippi\" (song), a 2021 song by Kane Brown",
+      "title": "One Mississippi"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "disambiguation_page"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1646505",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_aa17c4e9fc9181141abc11d4",
+      "sample_id": "cap_general_disambiguation:rec_aa17c4e9fc9181141abc11d4",
+      "sampling_cap_groups": [
+        "general_disambiguation"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7481927710843373,
+        "character_entropy_bits": 4.811969953292342,
+        "characters": 830,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 6,
+        "repeated_trigram_fraction": 0.052238805970149294,
+        "words": 136
+      },
+      "stratum": "cap_general_disambiguation",
+      "text_end_preview": "…dynasty Jiangling County, a city in Hubei, China, formerly known as (Southern Capital or Nandu) during the later Tang dynasty Nandu River, Hainan province, China Other uses Ñandú, a native South American name for any of three species of Rhea. Nandu (film), a 1981 Tamil film Ñandú (vehicle), a 1940s all-terrain vehicle military vehicle Southern Metropolis Daily, often shortened to Nandu (南都) One of the Argentine Air Force flights that attacked the British fleet in the Battle of San Carlos, during the Falklands War, 1982 People with the given name Nandu Bhende (c. 1955–2014), Indian singer Nandu M. Natekar (1933–2021), Indian badminton player See also Nandhu (born 1965), Malayalam film actor",
+      "text_preview": "Nandu Nandu may refer to: Places Chengdu, a city in Sichuan, China, known as (Southern Capital or Nandu) during the early Tang dynasty Jiangling County, a city in Hubei, China, formerly known as (Southern Capital or Nandu) during the later Tang dynasty Nandu River, Hainan province, China Other uses Ñandú, a native South American name for any of three species of Rhea. Nandu (film), a 1981 Tamil film Ñandú (vehicle), a 1940s all-terrain vehicle military vehicle Southern Metropolis Daily, often shortened to Nandu (南都) One of the Argentine Air Force flights that attacked the British fleet in the Battle of San Carlos, during the Falklands War, 1982 People with the given name Nandu Bhende (c. 195…",
+      "text_start_preview": "Nandu Nandu may refer to: Places Chengdu, a city in Sichuan, China, known as (Southern Capital or Nandu) during the early Tang dynasty Jiangling County, a city in Hubei, China, formerly known as (Southern Capital or Nandu) during the later Tang dynasty Nandu River, Hainan province, China Other uses Ñandú, a native South American name for any of three species of Rhea. Nandu (film), a 1981 Tamil film Ñandú (vehicle), a 1940s all-terrain vehicle military vehicle Southern Metropolis Daily, often shortened to Nandu (南都) One of the Argentine Air Force flights that attacked the British fleet in the Battle of San Carlos, during the Falklands War, 1982 People with the given name Nandu Bhende (c. 195…",
+      "title": "Nandu"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "disambiguation_page"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "410709",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_ad1c30c210bcc53f78cd9fcd",
+      "sample_id": "cap_general_disambiguation:rec_ad1c30c210bcc53f78cd9fcd",
+      "sampling_cap_groups": [
+        "general_disambiguation"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7900267875540903,
+        "character_entropy_bits": 4.77816136636329,
+        "characters": 4853,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 8,
+        "repeated_trigram_fraction": 0.3420365535248042,
+        "words": 768
+      },
+      "stratum": "cap_general_disambiguation",
+      "text_end_preview": "…ria County, Texas Old Post Office (Washington, D.C.), NRHP-listed as \"Old Post Office and Clock Tower\" Old Post Office (Pullman, Washington), NRHP-listed as \"U.S. Post Office-Pullman\" Old Morgantown Post Office, part of the Monongalia Arts Center in Morgantown, West Virginia, NRHP-listed Old Ashland Post Office, listed on the NRHP in Ashland, Wisconsin Former United States Post Office (Kaukauna, Wisconsin), listed on the NRHP in Wisconsin See also Post office Postal service List of United States post offices Federal Building and Post Office (disambiguation) U.S. Post Office and Courthouse (disambiguation) Postal service (disambiguation) Post Office (disambiguation) Old Post (disambiguation)",
+      "text_preview": "Old Post Office Old Post Office, or Former Post Office, may refer to: Serbia Old Post Office (Belgrade) United Kingdom Old Post Office, Bristol Tintagel Old Post Office, Tintagel United States (ordered by state and city) Old Athens, Alabama Main Post Office in Athens, Alabama, listed on the National Register of Historic Places Old Brick Post Office in Wickenburg, Arizona, NRHP-listed Old Camden Post Office in Camden, Arkansas, listed on the NRHP in Arkansas Old Post Office (Fayetteville, Arkansas), listed on the NRHP in Arkansas Old Post Office (Hot Springs, Arkansas), listed on the NRHP in Arkansas Little Rock U.S. Post Office and Courthouse, also known as the Old Post Office and Courthous…",
+      "text_start_preview": "Old Post Office Old Post Office, or Former Post Office, may refer to: Serbia Old Post Office (Belgrade) United Kingdom Old Post Office, Bristol Tintagel Old Post Office, Tintagel United States (ordered by state and city) Old Athens, Alabama Main Post Office in Athens, Alabama, listed on the National Register of Historic Places Old Brick Post Office in Wickenburg, Arizona, NRHP-listed Old Camden Post Office in Camden, Arkansas, listed on the NRHP in Arkansas Old Post Office (Fayetteville, Arkansas), listed on the NRHP in Arkansas Old Post Office (Hot Springs, Arkansas), listed on the NRHP in Arkansas Little Rock U.S. Post Office and Courthouse, also known as the Old Post Office and Courthous…",
+      "title": "Old Post Office"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "duplicate_lines"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "19691879",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_00ae923fa5be84e71fd2707f",
+      "sample_id": "cap_general_structured_low_prose:rec_00ae923fa5be84e71fd2707f",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7538461538461538,
+        "character_entropy_bits": 4.74342055449469,
+        "characters": 650,
+        "duplicate_line_fraction": 0.2571428571428571,
+        "list_line_fraction": 0.0,
+        "paragraphs": 31,
+        "repeated_trigram_fraction": 0.1649484536082474,
+        "words": 99
+      },
+      "stratum": "cap_general_structured_low_prose",
+      "text_end_preview": "Futsal at the 2007 Asian Indoor Games Futsal at the 2007 Asian Indoor Games was held in Macau, China from 26 October to 3 November 2007. Medalists Medal table Results Men Preliminary Group A Group B Group C Group D Kuwait was disqualified from the tournament on 29 October after Kuwait Football Association was suspended by FIFA. Knockout round Quarterfinals Semifinals Bronze medal match Gold medal match Goalscorers Women Preliminary Group A Group B Placing Knockout round Semifinals Bronze medal match Gold medal match Goalscorers References RSSSF 2007 Asian Indoor Games events Indoor Games 2007 2007 Futsal in Macau",
+      "text_preview": "Futsal at the 2007 Asian Indoor Games Futsal at the 2007 Asian Indoor Games was held in Macau, China from 26 October to 3 November 2007. Medalists Medal table Results Men Preliminary Group A Group B Group C Group D Kuwait was disqualified from the tournament on 29 October after Kuwait Football Association was suspended by FIFA. Knockout round Quarterfinals Semifinals Bronze medal match Gold medal match Goalscorers Women Preliminary Group A Group B Placing Knockout round Semifinals Bronze medal match Gold medal match Goalscorers References RSSSF 2007 Asian Indoor Games events Indoor Games 2007 2007 Futsal in Macau",
+      "text_start_preview": "Futsal at the 2007 Asian Indoor Games Futsal at the 2007 Asian Indoor Games was held in Macau, China from 26 October to 3 November 2007. Medalists Medal table Results Men Preliminary Group A Group B Group C Group D Kuwait was disqualified from the tournament on 29 October after Kuwait Football Association was suspended by FIFA. Knockout round Quarterfinals Semifinals Bronze medal match Gold medal match Goalscorers Women Preliminary Group A Group B Placing Knockout round Semifinals Bronze medal match Gold medal match Goalscorers References RSSSF 2007 Asian Indoor Games events Indoor Games 2007 2007 Futsal in Macau",
+      "title": "Futsal at the 2007 Asian Indoor Games"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "duplicate_lines",
+        "list_dominant",
+        "repetitive_language"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "27527913",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_c1d315b29cd48f0046377b61",
+      "sample_id": "cap_general_structured_low_prose:rec_c1d315b29cd48f0046377b61",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7951807228915663,
+        "character_entropy_bits": 4.638128395798867,
+        "characters": 1577,
+        "duplicate_line_fraction": 0.3333333333333333,
+        "list_line_fraction": 0.5238095238095238,
+        "paragraphs": 11,
+        "repeated_trigram_fraction": 0.615702479338843,
+        "words": 244
+      },
+      "stratum": "cap_general_structured_low_prose",
+      "text_end_preview": "…ent group in Nuwara Eliya District. 3. EPDP contested as an independent group in Jaffna District. Seats 1. EROS contested as an independent group in four districts (Batticaloa, Jaffna, Trincomalee and Vanni). 1. The EROS/PLOTE/TELO alliance contested as TELO in Ampara District, Batticaloa District, Colombo District and Trincomalee District; as DPLF in Vanni District; and as in an independent group in Jaffna District. 2. UCPF contested as an independent group in Nuwara Eliya District. 3. EPDP contested as an independent group in Jaffna District. See also Results of the 1994 Sri Lankan general election by province References 1994 Sri Lankan parliamentary election Election results in Sri Lanka",
+      "text_preview": "Results of the 1994 Sri Lankan general election by electoral district Results of the 1994 Sri Lankan general election by electoral district. Number of votes 1. The EROS/PLOTE/TELO alliance contested as TELO in Ampara District, Batticaloa District, Colombo District and Trincomalee District; as DPLF in Vanni District; and as in an independent group in Jaffna District. 2. UCPF contested as an independent group in Nuwara Eliya District. 3. EPDP contested as an independent group in Jaffna District. Percentage of votes 1. EROS contested as an independent group in four districts (Batticaloa, Jaffna, Trincomalee and Vanni). 1. The EROS/PLOTE/TELO alliance contested as TELO in Ampara District, Batti…",
+      "text_start_preview": "Results of the 1994 Sri Lankan general election by electoral district Results of the 1994 Sri Lankan general election by electoral district. Number of votes 1. The EROS/PLOTE/TELO alliance contested as TELO in Ampara District, Batticaloa District, Colombo District and Trincomalee District; as DPLF in Vanni District; and as in an independent group in Jaffna District. 2. UCPF contested as an independent group in Nuwara Eliya District. 3. EPDP contested as an independent group in Jaffna District. Percentage of votes 1. EROS contested as an independent group in four districts (Batticaloa, Jaffna, Trincomalee and Vanni). 1. The EROS/PLOTE/TELO alliance contested as TELO in Ampara District, Batti…",
+      "title": "Results of the 1994 Sri Lankan general election by electoral district"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "duplicate_lines"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "34546924",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_30d45d16b1b2d56a4fd1a10f",
+      "sample_id": "cap_general_structured_low_prose:rec_30d45d16b1b2d56a4fd1a10f",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7011531069827034,
+        "character_entropy_bits": 4.840362603206103,
+        "characters": 3122,
+        "duplicate_line_fraction": 0.20454545454545456,
+        "list_line_fraction": 0.0,
+        "paragraphs": 10,
+        "repeated_trigram_fraction": 0.033333333333333326,
+        "words": 452
+      },
+      "stratum": "cap_general_structured_low_prose",
+      "text_end_preview": "…Rowing |- | 26 | Haskovo | Cooking lesson | Go-karting |- | 27 | Edirne | Soap molding | Local baths |- | 28 | Silivri | Belly dancing | Turkish wrestling |- | 29 | Istanbul | Spice market | Swimming with dolphins |- | 30 | colspan=\"3\" |} It's the long journey home for the coach tripper and Brendan reminisces about the last six weeks on the road. References 2012 British television seasons Coach Trip series Television in North Macedonia Television shows set in Austria Television shows set in Bulgaria Television shows set in Essex Television shows set in Germany Television shows set in Greece Television shows set in Italy Television shows set in the Netherlands Television shows set in Turkey",
+      "text_preview": "Coach Trip (series 8) Coach Trip 8 aired from 30 January to 9 March 2012 after the third celebrity series finished and is the eighth and final series of Coach Trip in the United Kingdom before the 2012 Summer Olympics and Paralympics. It was filmed from Monday 29 August until Saturday 1 October 2011 (after the England riots ended). The length of this series was the same as the previous non-celebrity series but with only 1 day of a weekend included at the end of the tour. The Mediterranean tour centring towards Western Asia began in the UK, before moving to the Netherlands, Germany, Austria, Italy, Greece, Bulgaria, North Macedonia (for the first time) and finishing in Turkey. Tour guide Bre…",
+      "text_start_preview": "Coach Trip (series 8) Coach Trip 8 aired from 30 January to 9 March 2012 after the third celebrity series finished and is the eighth and final series of Coach Trip in the United Kingdom before the 2012 Summer Olympics and Paralympics. It was filmed from Monday 29 August until Saturday 1 October 2011 (after the England riots ended). The length of this series was the same as the previous non-celebrity series but with only 1 day of a weekend included at the end of the tour. The Mediterranean tour centring towards Western Asia began in the UK, before moving to the Netherlands, Germany, Austria, Italy, Greece, Bulgaria, North Macedonia (for the first time) and finishing in Turkey. Tour guide Bre…",
+      "title": "Coach Trip (series 8)"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "duplicate_lines"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "64828360",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_8402ccaaaee1c218d8186c79",
+      "sample_id": "cap_general_structured_low_prose:rec_8402ccaaaee1c218d8186c79",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.5257296466973886,
+        "character_entropy_bits": 4.946859012531981,
+        "characters": 5208,
+        "duplicate_line_fraction": 0.4326923076923077,
+        "list_line_fraction": 0.0,
+        "paragraphs": 17,
+        "repeated_trigram_fraction": 0.28085642317380355,
+        "words": 796
+      },
+      "stratum": "cap_general_structured_low_prose",
+      "text_end_preview": "…mond • Columbus, Ohio || 2–4 || 22–13 || 10–2 |- align=\"center\" bgcolor=\"#ccffcc\" | 36 || June 9 || Western Michigan || Varsity Diamond • Columbus, Ohio || 3–2 || 23–13 || 10–2 |- |- align=\"center\" bgcolor=\"#ffcccc\" | 37 || June 13 || Oklahoma || Omaha Municipal Stadium • Omaha, Nebraska || 8–9 || 23–14 || 10–2 |- align=\"center\" bgcolor=\"#ffcccc\" | 38 || June 13 || Texas A&M || Omaha Municipal Stadium • Omaha, Nebraska || 2–3 || 23–15 || 10–2 |- Awards and honors Dick Hauck First Team All-Big Ten Stewart Hein First Team All-Big Ten References Ohio State Buckeyes baseball seasons Ohio State Buckeyes baseball Big Ten Conference baseball champion seasons Ohio State College World Series seasons",
+      "text_preview": "1951 Ohio State Buckeyes baseball team The 1951 Ohio State Buckeyes baseball team represented the Ohio State University in the 1951 NCAA baseball season. The head coach was Marty Karow, serving his 1st year. The Buckeyes lost in the College World Series, defeated by the Texas A&M Aggies. Roster Schedule ! style=\"\" | Regular season |- valign=\"top\" |- align=\"center\" bgcolor=\"#ccffcc\" | 1 || March 16 || at || Unknown • San Antonio, Texas || 15–3 || 1–0 || 0–0 |- align=\"center\" bgcolor=\"#ffcccc\" | 2 || March 17 || at B. A. M. C. || Unknown • San Antonio, Texas || 7–8 || 1–1 || 0–0 |- align=\"center\" bgcolor=\"#ffcccc\" | 3 || March 19 || at || Clark Field • Austin, Texas || 0–8 || 1–2 || 0–0 |- al…",
+      "text_start_preview": "1951 Ohio State Buckeyes baseball team The 1951 Ohio State Buckeyes baseball team represented the Ohio State University in the 1951 NCAA baseball season. The head coach was Marty Karow, serving his 1st year. The Buckeyes lost in the College World Series, defeated by the Texas A&M Aggies. Roster Schedule ! style=\"\" | Regular season |- valign=\"top\" |- align=\"center\" bgcolor=\"#ccffcc\" | 1 || March 16 || at || Unknown • San Antonio, Texas || 15–3 || 1–0 || 0–0 |- align=\"center\" bgcolor=\"#ffcccc\" | 2 || March 17 || at B. A. M. C. || Unknown • San Antonio, Texas || 7–8 || 1–1 || 0–0 |- align=\"center\" bgcolor=\"#ffcccc\" | 3 || March 19 || at || Clark Field • Austin, Texas || 0–8 || 1–2 || 0–0 |- al…",
+      "title": "1951 Ohio State Buckeyes baseball team"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 7,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 1,
+      "flags": [
+        "duplicate_lines"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "72035",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_1e73f80f2cc795aca5699bd3",
+      "sample_id": "cap_general_structured_low_prose:rec_1e73f80f2cc795aca5699bd3",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7885750156936597,
+        "character_entropy_bits": 4.672387457123701,
+        "characters": 7965,
+        "duplicate_line_fraction": 0.37142857142857144,
+        "list_line_fraction": 0.0,
+        "paragraphs": 26,
+        "repeated_trigram_fraction": 0.036951501154734445,
+        "words": 1301
+      },
+      "stratum": "cap_general_structured_low_prose",
+      "text_end_preview": "…Nippon Professional Baseball, consists of two leagues of 6 teams each. The country's national team has also been successful, having won two Olympic medals (bronze and silver), while the World Championships team never placed worse than 5th in its 13 appearances, winning second place once and third place three times. Recently, several Japanese players have also entered the U.S. major leagues, such as Hideo Nomo, Kazuhiro Sasaki, Ichiro Suzuki, Hideki Matsui, Kazuo Matsui, Tadahito Iguchi, Kenji Johjima, Daisuke Matsuzaka, Yu Darvish, Masahiro Tanaka, and Shohei Ohtani. Japan defeated Korea to become champions of the second World Baseball Classic on March 23, 2009, in Los Angeles. Philippines",
+      "text_preview": "History of baseball outside the United States Baseball was open only to male amateurs in 1992 and 1996. As a result, the Americans and other nations where professional baseball is developed relied on collegiate players, while Cubans used their most experienced veterans, who technically were considered amateurs, as while they nominally held other jobs, they in fact trained full-time. In 2000, pros were admitted, but the MLB refused to release its players in 2000, 2004, and 2008, and the situation changed only a little: the Cubans still used their best players, while the Americans started using minor leaguers. The IOC cited the absence of the best players as the main reason for baseball being…",
+      "text_start_preview": "History of baseball outside the United States Baseball was open only to male amateurs in 1992 and 1996. As a result, the Americans and other nations where professional baseball is developed relied on collegiate players, while Cubans used their most experienced veterans, who technically were considered amateurs, as while they nominally held other jobs, they in fact trained full-time. In 2000, pros were admitted, but the MLB refused to release its players in 2000, 2004, and 2008, and the situation changed only a little: the Cubans still used their best players, while the Americans started using minor leaguers. The IOC cited the absence of the best players as the main reason for baseball being…",
+      "title": "History of baseball outside the United States"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 4,
+      "chunk_end_boundary": "sentence",
+      "chunk_index": 2,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65813354",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_032e77599758be3cf3243d37",
+      "sample_id": "boundary_non_paragraph:rec_032e77599758be3cf3243d37",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.8115124153498872,
+        "character_entropy_bits": 4.627664199881555,
+        "characters": 7974,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.3453981385729059,
+        "words": 969
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…, endemic Crassula thunbergiana Schult. indigenous Crassula thunbergiana Schult. subsp. minutiflora (Schonland & Baker f.) Toelken, indigenous Crassula thunbergiana Schult. subsp. thunbergiana, endemic Crassula tomentosa Thunb. indigenous Crassula tomentosa Thunb. var. glabrifolia (Harv.) G.D.Rowley, indigenous Crassula tomentosa Thunb. var. tomentosa, indigenous Crassula tuberella Toelken, indigenous Crassula umbella Jacq. endemic Crassula umbellata Thunb. endemic Crassula umbraticola N.E.Br. indigenous Crassula vaginata Eckl. & Zeyh. indigenous Crassula vaginata Eckl. & Zeyh. subsp. vaginata, indigenous Crassula vaillantii (Willd.) Roth, not indigenous, naturalised Crassula vestita Thunb.",
+      "text_preview": "List of Saxifragales of South Africa leucantha (Schonland & Baker f.) Toelken, endemic Crassula multiflora Schonland & Baker f. subsp. multiflora, endemic Crassula muricata Thunb. endemic Crassula muscosa L. indigenous Crassula muscosa L. var. muscosa, indigenous Crassula muscosa L. var. obtusifolia (Harv.) G.D.Rowley, indigenous Crassula muscosa L. var. parvula (Eckl. & Zeyh.) Toelken, endemic Crassula muscosa L. var. polpodacea (Eckl. & Zeyh.) G.D.Rowley, endemic Crassula namaquensis Schonland & Baker f. indigenous Crassula namaquensis Schonland & Baker f. subsp. comptonii (Hutch. & Pillans) Toelken, endemic Crassula namaquensis Schonland & Baker f. subsp. lutea (Schonland) Toelken, endem…",
+      "text_start_preview": "List of Saxifragales of South Africa leucantha (Schonland & Baker f.) Toelken, endemic Crassula multiflora Schonland & Baker f. subsp. multiflora, endemic Crassula muricata Thunb. endemic Crassula muscosa L. indigenous Crassula muscosa L. var. muscosa, indigenous Crassula muscosa L. var. obtusifolia (Harv.) G.D.Rowley, indigenous Crassula muscosa L. var. parvula (Eckl. & Zeyh.) Toelken, endemic Crassula muscosa L. var. polpodacea (Eckl. & Zeyh.) G.D.Rowley, endemic Crassula namaquensis Schonland & Baker f. indigenous Crassula namaquensis Schonland & Baker f. subsp. comptonii (Hutch. & Pillans) Toelken, endemic Crassula namaquensis Schonland & Baker f. subsp. lutea (Schonland) Toelken, endem…",
+      "title": "List of Saxifragales of South Africa"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 4,
+      "chunk_end_boundary": "sentence",
+      "chunk_index": 2,
+      "flags": [
+        "repetitive_language"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65813793",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_1e8861f09d317fec99bc2f92",
+      "sample_id": "boundary_non_paragraph:rec_1e8861f09d317fec99bc2f92",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8320735701688082,
+        "character_entropy_bits": 4.596226678200422,
+        "characters": 7938,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 7,
+        "repeated_trigram_fraction": 0.43503937007874016,
+        "words": 1018
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…uivi Lam. indigenous Solanum jasminoides Paxton, accepted as Solanum laxum Spreng. not indigenous, naturalised Solanum kibweziense Dammer, accepted as Solanum tettense Klotzsch Solanum koniortodes Dammer, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright, accepted as Solanum tettense Klotzsch, indigenous Solanum kwebense N.E.Br. ex C.H.Wright var. acutius Bitter, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright var. chondropetalum (Dammer) Bitter, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright var. luederitzii (Schinz) Bitter, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright var.",
+      "text_preview": "List of Solanales of South Africa Lycium Genus Lycium: Lycium acutifolium E.Mey. ex Dunal, endemic Lycium afrum L. endemic Lycium amoenum Dammer, indigenous Lycium arenicola Miers, indigenous Lycium bosciifolium Schinz, indigenous Lycium cinereum Thunb. indigenous Lycium cordatum Mill. accepted as Carissa bispinosa (L.) Desf. ex Brenan, indigenous Lycium ferocissimum Miers, indigenous Lycium gariepense A.M.Venter, indigenous Lycium grandicalyx Joubert & Venter, indigenous Lycium hantamense A.M.Venter, indigenous Lycium hirsutum Dunal, indigenous Lycium horridum Thunb. indigenous Lycium mascarenense A.M.Venter & A.J.Scott, indigenous Lycium oxycarpum Dunal, endemic Lycium pilifolium C.H.Wrig…",
+      "text_start_preview": "List of Solanales of South Africa Lycium Genus Lycium: Lycium acutifolium E.Mey. ex Dunal, endemic Lycium afrum L. endemic Lycium amoenum Dammer, indigenous Lycium arenicola Miers, indigenous Lycium bosciifolium Schinz, indigenous Lycium cinereum Thunb. indigenous Lycium cordatum Mill. accepted as Carissa bispinosa (L.) Desf. ex Brenan, indigenous Lycium ferocissimum Miers, indigenous Lycium gariepense A.M.Venter, indigenous Lycium grandicalyx Joubert & Venter, indigenous Lycium hantamense A.M.Venter, indigenous Lycium hirsutum Dunal, indigenous Lycium horridum Thunb. indigenous Lycium mascarenense A.M.Venter & A.J.Scott, indigenous Lycium oxycarpum Dunal, endemic Lycium pilifolium C.H.Wrig…",
+      "title": "List of Solanales of South Africa"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 11,
+      "chunk_end_boundary": "sentence",
+      "chunk_index": 8,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1271947",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_37928ac5a43c3bb20dfd038c",
+      "sample_id": "boundary_non_paragraph:rec_37928ac5a43c3bb20dfd038c",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.7998238550578762,
+        "character_entropy_bits": 4.625399340882817,
+        "characters": 7948,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.17766911165444177,
+        "words": 1229
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…ast London Federation of Suffragettes. 1913 Russia: In 1913 Russian women observed their first International Women's Day on the last Sunday in February. Following discussions, International Women's Day was transferred to 8 March and this day has remained the global date for International Women's Day ever since. US, Alaska: Alaska granted women the right to vote. Norway: Norway granted women the right to vote. Japan: Public universities opened to women. United Kingdom: The suffragette Emily Davison was killed by the King's horse at The Derby. United Kingdom: 50,000 women taking part in a pilgrimage organized by the National Union of Women's Suffrage Societies arrived in Hyde Park on July 26.",
+      "text_preview": "First-wave feminism 1896 Argentina: A group of anarcha-feminist women, headed by Virginia Bolten, publish La Voz de la Mujer, one of the first feminist newspapers of Latin America. US, Idaho: Idaho granted women the right to vote. 1900 Western Australia: Western Australia granted women the right to vote. Belgium: Legal majority was granted to unmarried women. Egypt: A school for female teachers was founded in Cairo. France: Women were allowed to practice law. Korea: The post office profession was opened to women. Tunisia: The first public elementary school for girls was opened. Japan: The first women's university was opened. Baden, Germany: Universities opened to women. Sweden: Maternity le…",
+      "text_start_preview": "First-wave feminism 1896 Argentina: A group of anarcha-feminist women, headed by Virginia Bolten, publish La Voz de la Mujer, one of the first feminist newspapers of Latin America. US, Idaho: Idaho granted women the right to vote. 1900 Western Australia: Western Australia granted women the right to vote. Belgium: Legal majority was granted to unmarried women. Egypt: A school for female teachers was founded in Cairo. France: Women were allowed to practice law. Korea: The post office profession was opened to women. Tunisia: The first public elementary school for girls was opened. Japan: The first women's university was opened. Baden, Germany: Universities opened to women. Sweden: Maternity le…",
+      "title": "First-wave feminism"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 11,
+      "chunk_end_boundary": "sentence",
+      "chunk_index": 7,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1271947",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_aab9ffe0e7274b82d98aa5f4",
+      "sample_id": "boundary_non_paragraph:rec_aab9ffe0e7274b82d98aa5f4",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.778100897711468,
+        "character_entropy_bits": 4.699328659678424,
+        "characters": 7909,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.16731821735731045,
+        "words": 1281
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…n the right to vote. New Zealand: New Zealand became the first self-governing country in the world in which all women had the right to vote in parliamentary elections. Cook Islands: The Cook Islands granted women the right to vote in island councils and a federal parliament. 1894 South Australia: South Australia granted women the right to vote. United Kingdom: The United Kingdom extended the right to vote in local elections to married women. 1895 US: Almost all U.S. states had passed some form of Sole Trader Laws, Property Laws, and Earnings Laws, granting married women the right to trade without their husbands' consent, own and/or control their own property, and control their own earnings.",
+      "text_preview": "First-wave feminism 1839 US, Mississippi: Mississippi was the first U.S. state that gave married women limited property rights. United Kingdom: The Custody of Infants Act 1839 made it possible for divorced mothers to be granted custody of their children under seven, but only if the Lord Chancellor agreed to it, and only if the mother was of good character. US, Mississippi: The Married Women's Property Act 1839 granted married women the right to own (but not control) property in their own name. 1840 US, Texas: Married women were allowed to own property in their own name. 1841 Bulgaria: The first secular girls school in Bulgaria was opened, making education and the profession of teacher avail…",
+      "text_start_preview": "First-wave feminism 1839 US, Mississippi: Mississippi was the first U.S. state that gave married women limited property rights. United Kingdom: The Custody of Infants Act 1839 made it possible for divorced mothers to be granted custody of their children under seven, but only if the Lord Chancellor agreed to it, and only if the mother was of good character. US, Mississippi: The Married Women's Property Act 1839 granted married women the right to own (but not control) property in their own name. 1840 US, Texas: Married women were allowed to own property in their own name. 1841 Bulgaria: The first secular girls school in Bulgaria was opened, making education and the profession of teacher avail…",
+      "title": "First-wave feminism"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 4,
+      "chunk_end_boundary": "sentence",
+      "chunk_index": 1,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65813354",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_afcd42c6126b6516c4786d22",
+      "sample_id": "boundary_non_paragraph:rec_afcd42c6126b6516c4786d22",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.8157597084328264,
+        "character_entropy_bits": 4.6272150394703395,
+        "characters": 7957,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.3483735571878279,
+        "words": 955
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "….) D.Dietr. indigenous Crassula mesembryanthemoides (Haw.) D.Dietr. subsp. hispida (Haw.) Toelken, endemic Crassula mesembryanthemoides (Haw.) D.Dietr. subsp. mesembryanthemoides, endemic Crassula minuta Toelken, endemic Crassula mollis Thunb. endemic Crassula montana Thunb. indigenous Crassula montana Thunb. subsp. montana, endemic Crassula montana Thunb. subsp. quadrangularis (Schonland) Toelken, endemic Crassula multicava Lem. indigenous Crassula multicava Lem. subsp. floribunda Friedrich ex Toelken, endemic Crassula multicava Lem. subsp. multicava, endemic Crassula multiceps Harv. endemic Crassula multiflora Schonland & Baker f. indigenous Crassula multiflora Schonland & Baker f. subsp.",
+      "text_preview": "List of Saxifragales of South Africa parvisepala (Schonland) Toelken, indigenous Crassula alcicornis Schonland, endemic Crassula alpestris Thunb. indigenous Crassula alpestris Thunb. subsp. alpestris, endemic Crassula alpestris Thunb. subsp. massonii (Britten & Baker f.) Toelken, endemic Crassula alstonii Marloth, endemic Crassula ammophila Toelken, endemic Crassula aphylla Schonland & Baker f. endemic Crassula arborea Medik. accepted as Crassula arborescens (Mill.) Willd. subsp. arborescens, indigenous Crassula arborescens (Mill.) Willd. endemic Crassula arborescens (Mill.) Willd. subsp. arborescens, endemic Crassula arborescens (Mill.) Willd. subsp. undulatifolia Toelken, endemic Crassula…",
+      "text_start_preview": "List of Saxifragales of South Africa parvisepala (Schonland) Toelken, indigenous Crassula alcicornis Schonland, endemic Crassula alpestris Thunb. indigenous Crassula alpestris Thunb. subsp. alpestris, endemic Crassula alpestris Thunb. subsp. massonii (Britten & Baker f.) Toelken, endemic Crassula alstonii Marloth, endemic Crassula ammophila Toelken, endemic Crassula aphylla Schonland & Baker f. endemic Crassula arborea Medik. accepted as Crassula arborescens (Mill.) Willd. subsp. arborescens, indigenous Crassula arborescens (Mill.) Willd. endemic Crassula arborescens (Mill.) Willd. subsp. arborescens, endemic Crassula arborescens (Mill.) Willd. subsp. undulatifolia Toelken, endemic Crassula…",
+      "title": "List of Saxifragales of South Africa"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 2,
+      "chunk_end_boundary": "sentence",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "27528353",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_ba813b8299138077ae565e30",
+      "sample_id": "boundary_non_paragraph:rec_ba813b8299138077ae565e30",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.7156497090854841,
+        "character_entropy_bits": 4.86435439695187,
+        "characters": 6703,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 3,
+        "repeated_trigram_fraction": 0.15384615384615385,
+        "words": 795
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…yrick, 1920 Limnaecia cirrhosema Turner, 1923 Limnaecia cirrhozona Turner, 1923 Limnaecia crossomela Lower, 1908 Limnaecia cybophora Meyrick, 1897 Limnaecia definitiva (T.P. Lucas, 1901) Limnaecia elaphropa Turner, 1923 Limnaecia epimictis Meyrick, 1897 Limnaecia eristica Meyrick, 1919 Limnaecia eugramma Lower, 1899 Limnaecia hemidoma Meyrick, 1897 Limnaecia hemimitra Turner, 1923 Limnaecia heterozona Lower, 1904 Limnaecia ida Lower, 1908 Limnaecia iriastis Meyrick, 1897 Limnaecia isodesma Lower, 1904 Limnaecia isozona Meyrick, 1897 Limnaecia leptomeris Meyrick, 1897 Limnaecia leptozona Turner, 1923 Limnaecia leucomita Turner, 1923 Limnaecia loxoscia Lower, 1923 Limnaecia lunacrescens (T.P.",
+      "text_preview": "List of moths of Australia (Cosmopterigidae) This is a list of the Australian species of the family Cosmopterigidae. It also acts as an index to the species articles and forms part of the full List of moths of Australia. Chrysopeleiinae Cholotis exodroma (Meyrick, 1897) Cholotis semnostola (Meyrick, 1897) Eumenodora encrypta Meyrick, 1906 Ithome lassula Hodges, 1962 Leptozestis anagrapta (Meyrick, 1897) Leptozestis antithetis (Meyrick, 1897) Leptozestis argoscia (Lower, 1904) Leptozestis autochroa (Meyrick, 1915) Leptozestis capnopora (Meyrick, 1897) Leptozestis cataspoda (Meyrick, 1897) Leptozestis charmosyna (Meyrick, 1921) Leptozestis crassipalpis (Turner, 1923) Leptozestis crebra (Meyri…",
+      "text_start_preview": "List of moths of Australia (Cosmopterigidae) This is a list of the Australian species of the family Cosmopterigidae. It also acts as an index to the species articles and forms part of the full List of moths of Australia. Chrysopeleiinae Cholotis exodroma (Meyrick, 1897) Cholotis semnostola (Meyrick, 1897) Eumenodora encrypta Meyrick, 1906 Ithome lassula Hodges, 1962 Leptozestis anagrapta (Meyrick, 1897) Leptozestis antithetis (Meyrick, 1897) Leptozestis argoscia (Lower, 1904) Leptozestis autochroa (Meyrick, 1915) Leptozestis capnopora (Meyrick, 1897) Leptozestis cataspoda (Meyrick, 1897) Leptozestis charmosyna (Meyrick, 1921) Leptozestis crassipalpis (Turner, 1923) Leptozestis crebra (Meyri…",
+      "title": "List of moths of Australia (Cosmopterigidae)"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 3,
+      "chunk_end_boundary": "sentence",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1930500",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_e5a81bf7f25eef4a19c4a329",
+      "sample_id": "boundary_non_paragraph:rec_e5a81bf7f25eef4a19c4a329",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.7714514835605453,
+        "character_entropy_bits": 4.742984960774414,
+        "characters": 4988,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 15,
+        "repeated_trigram_fraction": 0.056122448979591844,
+        "words": 786
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…r Wing – documentary short, Don Haldane 1956 - writer Saskatchewan Traveller - documentary short, Don Haldane 1956 - writer Portrait of the Family - documentary short, Ronald Dick 1957 - writer The Invisible Keystone - documentary short, Ronald Dick 1957 - writer Four Centuries of Growing Pains - documentary short, Ronald Dick, Nicholas Balla 1957 - writer The Colonies Look Ahead - documentary short, Ronald Dick 1957 - writer Can It Hold Together? - documentary short, Ronald Dick 1957 Crisis in Asia - documentary short, Ronald Dick 1957 The Ghost That Talked - documentary short, Don Haldane 1957 - writer A Letter from Oxford - documentary short, Julian Biggs 1957 Colonialism: Ogre or Angel?",
+      "text_preview": "William Weintraub William Weintraub (February 19, 1926 – November 6, 2017) was a Canadian documentarian/filmmaker, journalist and author, best known for his long career with the National Film Board of Canada (NFB). Early life Weintraub was born in Montreal, to Louis Weintraub and Mina Blumer Weintraub, and grew up in the blue-collar neighbourhood of Verdun. His father had been a stock broker; he lost everything in the Wall Street Crash of 1929 and worked as the manager of a corner store. William studied English Literature and political science at McGill University, where he had worked on the McGill Daily. In 1947, he took the job of a ski reporter at The Montreal Gazette, from which he was…",
+      "text_start_preview": "William Weintraub William Weintraub (February 19, 1926 – November 6, 2017) was a Canadian documentarian/filmmaker, journalist and author, best known for his long career with the National Film Board of Canada (NFB). Early life Weintraub was born in Montreal, to Louis Weintraub and Mina Blumer Weintraub, and grew up in the blue-collar neighbourhood of Verdun. His father had been a stock broker; he lost everything in the Wall Street Crash of 1929 and worked as the manager of a corner store. William studied English Literature and political science at McGill University, where he had worked on the McGill Daily. In 1947, he took the job of a ski reporter at The Montreal Gazette, from which he was…",
+      "title": "William Weintraub"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 2,
+      "chunk_end_boundary": "sentence",
+      "chunk_index": 0,
+      "flags": [
+        "duplicate_lines"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "3204551",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_f643d420641475d418d95ff1",
+      "sample_id": "boundary_non_paragraph:rec_f643d420641475d418d95ff1",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.6877720617332805,
+        "character_entropy_bits": 4.8498275845028,
+        "characters": 7581,
+        "duplicate_line_fraction": 0.49280575539568344,
+        "list_line_fraction": 0.0,
+        "paragraphs": 11,
+        "repeated_trigram_fraction": 0.3488,
+        "words": 1252
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…gn=center|30 |align=center|12 |align=center|5 |align=center|13 |align=center|37 |align=center|39 |align=center|41 |align=center|R16 |align=center colspan=\"2\"|— |align=left| A. Ivanov – 5 |align=left| Pavlov |- |align=center|2007 |align=center|14 |align=center|30 |align=center|8 |align=center|8 |align=center|14 |align=center|26 |align=center|38 |align=center|32 |align=center|R32 |align=center colspan=\"2\"|— |align=left| Strelkov – 5 |align=left| Pavlov |- |align=center|2008 |align=center bgcolor=\"pink\"|16 |align=center|30 |align=center|3 |align=center|12 |align=center|15 |align=center|24 |align=center|53 |align=center|21 |align=center|R32 |align=center colspan=\"2\"|— |align=left| Bulyga – 5 I.",
+      "text_preview": "FC Luch Vladivostok FC Luch Vladivostok () was an association football club based in Vladivostok, Russia. In 2005, Luch won the Russian First Division and played in the Premier League from 2006 to 2008. The club was called Luch-Energiya from 2003 to 2018, when it was renamed due to sponsorship from Dalenergo, an energy distribution company. History Luch has been playing in the Soviet Union championship since 1958. The name Luch means Ray. The club played in the Far East regional tournament of \"B-class\" teams and eventually won it in 1965, earning promotion to \"A-class\". Luch played in this regional tournament until league reorganization in 1972. From 1972 to 1991, Luch played in the Eastern…",
+      "text_start_preview": "FC Luch Vladivostok FC Luch Vladivostok () was an association football club based in Vladivostok, Russia. In 2005, Luch won the Russian First Division and played in the Premier League from 2006 to 2008. The club was called Luch-Energiya from 2003 to 2018, when it was renamed due to sponsorship from Dalenergo, an energy distribution company. History Luch has been playing in the Soviet Union championship since 1958. The name Luch means Ray. The club played in the Far East regional tournament of \"B-class\" teams and eventually won it in 1965, earning promotion to \"A-class\". Luch played in this regional tournament until league reorganization in 1972. From 1972 to 1991, Luch played in the Eastern…",
+      "title": "FC Luch Vladivostok"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 4,
+      "chunk_end_boundary": "sentence",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65813354",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_fb334bc7112873c9f00ca154",
+      "sample_id": "boundary_non_paragraph:rec_fb334bc7112873c9f00ca154",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.807338292775186,
+        "character_entropy_bits": 4.76253186103586,
+        "characters": 7931,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 15,
+        "repeated_trigram_fraction": 0.16893203883495145,
+        "words": 1032
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…Druce, indigenous Cotyledon papillaris L.f. indigenous Cotyledon pendens Van Jaarsv. endemic Cotyledon petiolaris Van Jaarsv. endemic Cotyledon rhombifolia Haw. accepted as Adromischus rhombifolius (Haw.) Lem. Cotyledon tomentosa Harv. indigenous Cotyledon tomentosa Harv. subsp. ladismithiensis (Poelln.) Toelken, endemic Cotyledon tomentosa Harv. subsp. tomentosa, endemic Cotyledon velutina Hook.f. endemic Cotyledon woodii Schonland & Baker f. endemic Cotyledon xanthantha Van Jaarsv. & Eggli, endemic Crassula Genus Crassula: Crassula acinaciformis Schinz, indigenous Crassula alba Forssk. var. alba, indigenous Crassula alba Forssk. var. pallida Toelken, indigenous Crassula alba Forssk. var.",
+      "text_preview": "List of Saxifragales of South Africa Saxifragales (saxifrages) is an order of flowering plants (Angiosperms). They are an extremely diverse group of plants which include trees, shrubs, perennial herbs, succulent and aquatic plants. The degree of diversity in terms of vegetative and floral features makes it difficult to define common features that unify the order. In the Angiosperm Phylogeny Group classification system, the Saxifragales are placed within the major division of flowering plants referred to as eudicots, specifically the core eudicots. This subgroup consists of the Dilleniaceae, superasterids and superrosids. The superrosids in turn have two components, rosids and Saxifragales.…",
+      "text_start_preview": "List of Saxifragales of South Africa Saxifragales (saxifrages) is an order of flowering plants (Angiosperms). They are an extremely diverse group of plants which include trees, shrubs, perennial herbs, succulent and aquatic plants. The degree of diversity in terms of vegetative and floral features makes it difficult to define common features that unify the order. In the Angiosperm Phylogeny Group classification system, the Saxifragales are placed within the major division of flowering plants referred to as eudicots, specifically the core eudicots. This subgroup consists of the Dilleniaceae, superasterids and superrosids. The superrosids in turn have two components, rosids and Saxifragales.…",
+      "title": "List of Saxifragales of South Africa"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 3,
+      "chunk_end_boundary": "word",
+      "chunk_index": 1,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "26694500",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_33b86bd9804f01429f869656",
+      "sample_id": "boundary_non_paragraph:rec_33b86bd9804f01429f869656",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.7025506376594148,
+        "character_entropy_bits": 4.894717639689536,
+        "characters": 7998,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.2216699801192843,
+        "words": 1008
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…gdianus Sugonjaev, 1968 Anagyrus sophax Noyes & Menezes 2000 Anagyrus spaici (Hoffer, 1970) Anagyrus spica (Girault 1921) Anagyrus subalbipes Ishii, 1928 Anagyrus subflaviceps (Girault 1915) Anagyrus subnigricornis Ishii, 1928 Anagyrus subproximus (Silvestri, 1915) Anagyrus subtilis Noyes & Hayat, 1994 Anagyrus sucro Noyes, 2000 Anagyrus suia Noyes, 2000 Anagyrus surekhae Noyes & Menezes 2000 Anagyrus swezeyi Timberlake, 1919 Anagyrus tamaricicola Trjapitzin, 1968 Anagyrus tanystis De Santis, 1964 Anagyrus telon Noyes & Menezes 2000 Anagyrus tenuis Noyes & Hayat, 1994 Anagyrus terebratus (Howard 1894) Anagyrus thailandicus (Myartseva, 1979) Anagyrus theana Noyes, 2000 Anagyrus theon Noyes &",
+      "text_preview": "Anagyrus Anagyrus abatos (Noyes & Menezes, 2000) Anagyrus abdulrassouli (Myartseva, Sugonjaev & Trjapitzin, 1982) Anagyrus abyssinicus Compere, 1939 Anagyrus aceris Noyes & Hayat, 1994 Anagyrus aciculatus (Blanchard, 1940) Anagyrus adamsoni Timberlake, 1941 Anagyrus aega Noyes, 2000 Anagyrus aegyptiacus Moursi, 1948 Anagyrus agraensis Saraswat 1975 Anagyrus alami Hayat 1970 Anagyrus albatus Myartseva, 1982 Anagyrus aligarhensis Agarwal & Alam 1959 Anagyrus almoriensis Shafee, Alam & Agarwal, 1975 Anagyrus amnicus Prinsloo, 1985 Anagyrus amoenus Compere, 1939 Anagyrus amudaryensis (Myartseva, 1982) Anagyrus ananatis Gahan, 1949 Anagyrus antoninae Timberlake, 1920 Anagyrus aper Noyes & Meneze…",
+      "text_start_preview": "Anagyrus Anagyrus abatos (Noyes & Menezes, 2000) Anagyrus abdulrassouli (Myartseva, Sugonjaev & Trjapitzin, 1982) Anagyrus abyssinicus Compere, 1939 Anagyrus aceris Noyes & Hayat, 1994 Anagyrus aciculatus (Blanchard, 1940) Anagyrus adamsoni Timberlake, 1941 Anagyrus aega Noyes, 2000 Anagyrus aegyptiacus Moursi, 1948 Anagyrus agraensis Saraswat 1975 Anagyrus alami Hayat 1970 Anagyrus albatus Myartseva, 1982 Anagyrus aligarhensis Agarwal & Alam 1959 Anagyrus almoriensis Shafee, Alam & Agarwal, 1975 Anagyrus amnicus Prinsloo, 1985 Anagyrus amoenus Compere, 1939 Anagyrus amudaryensis (Myartseva, 1982) Anagyrus ananatis Gahan, 1949 Anagyrus antoninae Timberlake, 1920 Anagyrus aper Noyes & Meneze…",
+      "title": "Anagyrus"
+    }
+  ],
+  "schema_version": 1,
+  "source_artifact": "data/experiments/corpus_v1/wikipedia_general_en.jsonl.gz"
+}

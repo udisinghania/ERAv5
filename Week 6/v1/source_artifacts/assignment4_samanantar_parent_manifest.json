@@ -1,0 +1,31 @@
+{
+  "canonical_order": "global (twm_hash, twm, ordinal)",
+  "contributor_id": "udit",
+  "dataset_revision": "main",
+  "estimated_token_count": 215294331,
+  "fasttext_model_sha256": "8f3472cfe8738a7b6099e8e999c3cbfae0dcd15696aac7d7738a8039db603e83",
+  "golden_proxy_sha256": "f805c937189d8eea8c437e01dc54fd5a76ea437812b32a0540faec4b4ad18b4a",
+  "license_class": "CC-BY-NC-4.0",
+  "license_status": "ADMITTED-NC",
+  "normalizer_filter_config_hash": "d7a744bc0d43425b558856acb366377662983f980cd2a048e0222896fab70581",
+  "record_count": 2972462,
+  "run_id": "1150c30f-906e-4b25-b243-125423061705",
+  "sha256": "671c3827f6dec98ddfe9f61a1cfb0dcfb34b856a0a3e1085dfdb417f09dbd7df",
+  "shard_id": "shard_671c3827f6de",
+  "source_url": "https://huggingface.co/datasets/ai4bharat/samanantar",
+  "src_lang_distribution": {"en": 100.0},
+  "tgt_lang_distribution": {
+    "as": 2.700718,
+    "bn": 10.225724,
+    "gu": 9.706132,
+    "hi": 11.315938,
+    "kn": 9.279161,
+    "ml": 9.212864,
+    "mr": 9.80615,
+    "or": 8.613128,
+    "pa": 10.666143,
+    "ta": 9.481838,
+    "te": 8.992206
+  }
+}
+

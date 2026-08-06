@@ -1,0 +1,261 @@
+{
+  "artifacts": [
+    {
+      "bytes": 18146934,
+      "path": "checkpoints/baseline_final.pt",
+      "sha256": "sha256:d721c30b555717f41b74cebb18a70aa7d55272d83ac81c10d89f84fbcb35dffe"
+    },
+    {
+      "bytes": 18153459,
+      "path": "checkpoints/crash_update_000032.pt",
+      "sha256": "sha256:a6d50a78b453f84097b1d5860fac21d21dbcb6a997e4b859cecce46bfd5ecbf7"
+    },
+    {
+      "bytes": 18152947,
+      "path": "checkpoints/fork_final.pt",
+      "sha256": "sha256:653c8608f14f5b263e6d52cf28dc054fd0585efb7a99533fb05d92d3da92eae5"
+    },
+    {
+      "bytes": 18152627,
+      "path": "checkpoints/recovery_final.pt",
+      "sha256": "sha256:3151d0fa0ec812a7542ae66b3b0f6860526e1d788f00d1767eca6b7b34ba9e30"
+    },
+    {
+      "bytes": 18152627,
+      "path": "checkpoints/replay_final.pt",
+      "sha256": "sha256:a75b7f613a7151b5e9412ca93c9fa5d0f4ab0746a77ea84ac49743e77eaf2d24"
+    },
+    {
+      "bytes": 91837,
+      "path": "ledgers/baseline_consumption.jsonl.gz",
+      "sha256": "sha256:ff4a5093e10291a6f08bf3781cc957b8143940535f9485f6983dd0223bd7c2df"
+    },
+    {
+      "bytes": 72046,
+      "path": "ledgers/baseline_learning.jsonl.gz",
+      "sha256": "sha256:bc664c9fbf7791bcdb7eab67dafa102e7fea6aca42b59e3a0c4de6bb4a5c3f6c"
+    },
+    {
+      "bytes": 91837,
+      "path": "ledgers/fork_consumption.jsonl.gz",
+      "sha256": "sha256:ff4a5093e10291a6f08bf3781cc957b8143940535f9485f6983dd0223bd7c2df"
+    },
+    {
+      "bytes": 71969,
+      "path": "ledgers/fork_learning.jsonl.gz",
+      "sha256": "sha256:53b57bbe74cc0ccaee5d0e22a347109ae3f8c75bfb033b111a462d9016e9e622"
+    },
+    {
+      "bytes": 91837,
+      "path": "ledgers/recovery_consumption.jsonl.gz",
+      "sha256": "sha256:ff4a5093e10291a6f08bf3781cc957b8143940535f9485f6983dd0223bd7c2df"
+    },
+    {
+      "bytes": 72046,
+      "path": "ledgers/recovery_learning.jsonl.gz",
+      "sha256": "sha256:bc664c9fbf7791bcdb7eab67dafa102e7fea6aca42b59e3a0c4de6bb4a5c3f6c"
+    },
+    {
+      "bytes": 91837,
+      "path": "ledgers/replay_consumption.jsonl.gz",
+      "sha256": "sha256:ff4a5093e10291a6f08bf3781cc957b8143940535f9485f6983dd0223bd7c2df"
+    },
+    {
+      "bytes": 72046,
+      "path": "ledgers/replay_learning.jsonl.gz",
+      "sha256": "sha256:bc664c9fbf7791bcdb7eab67dafa102e7fea6aca42b59e3a0c4de6bb4a5c3f6c"
+    },
+    {
+      "bytes": 5732,
+      "path": "manifests/batch_report.json",
+      "sha256": "sha256:28191c56f99160fc1dc5849b7d9e5eeca98cd83c0ac6a092e7e7617dd27a6d51"
+    },
+    {
+      "bytes": 10258,
+      "path": "manifests/batches.jsonl.gz",
+      "sha256": "sha256:6aa8c63bacc044eb2e664bfc3c6fa6cb41c3daf46a2d71f246fcf5bae3ccc765"
+    },
+    {
+      "bytes": 1791,
+      "path": "manifests/crash_event.json",
+      "sha256": "sha256:c092bb2d6a64a79e59697ee62e961490793340c85ba064a99dc9b13e735bfd06"
+    },
+    {
+      "bytes": 14950,
+      "path": "manifests/freeze_report.json",
+      "sha256": "sha256:c6cf728de906389900d70baa0473911647c5295c45e6d8731119526489cd3f96"
+    },
+    {
+      "bytes": 56655,
+      "path": "manifests/opus_decisions.jsonl.gz",
+      "sha256": "sha256:8b53df52e295f5ddf18abbb9af6b227a5ec6c7ff348ece1fe80819448d5b71b0"
+    },
+    {
+      "bytes": 17816,
+      "path": "manifests/packing_report.json",
+      "sha256": "sha256:9c999503b3fbe7affdd632c534b3b28e3d4d2a0f58f8fad6d2b9c3add96746a3"
+    },
+    {
+      "bytes": 3539,
+      "path": "manifests/recovery_audit.json",
+      "sha256": "sha256:31cd8eb44534045ecee81610640aed50c532dad709097286a628ae5753942f61"
+    },
+    {
+      "bytes": 52794,
+      "path": "manifests/replay_interval_report.json",
+      "sha256": "sha256:2efa4a752320c72ade34e90e092c2a419e25cedb1d412073212c9f80734519ae"
+    },
+    {
+      "bytes": 2810,
+      "path": "manifests/resume_event.json",
+      "sha256": "sha256:4a56497a5d52727b6ef3aaacd123c8ffb2a556cba628a62805d4317747feb7ed"
+    },
+    {
+      "bytes": 7718,
+      "path": "manifests/schedule.json",
+      "sha256": "sha256:051b9fa24b8740e902d5591e0a1b542479e65135f91e74982dfef40af3184fd0"
+    },
+    {
+      "bytes": 2125,
+      "path": "manifests/shards/agentic/anneal/manifest.json",
+      "sha256": "sha256:4e3279ac25560a2896a5b09e5c992b75ef19e66c17c8fc9d4936dafa6f91f2b3"
+    },
+    {
+      "bytes": 2162,
+      "path": "manifests/shards/agentic/train/manifest.json",
+      "sha256": "sha256:32e5d0d69b0e09d3bb5dc66f85025885ad7e70de022bf948bcfab354e1491015"
+    },
+    {
+      "bytes": 2152,
+      "path": "manifests/shards/agentic/validation/manifest.json",
+      "sha256": "sha256:74901fa1d9cad5c29c78de2d6dae5e94af00a878de169f95b5fe114d2b626c46"
+    },
+    {
+      "bytes": 1945,
+      "path": "manifests/shards/code/anneal/manifest.json",
+      "sha256": "sha256:913023bd71e45fce790afa6bf8b5f279674869dfc6b25ef10eaa12ed888783e6"
+    },
+    {
+      "bytes": 1949,
+      "path": "manifests/shards/code/train/manifest.json",
+      "sha256": "sha256:e88355e5ff57cdb3ed1d98d8af243809ccb975df979364fd62916e128c27f1c3"
+    },
+    {
+      "bytes": 1974,
+      "path": "manifests/shards/code/validation/manifest.json",
+      "sha256": "sha256:f048f57d6fcfff7ae4ccb226344e24e19130b90bcc52fe2ca9bbc8bc739094e9"
+    },
+    {
+      "bytes": 1959,
+      "path": "manifests/shards/general/anneal/manifest.json",
+      "sha256": "sha256:4c3a50cc1d263c5f3427b21ce848836be8616323fae467af2cf32852ccab5838"
+    },
+    {
+      "bytes": 1961,
+      "path": "manifests/shards/general/train/manifest.json",
+      "sha256": "sha256:9c4570a77b756d8b07b9134b7400e78578d7262fd5f91a342aedbe48700b0bfd"
+    },
+    {
+      "bytes": 1986,
+      "path": "manifests/shards/general/validation/manifest.json",
+      "sha256": "sha256:d53a10b40192faa930b1612bbfc802bfc9da300f2e71a9264e3750cc4cde374a"
+    },
+    {
+      "bytes": 2298,
+      "path": "manifests/shards/indic/anneal/manifest.json",
+      "sha256": "sha256:0e193ee02cb26ccdf96e94dadb3872c575d6b4418ae553c2afc977f128bc61d9"
+    },
+    {
+      "bytes": 2301,
+      "path": "manifests/shards/indic/train/manifest.json",
+      "sha256": "sha256:8bb3ed33a4461151c9309035dd51c6cc0b86246718ff44bc55c39ec2f5a4dbf9"
+    },
+    {
+      "bytes": 2326,
+      "path": "manifests/shards/indic/validation/manifest.json",
+      "sha256": "sha256:bef33ae04170d318594004b67cff9a5296509d9f33da7ad84deece2d9ee559db"
+    },
+    {
+      "bytes": 1989,
+      "path": "manifests/shards/long_context/anneal/manifest.json",
+      "sha256": "sha256:e706c09d75e7ee885813a027b81013dc03c6d502012825c09f953edb59109e8d"
+    },
+    {
+      "bytes": 1991,
+      "path": "manifests/shards/long_context/train/manifest.json",
+      "sha256": "sha256:b3c2594d72d19574a715d6ac394152851b36f635fb8c714724f4d829e26f5980"
+    },
+    {
+      "bytes": 2016,
+      "path": "manifests/shards/long_context/validation/manifest.json",
+      "sha256": "sha256:e359601b84db43fbb7fe437b3473b3b5853c88d14ac64ea4a2131ad5a32f25ba"
+    },
+    {
+      "bytes": 1973,
+      "path": "manifests/shards/reasoning/anneal/manifest.json",
+      "sha256": "sha256:cdfdaf17612baf3b4bd57fbee8af7e6412f90f5426125908db987382fbd8f529"
+    },
+    {
+      "bytes": 1927,
+      "path": "manifests/shards/reasoning/never_train/manifest.json",
+      "sha256": "sha256:50d4b28dfff6d7048d0aa166f609dd90d7cfb99cb40a1dc8ae680183641ebeef"
+    },
+    {
+      "bytes": 1976,
+      "path": "manifests/shards/reasoning/train/manifest.json",
+      "sha256": "sha256:8059f890732a4cadc49fca8e2bac4d0ac6e51b804091824a7064d869f3e77eeb"
+    },
+    {
+      "bytes": 2001,
+      "path": "manifests/shards/reasoning/validation/manifest.json",
+      "sha256": "sha256:a60bf3d951be0fb8028b5c403cec4d9280c39bb0432e5a0134dd177b25aec847"
+    },
+    {
+      "bytes": 1989,
+      "path": "manifests/shards/science_math/anneal/manifest.json",
+      "sha256": "sha256:c4288a04996b2b48478b8cdcffa02f8f19440b4d8671945fd3b9775064e00e2e"
+    },
+    {
+      "bytes": 1991,
+      "path": "manifests/shards/science_math/train/manifest.json",
+      "sha256": "sha256:a978e6a06cef3a72224b024d26eae52046e7af0ca46c283bacb975eaa16e5884"
+    },
+    {
+      "bytes": 2016,
+      "path": "manifests/shards/science_math/validation/manifest.json",
+      "sha256": "sha256:10f7396f32a9e14f030e4d16c4d2e7e007b406978dc7491202ef85686c58c641"
+    },
+    {
+      "bytes": 10537,
+      "path": "manifests/tokenized_report.json",
+      "sha256": "sha256:6d2cb4de681938de552a2678a9f222e06c3b72af078af6034c3d0cfcf56804d9"
+    },
+    {
+      "bytes": 1161740,
+      "path": "manifests/tokenizer.json",
+      "sha256": "sha256:10d52d11c0073d99fe784206ebf3fcfeceb9bda3869442f176a4be424bf957e6"
+    },
+    {
+      "bytes": 2118,
+      "path": "manifests/training_config.json",
+      "sha256": "sha256:afdeb3883fb2e21b1ee242286ca80b21e1350615538129cdf9ef06bd16f82447"
+    },
+    {
+      "bytes": 4765,
+      "path": "manifests/training_report.json",
+      "sha256": "sha256:a6775db24effa19ee6af60d1717f0c6daf474abb7dd9da103bd2887b3ec9de20"
+    },
+    {
+      "bytes": 1060,
+      "path": "performance.json",
+      "sha256": "sha256:888f952de7ade0eeb14685458fc1232e0ff7025feb1b9b57030a4b7bde3137d0"
+    },
+    {
+      "bytes": 28733,
+      "path": "run.log",
+      "sha256": "sha256:a1aa0bcea8e23d3cf115ce07c9ee2ec42443a502d3d74b1e7862ba1327a69280"
+    }
+  ],
+  "manifest_hash": "sha256:fdce99344ba1c04ab9fc6ec39227c4487e0dcbf9c6b65ffd151187cf4d6d82de",
+  "schema_version": "assignment6-submission-artifact-manifest-v1"
+}

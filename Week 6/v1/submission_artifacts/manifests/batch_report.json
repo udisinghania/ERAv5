@@ -1,0 +1,174 @@
+{
+  "batch_index": {
+    "canonical_uncompressed_sha256": "2e4dc50531d7bc5a4f9c7a1f4b8f4d246b2011ffffc377486f7062c53cd8b0a7",
+    "compressed_bytes": 10258,
+    "compressed_sha256": "6aa8c63bacc044eb2e664bfc3c6fa6cb41c3daf46a2d71f246fcf5bae3ccc765",
+    "records": 302,
+    "uncompressed_bytes": 140307
+  },
+  "batch_plan_hash": "sha256:158ae9939c5502b256449cce5aaff4c026775a980c7b8241ede10cb11faab749",
+  "batching_config_sha256": "72c6d1978e936a3cff5b8ad0e5852ef2e2fed389772549169a85a28be5d18d2f",
+  "candidate_microbatches_maximum": 4,
+  "component_hashes": {
+    "batches": "6aa8c63bacc044eb2e664bfc3c6fa6cb41c3daf46a2d71f246fcf5bae3ccc765",
+    "opus_decisions": "8b53df52e295f5ddf18abbb9af6b227a5ec6c7ff348ece1fe80819448d5b71b0"
+  },
+  "decision_index": {
+    "canonical_uncompressed_sha256": "6a3497638a020b3abc198f2793964077eb4b7f787544a046ea60a68f10b212fa",
+    "compressed_bytes": 56655,
+    "compressed_sha256": "8b53df52e295f5ddf18abbb9af6b227a5ec6c7ff348ece1fe80819448d5b71b0",
+    "records": 302,
+    "uncompressed_bytes": 1018002
+  },
+  "loss_bearing_tokens": 262144,
+  "loss_by_stage_indic_tier": {
+    "anneal|translated": 140,
+    "anneal|unverified_native": 93,
+    "anneal|verified_native": 187,
+    "general_foundation|synthetic": 1154,
+    "general_foundation|translated": 3460,
+    "general_foundation|unverified_native": 2307,
+    "general_foundation|verified_native": 4614,
+    "long_context|synthetic": 378,
+    "long_context|translated": 1132,
+    "long_context|unverified_native": 755,
+    "long_context|verified_native": 1510,
+    "reasoning_skill_build|synthetic": 420,
+    "reasoning_skill_build|translated": 1258,
+    "reasoning_skill_build|unverified_native": 839,
+    "reasoning_skill_build|verified_native": 1678,
+    "seed|synthetic": 105,
+    "seed|translated": 315,
+    "seed|unverified_native": 210,
+    "seed|verified_native": 419
+  },
+  "loss_by_stage_lane": {
+    "anneal|agentic": 27,
+    "anneal|code": 524,
+    "anneal|general": 2778,
+    "anneal|indic": 420,
+    "anneal|long_context": 446,
+    "anneal|reasoning": 524,
+    "anneal|science_math": 524,
+    "general_foundation|agentic": 721,
+    "general_foundation|code": 14418,
+    "general_foundation|general": 76414,
+    "general_foundation|indic": 11535,
+    "general_foundation|long_context": 12255,
+    "general_foundation|reasoning": 14418,
+    "general_foundation|science_math": 14418,
+    "long_context|agentic": 236,
+    "long_context|code": 4719,
+    "long_context|general": 25008,
+    "long_context|indic": 3775,
+    "long_context|long_context": 4011,
+    "long_context|reasoning": 4719,
+    "long_context|science_math": 4718,
+    "reasoning_skill_build|agentic": 263,
+    "reasoning_skill_build|code": 5243,
+    "reasoning_skill_build|general": 27785,
+    "reasoning_skill_build|indic": 4195,
+    "reasoning_skill_build|long_context": 4457,
+    "reasoning_skill_build|reasoning": 5243,
+    "reasoning_skill_build|science_math": 5243,
+    "seed|agentic": 66,
+    "seed|code": 1311,
+    "seed|general": 6945,
+    "seed|indic": 1049,
+    "seed|long_context": 1114,
+    "seed|reasoning": 1311,
+    "seed|science_math": 1311
+  },
+  "microbatch_physical_token_budget": 1024,
+  "microbatches": 302,
+  "nonpadding_tokens": 299492,
+  "opus_decisions": 302,
+  "opus_summary": {
+    "candidate_count_distribution": {
+      "1": 5,
+      "3": 5,
+      "4": 292
+    },
+    "candidate_outcome_distribution": {
+      "accepted": 302,
+      "deferred": 880,
+      "rejected": 6
+    },
+    "decision_outcome_distribution": {
+      "protected_floor_override": 72,
+      "proxy_accept": 230
+    },
+    "decisions_not_candidate_zero": 222,
+    "protected_floor_overrides": 72,
+    "selected_candidate_id_distribution": {
+      "0": 80,
+      "1": 88,
+      "2": 74,
+      "3": 60
+    },
+    "sparse_fallbacks": 0
+  },
+  "packing_hash": "sha256:2baf444b2fccdec3702af6e3c317ca9e2e7110c9781399a5261c4b87d1fa57e7",
+  "packing_report_sha256": "9c999503b3fbe7affdd632c534b3b28e3d4d2a0f58f8fad6d2b9c3add96746a3",
+  "paths": {
+    "batches": "data/batches_v1/batches.jsonl.gz",
+    "opus_decisions": "data/batches_v1/opus_decisions.jsonl.gz"
+  },
+  "physical_tokens": 307712,
+  "proxy_version": "auditable-opus-v1",
+  "schedule_file_sha256": "051b9fa24b8740e902d5591e0a1b542479e65135f91e74982dfef40af3184fd0",
+  "schedule_hash": "sha256:0477330cd06ea86f99f164c853751659987566a2f20f93ffe2bf515a49fe3382",
+  "schema_version": 1,
+  "sequences": 1081,
+  "stage_summaries": [
+    {
+      "loss_bearing_tokens": 13107,
+      "microbatch_capacity_sequences": 4,
+      "microbatches": 17,
+      "sequence_length": 256,
+      "sequences": 67,
+      "stage": "seed",
+      "zero_loss_sequences": 3
+    },
+    {
+      "loss_bearing_tokens": 144179,
+      "microbatch_capacity_sequences": 4,
+      "microbatches": 160,
+      "sequence_length": 256,
+      "sequences": 639,
+      "stage": "general_foundation",
+      "zero_loss_sequences": 8
+    },
+    {
+      "loss_bearing_tokens": 52429,
+      "microbatch_capacity_sequences": 4,
+      "microbatches": 64,
+      "sequence_length": 256,
+      "sequences": 254,
+      "stage": "reasoning_skill_build",
+      "zero_loss_sequences": 24
+    },
+    {
+      "loss_bearing_tokens": 47186,
+      "microbatch_capacity_sequences": 2,
+      "microbatches": 52,
+      "sequence_length": 512,
+      "sequences": 104,
+      "stage": "long_context",
+      "zero_loss_sequences": 0
+    },
+    {
+      "loss_bearing_tokens": 5243,
+      "microbatch_capacity_sequences": 2,
+      "microbatches": 9,
+      "sequence_length": 512,
+      "sequences": 17,
+      "stage": "anneal",
+      "zero_loss_sequences": 0
+    }
+  ],
+  "status": "FROZEN",
+  "unique_sequences": 1081,
+  "zero_loss_microbatches": 0,
+  "zero_loss_sequences": 35
+}

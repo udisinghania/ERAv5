@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "policy_id": "wikipedia-general-quality-v1",
+  "scope": ["wikipedia_general_en"],
+  "source_class": "public_reference",
+  "minimum_parent_characters": 300,
+  "previous_minimum_characters": 400,
+  "chunking": {
+    "algorithm": "paragraph-sentence-word-boundary-v1",
+    "maximum_characters": 8000,
+    "minimum_continuation_characters": 300,
+    "repeat_title_on_each_chunk": true,
+    "shared_parent_group_id": true
+  },
+  "pii": {
+    "mask_emails": true,
+    "mask_secrets": true,
+    "mask_ipv4": false,
+    "phone_mode": "explicit-context-or-international"
+  },
+  "quality_bands": {
+    "B0": {"sampling_weight": 0.25, "description": "Short, disambiguation, list-dominant, or repetitive material"},
+    "B1": {"sampling_weight": 0.50, "description": "Usable material with structural quality warnings"},
+    "B2": {"sampling_weight": 1.00, "description": "Standard clean prose"},
+    "B3": {"sampling_weight": 1.15, "description": "Substantial multi-paragraph clean prose"},
+    "B4": {"sampling_weight": 1.25, "description": "Long, well-structured clean prose"}
+  },
+  "sampling_caps": {
+    "general_short": 0.01,
+    "general_disambiguation": 0.02,
+    "general_structured_low_prose": 0.02,
+    "all_B0_combined": 0.05
+  },
+  "hard_rejections": [
+    "parent_below_300_characters",
+    "no_language_content",
+    "excessive_replacement_characters"
+  ],
+  "policy_status": "experimental_until_cross_lane_review"
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "run_id": "era6-tiny-transformer-v1",
+  "backend": "pytorch_deterministic_portable",
+  "runtime": {
+    "interpreter_policy": "launching_python_executable",
+    "default_device": "auto",
+    "supported_devices": ["cuda", "cpu"],
+    "supported_torch_major_minor": ["2.5."],
+    "validated_reference": {
+      "torch_version": "2.5.1+cu121",
+      "cuda_runtime": "12.1",
+      "device": "NVIDIA GeForce RTX 3070 Laptop GPU"
+    }
+  },
+  "determinism": {
+    "seed": 6102026,
+    "float_dtype": "float32",
+    "deterministic_algorithms": true,
+    "allow_tf32": false,
+    "cudnn_benchmark": false
+  },
+  "model": {
+    "architecture": "decoder_only_transformer",
+    "vocab_size": 8192,
+    "maximum_sequence_length": 512,
+    "layers": 2,
+    "attention_heads": 4,
+    "hidden_size": 128,
+    "feed_forward_size": 512,
+    "activation": "gelu",
+    "normalization": "pre_layer_norm",
+    "layer_norm_epsilon": 0.00001,
+    "tie_input_output_embeddings": true,
+    "dropout": 0.0,
+    "attention_policy": "causal_within_segment_only"
+  },
+  "objective": {
+    "type": "shifted_next_token_cross_entropy",
+    "mask_source": "packed_origin_aware_loss_mask",
+    "normalization": "mean_over_loss_bearing_tokens"
+  },
+  "optimizer": {
+    "name": "adamw",
+    "learning_rate": 0.001,
+    "minimum_learning_rate": 0.0001,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "epsilon": 1e-8,
+    "weight_decay": 0.01,
+    "gradient_clip_norm": 1.0,
+    "gradient_accumulation_microbatches": 4,
+    "flush_at_stage_boundary": true,
+    "warmup_optimizer_updates": 8,
+    "schedule": "linear_warmup_cosine_decay"
+  },
+  "validation_probe": {
+    "permission": "validation",
+    "sequence_length": 128,
+    "sequences_per_lane": 1,
+    "selection_seed": "era6-validation-probe-v1",
+    "minimum_loss_tokens_per_sequence": 16,
+    "evaluate": ["before_training", "after_training"]
+  },
+  "ledger": {
+    "hash_chain": "sha256_canonical_json",
+    "consumption_granularity": "microbatch",
+    "learning_granularity": "microbatch_with_per_sequence_loss",
+    "parameter_hash_granularity": "optimizer_update"
+  }
+}

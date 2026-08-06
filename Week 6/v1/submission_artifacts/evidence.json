@@ -1,0 +1,320 @@
+{
+  "artifact_manifest": "manifests/submission_artifact_manifest.json",
+  "artifact_manifest_hash": "sha256:fdce99344ba1c04ab9fc6ec39227c4487e0dcbf9c6b65ffd151187cf4d6d82de",
+  "evidence_hash": "sha256:5165630064777c75bfebb0247b7a4976467a21d7cd4e62c422b3db5d5d0952b2",
+  "immutable_identifiers": {
+    "batch_plan_hash": "sha256:158ae9939c5502b256449cce5aaff4c026775a980c7b8241ede10cb11faab749",
+    "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+    "final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+    "packing_hash": "sha256:2baf444b2fccdec3702af6e3c317ca9e2e7110c9781399a5261c4b87d1fa57e7",
+    "recovery_audit_hash": "sha256:4f446db0ad2ac10135eaff14d46b00b4e3e58350af75382f871021d0c8b0c994",
+    "schedule_hash": "sha256:0477330cd06ea86f99f164c853751659987566a2f20f93ffe2bf515a49fe3382",
+    "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be",
+    "training_hash": "sha256:bbfb6159ec339375c81fc90a65048bc3da9438fb64ea0dfc6fdbadb8da6a4991"
+  },
+  "requirements": [
+    {
+      "details": {
+        "interpreter_policy": "launching_python_executable",
+        "selected_device_name": "CPU",
+        "selected_device_type": "cpu",
+        "supported_devices": [
+          "cuda",
+          "cpu"
+        ]
+      },
+      "evidence": [
+        "run.log",
+        "manifests/training_config.json",
+        "manifests/training_report.json"
+      ],
+      "id": "portable_execution",
+      "requirement": "One-command execution uses the launching interpreter with CUDA-preferred CPU fallback",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "shards": 22,
+        "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be"
+      },
+      "evidence": [
+        "manifests/tokenizer.json",
+        "manifests/tokenized_report.json",
+        "manifests/shards/"
+      ],
+      "id": "tokenizer_integrity",
+      "requirement": "Frozen tokenizer and immutable tokenized shards with manifests",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "evaluation_13gram_rejections": 4,
+        "never_train_records": 1000
+      },
+      "evidence": [
+        "manifests/freeze_report.json",
+        "manifests/training_report.json",
+        "run.log"
+      ],
+      "id": "evaluation_firewall",
+      "requirement": "Evaluation and validation data are blocked from training",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "data_type_policies": {
+          "agentic": {
+            "boundary_unit": "trajectory",
+            "loss_origin": "assistant_and_tool_call_outputs_only",
+            "policy_id": "trajectory_role_masked_segmented"
+          },
+          "code": {
+            "boundary_unit": "source_file",
+            "loss_origin": "all_causal_content",
+            "policy_id": "code_file_segmented"
+          },
+          "general": {
+            "boundary_unit": "document",
+            "loss_origin": "all_causal_content",
+            "policy_id": "prose_dense_segmented"
+          },
+          "indic": {
+            "boundary_unit": "document_or_translation_pair",
+            "loss_origin": "source_policy_preserved",
+            "policy_id": "multilingual_tier_segmented"
+          },
+          "long_context": {
+            "boundary_unit": "long_document",
+            "loss_origin": "all_causal_content",
+            "policy_id": "long_document_continuation"
+          },
+          "reasoning": {
+            "boundary_unit": "worked_example",
+            "loss_origin": "reasoning_and_answer_only",
+            "policy_id": "reasoning_prompt_output_segmented"
+          },
+          "science_math": {
+            "boundary_unit": "document",
+            "loss_origin": "all_causal_content",
+            "policy_id": "technical_dense_segmented"
+          }
+        },
+        "loss_bearing_tokens": 262144,
+        "packing_hash": "sha256:2baf444b2fccdec3702af6e3c317ca9e2e7110c9781399a5261c4b87d1fa57e7",
+        "packing_utilization": 0.9732867096505824,
+        "policy_sequence_counts": {
+          "code_file_segmented": 96,
+          "long_document_continuation": 81,
+          "multilingual_tier_segmented": 97,
+          "prose_dense_segmented": 494,
+          "reasoning_prompt_output_segmented": 166,
+          "technical_dense_segmented": 96,
+          "trajectory_role_masked_segmented": 51
+        }
+      },
+      "evidence": [
+        "manifests/packing_report.json",
+        "manifests/batches.jsonl.gz"
+      ],
+      "id": "packing_correctness",
+      "requirement": "Packing, loss masks, attention isolation and position IDs",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "protected_floors": {
+          "agentic": {
+            "passed": true,
+            "required_minimum_loss_tokens": 1285,
+            "scheduled_fraction": 0.0050058193623224514,
+            "scheduled_loss_tokens": 1286
+          },
+          "indic": {
+            "passed": true,
+            "required_minimum_loss_tokens": 20553,
+            "scheduled_fraction": 0.08000747369609305,
+            "scheduled_loss_tokens": 20554
+          }
+        },
+        "schedule_hash": "sha256:0477330cd06ea86f99f164c853751659987566a2f20f93ffe2bf515a49fe3382"
+      },
+      "evidence": [
+        "manifests/schedule.json",
+        "manifests/batch_report.json"
+      ],
+      "id": "mixture_compliance",
+      "requirement": "Curriculum stages, lane targets and protected floors",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "candidate_outcomes": {
+          "accepted": 302,
+          "deferred": 880,
+          "rejected": 6
+        },
+        "protected_floor_overrides": 72
+      },
+      "evidence": [
+        "manifests/opus_decisions.jsonl.gz",
+        "manifests/batch_report.json"
+      ],
+      "id": "opus_audit_trail",
+      "requirement": "OPUS acceptance, rejection, deferral and protected-floor override",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "ledger_tail": "sha256:9114e3ecccd126806aa1a0e7fbefed83b983ef745d6b585fa73be21119ae6ccc",
+        "microbatches": 302
+      },
+      "evidence": [
+        "ledgers/baseline_consumption.jsonl.gz",
+        "manifests/training_report.json"
+      ],
+      "id": "consumption_ledger",
+      "requirement": "Complete hash-chained training consumption ledger",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "granularity": "microbatch_and_sequence",
+        "sequences": 1081
+      },
+      "evidence": [
+        "ledgers/baseline_learning.jsonl.gz",
+        "ledgers/baseline_consumption.jsonl.gz"
+      ],
+      "id": "learning_trace",
+      "requirement": "Learning ledger and sequence-level loss linked to source consumption",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "checkpoint": "artifacts/recovery_v1/checkpoint_000032.pt",
+        "checkpoint_sha256": "a6d50a78b453f84097b1d5860fac21d21dbcb6a997e4b859cecce46bfd5ecbf7",
+        "completed_microbatches": 125,
+        "observed_exit_code": 86,
+        "optimizer_update": 32
+      },
+      "evidence": [
+        "checkpoints/crash_update_000032.pt",
+        "manifests/crash_event.json"
+      ],
+      "id": "checkpoint_ledger_binding",
+      "requirement": "Checkpoints are tied to batch cursor and ledger offsets",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "crash_exit_code": 86
+      },
+      "evidence": [
+        "manifests/crash_event.json",
+        "manifests/resume_event.json",
+        "ledgers/recovery_consumption.jsonl.gz"
+      ],
+      "id": "crash_recovery",
+      "requirement": "Deliberate crash and resume without skipped or repeated batches",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "next_batch_index": 125,
+        "proof_hash": "sha256:03c9f87e311619af8233886688b2b10d3336cacb80d2d9261af77edf85a5b391"
+      },
+      "evidence": [
+        "manifests/resume_event.json",
+        "checkpoints/crash_update_000032.pt"
+      ],
+      "id": "resume_next_batch",
+      "requirement": "Resumed next batch ID, sequence IDs, token spans and payload hashes",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "batches": 28,
+        "end_exclusive": 140,
+        "start": 112
+      },
+      "evidence": [
+        "manifests/replay_interval_report.json",
+        "ledgers/replay_consumption.jsonl.gz"
+      ],
+      "id": "historical_replay",
+      "requirement": "Replay of historical batch IDs, token spans and hashes",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "common_learning_prefix_microbatches": 128,
+        "first_divergent_microbatch": 128,
+        "learning_rate_scale": 0.5,
+        "parent_checkpoint_sha256": "a6d50a78b453f84097b1d5860fac21d21dbcb6a997e4b859cecce46bfd5ecbf7"
+      },
+      "evidence": [
+        "checkpoints/fork_final.pt",
+        "ledgers/fork_consumption.jsonl.gz",
+        "manifests/recovery_audit.json"
+      ],
+      "id": "checkpoint_fork",
+      "requirement": "Fork from an earlier checkpoint with preserved consumption lineage",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "device": "CPU",
+        "device_type": "cpu",
+        "elapsed_nanoseconds": 16250944300,
+        "packing_utilization": 0.9732867096505824,
+        "useful_loss_bearing_tokens_per_second": 16131.001076657434
+      },
+      "evidence": [
+        "performance.json",
+        "manifests/training_report.json"
+      ],
+      "id": "throughput",
+      "requirement": "Packing efficiency and useful loss-bearing tokens per second",
+      "result": "PASS"
+    },
+    {
+      "details": {
+        "audit_hash": "sha256:4f446db0ad2ac10135eaff14d46b00b4e3e58350af75382f871021d0c8b0c994",
+        "comparisons": {
+          "crash_checkpoint_hash_valid": true,
+          "fork_consumption_ledger_exact": true,
+          "fork_diverges_at_next_optimizer_update": true,
+          "fork_final_parameters_different": true,
+          "fork_learning_ledger_different": true,
+          "fork_prefix_preserved_through_checkpoint": true,
+          "planned_crash_exit_code_observed": true,
+          "recovery_consumption_ledger_exact": true,
+          "recovery_final_parameters_exact": true,
+          "recovery_learning_ledger_exact": true,
+          "replay_consumption_ledger_exact": true,
+          "replay_final_parameters_exact": true,
+          "replay_interval_batch_ids_matched": true,
+          "replay_interval_payload_hashes_matched": true,
+          "replay_interval_proof_hashes_matched": true,
+          "replay_interval_sequence_ids_matched": true,
+          "replay_interval_token_spans_matched": true,
+          "replay_learning_ledger_exact": true,
+          "resume_next_batch_id_matched": true,
+          "resume_next_batch_payload_hashes_matched": true,
+          "resume_next_batch_proof_hash_matched": true,
+          "resume_next_batch_sequence_ids_matched": true,
+          "resume_next_batch_token_spans_matched": true
+        }
+      },
+      "evidence": [
+        "manifests/recovery_audit.json",
+        "run.log"
+      ],
+      "id": "audit",
+      "requirement": "Independent end-to-end audit and checkpoint reload",
+      "result": "PASS"
+    }
+  ],
+  "schema_version": "assignment6-evidence-v1",
+  "status": "PASS"
+}

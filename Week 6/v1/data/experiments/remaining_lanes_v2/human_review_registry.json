@@ -1,0 +1,36 @@
+{
+  "actions": [
+    {
+      "action": "mask_explicit_bank_accounts",
+      "parent_upstream_id": "5d8428585046edef47a2abb8630431b0e3b23fb3",
+      "reason": "named private fraud victim with exposed bank account numbers",
+      "source_id": "sangraha_verified_hindi"
+    },
+    {
+      "action": "retain_explicit_phone_mask",
+      "parent_upstream_id": "607393391270fd15d3e1d1d6a252e9fb756f7bb42533639021f0788122718463",
+      "reason": "repeated WhatsApp business contact is a true phone number",
+      "source_id": "sangraha_unverified_hindi"
+    },
+    {
+      "action": "exclude_parent",
+      "parent_upstream_id": "181fc620ce792c0efc0d69c7cad402c6c6716852c120c9e29b16b8046177c9d2",
+      "reason": "garbled duplicated numeric source text",
+      "source_id": "sangraha_synthetic_hindi"
+    },
+    {
+      "action": "exclude_parent_pending_source_check",
+      "parent_upstream_id": "9951ed19a17f07076709a9fa53a23c36c4f373cd1dedf440c95f9f7cc7fa8c92",
+      "reason": "anomalous OCR-merged verse numbering",
+      "source_id": "sangraha_verified_hindi"
+    },
+    {
+      "action": "replace_false_phone_marker_with_250000",
+      "parent_upstream_id": "89530342c4770bf63ea47f65386b788c2e91b77eebccbc93745d4107903a0eb2",
+      "reason": "the paired English state provides the exact public-health statistic",
+      "source_id": "assignment4_samanantar_translated"
+    }
+  ],
+  "policy_hash": "sha256:e11a916f44ef6c6c620e0b7bddbd5c675eec7eeb5830e434f2ac9f141ca6d037",
+  "schema_version": 1
+}

@@ -1,0 +1,637 @@
+[0001] [START] assignment6_complete_demonstration
+[0002] [RUN] runtime_preflight command=python scripts/verify_runtime_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "PASS",
+[OUTPUT]   "python_executable": "D:\\github_repos\\ERAv5\\Week 6\\v1\\.venv-submit\\Scripts\\python.exe",
+[OUTPUT]   "python_version": "3.12.5",
+[OUTPUT]   "numpy_version": "1.26.4",
+[OUTPUT]   "request": "cpu",
+[OUTPUT]   "device_type": "cpu",
+[OUTPUT]   "device_name": "CPU",
+[OUTPUT]   "torch_version": "2.5.1+cpu",
+[OUTPUT]   "torch_cuda_runtime": null,
+[OUTPUT]   "cuda_available": false,
+[OUTPUT]   "fallback_used": false
+[OUTPUT] }
+[0003] [PASS] runtime_preflight exit_code=0
+[0004] [PASS] portable_runtime_verified python=python.exe device_request=cpu
+[0005] [RUN] foundation_tests command=python -m unittest discover -s tests -q
+[OUTPUT] ----------------------------------------------------------------------
+[OUTPUT] Ran 41 tests in 0.099s
+[OUTPUT] 
+[OUTPUT] OK
+[0006] [PASS] foundation_tests exit_code=0
+[0007] [RUN] source_documents_curated command=python scripts/curate_corpus.py
+[OUTPUT] {
+[OUTPUT]   "admitted_training_records": 19948,
+[OUTPUT]   "input_training_records": 20000,
+[OUTPUT]   "lane_permission_counts": {
+[OUTPUT]     "agentic": {
+[OUTPUT]       "anneal": 39,
+[OUTPUT]       "train": 1747,
+[OUTPUT]       "validation": 201
+[OUTPUT]     },
+[OUTPUT]     "code": {
+[OUTPUT]       "anneal": 43,
+[OUTPUT]       "train": 2638,
+[OUTPUT]       "validation": 319
+[OUTPUT]     },
+[OUTPUT]     "general": {
+[OUTPUT]       "anneal": 75,
+[OUTPUT]       "train": 3503,
+[OUTPUT]       "validation": 422
+[OUTPUT]     },
+[OUTPUT]     "indic": {
+[OUTPUT]       "anneal": 101,
+[OUTPUT]       "train": 4351,
+[OUTPUT]       "validation": 513
+[OUTPUT]     },
+[OUTPUT]     "long_context": {
+[OUTPUT]       "anneal": 14,
+[OUTPUT]       "train": 883,
+[OUTPUT]       "validation": 103
+[OUTPUT]     },
+[OUTPUT]     "reasoning": {
+[OUTPUT]       "anneal": 58,
+[OUTPUT]       "never_train": 1000,
+[OUTPUT]       "train": 2641,
+[OUTPUT]       "validation": 297
+[OUTPUT]     },
+[OUTPUT]     "science_math": {
+[OUTPUT]       "anneal": 32,
+[OUTPUT]       "train": 1791,
+[OUTPUT]       "validation": 177
+[OUTPUT]     }
+[OUTPUT]   },
+[OUTPUT]   "rejection_counts": {
+[OUTPUT]     "cross_source_exact_duplicate": 48,
+[OUTPUT]     "evaluation_13gram_overlap": 4
+[OUTPUT]   }
+[OUTPUT] }
+[0008] [PASS] source_documents_curated exit_code=0
+[0009] [RUN] source_documents_verified command=python scripts/verify_corpus.py
+[OUTPUT] {
+[OUTPUT]   "curated_never_train_records": 1000,
+[OUTPUT]   "curated_training_records": 19948,
+[OUTPUT]   "exact_train_eval_overlap": 0,
+[OUTPUT]   "lanes": [
+[OUTPUT]     "agentic",
+[OUTPUT]     "code",
+[OUTPUT]     "general",
+[OUTPUT]     "indic",
+[OUTPUT]     "long_context",
+[OUTPUT]     "reasoning",
+[OUTPUT]     "science_math"
+[OUTPUT]   ],
+[OUTPUT]   "snapshot_never_train_records": 1000,
+[OUTPUT]   "snapshot_training_records": 20000,
+[OUTPUT]   "source_snapshots": 13,
+[OUTPUT]   "status": "PASS"
+[OUTPUT] }
+[0010] [PASS] source_documents_verified exit_code=0
+[0011] [RUN] wikipedia_review_gate_verified command=python scripts/verify_wikipedia_v3.py
+[OUTPUT] {
+[OUTPUT]   "artifact_sha256": "63440bebba77185243d8d93ce703f35368bcb412da3b1b6c0a2fb43d041c67e9",
+[OUTPUT]   "parents": 4328,
+[OUTPUT]   "policy_hash": "sha256:9e16fced2e7d98f9314fb1e3d732cadae06bbd478b97e89eb21841c0835b2908",
+[OUTPUT]   "records": 5183,
+[OUTPUT]   "reviewed_regressions": 0,
+[OUTPUT]   "sensitive_context_overrides": 1,
+[OUTPUT]   "stat_heavy_lists_capped": 1,
+[OUTPUT]   "status": "PASS",
+[OUTPUT]   "table_salvage_chunks": 84,
+[OUTPUT]   "unique_content_hashes": 5183
+[OUTPUT] }
+[0012] [PASS] wikipedia_review_gate_verified exit_code=0
+[0013] [RUN] remaining_lanes_review_gate_verified command=python scripts/verify_remaining_lanes_v2.py
+[OUTPUT] {
+[OUTPUT]   "status": "PASS",
+[OUTPUT]   "policy_hash": "sha256:e11a916f44ef6c6c620e0b7bddbd5c675eec7eeb5830e434f2ac9f141ca6d037",
+[OUTPUT]   "sources": [
+[OUTPUT]     {
+[OUTPUT]       "source_id": "wikipedia_long_en",
+[OUTPUT]       "records": 1341,
+[OUTPUT]       "parents": 1000,
+[OUTPUT]       "artifact_sha256": "ec95ce50fabc4f626fd7bc6c993a3edf3372f0bde30b9f4fa333fde10ce8678c",
+[OUTPUT]       "phone_markers": 0,
+[OUTPUT]       "word_boundaries": 0
+[OUTPUT]     },
+[OUTPUT]     {
+[OUTPUT]       "source_id": "openwebmath_science_math",
+[OUTPUT]       "records": 2898,
+[OUTPUT]       "parents": 2000,
+[OUTPUT]       "artifact_sha256": "444db047fb84af0655fa93319be6af3004c8f8ed9429b2897fd65adde7262182",
+[OUTPUT]       "phone_markers": 0,
+[OUTPUT]       "word_boundaries": 4
+[OUTPUT]     },
+[OUTPUT]     {
+[OUTPUT]       "source_id": "codeparrot_permissive_python",
+[OUTPUT]       "records": 4099,
+[OUTPUT]       "parents": 3000,
+[OUTPUT]       "artifact_sha256": "8bc425b520ff1cac62a085766f91dd82b7273b2131b76a2271e3f0fb473442a8",
+[OUTPUT]       "phone_markers": 0,
+[OUTPUT]       "word_boundaries": 0
+[OUTPUT]     },
+[OUTPUT]     {
+[OUTPUT]       "source_id": "gsm8k_reasoning_train",
+[OUTPUT]       "records": 3000,
+[OUTPUT]       "parents": 3000,
+[OUTPUT]       "artifact_sha256": "8d2a73cbafcff50f3e46c81b7ae68d6d6a4c2b2abc0afe629e342dfaea23e943",
+[OUTPUT]       "phone_markers": 0,
+[OUTPUT]       "word_boundaries": 0
+[OUTPUT]     },
+[OUTPUT]     {
+[OUTPUT]       "source_id": "sangraha_verified_hindi",
+[OUTPUT]       "records": 2089,
+[OUTPUT]       "parents": 1999,
+[OUTPUT]       "artifact_sha256": "002f04101e38262f9c8d06382351896a7c682b9f54bb9f9dc291d53cfdae49a8",
+[OUTPUT]       "phone_markers": 2,
+[OUTPUT]       "word_boundaries": 0
+[OUTPUT]     },
+[OUTPUT]     {
+[OUTPUT]       "source_id": "sangraha_unverified_hindi",
+[OUTPUT]       "records": 1073,
+[OUTPUT]       "parents": 1000,
+[OUTPUT]       "artifact_sha256": "9c8f70322d0fe6a823c104084873eae2904171013239ffae1994da41b87be03c",
+[OUTPUT]       "phone_markers": 11,
+[OUTPUT]       "word_boundaries": 7
+[OUTPUT]     },
+[OUTPUT]     {
+[OUTPUT]       "source_id": "sangraha_synthetic_hindi",
+[OUTPUT]       "records": 1177,
+[OUTPUT]       "parents": 999,
+[OUTPUT]       "artifact_sha256": "0ae2572fd77a776926640694ec52e2d1a84e853d1654bb2ae300da1cc6eddc1e",
+[OUTPUT]       "phone_markers": 0,
+[OUTPUT]       "word_boundaries": 2
+[OUTPUT]     },
+[OUTPUT]     {
+[OUTPUT]       "source_id": "assignment4_samanantar_translated",
+[OUTPUT]       "records": 1000,
+[OUTPUT]       "parents": 1000,
+[OUTPUT]       "artifact_sha256": "792348a4466f191455fb43562569403a14c173ae34e7e595f9d9d4ba92afd956",
+[OUTPUT]       "phone_markers": 0,
+[OUTPUT]       "word_boundaries": 0
+[OUTPUT]     },
+[OUTPUT]     {
+[OUTPUT]       "source_id": "hermes_function_calling",
+[OUTPUT]       "records": 1035,
+[OUTPUT]       "parents": 1000,
+[OUTPUT]       "artifact_sha256": "b3e018a2397a382d4bd01017b3c86708ad33c6266fb9e3d6054c118c418f8c77",
+[OUTPUT]       "phone_markers": 0,
+[OUTPUT]       "word_boundaries": 0
+[OUTPUT]     },
+[OUTPUT]     {
+[OUTPUT]       "source_id": "hermes_json_agentic",
+[OUTPUT]       "records": 500,
+[OUTPUT]       "parents": 500,
+[OUTPUT]       "artifact_sha256": "05542f6b157e5b2fe7dc1e5b58f99f301f0509da90dcc506153710fb2ef66919",
+[OUTPUT]       "phone_markers": 0,
+[OUTPUT]       "word_boundaries": 0
+[OUTPUT]     },
+[OUTPUT]     {
+[OUTPUT]       "source_id": "hermes_glaive_function_calling",
+[OUTPUT]       "records": 500,
+[OUTPUT]       "parents": 500,
+[OUTPUT]       "artifact_sha256": "a979d44778a2a7013446e7b99d06df04ca63f2900b117cc4b45734e52a749f3f",
+[OUTPUT]       "phone_markers": 0,
+[OUTPUT]       "word_boundaries": 0
+[OUTPUT]     }
+[OUTPUT]   ],
+[OUTPUT]   "records": 18712,
+[OUTPUT]   "unique_record_ids": 18712
+[OUTPUT] }
+[0014] [PASS] remaining_lanes_review_gate_verified exit_code=0
+[0015] [RUN] corpus_frozen command=python scripts/freeze_corpus_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "FROZEN",
+[OUTPUT]   "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+[OUTPUT]   "input_training_records": 23895,
+[OUTPUT]   "admitted_training_records": 23842,
+[OUTPUT]   "rejection_counts": {
+[OUTPUT]     "cross_source_exact_duplicate": 49,
+[OUTPUT]     "evaluation_13gram_overlap": 4
+[OUTPUT]   }
+[OUTPUT] }
+[0016] [PASS] corpus_frozen exit_code=0
+[0017] [RUN] frozen_corpus_verified command=python scripts/verify_frozen_corpus_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "PASS",
+[OUTPUT]   "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+[OUTPUT]   "training_records": 23842,
+[OUTPUT]   "evaluation_records": 1000,
+[OUTPUT]   "unique_content_hashes": 23842,
+[OUTPUT]   "group_leaks": 0,
+[OUTPUT]   "evaluation_overlaps": 0
+[OUTPUT] }
+[0018] [PASS] frozen_corpus_verified exit_code=0
+[0019] [PASS] eval_shard_blocked
+[0020] [PASS] evaluation_data_blocked
+[0021] [RUN] tokenizer_trained command=python scripts/train_tokenizer_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "FROZEN",
+[OUTPUT]   "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be",
+[OUTPUT]   "vocab_size": 8192,
+[OUTPUT]   "training_documents": 21015,
+[OUTPUT]   "roundtrip_failures": 0,
+[OUTPUT]   "lane_tokens_per_word": {
+[OUTPUT]     "agentic": 3.051,
+[OUTPUT]     "code": 4.614,
+[OUTPUT]     "general": 3.054,
+[OUTPUT]     "indic": 4.565,
+[OUTPUT]     "long_context": 3.05,
+[OUTPUT]     "reasoning": 3.056,
+[OUTPUT]     "science_math": 3.149
+[OUTPUT]   }
+[OUTPUT] }
+[0022] [PASS] tokenizer_trained exit_code=0
+[0023] [RUN] tokenized_shards_created command=python scripts/tokenize_shards_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "FROZEN",
+[OUTPUT]   "shards": 22,
+[OUTPUT]   "records": 24842,
+[OUTPUT]   "tokens": 51944856,
+[OUTPUT]   "loss_bearing_tokens": 46860382
+[OUTPUT] }
+[0024] [PASS] tokenized_shards_created exit_code=0
+[0025] [RUN] tokenized_shards_verified command=python scripts/verify_tokenized_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "PASS",
+[OUTPUT]   "shards": 22,
+[OUTPUT]   "records": 24842,
+[OUTPUT]   "tokens": 51944856,
+[OUTPUT]   "loss_bearing_tokens": 46860382,
+[OUTPUT]   "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be"
+[OUTPUT] }
+[0026] [PASS] tokenized_shards_verified exit_code=0
+[0027] [PASS] shards_created count=22
+[0028] [PASS] manifests_validated count=22
+[0029] [PASS] tokenizer_hash_verified sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be
+[0030] [RUN] mixture_schedule_compiled command=python scripts/build_curriculum_schedule_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "FROZEN",
+[OUTPUT]   "schedule_hash": "sha256:0477330cd06ea86f99f164c853751659987566a2f20f93ffe2bf515a49fe3382",
+[OUTPUT]   "curriculum_records": 24842,
+[OUTPUT]   "total_loss_token_budget": 262144,
+[OUTPUT]   "protected_floors": {
+[OUTPUT]     "indic": {
+[OUTPUT]       "required_minimum_loss_tokens": 20553,
+[OUTPUT]       "scheduled_loss_tokens": 20554,
+[OUTPUT]       "scheduled_fraction": 0.08000747369609305,
+[OUTPUT]       "passed": true
+[OUTPUT]     },
+[OUTPUT]     "agentic": {
+[OUTPUT]       "required_minimum_loss_tokens": 1285,
+[OUTPUT]       "scheduled_loss_tokens": 1286,
+[OUTPUT]       "scheduled_fraction": 0.0050058193623224514,
+[OUTPUT]       "passed": true
+[OUTPUT]     }
+[OUTPUT]   }
+[OUTPUT] }
+[0031] [PASS] mixture_schedule_compiled exit_code=0
+[0032] [RUN] mixture_schedule_verified command=python scripts/verify_curriculum_schedule_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "PASS",
+[OUTPUT]   "schedule_hash": "sha256:0477330cd06ea86f99f164c853751659987566a2f20f93ffe2bf515a49fe3382",
+[OUTPUT]   "curriculum_records": 24842,
+[OUTPUT]   "total_loss_token_budget": 262144,
+[OUTPUT]   "stages": 5,
+[OUTPUT]   "protected_floors": {
+[OUTPUT]     "agentic": {
+[OUTPUT]       "passed": true,
+[OUTPUT]       "required_minimum_loss_tokens": 1285,
+[OUTPUT]       "scheduled_fraction": 0.0050058193623224514,
+[OUTPUT]       "scheduled_loss_tokens": 1286
+[OUTPUT]     },
+[OUTPUT]     "indic": {
+[OUTPUT]       "passed": true,
+[OUTPUT]       "required_minimum_loss_tokens": 20553,
+[OUTPUT]       "scheduled_fraction": 0.08000747369609305,
+[OUTPUT]       "scheduled_loss_tokens": 20554
+[OUTPUT]     }
+[OUTPUT]   },
+[OUTPUT]   "anneal_isolated": true
+[OUTPUT] }
+[0033] [PASS] mixture_schedule_verified exit_code=0
+[0034] [PASS] mixture_compiled
+[0035] [RUN] batches_packed command=python scripts/build_packed_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "FROZEN",
+[OUTPUT]   "packing_hash": "sha256:2baf444b2fccdec3702af6e3c317ca9e2e7110c9781399a5261c4b87d1fa57e7",
+[OUTPUT]   "selected_records": 521,
+[OUTPUT]   "sequences": 1081,
+[OUTPUT]   "physical_tokens": 307712,
+[OUTPUT]   "loss_bearing_tokens": 262144,
+[OUTPUT]   "packing_utilization": 0.9732867096505824
+[OUTPUT] }
+[0036] [PASS] batches_packed exit_code=0
+[0037] [RUN] packing_verified command=python scripts/verify_packed_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "PASS",
+[OUTPUT]   "packing_hash": "sha256:2baf444b2fccdec3702af6e3c317ca9e2e7110c9781399a5261c4b87d1fa57e7",
+[OUTPUT]   "selected_records": 521,
+[OUTPUT]   "sequences": 1081,
+[OUTPUT]   "physical_tokens": 307712,
+[OUTPUT]   "loss_bearing_tokens": 262144,
+[OUTPUT]   "packing_utilization": 0.9732867096505824,
+[OUTPUT]   "attention_isolation": "segment_ids_verified",
+[OUTPUT]   "position_resets": "verified",
+[OUTPUT]   "schedule_accounting": "exact",
+[OUTPUT]   "data_type_policies": 7,
+[OUTPUT]   "policy_sequence_counts": {
+[OUTPUT]     "code_file_segmented": 96,
+[OUTPUT]     "long_document_continuation": 81,
+[OUTPUT]     "multilingual_tier_segmented": 97,
+[OUTPUT]     "prose_dense_segmented": 494,
+[OUTPUT]     "reasoning_prompt_output_segmented": 166,
+[OUTPUT]     "technical_dense_segmented": 96,
+[OUTPUT]     "trajectory_role_masked_segmented": 51
+[OUTPUT]   }
+[OUTPUT] }
+[0038] [PASS] packing_verified exit_code=0
+[0039] [PASS] batches_packed sequences=1081
+[0040] [RUN] opus_batches_built command=python scripts/build_batches_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "FROZEN",
+[OUTPUT]   "batch_plan_hash": "sha256:158ae9939c5502b256449cce5aaff4c026775a980c7b8241ede10cb11faab749",
+[OUTPUT]   "microbatches": 302,
+[OUTPUT]   "sequences": 1081,
+[OUTPUT]   "loss_bearing_tokens": 262144,
+[OUTPUT]   "zero_loss_microbatches": 0
+[OUTPUT] }
+[0041] [PASS] opus_batches_built exit_code=0
+[0042] [RUN] opus_batches_verified command=python scripts/verify_batches_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "PASS",
+[OUTPUT]   "batch_plan_hash": "sha256:158ae9939c5502b256449cce5aaff4c026775a980c7b8241ede10cb11faab749",
+[OUTPUT]   "microbatches": 302,
+[OUTPUT]   "opus_decisions": 302,
+[OUTPUT]   "sequences_consumed_once": 1081,
+[OUTPUT]   "loss_bearing_tokens": 262144,
+[OUTPUT]   "zero_loss_sequences_paired": 35,
+[OUTPUT]   "zero_loss_microbatches": 0,
+[OUTPUT]   "curriculum_stage_order": "verified",
+[OUTPUT]   "schedule_accounting": "exact",
+[OUTPUT]   "deterministic_reconstruction": "exact",
+[OUTPUT]   "candidate_outcomes": {
+[OUTPUT]     "accepted": 302,
+[OUTPUT]     "deferred": 880,
+[OUTPUT]     "rejected": 6
+[OUTPUT]   },
+[OUTPUT]   "decision_outcomes": {
+[OUTPUT]     "protected_floor_override": 72,
+[OUTPUT]     "proxy_accept": 230
+[OUTPUT]   },
+[OUTPUT]   "protected_floor_overrides": 72,
+[OUTPUT]   "sparse_fallbacks": 0
+[OUTPUT] }
+[0043] [PASS] opus_batches_verified exit_code=0
+[0044] [PASS] OPUS_decisions_recorded decisions=302
+[0045] [RUN] model_training_executed command=python scripts/train_tiny_model_v1.py
+[OUTPUT] {"microbatches": 25, "total_microbatches": 302, "optimizer_updates": 7, "latest_loss": 8.47790813446045}
+[OUTPUT] {"microbatches": 50, "total_microbatches": 302, "optimizer_updates": 13, "latest_loss": 7.296321392059326}
+[OUTPUT] {"microbatches": 75, "total_microbatches": 302, "optimizer_updates": 19, "latest_loss": 6.5558037757873535}
+[OUTPUT] {"microbatches": 100, "total_microbatches": 302, "optimizer_updates": 25, "latest_loss": 6.067987442016602}
+[OUTPUT] {"microbatches": 125, "total_microbatches": 302, "optimizer_updates": 32, "latest_loss": 5.897741317749023}
+[OUTPUT] {"microbatches": 150, "total_microbatches": 302, "optimizer_updates": 38, "latest_loss": 5.386042594909668}
+[OUTPUT] {"microbatches": 175, "total_microbatches": 302, "optimizer_updates": 44, "latest_loss": 5.335770130157471}
+[OUTPUT] {"microbatches": 200, "total_microbatches": 302, "optimizer_updates": 50, "latest_loss": 6.544375419616699}
+[OUTPUT] {"microbatches": 225, "total_microbatches": 302, "optimizer_updates": 57, "latest_loss": 5.191634654998779}
+[OUTPUT] {"microbatches": 250, "total_microbatches": 302, "optimizer_updates": 63, "latest_loss": 5.694552898406982}
+[OUTPUT] {"microbatches": 275, "total_microbatches": 302, "optimizer_updates": 69, "latest_loss": 5.099090099334717}
+[OUTPUT] {"microbatches": 300, "total_microbatches": 302, "optimizer_updates": 75, "latest_loss": 5.227970123291016}
+[OUTPUT] {"microbatches": 302, "total_microbatches": 302, "optimizer_updates": 77, "latest_loss": 4.808435440063477}
+[OUTPUT] {
+[OUTPUT]   "status": "COMPLETE",
+[OUTPUT]   "training_hash": "sha256:bbfb6159ec339375c81fc90a65048bc3da9438fb64ea0dfc6fdbadb8da6a4991",
+[OUTPUT]   "model_parameters": 1509888,
+[OUTPUT]   "microbatches": 302,
+[OUTPUT]   "optimizer_updates": 77,
+[OUTPUT]   "loss_bearing_tokens": 262144,
+[OUTPUT]   "training_cross_entropy_nats": 6.1801037922869,
+[OUTPUT]   "initial_validation": {
+[OUTPUT]     "cross_entropy_nats": 9.048855781555176,
+[OUTPUT]     "perplexity": 8508.796430614244,
+[OUTPUT]     "loss_bearing_tokens": 889
+[OUTPUT]   },
+[OUTPUT]   "final_validation": {
+[OUTPUT]     "cross_entropy_nats": 5.78570556640625,
+[OUTPUT]     "perplexity": 325.61169975987104,
+[OUTPUT]     "loss_bearing_tokens": 889
+[OUTPUT]   },
+[OUTPUT]   "final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2"
+[OUTPUT] }
+[0046] [PASS] model_training_executed exit_code=0
+[0047] [RUN] training_ledgers_verified command=python scripts/verify_training_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "PASS",
+[OUTPUT]   "training_hash": "sha256:bbfb6159ec339375c81fc90a65048bc3da9438fb64ea0dfc6fdbadb8da6a4991",
+[OUTPUT]   "checkpoint_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+[OUTPUT]   "microbatches_cross_linked": 302,
+[OUTPUT]   "optimizer_updates": 77,
+[OUTPUT]   "loss_bearing_tokens": 262144,
+[OUTPUT]   "consumption_payloads_rehashed": 302,
+[OUTPUT]   "ledger_hash_chains": "verified",
+[OUTPUT]   "validation_permission_isolation": "verified",
+[OUTPUT]   "validation_cross_entropy_before": 9.048855781555176,
+[OUTPUT]   "validation_cross_entropy_after": 5.78570556640625,
+[OUTPUT]   "checkpoint_reload": "exact",
+[OUTPUT]   "useful_loss_bearing_tokens_per_second": 16131.001076657434,
+[OUTPUT]   "performance_reconstruction": "exact",
+[OUTPUT]   "sample_losses_cross_linked": 1081
+[OUTPUT] }
+[0048] [PASS] training_ledgers_verified exit_code=0
+[0049] [PASS] checkpoint_saved artifacts/training_v1/final_checkpoint.pt
+[0050] [PASS] performance_measured useful_loss_tokens_per_second=16131.001077
+[0051] [RUN] crash_resume_replay_fork_executed command=python scripts/run_recovery_demo_v1.py
+[OUTPUT] {
+[OUTPUT]   "schema_version": 1,
+[OUTPUT]   "event": "deliberate_training_crash",
+[OUTPUT]   "planned_exit_code": 86,
+[OUTPUT]   "completed_microbatches": 125,
+[OUTPUT]   "optimizer_updates": 32,
+[OUTPUT]   "checkpoint": "artifacts/recovery_v1/checkpoint_000032.pt",
+[OUTPUT]   "checkpoint_sha256": "a6d50a78b453f84097b1d5860fac21d21dbcb6a997e4b859cecce46bfd5ecbf7",
+[OUTPUT]   "parameter_hash": "sha256:541778c2d9f9efb57a8cc50882759a5ded835c8fb5b07c0708fc29578c0a305d",
+[OUTPUT]   "consumption_ledger_tail": "sha256:73f6d8065b2fef432e9863bab66305268a9395b11d0756aa53149d563d5aa02c",
+[OUTPUT]   "learning_ledger_tail": "sha256:5cf156f29240684834a7b6e69a00f615a8e250cc463a21fb0a9ad601ca20c9a4",
+[OUTPUT]   "expected_next_batch": {
+[OUTPUT]     "batch_index": 125,
+[OUTPUT]     "stage": "general_foundation",
+[OUTPUT]     "sequence_indices": [
+[OUTPUT]       501,
+[OUTPUT]       96,
+[OUTPUT]       307,
+[OUTPUT]       122
+[OUTPUT]     ],
+[OUTPUT]     "token_spans": [
+[OUTPUT]       {
+[OUTPUT]         "sequence_index": 501,
+[OUTPUT]         "global_token_start": 128256,
+[OUTPUT]         "global_token_end_exclusive": 128512
+[OUTPUT]       },
+[OUTPUT]       {
+[OUTPUT]         "sequence_index": 96,
+[OUTPUT]         "global_token_start": 24576,
+[OUTPUT]         "global_token_end_exclusive": 24832
+[OUTPUT]       },
+[OUTPUT]       {
+[OUTPUT]         "sequence_index": 307,
+[OUTPUT]         "global_token_start": 78592,
+[OUTPUT]         "global_token_end_exclusive": 78848
+[OUTPUT]       },
+[OUTPUT]       {
+[OUTPUT]         "sequence_index": 122,
+[OUTPUT]         "global_token_start": 31232,
+[OUTPUT]         "global_token_end_exclusive": 31488
+[OUTPUT]       }
+[OUTPUT]     ],
+[OUTPUT]     "payload_hashes": {
+[OUTPUT]       "input_ids": "b59555f39b98c73e8d54543e90d3fd99f5b3f8ceb9d0c0e78e5f711813bf5b69",
+[OUTPUT]       "loss_mask": "e9ea8b2ee2dea78adf88001c5a97fce5f6babded1e2e655ff508dd709466884f",
+[OUTPUT]       "position_ids": "3a8e33d9af29ccd760b28a83daddf2d8c8d77cea9658fa2747220401b477a92b",
+[OUTPUT]       "segment_ids": "ae752888da70ea6eb222a7ddd7151f050e385b22c1d62bc74d8630a8bc897e84"
+[OUTPUT]     },
+[OUTPUT]     "proof_hash": "sha256:03c9f87e311619af8233886688b2b10d3336cacb80d2d9261af77edf85a5b391"
+[OUTPUT]   }
+[OUTPUT] }
+[OUTPUT] {
+[OUTPUT]   "status": "COMPLETE",
+[OUTPUT]   "run_kind": "recovery",
+[OUTPUT]   "final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+[OUTPUT]   "microbatches": 302,
+[OUTPUT]   "optimizer_updates": 77,
+[OUTPUT]   "loss_bearing_tokens": 262144,
+[OUTPUT]   "final_validation": {
+[OUTPUT]     "cross_entropy_nats": 5.78570556640625,
+[OUTPUT]     "loss_bearing_tokens": 889
+[OUTPUT]   }
+[OUTPUT] }
+[OUTPUT] {
+[OUTPUT]   "status": "COMPLETE",
+[OUTPUT]   "run_kind": "replay",
+[OUTPUT]   "final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+[OUTPUT]   "microbatches": 302,
+[OUTPUT]   "optimizer_updates": 77,
+[OUTPUT]   "loss_bearing_tokens": 262144,
+[OUTPUT]   "final_validation": {
+[OUTPUT]     "cross_entropy_nats": 5.78570556640625,
+[OUTPUT]     "loss_bearing_tokens": 889
+[OUTPUT]   }
+[OUTPUT] }
+[OUTPUT] {
+[OUTPUT]   "status": "COMPLETE",
+[OUTPUT]   "run_kind": "fork",
+[OUTPUT]   "final_parameter_hash": "sha256:ab89d70a4403608c66f352a1676cb4f53b02a799e21be82b4b21f14e38af95da",
+[OUTPUT]   "microbatches": 302,
+[OUTPUT]   "optimizer_updates": 77,
+[OUTPUT]   "loss_bearing_tokens": 262144,
+[OUTPUT]   "final_validation": {
+[OUTPUT]     "cross_entropy_nats": 5.893987655639648,
+[OUTPUT]     "loss_bearing_tokens": 889
+[OUTPUT]   }
+[OUTPUT] }
+[OUTPUT] {
+[OUTPUT]   "schema_version": 1,
+[OUTPUT]   "status": "PASS",
+[OUTPUT]   "protocol_id": "era6-recovery-v1",
+[OUTPUT]   "recovery_config_sha256": "730441595b1a899df01565a96be55f5f411ec329f3b0f639323be7cd02dc9229",
+[OUTPUT]   "planned_crash": {
+[OUTPUT]     "optimizer_update": 32,
+[OUTPUT]     "observed_exit_code": 86,
+[OUTPUT]     "completed_microbatches": 125,
+[OUTPUT]     "checkpoint": "artifacts/recovery_v1/checkpoint_000032.pt",
+[OUTPUT]     "checkpoint_sha256": "a6d50a78b453f84097b1d5860fac21d21dbcb6a997e4b859cecce46bfd5ecbf7"
+[OUTPUT]   },
+[OUTPUT]   "baseline_final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+[OUTPUT]   "recovery_final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+[OUTPUT]   "replay_final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+[OUTPUT]   "fork_final_parameter_hash": "sha256:ab89d70a4403608c66f352a1676cb4f53b02a799e21be82b4b21f14e38af95da",
+[OUTPUT]   "fork": {
+[OUTPUT]     "learning_rate_scale": 0.5,
+[OUTPUT]     "common_learning_prefix_microbatches": 128,
+[OUTPUT]     "first_divergent_microbatch": 128,
+[OUTPUT]     "parent_checkpoint_sha256": "a6d50a78b453f84097b1d5860fac21d21dbcb6a997e4b859cecce46bfd5ecbf7"
+[OUTPUT]   },
+[OUTPUT]   "resume_next_batch": {
+[OUTPUT]     "batch_index": 125,
+[OUTPUT]     "proof_hash": "sha256:03c9f87e311619af8233886688b2b10d3336cacb80d2d9261af77edf85a5b391",
+[OUTPUT]     "event": "artifacts/recovery_v1/resume_event.json"
+[OUTPUT]   },
+[OUTPUT]   "replay_interval": {
+[OUTPUT]     "start_batch_index": 112,
+[OUTPUT]     "end_batch_index_exclusive": 140,
+[OUTPUT]     "batches": 28,
+[OUTPUT]     "crosses_crash_boundary": true,
+[OUTPUT]     "report_hash": "sha256:9c56a8d55862c2034f23267b5d9727e5c6599de6330ca728be3143d01b679a5d",
+[OUTPUT]     "report": "artifacts/recovery_audit_v1/replay_interval_report.json"
+[OUTPUT]   },
+[OUTPUT]   "comparisons": {
+[OUTPUT]     "planned_crash_exit_code_observed": true,
+[OUTPUT]     "crash_checkpoint_hash_valid": true,
+[OUTPUT]     "recovery_final_parameters_exact": true,
+[OUTPUT]     "recovery_consumption_ledger_exact": true,
+[OUTPUT]     "recovery_learning_ledger_exact": true,
+[OUTPUT]     "replay_final_parameters_exact": true,
+[OUTPUT]     "replay_consumption_ledger_exact": true,
+[OUTPUT]     "replay_learning_ledger_exact": true,
+[OUTPUT]     "fork_consumption_ledger_exact": true,
+[OUTPUT]     "fork_learning_ledger_different": true,
+[OUTPUT]     "fork_final_parameters_different": true,
+[OUTPUT]     "fork_prefix_preserved_through_checkpoint": true,
+[OUTPUT]     "fork_diverges_at_next_optimizer_update": true,
+[OUTPUT]     "resume_next_batch_id_matched": true,
+[OUTPUT]     "resume_next_batch_sequence_ids_matched": true,
+[OUTPUT]     "resume_next_batch_token_spans_matched": true,
+[OUTPUT]     "resume_next_batch_payload_hashes_matched": true,
+[OUTPUT]     "resume_next_batch_proof_hash_matched": true,
+[OUTPUT]     "replay_interval_batch_ids_matched": true,
+[OUTPUT]     "replay_interval_sequence_ids_matched": true,
+[OUTPUT]     "replay_interval_token_spans_matched": true,
+[OUTPUT]     "replay_interval_payload_hashes_matched": true,
+[OUTPUT]     "replay_interval_proof_hashes_matched": true
+[OUTPUT]   },
+[OUTPUT]   "report_hashes": {
+[OUTPUT]     "baseline_training_report": "a6775db24effa19ee6af60d1717f0c6daf474abb7dd9da103bd2887b3ec9de20",
+[OUTPUT]     "recovery_execution_report": "8df83763e9fbed2c8a0e11d1814784dd90f374d399a633c3b096f661cceeed78",
+[OUTPUT]     "replay_execution_report": "7ae8f7a572a11cf1e0c704a597c4c5d847298d33d8d01902517c0a24ffa18882",
+[OUTPUT]     "fork_execution_report": "1cdd821c0836ad758ed2700097e9675664281f6b4aa3dff0bfed0f0a066d2a61",
+[OUTPUT]     "crash_event": "c092bb2d6a64a79e59697ee62e961490793340c85ba064a99dc9b13e735bfd06",
+[OUTPUT]     "resume_event": "4a56497a5d52727b6ef3aaacd123c8ffb2a556cba628a62805d4317747feb7ed",
+[OUTPUT]     "replay_interval_report": "2efa4a752320c72ade34e90e092c2a419e25cedb1d412073212c9f80734519ae"
+[OUTPUT]   },
+[OUTPUT]   "audit_hash": "sha256:4f446db0ad2ac10135eaff14d46b00b4e3e58350af75382f871021d0c8b0c994"
+[OUTPUT] }
+[0052] [PASS] crash_resume_replay_fork_executed exit_code=0
+[0053] [RUN] recovery_audit_verified command=python scripts/verify_recovery_v1.py
+[OUTPUT] {
+[OUTPUT]   "status": "PASS",
+[OUTPUT]   "audit_hash": "sha256:4f446db0ad2ac10135eaff14d46b00b4e3e58350af75382f871021d0c8b0c994",
+[OUTPUT]   "planned_crash_exit_code": 86,
+[OUTPUT]   "crash_optimizer_update": 32,
+[OUTPUT]   "crash_completed_microbatches": 125,
+[OUTPUT]   "recovery_final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+[OUTPUT]   "replay_final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+[OUTPUT]   "fork_final_parameter_hash": "sha256:ab89d70a4403608c66f352a1676cb4f53b02a799e21be82b4b21f14e38af95da",
+[OUTPUT]   "exact_recovery_ledgers": true,
+[OUTPUT]   "exact_replay_ledgers": true,
+[OUTPUT]   "fork_consumption_exact": true,
+[OUTPUT]   "fork_first_divergent_microbatch": 128,
+[OUTPUT]   "fork_divergent_optimizer_update": 33,
+[OUTPUT]   "all_final_checkpoints_reloaded": true,
+[OUTPUT]   "resume_next_batch_index": 125,
+[OUTPUT]   "resume_next_batch_proof_hash": "sha256:03c9f87e311619af8233886688b2b10d3336cacb80d2d9261af77edf85a5b391",
+[OUTPUT]   "resume_next_batch_matched": true,
+[OUTPUT]   "replay_interval_start": 112,
+[OUTPUT]   "replay_interval_end_exclusive": 140,
+[OUTPUT]   "replay_interval_batches": 28,
+[OUTPUT]   "replay_batch_ids_token_spans_payload_hashes": "exact"
+[OUTPUT] }
+[0054] [PASS] recovery_audit_verified exit_code=0
+[0055] [PASS] crash_simulated exit_code=86
+[0056] [PASS] run_resumed
+[0057] [PASS] resume_next_batch_matched batch_index=125
+[0058] [PASS] historical_stream_replayed batches=28
+[0059] [PASS] replay_hash_matched sha256:9c56a8d55862c2034f23267b5d9727e5c6599de6330ca728be3143d01b679a5d
+[0060] [PASS] branch_forked first_divergent_microbatch=128
+[0061] [PASS] audit_completed sha256:4f446db0ad2ac10135eaff14d46b00b4e3e58350af75382f871021d0c8b0c994
+[0062] [PASS] complete_execution_sequence

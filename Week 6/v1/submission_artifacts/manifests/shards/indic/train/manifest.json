@@ -1,0 +1,48 @@
+{
+  "manifest": {
+    "capability_lane": "indic",
+    "cleaning_pipeline_hash": "sha256:fb68af7ce2dba96fce832c8abd73c7ab2b3a696d5adead2d653462d9ea8957f3",
+    "content_hash": "sha256:cfb05d4b805c6c66f3ea227c2866f5215c0f321ea4ec2b7a972154128cd279fd",
+    "dedup_status": "passed",
+    "eval_overlap_status": "clear",
+    "extra": {
+      "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+      "index_canonical_uncompressed_sha256": "c85963b49734d3f5f9b4763673fdd52b7c9a012c4e853e312cbc67ed4628953b",
+      "index_path": "data/tokenized_v1/indic/train/index.jsonl.gz",
+      "index_sha256": "a442f828695c8722bfa5ae016ec11cb5e498650616ebf76eeade6055d82e512c",
+      "input_artifact": "data/frozen_corpus_v1/indic/train.jsonl.gz",
+      "input_compressed_sha256": "ecea7a7ea18a29d496bfe399a379357599c201530f0d5e4bc0a408fcd35515c9",
+      "loss_path": "data/tokenized_v1/indic/train/loss.uint8.bin",
+      "loss_policy_records": {
+        "full_text_causal": 3760,
+        "translated_observation_only": 877
+      },
+      "tokens_path": "data/tokenized_v1/indic/train/tokens.uint16.bin",
+      "tokens_sha256": "cbaf97f79bb6e8ee8bd5651576de9e150c1de7a4b470155fdc2bc9875de03258"
+    },
+    "language_distribution": {
+      "hi": 3760,
+      "multilingual-indic": 877
+    },
+    "loss_bearing_token_count": 8026016,
+    "loss_mask_hash": "sha256:2a280f64bf07009d2cacab8003c2aad0a6ee227f3cf2a2dc67a0fb64ddf18ece",
+    "parent_manifest_ids": [
+      "shard_671c3827f6de"
+    ],
+    "permission": "train",
+    "pii_screen_status": "passed_human_reviewed",
+    "position_policy": "document_reset_causal",
+    "record_count": 4637,
+    "shard_id": "indic-train-v1",
+    "source_lock_hashes": [
+      "sha256:764d10ddd3f2d9e34d05b3c8f6db09e1304378481a5354516c5aff0809ae9a0f",
+      "sha256:8b370c4d8d58c1315162b6440675c8aa1f5adb73eb56b0ccc6c626e4c83da562",
+      "sha256:9faa4b61c5244d616aa8497eeeb78c6cad16d7003371cc9eff749f986cfd01c1",
+      "sha256:f7db77df4677b2bc79754e07bb3d412d81ddb43098a0c702dd18d80df7bbaccf"
+    ],
+    "token_count": 8079409,
+    "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be"
+  },
+  "manifest_hash": "sha256:3faa591fb8286798757cb65670132066147d56fb706fca1c1f4241553980c885",
+  "schema_version": 1
+}

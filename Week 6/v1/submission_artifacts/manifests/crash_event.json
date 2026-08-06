@@ -1,0 +1,51 @@
+{
+  "checkpoint": "artifacts/recovery_v1/checkpoint_000032.pt",
+  "checkpoint_sha256": "a6d50a78b453f84097b1d5860fac21d21dbcb6a997e4b859cecce46bfd5ecbf7",
+  "completed_microbatches": 125,
+  "consumption_ledger_tail": "sha256:73f6d8065b2fef432e9863bab66305268a9395b11d0756aa53149d563d5aa02c",
+  "event": "deliberate_training_crash",
+  "expected_next_batch": {
+    "batch_index": 125,
+    "payload_hashes": {
+      "input_ids": "b59555f39b98c73e8d54543e90d3fd99f5b3f8ceb9d0c0e78e5f711813bf5b69",
+      "loss_mask": "e9ea8b2ee2dea78adf88001c5a97fce5f6babded1e2e655ff508dd709466884f",
+      "position_ids": "3a8e33d9af29ccd760b28a83daddf2d8c8d77cea9658fa2747220401b477a92b",
+      "segment_ids": "ae752888da70ea6eb222a7ddd7151f050e385b22c1d62bc74d8630a8bc897e84"
+    },
+    "proof_hash": "sha256:03c9f87e311619af8233886688b2b10d3336cacb80d2d9261af77edf85a5b391",
+    "sequence_indices": [
+      501,
+      96,
+      307,
+      122
+    ],
+    "stage": "general_foundation",
+    "token_spans": [
+      {
+        "global_token_end_exclusive": 128512,
+        "global_token_start": 128256,
+        "sequence_index": 501
+      },
+      {
+        "global_token_end_exclusive": 24832,
+        "global_token_start": 24576,
+        "sequence_index": 96
+      },
+      {
+        "global_token_end_exclusive": 78848,
+        "global_token_start": 78592,
+        "sequence_index": 307
+      },
+      {
+        "global_token_end_exclusive": 31488,
+        "global_token_start": 31232,
+        "sequence_index": 122
+      }
+    ]
+  },
+  "learning_ledger_tail": "sha256:5cf156f29240684834a7b6e69a00f615a8e250cc463a21fb0a9ad601ca20c9a4",
+  "optimizer_updates": 32,
+  "parameter_hash": "sha256:541778c2d9f9efb57a8cc50882759a5ded835c8fb5b07c0708fc29578c0a305d",
+  "planned_exit_code": 86,
+  "schema_version": 1
+}

@@ -1,0 +1,1332 @@
+{
+  "all_rejections": [
+    {
+      "parent_upstream_id": "64828360",
+      "preview": {
+        "end": "…3–14 || 10–2 |- align=\"center\" bgcolor=\"#ffcccc\" | 38 || June 13 || Texas A&M || Omaha Municipal Stadium • Omaha, Nebraska || 2–3 || 23–15 || 10–2 |- Awards and honors Dick Hauck First Team All-Big Ten Stewart Hein First Team All-Big Ten References Ohio State Buckeyes baseball seasons Ohio State Buckeyes baseball Big Ten Conference baseball champion seasons Ohio State College World Series seasons",
+        "start": "1951 Ohio State Buckeyes baseball team The 1951 Ohio State Buckeyes baseball team represented the Ohio State University in the 1951 NCAA baseball season. The head coach was Marty Karow, serving his 1st year. The Buckeyes lost in the College World Series, defeated by the Texas A&M Aggies. Roster Schedule ! style=\"\" | Regular season |- valign=\"top\" |- align=\"center\" bgcolor=\"#ccffcc\" | 1 || March 1…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 5208,
+        "duplicate_line_fraction": 0.4326923076923077,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.28085642317380355,
+        "wikitable_markup_line_fraction": 0.8543689320388349,
+        "wikitable_markup_lines": 88
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "1951 Ohio State Buckeyes baseball team"
+    },
+    {
+      "parent_upstream_id": "1271931",
+      "preview": {
+        "end": "…ght colspan=2| Total ! align=right| 1,464,096 ! align=right| 100.0 ! align=right| ! align=right| 89 ! align=right| 14 ! align=right| |- ! align=right colspan=2| Voter turnout ! align=right| ! align=right| 69.5 ! align=right| 2.3 ! align=right| ! align=right| ! align=right| |} Sources The Federal Returning Officer Elections in Schleswig-Holstein Schleswig-Holstein Schleswig-Holstein state election",
+        "start": "2000 Schleswig-Holstein state election The 2000 Schleswig-Holstein state election was held on 27 February 2000 to elect the members of the Landtag of Schleswig-Holstein. The incumbent coalition government of the Social Democratic Party (SPD) and The Greens led by Minister-President Heide Simonis retained its majority and continued in office. Parties The table below lists parties represented in th…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 2376,
+        "duplicate_line_fraction": 0.3392857142857143,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.26430517711171664,
+        "wikitable_markup_line_fraction": 0.8558558558558559,
+        "wikitable_markup_lines": 95
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2000 Schleswig-Holstein state election"
+    },
+    {
+      "parent_upstream_id": "1271913",
+      "preview": {
+        "end": "…ers to retain power. The CDU and FDP negotiated a coalition, with CDU leader Wolfgang Böhmer heading the new government. The election, which took place five months before the 2002 federal election, was a major defeat for the federal SPD–Green government, and weakened its standing in the Bundesrat. Sources The Federal Returning Officer 2002 Saxony-Anhalt state election Saxony-Anhalt state election",
+        "start": "2002 Saxony-Anhalt state election The 2002 Saxony-Anhalt state election was held on 21 April 2002 to elect the members of the 4th Landtag of Saxony-Anhalt. The incumbent Social Democratic Party (SPD) minority government led by Minister-President Reinhard Höppner was defeated. The SPD fell to third place, while the Christian Democratic Union (CDU) moved into first. The CDU subsequently formed a co…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4648,
+        "duplicate_line_fraction": 0.3,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.15139442231075695,
+        "wikitable_markup_line_fraction": 0.7706422018348624,
+        "wikitable_markup_lines": 84
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2002 Saxony-Anhalt state election"
+    },
+    {
+      "parent_upstream_id": "1271891",
+      "preview": {
+        "end": "…he CDU's Georg Milbradt remained in office as Minister-President. Notably, the NPD received two more votes on the ballot for Minister-President than it had members in the Landtag. It is presumed that two CDU Landtag members backed the NPD as a protest against the grand coalition. Notes Sources The Federal Returning Officer Elections, 2004 2004 elections in Germany September 2004 events in Germany",
+        "start": "2004 Saxony state election The 2004 Saxony state election was held on 19 September 2004 to elect the members of the 4th Landtag of Saxony. The incumbent Christian Democratic Union (CDU) government led by Minister-President Georg Milbradt lost its majority. The CDU subsequently formed a grand coalition with the Social Democratic Party (SPD), and Milbradt was re-elected as Minister-President. Parti…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 3786,
+        "duplicate_line_fraction": 0.3017241379310345,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.1495016611295681,
+        "wikitable_markup_line_fraction": 0.8260869565217391,
+        "wikitable_markup_lines": 95
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2004 Saxony state election"
+    },
+    {
+      "parent_upstream_id": "1271966",
+      "preview": {
+        "end": "…ign=right| 0 |- ! align=right colspan=2| Total ! align=right| 1,010,578 ! align=right| 100.0 ! align=right| ! align=right| 88 ! align=right| ±0 ! align=right| |- ! align=right colspan=2| Voter turnout ! align=right| ! align=right| 53.8 ! align=right| 6.1 ! align=right| ! align=right| ! align=right| |} Sources The Federal Returning Officer 2004 2004 elections in Germany June 2004 events in Germany",
+        "start": "2004 Thuringian state election The 2004 Thuringian state election was held on 13 June 2004 to elect the members of the 4th Landtag of Thuringia. The incumbent Christian Democratic Union (CDU) government led by Minister-President Dieter Althaus retained its majority and continued in office. Parties The table below lists parties represented in the 3rd Landtag of Thuringia. Opinion polling Election…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 2407,
+        "duplicate_line_fraction": 0.3697478991596639,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.29815303430079154,
+        "wikitable_markup_line_fraction": 0.864406779661017,
+        "wikitable_markup_lines": 102
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2004 Thuringian state election"
+    },
+    {
+      "parent_upstream_id": "30577952",
+      "preview": {
+        "end": "…\"3\" style=\"background-color:#99CCCC\"|25 January 2011 |- |} 1 Match awarded to Al Ansar, Al-Mabarrah apparently withdrew. Semi-finals |colspan=\"3\" style=\"background-color:#99CCCC\"|7 April 2011 |- |colspan=\"3\" style=\"background-color:#99CCCC\"|8 April 2011 |- |} Final |colspan=\"3\" style=\"background-color:#99CCCC\"|7 April 2011 |} References External links Soccerway.com Lebanese FA Cup seasons Cup Leb",
+        "start": "2010–11 Lebanese FA Cup The 2011 edition of the Lebanese FA Cup was the 39th edition to be played. It is the premier knockout tournament for football teams in Lebanon. Al-Ansar went into this edition as the holders. Al Ansar holds the most wins with 12 titles. The cup winner were guaranteed a place in the 2012 AFC Cup. Round 1 16 teams play a knockout tie. 8 clubs advance to the next round. Ties…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1276,
+        "duplicate_line_fraction": 0.2894736842105263,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.2727272727272727,
+        "wikitable_markup_line_fraction": 0.5945945945945946,
+        "wikitable_markup_lines": 22
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2010–11 Lebanese FA Cup"
+    },
+    {
+      "parent_upstream_id": "30122499",
+      "preview": {
+        "end": "…America East POY), and then captured the lead with a decisive foul on Stony Brook with 2 seconds of regulation left. Boston went on to win 56–54 to end the Seawolves hopes for their first-ever NCAA tournament bid. Schedule |- !colspan=9 style=| Regular season |- !colspan=9 style=| America East tournament References Stony Brook Seawolves men's basketball seasons Stony Brook Stony Brook Stony Brook",
+        "start": "2010–11 Stony Brook Seawolves men's basketball team The 2010–11 Stony Brook Seawolves men's basketball team represents Stony Brook University in the America East Conference. They are coached by Steve Pikiell, who is currently on his sixth year as a coach for Stony Brook. Stony Brook entered the year as the defending America East regular season champions after a year of school records and successe…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4799,
+        "duplicate_line_fraction": 0.15789473684210525,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.06580493537015275,
+        "wikitable_markup_line_fraction": 0.2222222222222222,
+        "wikitable_markup_lines": 4
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2010–11 Stony Brook Seawolves men's basketball team"
+    },
+    {
+      "parent_upstream_id": "30578417",
+      "preview": {
+        "end": "…Ó Cuív the runner-up. When Hanafin had been eliminated and her votes redistributed, Ó Cuív and Lenihan were equal on 18 votes each; Lenihan was then eliminated, having received fewer first preferences. References 2011 elections in the Republic of Ireland 2011 in Irish politics Fianna Fáil leadership election Fianna Fáil leadership elections History of Fianna Fáil Indirect elections Micheál Martin",
+        "start": "2011 Fianna Fáil leadership election {{Infobox election | election_name = 2011 Fianna Fáil leadership election | country = | type = presidential | ongoing = no | previous_election = 2008 Fianna Fáil leadership election | previous_year = 2008 | next_election = | next_year = | election_date = | 1blank = 1st preference | 2blank = 2nd count | 3blank = Final count | image1 = | candidate1 = Micheál Mar…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 2681,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.04371584699453557,
+        "wikitable_markup_line_fraction": 0.6617647058823529,
+        "wikitable_markup_lines": 45
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2011 Fianna Fáil leadership election"
+    },
+    {
+      "parent_upstream_id": "34630986",
+      "preview": {
+        "end": "…8 victory to take game two of the three-game series. The Huskers took an 8–5 lead into the top of the ninth, but the Bulldog bats came alive with five runs to steal the win after committing seven errors in the game. The ninth inning was again unkind to Nebraska in the finale as the Bulldogs erased a 4–2 deficit with three runs in the top of the ninth to steal victory for the second straight game.",
+        "start": "2012 Nebraska Cornhuskers baseball team |- | Feb. 17 || Peoria, Arizona || NR || || Peterson, D. (1–0) || Vogt, D. (0–1) || Abbruzza, Z. (1) || 4–7 || 0–1 |- | Feb. 18 || Peoria, Arizona || NR || Gonzaga || Bigelow, D. (1–0) || Niederklein (0–1) || Abbruzza, Z. (2) || 8–10 || 0–2 |- | Feb. 19 || Peoria, Arizona || NR || Gonzaga || Pterson, D. (2–0) || Pierce, B. (0–1) || || 4–5 || 0–3 |- | Feb. 2…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7624,
+        "duplicate_line_fraction": 0.49206349206349204,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.10060975609756095,
+        "wikitable_markup_line_fraction": 0.984,
+        "wikitable_markup_lines": 123
+      },
+      "source_chunk_count": 4,
+      "source_chunk_index": 1,
+      "title": "2012 Nebraska Cornhuskers baseball team"
+    },
+    {
+      "parent_upstream_id": "35971159",
+      "preview": {
+        "end": "…epers |- ! colspan=12 style=background:#dcdcdc; text-align:center| Defenders |- ! colspan=12 style=background:#dcdcdc; text-align:center| Midfielders |- ! colspan=12 style=background:#dcdcdc; text-align:center| Forwards |} Transfers Summer In Out Winter In Out References External links West Ham United FC Official Website West Ham United West Ham United F.C. seasons West Ham United West Ham United",
+        "start": "2012–13 West Ham United F.C. season The 2012–13 season was West Ham Uniteds first season back in the Premier League after a one-year absence. West Ham gained promotion by winning the 2012 Championship play-off final against Blackpool at the end of the 2011–12 campaign. Season summary 21 May 2012: West Ham announced the signing of goalkeeper Stephen Henderson making him the first signing in this t…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7780,
+        "duplicate_line_fraction": 0.07865168539325842,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.12184571016582557,
+        "wikitable_markup_line_fraction": 0.10227272727272728,
+        "wikitable_markup_lines": 9
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2012–13 West Ham United F.C. season"
+    },
+    {
+      "parent_upstream_id": "44402724",
+      "preview": {
+        "end": "…ckground:#800000; color:#C0C0C0;\"| Regular season |- !colspan=9 style=\"background:#800000; color:#C0C0C0;\"|MEAC tournament |- !colspan=9 style=\"background:#800000; color:#C0C0C0;\"|NIT References North Carolina Central Eagles men's basketball seasons North Carolina Central North Carolina Central North Carolina Central Eagles men's basketball team North Carolina Central Eagles men's basketball team",
+        "start": "2014–15 North Carolina Central Eagles men's basketball team The 2014–15 North Carolina Central Eagles men's basketball team represented North Carolina Central University during the 2014–15 NCAA Division I men's basketball season. The Eagles, led by sixth year head coach LeVelle Moton, played their home games at the McLendon–McDougald Gymnasium and were members of the Mid-Eastern Athletic Conferen…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1245,
+        "duplicate_line_fraction": 0.25,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.22751322751322756,
+        "wikitable_markup_line_fraction": 0.4,
+        "wikitable_markup_lines": 6
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2014–15 North Carolina Central Eagles men's basketball team"
+    },
+    {
+      "parent_upstream_id": "64332606",
+      "preview": {
+        "end": "…and fixtures Pre Season Scottish League One Scottish League Cup Group stage Results Group G Table Scottish Challenge Cup Notes Scottish Cup Player statistics |- |colspan=\"12\"|Players who left the club during the 2016–17 season |- |} Team Statistics League table Division summary Transfers Players in Players out See also List of Livingston F.C. seasons References Livingston Livingston F.C. seasons",
+        "start": "2016–17 Livingston F.C. season The 2016–17 season was Livingston's first season back in Scottish League One and their first season back in the third-tier of Scottish football, having been relegated from the Scottish Championship at the end of the 2015–16 season. Livingston also competed in the Challenge Cup, League Cup and the Scottish Cup. Summary Season Livingston finished in first place in Lea…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1266,
+        "duplicate_line_fraction": 0.03225806451612903,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.08780487804878045,
+        "wikitable_markup_line_fraction": 0.13333333333333333,
+        "wikitable_markup_lines": 4
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2016–17 Livingston F.C. season"
+    },
+    {
+      "parent_upstream_id": "54560779",
+      "preview": {
+        "end": "…e team with the higher seed played game one, three, five and seven (if necessary) at home. |} Final standings Teams are ranked based on the playoff round in which they were eliminated and their regular season records. Awards Statistics Statistical leaders In European competitions Notes See also 2017–18 NBB Cup 2017 Dutch Basketball Supercup References Dutch Basketball League seasons 1 Netherlands",
+        "start": "2017–18 Dutch Basketball League The 2017–18 Dutch Basketball League (DBL) was the 58th season of the Dutch Basketball League, the highest professional basketball league in the Netherlands. The regular season started on 7 October 2017 and ended 21 April 2018. Donar is the defending champion. The playoffs started on 1 May and ended 29 May 2018. Donar captured its seventh championship, its third in…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 3173,
+        "duplicate_line_fraction": 0.18181818181818182,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.13725490196078427,
+        "wikitable_markup_line_fraction": 0.36923076923076925,
+        "wikitable_markup_lines": 24
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2017–18 Dutch Basketball League"
+    },
+    {
+      "parent_upstream_id": "55354138",
+      "preview": {
+        "end": "…Offseason Departures Incoming transfers 2017 recruiting class Roster Schedule and results |- !colspan=9 style=| Non-conference regular season |- !colspan=9 style=| Atlantic Sun Conference regular season |- !colspan=9 style=| Atlantic Sun tournament References North Florida Ospreys men's basketball seasons North Florida North Florida Ospreys men's basketball North Florida Ospreys men's basketball",
+        "start": "2017–18 North Florida Ospreys men's basketball team The 2017–18 North Florida Ospreys men's basketball team represented the University of North Florida during the 2017–18 NCAA Division I men's basketball season. They were led by ninth–year head coach Matthew Driscoll and played their home games at UNF Arena on the university's campus in Jacksonville, Florida as members of the Atlantic Sun Confere…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1263,
+        "duplicate_line_fraction": 0.14285714285714285,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.20197044334975367,
+        "wikitable_markup_line_fraction": 0.3,
+        "wikitable_markup_lines": 6
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2017–18 North Florida Ospreys men's basketball team"
+    },
+    {
+      "parent_upstream_id": "59634144",
+      "preview": {
+        "end": "…l Friendlies Competitions Premier League Results summary Results by round Results League table Kazakhstan Cup Squad statistics Appearances and goals |- |colspan=\"14\"|Players away from Irtysh Pavlodar on loan: |- |colspan=\"14\"|Players who left Irtysh Pavlodar during the season: |} Goal scorers Disciplinary record References External links Official Website FC Irtysh Pavlodar seasons Irtysh Pavlodar",
+        "start": "2019 FC Irtysh Pavlodar season The 2019 FC Irtysh Pavlodar season was the 28th successive season that the club will play in the Kazakhstan Premier League, the highest tier of association football in Kazakhstan. After narrowly avoiding relegation the previous season, Irtysh also participate in the Kazakhstan Cup, reaching the Quarterfinal's before defeat to Kaisar, and finishing 8th in the Premier…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1699,
+        "duplicate_line_fraction": 0.02857142857142857,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.03125,
+        "wikitable_markup_line_fraction": 0.14705882352941177,
+        "wikitable_markup_lines": 5
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2019 FC Irtysh Pavlodar season"
+    },
+    {
+      "parent_upstream_id": "62053977",
+      "preview": {
+        "end": "…ach. Roster Schedule and results |- !colspan=12 style=| Exhibition |- !colspan=12 style=| Non-conference regular season |- !colspan=9 style=| Horizon League regular season |- !colspan=12 style=| Horizon League tournament |- |- Source References Cleveland State Vikings men's basketball seasons Cleveland State Vikings Cleveland State Vikings men's basketball Cleveland State Vikings men's basketball",
+        "start": "2019–20 Cleveland State Vikings men's basketball team The 2019–20 Cleveland State Vikings men's basketball team represented Cleveland State University in the 2019–20 NCAA Division I men's basketball season. The Vikings, led by first-year head coach Dennis Gates, played their home games at the Wolstein Center in Cleveland, Ohio as members of the Horizon League. They finished the season 11–21, 7–11…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1289,
+        "duplicate_line_fraction": 0.2608695652173913,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.18357487922705318,
+        "wikitable_markup_line_fraction": 0.45454545454545453,
+        "wikitable_markup_lines": 10
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2019–20 Cleveland State Vikings men's basketball team"
+    },
+    {
+      "parent_upstream_id": "65220196",
+      "preview": {
+        "end": "…legs were played on 22 May 2021. The Fano vs Imolese game was postponed due to a cluster of confirmed COVID-19 cases involving the former team. Match was played on 22 May 2021, whilst the second leg was played on 29 May 2021. |} Top goalscorers Note 1 Player scored 1 goal in the play-offs. 3 Player scored 3 goals in the play-offs. References External links Official website Serie C seasons 3 Italy",
+        "start": "2020–21 Serie C The 2020–21 Serie C was the seventh season of the unified Serie C division, the third tier of the Italian football league system. Teams The league was initially to be contested by 60 teams, but was reduced to 59 following the exclusion of Trapani. Relegated from Serie B Perugia Trapani (subsequently excluded) Juve Stabia Livorno Promoted from Serie D Lucchese (Girone A winners) Pr…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4836,
+        "duplicate_line_fraction": 0.09722222222222222,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.23958333333333337,
+        "wikitable_markup_line_fraction": 0.07042253521126761,
+        "wikitable_markup_lines": 5
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2020–21 Serie C"
+    },
+    {
+      "parent_upstream_id": "70982780",
+      "preview": {
+        "end": "…me !colspan=3 style=\"background:#DD0000; color:white\"| I liga !colspan=3 style=\"background:#DD0000; color:white\"| Polish Cup !colspan=3 style=\"background:#DD0000; color:white\"| Total |rowspan=2 style=\"background:#DD0000; color:white\"| Notes |- !width=30 | !width=30 | !width=30 | !width=30 | !width=30 | !width=30 | !width=30 | !width=30 | !width=30 | |- References Wisła Kraków seasons Wisla Krakow",
+        "start": "2022–23 Wisła Kraków season The 2022–23 Wisła Kraków season is the seventh season in the I liga and the 69th season in the Polish Cup. Transfers Summer transfer window Arrivals The following players moved to Wisła. Departures The following players moved from Wisła. Winter transfer window Arrivals The following players moved to Wisła. Departures The following players moved from Wisła. Competitions…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1296,
+        "duplicate_line_fraction": 0.32,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.3879781420765027,
+        "wikitable_markup_line_fraction": 0.42857142857142855,
+        "wikitable_markup_lines": 21
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2022–23 Wisła Kraków season"
+    },
+    {
+      "parent_upstream_id": "70982697",
+      "preview": {
+        "end": "…olia | 47 || 16.6 || .466 || .409 || .723 || 3.7 || .4 || .6 || .5 || 6.3 |-class=sortbottom | align=\"center\" colspan=2 | Career | 92 || 14.4 || .435 || .388 || .696 || 3.1 || .4 || .5 || .5 || 5.3 References 1995 births Living people Basketball players from Bulacan Power forwards (basketball) Small forwards Magnolia Hotshots players Filipino men's basketball players Magnolia Hotshots draft picks",
+        "start": "Aris Dionisio Aristotle Dionisio (born July 21, 1995) is a Filipino professional basketball player for the Magnolia Hotshots of the Philippine Basketball Association (PBA). He was selected 9th overall in the 2019 PBA draft by Magnolia Hotshots. Professional career Magnolia Hotshots (2020–present) On December 8, 2019, Dionisio was selected ninth overall by the Magnolia Hotshots in the 2019 PBA dra…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1149,
+        "duplicate_line_fraction": 0.1875,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.05747126436781613,
+        "wikitable_markup_line_fraction": 0.4838709677419355,
+        "wikitable_markup_lines": 15
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Aris Dionisio"
+    },
+    {
+      "parent_upstream_id": "40890759",
+      "preview": {
+        "end": "…y |- |- |- |- |- |- 1960 births 21st-century American politicians Candidates in the 2022 United States Senate elections Republican Party governors of New Hampshire Living people Republican Party members of the New Hampshire House of Representatives Republican Party New Hampshire state senators People from Salem, New Hampshire Plymouth State University alumni Presidents of the New Hampshire Senate",
+        "start": "Chuck Morse Charles W. Morse (born October 11, 1960) is an American politician who served as president of the New Hampshire Senate and was once acting governor of New Hampshire. Morse represented New Hampshire's 22nd State Senate district from 2010 to 2022, having previously held the same office from 2002 to 2006. In 2022, Morse was a Republican candidate for the U.S. Senate in New Hampshire, pla…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4364,
+        "duplicate_line_fraction": 0.11627906976744186,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.10744985673352436,
+        "wikitable_markup_line_fraction": 0.14285714285714285,
+        "wikitable_markup_lines": 6
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Chuck Morse"
+    },
+    {
+      "parent_upstream_id": "34546924",
+      "preview": {
+        "end": "…reminisces about the last six weeks on the road. References 2012 British television seasons Coach Trip series Television in North Macedonia Television shows set in Austria Television shows set in Bulgaria Television shows set in Essex Television shows set in Germany Television shows set in Greece Television shows set in Italy Television shows set in the Netherlands Television shows set in Turkey",
+        "start": "Coach Trip (series 8) Coach Trip 8 aired from 30 January to 9 March 2012 after the third celebrity series finished and is the eighth and final series of Coach Trip in the United Kingdom before the 2012 Summer Olympics and Paralympics. It was filmed from Monday 29 August until Saturday 1 October 2011 (after the England riots ended). The length of this series was the same as the previous non-celebr…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 3122,
+        "duplicate_line_fraction": 0.20454545454545456,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.033333333333333326,
+        "wikitable_markup_line_fraction": 0.88,
+        "wikitable_markup_lines": 154
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Coach Trip (series 8)"
+    },
+    {
+      "parent_upstream_id": "19691106",
+      "preview": {
+        "end": "…| music11 = Michio Kawano | length11 = 4:21 | title12 = Smile Maker | lyrics12 = 0 Soul 7 | music12 = 0 Soul 7 | length12 = 3:51 | title13 = Happy Birthday | lyrics13 = Seamo | music13 = Seamo, Shintaro \"Growth\" Izutsu | length13 = 3:48 | title14 = Fly Again | lyrics14 = Azuki | music14 = her0ism | length14 = 3:25 }} Charts References External links Official website 2008 albums News (band) albums",
+        "start": "Color (NEWS album) Color is the third studio album by Japanese group NEWS, released on November 19, 2008. The album was released in a limited edition and regular edition. The regular edition comes with a bonus track. The album debuted at the number-one spot on the Oricon chart, making Color their third consecutive number-one album. Singles \"Weeeek\": On November 7, 2007, NEWS released \"Weeeek\", th…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1443,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.014563106796116498,
+        "wikitable_markup_line_fraction": 0.7755102040816326,
+        "wikitable_markup_lines": 38
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Color (NEWS album)"
+    },
+    {
+      "parent_upstream_id": "8155801",
+      "preview": {
+        "end": "…rl\" 2007: \"The Cools\" 2007: \"When We Were Golden\" 2009: \"A Light\" 2010: \"28\" 2010: \"I Was Electric\" References External links Crush Luther official site Crush Luther on PureVolume High 4 Records Canadian pop rock music groups Musical groups from London, Ontario Musical groups established in 2002 2002 establishments in Ontario Musical groups disestablished in 2010 2010 disestablishments in Ontario",
+        "start": "Crush Luther Crush Luther was a Canadian pop-rock band based in Toronto, best known for their 2007 single \"City Girl\" and 2010 single \"A Light\". History The band formed in London, Ontario in 2002, with members from both Uxbridge, Ontario and Arnprior, Ontario. The original four members (Luther Mallory, Giggi Bongard, Brent Mills and Bodan Mulholland) worked together to build a strong catalogue of…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 2993,
+        "duplicate_line_fraction": 0.045454545454545456,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.04056795131845847,
+        "wikitable_markup_line_fraction": 0.27906976744186046,
+        "wikitable_markup_lines": 12
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Crush Luther"
+    },
+    {
+      "parent_upstream_id": "1272006",
+      "preview": {
+        "end": "…the newest member. Personal life Bennett and his wife Rosemary reside in Tulsa, Oklahoma, and became US citizens in 2010. One of their sons, Thomas, followed Bennett into punting, and played college football at Baylor and Tulsa. Their other son, William, died in August 2020 at the age from 25 from Duchenne muscular dystrophy; Bennett is deeply involved with charities associated with that disease.",
+        "start": "Darren Bennett (football player) Darren Bennett (born 9 January 1965) is a former Australian rules football player and American football punter who played in the National Football League (NFL). As an Australian rules footballer, he played for East Fremantle in the West Australian Football League (WAFL) between 1982 and 1987 and then in the Australian Football League (AFL) for the West Coast Eagle…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7931,
+        "duplicate_line_fraction": 0.16417910447761194,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.08248914616497827,
+        "wikitable_markup_line_fraction": 0.4696969696969697,
+        "wikitable_markup_lines": 31
+      },
+      "source_chunk_count": 2,
+      "source_chunk_index": 0,
+      "title": "Darren Bennett (football player)"
+    },
+    {
+      "parent_upstream_id": "35971419",
+      "preview": {
+        "end": "…rius died before the coronation took place. References Sources External links Gcatholic.org |- |- |- |- 1387 deaths Archbishops of Esztergom 14th-century Roman Catholic bishops in Croatia 14th-century Hungarian cardinals Year of birth unknown Royal treasurers (Kingdom of Hungary) Bishops of Zagreb 14th-century Roman Catholic bishops in Hungary 14th-century Hungarian people Bishops of Transylvania",
+        "start": "Demetrius of Esztergom Demetrius (; died 20 February 1387), was a Hungarian cardinal and politician, who served as archbishop of Esztergom and bishop of Zagreb and Transylvania, and chancellor. Origins and early career Nothing is known about the origin of Demetrius, who would rise to the highest ecclesiastical titles, but it is presumed that he came from a family of peasants. His father was a cer…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4257,
+        "duplicate_line_fraction": 0.11538461538461539,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.02741702741702745,
+        "wikitable_markup_line_fraction": 0.16,
+        "wikitable_markup_lines": 4
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Demetrius of Esztergom"
+    },
+    {
+      "parent_upstream_id": "59449766",
+      "preview": {
+        "end": "…nal links Kentucky Wildcats bio USA Basketball bio 1999 births Living people American men's basketball players American expatriate basketball people in Lithuania Aomori Wat's players Basketball players from Florida BC Nevėžis players Kentucky Wildcats men's basketball players McDonald's High School All-Americans Montverde Academy alumni People from Fort Pierce, Florida Power forwards (basketball)",
+        "start": "E. J. Montgomery Efrem \"E. J.\" Montgomery Jr. (born September 12, 1999) is an American basketball player for Soproni KC of the Nemzeti Bajnokság I/A. He played college basketball for the Kentucky Wildcats. High school career Montgomery attended Lincoln Park Academy in Fort Pierce, Florida for middle school and started playing at the varsity level as a 6'8\" seventh grader. As an eighth grader, Mon…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 2979,
+        "duplicate_line_fraction": 0.043478260869565216,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.050104384133611735,
+        "wikitable_markup_line_fraction": 0.24444444444444444,
+        "wikitable_markup_lines": 11
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "E. J. Montgomery"
+    },
+    {
+      "parent_upstream_id": "3204551",
+      "preview": {
+        "end": "…ko – 5 |align=left| Vulić Altman |- |align=center|2009 |align=center rowspan=\"3\"|2nd |align=center|14 |align=center|38 |align=center|13 |align=center|11 |align=center|14 |align=center|42 |align=center|43 |align=center|50 |align=center|R32 |align=center colspan=\"2\"|— |align=left| Dedechko – 9 |align=left| Yemelyanov Pobegalov |- |align=center|2010 |align=center|12 |align=center|38 |align=center|13",
+        "start": "FC Luch Vladivostok FC Luch Vladivostok () was an association football club based in Vladivostok, Russia. In 2005, Luch won the Russian First Division and played in the Premier League from 2006 to 2008. The club was called Luch-Energiya from 2003 to 2018, when it was renamed due to sponsorship from Dalenergo, an energy distribution company. History Luch has been playing in the Soviet Union champi…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7989,
+        "duplicate_line_fraction": 0.5,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.3642585551330798,
+        "wikitable_markup_line_fraction": 0.9174917491749175,
+        "wikitable_markup_lines": 278
+      },
+      "source_chunk_count": 2,
+      "source_chunk_index": 0,
+      "title": "FC Luch Vladivostok"
+    },
+    {
+      "parent_upstream_id": "3204551",
+      "preview": {
+        "end": "…ctive countries. Players whose name is listed in bold represented their countries while playing for Luch-Energiya. USSR/Russia Former USSR countries Europe Africa References External links Official website Association football clubs established in 1958 Luch Vladivostok Luch Vladivostok 1958 establishments in Russia Association football clubs disestablished in 2020 2020 disestablishments in Russia",
+        "start": "FC Luch Vladivostok |align=center|13 |align=center|12 |align=center|42 |align=center|42 |align=center|52 |align=center|QF |align=center colspan=\"2\"|— |align=left| Satalkin – 9 |align=left| Nazarenko Arcos |- |align=center|2011–12 |align=center bgcolor=\"pink\"|17 |align=center|48 |align=center|11 |align=center|21 |align=center|16 |align=center|37 |align=center|39 |align=center|54 |align=center|R16…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4425,
+        "duplicate_line_fraction": 0.37579617834394907,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.2451523545706371,
+        "wikitable_markup_line_fraction": 0.8846153846153846,
+        "wikitable_markup_lines": 138
+      },
+      "source_chunk_count": 2,
+      "source_chunk_index": 1,
+      "title": "FC Luch Vladivostok"
+    },
+    {
+      "parent_upstream_id": "70982588",
+      "preview": {
+        "end": "…d references Notes References Sources 1920 ships Ships built in Rendsburg Fishing vessels of Germany Steamships of Germany Steamships of Poland Merchant ships of Poland World War II merchant ships of Poland Steamships of France Merchant ships of France World War II merchant ships of France World War II merchant ships of Germany Auxiliary ships of the Kriegsmarine Maritime incidents in August 1944",
+        "start": "German trawler V 1523 Deltra I {| {{Infobox ship career |Hide header= |Ship name=*Oliva (1920) Gothmund (1920–33) Otto Telschow (1933–34) Baltrum (1934–38) Deltra I (1938–43)Oliva (1943–46)Deltra I (1946–51)Deltra (1951–57) |Ship namesake=*Gothmund, Otto Telschow Baltrum |Ship owner=*Hochseefischerei Trave (1920–28) Hochseefischerei Cuxhaven AG (1928) F. Busse (1928–33) F. Kuhr (1933–34) Leege &…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4559,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.1335078534031413,
+        "wikitable_markup_line_fraction": 0.30864197530864196,
+        "wikitable_markup_lines": 25
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "German trawler V 1523 Deltra I"
+    },
+    {
+      "parent_upstream_id": "19750378",
+      "preview": {
+        "end": "…h recognise excellence, innovation, and achievement across all genres of the music of Australia. They commenced in 1987. ! |- | 2012 || Crooked Teeth || ARIA Award for Best Hard Rock or Heavy Metal Album || || References Australian post-hardcore musical groups Musical groups established in 2006 Musical groups disestablished in 2013 Musical groups reestablished in 2017 Equal Vision Records artists",
+        "start": "House vs. Hurricane House Vs. Hurricane are an Australian post-hardcore band from Melbourne, Victoria, Australia, formed in 2006. The band released their debut studio album, Perspectives in March 2010. The band's second studio album, Crooked Teeth was released in July 2012 and peaked at number 20 in the ARIA Charts. Biography 2006–2009: Early years and Forfeiture The band formed in the suburb of…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 5481,
+        "duplicate_line_fraction": 0.034482758620689655,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.06067415730337078,
+        "wikitable_markup_line_fraction": 0.14035087719298245,
+        "wikitable_markup_lines": 8
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "House vs. Hurricane"
+    },
+    {
+      "parent_upstream_id": "12355186",
+      "preview": {
+        "end": "…5 || 0 |colspan=\"2\"| (including playoffs) * = current standing 2009 Season schedule ** = Won by forfeit 2010 Season schedule 2011 Standings Season schedule 2012 Season schedule References External links Official Website Women's Football Alliance teams American football teams in Florida Dixie Blues American football teams established in 2001 2001 establishments in Florida Women's sports in Florida",
+        "start": "Jacksonville Dixie Blues The Jacksonville Dixie Blues are a women's American football team based in Jacksonville, Florida. Founded in 2001, they are currently members of the Women's Football Alliance (WFA), playing their home games on the campus of University Christian School. History The Dixie Blues were a former member of the now disbanded Women's American Football League, where they were runne…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 3398,
+        "duplicate_line_fraction": 0.3114754098360656,
+        "list_line_fraction": 0.01639344262295082,
+        "repeated_trigram_fraction": 0.14634146341463417,
+        "wikitable_markup_line_fraction": 0.5833333333333334,
+        "wikitable_markup_lines": 35
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Jacksonville Dixie Blues"
+    },
+    {
+      "parent_upstream_id": "65813461",
+      "preview": {
+        "end": "…5: Part 2 - Iza | |align=center| 2 |align=center| 3:31 |Saitama, Japan | |- See also List of female kickboxers References External links 1988 births Living people Italian female kickboxers Italian female mixed martial artists Mixed martial artists utilizing Muay Thai Mixed martial artists utilizing shootboxing Italian Muay Thai practitioners Female Muay Thai practitioners Sportspeople from Varese",
+        "start": "Jleana Valentino Jleana Valentino (born 3 May 1988) is an Italian kickboxer and mixed martial artist. She is the current world champions of Shoot boxing, and European champion of Muay Thai. Biography On November 10, 2020 she participated in the Italian program of RAI Giovani e famosi (Young and famous). Titles and accomplishments World Association of Kickboxing Organizations 2014 WAKO-Pro Italy K…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4473,
+        "duplicate_line_fraction": 0.3177570093457944,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.25545171339563866,
+        "wikitable_markup_line_fraction": 0.7264150943396226,
+        "wikitable_markup_lines": 77
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Jleana Valentino"
+    },
+    {
+      "parent_upstream_id": "65217920",
+      "preview": {
+        "end": "…enced in 2005. ! |- | 2021 | Josh Teskey and Ash Grunwald | Best Blues Act | | |- References 1987 births APRA Award winners Australian blues guitarists Australian blues singers Australian male singers Australian male singer-songwriters Australian singer-songwriters Living people The Teskey Brothers members People from Warrandyte, Victoria 21st-century Australian musicians Musicians from Melbourne",
+        "start": "Josh Teskey Josh Teskey (born 31 July 1987) is an Australian blues musician, best known for his work with the Teskey Brothers. Teskey released the collaborative studio album, Push the Blues Away with Ash Grunwald, on 13 November 2020, which peaked at number 8 on the ARIA Albums Chart. Life and career 1987–2007: Early life Josh Teskey was born on 31 July 1987 in Warrandyte, Victoria. He attended a…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 3863,
+        "duplicate_line_fraction": 0.3146067415730337,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.09354838709677415,
+        "wikitable_markup_line_fraction": 0.5568181818181818,
+        "wikitable_markup_lines": 49
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Josh Teskey"
+    },
+    {
+      "parent_upstream_id": "6864563",
+      "preview": {
+        "end": "…Parade High School All-Americans (boys' basketball) People from Chicago Heights, Illinois Power forwards (basketball) Small forwards Toronto Raptors players Trabzonspor B.K. players 20th-century African-American people American men's 3x3 basketball players American expatriate basketball people in Taiwan Hsinchu JKO Lioneers players Taichung Wagor Suns players T1 League imports P. League+ imports",
+        "start": "Julian Wright Julian Emil-Jamaal Wright (born May 20, 1987) is an American professional basketball player. He played college basketball for the University of Kansas. In 2014–15, he was the top rebounder in the Israel Basketball Premier League. High school career Julian Wright played competitive basketball at Homewood-Flossmoor High School in Flossmoor, Illinois. There he led the Vikings to second…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7410,
+        "duplicate_line_fraction": 0.12727272727272726,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.08354011579818033,
+        "wikitable_markup_line_fraction": 0.27522935779816515,
+        "wikitable_markup_lines": 30
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Julian Wright"
+    },
+    {
+      "parent_upstream_id": "1271904",
+      "preview": {
+        "end": "…rwick (1088)||Henry de Beaumont, 1st Earl of Warwick||1088||1119|| |- |Earl of Buckingham (1097)||Walter Giffard, 1st Earl of Buckingham||1097||1102||Died |- | ||Walter Giffard, 2nd Earl of Buckingham||1102||1164|| |- |Earl of Leicester (1107)||Robert de Beaumont, 1st Earl of Leicester||1107||1118||New creation References Lists of peers by decade 1100s in England 12th-century English people Peers",
+        "start": "List of peers 1100–1109 Peerage of England |Earl of Cornwall (1068)||William Fitz-Robert, 2nd Earl of Cornwall||1095||1106||Forfeit |- |Earl of Chester (1071)||Hugh d'Avranches, 1st Earl of Chester||1071||1101||Died |- | ||Richard d'Avranches, 2nd Earl of Chester||1101||1120|| |- |Earl of Shrewsbury (1074)||Robert of Bellême, 3rd Earl of Shrewsbury||1098||1102||Forfeit |- |Earl of Northampton (10…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1125,
+        "duplicate_line_fraction": 0.3333333333333333,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.16374269005847952,
+        "wikitable_markup_line_fraction": 0.7931034482758621,
+        "wikitable_markup_lines": 23
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "List of peers 1100–1109"
+    },
+    {
+      "parent_upstream_id": "1272044",
+      "preview": {
+        "end": "…ernal links Letter from Michael to Kids 1946 births 1993 deaths Musicians from Spokane, Washington American rock drummers The Byrds members The Flying Burrito Brothers members Alcohol-related deaths in Florida Firefall members American folk rock musicians American country drummers Musicians from Los Angeles People from Treasure Island, Florida 20th-century American drummers American male drummers",
+        "start": "Michael Clarke (musician) Michael Clarke (born Michael James Dick; June 3, 1946 – December 19, 1993) was an American musician, best known as the drummer for the 1960s rock group the Byrds from 1964 to 1967. He died in 1993, at age 47, from liver failure, a direct result of more than three decades of heavy alcohol consumption. Biography Early years Clarke was born in Spokane, Washington. His fathe…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7884,
+        "duplicate_line_fraction": 0.06172839506172839,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.04031007751937987,
+        "wikitable_markup_line_fraction": 0.175,
+        "wikitable_markup_lines": 14
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Michael Clarke (musician)"
+    },
+    {
+      "parent_upstream_id": "71917",
+      "preview": {
+        "end": "…|- |style=\"background:#FFD300;color:#FFD300\"| FFD300 || Yellow (#FFD300) || 100% || 83% || 0% || 50° || 100% || 100% |- |style=\"background:#0087BD;color:#0087BD\"| 0087BD || Blue (#0087BD) || 0% || 53% || 74% || 197° || 100% || 74% |} See also Color chart, other color systems and charts References External links NCS Colour – Universal Language for Colour Communication – official site Color models",
+        "start": "Natural Color System Hering argued that yellow is not a \"redgreen\" but a unique hue. Colorimetrist Jan Koenderink, in a critique of Hering's system, considered it inconsistent not to apply the same argument to the other two subtractive primaries, cyan and magenta, and see them as unique hues as well, not a \"greenblue\" or a \"redblue\". He also pointed out the difficulty within a four color theory t…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1960,
+        "duplicate_line_fraction": 0.2,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.01384083044982698,
+        "wikitable_markup_line_fraction": 0.6666666666666666,
+        "wikitable_markup_lines": 16
+      },
+      "source_chunk_count": 2,
+      "source_chunk_index": 1,
+      "title": "Natural Color System"
+    },
+    {
+      "parent_upstream_id": "34630070",
+      "preview": {
+        "end": "…ies of Robert Burns. Published by the authors. . MacIntosh, Donald (2006). Travels in Galloway. Glasgow : Neil Wilson. . Mackay, James (2004). Burns. A Biography of Robert Burns. Darvel : Alloway Publishing. . McMichael, George. Notes on the Way Through Ayrshire''. Ayr : Hugh Henry. Robert Burns History of East Ayrshire 18th-century Scottish women 1759 births 1820 deaths People from East Ayrshire",
+        "start": "Nelly Kilpatrick Nelly or Nellie Kilpatrick, Helen Kilpatrick or later Nelly Bone (1759–1820). Nelly (usually short for \"Helen\") was possibly Robert Burns's first love and muse as stated by Isabella Burns. Early life Nelly is usually used as a nickname for \"Helen.\" Some authors give her birth year as 1760. Nelly may have been the daughter of John Kilpatrick, the miller and his wife Jane Reid of P…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7320,
+        "duplicate_line_fraction": 0.0379746835443038,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.02048857368006307,
+        "wikitable_markup_line_fraction": 0.11538461538461539,
+        "wikitable_markup_lines": 9
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Nelly Kilpatrick"
+    },
+    {
+      "parent_upstream_id": "71966",
+      "preview": {
+        "end": "…music groups from Ohio American electronic rock musical groups Grammy Award winners Interscope Records artists Industrial rock musical groups Kerrang! Awards winners Musical groups established in 1988 Musical groups from Cleveland Nine Inch Nails Nothing Records artists Obscenity controversies in music One-man bands Rock music duos Rock music groups from Ohio Rykodisc artists TVT Records artists",
+        "start": "Nine Inch Nails Key former members Chris Vrenna – drums, percussion, keyboards, samplers (1988–1990, 1992–1997) Richard Patrick – guitars, backing vocals (1989–1993) Jeff Ward – drums (1990–1991; died 1993) James Woolley – keyboards, synthesizers, programming, backing vocals (1991–1994; died 2016) Danny Lohner – bass, guitars, synthesizers, backing vocals (1993–2003) Charlie Clouser – keyboards,…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 2777,
+        "duplicate_line_fraction": 0.29906542056074764,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.0714285714285714,
+        "wikitable_markup_line_fraction": 0.5849056603773585,
+        "wikitable_markup_lines": 62
+      },
+      "source_chunk_count": 9,
+      "source_chunk_index": 8,
+      "title": "Nine Inch Nails"
+    },
+    {
+      "parent_upstream_id": "54561026",
+      "preview": {
+        "end": "…|| 38 || 31.2 || .500 || .360 || .727 || 5.6 || 4.5 || 1.4 || 0.3 || style=\"background:#CFECEC;\"|18.5* |- Source: RealGM References 1996 births Living people Antwerp Giants players Belgian men's basketball players Dutch Basketball League players Feyenoord Basketball players Heroes Den Bosch players Kangoeroes Basket Mechelen players Point guards Spirou Charleroi players Sportspeople from Antwerp",
+        "start": "Ordane Kanda-Kanyinda Ordane Kanda-Kanyinda (born 9 September 1996) is a Belgian professional basketball player who last played for Feyenoord Basketball. Professional career Kanda-Kanyinda was born in Antwerp and played in the youth development department of Antwerp Giants, where he started his professional basketball career. He played his first game for Antwerp's first team in the 2013–14 season…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 2254,
+        "duplicate_line_fraction": 0.0975609756097561,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.06399999999999995,
+        "wikitable_markup_line_fraction": 0.4,
+        "wikitable_markup_lines": 16
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Ordane Kanda-Kanyinda"
+    },
+    {
+      "parent_upstream_id": "68926",
+      "preview": {
+        "end": "…of former military ruler Ziaur Rahman, who has led the Bangladesh Nationalist Party (BNP) since 1981, and her son Tarique Rahman, opposite Bangladesh Awami League, led since 1981 by Sheikh Hasina, who is the daughter of Sheikh Mujibur Rahman. In recent years, increased awareness of the adverse effects of this political system has caused some shift in public perception Political issues Corruption",
+        "start": "Politics of Bangladesh Politics of Bangladesh takes place in a framework of a parliamentary representative democratic republic, whereby the Prime Minister of Bangladesh is the head of government, and of a multi-party system. Executive power is exercised by the government. Legislative power is vested in both the government and parliament. The Constitution of Bangladesh was written in 1972 and has…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7874,
+        "duplicate_line_fraction": 0.07547169811320754,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.07599029911075184,
+        "wikitable_markup_line_fraction": 0.38461538461538464,
+        "wikitable_markup_lines": 20
+      },
+      "source_chunk_count": 6,
+      "source_chunk_index": 0,
+      "title": "Politics of Bangladesh"
+    },
+    {
+      "parent_upstream_id": "68976",
+      "preview": {
+        "end": "…Z, G-77, IAEA, IBRD, ICAO, ICCt, ICFTU, ICRM, IDA, IDB, IFAD, IFC, IFRCS, ILO, IMF, IMO, Interpol, IOC, IOM, ITU, MIPONUH, MONUC, NAM, OAU, OIC, OPCW, UN, UNCTAD, UNESCO, UNIDO, UNMEE, UPU, WADB (regional), WAEMU, WCL, WCO, WFTU, WHO, WIPO, WMO, WToO, WTrO See also Vice President of Benin Ministry of Foreign Affairs and African Integration (Benin) References External links Benin Government Portal",
+        "start": "Politics of Benin The Politics of Benin take place in the framework of a presidential representative democratic republic, wherein the President of Benin is both head of state and head of government, and of a multi-party system. Executive power is exercised by the government. Legislative power is vested in both the government and the legislature. The Judiciary is independent of the executive and t…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7839,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.030645161290322576,
+        "wikitable_markup_line_fraction": 0.1282051282051282,
+        "wikitable_markup_lines": 5
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Politics of Benin"
+    },
+    {
+      "parent_upstream_id": "69004",
+      "preview": {
+        "end": "…hutanese judicial system, the monarch was the final court of appeal (the \"Supreme Court of Appeal\"), and local government officials adjudicated minor crimes. The Royal High Court of Bhutan was the highest court in the country and had original jurisdiction over the twenty districts of the nation. Judicial appointments were made by the monarch, and could be recalled by him at any time. Legal system",
+        "start": "Politics of Bhutan The Government of Bhutan has been a constitutional monarchy since 18 July 2008. The King of Bhutan is the head of state. The executive power is exercised by the Lhengye Zhungtshog, or council of ministers, headed by the Prime Minister. Legislative power is vested in the bicameral Parliament, both the upper house, National Council, and the lower house, National Assembly. A royal…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7370,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.06760316066725203,
+        "wikitable_markup_line_fraction": 0.29411764705882354,
+        "wikitable_markup_lines": 10
+      },
+      "source_chunk_count": 2,
+      "source_chunk_index": 0,
+      "title": "Politics of Bhutan"
+    },
+    {
+      "parent_upstream_id": "27527913",
+      "preview": {
+        "end": "…Colombo District and Trincomalee District; as DPLF in Vanni District; and as in an independent group in Jaffna District. 2. UCPF contested as an independent group in Nuwara Eliya District. 3. EPDP contested as an independent group in Jaffna District. See also Results of the 1994 Sri Lankan general election by province References 1994 Sri Lankan parliamentary election Election results in Sri Lanka",
+        "start": "Results of the 1994 Sri Lankan general election by electoral district Results of the 1994 Sri Lankan general election by electoral district. Number of votes 1. The EROS/PLOTE/TELO alliance contested as TELO in Ampara District, Batticaloa District, Colombo District and Trincomalee District; as DPLF in Vanni District; and as in an independent group in Jaffna District. 2. UCPF contested as an indepe…"
+      },
+      "reasons": [
+        "orphaned_table_footnotes"
+      ],
+      "signals": {
+        "characters": 1577,
+        "duplicate_line_fraction": 0.3333333333333333,
+        "list_line_fraction": 0.5238095238095238,
+        "repeated_trigram_fraction": 0.615702479338843,
+        "wikitable_markup_line_fraction": 0.0,
+        "wikitable_markup_lines": 0
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Results of the 1994 Sri Lankan general election by electoral district"
+    },
+    {
+      "parent_upstream_id": "27528168",
+      "preview": {
+        "end": "…strict and Trincomalee District; as DPLF in Vanni District; and as in an independent group in Jaffna District. 2. UCPF contested as an independent group in Nuwara Eliya District. 3. EPDP contested as an independent group in Jaffna District. See also Results of the 1994 Sri Lankan general election by electoral district References 1994 Sri Lankan parliamentary election Election results in Sri Lanka",
+        "start": "Results of the 1994 Sri Lankan general election by province Results of the 1994 Sri Lankan general election by province. Number of votes 1. The EROS/PLOTE/TELO alliance contested as TELO in Ampara District, Batticaloa District, Colombo District and Trincomalee District; as DPLF in Vanni District; and as in an independent group in Jaffna District. 2. UCPF contested as an independent group in Nuwar…"
+      },
+      "reasons": [
+        "orphaned_table_footnotes"
+      ],
+      "signals": {
+        "characters": 1357,
+        "duplicate_line_fraction": 0.3157894736842105,
+        "list_line_fraction": 0.47368421052631576,
+        "repeated_trigram_fraction": 0.6161137440758293,
+        "wikitable_markup_line_fraction": 0.0,
+        "wikitable_markup_lines": 0
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Results of the 1994 Sri Lankan general election by province"
+    },
+    {
+      "parent_upstream_id": "64827410",
+      "preview": {
+        "end": "…| | 26 || 9 || 3 || 1 || 51 || 46 || 97 || 22 || 19 || 0.3 || 0.1 || 5.6 || 5.1 || 10.8 || 2.4 || 2.1 |- |- class=\"sortbottom\" ! colspan=3| Career ! 30 ! 9 ! 7 ! 166 ! 153 ! 319 ! 72 ! 98 ! 0.3 ! 0.2 ! 5.5 ! 5.1 ! 10.6 ! 2.4 ! 3.3 |} Notes References External links 2001 births Living people Australian rules footballers from Victoria (state) Gold Coast Football Club players Gippsland Power players",
+        "start": "Sam Flanders Sam Flanders (born 24 July 2001) is a professional Australian rules footballer who plays for the Gold Coast Football Club in the Australian Football League (AFL). Early life Flanders was born in Fish Creek, Victoria. He grew up playing basketball and Australian rules football at high junior levels. AFL career Flanders was drafted by the Gold Coast Suns with the eleventh pick in the 2…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1441,
+        "duplicate_line_fraction": 0.10416666666666667,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.08835341365461846,
+        "wikitable_markup_line_fraction": 0.3617021276595745,
+        "wikitable_markup_lines": 17
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Sam Flanders"
+    },
+    {
+      "parent_upstream_id": "70982986",
+      "preview": {
+        "end": "…background:#c5d2ea;\" | 2013-06-02 || No Contest ||align=left| Cynthia Del Sinne || Le Defi Du Nack Muay 4 || Saint-Amand-les-Eaux, France || Decision || 3 || 1:30 |- ! style=background:white colspan=9 | |- | colspan=9 | Legend: See also List of female kickboxers References 2000 births French female kickboxers Glory kickboxers Living people French Muslims Sportspeople from Nord (French department)",
+        "start": "Sarah Moussaddak Sarah Moussaddak (born April 14, 2000) is a French-Moroccan kickboxer. As of June 2022, she was the #10 ranked women's pound for pound kickboxer in the world by Combat Press. Kickboxing career Moussadak made her WFL promotional debut against Samantha Van Doorn at World Fighting League on February 17, 2019. She won the fight by unanimous decision. This victory earned Moussadak a c…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 5782,
+        "duplicate_line_fraction": 0.43956043956043955,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.19861431870669743,
+        "wikitable_markup_line_fraction": 0.7444444444444445,
+        "wikitable_markup_lines": 67
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Sarah Moussaddak"
+    },
+    {
+      "parent_upstream_id": "64827692",
+      "preview": {
+        "end": "…kies bio 1997 births Living people American expatriate basketball people in Canada American expatriate basketball people in Germany American men's basketball players Basketball players from Palm Beach County, Florida Niagara River Lions players Northeastern Huskies men's basketball players Phoenix Hagen players Rio Grande Valley Vipers players Shooting guards Sportspeople from Boca Raton, Florida",
+        "start": "Shawn Occeus Shawn Occeus (born December 15, 1997) is an American professional basketball player for the Niagara River Lions of the Canadian Elite Basketball League (CEBL). He played college basketball for the Northeastern Huskies. Early life and high school career Occeus was born on December 15, 1997 in Boca Raton, Florida. Occeus went to high school at Park Vista Community High School for two y…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4683,
+        "duplicate_line_fraction": 0.15625,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.09433962264150941,
+        "wikitable_markup_line_fraction": 0.42857142857142855,
+        "wikitable_markup_lines": 27
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Shawn Occeus"
+    },
+    {
+      "parent_upstream_id": "1272199",
+      "preview": {
+        "end": "…lbeit less than its predecessor The Writing's on the Wall (1999). Rob Fusari, who wrote \"Bootylicious\", recalled a dispute with Destiny's Child's manager and Beyoncé's father Mathew Knowles over the song's conception. In an interview with Barbara Walters, Beyoncé had discussed how she came up with the idea for the song herself. Upon seeing that, Fusari called Knowles, describing the conversation:",
+        "start": "Survivor (Destiny's Child album) \"Nasty Girl\" was released as the fourth and final single from Survivor outside North America on March 4, 2002, to negative critical reception. A moderate commercial success, it peaked at number ten in Australia and within the top 40 in Belgium, Denmark, Germany, Ireland, the Netherlands, Sweden and Switzerland. Its Sanaa Hamri-directed accompanying music video dep…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7144,
+        "duplicate_line_fraction": 0.35294117647058826,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.07333908541846423,
+        "wikitable_markup_line_fraction": 0.74,
+        "wikitable_markup_lines": 37
+      },
+      "source_chunk_count": 6,
+      "source_chunk_index": 3,
+      "title": "Survivor (Destiny's Child album)"
+    },
+    {
+      "parent_upstream_id": "8459479",
+      "preview": {
+        "end": "…ians 21st-century American comedians American comedy musicians American comedy writers American satirists American male television actors American television directors American television producers American television writers American male television writers American male voice actors Living people Showrunners 21st-century American screenwriters 21st-century American male writers Dethklok members",
+        "start": "Tommy Blacha {{Infobox writer | image = Tommy Blacha.jpg | name = Tommy Blacha | caption = Blacha at the 2008 San Diego Comic-Con | pseudonym = Tom Blacha | birth_name = Thomas Blacha | birth_date = | birth_place = Detroit, Michigan, U.S. | death_date = | death_place = | occupation = Voice actorWriterProducer | nationality = American | period = | genre = ComedySatirePro Wrestling | subject = | mo…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 3616,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.03508771929824561,
+        "wikitable_markup_line_fraction": 0.38,
+        "wikitable_markup_lines": 19
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Tommy Blacha"
+    },
+    {
+      "parent_upstream_id": "12355049",
+      "preview": {
+        "end": "…es located just outside the marked Trail of the Eagles' Nests. See also Dunajec river castles References Eagles' Nests Trail online map: Waymarked Trails Poland by Neil Wilson, Tom Parkinson, Richard Watkins, Lonely Planet List of castles Map of the castles in Śląskie Voivodship Map of the castles in Greater Poland Voivodeship Hiking trails in Poland Lesser Poland Voivodeship Silesian Voivodeship",
+        "start": "Trail of the Eagle's Nests The Trail of the Eagles' Nests () of south-western Poland, is a marked trail along a chain of 25 medieval castles between Częstochowa and Kraków. The Trail of the Eagles' Nests was first marked by Kazimierz Sosnowski. Since 1980, much of the area has been designated a protected area known as the Eagle Nests Landscape Park (). The castles date mostly to the 14th century,…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 3152,
+        "duplicate_line_fraction": 0.06976744186046512,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.05708245243128962,
+        "wikitable_markup_line_fraction": 0.12941176470588237,
+        "wikitable_markup_lines": 11
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Trail of the Eagle's Nests"
+    },
+    {
+      "parent_upstream_id": "71836",
+      "preview": {
+        "end": "…s of Bukhara and Samarkand. The Kipchak dialect, spoken from the Surxondaryo region through north-central Uzbekistan into Karakalpakstan, shows significant influence from the Kipchak Turkic languages, particularly in the mutation of [j] to [ʑ] as in Kazakh and Kyrgyz. The Oghuz dialect, spoken mainly in Khorezm along the Turkmenistan border, is notable for the mutation of word-initial [k] to [g].",
+        "start": "Uzbek language Sufi Allayar (1633–1721) was an outstanding Uzbek theologian and one of the Sufi leaders of the Bukhara Khanate. He showed his level of knowledge by writing a book in the Turki language \"Sabatul-azhizin\". Sufi Allayar was often read and highly appreciated in Central Asia. The term Uzbek as applied to language has meant different things at different times. Uzbek was a vowel-harmonis…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7994,
+        "duplicate_line_fraction": 0.17857142857142858,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.027689873417721556,
+        "wikitable_markup_line_fraction": 0.37349397590361444,
+        "wikitable_markup_lines": 31
+      },
+      "source_chunk_count": 3,
+      "source_chunk_index": 1,
+      "title": "Uzbek language"
+    }
+  ],
+  "lowest_marker_rejections": [
+    {
+      "parent_upstream_id": "64332606",
+      "preview": {
+        "end": "…and fixtures Pre Season Scottish League One Scottish League Cup Group stage Results Group G Table Scottish Challenge Cup Notes Scottish Cup Player statistics |- |colspan=\"12\"|Players who left the club during the 2016–17 season |- |} Team Statistics League table Division summary Transfers Players in Players out See also List of Livingston F.C. seasons References Livingston Livingston F.C. seasons",
+        "start": "2016–17 Livingston F.C. season The 2016–17 season was Livingston's first season back in Scottish League One and their first season back in the third-tier of Scottish football, having been relegated from the Scottish Championship at the end of the 2015–16 season. Livingston also competed in the Challenge Cup, League Cup and the Scottish Cup. Summary Season Livingston finished in first place in Lea…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1266,
+        "duplicate_line_fraction": 0.03225806451612903,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.08780487804878045,
+        "wikitable_markup_line_fraction": 0.13333333333333333,
+        "wikitable_markup_lines": 4
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2016–17 Livingston F.C. season"
+    },
+    {
+      "parent_upstream_id": "35971419",
+      "preview": {
+        "end": "…rius died before the coronation took place. References Sources External links Gcatholic.org |- |- |- |- 1387 deaths Archbishops of Esztergom 14th-century Roman Catholic bishops in Croatia 14th-century Hungarian cardinals Year of birth unknown Royal treasurers (Kingdom of Hungary) Bishops of Zagreb 14th-century Roman Catholic bishops in Hungary 14th-century Hungarian people Bishops of Transylvania",
+        "start": "Demetrius of Esztergom Demetrius (; died 20 February 1387), was a Hungarian cardinal and politician, who served as archbishop of Esztergom and bishop of Zagreb and Transylvania, and chancellor. Origins and early career Nothing is known about the origin of Demetrius, who would rise to the highest ecclesiastical titles, but it is presumed that he came from a family of peasants. His father was a cer…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4257,
+        "duplicate_line_fraction": 0.11538461538461539,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.02741702741702745,
+        "wikitable_markup_line_fraction": 0.16,
+        "wikitable_markup_lines": 4
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Demetrius of Esztergom"
+    },
+    {
+      "parent_upstream_id": "30122499",
+      "preview": {
+        "end": "…America East POY), and then captured the lead with a decisive foul on Stony Brook with 2 seconds of regulation left. Boston went on to win 56–54 to end the Seawolves hopes for their first-ever NCAA tournament bid. Schedule |- !colspan=9 style=| Regular season |- !colspan=9 style=| America East tournament References Stony Brook Seawolves men's basketball seasons Stony Brook Stony Brook Stony Brook",
+        "start": "2010–11 Stony Brook Seawolves men's basketball team The 2010–11 Stony Brook Seawolves men's basketball team represents Stony Brook University in the America East Conference. They are coached by Steve Pikiell, who is currently on his sixth year as a coach for Stony Brook. Stony Brook entered the year as the defending America East regular season champions after a year of school records and successe…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4799,
+        "duplicate_line_fraction": 0.15789473684210525,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.06580493537015275,
+        "wikitable_markup_line_fraction": 0.2222222222222222,
+        "wikitable_markup_lines": 4
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2010–11 Stony Brook Seawolves men's basketball team"
+    },
+    {
+      "parent_upstream_id": "65220196",
+      "preview": {
+        "end": "…legs were played on 22 May 2021. The Fano vs Imolese game was postponed due to a cluster of confirmed COVID-19 cases involving the former team. Match was played on 22 May 2021, whilst the second leg was played on 29 May 2021. |} Top goalscorers Note 1 Player scored 1 goal in the play-offs. 3 Player scored 3 goals in the play-offs. References External links Official website Serie C seasons 3 Italy",
+        "start": "2020–21 Serie C The 2020–21 Serie C was the seventh season of the unified Serie C division, the third tier of the Italian football league system. Teams The league was initially to be contested by 60 teams, but was reduced to 59 following the exclusion of Trapani. Relegated from Serie B Perugia Trapani (subsequently excluded) Juve Stabia Livorno Promoted from Serie D Lucchese (Girone A winners) Pr…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4836,
+        "duplicate_line_fraction": 0.09722222222222222,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.23958333333333337,
+        "wikitable_markup_line_fraction": 0.07042253521126761,
+        "wikitable_markup_lines": 5
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2020–21 Serie C"
+    },
+    {
+      "parent_upstream_id": "68976",
+      "preview": {
+        "end": "…Z, G-77, IAEA, IBRD, ICAO, ICCt, ICFTU, ICRM, IDA, IDB, IFAD, IFC, IFRCS, ILO, IMF, IMO, Interpol, IOC, IOM, ITU, MIPONUH, MONUC, NAM, OAU, OIC, OPCW, UN, UNCTAD, UNESCO, UNIDO, UNMEE, UPU, WADB (regional), WAEMU, WCL, WCO, WFTU, WHO, WIPO, WMO, WToO, WTrO See also Vice President of Benin Ministry of Foreign Affairs and African Integration (Benin) References External links Benin Government Portal",
+        "start": "Politics of Benin The Politics of Benin take place in the framework of a presidential representative democratic republic, wherein the President of Benin is both head of state and head of government, and of a multi-party system. Executive power is exercised by the government. Legislative power is vested in both the government and the legislature. The Judiciary is independent of the executive and t…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 7839,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.030645161290322576,
+        "wikitable_markup_line_fraction": 0.1282051282051282,
+        "wikitable_markup_lines": 5
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Politics of Benin"
+    },
+    {
+      "parent_upstream_id": "59634144",
+      "preview": {
+        "end": "…l Friendlies Competitions Premier League Results summary Results by round Results League table Kazakhstan Cup Squad statistics Appearances and goals |- |colspan=\"14\"|Players away from Irtysh Pavlodar on loan: |- |colspan=\"14\"|Players who left Irtysh Pavlodar during the season: |} Goal scorers Disciplinary record References External links Official Website FC Irtysh Pavlodar seasons Irtysh Pavlodar",
+        "start": "2019 FC Irtysh Pavlodar season The 2019 FC Irtysh Pavlodar season was the 28th successive season that the club will play in the Kazakhstan Premier League, the highest tier of association football in Kazakhstan. After narrowly avoiding relegation the previous season, Irtysh also participate in the Kazakhstan Cup, reaching the Quarterfinal's before defeat to Kaisar, and finishing 8th in the Premier…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1699,
+        "duplicate_line_fraction": 0.02857142857142857,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.03125,
+        "wikitable_markup_line_fraction": 0.14705882352941177,
+        "wikitable_markup_lines": 5
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2019 FC Irtysh Pavlodar season"
+    },
+    {
+      "parent_upstream_id": "40890759",
+      "preview": {
+        "end": "…y |- |- |- |- |- |- 1960 births 21st-century American politicians Candidates in the 2022 United States Senate elections Republican Party governors of New Hampshire Living people Republican Party members of the New Hampshire House of Representatives Republican Party New Hampshire state senators People from Salem, New Hampshire Plymouth State University alumni Presidents of the New Hampshire Senate",
+        "start": "Chuck Morse Charles W. Morse (born October 11, 1960) is an American politician who served as president of the New Hampshire Senate and was once acting governor of New Hampshire. Morse represented New Hampshire's 22nd State Senate district from 2010 to 2022, having previously held the same office from 2002 to 2006. In 2022, Morse was a Republican candidate for the U.S. Senate in New Hampshire, pla…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 4364,
+        "duplicate_line_fraction": 0.11627906976744186,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.10744985673352436,
+        "wikitable_markup_line_fraction": 0.14285714285714285,
+        "wikitable_markup_lines": 6
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Chuck Morse"
+    },
+    {
+      "parent_upstream_id": "55354138",
+      "preview": {
+        "end": "…Offseason Departures Incoming transfers 2017 recruiting class Roster Schedule and results |- !colspan=9 style=| Non-conference regular season |- !colspan=9 style=| Atlantic Sun Conference regular season |- !colspan=9 style=| Atlantic Sun tournament References North Florida Ospreys men's basketball seasons North Florida North Florida Ospreys men's basketball North Florida Ospreys men's basketball",
+        "start": "2017–18 North Florida Ospreys men's basketball team The 2017–18 North Florida Ospreys men's basketball team represented the University of North Florida during the 2017–18 NCAA Division I men's basketball season. They were led by ninth–year head coach Matthew Driscoll and played their home games at UNF Arena on the university's campus in Jacksonville, Florida as members of the Atlantic Sun Confere…"
+      },
+      "reasons": [
+        "raw_wikitable_markup"
+      ],
+      "signals": {
+        "characters": 1263,
+        "duplicate_line_fraction": 0.14285714285714285,
+        "list_line_fraction": 0.0,
+        "repeated_trigram_fraction": 0.20197044334975367,
+        "wikitable_markup_line_fraction": 0.3,
+        "wikitable_markup_lines": 6
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "2017–18 North Florida Ospreys men's basketball team"
+    }
+  ],
+  "orphaned_footnote_rejections": [
+    {
+      "parent_upstream_id": "27527913",
+      "preview": {
+        "end": "…Colombo District and Trincomalee District; as DPLF in Vanni District; and as in an independent group in Jaffna District. 2. UCPF contested as an independent group in Nuwara Eliya District. 3. EPDP contested as an independent group in Jaffna District. See also Results of the 1994 Sri Lankan general election by province References 1994 Sri Lankan parliamentary election Election results in Sri Lanka",
+        "start": "Results of the 1994 Sri Lankan general election by electoral district Results of the 1994 Sri Lankan general election by electoral district. Number of votes 1. The EROS/PLOTE/TELO alliance contested as TELO in Ampara District, Batticaloa District, Colombo District and Trincomalee District; as DPLF in Vanni District; and as in an independent group in Jaffna District. 2. UCPF contested as an indepe…"
+      },
+      "reasons": [
+        "orphaned_table_footnotes"
+      ],
+      "signals": {
+        "characters": 1577,
+        "duplicate_line_fraction": 0.3333333333333333,
+        "list_line_fraction": 0.5238095238095238,
+        "repeated_trigram_fraction": 0.615702479338843,
+        "wikitable_markup_line_fraction": 0.0,
+        "wikitable_markup_lines": 0
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Results of the 1994 Sri Lankan general election by electoral district"
+    },
+    {
+      "parent_upstream_id": "27528168",
+      "preview": {
+        "end": "…strict and Trincomalee District; as DPLF in Vanni District; and as in an independent group in Jaffna District. 2. UCPF contested as an independent group in Nuwara Eliya District. 3. EPDP contested as an independent group in Jaffna District. See also Results of the 1994 Sri Lankan general election by electoral district References 1994 Sri Lankan parliamentary election Election results in Sri Lanka",
+        "start": "Results of the 1994 Sri Lankan general election by province Results of the 1994 Sri Lankan general election by province. Number of votes 1. The EROS/PLOTE/TELO alliance contested as TELO in Ampara District, Batticaloa District, Colombo District and Trincomalee District; as DPLF in Vanni District; and as in an independent group in Jaffna District. 2. UCPF contested as an independent group in Nuwar…"
+      },
+      "reasons": [
+        "orphaned_table_footnotes"
+      ],
+      "signals": {
+        "characters": 1357,
+        "duplicate_line_fraction": 0.3157894736842105,
+        "list_line_fraction": 0.47368421052631576,
+        "repeated_trigram_fraction": 0.6161137440758293,
+        "wikitable_markup_line_fraction": 0.0,
+        "wikitable_markup_lines": 0
+      },
+      "source_chunk_count": 1,
+      "source_chunk_index": 0,
+      "title": "Results of the 1994 Sri Lankan general election by province"
+    }
+  ],
+  "policy_id": "wikipedia-general-quality-v2",
+  "raw_wikitable_evidence": {
+    "maximum_marker_fraction": 0.984,
+    "maximum_marker_lines": 278.0,
+    "median_marker_fraction": 0.4,
+    "median_marker_lines": 21.0,
+    "minimum_marker_fraction": 0.07042253521126761,
+    "minimum_marker_lines": 4.0
+  },
+  "reason_counts": {
+    "orphaned_table_footnotes": 2,
+    "raw_wikitable_markup": 50
+  },
+  "rejected_chunks": 52,
+  "reviewed_titles_found": [
+    "1951 Ohio State Buckeyes baseball team",
+    "Coach Trip (series 8)",
+    "FC Luch Vladivostok",
+    "Results of the 1994 Sri Lankan general election by electoral district"
+  ],
+  "reviewed_titles_missing": [],
+  "schema_version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "execution_id": "era6-laptop-demo-v1",
+  "total_loss_token_budget": 262144,
+  "sampling_policy": "deterministic_without_replacement",
+  "sampling_seed": "era6-schedule-v1",
+  "curriculum": {
+    "difficulty_proxy": "within_source_token_count_rank",
+    "bands": [
+      {"name": "B0", "maximum_fraction": 0.10},
+      {"name": "B1", "maximum_fraction": 0.30},
+      {"name": "B2", "maximum_fraction": 0.60},
+      {"name": "B3", "maximum_fraction": 0.82},
+      {"name": "B4", "maximum_fraction": 0.95},
+      {"name": "B5", "maximum_fraction": 1.00}
+    ]
+  },
+  "indic_tier_by_source": {
+    "sangraha_verified_hindi": "verified_native",
+    "sangraha_unverified_hindi": "unverified_native",
+    "assignment4_samanantar_translated": "translated",
+    "sangraha_synthetic_hindi": "synthetic"
+  },
+  "anneal_mixture_policy": "reuse_pre_anneal_mixture",
+  "anneal_indic_tier_policy": "renormalize_configured_weights_over_eligible_tiers",
+  "quality_weight_policy": "apply_during_record_selection",
+  "overshoot_policy": "allow_final_record_then_account_exact_loss_mask_at_packing"
+}

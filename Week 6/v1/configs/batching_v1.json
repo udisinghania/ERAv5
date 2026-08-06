@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "microbatch_physical_token_budget": 1024,
+  "candidate_microbatches": 4,
+  "candidate_seed": "era6-opus-v1",
+  "proxy_version": "auditable-opus-v1",
+  "accounting_unit": "loss_bearing_tokens",
+  "stage_boundary_policy": "never_mix_stages",
+  "sequence_length_policy": "homogeneous_within_microbatch",
+  "sequence_reuse_policy": "exactly_once",
+  "zero_loss_sequence_policy": "spread_across_loss_bearing_microbatches",
+  "acceptance_policy": {
+    "minimum_loss_density_ppm": 300000,
+    "rejection_scope": "candidate_proposal_only",
+    "sparse_final_batch_fallback": true
+  },
+  "protected_floor_policy": {
+    "lanes": ["indic", "agentic"],
+    "mode": "minimize_projected_pace_deficit",
+    "override_enabled": true
+  },
+  "score_weights": {
+    "lane_error_ppm": -100,
+    "indic_tier_error_ppm": -25,
+    "loss_density_ppm": 2,
+    "packing_utilization_ppm": 1,
+    "source_diversity": 1000
+  },
+  "tie_break": "lowest_candidate_id"
+}

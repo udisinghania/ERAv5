@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "capability_lane": "long_context",
+    "cleaning_pipeline_hash": "sha256:fb68af7ce2dba96fce832c8abd73c7ab2b3a696d5adead2d653462d9ea8957f3",
+    "content_hash": "sha256:e10f5bd6d832990e20405307993fb95773f060acd6ff14c3c8c4738cb3b29ef1",
+    "dedup_status": "passed",
+    "eval_overlap_status": "clear",
+    "extra": {
+      "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+      "index_canonical_uncompressed_sha256": "31b1cfe8e8c3fdd1d49adc08696227c34675c31cf067c46866534df6f2e7728b",
+      "index_path": "data/tokenized_v1/long_context/anneal/index.jsonl.gz",
+      "index_sha256": "c46c09dc608deda8afb612c75bcb6d43e9c472f39fccc568e0b17a38b6571aae",
+      "input_artifact": "data/frozen_corpus_v1/long_context/anneal.jsonl.gz",
+      "input_compressed_sha256": "86043c9553b15a2cf37d7e37f60a8aafeadc5b2aa3b09478c9df6c8fde19fdfd",
+      "loss_path": "data/tokenized_v1/long_context/anneal/loss.uint8.bin",
+      "loss_policy_records": {
+        "full_text_causal": 26
+      },
+      "tokens_path": "data/tokenized_v1/long_context/anneal/tokens.uint16.bin",
+      "tokens_sha256": "cc68cd979a3e98a976f0d030906d12538fef41f344b0ab7d727ce14264d82811"
+    },
+    "language_distribution": {
+      "en": 26
+    },
+    "loss_bearing_token_count": 140610,
+    "loss_mask_hash": "sha256:c5d11476b3cc83049d02324c8ec3e11cc41fcd94e27ca1dabe69019cf4a07d8b",
+    "parent_manifest_ids": [],
+    "permission": "anneal",
+    "pii_screen_status": "passed_human_reviewed",
+    "position_policy": "document_reset_causal",
+    "record_count": 26,
+    "shard_id": "long_context-anneal-v1",
+    "source_lock_hashes": [
+      "sha256:457fad381a3b1516e9401762d52b473a1b61f60fa22ec7e70fd6ee6ac786bdb2"
+    ],
+    "token_count": 140636,
+    "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be"
+  },
+  "manifest_hash": "sha256:a9886afa3190bfe4cd7f9072609371485d82d7e2611ea96f68bdc609d538c0ec",
+  "schema_version": 1
+}

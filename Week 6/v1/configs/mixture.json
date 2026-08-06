@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "accounting_unit": "loss_bearing_tokens",
+  "pre_anneal_fraction": 0.98,
+  "anneal_fraction": 0.02,
+  "pre_anneal_mixture": {
+    "general": 0.53,
+    "science_math": 0.10,
+    "code": 0.10,
+    "reasoning": 0.10,
+    "long_context": 0.085,
+    "indic": 0.08,
+    "agentic": 0.005
+  },
+  "protected_floors": {
+    "indic": 0.08,
+    "agentic": 0.005
+  },
+  "indic_tiers": {
+    "verified_native": 0.40,
+    "unverified_native": 0.20,
+    "translated": 0.30,
+    "synthetic": 0.10
+  },
+  "stages": [
+    {
+      "name": "seed",
+      "fraction_of_total": 0.05,
+      "sequence_length": 256,
+      "difficulty_bands": ["B0", "B1"]
+    },
+    {
+      "name": "general_foundation",
+      "fraction_of_total": 0.55,
+      "sequence_length": 256,
+      "difficulty_bands": ["B0", "B1", "B2"]
+    },
+    {
+      "name": "reasoning_skill_build",
+      "fraction_of_total": 0.20,
+      "sequence_length": 256,
+      "difficulty_bands": ["B2", "B3", "B4"]
+    },
+    {
+      "name": "long_context",
+      "fraction_of_total": 0.18,
+      "sequence_length": 512,
+      "difficulty_bands": ["B2", "B3", "B4"]
+    },
+    {
+      "name": "anneal",
+      "fraction_of_total": 0.02,
+      "sequence_length": 512,
+      "difficulty_bands": ["B4", "B5"],
+      "reserve_only": true
+    }
+  ],
+  "transition_warmup_fraction": 0.05,
+  "opus": {
+    "candidate_microbatches": 4,
+    "proxy_version": "auditable-opus-v1",
+    "record_all_decisions": true,
+    "outcomes": ["accepted", "rejected", "deferred"],
+    "protected_floor_override": true
+  }
+}

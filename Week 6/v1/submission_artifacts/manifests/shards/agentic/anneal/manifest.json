@@ -1,0 +1,43 @@
+{
+  "manifest": {
+    "capability_lane": "agentic",
+    "cleaning_pipeline_hash": "sha256:fb68af7ce2dba96fce832c8abd73c7ab2b3a696d5adead2d653462d9ea8957f3",
+    "content_hash": "sha256:e5f02c482e3baf5068ac1aef59e8e73539e4d8d728adae086dccc27b709077af",
+    "dedup_status": "passed",
+    "eval_overlap_status": "clear",
+    "extra": {
+      "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+      "index_canonical_uncompressed_sha256": "c630fe54ac52b474f154b6a6e0ce0c0a5fb46cd26f5bc8c4f0a705ec35ff1ac6",
+      "index_path": "data/tokenized_v1/agentic/anneal/index.jsonl.gz",
+      "index_sha256": "9ec3c5df192506dc1433b0e9ced555a85c006dbb2dd8202678d113cc2490f959",
+      "input_artifact": "data/frozen_corpus_v1/agentic/anneal.jsonl.gz",
+      "input_compressed_sha256": "f799374b53aaf45c773eb827c272886bb0b280fdbc2688848d1c8d4c518bc40b",
+      "loss_path": "data/tokenized_v1/agentic/anneal/loss.uint8.bin",
+      "loss_policy_records": {
+        "assistant_origin_only": 40
+      },
+      "tokens_path": "data/tokenized_v1/agentic/anneal/tokens.uint16.bin",
+      "tokens_sha256": "01a4d12130d8c6fdfd9daa4eff895ac1575bf9e3beebdcd77df0b8eef49573f6"
+    },
+    "language_distribution": {
+      "en": 40
+    },
+    "loss_bearing_token_count": 16787,
+    "loss_mask_hash": "sha256:80a366d9eb4c6a99bce6ccbc1b8f16e69de7fb65760f1fbe8df3a38737c108c1",
+    "parent_manifest_ids": [],
+    "permission": "anneal",
+    "pii_screen_status": "passed_human_reviewed",
+    "position_policy": "document_reset_causal",
+    "record_count": 40,
+    "shard_id": "agentic-anneal-v1",
+    "source_lock_hashes": [
+      "sha256:5119692298e0f570cf487aff2fde83ef2f05d7329ac9f9019ef46ca973fb6e2f",
+      "sha256:54f63581530fc7b944d54f5eee1469ac74df37751d6df2cf77d07f33c5b35063",
+      "sha256:cbe23138d9f446a261c8d47c601d4e98f03b095bf17d35b37cc09365252db430"
+    ],
+    "token_count": 101503,
+    "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be"
+  },
+  "manifest_hash": "sha256:4b1a3edfe23e2e343f8644d0a4d50a42e8263ff1d06960890b127d9c1444a706",
+  "schema_version": 1
+}

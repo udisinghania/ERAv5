@@ -1,0 +1,553 @@
+{
+  "component_hashes": {
+    "input_ids": "784700126769b7ecee53cbeb96a3ee86d4a80345e97d871c7e0c0e83bbad35f7",
+    "loss_mask": "5530c67bb28d0761b04a31f248731a0dd767c2fca01c2b0c16ea5cdebf14939b",
+    "position_ids": "458590726aa52cf7c7173e8ade1ca196c1efa711fc9dd648a1cb27713cb229e8",
+    "segment_ids": "c531ae46ee144d33d7fbbc927d638d71aac2b4ef10eb3bddabdb51490699d730",
+    "selection": "56f2a9e048d1ff1809bad6be4c2b2db8ff09dbd2c7643a6e3d48385f9a26b420",
+    "sequences": "6c08fd226567195b2dd9f6d06e536020f7f4c306d6901b67026deab810ebb109"
+  },
+  "continuation_overlap_tokens": 1032,
+  "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+  "curriculum_overlay_sha256": "5ef685967f8ba5ab9beb1f196c9f4d5f4185033b3feb33a79da413c5484b789f",
+  "data_type_policies": {
+    "agentic": {
+      "boundary_unit": "trajectory",
+      "loss_origin": "assistant_and_tool_call_outputs_only",
+      "policy_id": "trajectory_role_masked_segmented"
+    },
+    "code": {
+      "boundary_unit": "source_file",
+      "loss_origin": "all_causal_content",
+      "policy_id": "code_file_segmented"
+    },
+    "general": {
+      "boundary_unit": "document",
+      "loss_origin": "all_causal_content",
+      "policy_id": "prose_dense_segmented"
+    },
+    "indic": {
+      "boundary_unit": "document_or_translation_pair",
+      "loss_origin": "source_policy_preserved",
+      "policy_id": "multilingual_tier_segmented"
+    },
+    "long_context": {
+      "boundary_unit": "long_document",
+      "loss_origin": "all_causal_content",
+      "policy_id": "long_document_continuation"
+    },
+    "reasoning": {
+      "boundary_unit": "worked_example",
+      "loss_origin": "reasoning_and_answer_only",
+      "policy_id": "reasoning_prompt_output_segmented"
+    },
+    "science_math": {
+      "boundary_unit": "document",
+      "loss_origin": "all_causal_content",
+      "policy_id": "technical_dense_segmented"
+    }
+  },
+  "index": {
+    "canonical_uncompressed_sha256": "ba420a3595cca407362a28d4c686447c1f15da783a5a0c7f0b073fc6bf7a39ca",
+    "compressed_bytes": 39457,
+    "compressed_sha256": "6c08fd226567195b2dd9f6d06e536020f7f4c306d6901b67026deab810ebb109",
+    "records": 1081,
+    "uncompressed_bytes": 836123
+  },
+  "loss_bearing_tokens": 262144,
+  "loss_by_stage": {
+    "anneal": 5243,
+    "general_foundation": 144179,
+    "long_context": 47186,
+    "reasoning_skill_build": 52429,
+    "seed": 13107
+  },
+  "loss_by_stage_indic_tier": {
+    "anneal|translated": 140,
+    "anneal|unverified_native": 93,
+    "anneal|verified_native": 187,
+    "general_foundation|synthetic": 1154,
+    "general_foundation|translated": 3460,
+    "general_foundation|unverified_native": 2307,
+    "general_foundation|verified_native": 4614,
+    "long_context|synthetic": 378,
+    "long_context|translated": 1132,
+    "long_context|unverified_native": 755,
+    "long_context|verified_native": 1510,
+    "reasoning_skill_build|synthetic": 420,
+    "reasoning_skill_build|translated": 1258,
+    "reasoning_skill_build|unverified_native": 839,
+    "reasoning_skill_build|verified_native": 1678,
+    "seed|synthetic": 105,
+    "seed|translated": 315,
+    "seed|unverified_native": 210,
+    "seed|verified_native": 419
+  },
+  "loss_by_stage_lane": {
+    "anneal|agentic": 27,
+    "anneal|code": 524,
+    "anneal|general": 2778,
+    "anneal|indic": 420,
+    "anneal|long_context": 446,
+    "anneal|reasoning": 524,
+    "anneal|science_math": 524,
+    "general_foundation|agentic": 721,
+    "general_foundation|code": 14418,
+    "general_foundation|general": 76414,
+    "general_foundation|indic": 11535,
+    "general_foundation|long_context": 12255,
+    "general_foundation|reasoning": 14418,
+    "general_foundation|science_math": 14418,
+    "long_context|agentic": 236,
+    "long_context|code": 4719,
+    "long_context|general": 25008,
+    "long_context|indic": 3775,
+    "long_context|long_context": 4011,
+    "long_context|reasoning": 4719,
+    "long_context|science_math": 4718,
+    "reasoning_skill_build|agentic": 263,
+    "reasoning_skill_build|code": 5243,
+    "reasoning_skill_build|general": 27785,
+    "reasoning_skill_build|indic": 4195,
+    "reasoning_skill_build|long_context": 4457,
+    "reasoning_skill_build|reasoning": 5243,
+    "reasoning_skill_build|science_math": 5243,
+    "seed|agentic": 66,
+    "seed|code": 1311,
+    "seed|general": 6945,
+    "seed|indic": 1049,
+    "seed|long_context": 1114,
+    "seed|reasoning": 1311,
+    "seed|science_math": 1311
+  },
+  "loss_density": 0.8519134775374376,
+  "nonpadding_tokens": 299492,
+  "packing_config_sha256": "c68ca324d9342e2003019741131a5585a1feee5d87272978e72f2e7c1310e4c6",
+  "packing_hash": "sha256:2baf444b2fccdec3702af6e3c317ca9e2e7110c9781399a5261c4b87d1fa57e7",
+  "packing_utilization": 0.9732867096505824,
+  "padding_tokens": 8220,
+  "paths": {
+    "input_ids": "data/packed_v1/input_ids.uint16.bin",
+    "loss_mask": "data/packed_v1/loss_mask.uint8.bin",
+    "position_ids": "data/packed_v1/position_ids.uint16.bin",
+    "segment_ids": "data/packed_v1/segment_ids.int16.bin",
+    "selection": "data/packed_v1/selection.jsonl.gz",
+    "sequences": "data/packed_v1/sequences.jsonl.gz"
+  },
+  "physical_tokens": 307712,
+  "policy_sequence_counts": {
+    "code_file_segmented": 96,
+    "long_document_continuation": 81,
+    "multilingual_tier_segmented": 97,
+    "prose_dense_segmented": 494,
+    "reasoning_prompt_output_segmented": 166,
+    "technical_dense_segmented": 96,
+    "trajectory_role_masked_segmented": 51
+  },
+  "schedule_file_sha256": "051b9fa24b8740e902d5591e0a1b542479e65135f91e74982dfef40af3184fd0",
+  "schedule_hash": "sha256:0477330cd06ea86f99f164c853751659987566a2f20f93ffe2bf515a49fe3382",
+  "schema_version": 1,
+  "selected_records": 521,
+  "selection_summary": {
+    "groups": [
+      {
+        "indic_tier": null,
+        "lane": "agentic",
+        "selected_records": 1,
+        "stage": "seed",
+        "target_loss_tokens": 66,
+        "unused_candidate_loss_supply_before_selection": 136087
+      },
+      {
+        "indic_tier": null,
+        "lane": "code",
+        "selected_records": 2,
+        "stage": "seed",
+        "target_loss_tokens": 1311,
+        "unused_candidate_loss_supply_before_selection": 869003
+      },
+      {
+        "indic_tier": null,
+        "lane": "general",
+        "selected_records": 23,
+        "stage": "seed",
+        "target_loss_tokens": 6945,
+        "unused_candidate_loss_supply_before_selection": 398978
+      },
+      {
+        "indic_tier": "synthetic",
+        "lane": "indic",
+        "selected_records": 1,
+        "stage": "seed",
+        "target_loss_tokens": 105,
+        "unused_candidate_loss_supply_before_selection": 155333
+      },
+      {
+        "indic_tier": "translated",
+        "lane": "indic",
+        "selected_records": 10,
+        "stage": "seed",
+        "target_loss_tokens": 315,
+        "unused_candidate_loss_supply_before_selection": 10069
+      },
+      {
+        "indic_tier": "unverified_native",
+        "lane": "indic",
+        "selected_records": 1,
+        "stage": "seed",
+        "target_loss_tokens": 210,
+        "unused_candidate_loss_supply_before_selection": 235263
+      },
+      {
+        "indic_tier": "verified_native",
+        "lane": "indic",
+        "selected_records": 1,
+        "stage": "seed",
+        "target_loss_tokens": 419,
+        "unused_candidate_loss_supply_before_selection": 372401
+      },
+      {
+        "indic_tier": null,
+        "lane": "long_context",
+        "selected_records": 1,
+        "stage": "seed",
+        "target_loss_tokens": 1114,
+        "unused_candidate_loss_supply_before_selection": 971997
+      },
+      {
+        "indic_tier": null,
+        "lane": "reasoning",
+        "selected_records": 13,
+        "stage": "seed",
+        "target_loss_tokens": 1311,
+        "unused_candidate_loss_supply_before_selection": 80891
+      },
+      {
+        "indic_tier": null,
+        "lane": "science_math",
+        "selected_records": 3,
+        "stage": "seed",
+        "target_loss_tokens": 1311,
+        "unused_candidate_loss_supply_before_selection": 563593
+      },
+      {
+        "indic_tier": null,
+        "lane": "agentic",
+        "selected_records": 3,
+        "stage": "general_foundation",
+        "target_loss_tokens": 721,
+        "unused_candidate_loss_supply_before_selection": 456988
+      },
+      {
+        "indic_tier": null,
+        "lane": "code",
+        "selected_records": 11,
+        "stage": "general_foundation",
+        "target_loss_tokens": 14418,
+        "unused_candidate_loss_supply_before_selection": 3142571
+      },
+      {
+        "indic_tier": null,
+        "lane": "general",
+        "selected_records": 132,
+        "stage": "general_foundation",
+        "target_loss_tokens": 76414,
+        "unused_candidate_loss_supply_before_selection": 1601804
+      },
+      {
+        "indic_tier": "synthetic",
+        "lane": "indic",
+        "selected_records": 2,
+        "stage": "general_foundation",
+        "target_loss_tokens": 1154,
+        "unused_candidate_loss_supply_before_selection": 601463
+      },
+      {
+        "indic_tier": "translated",
+        "lane": "indic",
+        "selected_records": 52,
+        "stage": "general_foundation",
+        "target_loss_tokens": 3460,
+        "unused_candidate_loss_supply_before_selection": 30217
+      },
+      {
+        "indic_tier": "unverified_native",
+        "lane": "indic",
+        "selected_records": 3,
+        "stage": "general_foundation",
+        "target_loss_tokens": 2307,
+        "unused_candidate_loss_supply_before_selection": 651139
+      },
+      {
+        "indic_tier": "verified_native",
+        "lane": "indic",
+        "selected_records": 5,
+        "stage": "general_foundation",
+        "target_loss_tokens": 4614,
+        "unused_candidate_loss_supply_before_selection": 1085858
+      },
+      {
+        "indic_tier": null,
+        "lane": "long_context",
+        "selected_records": 3,
+        "stage": "general_foundation",
+        "target_loss_tokens": 12255,
+        "unused_candidate_loss_supply_before_selection": 2586903
+      },
+      {
+        "indic_tier": null,
+        "lane": "reasoning",
+        "selected_records": 110,
+        "stage": "general_foundation",
+        "target_loss_tokens": 14418,
+        "unused_candidate_loss_supply_before_selection": 200724
+      },
+      {
+        "indic_tier": null,
+        "lane": "science_math",
+        "selected_records": 9,
+        "stage": "general_foundation",
+        "target_loss_tokens": 14418,
+        "unused_candidate_loss_supply_before_selection": 2343377
+      },
+      {
+        "indic_tier": null,
+        "lane": "agentic",
+        "selected_records": 2,
+        "stage": "reasoning_skill_build",
+        "target_loss_tokens": 263,
+        "unused_candidate_loss_supply_before_selection": 596867
+      },
+      {
+        "indic_tier": null,
+        "lane": "code",
+        "selected_records": 2,
+        "stage": "reasoning_skill_build",
+        "target_loss_tokens": 5243,
+        "unused_candidate_loss_supply_before_selection": 8716197
+      },
+      {
+        "indic_tier": null,
+        "lane": "general",
+        "selected_records": 16,
+        "stage": "reasoning_skill_build",
+        "target_loss_tokens": 27785,
+        "unused_candidate_loss_supply_before_selection": 5439774
+      },
+      {
+        "indic_tier": "synthetic",
+        "lane": "indic",
+        "selected_records": 1,
+        "stage": "reasoning_skill_build",
+        "target_loss_tokens": 420,
+        "unused_candidate_loss_supply_before_selection": 2074081
+      },
+      {
+        "indic_tier": "translated",
+        "lane": "indic",
+        "selected_records": 13,
+        "stage": "reasoning_skill_build",
+        "target_loss_tokens": 1258,
+        "unused_candidate_loss_supply_before_selection": 63386
+      },
+      {
+        "indic_tier": "unverified_native",
+        "lane": "indic",
+        "selected_records": 1,
+        "stage": "reasoning_skill_build",
+        "target_loss_tokens": 839,
+        "unused_candidate_loss_supply_before_selection": 1517350
+      },
+      {
+        "indic_tier": "verified_native",
+        "lane": "indic",
+        "selected_records": 1,
+        "stage": "reasoning_skill_build",
+        "target_loss_tokens": 1678,
+        "unused_candidate_loss_supply_before_selection": 2321600
+      },
+      {
+        "indic_tier": null,
+        "lane": "long_context",
+        "selected_records": 1,
+        "stage": "reasoning_skill_build",
+        "target_loss_tokens": 4457,
+        "unused_candidate_loss_supply_before_selection": 4481965
+      },
+      {
+        "indic_tier": null,
+        "lane": "reasoning",
+        "selected_records": 28,
+        "stage": "reasoning_skill_build",
+        "target_loss_tokens": 5243,
+        "unused_candidate_loss_supply_before_selection": 324234
+      },
+      {
+        "indic_tier": null,
+        "lane": "science_math",
+        "selected_records": 2,
+        "stage": "reasoning_skill_build",
+        "target_loss_tokens": 5243,
+        "unused_candidate_loss_supply_before_selection": 6859029
+      },
+      {
+        "indic_tier": null,
+        "lane": "agentic",
+        "selected_records": 1,
+        "stage": "long_context",
+        "target_loss_tokens": 236,
+        "unused_candidate_loss_supply_before_selection": 596440
+      },
+      {
+        "indic_tier": null,
+        "lane": "code",
+        "selected_records": 2,
+        "stage": "long_context",
+        "target_loss_tokens": 4719,
+        "unused_candidate_loss_supply_before_selection": 8708324
+      },
+      {
+        "indic_tier": null,
+        "lane": "general",
+        "selected_records": 14,
+        "stage": "long_context",
+        "target_loss_tokens": 25008,
+        "unused_candidate_loss_supply_before_selection": 5411329
+      },
+      {
+        "indic_tier": "synthetic",
+        "lane": "indic",
+        "selected_records": 1,
+        "stage": "long_context",
+        "target_loss_tokens": 378,
+        "unused_candidate_loss_supply_before_selection": 2071276
+      },
+      {
+        "indic_tier": "translated",
+        "lane": "indic",
+        "selected_records": 11,
+        "stage": "long_context",
+        "target_loss_tokens": 1132,
+        "unused_candidate_loss_supply_before_selection": 62063
+      },
+      {
+        "indic_tier": "unverified_native",
+        "lane": "indic",
+        "selected_records": 1,
+        "stage": "long_context",
+        "target_loss_tokens": 755,
+        "unused_candidate_loss_supply_before_selection": 1513276
+      },
+      {
+        "indic_tier": "verified_native",
+        "lane": "indic",
+        "selected_records": 2,
+        "stage": "long_context",
+        "target_loss_tokens": 1510,
+        "unused_candidate_loss_supply_before_selection": 2318719
+      },
+      {
+        "indic_tier": null,
+        "lane": "long_context",
+        "selected_records": 1,
+        "stage": "long_context",
+        "target_loss_tokens": 4011,
+        "unused_candidate_loss_supply_before_selection": 4476580
+      },
+      {
+        "indic_tier": null,
+        "lane": "reasoning",
+        "selected_records": 23,
+        "stage": "long_context",
+        "target_loss_tokens": 4719,
+        "unused_candidate_loss_supply_before_selection": 318953
+      },
+      {
+        "indic_tier": null,
+        "lane": "science_math",
+        "selected_records": 2,
+        "stage": "long_context",
+        "target_loss_tokens": 4718,
+        "unused_candidate_loss_supply_before_selection": 6852063
+      },
+      {
+        "indic_tier": null,
+        "lane": "agentic",
+        "selected_records": 1,
+        "stage": "anneal",
+        "target_loss_tokens": 27,
+        "unused_candidate_loss_supply_before_selection": 4758
+      },
+      {
+        "indic_tier": null,
+        "lane": "code",
+        "selected_records": 1,
+        "stage": "anneal",
+        "target_loss_tokens": 524,
+        "unused_candidate_loss_supply_before_selection": 23128
+      },
+      {
+        "indic_tier": null,
+        "lane": "general",
+        "selected_records": 1,
+        "stage": "anneal",
+        "target_loss_tokens": 2778,
+        "unused_candidate_loss_supply_before_selection": 39539
+      },
+      {
+        "indic_tier": "translated",
+        "lane": "indic",
+        "selected_records": 1,
+        "stage": "anneal",
+        "target_loss_tokens": 140,
+        "unused_candidate_loss_supply_before_selection": 1576
+      },
+      {
+        "indic_tier": "unverified_native",
+        "lane": "indic",
+        "selected_records": 1,
+        "stage": "anneal",
+        "target_loss_tokens": 93,
+        "unused_candidate_loss_supply_before_selection": 7257
+      },
+      {
+        "indic_tier": "verified_native",
+        "lane": "indic",
+        "selected_records": 1,
+        "stage": "anneal",
+        "target_loss_tokens": 187,
+        "unused_candidate_loss_supply_before_selection": 41459
+      },
+      {
+        "indic_tier": null,
+        "lane": "long_context",
+        "selected_records": 1,
+        "stage": "anneal",
+        "target_loss_tokens": 446,
+        "unused_candidate_loss_supply_before_selection": 31256
+      },
+      {
+        "indic_tier": null,
+        "lane": "reasoning",
+        "selected_records": 2,
+        "stage": "anneal",
+        "target_loss_tokens": 524,
+        "unused_candidate_loss_supply_before_selection": 3090
+      },
+      {
+        "indic_tier": null,
+        "lane": "science_math",
+        "selected_records": 1,
+        "stage": "anneal",
+        "target_loss_tokens": 524,
+        "unused_candidate_loss_supply_before_selection": 37750
+      }
+    ],
+    "selected_loss_tokens": 262144,
+    "selected_records": 521,
+    "unique_selected_records": 521
+  },
+  "sequences": 1081,
+  "status": "FROZEN",
+  "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be"
+}

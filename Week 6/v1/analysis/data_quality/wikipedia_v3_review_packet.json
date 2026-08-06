@@ -1,0 +1,2990 @@
+{
+  "cap_analysis": {
+    "all_B0_combined": {
+      "cap_would_bind": false,
+      "configured_cap": 0.05,
+      "records": 820,
+      "unconstrained_weighted_share": 0.03969099111309028,
+      "weighted_records": 205.0
+    },
+    "general_category_tail": {
+      "cap_would_bind": false,
+      "configured_cap": 0.005,
+      "records": 27,
+      "unconstrained_weighted_share": 0.001306898487870046,
+      "weighted_records": 6.75
+    },
+    "general_disambiguation": {
+      "cap_would_bind": false,
+      "configured_cap": 0.02,
+      "records": 106,
+      "unconstrained_weighted_share": 0.005130786656082403,
+      "weighted_records": 26.5
+    },
+    "general_linewise_list": {
+      "cap_would_bind": false,
+      "configured_cap": 0.03,
+      "records": 336,
+      "unconstrained_weighted_share": 0.01626362562682724,
+      "weighted_records": 84.0
+    },
+    "general_sensitive_context_review": {
+      "cap_would_bind": false,
+      "configured_cap": 0.001,
+      "records": 1,
+      "unconstrained_weighted_share": 4.840364769889059e-05,
+      "weighted_records": 0.25
+    },
+    "general_short": {
+      "cap_would_bind": true,
+      "configured_cap": 0.01,
+      "records": 304,
+      "unconstrained_weighted_share": 0.014714708900462739,
+      "weighted_records": 76.0
+    },
+    "general_stat_heavy_list": {
+      "cap_would_bind": false,
+      "configured_cap": 0.01,
+      "records": 1,
+      "unconstrained_weighted_share": 4.840364769889059e-05,
+      "weighted_records": 0.25
+    },
+    "general_structured_low_prose": {
+      "cap_would_bind": false,
+      "configured_cap": 0.02,
+      "records": 26,
+      "unconstrained_weighted_share": 0.0012584948401711553,
+      "weighted_records": 6.5
+    },
+    "general_table_salvage": {
+      "cap_would_bind": false,
+      "configured_cap": 0.01,
+      "records": 84,
+      "unconstrained_weighted_share": 0.00406590640670681,
+      "weighted_records": 21.0
+    }
+  },
+  "policy_id": "wikipedia-general-quality-v3",
+  "population": {
+    "band_counts": {
+      "B0": 820,
+      "B1": 1,
+      "B2": 1328,
+      "B3": 1611,
+      "B4": 1423
+    },
+    "boundary_counts": {
+      "line": 9,
+      "paragraph": 5174
+    },
+    "records": 5183,
+    "weighted_records": 5164.9
+  },
+  "purpose": "Human validation gate before adapting quality rules to other lanes",
+  "review_rubric": {
+    "boolean_fields": [
+      "meaningful_language",
+      "coherent_and_complete",
+      "band_agrees",
+      "cap_group_agrees",
+      "pii_safe",
+      "boundary_clean"
+    ],
+    "decision_values": [
+      "keep",
+      "downweight",
+      "reject"
+    ],
+    "instruction": "Review text, not just numeric signals. Record disagreements and revise rules only after patterns recur."
+  },
+  "sample_count": 62,
+  "samples": [
+    {
+      "band": "B0",
+      "chunk_count": 3,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 2,
+      "flags": [
+        "category_tail",
+        "short_continuation_chunk"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "410649",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_4e5c950ad8c84349677fea8a",
+      "sample_id": "band_B0:rec_4e5c950ad8c84349677fea8a",
+      "sampling_cap_groups": [
+        "general_category_tail"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8831168831168831,
+        "character_entropy_bits": 4.334732567051937,
+        "characters": 77,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.0,
+        "words": 9
+      },
+      "stratum": "band_B0",
+      "text_end_preview": "Caning BDSM activities Corporal punishments School punishments Whipping Pain",
+      "text_preview": "Caning BDSM activities Corporal punishments School punishments Whipping Pain",
+      "text_start_preview": "Caning BDSM activities Corporal punishments School punishments Whipping Pain",
+      "title": "Caning"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "66355430",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_86e75c50eb631b0dbcb0be3a",
+      "sample_id": "band_B0:rec_86e75c50eb631b0dbcb0be3a",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8128491620111732,
+        "character_entropy_bits": 4.548519863304179,
+        "characters": 358,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 5,
+        "repeated_trigram_fraction": 0.019230769230769273,
+        "words": 54
+      },
+      "stratum": "band_B0",
+      "text_end_preview": "Geech Yarborough Geech Yarborough was an American baseball catcher and pitcher in the Negro leagues. He played with the Atlanta Black Crackers in 1932 and the Newark Eagles in 1940. References External links and Seamheads Atlanta Black Crackers players Newark Eagles players Year of birth missing Year of death missing Baseball pitchers Baseball catchers",
+      "text_preview": "Geech Yarborough Geech Yarborough was an American baseball catcher and pitcher in the Negro leagues. He played with the Atlanta Black Crackers in 1932 and the Newark Eagles in 1940. References External links and Seamheads Atlanta Black Crackers players Newark Eagles players Year of birth missing Year of death missing Baseball pitchers Baseball catchers",
+      "text_start_preview": "Geech Yarborough Geech Yarborough was an American baseball catcher and pitcher in the Negro leagues. He played with the Atlanta Black Crackers in 1932 and the Newark Eagles in 1940. References External links and Seamheads Atlanta Black Crackers players Newark Eagles players Year of birth missing Year of death missing Baseball pitchers Baseball catchers",
+      "title": "Geech Yarborough"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "30578551",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_3eb114f7aeb875dfed808120",
+      "sample_id": "band_B0:rec_3eb114f7aeb875dfed808120",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.6151832460732984,
+        "character_entropy_bits": 5.126701090135698,
+        "characters": 764,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 5,
+        "repeated_trigram_fraction": 0.04958677685950408,
+        "words": 123
+      },
+      "stratum": "band_B0",
+      "text_end_preview": "…he list of ambassadors from Guinea to the United States: Diallo Telli (1959–61) Conté Seydou (1961–68) Karim Bangoura (1969–71) Keita Mory (1971–72) Touré Sadam Moussa (1972–74) Bah Habib (1974–76) Kouroma Daouda (1977) Camara Ibrahima (1977–79) Condé Mohamed Laminé (1979–83) Diallo Thierno Habib (1983–84) Beavogui Tollo (1984–88) Camara Kékoura (1988–90) Sangaré Moussa (1990–93) Barry Boubacar (1993–96) Thiam Mohamed Aly (1996–2001) Barry Rafiou Alpha Oumar (2002-) Blaise chérif (2011 - 2014) Mamady Condé (2014-2017) Kerfalla Yansané (2017-2022 Fatoumata Kaba (2022- ) References United States of America, Ambassadors from Guinea to Guinea es:Anexo:Embajadores de Guinea en los Estados Unidos",
+      "text_preview": "List of ambassadors of Guinea to the United States Below is the list of ambassadors from Guinea to the United States: Diallo Telli (1959–61) Conté Seydou (1961–68) Karim Bangoura (1969–71) Keita Mory (1971–72) Touré Sadam Moussa (1972–74) Bah Habib (1974–76) Kouroma Daouda (1977) Camara Ibrahima (1977–79) Condé Mohamed Laminé (1979–83) Diallo Thierno Habib (1983–84) Beavogui Tollo (1984–88) Camara Kékoura (1988–90) Sangaré Moussa (1990–93) Barry Boubacar (1993–96) Thiam Mohamed Aly (1996–2001) Barry Rafiou Alpha Oumar (2002-) Blaise chérif (2011 - 2014) Mamady Condé (2014-2017) Kerfalla Yansané (2017-2022 Fatoumata Kaba (2022- ) References United States of America, Ambassadors from Guinea t…",
+      "text_start_preview": "List of ambassadors of Guinea to the United States Below is the list of ambassadors from Guinea to the United States: Diallo Telli (1959–61) Conté Seydou (1961–68) Karim Bangoura (1969–71) Keita Mory (1971–72) Touré Sadam Moussa (1972–74) Bah Habib (1974–76) Kouroma Daouda (1977) Camara Ibrahima (1977–79) Condé Mohamed Laminé (1979–83) Diallo Thierno Habib (1983–84) Beavogui Tollo (1984–88) Camara Kékoura (1988–90) Sangaré Moussa (1990–93) Barry Boubacar (1993–96) Thiam Mohamed Aly (1996–2001) Barry Rafiou Alpha Oumar (2002-) Blaise chérif (2011 - 2014) Mamady Condé (2014-2017) Kerfalla Yansané (2017-2022 Fatoumata Kaba (2022- ) References United States of America, Ambassadors from Guinea t…",
+      "title": "List of ambassadors of Guinea to the United States"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 3,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 2,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1271989",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_ca8aaedd70dc3cd7087fb1e8",
+      "sample_id": "band_B0:rec_ca8aaedd70dc3cd7087fb1e8",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7495009980039921,
+        "character_entropy_bits": 4.995081058619342,
+        "characters": 3006,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 10,
+        "repeated_trigram_fraction": 0.202020202020202,
+        "words": 497
+      },
+      "stratum": "band_B0",
+      "text_end_preview": "…iversity alumni Russian military personnel of World War I Military leaders of the Russian Empire Emigrants from the Russian Empire to Italy Recipients of the Order of St. George of the Second Degree Recipients of the Order of St. George of the Third Degree Grand Cross of the Legion of Honour Grand Crosses of the Order of Saint Stephen of Hungary 19th-century people from the Russian Empire Emigrants from the Russian Empire to France Anti-communists from the Russian Empire Monarchists from the Russian Empire Pretenders to the Russian throne Burials at Bratsky Cemetery, Moscow World War I crimes by the Russian Empire Military personnel from Saint Petersburg Russian mass murderers War criminals",
+      "text_preview": "Grand Duke Nicholas Nikolaevich of Russia (1856–1929) Foreign Knight of the Order of the Most Holy Annunciation (Kingdom of Italy) – 18 June 1890 – during a visit to Russia of King Victor Emmanuel III Knight of the Order of the Elephant (Denmark) – 19 July 1909 Grand Cross of the Order of the Redeemer (Kingdom of Greece) Grand Cross of the Ludwig Order (Grand Duchy of Hesse and by Rhine) – 10 March 1886 Grand Cross of the House Order of the Wendish Crown (Mecklenburg) Grand Cross of the Order of Danilo I (Principality of Montenegro) Grand Cross of the House and Merit Order of Peter Frederick Louis, with Golden Crown (Grand Duchy of Oldenburg) – 7 December 1856 Knight of the Order of the Bla…",
+      "text_start_preview": "Grand Duke Nicholas Nikolaevich of Russia (1856–1929) Foreign Knight of the Order of the Most Holy Annunciation (Kingdom of Italy) – 18 June 1890 – during a visit to Russia of King Victor Emmanuel III Knight of the Order of the Elephant (Denmark) – 19 July 1909 Grand Cross of the Order of the Redeemer (Kingdom of Greece) Grand Cross of the Ludwig Order (Grand Duchy of Hesse and by Rhine) – 10 March 1886 Grand Cross of the House Order of the Wendish Crown (Mecklenburg) Grand Cross of the Order of Danilo I (Principality of Montenegro) Grand Cross of the House and Merit Order of Peter Frederick Louis, with Golden Crown (Grand Duchy of Oldenburg) – 7 December 1856 Knight of the Order of the Bla…",
+      "title": "Grand Duke Nicholas Nikolaevich of Russia (1856–1929)"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 2,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "8155510",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_b31f126054d03adf1e205d4b",
+      "sample_id": "band_B0:rec_b31f126054d03adf1e205d4b",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8257064266066516,
+        "character_entropy_bits": 4.765164340927166,
+        "characters": 7998,
+        "duplicate_line_fraction": 0.015765765765765764,
+        "list_line_fraction": 0.0,
+        "paragraphs": 44,
+        "repeated_trigram_fraction": 0.014516129032258074,
+        "words": 1242
+      },
+      "stratum": "band_B0",
+      "text_end_preview": "…i Cheb Faris El Sataifi Spain Hakim (Spanish singer) Greece Grigoris Asikis Konstantinos Argyros Yiorgos Batis George Dalaras Anestis Delias Stratos Pagioumtzis Giorgos Xylouris Babis Tsertos Mariza Koch United Kingdom Yusuf Islam Sami Yusuf Iran Evin Agassi Nematollah Aghasi Hooshmand Aghili Salar Aghili Morteza Ahmadi Alireza Assar Davood Azad Mohsen Chavoshi Farman Fathalian Farzad Fattahi Babak Jahanbakhsh Shahrum Kashani Ehsan Khajeh Amiri Ali Lohrasbi Morteza Pashaei Rahim Shahriari Reza Yazdani Mohsen Yeganeh Sima Bina Leila Forouhar Googoosh Mahasti Marjan (singer) Giti Pashaei Israel Etti Ankri Zohra Al Fassiya Yael Naim Cyprus Hovig Demirjian See also Arabic music Arabic pop music",
+      "text_preview": "Khaliji (music) Khaliji music (also spelled Khaleeji; meaning Gulf music) is the music of Eastern Arabia, the Arab states of the Persian Gulf and it is popular across the Arab world. It is traditionally characterized by heavy use of the rebab, oud and other string instruments such as the violin, the occasional use of habbān, and the inclusion of percussion instruments such as the mirwas, tabl, and duff drums. Khaliji music first started as a bedouin tradition with poetry sung by a tribe's shaa'ir, which means poet, usually accompanied by a rebab, the lyrics dealt with tales of honor, love, camel riders, and glory warriors. Khaliji music has roots going back more than 1,000 years, to the Isl…",
+      "text_start_preview": "Khaliji (music) Khaliji music (also spelled Khaleeji; meaning Gulf music) is the music of Eastern Arabia, the Arab states of the Persian Gulf and it is popular across the Arab world. It is traditionally characterized by heavy use of the rebab, oud and other string instruments such as the violin, the occasional use of habbān, and the inclusion of percussion instruments such as the mirwas, tabl, and duff drums. Khaliji music first started as a bedouin tradition with poetry sung by a tribe's shaa'ir, which means poet, usually accompanied by a rebab, the lyrics dealt with tales of honor, love, camel riders, and glory warriors. Khaliji music has roots going back more than 1,000 years, to the Isl…",
+      "title": "Khaliji (music)"
+    },
+    {
+      "band": "B1",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "low_language_content"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "64826879",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_e0b755e0b8e7085261498ef7",
+      "sample_id": "band_B1:rec_e0b755e0b8e7085261498ef7",
+      "sampling_cap_groups": [],
+      "sampling_weight": 0.5,
+      "signals": {
+        "alpha_fraction": 0.4460674157303371,
+        "character_entropy_bits": 4.98998875354312,
+        "characters": 1780,
+        "duplicate_line_fraction": 0.0967741935483871,
+        "list_line_fraction": 0.0,
+        "paragraphs": 9,
+        "repeated_trigram_fraction": 0.16077170418006426,
+        "words": 313
+      },
+      "stratum": "band_B1",
+      "text_end_preview": "…Winners (1): 2014 Runners-up (1): 2004 Women Austrian Bundesliga Winners (20): 1948–49, 1957–58, 1978, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1992, 1998–99, 2002–03, 2011–12, 2012–13, 2013–14, 2014–15, 2015–16, 2016–17, 2017–18 Austrian Indoor Bundesliga Winners (21): 1958–59, 1980, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1992, 1997–98, 2009–10, 2010–11, 2011–12, 2013–14, 2014–15, 2015–16, 2016–17, 2017–18, 2018–19, 2019–20 EuroHockey Indoor Club Trophy Winners (3): 2011, 2015, 2019 EuroHockey Cup Winners Trophy Winners (1): 1992 References External links Field hockey clubs in Austria Field hockey clubs established in 1919 1919 establishments in Austria Sports clubs and teams in Vienna",
+      "text_preview": "SV Arminen Sportvereinigung Arminen Wien also known as SV Arminen or simply Arminen is an Austrian professional field hockey club based in Vienna. It competes in the Austrian Bundesliga which they have won a record 19 times in the men's competition. Their home ground is the Waldstadion and they were founded on 24 April 1919. The first men's team regularly plays in the Euro Hockey League. In the past, the club also had other sports but since 1938 they only have hockey. Honours Men Austrian Bundesliga Winners (20): 1945–46, 1946–47, 1947–48, 1948–49, 1950–51, 1952–53, 1976, 1980, 1983, 1985, 1986, 1987, 1988, 2012–13, 2013–14, 2015–16, 2016–17, 2017–18, 2018–19, 2021–22 EuroHockey Club Trophy…",
+      "text_start_preview": "SV Arminen Sportvereinigung Arminen Wien also known as SV Arminen or simply Arminen is an Austrian professional field hockey club based in Vienna. It competes in the Austrian Bundesliga which they have won a record 19 times in the men's competition. Their home ground is the Waldstadion and they were founded on 24 April 1919. The first men's team regularly plays in the Euro Hockey League. In the past, the club also had other sports but since 1938 they only have hockey. Honours Men Austrian Bundesliga Winners (20): 1945–46, 1946–47, 1947–48, 1948–49, 1950–51, 1952–53, 1976, 1980, 1983, 1985, 1986, 1987, 1988, 2012–13, 2013–14, 2015–16, 2016–17, 2017–18, 2018–19, 2021–22 EuroHockey Club Trophy…",
+      "title": "SV Arminen"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "38599742",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_0c516f94a4338e7367bf7f4e",
+      "sample_id": "band_B2:rec_0c516f94a4338e7367bf7f4e",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.795,
+        "character_entropy_bits": 4.7619151690323855,
+        "characters": 400,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 4,
+        "repeated_trigram_fraction": 0.0535714285714286,
+        "words": 58
+      },
+      "stratum": "band_B2",
+      "text_end_preview": "Siyavashabad-e Chendar Siyavashabad-e Chendar (, also Romanized as Sīyāvashābād-e Chendār) is a village in Doab Rural District, Bazoft District, Kuhrang County, Chaharmahal and Bakhtiari Province, Iran. At the 2006 census, its population was 169, in 30 families. The village is populated by Lurs. References Populated places in Kuhrang County Luri settlements in Chaharmahal and Bakhtiari Province",
+      "text_preview": "Siyavashabad-e Chendar Siyavashabad-e Chendar (, also Romanized as Sīyāvashābād-e Chendār) is a village in Doab Rural District, Bazoft District, Kuhrang County, Chaharmahal and Bakhtiari Province, Iran. At the 2006 census, its population was 169, in 30 families. The village is populated by Lurs. References Populated places in Kuhrang County Luri settlements in Chaharmahal and Bakhtiari Province",
+      "text_start_preview": "Siyavashabad-e Chendar Siyavashabad-e Chendar (, also Romanized as Sīyāvashābād-e Chendār) is a village in Doab Rural District, Bazoft District, Kuhrang County, Chaharmahal and Bakhtiari Province, Iran. At the 2006 census, its population was 169, in 30 families. The village is populated by Lurs. References Populated places in Kuhrang County Luri settlements in Chaharmahal and Bakhtiari Province",
+      "title": "Siyavashabad-e Chendar"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "36443519",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_a643d39aa6cd339d95652758",
+      "sample_id": "band_B2:rec_a643d39aa6cd339d95652758",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.7877094972067039,
+        "character_entropy_bits": 4.625875345692191,
+        "characters": 537,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 6,
+        "repeated_trigram_fraction": 0.07407407407407407,
+        "words": 83
+      },
+      "stratum": "band_B2",
+      "text_end_preview": "2011–12 Professional Hockey League season The 2011–12 Professional Hockey League season was the 20th annual edition of the Ukrainian Hockey Championship held in 2011–12. The season marked the first season of the Professional Hockey League and first time the national title was administered and awarded independently of the Ice Hockey Federation of Ukraine (FHU). Eight teams participated in the league, which was won by HC Donbass-2. Regular season Playoffs External links Official website Uk Professional Hockey League seasons Prof",
+      "text_preview": "2011–12 Professional Hockey League season The 2011–12 Professional Hockey League season was the 20th annual edition of the Ukrainian Hockey Championship held in 2011–12. The season marked the first season of the Professional Hockey League and first time the national title was administered and awarded independently of the Ice Hockey Federation of Ukraine (FHU). Eight teams participated in the league, which was won by HC Donbass-2. Regular season Playoffs External links Official website Uk Professional Hockey League seasons Prof",
+      "text_start_preview": "2011–12 Professional Hockey League season The 2011–12 Professional Hockey League season was the 20th annual edition of the Ukrainian Hockey Championship held in 2011–12. The season marked the first season of the Professional Hockey League and first time the national title was administered and awarded independently of the Ice Hockey Federation of Ukraine (FHU). Eight teams participated in the league, which was won by HC Donbass-2. Regular season Playoffs External links Official website Uk Professional Hockey League seasons Prof",
+      "title": "2011–12 Professional Hockey League season"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "66354404",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_423db6352852a5adc9a9262c",
+      "sample_id": "band_B2:rec_423db6352852a5adc9a9262c",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.7727910238429172,
+        "character_entropy_bits": 4.655305372605436,
+        "characters": 713,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 6,
+        "repeated_trigram_fraction": 0.02970297029702973,
+        "words": 103
+      },
+      "stratum": "band_B2",
+      "text_end_preview": "…Girls' School Mbereshi Girls' School was a mission boarding school at Mbereshi. As \"the earliest girls' school in Northern Rhodesia ... this school gained an international reputation.\" Mbereshi Girls' Boarding School was founded by the missionary Mabel Shaw in 1915, and Shaw served as its Principal until 1940. In 1946 the school was combined with the boy's boarding school to form a new coeducational institution. Alumni Betty Kaunda (1928-2012), First Lady of Zambia References Girls' schools in Zambia Educational institutions established in 1915 Boarding schools in Zambia 1915 establishments in Northern Rhodesia 1946 disestablishments in Africa Educational institutions disestablished in 1946",
+      "text_preview": "Mbereshi Girls' School Mbereshi Girls' School was a mission boarding school at Mbereshi. As \"the earliest girls' school in Northern Rhodesia ... this school gained an international reputation.\" Mbereshi Girls' Boarding School was founded by the missionary Mabel Shaw in 1915, and Shaw served as its Principal until 1940. In 1946 the school was combined with the boy's boarding school to form a new coeducational institution. Alumni Betty Kaunda (1928-2012), First Lady of Zambia References Girls' schools in Zambia Educational institutions established in 1915 Boarding schools in Zambia 1915 establishments in Northern Rhodesia 1946 disestablishments in Africa Educational institutions disestablishe…",
+      "text_start_preview": "Mbereshi Girls' School Mbereshi Girls' School was a mission boarding school at Mbereshi. As \"the earliest girls' school in Northern Rhodesia ... this school gained an international reputation.\" Mbereshi Girls' Boarding School was founded by the missionary Mabel Shaw in 1915, and Shaw served as its Principal until 1940. In 1946 the school was combined with the boy's boarding school to form a new coeducational institution. Alumni Betty Kaunda (1928-2012), First Lady of Zambia References Girls' schools in Zambia Educational institutions established in 1915 Boarding schools in Zambia 1915 establishments in Northern Rhodesia 1946 disestablishments in Africa Educational institutions disestablishe…",
+      "title": "Mbereshi Girls' School"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "59634148",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_eae058dd849b13ab78da04fb",
+      "sample_id": "band_B2:rec_eae058dd849b13ab78da04fb",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.75,
+        "character_entropy_bits": 4.790101574908648,
+        "characters": 928,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 9,
+        "repeated_trigram_fraction": 0.034965034965035,
+        "words": 145
+      },
+      "stratum": "band_B2",
+      "text_end_preview": "…launch of Weichai Motors' Weichai Automobile Co., Ltd. The path of exploration and innovation in the light vehicle market. Production started in the second half of 2014 in an individual facility in Chongqing. Initial capacity was 100,000 cars per year which was planned to later be expanded to 300,000 annually. Models Current Enranger products include the following: Enranger 727 - compact MPV (lower trim level of the 737) Enranger 737 - compact MPV (codenamed M301) Enranger 737 EV - electric compact MPV Enranger EX1 - mini crossover Enranger G5 - compact crossover based on the 737 Enranger P80 - pickup truck Former Enranger G3 - subcompact crossover (code named S201) References Weichai Group",
+      "text_preview": "Enranger The \"Enranger\" () is the first brand created by Weichai in the light vehicle business field. So far, Weichai's products in the light vehicle field will be under the \"Yingzhi\" brand, which also marks the official launch of Weichai Motors' Weichai Automobile Co., Ltd. The path of exploration and innovation in the light vehicle market. Production started in the second half of 2014 in an individual facility in Chongqing. Initial capacity was 100,000 cars per year which was planned to later be expanded to 300,000 annually. Models Current Enranger products include the following: Enranger 727 - compact MPV (lower trim level of the 737) Enranger 737 - compact MPV (codenamed M301) Enranger…",
+      "text_start_preview": "Enranger The \"Enranger\" () is the first brand created by Weichai in the light vehicle business field. So far, Weichai's products in the light vehicle field will be under the \"Yingzhi\" brand, which also marks the official launch of Weichai Motors' Weichai Automobile Co., Ltd. The path of exploration and innovation in the light vehicle market. Production started in the second half of 2014 in an individual facility in Chongqing. Initial capacity was 100,000 cars per year which was planned to later be expanded to 300,000 annually. Models Current Enranger products include the following: Enranger 727 - compact MPV (lower trim level of the 737) Enranger 737 - compact MPV (codenamed M301) Enranger…",
+      "title": "Enranger"
+    },
+    {
+      "band": "B2",
+      "chunk_count": 4,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 1,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "8156602",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_eba81e0ce96ca6691b222539",
+      "sample_id": "band_B2:rec_eba81e0ce96ca6691b222539",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.0,
+      "signals": {
+        "alpha_fraction": 0.7617307692307692,
+        "character_entropy_bits": 4.700291883343263,
+        "characters": 5200,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.04416761041902606,
+        "words": 885
+      },
+      "stratum": "band_B2",
+      "text_end_preview": "…f Suriagehara and Battle of Koriyama. 1587: Catharina Rose commands a women's battalion at the Spanish siege of Sluis in Flanders. 1587: An unnamed woman served in the guise of a man in the Dutch army. 1589: Maria Pita aids in the defence of Corunna against the English armada. 1589: An unnamed woman served in the guise of a man in the Dutch army. 1590: Kaihime led 200 cavalry men in the Siege of Oshi against the Toyotomi clan in the Odawara campaign. 1590: Françoise de Cezelli defeats the Spanish army during the battle of Leucate 1595: Indian Queen Chand Bibi fights the Mughals. 1597: Ebba Stenbock leads the defense of the Turku Castle in Finland after the death of its governor, her spouse.",
+      "text_preview": "Women in warfare (1500–1699) 1550–1599 1546: Second Siege of Diu. Isabel Madeira (captain), Catarina Lopes, Garcia Rodrigues, Isabel Fernandes, and Isabel Dias, formed a group of female combatants who fought in front of the battle against the Turks. 1550s: Siena, Italy falls under siege. Every able citizen was mobilized in the effort to build fortifications, and Laudomia Forteguerri leads a group of 1,000 noble and artisan women to aid in the construction. 1555: Zhuang Chinese woman Wa Shi leads troops into battle on behalf of the Ming Dynasty. 1557: Wa Shi leads over 6000 Zhuang infantry against pirates and successfully defeated them at Wangjiangjing (north of modern Jiaxing). She personal…",
+      "text_start_preview": "Women in warfare (1500–1699) 1550–1599 1546: Second Siege of Diu. Isabel Madeira (captain), Catarina Lopes, Garcia Rodrigues, Isabel Fernandes, and Isabel Dias, formed a group of female combatants who fought in front of the battle against the Turks. 1550s: Siena, Italy falls under siege. Every able citizen was mobilized in the effort to build fortifications, and Laudomia Forteguerri leads a group of 1,000 noble and artisan women to aid in the construction. 1555: Zhuang Chinese woman Wa Shi leads troops into battle on behalf of the Ming Dynasty. 1557: Wa Shi leads over 6000 Zhuang infantry against pirates and successfully defeated them at Wangjiangjing (north of modern Jiaxing). She personal…",
+      "title": "Women in warfare (1500–1699)"
+    },
+    {
+      "band": "B3",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1646558",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_8b494487569d6b97f95fcf3e",
+      "sample_id": "band_B3:rec_8b494487569d6b97f95fcf3e",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.15,
+      "signals": {
+        "alpha_fraction": 0.7983333333333333,
+        "character_entropy_bits": 4.619236461112706,
+        "characters": 1200,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 7,
+        "repeated_trigram_fraction": 0.03804347826086951,
+        "words": 186
+      },
+      "stratum": "band_B3",
+      "text_end_preview": "…ment of Society for Peace (MSP) Said Sadi, candidate of the secularist Rally for Culture and Democracy Noureddine Boukrouh, candidate of the Party of Algerian Renewal (PRA) Conduct Delegations of observers came from the Arab League, the African Union, and the United Nations, and reported no major problems. The Armed Islamic Group had threatened to kill voters, but the elections passed with few attacks. Voter turnout was high, despite the three largest parties of the 1991 parliamentary elections (the Islamic Salvation Front, National Liberation Front and Socialist Forces Front) calling for a boycott. Results References Algerian Civil War Presidential elections in Algeria Presidential Algeria",
+      "text_preview": "1995 Algerian presidential election Presidential elections were held in Algeria on 16 November 1995, in the midst of the Algerian Civil War. The result was a victory for Liamine Zeroual, head of the High Council of State at the time, who won 61% of the vote. The Armed Islamic Group of Algeria threatened to kill anyone who voted, with the slogan \"one vote, one bullet\", but official voter turnout was 74.9%. Candidates Liamine Zeroual, independent Mahfoud Nahnah, candidate of the Islamist Movement of Society for Peace (MSP) Said Sadi, candidate of the secularist Rally for Culture and Democracy Noureddine Boukrouh, candidate of the Party of Algerian Renewal (PRA) Conduct Delegations of observer…",
+      "text_start_preview": "1995 Algerian presidential election Presidential elections were held in Algeria on 16 November 1995, in the midst of the Algerian Civil War. The result was a victory for Liamine Zeroual, head of the High Council of State at the time, who won 61% of the vote. The Armed Islamic Group of Algeria threatened to kill anyone who voted, with the slogan \"one vote, one bullet\", but official voter turnout was 74.9%. Candidates Liamine Zeroual, independent Mahfoud Nahnah, candidate of the Islamist Movement of Society for Peace (MSP) Said Sadi, candidate of the secularist Rally for Culture and Democracy Noureddine Boukrouh, candidate of the Party of Algerian Renewal (PRA) Conduct Delegations of observer…",
+      "title": "1995 Algerian presidential election"
+    },
+    {
+      "band": "B3",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "59449764",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_ed5c0a7706e1c08a0d270f3b",
+      "sample_id": "band_B3:rec_ed5c0a7706e1c08a0d270f3b",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.15,
+      "signals": {
+        "alpha_fraction": 0.7979493365500603,
+        "character_entropy_bits": 4.722950646930648,
+        "characters": 1658,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 10,
+        "repeated_trigram_fraction": 0.12075471698113205,
+        "words": 267
+      },
+      "stratum": "band_B3",
+      "text_end_preview": "…view with The European Skeptics Podcast, Jay Novella described their approach to writing the book from the \"point of view of an alien species observing the earth from a skeptical perspective using critical thinking,\" reminiscent of the book's namesake The Hitchhiker's Guide to the Galaxy by Douglas Adams. Reception The book received a favorable review from Kirkus Reviews and was a USA Today bestseller. Publishers Weekly reviewed the book, stating: The book was also reviewed by Rob Palmer for Skeptical Inquirer, who wrote: Author gallery References 2018 non-fiction books English-language books Science books Scientific skepticism Scientific skepticism mass media Grand Central Publishing books",
+      "text_preview": "The Skeptics' Guide to the Universe (book) The Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake is a 2018 book meant to be an all-encompassing guide to skeptical thinking written by Steven Novella and co-authored by other hosts of The Skeptics' Guide to the Universe podcastBob Novella, Cara Santa Maria, Jay Novella, and Evan Bernstein. It also contains material from former co-host Perry DeAngelis. About In 2017, Skeptical Inquirer reported that The Skeptics' Guide to the Universe was under development with an expected release in 2018. It became available for pre-order in early 2018, and was released by Grand Central Publishing on October 2…",
+      "text_start_preview": "The Skeptics' Guide to the Universe (book) The Skeptics' Guide to the Universe: How to Know What's Really Real in a World Increasingly Full of Fake is a 2018 book meant to be an all-encompassing guide to skeptical thinking written by Steven Novella and co-authored by other hosts of The Skeptics' Guide to the Universe podcastBob Novella, Cara Santa Maria, Jay Novella, and Evan Bernstein. It also contains material from former co-host Perry DeAngelis. About In 2017, Skeptical Inquirer reported that The Skeptics' Guide to the Universe was under development with an expected release in 2018. It became available for pre-order in early 2018, and was released by Grand Central Publishing on October 2…",
+      "title": "The Skeptics' Guide to the Universe (book)"
+    },
+    {
+      "band": "B3",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65218936",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_6d398a4c67ea06ede18f06da",
+      "sample_id": "band_B3:rec_6d398a4c67ea06ede18f06da",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.15,
+      "signals": {
+        "alpha_fraction": 0.7689480937069362,
+        "character_entropy_bits": 4.724057277151311,
+        "characters": 2177,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 15,
+        "repeated_trigram_fraction": 0.07202216066481992,
+        "words": 363
+      },
+      "stratum": "band_B3",
+      "text_end_preview": "…a Balika Vidyalaya is a Bengali-medium girls only institution established in 1971. The school has facilities for teaching from class V to class XII. It has a library with 534 books and 4 computers. Culture David J. McCutchion mentions: The Gopinath temple of the Mukherjee family as standard West Bengal type pancha-ratna, brick temple with terracotta, built in 1805 The Sridhara temple of the Mukherjee family as a flat roofed or chandni type, with terracotta and stucco work The Radha-Govinda temple as a smooth rekha deul with a porch having low-founded pyramidal roof, built in 1860, having rich terracotta. Laoada picture gallery References External links Villages in Paschim Medinipur district",
+      "text_preview": "Loyada, Paschim Medinipur Loyada (also spelled Lowada) is a village in the Debra CD block in the Kharagpur subdivision of the Paschim Medinipur district in the state of West Bengal, India. Geography Location Lowada is located at . Area overview Kharagpur subdivision, shown partly in the map alongside, mostly has alluvial soils, except in two CD blocks in the west – Kharagpur I and Keshiary, which mostly have lateritic soils. Around 74% of the total cultivated area is cropped more than once. With a density of population of 787 per km2nearly half of the district's population resides in this subdivision. 14.33% of the population lives in urban areas and 86.67% lives in the rural areas. Note: T…",
+      "text_start_preview": "Loyada, Paschim Medinipur Loyada (also spelled Lowada) is a village in the Debra CD block in the Kharagpur subdivision of the Paschim Medinipur district in the state of West Bengal, India. Geography Location Lowada is located at . Area overview Kharagpur subdivision, shown partly in the map alongside, mostly has alluvial soils, except in two CD blocks in the west – Kharagpur I and Keshiary, which mostly have lateritic soils. Around 74% of the total cultivated area is cropped more than once. With a density of population of 787 per km2nearly half of the district's population resides in this subdivision. 14.33% of the population lives in urban areas and 86.67% lives in the rural areas. Note: T…",
+      "title": "Loyada, Paschim Medinipur"
+    },
+    {
+      "band": "B3",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "19692008",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_9ffdfc5718a7a4b91cae894d",
+      "sample_id": "band_B3:rec_9ffdfc5718a7a4b91cae894d",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.15,
+      "signals": {
+        "alpha_fraction": 0.8035895699288859,
+        "character_entropy_bits": 4.472091551237254,
+        "characters": 2953,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 8,
+        "repeated_trigram_fraction": 0.04474708171206221,
+        "words": 516
+      },
+      "stratum": "band_B3",
+      "text_end_preview": "…Life begins to improve and Norah accepts Canada as her temporary home for the duration of the war. Title meaning The title of The Sky is Falling comes from a child's misinterpretation of the Blitz. Early in the novel, Norah and Gavin are listening to stories with other evacuees. The group hears the story of The Sky is Falling (Chicken Little), about a chicken who believed the sky was falling. A young evacuee states that is what was happening in England. References 1989 Canadian novels Children's historical novels Canadian children's novels Canadian young adult novels Novels set in Toronto Novels set during World War II Children's books set in Toronto Children's books set during World War II",
+      "text_preview": "The Sky Is Falling (Pearson novel) The Sky is Falling is a 1989 young adult novel by Kit Pearson. It is the first novel in the Guests of War trilogy, which follows the lives of Norah and Gavin Stoakes after they are evacuated from England to Canada during World War II. The novel won the Canadian Library Association Book of the Year Award for Children and the Geoffrey Bilson Award (for best Canadian work of historical fiction written for youth). Plot summary Norah and Gavin Stoakes live in a peaceful English village until World War II causes them to be evacuated to Toronto. Norah, an independent ten-year-old, is angry with the evacuation and resents having to care for Gavin. Five-year-old Ga…",
+      "text_start_preview": "The Sky Is Falling (Pearson novel) The Sky is Falling is a 1989 young adult novel by Kit Pearson. It is the first novel in the Guests of War trilogy, which follows the lives of Norah and Gavin Stoakes after they are evacuated from England to Canada during World War II. The novel won the Canadian Library Association Book of the Year Award for Children and the Geoffrey Bilson Award (for best Canadian work of historical fiction written for youth). Plot summary Norah and Gavin Stoakes live in a peaceful English village until World War II causes them to be evacuated to Toronto. Norah, an independent ten-year-old, is angry with the evacuation and resents having to care for Gavin. Five-year-old Ga…",
+      "title": "The Sky Is Falling (Pearson novel)"
+    },
+    {
+      "band": "B3",
+      "chunk_count": 7,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 2,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "69088",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_69a1314bf58264a256ff275c",
+      "sample_id": "band_B3:rec_69a1314bf58264a256ff275c",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.15,
+      "signals": {
+        "alpha_fraction": 0.7989026413168304,
+        "character_entropy_bits": 4.566898307202816,
+        "characters": 7837,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 5,
+        "repeated_trigram_fraction": 0.010695187165775444,
+        "words": 1311
+      },
+      "stratum": "band_B3",
+      "text_end_preview": "…mander McBragg\", short features on revisionist history as the title character would have imagined it; this was actually prepared for Tennessee Tuxedo and His Tales (and later shown on The Underdog Show). Although the shorts were animated by the same animation company, Gamma Productions, they were produced for Total Television, rather than Ward Productions. These segments were packaged with pre-1990 syndicated versions of The Bullwinkle Show and appear in syndicated episodes of The Underdog Show, Dudley Do Right and Friends, and Uncle Waldo's Cartoon Show. Since 1990, this feature has been divorced from the Bullwinkleverse, and it has never been included in Bullwinkle home videos. Voice cast",
+      "text_preview": "The Adventures of Rocky and Bullwinkle and Friends Episodes were introduced with one of four opening sequences: Rocky flies about snow-covered mountains. Below him, hiking on a snowy trail, Bullwinkle is distracted by a billboard featuring his name, and walks off a ledge. He becomes a large snowball as he rolls downhill. Rocky flies to him and pushes against the snowball, slowing it to a halt at the edge of another cliff. Bullwinkle pops out of the snowball to catch the teetering squirrel at the cliff edge. In a circus, Rocky is preparing to jump from a high diving board into a tub of water tended by Bullwinkle. However, when Rocky jumps, he ends up flying around the circus tent, while Bull…",
+      "text_start_preview": "The Adventures of Rocky and Bullwinkle and Friends Episodes were introduced with one of four opening sequences: Rocky flies about snow-covered mountains. Below him, hiking on a snowy trail, Bullwinkle is distracted by a billboard featuring his name, and walks off a ledge. He becomes a large snowball as he rolls downhill. Rocky flies to him and pushes against the snowball, slowing it to a halt at the edge of another cliff. Bullwinkle pops out of the snowball to catch the teetering squirrel at the cliff edge. In a circus, Rocky is preparing to jump from a high diving board into a tub of water tended by Bullwinkle. However, when Rocky jumps, he ends up flying around the circus tent, while Bull…",
+      "title": "The Adventures of Rocky and Bullwinkle and Friends"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1930350",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_c113cc567a6b3d06f85a69a4",
+      "sample_id": "band_B4:rec_c113cc567a6b3d06f85a69a4",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.8297925518620345,
+        "character_entropy_bits": 4.546551316892625,
+        "characters": 4001,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 14,
+        "repeated_trigram_fraction": 0.07829181494661919,
+        "words": 564
+      },
+      "stratum": "band_B4",
+      "text_end_preview": "…State Board of Education Professional Standards and Practices Commission Office of Food and Nutrition Programs Special Education Advisory Panel State Boards of Private Schools Power Library Power Library is the online portal to Pennsylvania libraries, a service of the Office of Commonwealth Libraries, Pennsylvania Department of Education. Secretaries of Education See also List of Pennsylvania state agencies State education agency References External links Official website 1837 establishments in Pennsylvania Educational administration Government agencies established in 1837 Education, Department of Department State agencies of Pennsylvania State departments of education of the United States",
+      "text_preview": "Pennsylvania Department of Education The Pennsylvania Department of Education is the executive department of the state charged with publicly funded preschool, K-12 and adult educational budgeting, management and guidelines. As the state education agency, its activities are directed by the governor appointed Pennsylvania's Secretary of Education. The agency is headquartered at 333 Market Street in Harrisburg. The Pennsylvania Department of Education oversees 500 public school districts of Pennsylvania, over 170 public charter schools (2019), Career and Technology Centers/Vocational Technical schools, 29 Intermediate Units, the education of youth in State Juvenile Correctional Institutions, a…",
+      "text_start_preview": "Pennsylvania Department of Education The Pennsylvania Department of Education is the executive department of the state charged with publicly funded preschool, K-12 and adult educational budgeting, management and guidelines. As the state education agency, its activities are directed by the governor appointed Pennsylvania's Secretary of Education. The agency is headquartered at 333 Market Street in Harrisburg. The Pennsylvania Department of Education oversees 500 public school districts of Pennsylvania, over 170 public charter schools (2019), Career and Technology Centers/Vocational Technical schools, 29 Intermediate Units, the education of youth in State Juvenile Correctional Institutions, a…",
+      "title": "Pennsylvania Department of Education"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "34630637",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_82800971f33165a4dca3a291",
+      "sample_id": "band_B4:rec_82800971f33165a4dca3a291",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.7833333333333333,
+        "character_entropy_bits": 4.697598612940533,
+        "characters": 5580,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 15,
+        "repeated_trigram_fraction": 0.05366922234392113,
+        "words": 915
+      },
+      "stratum": "band_B4",
+      "text_end_preview": "…ls: An Unconventional History of the New York Zoological Society. New York: Harper & Row, 1974. \"Bring 'Em Up Alive\" [series]. New York World-Telegram, June 1940. Crandall, Lee S. \"W. Reid Blair. In Memoriam.\" Animal Kingdom 52.2 (1949): 59-60. Leister, Claude W. Present Day Mammals. New York: New York Zoological Society, 1931. References External links Blair collection finding aid for collection held by the Wildlife Conservation Society Archives 1875 births 1949 deaths Physicians from Philadelphia McGill University alumni American zoologists American veterinarians Male veterinarians United States Army personnel of World War I United States Army officers Wildlife Conservation Society people",
+      "text_preview": "W. Reid Blair William Reid Blair, DVS (June 7, 1875March 3, 1949), better known as W. Reid Blair, worked at the New York Zoological Park (managed by the New York Zoological Society, now the Wildlife Conservation Society) from 1902 to 1940. He began as Assistant Veterinarian and Pathologist and retired from the Zoo as its Director. During his 38-year career at the Zoo, he implemented many advancements in the care of captive animals, and he focused on the educational capacity of zoos. Additionally, it was Dr. Blair who relaxed the insistence of William T. Hornaday, the Zoo's first director, on the use of the formal name \"New York Zoological Park\" in favor of the more familiar \"Bronx Zoo.\" Ear…",
+      "text_start_preview": "W. Reid Blair William Reid Blair, DVS (June 7, 1875March 3, 1949), better known as W. Reid Blair, worked at the New York Zoological Park (managed by the New York Zoological Society, now the Wildlife Conservation Society) from 1902 to 1940. He began as Assistant Veterinarian and Pathologist and retired from the Zoo as its Director. During his 38-year career at the Zoo, he implemented many advancements in the care of captive animals, and he focused on the educational capacity of zoos. Additionally, it was Dr. Blair who relaxed the insistence of William T. Hornaday, the Zoo's first director, on the use of the formal name \"New York Zoological Park\" in favor of the more familiar \"Bronx Zoo.\" Ear…",
+      "title": "W. Reid Blair"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1930254",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_373ea4b0073f3046b8fc04ba",
+      "sample_id": "band_B4:rec_373ea4b0073f3046b8fc04ba",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.7886859810517644,
+        "character_entropy_bits": 4.768344090566436,
+        "characters": 7283,
+        "duplicate_line_fraction": 0.057692307692307696,
+        "list_line_fraction": 0.0,
+        "paragraphs": 19,
+        "repeated_trigram_fraction": 0.047138047138047146,
+        "words": 1190
+      },
+      "stratum": "band_B4",
+      "text_end_preview": "…didates are interviewed by three voters and moderated by anchors and correspondents around a table. Episodes would be used as a part of that night's Nightline. In the first episode, Byron Pitts moderates Beto O’Rourke with the second episode being Linsey Davis moderating Senator Cory Booker. Guardians of the Amazon (February 2020) - a documentary regarding rainforest destruction, produced by the Nightline team. References Now Television channels and stations established in 2004 Television channels and stations established in 2018 Television networks in the United States Internet properties established in 2018 Internet television channels 24-hour television news channels in the United States",
+      "text_preview": "ABC News Live ABC News Live (a.k.a. ABCNL) is an American streaming video news channel for breaking news, live events, newscasts, and longer-form reports and documentaries operated by ABC News since 2018. The channel is available through various streaming device apps such as Roku, Hulu, YouTube TV, Sling TV, Pluto TV, Xumo, FuboTV, Haystack News, Samsung TV Plus, and the news division's other streaming platforms. Justin Dial is the senior executive director of ABC News Live. History As ABC News Now After having attempted a 20-minute online news program three times a week hosted by Sam Donaldson in 1999, ABC News launched a forerunner of ABC News Now (ABCNN) in March 2003. The service was fe…",
+      "text_start_preview": "ABC News Live ABC News Live (a.k.a. ABCNL) is an American streaming video news channel for breaking news, live events, newscasts, and longer-form reports and documentaries operated by ABC News since 2018. The channel is available through various streaming device apps such as Roku, Hulu, YouTube TV, Sling TV, Pluto TV, Xumo, FuboTV, Haystack News, Samsung TV Plus, and the news division's other streaming platforms. Justin Dial is the senior executive director of ABC News Live. History As ABC News Now After having attempted a 20-minute online news program three times a week hosted by Sam Donaldson in 1999, ABC News launched a forerunner of ABC News Now (ABCNN) in March 2003. The service was fe…",
+      "title": "ABC News Live"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 2,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "410712",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_605004799e60d1c47d5313dd",
+      "sample_id": "band_B4:rec_605004799e60d1c47d5313dd",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.8073796929428461,
+        "character_entropy_bits": 4.388115910225146,
+        "characters": 7751,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 28,
+        "repeated_trigram_fraction": 0.04344262295081969,
+        "words": 1222
+      },
+      "stratum": "band_B4",
+      "text_end_preview": "…However, an alternative Leibniz notation for higher order derivatives allows for this. This notation was, however, not used by Leibniz. In print he did not use multi-tiered notation nor numerical exponents (before 1695). To write for instance, he would write , as was common in his time. The square of a differential, as it might appear in an arc length formula for instance, was written as . However, Leibniz did use his notation as we would today use operators, namely he would write a second derivative as and a third derivative as . In 1695 Leibniz started to write and for and respectively, but l'Hôpital, in his textbook on calculus written around the same time, used Leibniz's original forms.",
+      "text_preview": "Leibniz's notation In calculus, Leibniz's notation, named in honor of the 17th-century German philosopher and mathematician Gottfried Wilhelm Leibniz, uses the symbols and to represent infinitely small (or infinitesimal) increments of and , respectively, just as and represent finite increments of and , respectively. Consider as a function of a variable , or = . If this is the case, then the derivative of with respect to , which later came to be viewed as the limit was, according to Leibniz, the quotient of an infinitesimal increment of by an infinitesimal increment of , or where the right hand side is Joseph-Louis Lagrange's notation for the derivative of at . The infinitesimal increments a…",
+      "text_start_preview": "Leibniz's notation In calculus, Leibniz's notation, named in honor of the 17th-century German philosopher and mathematician Gottfried Wilhelm Leibniz, uses the symbols and to represent infinitely small (or infinitesimal) increments of and , respectively, just as and represent finite increments of and , respectively. Consider as a function of a variable , or = . If this is the case, then the derivative of with respect to , which later came to be viewed as the limit was, according to Leibniz, the quotient of an infinitesimal increment of by an infinitesimal increment of , or where the right hand side is Joseph-Louis Lagrange's notation for the derivative of at . The infinitesimal increments a…",
+      "title": "Leibniz's notation"
+    },
+    {
+      "band": "B4",
+      "chunk_count": 2,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65813420",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_8537fe22c90a60af14ee0269",
+      "sample_id": "band_B4:rec_8537fe22c90a60af14ee0269",
+      "sampling_cap_groups": [],
+      "sampling_weight": 1.25,
+      "signals": {
+        "alpha_fraction": 0.789,
+        "character_entropy_bits": 4.589257057513592,
+        "characters": 8000,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 25,
+        "repeated_trigram_fraction": 0.059194948697711136,
+        "words": 1269
+      },
+      "stratum": "band_B4",
+      "text_end_preview": "…988–1989 Non-commissioned officers' training school, 1992–1995 Military Academy, Army, 2008–2009 USMC Command and Staff College, 2014–2015 United States Army War College. Authorship Kristoffersen wrote the book Jegerånden- Å lede i fred, krise og krig [ The Jäger spirit – to lead in peace, crisis and war] (2020). Awards and decorations Kristoffersen is one of Norway's most highly decorated soldiers still on active duty. He has received the following awards: Norwegian medals and awards Foreign decorations Other awards Personal life Kristoffersen lives with his wife Linn-Therece Johansen Kristoffersen and has four children from two former marriages. His interests include hunting and football.",
+      "text_preview": "Eirik Kristoffersen Eirik Johan Kristoffersen (born 3 April 1969) is a Norwegian Army General who serves as the head of the Norwegian Armed Forces. He is a former Chief of the Norwegian Army and Norwegian Home Guard, and Chief of the Armed Forces' Special Command (FSK). Kristoffersen is the first Norwegian Chief of Defence since World War II, with battle experience. He was awarded the War Cross with Sword in 2011 for his service in Afghanistan. Military career Kristoffersen enrolled in non-commissioned officers' in 1988 and served as squad leader in the Engineer Battalion. After a few months studying engineering in college, he returned to military service in 1989 and served as squad leader…",
+      "text_start_preview": "Eirik Kristoffersen Eirik Johan Kristoffersen (born 3 April 1969) is a Norwegian Army General who serves as the head of the Norwegian Armed Forces. He is a former Chief of the Norwegian Army and Norwegian Home Guard, and Chief of the Armed Forces' Special Command (FSK). Kristoffersen is the first Norwegian Chief of Defence since World War II, with battle experience. He was awarded the War Cross with Sword in 2011 for his service in Afghanistan. Military career Kristoffersen enrolled in non-commissioned officers' in 1988 and served as squad leader in the Engineer Battalion. After a few months studying engineering in college, he returned to military service in 1989 and served as squad leader…",
+      "title": "Eirik Kristoffersen"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "19750553",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_08f224db7abb45d3c8cc2909",
+      "sample_id": "cap_general_short:rec_08f224db7abb45d3c8cc2909",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8433333333333334,
+        "character_entropy_bits": 4.567695786352507,
+        "characters": 300,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 5,
+        "repeated_trigram_fraction": 0.0,
+        "words": 42
+      },
+      "stratum": "cap_general_short",
+      "text_end_preview": "Gürgaletsch The Gürgaletsch is a mountain of the Plessur Alps, located between Churwalden and Tschiertschen in the Swiss canton of Graubünden. References External links Gürgaletsch on Hikr Mountains of the Alps Mountains of Switzerland Mountains of Graubünden Two-thousanders of Switzerland Arosa",
+      "text_preview": "Gürgaletsch The Gürgaletsch is a mountain of the Plessur Alps, located between Churwalden and Tschiertschen in the Swiss canton of Graubünden. References External links Gürgaletsch on Hikr Mountains of the Alps Mountains of Switzerland Mountains of Graubünden Two-thousanders of Switzerland Arosa",
+      "text_start_preview": "Gürgaletsch The Gürgaletsch is a mountain of the Plessur Alps, located between Churwalden and Tschiertschen in the Swiss canton of Graubünden. References External links Gürgaletsch on Hikr Mountains of the Alps Mountains of Switzerland Mountains of Graubünden Two-thousanders of Switzerland Arosa",
+      "title": "Gürgaletsch"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "34546472",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_09977c596071602871b82052",
+      "sample_id": "cap_general_short:rec_09977c596071602871b82052",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7732919254658385,
+        "character_entropy_bits": 4.6956197869521645,
+        "characters": 322,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 4,
+        "repeated_trigram_fraction": 0.0,
+        "words": 49
+      },
+      "stratum": "cap_general_short",
+      "text_end_preview": "Shabandar Shabandar (, also Romanized as Sha‘bāndar and Shaban Dar; also known as Shab Bīdār and Shab Dar) is a village in Sepiddasht Rural District, Papi District, Khorramabad County, Lorestan Province, Iran. At the 2006 census, its population was 249, in 50 families. References Populated places in Khorramabad County",
+      "text_preview": "Shabandar Shabandar (, also Romanized as Sha‘bāndar and Shaban Dar; also known as Shab Bīdār and Shab Dar) is a village in Sepiddasht Rural District, Papi District, Khorramabad County, Lorestan Province, Iran. At the 2006 census, its population was 249, in 50 families. References Populated places in Khorramabad County",
+      "text_start_preview": "Shabandar Shabandar (, also Romanized as Sha‘bāndar and Shaban Dar; also known as Shab Bīdār and Shab Dar) is a village in Sepiddasht Rural District, Papi District, Khorramabad County, Lorestan Province, Iran. At the 2006 census, its population was 249, in 50 families. References Populated places in Khorramabad County",
+      "title": "Shabandar"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "54560858",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_e63714da15a8653094ee999b",
+      "sample_id": "cap_general_short:rec_e63714da15a8653094ee999b",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7449856733524355,
+        "character_entropy_bits": 4.73594516127004,
+        "characters": 349,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 5,
+        "repeated_trigram_fraction": 0.054545454545454564,
+        "words": 57
+      },
+      "stratum": "cap_general_short",
+      "text_end_preview": "Hamed Ali Hamed Ali (born 12 January 1956) is a Saudi Arabian sprinter. He competed in the men's 200 metres at the 1976 Summer Olympics. References External links 1956 births Living people Athletes (track and field) at the 1976 Summer Olympics Saudi Arabian male sprinters Olympic athletes for Saudi Arabia Place of birth missing (living people)",
+      "text_preview": "Hamed Ali Hamed Ali (born 12 January 1956) is a Saudi Arabian sprinter. He competed in the men's 200 metres at the 1976 Summer Olympics. References External links 1956 births Living people Athletes (track and field) at the 1976 Summer Olympics Saudi Arabian male sprinters Olympic athletes for Saudi Arabia Place of birth missing (living people)",
+      "text_start_preview": "Hamed Ali Hamed Ali (born 12 January 1956) is a Saudi Arabian sprinter. He competed in the men's 200 metres at the 1976 Summer Olympics. References External links 1956 births Living people Athletes (track and field) at the 1976 Summer Olympics Saudi Arabian male sprinters Olympic athletes for Saudi Arabia Place of birth missing (living people)",
+      "title": "Hamed Ali"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65814461",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_b7c96bf0dbedffb8c7d900a8",
+      "sample_id": "cap_general_short:rec_b7c96bf0dbedffb8c7d900a8",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7828418230563002,
+        "character_entropy_bits": 4.6017204467766355,
+        "characters": 373,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 6,
+        "repeated_trigram_fraction": 0.0,
+        "words": 54
+      },
+      "stratum": "cap_general_short",
+      "text_end_preview": "Everett Whittingham Everett Whittingham (born 25 February 1954) is a Jamaican cricketer. He played in one first-class and three List A matches for the Jamaican cricket team from 1980 to 1985. See also List of Jamaican representative cricketers References External links 1954 births Living people Jamaican cricketers Jamaica cricketers Cricketers from Kingston, Jamaica",
+      "text_preview": "Everett Whittingham Everett Whittingham (born 25 February 1954) is a Jamaican cricketer. He played in one first-class and three List A matches for the Jamaican cricket team from 1980 to 1985. See also List of Jamaican representative cricketers References External links 1954 births Living people Jamaican cricketers Jamaica cricketers Cricketers from Kingston, Jamaica",
+      "text_start_preview": "Everett Whittingham Everett Whittingham (born 25 February 1954) is a Jamaican cricketer. He played in one first-class and three List A matches for the Jamaican cricket team from 1980 to 1985. See also List of Jamaican representative cricketers References External links 1954 births Living people Jamaican cricketers Jamaica cricketers Cricketers from Kingston, Jamaica",
+      "title": "Everett Whittingham"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "19750340",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_fbe9c6bbb6e3d3ed98e792e4",
+      "sample_id": "cap_general_short:rec_fbe9c6bbb6e3d3ed98e792e4",
+      "sampling_cap_groups": [
+        "general_short"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8020050125313283,
+        "character_entropy_bits": 4.622208913030759,
+        "characters": 399,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 5,
+        "repeated_trigram_fraction": 0.0,
+        "words": 62
+      },
+      "stratum": "cap_general_short",
+      "text_end_preview": "Amselflue The Amselflue is a mountain of the Plessur Alps, overlooking Arosa in the canton of Graubünden. The main summit has an elevation of 2,781 metres, while the eastern summit, located directly above the Maienfelder Furgga, is 2,768 metre high. References External links Amselflue on Hikr Mountains of the Alps Mountains of Switzerland Mountains of Graubünden Two-thousanders of Switzerland",
+      "text_preview": "Amselflue The Amselflue is a mountain of the Plessur Alps, overlooking Arosa in the canton of Graubünden. The main summit has an elevation of 2,781 metres, while the eastern summit, located directly above the Maienfelder Furgga, is 2,768 metre high. References External links Amselflue on Hikr Mountains of the Alps Mountains of Switzerland Mountains of Graubünden Two-thousanders of Switzerland",
+      "text_start_preview": "Amselflue The Amselflue is a mountain of the Plessur Alps, overlooking Arosa in the canton of Graubünden. The main summit has an elevation of 2,781 metres, while the eastern summit, located directly above the Maienfelder Furgga, is 2,768 metre high. References External links Amselflue on Hikr Mountains of the Alps Mountains of Switzerland Mountains of Graubünden Two-thousanders of Switzerland",
+      "title": "Amselflue"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "disambiguation_page",
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "8459657",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_64ef973f15e38c345250aa3c",
+      "sample_id": "cap_general_disambiguation:rec_64ef973f15e38c345250aa3c",
+      "sampling_cap_groups": [
+        "general_short",
+        "general_disambiguation"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.6821192052980133,
+        "character_entropy_bits": 4.776192258555274,
+        "characters": 302,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 4,
+        "repeated_trigram_fraction": 0.0,
+        "words": 45
+      },
+      "stratum": "cap_general_disambiguation",
+      "text_end_preview": "Robert Easton Robert Easton may refer to: Robert Easton (actor) (1930–2011), American actor and dialect coach Robert Easton (bass) (1898–1987), British bass singer Robert Easton (athlete) (born 1960/61), Canadian Paralympic athlete See also Robert Easton Burns (1805–1863), Canadian lawyer and judge",
+      "text_preview": "Robert Easton Robert Easton may refer to: Robert Easton (actor) (1930–2011), American actor and dialect coach Robert Easton (bass) (1898–1987), British bass singer Robert Easton (athlete) (born 1960/61), Canadian Paralympic athlete See also Robert Easton Burns (1805–1863), Canadian lawyer and judge",
+      "text_start_preview": "Robert Easton Robert Easton may refer to: Robert Easton (actor) (1930–2011), American actor and dialect coach Robert Easton (bass) (1898–1987), British bass singer Robert Easton (athlete) (born 1960/61), Canadian Paralympic athlete See also Robert Easton Burns (1805–1863), Canadian lawyer and judge",
+      "title": "Robert Easton"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "disambiguation_page",
+        "short_document"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "30578051",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_20f1a3654dd9987e3c3d5b89",
+      "sample_id": "cap_general_disambiguation:rec_20f1a3654dd9987e3c3d5b89",
+      "sampling_cap_groups": [
+        "general_short",
+        "general_disambiguation"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7619047619047619,
+        "character_entropy_bits": 4.686874586833371,
+        "characters": 378,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 3,
+        "repeated_trigram_fraction": 0.0,
+        "words": 52
+      },
+      "stratum": "cap_general_disambiguation",
+      "text_end_preview": "Emily Martin Emily Martin may refer to: Emily Martin (1884–1962), aka Emily Dutton, South Australian musician and socialite Emily Martin (anthropologist) (born 1944), sinologist, anthropologist, and feminist Emily Martin (rower) (born 1979), Australian rower Emily Martin (diver), British diver Emily Winfield Martin, American artist and author-illustrator of children's books",
+      "text_preview": "Emily Martin Emily Martin may refer to: Emily Martin (1884–1962), aka Emily Dutton, South Australian musician and socialite Emily Martin (anthropologist) (born 1944), sinologist, anthropologist, and feminist Emily Martin (rower) (born 1979), Australian rower Emily Martin (diver), British diver Emily Winfield Martin, American artist and author-illustrator of children's books",
+      "text_start_preview": "Emily Martin Emily Martin may refer to: Emily Martin (1884–1962), aka Emily Dutton, South Australian musician and socialite Emily Martin (anthropologist) (born 1944), sinologist, anthropologist, and feminist Emily Martin (rower) (born 1979), Australian rower Emily Martin (diver), British diver Emily Winfield Martin, American artist and author-illustrator of children's books",
+      "title": "Emily Martin"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "disambiguation_page"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "26694185",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_33eb25d6ec7326e5ef50644a",
+      "sample_id": "cap_general_disambiguation:rec_33eb25d6ec7326e5ef50644a",
+      "sampling_cap_groups": [
+        "general_disambiguation"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7217068645640075,
+        "character_entropy_bits": 4.661916936297544,
+        "characters": 539,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 3,
+        "repeated_trigram_fraction": 0.13636363636363635,
+        "words": 90
+      },
+      "stratum": "cap_general_disambiguation",
+      "text_end_preview": "One Mississippi One Mississippi may refer to: One Mississippi (Brendan Benson album), 1996 One Mississippi (J Church album), 2000 One Mississippi (TV series), a 2016 American television series \"One Mississippi\", a song on the 2003 album Jillbilly by Jill King \"One Mississippi\", a song on the 2013 album Bring You Back by Brett Eldredge \"One Mississippi\", a song on the 2017 album So Good by Zara Larsson \"One Mississippi\", a song on the 2020 album My Mississippi Reunion by Steve Azar \"One Mississippi\" (song), a 2021 song by Kane Brown",
+      "text_preview": "One Mississippi One Mississippi may refer to: One Mississippi (Brendan Benson album), 1996 One Mississippi (J Church album), 2000 One Mississippi (TV series), a 2016 American television series \"One Mississippi\", a song on the 2003 album Jillbilly by Jill King \"One Mississippi\", a song on the 2013 album Bring You Back by Brett Eldredge \"One Mississippi\", a song on the 2017 album So Good by Zara Larsson \"One Mississippi\", a song on the 2020 album My Mississippi Reunion by Steve Azar \"One Mississippi\" (song), a 2021 song by Kane Brown",
+      "text_start_preview": "One Mississippi One Mississippi may refer to: One Mississippi (Brendan Benson album), 1996 One Mississippi (J Church album), 2000 One Mississippi (TV series), a 2016 American television series \"One Mississippi\", a song on the 2003 album Jillbilly by Jill King \"One Mississippi\", a song on the 2013 album Bring You Back by Brett Eldredge \"One Mississippi\", a song on the 2017 album So Good by Zara Larsson \"One Mississippi\", a song on the 2020 album My Mississippi Reunion by Steve Azar \"One Mississippi\" (song), a 2021 song by Kane Brown",
+      "title": "One Mississippi"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "disambiguation_page"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1646505",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_a8375516c8d28716960d8a0b",
+      "sample_id": "cap_general_disambiguation:rec_a8375516c8d28716960d8a0b",
+      "sampling_cap_groups": [
+        "general_disambiguation"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7481927710843373,
+        "character_entropy_bits": 4.811969953292342,
+        "characters": 830,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 6,
+        "repeated_trigram_fraction": 0.052238805970149294,
+        "words": 136
+      },
+      "stratum": "cap_general_disambiguation",
+      "text_end_preview": "…dynasty Jiangling County, a city in Hubei, China, formerly known as (Southern Capital or Nandu) during the later Tang dynasty Nandu River, Hainan province, China Other uses Ñandú, a native South American name for any of three species of Rhea. Nandu (film), a 1981 Tamil film Ñandú (vehicle), a 1940s all-terrain vehicle military vehicle Southern Metropolis Daily, often shortened to Nandu (南都) One of the Argentine Air Force flights that attacked the British fleet in the Battle of San Carlos, during the Falklands War, 1982 People with the given name Nandu Bhende (c. 1955–2014), Indian singer Nandu M. Natekar (1933–2021), Indian badminton player See also Nandhu (born 1965), Malayalam film actor",
+      "text_preview": "Nandu Nandu may refer to: Places Chengdu, a city in Sichuan, China, known as (Southern Capital or Nandu) during the early Tang dynasty Jiangling County, a city in Hubei, China, formerly known as (Southern Capital or Nandu) during the later Tang dynasty Nandu River, Hainan province, China Other uses Ñandú, a native South American name for any of three species of Rhea. Nandu (film), a 1981 Tamil film Ñandú (vehicle), a 1940s all-terrain vehicle military vehicle Southern Metropolis Daily, often shortened to Nandu (南都) One of the Argentine Air Force flights that attacked the British fleet in the Battle of San Carlos, during the Falklands War, 1982 People with the given name Nandu Bhende (c. 195…",
+      "text_start_preview": "Nandu Nandu may refer to: Places Chengdu, a city in Sichuan, China, known as (Southern Capital or Nandu) during the early Tang dynasty Jiangling County, a city in Hubei, China, formerly known as (Southern Capital or Nandu) during the later Tang dynasty Nandu River, Hainan province, China Other uses Ñandú, a native South American name for any of three species of Rhea. Nandu (film), a 1981 Tamil film Ñandú (vehicle), a 1940s all-terrain vehicle military vehicle Southern Metropolis Daily, often shortened to Nandu (南都) One of the Argentine Air Force flights that attacked the British fleet in the Battle of San Carlos, during the Falklands War, 1982 People with the given name Nandu Bhende (c. 195…",
+      "title": "Nandu"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "disambiguation_page",
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "410709",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_a5be1bf877ab30ee8374ccc4",
+      "sample_id": "cap_general_disambiguation:rec_a5be1bf877ab30ee8374ccc4",
+      "sampling_cap_groups": [
+        "general_disambiguation",
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7900267875540903,
+        "character_entropy_bits": 4.77816136636329,
+        "characters": 4853,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 8,
+        "repeated_trigram_fraction": 0.3420365535248042,
+        "words": 768
+      },
+      "stratum": "cap_general_disambiguation",
+      "text_end_preview": "…ria County, Texas Old Post Office (Washington, D.C.), NRHP-listed as \"Old Post Office and Clock Tower\" Old Post Office (Pullman, Washington), NRHP-listed as \"U.S. Post Office-Pullman\" Old Morgantown Post Office, part of the Monongalia Arts Center in Morgantown, West Virginia, NRHP-listed Old Ashland Post Office, listed on the NRHP in Ashland, Wisconsin Former United States Post Office (Kaukauna, Wisconsin), listed on the NRHP in Wisconsin See also Post office Postal service List of United States post offices Federal Building and Post Office (disambiguation) U.S. Post Office and Courthouse (disambiguation) Postal service (disambiguation) Post Office (disambiguation) Old Post (disambiguation)",
+      "text_preview": "Old Post Office Old Post Office, or Former Post Office, may refer to: Serbia Old Post Office (Belgrade) United Kingdom Old Post Office, Bristol Tintagel Old Post Office, Tintagel United States (ordered by state and city) Old Athens, Alabama Main Post Office in Athens, Alabama, listed on the National Register of Historic Places Old Brick Post Office in Wickenburg, Arizona, NRHP-listed Old Camden Post Office in Camden, Arkansas, listed on the NRHP in Arkansas Old Post Office (Fayetteville, Arkansas), listed on the NRHP in Arkansas Old Post Office (Hot Springs, Arkansas), listed on the NRHP in Arkansas Little Rock U.S. Post Office and Courthouse, also known as the Old Post Office and Courthous…",
+      "text_start_preview": "Old Post Office Old Post Office, or Former Post Office, may refer to: Serbia Old Post Office (Belgrade) United Kingdom Old Post Office, Bristol Tintagel Old Post Office, Tintagel United States (ordered by state and city) Old Athens, Alabama Main Post Office in Athens, Alabama, listed on the National Register of Historic Places Old Brick Post Office in Wickenburg, Arizona, NRHP-listed Old Camden Post Office in Camden, Arkansas, listed on the NRHP in Arkansas Old Post Office (Fayetteville, Arkansas), listed on the NRHP in Arkansas Old Post Office (Hot Springs, Arkansas), listed on the NRHP in Arkansas Little Rock U.S. Post Office and Courthouse, also known as the Old Post Office and Courthous…",
+      "title": "Old Post Office"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "duplicate_lines"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "19691879",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_3abd80862d172aff4a883a6d",
+      "sample_id": "cap_general_structured_low_prose:rec_3abd80862d172aff4a883a6d",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7538461538461538,
+        "character_entropy_bits": 4.74342055449469,
+        "characters": 650,
+        "duplicate_line_fraction": 0.2571428571428571,
+        "list_line_fraction": 0.0,
+        "paragraphs": 31,
+        "repeated_trigram_fraction": 0.1649484536082474,
+        "words": 99
+      },
+      "stratum": "cap_general_structured_low_prose",
+      "text_end_preview": "Futsal at the 2007 Asian Indoor Games Futsal at the 2007 Asian Indoor Games was held in Macau, China from 26 October to 3 November 2007. Medalists Medal table Results Men Preliminary Group A Group B Group C Group D Kuwait was disqualified from the tournament on 29 October after Kuwait Football Association was suspended by FIFA. Knockout round Quarterfinals Semifinals Bronze medal match Gold medal match Goalscorers Women Preliminary Group A Group B Placing Knockout round Semifinals Bronze medal match Gold medal match Goalscorers References RSSSF 2007 Asian Indoor Games events Indoor Games 2007 2007 Futsal in Macau",
+      "text_preview": "Futsal at the 2007 Asian Indoor Games Futsal at the 2007 Asian Indoor Games was held in Macau, China from 26 October to 3 November 2007. Medalists Medal table Results Men Preliminary Group A Group B Group C Group D Kuwait was disqualified from the tournament on 29 October after Kuwait Football Association was suspended by FIFA. Knockout round Quarterfinals Semifinals Bronze medal match Gold medal match Goalscorers Women Preliminary Group A Group B Placing Knockout round Semifinals Bronze medal match Gold medal match Goalscorers References RSSSF 2007 Asian Indoor Games events Indoor Games 2007 2007 Futsal in Macau",
+      "text_start_preview": "Futsal at the 2007 Asian Indoor Games Futsal at the 2007 Asian Indoor Games was held in Macau, China from 26 October to 3 November 2007. Medalists Medal table Results Men Preliminary Group A Group B Group C Group D Kuwait was disqualified from the tournament on 29 October after Kuwait Football Association was suspended by FIFA. Knockout round Quarterfinals Semifinals Bronze medal match Gold medal match Goalscorers Women Preliminary Group A Group B Placing Knockout round Semifinals Bronze medal match Gold medal match Goalscorers References RSSSF 2007 Asian Indoor Games events Indoor Games 2007 2007 Futsal in Macau",
+      "title": "Futsal at the 2007 Asian Indoor Games"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "duplicate_lines"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "49818516",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_23303a5a4dac56966854ccd2",
+      "sample_id": "cap_general_structured_low_prose:rec_23303a5a4dac56966854ccd2",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8138231631382317,
+        "character_entropy_bits": 5.006464331612567,
+        "characters": 1606,
+        "duplicate_line_fraction": 0.21739130434782608,
+        "list_line_fraction": 0.0,
+        "paragraphs": 15,
+        "repeated_trigram_fraction": 0.2300469483568075,
+        "words": 215
+      },
+      "stratum": "cap_general_structured_low_prose",
+      "text_end_preview": "…L) 2011–12 season awards PBL Regular Season MVP Davon Jefferson (Triumph Lyubertsy) PBL Playoffs MVP Alexey Shved (CSKA Moscow) PBL All-Symbolic Team PBL First Symbolic Team Patrick Beverley (Spartak St. Petersburg) Zoran Planinić (Khimki Moscow Region) Davon Jefferson (Triumph Lyubertsy) Andrei Kirilenko (CSKA Moscow) Jeremiah Massey (Lokomotiv Kuban) PBL Second Symbolic Team Torey Thomas (Spartak Primorye) Vitaly Fridzon (Khimki Moscow Region) Sergey Karasev (Triumph Lyubertsy) Victor Khryapa (CSKA Moscow) Vladimir Veremeenko (UNICS Kazan) See also Russian Gold Basket Awards References External links Russian Professional Basketball League official website awards European basketball awards",
+      "text_preview": "Russian Professional Basketball League Awards The Russian Professional Basketball League Awards were the awards that were given out by the former top-tier level professional basketball league in Russia, the Russian Professional Basketball League (RPBL). PBL Awards Russian Professional Basketball League (PBL) 2010–11 season awards PBL Regular Season MVP Maciej Lampe (UNICS Kazan) PBL Playoffs MVP Victor Khryapa (CSKA Moscow) PBL All-Symbolic Team PBL First Symbolic Team Patrick Beverley (Spartak St. Petersburg) Keith Langford (Khimki Moscow Region) Henry Domercant (Spartak St. Petersburg) Sergei Monia (Khimki Moscow Region) Maciej Lampe (UNICS Kazan) PBL Second Symbolic Team Marcus Williams…",
+      "text_start_preview": "Russian Professional Basketball League Awards The Russian Professional Basketball League Awards were the awards that were given out by the former top-tier level professional basketball league in Russia, the Russian Professional Basketball League (RPBL). PBL Awards Russian Professional Basketball League (PBL) 2010–11 season awards PBL Regular Season MVP Maciej Lampe (UNICS Kazan) PBL Playoffs MVP Victor Khryapa (CSKA Moscow) PBL All-Symbolic Team PBL First Symbolic Team Patrick Beverley (Spartak St. Petersburg) Keith Langford (Khimki Moscow Region) Henry Domercant (Spartak St. Petersburg) Sergei Monia (Khimki Moscow Region) Maciej Lampe (UNICS Kazan) PBL Second Symbolic Team Marcus Williams…",
+      "title": "Russian Professional Basketball League Awards"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "duplicate_lines"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "64332709",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_09f12a8c6fe474031600bf23",
+      "sample_id": "cap_general_structured_low_prose:rec_09f12a8c6fe474031600bf23",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7962066182405165,
+        "character_entropy_bits": 4.651858102787316,
+        "characters": 2478,
+        "duplicate_line_fraction": 0.21052631578947367,
+        "list_line_fraction": 0.0,
+        "paragraphs": 16,
+        "repeated_trigram_fraction": 0.11479591836734693,
+        "words": 394
+      },
+      "stratum": "cap_general_structured_low_prose",
+      "text_end_preview": "…championship for the 6th time. no teams were relegated. Participating teams System The tournament would be disputed in a double round-robin format, with the team with the most points winning the title. Championship LCF Championship The edition of the Campeonato Carioca organized by LCF (Liga Carioca de Football, or Carioca Football League) kicked off on May 7, 1933, and ended on November 15, 1933. Six teams participated. Bangu won the championship for the 1st time. no teams were relegated. Participating teams System The tournament would be disputed in a double round-robin format, with the team with the most points winning the title. Championship References Campeonato Carioca seasons Carioca",
+      "text_preview": "1933 Campeonato Carioca In the 1933 season of the Campeonato Carioca, two championships were disputed, each by a different league. AMEA Championship After the 1932 championship, talks began among the seven main clubs of the AMEA league to discuss whether to adopt professionalism, like APEA in São Paulo had done before, or not. However, after the league's statue was first drafted, only América, Bangu and Fluminense accepted it, although they were joined by Vasco da Gama, which reversed its previous position on that matter. The four teams were consequently expelled from AMEA, which was resolved to remain amateur. Later on, Bonsucesso joined them, and CBD took a stance against professionalism,…",
+      "text_start_preview": "1933 Campeonato Carioca In the 1933 season of the Campeonato Carioca, two championships were disputed, each by a different league. AMEA Championship After the 1932 championship, talks began among the seven main clubs of the AMEA league to discuss whether to adopt professionalism, like APEA in São Paulo had done before, or not. However, after the league's statue was first drafted, only América, Bangu and Fluminense accepted it, although they were joined by Vasco da Gama, which reversed its previous position on that matter. The four teams were consequently expelled from AMEA, which was resolved to remain amateur. Later on, Bonsucesso joined them, and CBD took a stance against professionalism,…",
+      "title": "1933 Campeonato Carioca"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "duplicate_lines"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "3204810",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_6768e2762e2c882f15a6b216",
+      "sample_id": "cap_general_structured_low_prose:rec_6768e2762e2c882f15a6b216",
+      "sampling_cap_groups": [
+        "general_structured_low_prose"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.771850170261067,
+        "character_entropy_bits": 4.6725211192419716,
+        "characters": 7048,
+        "duplicate_line_fraction": 0.21052631578947367,
+        "list_line_fraction": 0.0,
+        "paragraphs": 14,
+        "repeated_trigram_fraction": 0.1241721854304636,
+        "words": 1210
+      },
+      "stratum": "cap_general_structured_low_prose",
+      "text_end_preview": "…e with I-64 (Hampton Roads Beltway), which US 60 joins to cross Hampton Roads via the Hampton Roads Bridge-Tunnel to Norfolk. SR 143 continues southeast along two-lane County Street, turns southwest onto Libby Street for one block, then turns south on Mellen Street and intersects SR 169 (Mallory Street) within the Phoebus neighborhood. The state highway crosses the Mill Creek estuary as Ingalls Road and reaches its eastern terminus at its junction with US 258's (Mercury Boulevard) northern terminus at the entrance to Fort Monroe. Major intersections References External links Virginia Highways Project: VA 143 143 State Route 143 State Route 143 State Route 143 State Route 143 State Route 143",
+      "text_preview": "Virginia State Route 143 State Route 143 (SR 143) is a primary state highway in the U.S. state of Virginia. The state highway runs from Camp Peary near Williamsburg east to U.S. Route 258 (US 258) at Fort Monroe in Hampton. SR 143 is a major local thoroughfare on the Virginia Peninsula portion of the Hampton Roads metropolitan area. The state highway is named Merrimac Trail through the independent city of Williamsburg and adjacent portions of York County and James City County. SR 143 follows Jefferson Avenue through the city of Newport News from the Williamsburg area past Virginia Peninsula Regional Jail to near Downtown Newport News. The state highway, which mostly runs northwest–southeast…",
+      "text_start_preview": "Virginia State Route 143 State Route 143 (SR 143) is a primary state highway in the U.S. state of Virginia. The state highway runs from Camp Peary near Williamsburg east to U.S. Route 258 (US 258) at Fort Monroe in Hampton. SR 143 is a major local thoroughfare on the Virginia Peninsula portion of the Hampton Roads metropolitan area. The state highway is named Merrimac Trail through the independent city of Williamsburg and adjacent portions of York County and James City County. SR 143 follows Jefferson Avenue through the city of Newport News from the Williamsburg area past Virginia Peninsula Regional Jail to near Downtown Newport News. The state highway, which mostly runs northwest–southeast…",
+      "title": "Virginia State Route 143"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 4,
+      "chunk_end_boundary": "line",
+      "chunk_index": 2,
+      "flags": [
+        "linewise_list",
+        "repetitive_language"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65813793",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_fb9edc36b8cebe3a3c4bf73f",
+      "sample_id": "cap_general_structured_low_prose:rec_fb9edc36b8cebe3a3c4bf73f",
+      "sampling_cap_groups": [
+        "general_structured_low_prose",
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8322911455727864,
+        "character_entropy_bits": 4.601664986370677,
+        "characters": 7996,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 7,
+        "repeated_trigram_fraction": 0.43597262952101656,
+        "words": 1025
+      },
+      "stratum": "cap_general_structured_low_prose",
+      "text_end_preview": "…as Solanum laxum Spreng. not indigenous, naturalised Solanum kibweziense Dammer, accepted as Solanum tettense Klotzsch Solanum koniortodes Dammer, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright, accepted as Solanum tettense Klotzsch, indigenous Solanum kwebense N.E.Br. ex C.H.Wright var. acutius Bitter, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright var. chondropetalum (Dammer) Bitter, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright var. luederitzii (Schinz) Bitter, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright var. majorifrons Bitter, accepted as Solanum tettense Klotzsch",
+      "text_preview": "List of Solanales of South Africa Lycium Genus Lycium: Lycium acutifolium E.Mey. ex Dunal, endemic Lycium afrum L. endemic Lycium amoenum Dammer, indigenous Lycium arenicola Miers, indigenous Lycium bosciifolium Schinz, indigenous Lycium cinereum Thunb. indigenous Lycium cordatum Mill. accepted as Carissa bispinosa (L.) Desf. ex Brenan, indigenous Lycium ferocissimum Miers, indigenous Lycium gariepense A.M.Venter, indigenous Lycium grandicalyx Joubert & Venter, indigenous Lycium hantamense A.M.Venter, indigenous Lycium hirsutum Dunal, indigenous Lycium horridum Thunb. indigenous Lycium mascarenense A.M.Venter & A.J.Scott, indigenous Lycium oxycarpum Dunal, endemic Lycium pilifolium C.H.Wrig…",
+      "text_start_preview": "List of Solanales of South Africa Lycium Genus Lycium: Lycium acutifolium E.Mey. ex Dunal, endemic Lycium afrum L. endemic Lycium amoenum Dammer, indigenous Lycium arenicola Miers, indigenous Lycium bosciifolium Schinz, indigenous Lycium cinereum Thunb. indigenous Lycium cordatum Mill. accepted as Carissa bispinosa (L.) Desf. ex Brenan, indigenous Lycium ferocissimum Miers, indigenous Lycium gariepense A.M.Venter, indigenous Lycium grandicalyx Joubert & Venter, indigenous Lycium hantamense A.M.Venter, indigenous Lycium hirsutum Dunal, indigenous Lycium horridum Thunb. indigenous Lycium mascarenense A.M.Venter & A.J.Scott, indigenous Lycium oxycarpum Dunal, endemic Lycium pilifolium C.H.Wrig…",
+      "title": "List of Solanales of South Africa"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 3,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 2,
+      "flags": [
+        "category_tail",
+        "linewise_list",
+        "short_continuation_chunk",
+        "table_markup_removed"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "8156282",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_bcd265bca5dccfd325809a88",
+      "sample_id": "cap_general_linewise_list:rec_bcd265bca5dccfd325809a88",
+      "sampling_cap_groups": [
+        "general_linewise_list",
+        "general_category_tail",
+        "general_table_salvage"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8235294117647058,
+        "character_entropy_bits": 4.745927985589754,
+        "characters": 306,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.023255813953488413,
+        "words": 45
+      },
+      "stratum": "cap_general_linewise_list",
+      "text_end_preview": "William J. Haynes II 1958 births American lawyers Davidson College alumni General Counsels of the United States Army George W. Bush administration personnel Harvard Law School alumni Living people People associated with Jenner & Block People from Waco, Texas Texas Republicans Torture in the United States",
+      "text_preview": "William J. Haynes II 1958 births American lawyers Davidson College alumni General Counsels of the United States Army George W. Bush administration personnel Harvard Law School alumni Living people People associated with Jenner & Block People from Waco, Texas Texas Republicans Torture in the United States",
+      "text_start_preview": "William J. Haynes II 1958 births American lawyers Davidson College alumni General Counsels of the United States Army George W. Bush administration personnel Harvard Law School alumni Living people People associated with Jenner & Block People from Waco, Texas Texas Republicans Torture in the United States",
+      "title": "William J. Haynes II"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "3204848",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_ad403943ec3dae9c9ea73684",
+      "sample_id": "cap_general_linewise_list:rec_ad403943ec3dae9c9ea73684",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7696498054474709,
+        "character_entropy_bits": 4.745872612630302,
+        "characters": 1285,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 5,
+        "repeated_trigram_fraction": 0.1342592592592593,
+        "words": 218
+      },
+      "stratum": "cap_general_linewise_list",
+      "text_end_preview": "…ard. He stopped playing hockey at top level in 2005. External links Dutch Hockey Federation 1968 births Living people Dutch male field hockey players Male field hockey defenders Olympic field hockey players for the Netherlands Field hockey players at the 1992 Summer Olympics Field hockey players at the 1996 Summer Olympics 1998 Men's Hockey World Cup players Field hockey players at the 2000 Summer Olympics Olympic gold medalists for the Netherlands Sportspeople from Alphen aan den Rijn Field hockey players from South Holland Olympic medalists in field hockey Medalists at the 2000 Summer Olympics Medalists at the 1996 Summer Olympics Haagsche Delftsche Mixed players 20th-century Dutch people",
+      "text_preview": "Wouter van Pelt Wouter van Pelt (born 23 April 1968 in Alphen aan den Rijn) is a former Dutch field hockey player, who played 236 international matches for the Netherlands, in which he scored 21 goals. The defender made his debut for the Dutch on 27 March 1989 in a match against England. He played in the Dutch League for HDM and BH & BC Breda. Van Pelt was a member of the Dutch national team that won the golden medal at the 1996 Summer Olympics in Atlanta, Georgia. Four years later, at the 2000 Summer Olympics in Sydney, the Dutch once again won the title, with Van Pelt on board. He stopped playing hockey at top level in 2005. External links Dutch Hockey Federation 1968 births Living people…",
+      "text_start_preview": "Wouter van Pelt Wouter van Pelt (born 23 April 1968 in Alphen aan den Rijn) is a former Dutch field hockey player, who played 236 international matches for the Netherlands, in which he scored 21 goals. The defender made his debut for the Dutch on 27 March 1989 in a match against England. He played in the Dutch League for HDM and BH & BC Breda. Van Pelt was a member of the Dutch national team that won the golden medal at the 1996 Summer Olympics in Atlanta, Georgia. Four years later, at the 2000 Summer Olympics in Sydney, the Dutch once again won the title, with Van Pelt on board. He stopped playing hockey at top level in 2005. External links Dutch Hockey Federation 1968 births Living people…",
+      "title": "Wouter van Pelt"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1271930",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_aeffa797e0524e7b1cb1774a",
+      "sample_id": "cap_general_linewise_list:rec_aeffa797e0524e7b1cb1774a",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8128383604021655,
+        "character_entropy_bits": 4.563528355925373,
+        "characters": 2586,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 10,
+        "repeated_trigram_fraction": 0.09629629629629632,
+        "words": 407
+      },
+      "stratum": "cap_general_linewise_list",
+      "text_end_preview": "…chnology treaties Treaties of Austria Treaties of Bulgaria Treaties of Belgium Treaties of Croatia Treaties of Cyprus Treaties of the Czech Republic Treaties of Denmark Treaties of Estonia Treaties of Finland Treaties of the French Fourth Republic Treaties of West Germany Treaties of Greece Treaties of Hungary Treaties of Ireland Treaties of Italy Treaties of Latvia Treaties of Lithuania Treaties of Luxembourg Treaties of Malta Treaties of the Netherlands Treaties of Poland Treaties of Portugal Treaties of Romania Treaties of Slovakia Treaties of Slovenia Treaties of Spain Treaties of Sweden Treaties of the United Kingdom Treaties extended to Åland March 1957 events in Europe Events in Rome",
+      "text_preview": "Euratom Treaty The Euratom Treaty, officially the Treaty establishing the European Atomic Energy Community, established the European Atomic Energy Community. It was signed on 25 March 1957 at the same time as the Treaty establishing the European Economic Community (EEC Treaty). The Euratom Treaty is less well known because of the lower profile of the organisation that it founded. The EEC has evolved into what is now the European Union, but Euratom has remained much the same as it was in 1957 although it is governed by the institutions of the European Union. It was established with its own independent institutions, but the 1967 Merger Treaty merged the institutions of Euratom and the Europea…",
+      "text_start_preview": "Euratom Treaty The Euratom Treaty, officially the Treaty establishing the European Atomic Energy Community, established the European Atomic Energy Community. It was signed on 25 March 1957 at the same time as the Treaty establishing the European Economic Community (EEC Treaty). The Euratom Treaty is less well known because of the lower profile of the organisation that it founded. The EEC has evolved into what is now the European Union, but Euratom has remained much the same as it was in 1957 although it is governed by the institutions of the European Union. It was established with its own independent institutions, but the 1967 Merger Treaty merged the institutions of Euratom and the Europea…",
+      "title": "Euratom Treaty"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "43169109",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_29b7c4472fe2de5ea727dbf0",
+      "sample_id": "cap_general_linewise_list:rec_29b7c4472fe2de5ea727dbf0",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7585995085995086,
+        "character_entropy_bits": 4.963372685632833,
+        "characters": 4884,
+        "duplicate_line_fraction": 0.07228915662650602,
+        "list_line_fraction": 0.0,
+        "paragraphs": 30,
+        "repeated_trigram_fraction": 0.17625000000000002,
+        "words": 802
+      },
+      "stratum": "cap_general_linewise_list",
+      "text_end_preview": "…ng Sands) Ramsey Nouah (Guilty Pleasures) Desmond Elliot (Guilty Pleasures) Uti Nwachukwu (Busting Out (film)) Best Actress - West Africa Collaboration Genevieve Nnaji (Silent Scandals) Nse Ikpe Etim (Guilty Pleasures (2009 film)) Tonto Dikeh (Love & Lust) Uche Jombo (Nollywood Hustlers) Omotola Jalade Ekeinde (Private Storm) Mercy Johnson (Shakira) Best Movie - African Collaboration Sinking Sands Guilty Pleasures (2009 film) Love & Lust Private Storm Bursting Out (film) Best Movie Score The Game (2010 film) Ama Ghana A Sting in a Tale Kiss Me If You Can 4 Play (film) Sinking Sands Favorite Actor Kofi Adjorlolo Favorite Actress Yvonne Nelson References Ghana Movie Awards Ghana 2010 in Ghana",
+      "text_preview": "2010 Ghana Movie Awards The 2010 Ghana Movie Awards was the maiden edition of the ceremony to reward cinematic achievement in Ghana Film Industry. The event was held at the Golden Tulip Hotel, Accra on 25 December 2010. Sinking Sands, Juliet Ibrahim, Nadia Buari, Yvonne Okoro, Majid Michel, John Dumelo & Genevieve Nnaji were among the winners. Awards Best Actor in a Leading Role (English) Senanu Gbedawu (Check Mate) Majid Michel (The Beast) J.O.T Agyemany (I Sing of a Well) Prince Osei (Kiss Me If You Can) Eddie Nartey (Kiss Me If You Can) Van Vicker (Dna Test) Ruffy Samuel (Love & Lust) Best Actress in a Leading Role (English) Martha Ankomah (Kiss Me If You Can) Akorfa Edjeani Asiedu (I Si…",
+      "text_start_preview": "2010 Ghana Movie Awards The 2010 Ghana Movie Awards was the maiden edition of the ceremony to reward cinematic achievement in Ghana Film Industry. The event was held at the Golden Tulip Hotel, Accra on 25 December 2010. Sinking Sands, Juliet Ibrahim, Nadia Buari, Yvonne Okoro, Majid Michel, John Dumelo & Genevieve Nnaji were among the winners. Awards Best Actor in a Leading Role (English) Senanu Gbedawu (Check Mate) Majid Michel (The Beast) J.O.T Agyemany (I Sing of a Well) Prince Osei (Kiss Me If You Can) Eddie Nartey (Kiss Me If You Can) Van Vicker (Dna Test) Ruffy Samuel (Love & Lust) Best Actress in a Leading Role (English) Martha Ankomah (Kiss Me If You Can) Akorfa Edjeani Asiedu (I Si…",
+      "title": "2010 Ghana Movie Awards"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 2,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "8155510",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_b31f126054d03adf1e205d4b",
+      "sample_id": "cap_general_linewise_list:rec_b31f126054d03adf1e205d4b",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8257064266066516,
+        "character_entropy_bits": 4.765164340927166,
+        "characters": 7998,
+        "duplicate_line_fraction": 0.015765765765765764,
+        "list_line_fraction": 0.0,
+        "paragraphs": 44,
+        "repeated_trigram_fraction": 0.014516129032258074,
+        "words": 1242
+      },
+      "stratum": "cap_general_linewise_list",
+      "text_end_preview": "…i Cheb Faris El Sataifi Spain Hakim (Spanish singer) Greece Grigoris Asikis Konstantinos Argyros Yiorgos Batis George Dalaras Anestis Delias Stratos Pagioumtzis Giorgos Xylouris Babis Tsertos Mariza Koch United Kingdom Yusuf Islam Sami Yusuf Iran Evin Agassi Nematollah Aghasi Hooshmand Aghili Salar Aghili Morteza Ahmadi Alireza Assar Davood Azad Mohsen Chavoshi Farman Fathalian Farzad Fattahi Babak Jahanbakhsh Shahrum Kashani Ehsan Khajeh Amiri Ali Lohrasbi Morteza Pashaei Rahim Shahriari Reza Yazdani Mohsen Yeganeh Sima Bina Leila Forouhar Googoosh Mahasti Marjan (singer) Giti Pashaei Israel Etti Ankri Zohra Al Fassiya Yael Naim Cyprus Hovig Demirjian See also Arabic music Arabic pop music",
+      "text_preview": "Khaliji (music) Khaliji music (also spelled Khaleeji; meaning Gulf music) is the music of Eastern Arabia, the Arab states of the Persian Gulf and it is popular across the Arab world. It is traditionally characterized by heavy use of the rebab, oud and other string instruments such as the violin, the occasional use of habbān, and the inclusion of percussion instruments such as the mirwas, tabl, and duff drums. Khaliji music first started as a bedouin tradition with poetry sung by a tribe's shaa'ir, which means poet, usually accompanied by a rebab, the lyrics dealt with tales of honor, love, camel riders, and glory warriors. Khaliji music has roots going back more than 1,000 years, to the Isl…",
+      "text_start_preview": "Khaliji (music) Khaliji music (also spelled Khaleeji; meaning Gulf music) is the music of Eastern Arabia, the Arab states of the Persian Gulf and it is popular across the Arab world. It is traditionally characterized by heavy use of the rebab, oud and other string instruments such as the violin, the occasional use of habbān, and the inclusion of percussion instruments such as the mirwas, tabl, and duff drums. Khaliji music first started as a bedouin tradition with poetry sung by a tribe's shaa'ir, which means poet, usually accompanied by a rebab, the lyrics dealt with tales of honor, love, camel riders, and glory warriors. Khaliji music has roots going back more than 1,000 years, to the Isl…",
+      "title": "Khaliji (music)"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 3,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 2,
+      "flags": [
+        "category_tail",
+        "short_continuation_chunk"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "410649",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_4e5c950ad8c84349677fea8a",
+      "sample_id": "cap_general_category_tail:rec_4e5c950ad8c84349677fea8a",
+      "sampling_cap_groups": [
+        "general_category_tail"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8831168831168831,
+        "character_entropy_bits": 4.334732567051937,
+        "characters": 77,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.0,
+        "words": 9
+      },
+      "stratum": "cap_general_category_tail",
+      "text_end_preview": "Caning BDSM activities Corporal punishments School punishments Whipping Pain",
+      "text_preview": "Caning BDSM activities Corporal punishments School punishments Whipping Pain",
+      "text_start_preview": "Caning BDSM activities Corporal punishments School punishments Whipping Pain",
+      "title": "Caning"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 2,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 1,
+      "flags": [
+        "category_tail",
+        "short_continuation_chunk"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1956093",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_3a346220c348c5a296b5df6b",
+      "sample_id": "cap_general_category_tail:rec_3a346220c348c5a296b5df6b",
+      "sampling_cap_groups": [
+        "general_category_tail"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7947368421052632,
+        "character_entropy_bits": 4.50041217885178,
+        "characters": 190,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.15384615384615385,
+        "words": 28
+      },
+      "stratum": "cap_general_category_tail",
+      "text_end_preview": "Clinton Correctional Facility Buildings and structures in Clinton County, New York Capital punishment in New York (state) Prisons in New York (state) 1845 establishments in New York (state)",
+      "text_preview": "Clinton Correctional Facility Buildings and structures in Clinton County, New York Capital punishment in New York (state) Prisons in New York (state) 1845 establishments in New York (state)",
+      "text_start_preview": "Clinton Correctional Facility Buildings and structures in Clinton County, New York Capital punishment in New York (state) Prisons in New York (state) 1845 establishments in New York (state)",
+      "title": "Clinton Correctional Facility"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 3,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 2,
+      "flags": [
+        "category_tail",
+        "short_continuation_chunk"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "38599255",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_c788e2ff96642f0883fadb2e",
+      "sample_id": "cap_general_category_tail:rec_c788e2ff96642f0883fadb2e",
+      "sampling_cap_groups": [
+        "general_category_tail"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8075313807531381,
+        "character_entropy_bits": 4.649423316103827,
+        "characters": 239,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 3,
+        "repeated_trigram_fraction": 0.0,
+        "words": 30
+      },
+      "stratum": "cap_general_category_tail",
+      "text_end_preview": "Thomas Goode (merchant) References 1816 births 1882 deaths People from Goolwa, South Australia Settlers of South Australia English emigrants to colonial Australia 19th-century Australian businesspeople 19th-century English businesspeople",
+      "text_preview": "Thomas Goode (merchant) References 1816 births 1882 deaths People from Goolwa, South Australia Settlers of South Australia English emigrants to colonial Australia 19th-century Australian businesspeople 19th-century English businesspeople",
+      "text_start_preview": "Thomas Goode (merchant) References 1816 births 1882 deaths People from Goolwa, South Australia Settlers of South Australia English emigrants to colonial Australia 19th-century Australian businesspeople 19th-century English businesspeople",
+      "title": "Thomas Goode (merchant)"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 4,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 3,
+      "flags": [
+        "category_tail",
+        "linewise_list",
+        "short_continuation_chunk"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "24454707",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_8e38949e4ff807df6b3ae67e",
+      "sample_id": "cap_general_category_tail:rec_8e38949e4ff807df6b3ae67e",
+      "sampling_cap_groups": [
+        "general_linewise_list",
+        "general_category_tail"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7327327327327328,
+        "character_entropy_bits": 4.41050402502842,
+        "characters": 333,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.15254237288135597,
+        "words": 61
+      },
+      "stratum": "cap_general_category_tail",
+      "text_end_preview": "Vatican City during World War II Neutral states in World War II Pope Pius XII and World War II World War II national military histories Wars involving Vatican City History of the papacy 1939 in Vatican City 1940 in Vatican City 1941 in Vatican City 1942 in Vatican City 1943 in Vatican City 1944 in Vatican City 1945 in Vatican City",
+      "text_preview": "Vatican City during World War II Neutral states in World War II Pope Pius XII and World War II World War II national military histories Wars involving Vatican City History of the papacy 1939 in Vatican City 1940 in Vatican City 1941 in Vatican City 1942 in Vatican City 1943 in Vatican City 1944 in Vatican City 1945 in Vatican City",
+      "text_start_preview": "Vatican City during World War II Neutral states in World War II Pope Pius XII and World War II World War II national military histories Wars involving Vatican City History of the papacy 1939 in Vatican City 1940 in Vatican City 1941 in Vatican City 1942 in Vatican City 1943 in Vatican City 1944 in Vatican City 1945 in Vatican City",
+      "title": "Vatican City during World War II"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 2,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 1,
+      "flags": [
+        "category_tail",
+        "linewise_list",
+        "short_continuation_chunk"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1646421",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_9b8cface3e62ae314760b9ba",
+      "sample_id": "cap_general_category_tail:rec_9b8cface3e62ae314760b9ba",
+      "sampling_cap_groups": [
+        "general_linewise_list",
+        "general_category_tail"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8596938775510204,
+        "character_entropy_bits": 4.589338781010242,
+        "characters": 392,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.0,
+        "words": 50
+      },
+      "stratum": "cap_general_category_tail",
+      "text_end_preview": "Giovanni Hidalgo 1963 births Living people American percussionists American drummers Latin jazz percussionists Conga players Barril players Plenera players Puerto Rican educators Music educators musicians from San Juan, Puerto Rico Planet Drum members Djembe players Batá drummers Timbaleros Bongo players American marimbists Timpanists Tubular bells players Tambourine players Güiro players",
+      "text_preview": "Giovanni Hidalgo 1963 births Living people American percussionists American drummers Latin jazz percussionists Conga players Barril players Plenera players Puerto Rican educators Music educators musicians from San Juan, Puerto Rico Planet Drum members Djembe players Batá drummers Timbaleros Bongo players American marimbists Timpanists Tubular bells players Tambourine players Güiro players",
+      "text_start_preview": "Giovanni Hidalgo 1963 births Living people American percussionists American drummers Latin jazz percussionists Conga players Barril players Plenera players Puerto Rican educators Music educators musicians from San Juan, Puerto Rico Planet Drum members Djembe players Batá drummers Timbaleros Bongo players American marimbists Timpanists Tubular bells players Tambourine players Güiro players",
+      "title": "Giovanni Hidalgo"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "low_language_content",
+        "stat_heavy_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "55353939",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_8ccd21a84b2f4d06eb00fc28",
+      "sample_id": "cap_general_stat_heavy_list:rec_8ccd21a84b2f4d06eb00fc28",
+      "sampling_cap_groups": [
+        "general_stat_heavy_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.40860215053763443,
+        "character_entropy_bits": 4.912416202406732,
+        "characters": 465,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 6,
+        "repeated_trigram_fraction": 0.0,
+        "words": 86
+      },
+      "stratum": "cap_general_stat_heavy_list",
+      "text_end_preview": "Pelopas Kiato F.C. Pelopas Kiato is a Greek football club, based in Kiato, Corinthia. Honours Domestic Amateur Cup: 1 1990-91 Corinthia FCA Championship: 13 1947-48, 1948–49, 1952–53, 1965–66, 1972–73, 1973–74, 1987–88, 1998–99, 2002–03, 2005–06, 2008–09, 2011–12, 2016–17 Corinthia FCA Cup: 10 1972-73, 1978–79, 1990–91, 1993–94, 1994–95, 1995–96, 1996–97, 2002–03, 2003–04, 2017-18 Association football clubs established in 1926 1926 establishments in Greece",
+      "text_preview": "Pelopas Kiato F.C. Pelopas Kiato is a Greek football club, based in Kiato, Corinthia. Honours Domestic Amateur Cup: 1 1990-91 Corinthia FCA Championship: 13 1947-48, 1948–49, 1952–53, 1965–66, 1972–73, 1973–74, 1987–88, 1998–99, 2002–03, 2005–06, 2008–09, 2011–12, 2016–17 Corinthia FCA Cup: 10 1972-73, 1978–79, 1990–91, 1993–94, 1994–95, 1995–96, 1996–97, 2002–03, 2003–04, 2017-18 Association football clubs established in 1926 1926 establishments in Greece",
+      "text_start_preview": "Pelopas Kiato F.C. Pelopas Kiato is a Greek football club, based in Kiato, Corinthia. Honours Domestic Amateur Cup: 1 1990-91 Corinthia FCA Championship: 13 1947-48, 1948–49, 1952–53, 1965–66, 1972–73, 1973–74, 1987–88, 1998–99, 2002–03, 2005–06, 2008–09, 2011–12, 2016–17 Corinthia FCA Cup: 10 1972-73, 1978–79, 1990–91, 1993–94, 1994–95, 1995–96, 1996–97, 2002–03, 2003–04, 2017-18 Association football clubs established in 1926 1926 establishments in Greece",
+      "title": "Pelopas Kiato F.C."
+    },
+    {
+      "band": "B0",
+      "chunk_count": 3,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 2,
+      "flags": [
+        "category_tail",
+        "linewise_list",
+        "short_continuation_chunk",
+        "table_markup_removed"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "8156282",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_bcd265bca5dccfd325809a88",
+      "sample_id": "cap_general_table_salvage:rec_bcd265bca5dccfd325809a88",
+      "sampling_cap_groups": [
+        "general_linewise_list",
+        "general_category_tail",
+        "general_table_salvage"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8235294117647058,
+        "character_entropy_bits": 4.745927985589754,
+        "characters": 306,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.023255813953488413,
+        "words": 45
+      },
+      "stratum": "cap_general_table_salvage",
+      "text_end_preview": "William J. Haynes II 1958 births American lawyers Davidson College alumni General Counsels of the United States Army George W. Bush administration personnel Harvard Law School alumni Living people People associated with Jenner & Block People from Waco, Texas Texas Republicans Torture in the United States",
+      "text_preview": "William J. Haynes II 1958 births American lawyers Davidson College alumni General Counsels of the United States Army George W. Bush administration personnel Harvard Law School alumni Living people People associated with Jenner & Block People from Waco, Texas Texas Republicans Torture in the United States",
+      "text_start_preview": "William J. Haynes II 1958 births American lawyers Davidson College alumni General Counsels of the United States Army George W. Bush administration personnel Harvard Law School alumni Living people People associated with Jenner & Block People from Waco, Texas Texas Republicans Torture in the United States",
+      "title": "William J. Haynes II"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "table_markup_removed"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "54561026",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_3913c643100462f166f04a46",
+      "sample_id": "cap_general_table_salvage:rec_3913c643100462f166f04a46",
+      "sampling_cap_groups": [
+        "general_table_salvage"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7707959305804907,
+        "character_entropy_bits": 4.756958450511725,
+        "characters": 1671,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 15,
+        "repeated_trigram_fraction": 0.02238805970149249,
+        "words": 270
+      },
+      "stratum": "cap_general_table_salvage",
+      "text_end_preview": "…quarter-finals, which Rotterdam won 89–92. Rotterdam reached the DBL semi-finals for the first time in 12 years. In October 2018, Kanda signed with Kangoeroes Basket Mechelen. Kanda signed with Spirou for the 2019–20 season. On 4 February 2020, Kanda signed a try-out contract with Heroes Den Bosch. On 17 July 2020, Kanda returned to Rotterdam, now named Feyenoord. Career statistics Domestic leagues |-|- Source: RealGM References 1996 births Living people Antwerp Giants players Belgian men's basketball players Dutch Basketball League players Feyenoord Basketball players Heroes Den Bosch players Kangoeroes Basket Mechelen players Point guards Spirou Charleroi players Sportspeople from Antwerp",
+      "text_preview": "Ordane Kanda-Kanyinda Ordane Kanda-Kanyinda (born 9 September 1996) is a Belgian professional basketball player who last played for Feyenoord Basketball. Professional career Kanda-Kanyinda was born in Antwerp and played in the youth development department of Antwerp Giants, where he started his professional basketball career. He played his first game for Antwerp's first team in the 2013–14 season, in the EuroChallenge campaign. The season 2016–17 was his first year where he was a definitive member of the first Antwerp Giants team. Antwerp finished second in the regular season and lost in the semi-finals of the playoffs. On 3 July 2017, Kanda-Kanyinda was sent on a one-year loan to Forward L…",
+      "text_start_preview": "Ordane Kanda-Kanyinda Ordane Kanda-Kanyinda (born 9 September 1996) is a Belgian professional basketball player who last played for Feyenoord Basketball. Professional career Kanda-Kanyinda was born in Antwerp and played in the youth development department of Antwerp Giants, where he started his professional basketball career. He played his first game for Antwerp's first team in the 2013–14 season, in the EuroChallenge campaign. The season 2016–17 was his first year where he was a definitive member of the first Antwerp Giants team. Antwerp finished second in the regular season and lost in the semi-finals of the playoffs. On 3 July 2017, Kanda-Kanyinda was sent on a one-year loan to Forward L…",
+      "title": "Ordane Kanda-Kanyinda"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 1,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "table_markup_removed"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "3204551",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_c10b78acccaa5c675a3f8945",
+      "sample_id": "cap_general_table_salvage:rec_c10b78acccaa5c675a3f8945",
+      "sampling_cap_groups": [
+        "general_table_salvage"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7714217328865486,
+        "character_entropy_bits": 4.692543621187994,
+        "characters": 4178,
+        "duplicate_line_fraction": 0.03225806451612903,
+        "list_line_fraction": 0.0,
+        "paragraphs": 22,
+        "repeated_trigram_fraction": 0.03404255319148941,
+        "words": 707
+      },
+      "stratum": "cap_general_table_salvage",
+      "text_end_preview": "…nce once a year whereas we have to do it for all away matches\". Srđan Radonjić said \"It is just crazy, they should have two Russian premier leagues, one for the European teams and another for Asian teams. Vladivostok is 4,000 miles from Moscow.\" Notable players Had international caps for their respective countries. Players whose name is listed in bold represented their countries while playing for Luch-Energiya. USSR/Russia Former USSR countries Europe Africa References External links Official website Association football clubs established in 1958 Luch Vladivostok Luch Vladivostok 1958 establishments in Russia Association football clubs disestablished in 2020 2020 disestablishments in Russia",
+      "text_preview": "FC Luch Vladivostok FC Luch Vladivostok () was an association football club based in Vladivostok, Russia. In 2005, Luch won the Russian First Division and played in the Premier League from 2006 to 2008. The club was called Luch-Energiya from 2003 to 2018, when it was renamed due to sponsorship from Dalenergo, an energy distribution company. History Luch has been playing in the Soviet Union championship since 1958. The name Luch means Ray. The club played in the Far East regional tournament of \"B-class\" teams and eventually won it in 1965, earning promotion to \"A-class\". Luch played in this regional tournament until league reorganization in 1972. From 1972 to 1991, Luch played in the Eastern…",
+      "text_start_preview": "FC Luch Vladivostok FC Luch Vladivostok () was an association football club based in Vladivostok, Russia. In 2005, Luch won the Russian First Division and played in the Premier League from 2006 to 2008. The club was called Luch-Energiya from 2003 to 2018, when it was renamed due to sponsorship from Dalenergo, an energy distribution company. History Luch has been playing in the Soviet Union championship since 1958. The name Luch means Ray. The club played in the Far East regional tournament of \"B-class\" teams and eventually won it in 1965, earning promotion to \"A-class\". Luch played in this regional tournament until league reorganization in 1972. From 1972 to 1991, Luch played in the Eastern…",
+      "title": "FC Luch Vladivostok"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 6,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "table_markup_removed"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1272199",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_c05a3d00e49d6ed368735f28",
+      "sample_id": "cap_general_table_salvage:rec_c05a3d00e49d6ed368735f28",
+      "sampling_cap_groups": [
+        "general_table_salvage"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7908011869436202,
+        "character_entropy_bits": 4.657218880539209,
+        "characters": 7414,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 9,
+        "repeated_trigram_fraction": 0.0977011494252874,
+        "words": 1220
+      },
+      "stratum": "cap_general_table_salvage",
+      "text_end_preview": "…The label kept saying \"Do another song, do another song, do another song\". It wasn't planned. It wasn't like I said, OK, I'm going to take charge.\" However, Kelly Rowland and Michelle Williams co-wrote only one track–\"Outro (DC-3) Thank You\". On July 20, Farrah Franklin departed from Destiny's Child, having already recorded backing vocals for several tracks, including \"Independent Women Part I\". The group embarked on Christina Aguilera's tour Christina Aguilera in Concert as an opening act on July 31, touring until October and simultaneously recording the album. Six songs, including both parts to \"Independent Women\", \"Nasty Girl\" and the unreleased \"I Tried\", had been recorded by September.",
+      "text_preview": "Survivor (Destiny's Child album) Survivor is the third studio album by American girl group Destiny's Child. It was released on April 25, 2001, by Columbia Records. As their breakthrough second studio album The Writing's on the Wall (1999) became a rising commercial success, Destiny's Child faced the controversial departure of original members LeToya Luckett and LaTavia Roberson, who were replaced with Farrah Franklin and Michelle Williams, in February 2000. Soon afterwards, they commenced production of their third studio album, tentatively titled Independent Women. Mere five months after joining, Franklin departed from the group in July, and \"Independent Women Part I\" was subsequently relea…",
+      "text_start_preview": "Survivor (Destiny's Child album) Survivor is the third studio album by American girl group Destiny's Child. It was released on April 25, 2001, by Columbia Records. As their breakthrough second studio album The Writing's on the Wall (1999) became a rising commercial success, Destiny's Child faced the controversial departure of original members LeToya Luckett and LaTavia Roberson, who were replaced with Farrah Franklin and Michelle Williams, in February 2000. Soon afterwards, they commenced production of their third studio album, tentatively titled Independent Women. Mere five months after joining, Franklin departed from the group in July, and \"Independent Women Part I\" was subsequently relea…",
+      "title": "Survivor (Destiny's Child album)"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 9,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 0,
+      "flags": [
+        "table_markup_removed"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "71966",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_e59aaa26557c7d28a5135eda",
+      "sample_id": "cap_general_table_salvage:rec_e59aaa26557c7d28a5135eda",
+      "sampling_cap_groups": [
+        "general_table_salvage"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7790712229315309,
+        "character_entropy_bits": 4.653951818638847,
+        "characters": 7989,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 17,
+        "repeated_trigram_fraction": 0.046792452830188624,
+        "words": 1327
+      },
+      "stratum": "cap_general_table_salvage",
+      "text_end_preview": "…en embarked on a world tour that continued through the first Lollapalooza festival in 1991. Broken (1992–1993) After a poor European reception opening for Guns N' Roses, the band returned to the US amid pressure from TVT to produce a follow-up to Pretty Hate Machine. After finding out they were hindering control of his project, Reznor criticized the labeling of Nine Inch Nails as a commercially oriented band and demanded his label terminate his contract, but they ignored his plea. In response, Reznor secretly began recording under various pseudonyms to avoid record company interference. Involved in a feud with TVT, he signed a record deal with Interscope Records and created Nothing Records:",
+      "text_preview": "Nine Inch Nails Nine Inch Nails, commonly abbreviated as NIN and stylized as NIИ, is an American industrial rock band formed in Cleveland in 1988. Singer, songwriter, multi-instrumentalist, and producer Trent Reznor was the only permanent member of the band until his frequent collaborator, Atticus Ross, joined in 2016. The band's debut album, Pretty Hate Machine (1989), was released via TVT Records. After disagreeing with TVT about how to promote the album, the band signed with Interscope Records and released the EP Broken (1992). The following albums, The Downward Spiral (1994) and The Fragile (1999), were released to critical acclaim and commercial success. Following a hiatus, Nine Inch N…",
+      "text_start_preview": "Nine Inch Nails Nine Inch Nails, commonly abbreviated as NIN and stylized as NIИ, is an American industrial rock band formed in Cleveland in 1988. Singer, songwriter, multi-instrumentalist, and producer Trent Reznor was the only permanent member of the band until his frequent collaborator, Atticus Ross, joined in 2016. The band's debut album, Pretty Hate Machine (1989), was released via TVT Records. After disagreeing with TVT about how to promote the album, the band signed with Interscope Records and released the EP Broken (1992). The following albums, The Downward Spiral (1994) and The Fragile (1999), were released to critical acclaim and commercial success. Following a hiatus, Nine Inch N…",
+      "title": "Nine Inch Nails"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 3,
+      "chunk_end_boundary": "paragraph",
+      "chunk_index": 2,
+      "flags": [
+        "human_sensitive_context_reviewed",
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "72000",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_5f3f92850e4e1922a6ae1272",
+      "sample_id": "cap_general_sensitive_context_review:rec_5f3f92850e4e1922a6ae1272",
+      "sampling_cap_groups": [
+        "general_linewise_list",
+        "general_sensitive_context_review"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8171127331711273,
+        "character_entropy_bits": 4.634711433004622,
+        "characters": 2466,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 13,
+        "repeated_trigram_fraction": 0.048913043478260865,
+        "words": 370
+      },
+      "stratum": "cap_general_sensitive_context_review",
+      "text_end_preview": "…ville. Spring Grove was the second county seat of Alachua County, after Newnansville was included in the newly created Columbia County, until Newnansville was returned to Alachua County and restored as the county seat. It was abandoned sometime in the middle of the 19th century. See also Alachua County Library District Florida State Parks in Alachua County National Register of Historic Places listings in Alachua County, Florida List of counties in Florida Notes External links Alachua County 1824 establishments in Florida Territory Florida placenames of Native American origin Charter counties in Florida Gainesville metropolitan area, Florida North Florida Populated places established in 1824",
+      "text_preview": "Alachua County, Florida On August 9, 2021, a prison inmate, Erica Thompson, gave birth while being held in the county jail. Her baby died. Despite the mother's screams, jail staff did not provide or call for medical assistance. An investigation held that law enforcement did not violate any law or policy. Landfills Alachua County is the site of five closed landfills—Southwest Landfill, Southeast Landfill, Northwest Landfill, Northeast Landfill, and Northeast Auxiliary Landfill. Since 1999, all solid waste from Alachua County has been hauled to the New River Solid Waste Facility in Raiford, in neighboring Union County. Communities Unincorporated communities Arredondo Bland Campville Cross Cre…",
+      "text_start_preview": "Alachua County, Florida On August 9, 2021, a prison inmate, Erica Thompson, gave birth while being held in the county jail. Her baby died. Despite the mother's screams, jail staff did not provide or call for medical assistance. An investigation held that law enforcement did not violate any law or policy. Landfills Alachua County is the site of five closed landfills—Southwest Landfill, Southeast Landfill, Northwest Landfill, Northeast Landfill, and Northeast Auxiliary Landfill. Since 1999, all solid waste from Alachua County has been hauled to the New River Solid Waste Facility in Raiford, in neighboring Union County. Communities Unincorporated communities Arredondo Bland Campville Cross Cre…",
+      "title": "Alachua County, Florida"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 2,
+      "chunk_end_boundary": "line",
+      "chunk_index": 0,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "26694500",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_203faf92b1b110fe79d99649",
+      "sample_id": "boundary_non_paragraph:rec_203faf92b1b110fe79d99649",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7049467752035066,
+        "character_entropy_bits": 4.897448603963107,
+        "characters": 7985,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 3,
+        "repeated_trigram_fraction": 0.21224086870681147,
+        "words": 1015
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…Domenichini, 1953 Anagyrus semifulvus Girault, 1915 Anagyrus shahidi Hayat, 1979 Anagyrus siccus (Prinsloo & Annecke, 1976) Anagyrus similis (Girault 1915) Anagyrus sinensis Noyes & Hayat, 1994 Anagyrus sinope Noyes & Menezes 2000 Anagyrus smithi Doutt, 1952 Anagyrus sogdianus Sugonjaev, 1968 Anagyrus sophax Noyes & Menezes 2000 Anagyrus spaici (Hoffer, 1970) Anagyrus spica (Girault 1921) Anagyrus subalbipes Ishii, 1928 Anagyrus subflaviceps (Girault 1915) Anagyrus subnigricornis Ishii, 1928 Anagyrus subproximus (Silvestri, 1915) Anagyrus subtilis Noyes & Hayat, 1994 Anagyrus sucro Noyes, 2000 Anagyrus suia Noyes, 2000 Anagyrus surekhae Noyes & Menezes 2000 Anagyrus swezeyi Timberlake, 1919",
+      "text_preview": "Anagyrus Anagyrus is a large genus of parasitic wasps from the family Encyrtidae. Anagyrus is distributed throughout the world. A subgenus of Anagyrus is known as Nesoanagyrus (Beardsley 1969) Species There are at least 247 species in this genus which consists of: Anagyrus abatos (Noyes & Menezes, 2000) Anagyrus abdulrassouli (Myartseva, Sugonjaev & Trjapitzin, 1982) Anagyrus abyssinicus Compere, 1939 Anagyrus aceris Noyes & Hayat, 1994 Anagyrus aciculatus (Blanchard, 1940) Anagyrus adamsoni Timberlake, 1941 Anagyrus aega Noyes, 2000 Anagyrus aegyptiacus Moursi, 1948 Anagyrus agraensis Saraswat 1975 Anagyrus alami Hayat 1970 Anagyrus albatus Myartseva, 1982 Anagyrus aligarhensis Agarwal & A…",
+      "text_start_preview": "Anagyrus Anagyrus is a large genus of parasitic wasps from the family Encyrtidae. Anagyrus is distributed throughout the world. A subgenus of Anagyrus is known as Nesoanagyrus (Beardsley 1969) Species There are at least 247 species in this genus which consists of: Anagyrus abatos (Noyes & Menezes, 2000) Anagyrus abdulrassouli (Myartseva, Sugonjaev & Trjapitzin, 1982) Anagyrus abyssinicus Compere, 1939 Anagyrus aceris Noyes & Hayat, 1994 Anagyrus aciculatus (Blanchard, 1940) Anagyrus adamsoni Timberlake, 1941 Anagyrus aega Noyes, 2000 Anagyrus aegyptiacus Moursi, 1948 Anagyrus agraensis Saraswat 1975 Anagyrus alami Hayat 1970 Anagyrus albatus Myartseva, 1982 Anagyrus aligarhensis Agarwal & A…",
+      "title": "Anagyrus"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 4,
+      "chunk_end_boundary": "line",
+      "chunk_index": 2,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65813354",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_2ec3fb84b0c5e38c5277d166",
+      "sample_id": "boundary_non_paragraph:rec_2ec3fb84b0c5e38c5277d166",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8120215836365918,
+        "character_entropy_bits": 4.626818115369305,
+        "characters": 7969,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.3422957600827301,
+        "words": 969
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…enous Crassula thunbergiana Schult. subsp. minutiflora (Schonland & Baker f.) Toelken, indigenous Crassula thunbergiana Schult. subsp. thunbergiana, endemic Crassula tomentosa Thunb. indigenous Crassula tomentosa Thunb. var. glabrifolia (Harv.) G.D.Rowley, indigenous Crassula tomentosa Thunb. var. tomentosa, indigenous Crassula tuberella Toelken, indigenous Crassula umbella Jacq. endemic Crassula umbellata Thunb. endemic Crassula umbraticola N.E.Br. indigenous Crassula vaginata Eckl. & Zeyh. indigenous Crassula vaginata Eckl. & Zeyh. subsp. vaginata, indigenous Crassula vaillantii (Willd.) Roth, not indigenous, naturalised Crassula vestita Thunb. endemic Crassula werneri N.Jacobsen, endemic",
+      "text_preview": "List of Saxifragales of South Africa Crassula multiflora Schonland & Baker f. subsp. multiflora, endemic Crassula muricata Thunb. endemic Crassula muscosa L. indigenous Crassula muscosa L. var. muscosa, indigenous Crassula muscosa L. var. obtusifolia (Harv.) G.D.Rowley, indigenous Crassula muscosa L. var. parvula (Eckl. & Zeyh.) Toelken, endemic Crassula muscosa L. var. polpodacea (Eckl. & Zeyh.) G.D.Rowley, endemic Crassula namaquensis Schonland & Baker f. indigenous Crassula namaquensis Schonland & Baker f. subsp. comptonii (Hutch. & Pillans) Toelken, endemic Crassula namaquensis Schonland & Baker f. subsp. lutea (Schonland) Toelken, endemic Crassula namaquensis Schonland & Baker f. subsp…",
+      "text_start_preview": "List of Saxifragales of South Africa Crassula multiflora Schonland & Baker f. subsp. multiflora, endemic Crassula muricata Thunb. endemic Crassula muscosa L. indigenous Crassula muscosa L. var. muscosa, indigenous Crassula muscosa L. var. obtusifolia (Harv.) G.D.Rowley, indigenous Crassula muscosa L. var. parvula (Eckl. & Zeyh.) Toelken, endemic Crassula muscosa L. var. polpodacea (Eckl. & Zeyh.) G.D.Rowley, endemic Crassula namaquensis Schonland & Baker f. indigenous Crassula namaquensis Schonland & Baker f. subsp. comptonii (Hutch. & Pillans) Toelken, endemic Crassula namaquensis Schonland & Baker f. subsp. lutea (Schonland) Toelken, endemic Crassula namaquensis Schonland & Baker f. subsp…",
+      "title": "List of Saxifragales of South Africa"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 2,
+      "chunk_end_boundary": "line",
+      "chunk_index": 0,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "27528353",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_55072f6f14692e650bb5412f",
+      "sample_id": "boundary_non_paragraph:rec_55072f6f14692e650bb5412f",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7171184738955824,
+        "character_entropy_bits": 4.8507384975469545,
+        "characters": 7968,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 3,
+        "repeated_trigram_fraction": 0.15335463258785942,
+        "words": 941
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…Limnaecia stenosticha Turner, 1926 Limnaecia symplecta Turner, 1923 Limnaecia syntaracta Meyrick, 1897 Limnaecia tetraplanetis Meyrick, 1897 Limnaecia triplaneta Meyrick, 1921 Limnaecia trisema Meyrick, 1897 Limnaecia trissodesma (Meyrick, 1887) Limnaecia trixantha (Lower, 1920) Limnaecia xanthopelta Lower, 1903 Limnaecia xanthopis Meyrick, 1920 Limnaecia zonomacula Lower, 1908 Limnaecia zotica Meyrick, 1921 Macrobathra allocrana Turner, 1916 Macrobathra allophyla (Turner, 1944) Macrobathra alternatella (Walker, 1864) Macrobathra anacampta Meyrick, 1914 Macrobathra anemarcha Meyrick, 1886 Macrobathra anemodes Meyrick, 1886 Macrobathra aneurae Turner, 1932 Macrobathra aphristis Meyrick, 1889",
+      "text_preview": "List of moths of Australia (Cosmopterigidae) This is a list of the Australian species of the family Cosmopterigidae. It also acts as an index to the species articles and forms part of the full List of moths of Australia. Chrysopeleiinae Cholotis exodroma (Meyrick, 1897) Cholotis semnostola (Meyrick, 1897) Eumenodora encrypta Meyrick, 1906 Ithome lassula Hodges, 1962 Leptozestis anagrapta (Meyrick, 1897) Leptozestis antithetis (Meyrick, 1897) Leptozestis argoscia (Lower, 1904) Leptozestis autochroa (Meyrick, 1915) Leptozestis capnopora (Meyrick, 1897) Leptozestis cataspoda (Meyrick, 1897) Leptozestis charmosyna (Meyrick, 1921) Leptozestis crassipalpis (Turner, 1923) Leptozestis crebra (Meyri…",
+      "text_start_preview": "List of moths of Australia (Cosmopterigidae) This is a list of the Australian species of the family Cosmopterigidae. It also acts as an index to the species articles and forms part of the full List of moths of Australia. Chrysopeleiinae Cholotis exodroma (Meyrick, 1897) Cholotis semnostola (Meyrick, 1897) Eumenodora encrypta Meyrick, 1906 Ithome lassula Hodges, 1962 Leptozestis anagrapta (Meyrick, 1897) Leptozestis antithetis (Meyrick, 1897) Leptozestis argoscia (Lower, 1904) Leptozestis autochroa (Meyrick, 1915) Leptozestis capnopora (Meyrick, 1897) Leptozestis cataspoda (Meyrick, 1897) Leptozestis charmosyna (Meyrick, 1921) Leptozestis crassipalpis (Turner, 1923) Leptozestis crebra (Meyri…",
+      "title": "List of moths of Australia (Cosmopterigidae)"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 4,
+      "chunk_end_boundary": "line",
+      "chunk_index": 0,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65813354",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_687ad59a83c4238fecdaad6a",
+      "sample_id": "boundary_non_paragraph:rec_687ad59a83c4238fecdaad6a",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8075235109717869,
+        "character_entropy_bits": 4.762742296205565,
+        "characters": 7975,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 15,
+        "repeated_trigram_fraction": 0.16827852998065762,
+        "words": 1036
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…indigenous Cotyledon pendens Van Jaarsv. endemic Cotyledon petiolaris Van Jaarsv. endemic Cotyledon rhombifolia Haw. accepted as Adromischus rhombifolius (Haw.) Lem. Cotyledon tomentosa Harv. indigenous Cotyledon tomentosa Harv. subsp. ladismithiensis (Poelln.) Toelken, endemic Cotyledon tomentosa Harv. subsp. tomentosa, endemic Cotyledon velutina Hook.f. endemic Cotyledon woodii Schonland & Baker f. endemic Cotyledon xanthantha Van Jaarsv. & Eggli, endemic Crassula Genus Crassula: Crassula acinaciformis Schinz, indigenous Crassula alba Forssk. var. alba, indigenous Crassula alba Forssk. var. pallida Toelken, indigenous Crassula alba Forssk. var. parvisepala (Schonland) Toelken, indigenous",
+      "text_preview": "List of Saxifragales of South Africa Saxifragales (saxifrages) is an order of flowering plants (Angiosperms). They are an extremely diverse group of plants which include trees, shrubs, perennial herbs, succulent and aquatic plants. The degree of diversity in terms of vegetative and floral features makes it difficult to define common features that unify the order. In the Angiosperm Phylogeny Group classification system, the Saxifragales are placed within the major division of flowering plants referred to as eudicots, specifically the core eudicots. This subgroup consists of the Dilleniaceae, superasterids and superrosids. The superrosids in turn have two components, rosids and Saxifragales.…",
+      "text_start_preview": "List of Saxifragales of South Africa Saxifragales (saxifrages) is an order of flowering plants (Angiosperms). They are an extremely diverse group of plants which include trees, shrubs, perennial herbs, succulent and aquatic plants. The degree of diversity in terms of vegetative and floral features makes it difficult to define common features that unify the order. In the Angiosperm Phylogeny Group classification system, the Saxifragales are placed within the major division of flowering plants referred to as eudicots, specifically the core eudicots. This subgroup consists of the Dilleniaceae, superasterids and superrosids. The superrosids in turn have two components, rosids and Saxifragales.…",
+      "title": "List of Saxifragales of South Africa"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 11,
+      "chunk_end_boundary": "line",
+      "chunk_index": 7,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1271947",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_699d0ee0ff69d9b99de4f577",
+      "sample_id": "boundary_non_paragraph:rec_699d0ee0ff69d9b99de4f577",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7776092999747283,
+        "character_entropy_bits": 4.704275525532366,
+        "characters": 7914,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.16718750000000004,
+        "words": 1282
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…right to vote. New Zealand: New Zealand became the first self-governing country in the world in which all women had the right to vote in parliamentary elections. Cook Islands: The Cook Islands granted women the right to vote in island councils and a federal parliament. 1894 South Australia: South Australia granted women the right to vote. United Kingdom: The United Kingdom extended the right to vote in local elections to married women. 1895 US: Almost all U.S. states had passed some form of Sole Trader Laws, Property Laws, and Earnings Laws, granting married women the right to trade without their husbands' consent, own and/or control their own property, and control their own earnings. 1896",
+      "text_preview": "First-wave feminism 1839 US, Mississippi: Mississippi was the first U.S. state that gave married women limited property rights. United Kingdom: The Custody of Infants Act 1839 made it possible for divorced mothers to be granted custody of their children under seven, but only if the Lord Chancellor agreed to it, and only if the mother was of good character. US, Mississippi: The Married Women's Property Act 1839 granted married women the right to own (but not control) property in their own name. 1840 US, Texas: Married women were allowed to own property in their own name. 1841 Bulgaria: The first secular girls school in Bulgaria was opened, making education and the profession of teacher avail…",
+      "text_start_preview": "First-wave feminism 1839 US, Mississippi: Mississippi was the first U.S. state that gave married women limited property rights. United Kingdom: The Custody of Infants Act 1839 made it possible for divorced mothers to be granted custody of their children under seven, but only if the Lord Chancellor agreed to it, and only if the mother was of good character. US, Mississippi: The Married Women's Property Act 1839 granted married women the right to own (but not control) property in their own name. 1840 US, Texas: Married women were allowed to own property in their own name. 1841 Bulgaria: The first secular girls school in Bulgaria was opened, making education and the profession of teacher avail…",
+      "title": "First-wave feminism"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 4,
+      "chunk_end_boundary": "line",
+      "chunk_index": 1,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65813354",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_ca42c8e9e1bd7d8a72de1a27",
+      "sample_id": "boundary_non_paragraph:rec_ca42c8e9e1bd7d8a72de1a27",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8152706266482481,
+        "character_entropy_bits": 4.627658853461458,
+        "characters": 7963,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.34869109947643984,
+        "words": 957
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…s (Haw.) D.Dietr. subsp. hispida (Haw.) Toelken, endemic Crassula mesembryanthemoides (Haw.) D.Dietr. subsp. mesembryanthemoides, endemic Crassula minuta Toelken, endemic Crassula mollis Thunb. endemic Crassula montana Thunb. indigenous Crassula montana Thunb. subsp. montana, endemic Crassula montana Thunb. subsp. quadrangularis (Schonland) Toelken, endemic Crassula multicava Lem. indigenous Crassula multicava Lem. subsp. floribunda Friedrich ex Toelken, endemic Crassula multicava Lem. subsp. multicava, endemic Crassula multiceps Harv. endemic Crassula multiflora Schonland & Baker f. indigenous Crassula multiflora Schonland & Baker f. subsp. leucantha (Schonland & Baker f.) Toelken, endemic",
+      "text_preview": "List of Saxifragales of South Africa Crassula alcicornis Schonland, endemic Crassula alpestris Thunb. indigenous Crassula alpestris Thunb. subsp. alpestris, endemic Crassula alpestris Thunb. subsp. massonii (Britten & Baker f.) Toelken, endemic Crassula alstonii Marloth, endemic Crassula ammophila Toelken, endemic Crassula aphylla Schonland & Baker f. endemic Crassula arborea Medik. accepted as Crassula arborescens (Mill.) Willd. subsp. arborescens, indigenous Crassula arborescens (Mill.) Willd. endemic Crassula arborescens (Mill.) Willd. subsp. arborescens, endemic Crassula arborescens (Mill.) Willd. subsp. undulatifolia Toelken, endemic Crassula argentea Thunb. accepted as Crassula ovata…",
+      "text_start_preview": "List of Saxifragales of South Africa Crassula alcicornis Schonland, endemic Crassula alpestris Thunb. indigenous Crassula alpestris Thunb. subsp. alpestris, endemic Crassula alpestris Thunb. subsp. massonii (Britten & Baker f.) Toelken, endemic Crassula alstonii Marloth, endemic Crassula ammophila Toelken, endemic Crassula aphylla Schonland & Baker f. endemic Crassula arborea Medik. accepted as Crassula arborescens (Mill.) Willd. subsp. arborescens, indigenous Crassula arborescens (Mill.) Willd. endemic Crassula arborescens (Mill.) Willd. subsp. arborescens, endemic Crassula arborescens (Mill.) Willd. subsp. undulatifolia Toelken, endemic Crassula argentea Thunb. accepted as Crassula ovata…",
+      "title": "List of Saxifragales of South Africa"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 11,
+      "chunk_end_boundary": "line",
+      "chunk_index": 8,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1271947",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_ddb6df1b0b05db91f7997f78",
+      "sample_id": "boundary_non_paragraph:rec_ddb6df1b0b05db91f7997f78",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7998238550578762,
+        "character_entropy_bits": 4.669497526977983,
+        "characters": 7948,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 2,
+        "repeated_trigram_fraction": 0.17766911165444177,
+        "words": 1229
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…ondon Federation of Suffragettes. 1913 Russia: In 1913 Russian women observed their first International Women's Day on the last Sunday in February. Following discussions, International Women's Day was transferred to 8 March and this day has remained the global date for International Women's Day ever since. US, Alaska: Alaska granted women the right to vote. Norway: Norway granted women the right to vote. Japan: Public universities opened to women. United Kingdom: The suffragette Emily Davison was killed by the King's horse at The Derby. United Kingdom: 50,000 women taking part in a pilgrimage organized by the National Union of Women's Suffrage Societies arrived in Hyde Park on July 26. 1914",
+      "text_preview": "First-wave feminism Argentina: A group of anarcha-feminist women, headed by Virginia Bolten, publish La Voz de la Mujer, one of the first feminist newspapers of Latin America. US, Idaho: Idaho granted women the right to vote. 1900 Western Australia: Western Australia granted women the right to vote. Belgium: Legal majority was granted to unmarried women. Egypt: A school for female teachers was founded in Cairo. France: Women were allowed to practice law. Korea: The post office profession was opened to women. Tunisia: The first public elementary school for girls was opened. Japan: The first women's university was opened. Baden, Germany: Universities opened to women. Sweden: Maternity leave w…",
+      "text_start_preview": "First-wave feminism Argentina: A group of anarcha-feminist women, headed by Virginia Bolten, publish La Voz de la Mujer, one of the first feminist newspapers of Latin America. US, Idaho: Idaho granted women the right to vote. 1900 Western Australia: Western Australia granted women the right to vote. Belgium: Legal majority was granted to unmarried women. Egypt: A school for female teachers was founded in Cairo. France: Women were allowed to practice law. Korea: The post office profession was opened to women. Tunisia: The first public elementary school for girls was opened. Japan: The first women's university was opened. Baden, Germany: Universities opened to women. Sweden: Maternity leave w…",
+      "title": "First-wave feminism"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 4,
+      "chunk_end_boundary": "line",
+      "chunk_index": 2,
+      "flags": [
+        "linewise_list",
+        "repetitive_language"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "65813793",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_fb9edc36b8cebe3a3c4bf73f",
+      "sample_id": "boundary_non_paragraph:rec_fb9edc36b8cebe3a3c4bf73f",
+      "sampling_cap_groups": [
+        "general_structured_low_prose",
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.8322911455727864,
+        "character_entropy_bits": 4.601664986370677,
+        "characters": 7996,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 7,
+        "repeated_trigram_fraction": 0.43597262952101656,
+        "words": 1025
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…as Solanum laxum Spreng. not indigenous, naturalised Solanum kibweziense Dammer, accepted as Solanum tettense Klotzsch Solanum koniortodes Dammer, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright, accepted as Solanum tettense Klotzsch, indigenous Solanum kwebense N.E.Br. ex C.H.Wright var. acutius Bitter, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright var. chondropetalum (Dammer) Bitter, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright var. luederitzii (Schinz) Bitter, accepted as Solanum tettense Klotzsch Solanum kwebense N.E.Br. ex C.H.Wright var. majorifrons Bitter, accepted as Solanum tettense Klotzsch",
+      "text_preview": "List of Solanales of South Africa Lycium Genus Lycium: Lycium acutifolium E.Mey. ex Dunal, endemic Lycium afrum L. endemic Lycium amoenum Dammer, indigenous Lycium arenicola Miers, indigenous Lycium bosciifolium Schinz, indigenous Lycium cinereum Thunb. indigenous Lycium cordatum Mill. accepted as Carissa bispinosa (L.) Desf. ex Brenan, indigenous Lycium ferocissimum Miers, indigenous Lycium gariepense A.M.Venter, indigenous Lycium grandicalyx Joubert & Venter, indigenous Lycium hantamense A.M.Venter, indigenous Lycium hirsutum Dunal, indigenous Lycium horridum Thunb. indigenous Lycium mascarenense A.M.Venter & A.J.Scott, indigenous Lycium oxycarpum Dunal, endemic Lycium pilifolium C.H.Wrig…",
+      "text_start_preview": "List of Solanales of South Africa Lycium Genus Lycium: Lycium acutifolium E.Mey. ex Dunal, endemic Lycium afrum L. endemic Lycium amoenum Dammer, indigenous Lycium arenicola Miers, indigenous Lycium bosciifolium Schinz, indigenous Lycium cinereum Thunb. indigenous Lycium cordatum Mill. accepted as Carissa bispinosa (L.) Desf. ex Brenan, indigenous Lycium ferocissimum Miers, indigenous Lycium gariepense A.M.Venter, indigenous Lycium grandicalyx Joubert & Venter, indigenous Lycium hantamense A.M.Venter, indigenous Lycium hirsutum Dunal, indigenous Lycium horridum Thunb. indigenous Lycium mascarenense A.M.Venter & A.J.Scott, indigenous Lycium oxycarpum Dunal, endemic Lycium pilifolium C.H.Wrig…",
+      "title": "List of Solanales of South Africa"
+    },
+    {
+      "band": "B0",
+      "chunk_count": 2,
+      "chunk_end_boundary": "line",
+      "chunk_index": 0,
+      "flags": [
+        "linewise_list"
+      ],
+      "human_review": {
+        "band_agrees": null,
+        "boundary_clean": null,
+        "cap_group_agrees": null,
+        "coherent_and_complete": null,
+        "decision": null,
+        "meaningful_language": null,
+        "notes": "",
+        "pii_safe": null
+      },
+      "parent_upstream_id": "1930500",
+      "pii_counts": {
+        "email": 0,
+        "ipv4": 0,
+        "phone": 0,
+        "secret": 0
+      },
+      "record_id": "rec_ff9dffa9e298302d4622efee",
+      "sample_id": "boundary_non_paragraph:rec_ff9dffa9e298302d4622efee",
+      "sampling_cap_groups": [
+        "general_linewise_list"
+      ],
+      "sampling_weight": 0.25,
+      "signals": {
+        "alpha_fraction": 0.7530430417869244,
+        "character_entropy_bits": 4.795395766888607,
+        "characters": 7969,
+        "duplicate_line_fraction": 0.0,
+        "list_line_fraction": 0.0,
+        "paragraphs": 15,
+        "repeated_trigram_fraction": 0.125,
+        "words": 1194
+      },
+      "stratum": "boundary_non_paragraph",
+      "text_end_preview": "…rector Background to Latin America - documentary short, James Beveridge 1963 - writer Canada Between Two World Wars - documentary short 1963 - writer and producer Canada: Human Vaccine - documentary short, Hector Lemieux 1963 - writer Canada: Beef Cattle - documentary short, Hector Lemieux 1963 - writer Canada: Calf Leather - documentary short, Hector Lemieux 1963 - writer Canada: Heating Units - documentary short, Hector Lemieux 1963 - writer The Visit - documentary short John Kemeny 1964 - writer Turn of the Century - documentary short 1964 - writer and producer Haida Carver - documentary short, Richard Gilbert 1964 - writer Landfall Asia - documentary short, Gordon Sparling 1964 - writer",
+      "text_preview": "William Weintraub William Weintraub (February 19, 1926 – November 6, 2017) was a Canadian documentarian/filmmaker, journalist and author, best known for his long career with the National Film Board of Canada (NFB). Early life Weintraub was born in Montreal, to Louis Weintraub and Mina Blumer Weintraub, and grew up in the blue-collar neighbourhood of Verdun. His father had been a stock broker; he lost everything in the Wall Street Crash of 1929 and worked as the manager of a corner store. William studied English Literature and political science at McGill University, where he had worked on the McGill Daily. In 1947, he took the job of a ski reporter at The Montreal Gazette, from which he was…",
+      "text_start_preview": "William Weintraub William Weintraub (February 19, 1926 – November 6, 2017) was a Canadian documentarian/filmmaker, journalist and author, best known for his long career with the National Film Board of Canada (NFB). Early life Weintraub was born in Montreal, to Louis Weintraub and Mina Blumer Weintraub, and grew up in the blue-collar neighbourhood of Verdun. His father had been a stock broker; he lost everything in the Wall Street Crash of 1929 and worked as the manager of a corner store. William studied English Literature and political science at McGill University, where he had worked on the McGill Daily. In 1947, he took the job of a ski reporter at The Montreal Gazette, from which he was…",
+      "title": "William Weintraub"
+    }
+  ],
+  "schema_version": 1,
+  "source_artifact": "data/experiments/corpus_v3/wikipedia_general_en.jsonl.gz"
+}

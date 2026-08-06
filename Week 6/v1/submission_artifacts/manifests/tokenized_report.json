@@ -1,0 +1,301 @@
+{
+  "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+  "schema_version": 1,
+  "shards": [
+    {
+      "lane": "agentic",
+      "loss_bearing_token_count": 16787,
+      "loss_policy_records": {
+        "assistant_origin_only": 40
+      },
+      "manifest_hash": "sha256:4b1a3edfe23e2e343f8644d0a4d50a42e8263ff1d06960890b127d9c1444a706",
+      "manifest_path": "data/tokenized_v1/agentic/anneal/manifest.json",
+      "permission": "anneal",
+      "record_count": 40,
+      "shard_id": "agentic-anneal-v1",
+      "token_count": 101503
+    },
+    {
+      "lane": "agentic",
+      "loss_bearing_token_count": 815919,
+      "loss_policy_records": {
+        "agentic_context_only": 1,
+        "assistant_origin_only": 1778
+      },
+      "manifest_hash": "sha256:73039effbb1d6a102871b749775b3fe6b5f4b69d642a9e237a10d11c4ec00b71",
+      "manifest_path": "data/tokenized_v1/agentic/train/manifest.json",
+      "permission": "train",
+      "record_count": 1779,
+      "shard_id": "agentic-train-v1",
+      "token_count": 4589792
+    },
+    {
+      "lane": "agentic",
+      "loss_bearing_token_count": 85004,
+      "loss_policy_records": {
+        "assistant_origin_only": 202
+      },
+      "manifest_hash": "sha256:88e61e622b2408e072996135955552feb73b525fb7196d96479916c96d8a8b15",
+      "manifest_path": "data/tokenized_v1/agentic/validation/manifest.json",
+      "permission": "validation",
+      "record_count": 202,
+      "shard_id": "agentic-validation-v1",
+      "token_count": 550831
+    },
+    {
+      "lane": "code",
+      "loss_bearing_token_count": 150943,
+      "loss_policy_records": {
+        "full_text_causal": 53
+      },
+      "manifest_hash": "sha256:3384d339691532a10fb1682f15ce3d89157071173e767f61b7ad0075313c52d8",
+      "manifest_path": "data/tokenized_v1/code/anneal/manifest.json",
+      "permission": "anneal",
+      "record_count": 53,
+      "shard_id": "code-anneal-v1",
+      "token_count": 150996
+    },
+    {
+      "lane": "code",
+      "loss_bearing_token_count": 10804453,
+      "loss_policy_records": {
+        "full_text_causal": 3592
+      },
+      "manifest_hash": "sha256:d6fdc693d6a23bdcebdb314c2a9af9fbb5f6a280fa26d19d73c39873866afbb6",
+      "manifest_path": "data/tokenized_v1/code/train/manifest.json",
+      "permission": "train",
+      "record_count": 3592,
+      "shard_id": "code-train-v1",
+      "token_count": 10808045
+    },
+    {
+      "lane": "code",
+      "loss_bearing_token_count": 1473727,
+      "loss_policy_records": {
+        "full_text_causal": 454
+      },
+      "manifest_hash": "sha256:03d21e46132f92b6f9abeb859ed7809d5b491ffb00e4db8d025ef989fa17fbe2",
+      "manifest_path": "data/tokenized_v1/code/validation/manifest.json",
+      "permission": "validation",
+      "record_count": 454,
+      "shard_id": "code-validation-v1",
+      "token_count": 1474181
+    },
+    {
+      "lane": "general",
+      "loss_bearing_token_count": 123919,
+      "loss_policy_records": {
+        "full_text_causal": 87
+      },
+      "manifest_hash": "sha256:4a80a5b9a157f0a7e4c9247edc900a52bb26d9fe7879c8099f7c5b7f1b6b26ec",
+      "manifest_path": "data/tokenized_v1/general/anneal/manifest.json",
+      "permission": "anneal",
+      "record_count": 87,
+      "shard_id": "general-anneal-v1",
+      "token_count": 124006
+    },
+    {
+      "lane": "general",
+      "loss_bearing_token_count": 6832542,
+      "loss_policy_records": {
+        "full_text_causal": 4557
+      },
+      "manifest_hash": "sha256:e0e19872bcca967f4b9432df95a8dc302d9450a4479955912ffe92f4205addc6",
+      "manifest_path": "data/tokenized_v1/general/train/manifest.json",
+      "permission": "train",
+      "record_count": 4557,
+      "shard_id": "general-train-v1",
+      "token_count": 6837099
+    },
+    {
+      "lane": "general",
+      "loss_bearing_token_count": 800196,
+      "loss_policy_records": {
+        "full_text_causal": 539
+      },
+      "manifest_hash": "sha256:9b4e3a05b8385f3701a71a7a6ef50ca188e4751b02eca92e8c09f80542685483",
+      "manifest_path": "data/tokenized_v1/general/validation/manifest.json",
+      "permission": "validation",
+      "record_count": 539,
+      "shard_id": "general-validation-v1",
+      "token_count": 800735
+    },
+    {
+      "lane": "indic",
+      "loss_bearing_token_count": 150382,
+      "loss_policy_records": {
+        "full_text_causal": 78,
+        "translated_observation_only": 26
+      },
+      "manifest_hash": "sha256:5ce1ca732cd73c0f055972e0cee8bd65fbfdc3fd8b72f91a8c22dc5c08448837",
+      "manifest_path": "data/tokenized_v1/indic/anneal/manifest.json",
+      "permission": "anneal",
+      "record_count": 104,
+      "shard_id": "indic-anneal-v1",
+      "token_count": 151961
+    },
+    {
+      "lane": "indic",
+      "loss_bearing_token_count": 8026016,
+      "loss_policy_records": {
+        "full_text_causal": 3760,
+        "translated_observation_only": 877
+      },
+      "manifest_hash": "sha256:3faa591fb8286798757cb65670132066147d56fb706fca1c1f4241553980c885",
+      "manifest_path": "data/tokenized_v1/indic/train/manifest.json",
+      "permission": "train",
+      "record_count": 4637,
+      "shard_id": "indic-train-v1",
+      "token_count": 8079409
+    },
+    {
+      "lane": "indic",
+      "loss_bearing_token_count": 1064887,
+      "loss_policy_records": {
+        "full_text_causal": 466,
+        "translated_observation_only": 97
+      },
+      "manifest_hash": "sha256:98c62aa6ace183296dc9dec9320b032fe3eece13e089d24d736ba5eae4a21e7f",
+      "manifest_path": "data/tokenized_v1/indic/validation/manifest.json",
+      "permission": "validation",
+      "record_count": 563,
+      "shard_id": "indic-validation-v1",
+      "token_count": 1070805
+    },
+    {
+      "lane": "long_context",
+      "loss_bearing_token_count": 140610,
+      "loss_policy_records": {
+        "full_text_causal": 26
+      },
+      "manifest_hash": "sha256:a9886afa3190bfe4cd7f9072609371485d82d7e2611ea96f68bdc609d538c0ec",
+      "manifest_path": "data/tokenized_v1/long_context/anneal/manifest.json",
+      "permission": "anneal",
+      "record_count": 26,
+      "shard_id": "long_context-anneal-v1",
+      "token_count": 140636
+    },
+    {
+      "lane": "long_context",
+      "loss_bearing_token_count": 6005062,
+      "loss_policy_records": {
+        "full_text_causal": 1184
+      },
+      "manifest_hash": "sha256:26222f9770fe3384445d384d319a57bff9b0ca360152087a6302e0953734355c",
+      "manifest_path": "data/tokenized_v1/long_context/train/manifest.json",
+      "permission": "train",
+      "record_count": 1184,
+      "shard_id": "long_context-train-v1",
+      "token_count": 6006246
+    },
+    {
+      "lane": "long_context",
+      "loss_bearing_token_count": 644964,
+      "loss_policy_records": {
+        "full_text_causal": 131
+      },
+      "manifest_hash": "sha256:7a919855a577c90f31047eff7c58037918d5a2e4473294b86645c71eaa519a77",
+      "manifest_path": "data/tokenized_v1/long_context/validation/manifest.json",
+      "permission": "validation",
+      "record_count": 131,
+      "shard_id": "long_context-validation-v1",
+      "token_count": 645095
+    },
+    {
+      "lane": "reasoning",
+      "loss_bearing_token_count": 9651,
+      "loss_policy_records": {
+        "reasoning_answer_only": 58
+      },
+      "manifest_hash": "sha256:798fe355a01a1a07721902967ad209ed68365f5edf89e824125514bc27342d8e",
+      "manifest_path": "data/tokenized_v1/reasoning/anneal/manifest.json",
+      "permission": "anneal",
+      "record_count": 58,
+      "shard_id": "reasoning-anneal-v1",
+      "token_count": 16894
+    },
+    {
+      "lane": "reasoning",
+      "loss_bearing_token_count": 0,
+      "loss_policy_records": {
+        "never_train_zero_loss": 1000
+      },
+      "manifest_hash": "sha256:f18d243c341b8d93a156d48636ffc62179294c47617aa40f441f8f396506662b",
+      "manifest_path": "data/tokenized_v1/reasoning/never_train/manifest.json",
+      "permission": "never_train",
+      "record_count": 1000,
+      "shard_id": "reasoning-never_train-v1",
+      "token_count": 306905
+    },
+    {
+      "lane": "reasoning",
+      "loss_bearing_token_count": 465143,
+      "loss_policy_records": {
+        "reasoning_answer_only": 2641
+      },
+      "manifest_hash": "sha256:ca37b158a3a0ac775bb8a0d7bcc5225e4013b17b531880a2af007359a2046306",
+      "manifest_path": "data/tokenized_v1/reasoning/train/manifest.json",
+      "permission": "train",
+      "record_count": 2641,
+      "shard_id": "reasoning-train-v1",
+      "token_count": 797205
+    },
+    {
+      "lane": "reasoning",
+      "loss_bearing_token_count": 52762,
+      "loss_policy_records": {
+        "reasoning_answer_only": 297
+      },
+      "manifest_hash": "sha256:dfcddaccf34d7c0f36c35e4ef0f1bb2bc9a099e36e04184e5769c7cc7b1bbe0a",
+      "manifest_path": "data/tokenized_v1/reasoning/validation/manifest.json",
+      "permission": "validation",
+      "record_count": 297,
+      "shard_id": "reasoning-validation-v1",
+      "token_count": 92199
+    },
+    {
+      "lane": "science_math",
+      "loss_bearing_token_count": 130879,
+      "loss_policy_records": {
+        "full_text_causal": 43
+      },
+      "manifest_hash": "sha256:08544769ab2ca9e776e8bf464a03a7544592b31db104c57bd2ad32d1da3d2814",
+      "manifest_path": "data/tokenized_v1/science_math/anneal/manifest.json",
+      "permission": "anneal",
+      "record_count": 43,
+      "shard_id": "science_math-anneal-v1",
+      "token_count": 130922
+    },
+    {
+      "lane": "science_math",
+      "loss_bearing_token_count": 8418057,
+      "loss_policy_records": {
+        "full_text_causal": 2625
+      },
+      "manifest_hash": "sha256:b741bc62f03a7fe64677824bfdc588a01df98a10ee89f45516182dd6797e331f",
+      "manifest_path": "data/tokenized_v1/science_math/train/manifest.json",
+      "permission": "train",
+      "record_count": 2625,
+      "shard_id": "science_math-train-v1",
+      "token_count": 8420682
+    },
+    {
+      "lane": "science_math",
+      "loss_bearing_token_count": 648479,
+      "loss_policy_records": {
+        "full_text_causal": 230
+      },
+      "manifest_hash": "sha256:4e67c9883c0bb36fc5b84db5339720182e044ec98a8f4c0c7f206334d5887826",
+      "manifest_path": "data/tokenized_v1/science_math/validation/manifest.json",
+      "permission": "validation",
+      "record_count": 230,
+      "shard_id": "science_math-validation-v1",
+      "token_count": 648709
+    }
+  ],
+  "status": "FROZEN",
+  "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be",
+  "total_loss_bearing_tokens": 46860382,
+  "total_records": 24842,
+  "total_tokens": 51944856
+}

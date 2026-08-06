@@ -1,0 +1,85 @@
+{
+  "schema_version": 3,
+  "policy_id": "wikipedia-general-quality-v3",
+  "scope": ["wikipedia_general_en"],
+  "source_class": "public_reference",
+  "minimum_parent_characters": 300,
+  "chunking": {
+    "algorithm": "paragraph-line-abbreviation-aware-sentence-word-v2",
+    "maximum_characters": 8000,
+    "minimum_continuation_characters": 300,
+    "repeat_title_on_each_chunk": true,
+    "shared_parent_group_id": true
+  },
+  "pii": {
+    "mask_emails": true,
+    "mask_secrets": true,
+    "mask_ipv4": false,
+    "phone_mode": "explicit-context-or-international"
+  },
+  "wikitable_handling": {
+    "algorithm": "drop-bracketed-table-blocks-and-orphan-marker-lines-v1",
+    "salvaged_band": "B0",
+    "salvaged_cap_group": "general_table_salvage"
+  },
+  "quality_bands": {
+    "B0": {"sampling_weight": 0.25, "description": "Retained low-prose, list, short, category-tail, or conservatively salvaged material"},
+    "B1": {"sampling_weight": 0.50, "description": "Usable material with non-list structural quality warnings"},
+    "B2": {"sampling_weight": 1.00, "description": "Standard clean prose"},
+    "B3": {"sampling_weight": 1.15, "description": "Substantial multi-paragraph clean prose"},
+    "B4": {"sampling_weight": 1.25, "description": "Long, well-structured clean prose"}
+  },
+  "reviewed_signal_rules": {
+    "raw_wikitable_markup": {"minimum_lines": 3, "minimum_line_fraction": 0.05},
+    "orphaned_table_footnotes": {
+      "minimum_list_line_fraction": 0.40,
+      "minimum_duplicate_line_fraction": 0.20,
+      "minimum_repeated_trigram_fraction": 0.35,
+      "maximum_nonempty_lines": 40
+    },
+    "linewise_list": {
+      "minimum_nonempty_lines": 12,
+      "minimum_short_line_fraction": 0.85,
+      "minimum_line_structure_ratio": 4.0
+    },
+    "category_tail": {
+      "minimum_nonempty_lines": 4,
+      "minimum_short_line_fraction": 0.75
+    },
+    "stat_heavy_list": {
+      "maximum_alpha_fraction": 0.45,
+      "minimum_digit_fraction": 0.15,
+      "minimum_short_line_fraction": 0.90,
+      "minimum_nonempty_lines": 8
+    }
+  },
+  "sampling_caps": {
+    "general_short": 0.01,
+    "general_disambiguation": 0.02,
+    "general_structured_low_prose": 0.02,
+    "general_linewise_list": 0.03,
+    "general_category_tail": 0.005,
+    "general_stat_heavy_list": 0.01,
+    "general_table_salvage": 0.01,
+    "general_sensitive_context_review": 0.001,
+    "all_B0_combined": 0.05
+  },
+  "manual_review_overrides": [
+    {
+      "override_id": "wikipedia-v3-sensitive-context-001",
+      "parent_upstream_id": "72000",
+      "content_sha256": "2e5de9dddb3ab7bce7cc9cfaeeb483b1db243121aa2d625705045190b45a4128",
+      "flag": "human_sensitive_context_reviewed",
+      "reason": "Named private individual associated with incarceration and infant death; human-reviewed for sensitive-context sampling"
+    }
+  ],
+  "hard_rejections": [
+    "parent_below_300_characters",
+    "below_300_characters_after_wikitable_cleanup",
+    "no_language_content",
+    "excessive_replacement_characters",
+    "raw_wikitable_markup_after_cleanup",
+    "orphaned_table_footnotes"
+  ],
+  "policy_status": "experimental_until_v3_salvage_review"
+}

@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "capability_lane": "science_math",
+    "cleaning_pipeline_hash": "sha256:fb68af7ce2dba96fce832c8abd73c7ab2b3a696d5adead2d653462d9ea8957f3",
+    "content_hash": "sha256:9fa6d639b119eb430f9636de059f426f08a42c7f6f514adbb0ee5224c16fba66",
+    "dedup_status": "passed",
+    "eval_overlap_status": "clear",
+    "extra": {
+      "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+      "index_canonical_uncompressed_sha256": "56b8ef33a73f0d95c909aabdb4f8178f5e6ba3349f1db118cfa89378cc419a02",
+      "index_path": "data/tokenized_v1/science_math/anneal/index.jsonl.gz",
+      "index_sha256": "d182c1a06105045ee2867ac2f6b1ad0a61590478eb1cd60afe88dba7bcdd9b42",
+      "input_artifact": "data/frozen_corpus_v1/science_math/anneal.jsonl.gz",
+      "input_compressed_sha256": "6a6ac0a1f6a6c9920be2855df003e6f0c736dc4a99ea95c27fd1816ade4ea016",
+      "loss_path": "data/tokenized_v1/science_math/anneal/loss.uint8.bin",
+      "loss_policy_records": {
+        "full_text_causal": 43
+      },
+      "tokens_path": "data/tokenized_v1/science_math/anneal/tokens.uint16.bin",
+      "tokens_sha256": "5319edf1f3a08d06dd124e2481fde0ae3c5f54ebe5d6143b58b632a3ee40a802"
+    },
+    "language_distribution": {
+      "en": 43
+    },
+    "loss_bearing_token_count": 130879,
+    "loss_mask_hash": "sha256:627782d9748a80b5c9985736b94e008052c611fe9e38d65ccb726d4589f44d4a",
+    "parent_manifest_ids": [],
+    "permission": "anneal",
+    "pii_screen_status": "passed_human_reviewed",
+    "position_policy": "document_reset_causal",
+    "record_count": 43,
+    "shard_id": "science_math-anneal-v1",
+    "source_lock_hashes": [
+      "sha256:d79448765a38c3d560021a73734a233e1326b65a07bf8c7d21d6c7b543bcab28"
+    ],
+    "token_count": 130922,
+    "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be"
+  },
+  "manifest_hash": "sha256:08544769ab2ca9e776e8bf464a03a7544592b31db104c57bd2ad32d1da3d2814",
+  "schema_version": 1
+}

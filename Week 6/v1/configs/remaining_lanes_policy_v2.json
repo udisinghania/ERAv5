@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "policy_id": "remaining-lanes-cleaning-v2",
+  "status": "candidate_after_human_review",
+  "principles": [
+    "preserve numeric supervision and technical identifiers",
+    "do not blanket-restore numbers that occur in explicit phone context",
+    "mask explicit bank-account numbers in public-reference text",
+    "quarantine human-reviewed corrupt or unresolved source parents",
+    "preserve reviewed structural boundaries while lane-specific validators remain explicit"
+  ],
+  "sources": [
+    {"source_id": "wikipedia_long_en", "pii_mode": "public_reference_v2", "chunking": "boundary_v2"},
+    {"source_id": "openwebmath_science_math", "pii_mode": "structured_numeric", "chunking": "boundary_v2"},
+    {"source_id": "codeparrot_permissive_python", "pii_mode": "structured_numeric", "chunking": "boundary_v2"},
+    {"source_id": "gsm8k_reasoning_train", "pii_mode": "structured_numeric", "chunking": "boundary_v2"},
+    {
+      "source_id": "sangraha_verified_hindi",
+      "pii_mode": "public_reference_v2",
+      "chunking": "boundary_v2",
+      "excluded_parent_upstream_ids": [
+        "9951ed19a17f07076709a9fa53a23c36c4f373cd1dedf440c95f9f7cc7fa8c92"
+      ]
+    },
+    {"source_id": "sangraha_unverified_hindi", "pii_mode": "public_reference_v2", "chunking": "boundary_v2"},
+    {
+      "source_id": "sangraha_synthetic_hindi",
+      "pii_mode": "structured_numeric",
+      "chunking": "boundary_v2",
+      "excluded_parent_upstream_ids": [
+        "181fc620ce792c0efc0d69c7cad402c6c6716852c120c9e29b16b8046177c9d2"
+      ]
+    },
+    {
+      "source_id": "assignment4_samanantar_translated",
+      "pii_mode": "baseline_locked",
+      "chunking": "baseline_locked",
+      "adjudicated_replacements": [
+        {
+          "upstream_id": "89530342c4770bf63ea47f65386b788c2e91b77eebccbc93745d4107903a0eb2",
+          "old": "[PHONE]",
+          "new": "250,000",
+          "expected_occurrences": 1,
+          "reason": "cross-lingual state explicitly supplies the masked Hindi public-health statistic"
+        }
+      ]
+    },
+    {"source_id": "hermes_function_calling", "pii_mode": "structured_numeric", "chunking": "boundary_v2"},
+    {"source_id": "hermes_json_agentic", "pii_mode": "structured_numeric", "chunking": "boundary_v2"},
+    {"source_id": "hermes_glaive_function_calling", "pii_mode": "structured_numeric", "chunking": "boundary_v2"}
+  ],
+  "human_review_actions": [
+    {
+      "source_id": "sangraha_verified_hindi",
+      "parent_upstream_id": "5d8428585046edef47a2abb8630431b0e3b23fb3",
+      "action": "mask_explicit_bank_accounts",
+      "reason": "named private fraud victim with exposed bank account numbers"
+    },
+    {
+      "source_id": "sangraha_unverified_hindi",
+      "parent_upstream_id": "607393391270fd15d3e1d1d6a252e9fb756f7bb42533639021f0788122718463",
+      "action": "retain_explicit_phone_mask",
+      "reason": "repeated WhatsApp business contact is a true phone number"
+    },
+    {
+      "source_id": "sangraha_synthetic_hindi",
+      "parent_upstream_id": "181fc620ce792c0efc0d69c7cad402c6c6716852c120c9e29b16b8046177c9d2",
+      "action": "exclude_parent",
+      "reason": "garbled duplicated numeric source text"
+    },
+    {
+      "source_id": "sangraha_verified_hindi",
+      "parent_upstream_id": "9951ed19a17f07076709a9fa53a23c36c4f373cd1dedf440c95f9f7cc7fa8c92",
+      "action": "exclude_parent_pending_source_check",
+      "reason": "anomalous OCR-merged verse numbering"
+    },
+    {
+      "source_id": "assignment4_samanantar_translated",
+      "parent_upstream_id": "89530342c4770bf63ea47f65386b788c2e91b77eebccbc93745d4107903a0eb2",
+      "action": "replace_false_phone_marker_with_250000",
+      "reason": "the paired English state provides the exact public-health statistic"
+    }
+  ]
+}

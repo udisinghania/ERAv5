@@ -1,0 +1,39 @@
+{
+  "manifest": {
+    "capability_lane": "reasoning",
+    "cleaning_pipeline_hash": "sha256:fb68af7ce2dba96fce832c8abd73c7ab2b3a696d5adead2d653462d9ea8957f3",
+    "content_hash": "sha256:111d504137b2108ae317c21ed88a3ea5a40ced32fa38e4df51c0537e100eb553",
+    "dedup_status": "passed",
+    "eval_overlap_status": "registered",
+    "extra": {
+      "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+      "index_canonical_uncompressed_sha256": "a3a8db07109b4c99b91e9f20750d31fd4609ff22f6f3005121a115babdabe342",
+      "index_path": "data/tokenized_v1/reasoning/never_train/index.jsonl.gz",
+      "index_sha256": "c0d54f3dcb42a1b9943d58bb366ad8f1db85020ef4c50c7a9605c962005ea44b",
+      "input_artifact": "data/frozen_corpus_v1/reasoning/never_train.jsonl.gz",
+      "input_compressed_sha256": "5e7ce374228e693130ed37c8a475e976fe8b946182502cdca5557d0a899f979b",
+      "loss_path": "data/tokenized_v1/reasoning/never_train/loss.uint8.bin",
+      "loss_policy_records": {
+        "never_train_zero_loss": 1000
+      },
+      "tokens_path": "data/tokenized_v1/reasoning/never_train/tokens.uint16.bin",
+      "tokens_sha256": "385d9cc67ae7b809bb20a217d65c24c4c95c3e0f99ebdbc725a9bf205d108e17"
+    },
+    "language_distribution": {
+      "en": 1000
+    },
+    "loss_bearing_token_count": 0,
+    "loss_mask_hash": "sha256:d7971447070f6baa6d3da64b15bf626471ed5be86f0569a3ab9c4d690b8050d5",
+    "parent_manifest_ids": [],
+    "permission": "never_train",
+    "pii_screen_status": "passed_human_reviewed",
+    "position_policy": "document_reset_causal",
+    "record_count": 1000,
+    "shard_id": "reasoning-never_train-v1",
+    "source_lock_hashes": [],
+    "token_count": 306905,
+    "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be"
+  },
+  "manifest_hash": "sha256:f18d243c341b8d93a156d48636ffc62179294c47617aa40f441f8f396506662b",
+  "schema_version": 1
+}

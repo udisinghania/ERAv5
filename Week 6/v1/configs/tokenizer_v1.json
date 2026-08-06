@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "tokenizer_id": "era6-multilane-byte-unigram-v1",
+  "algorithm": "deterministic_greedy_unigram_with_byte_fallback",
+  "vocab_size": 8192,
+  "training_permissions": ["train"],
+  "maximum_unit_bytes": 64,
+  "substring_max_characters": 8,
+  "substring_source_units": 20000,
+  "reserved_character_pieces": 1000,
+  "special_tokens": [
+    "<pad>", "<bos>", "<eos>", "<unk>", "<doc>", "</doc>",
+    "<system>", "<user>", "<assistant>", "<tool>", "<tools>", "</tools>",
+    "<tool_call>", "</tool_call>", "<tool_response>", "</tool_response>",
+    "<question>", "<reasoning>", "<state>", "</state>", "<action>",
+    "</action>", "<observation>", "</observation>", "<passage>", "</passage>",
+    "<function-name>", "<args-dict>", "<schema>", "</schema>",
+    "[EMAIL]", "[PHONE]", "[IP]", "[SECRET]", "[BANK_ACCOUNT]",
+    "[HI]", "[GU]", "[PA]", "[KN]", "[BN]", "[TE]", "[TA]", "[MR]",
+    "[ML]", "[OR]", "[AS]"
+  ]
+}

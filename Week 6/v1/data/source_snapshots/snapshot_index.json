@@ -1,0 +1,138 @@
+{
+  "compressed_bytes": 28085564,
+  "never_train_records": 1000,
+  "schema_version": 1,
+  "snapshots": [
+    {
+      "canonical_uncompressed_sha256": "771e6420408a8a8a1d064795f5426a4f37bdf56cfb00fc64e7a62915e5d244a5",
+      "compressed_bytes": 306153,
+      "compressed_sha256": "908fff6647ec0004e97fee95c2800e5434101c41b9421692a8a4f3f299e4b17e",
+      "lane": "indic",
+      "path": "data/source_snapshots/assignment4_samanantar_translated.jsonl.gz",
+      "permission": "train",
+      "records": 1000,
+      "source_id": "assignment4_samanantar_translated"
+    },
+    {
+      "canonical_uncompressed_sha256": "297c53c843f9c3ebf5425154e05979f5b683d95e56340a8e221b0388164771c7",
+      "compressed_bytes": 5042382,
+      "compressed_sha256": "796183a25e7b0b3295605ed4e8cb39db753bc54d299d182b7652278ba8a8288a",
+      "lane": "code",
+      "path": "data/source_snapshots/codeparrot_permissive_python.jsonl.gz",
+      "permission": "train",
+      "records": 3000,
+      "source_id": "codeparrot_permissive_python"
+    },
+    {
+      "canonical_uncompressed_sha256": "90fbbfaa40eb4abe7a8ae29e682e2981d234e4c50f443335aab0c18af570e9fa",
+      "compressed_bytes": 320195,
+      "compressed_sha256": "c81285b5e49418d99252d6ea3662e64ab8aad5a8881b2ef3e1706d41c5699fa6",
+      "lane": "reasoning",
+      "path": "data/source_snapshots/gsm8k_eval_never_train.jsonl.gz",
+      "permission": "never_train",
+      "records": 1000,
+      "source_id": "gsm8k_eval_never_train"
+    },
+    {
+      "canonical_uncompressed_sha256": "66dd4b66abec737923051eae9c171c70125b793b08ce9a0e8a3dba2b2641f6b5",
+      "compressed_bytes": 952840,
+      "compressed_sha256": "98dd6aecd5ef07476103fc0ec0355c60f27a52e60c6b6e041dd1a2bbb38b35ce",
+      "lane": "reasoning",
+      "path": "data/source_snapshots/gsm8k_reasoning_train.jsonl.gz",
+      "permission": "train",
+      "records": 3000,
+      "source_id": "gsm8k_reasoning_train"
+    },
+    {
+      "canonical_uncompressed_sha256": "e5e74e5f347be114d8ef190a59947c9d5cfa99cc1ca50e5c2a362e9d8a291559",
+      "compressed_bytes": 2640576,
+      "compressed_sha256": "333a2808c95b1a06975139a485dc6dade1611365d3f2de2a5d52e050e49ef041",
+      "lane": "agentic",
+      "path": "data/source_snapshots/hermes_function_calling.jsonl.gz",
+      "permission": "train",
+      "records": 1000,
+      "source_id": "hermes_function_calling"
+    },
+    {
+      "canonical_uncompressed_sha256": "f704562a3829bac18de84bc222e6f9b78581ff666d4f268bf9980118f8c256a0",
+      "compressed_bytes": 347215,
+      "compressed_sha256": "52f2c65b1b3513d237e17a0650daf22522896cb12bca4194a9af9a2bcd841ecd",
+      "lane": "agentic",
+      "path": "data/source_snapshots/hermes_glaive_function_calling.jsonl.gz",
+      "permission": "train",
+      "records": 500,
+      "source_id": "hermes_glaive_function_calling"
+    },
+    {
+      "canonical_uncompressed_sha256": "1425cf4e9d1d1204bbadb958851275eb5510dcbbdf8bd7688e068be958bd7119",
+      "compressed_bytes": 350295,
+      "compressed_sha256": "bf7890895fcaf7bff243040e0fb630dc6d636e251b218d298701f23867ddc530",
+      "lane": "agentic",
+      "path": "data/source_snapshots/hermes_json_agentic.jsonl.gz",
+      "permission": "train",
+      "records": 500,
+      "source_id": "hermes_json_agentic"
+    },
+    {
+      "canonical_uncompressed_sha256": "43604a909b8e421f7d6c8dea3e65091cd5d6123a9d3ced914f14d348a5c7892e",
+      "compressed_bytes": 3894234,
+      "compressed_sha256": "e165e792700a9347ba465aca76126e019588f9669a8552f870032d27ee24b753",
+      "lane": "science_math",
+      "path": "data/source_snapshots/openwebmath_science_math.jsonl.gz",
+      "permission": "train",
+      "records": 2000,
+      "source_id": "openwebmath_science_math"
+    },
+    {
+      "canonical_uncompressed_sha256": "e9668e6d12cc6cdb6a756d0e45b4b3676fefea1f392d0e2764071a798e5f147b",
+      "compressed_bytes": 1392902,
+      "compressed_sha256": "0c4369c800d143f266152351134ef354db262851280bb7ee99442f844894a5c7",
+      "lane": "indic",
+      "path": "data/source_snapshots/sangraha_synthetic_hindi.jsonl.gz",
+      "permission": "train",
+      "records": 1000,
+      "source_id": "sangraha_synthetic_hindi"
+    },
+    {
+      "canonical_uncompressed_sha256": "a60b78c99894542f0f82065b4ef4112b81a2695ab946a46ae901c8fde4d9e000",
+      "compressed_bytes": 1361240,
+      "compressed_sha256": "e6efb04292a727f9d57b12369125e9567e71c536cc8f7968b7ea55946271cf2c",
+      "lane": "indic",
+      "path": "data/source_snapshots/sangraha_unverified_hindi.jsonl.gz",
+      "permission": "train",
+      "records": 1000,
+      "source_id": "sangraha_unverified_hindi"
+    },
+    {
+      "canonical_uncompressed_sha256": "5cbe20b04c9dde48fb91df9c60878ca12774ba9cf322e970855476a9bbc7ecf7",
+      "compressed_bytes": 2395446,
+      "compressed_sha256": "f1715c8a7a8448aaea2815b01a622939e81dccd04860de3301679eba34cbe2fe",
+      "lane": "indic",
+      "path": "data/source_snapshots/sangraha_verified_hindi.jsonl.gz",
+      "permission": "train",
+      "records": 2000,
+      "source_id": "sangraha_verified_hindi"
+    },
+    {
+      "canonical_uncompressed_sha256": "d10741b1fd1093a52cd7fa2c8b0f64b1eda9a61a22e462e53155c14b63eec165",
+      "compressed_bytes": 4927229,
+      "compressed_sha256": "ac0abc536ce12eb803471c95df6d6c77002949e891e7bd8b7d621543f978cb68",
+      "lane": "general",
+      "path": "data/source_snapshots/wikipedia_general_en.jsonl.gz",
+      "permission": "train",
+      "records": 4000,
+      "source_id": "wikipedia_general_en"
+    },
+    {
+      "canonical_uncompressed_sha256": "ea7f2be70dd5f95142c6b2f1809aea0c79a47ff2112b82268326442421d9b6cb",
+      "compressed_bytes": 4154857,
+      "compressed_sha256": "c229e2bcfc9c83812da269684ba36400fc2ce0a3543eb3fd0bfa383338a90614",
+      "lane": "long_context",
+      "path": "data/source_snapshots/wikipedia_long_en.jsonl.gz",
+      "permission": "train",
+      "records": 1000,
+      "source_id": "wikipedia_long_en"
+    }
+  ],
+  "training_records": 20000
+}

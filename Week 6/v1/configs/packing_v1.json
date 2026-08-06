@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "packing_id": "era6-boundary-safe-packing-v1",
+  "selection": {
+    "without_replacement": true,
+    "quality_weighted_priority": true,
+    "final_record_loss_clipping": true
+  },
+  "packing_group": "stage_lane_indic_tier",
+  "data_type_policies": {
+    "general": {"policy_id": "prose_dense_segmented", "boundary_unit": "document", "loss_origin": "all_causal_content"},
+    "science_math": {"policy_id": "technical_dense_segmented", "boundary_unit": "document", "loss_origin": "all_causal_content"},
+    "code": {"policy_id": "code_file_segmented", "boundary_unit": "source_file", "loss_origin": "all_causal_content"},
+    "reasoning": {"policy_id": "reasoning_prompt_output_segmented", "boundary_unit": "worked_example", "loss_origin": "reasoning_and_answer_only"},
+    "long_context": {"policy_id": "long_document_continuation", "boundary_unit": "long_document", "loss_origin": "all_causal_content"},
+    "indic": {"policy_id": "multilingual_tier_segmented", "boundary_unit": "document_or_translation_pair", "loss_origin": "source_policy_preserved"},
+    "agentic": {"policy_id": "trajectory_role_masked_segmented", "boundary_unit": "trajectory", "loss_origin": "assistant_and_tool_call_outputs_only"}
+  },
+  "attention_policy": "causal_within_segment_only",
+  "position_policy": "reset_per_document_or_continuation_fragment",
+  "continuation_overlap_tokens": 1,
+  "padding_loss": 0,
+  "binary_dtypes": {
+    "input_ids": "uint16_little_endian",
+    "loss_mask": "uint8",
+    "segment_ids": "int16_little_endian",
+    "position_ids": "uint16_little_endian"
+  }
+}

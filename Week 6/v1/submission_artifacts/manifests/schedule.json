@@ -1,0 +1,268 @@
+{
+  "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+  "curriculum_overlay_sha256": "5ef685967f8ba5ab9beb1f196c9f4d5f4185033b3feb33a79da413c5484b789f",
+  "execution_config_sha256": "6d6e7ae4df15ff20e96fe9ec0cfb261fac7b756312171316455f2c3d0dfab082",
+  "mixture_config_sha256": "df578d3abb2fc31f07a3d89f0954cbeb008a694748497092e75c0773fed8bbce",
+  "schedule": {
+    "accounting_unit": "loss_bearing_tokens",
+    "anneal_loss_tokens": 5243,
+    "opus": {
+      "candidate_microbatches": 4,
+      "outcomes": [
+        "accepted",
+        "rejected",
+        "deferred"
+      ],
+      "protected_floor_override": true,
+      "proxy_version": "auditable-opus-v1",
+      "record_all_decisions": true
+    },
+    "pre_anneal_indic_tier_targets": {
+      "synthetic": 2057,
+      "translated": 6165,
+      "unverified_native": 4111,
+      "verified_native": 8221
+    },
+    "pre_anneal_lane_targets": {
+      "agentic": 1286,
+      "code": 25691,
+      "general": 136152,
+      "indic": 20554,
+      "long_context": 21837,
+      "reasoning": 25691,
+      "science_math": 25690
+    },
+    "pre_anneal_loss_tokens": 256901,
+    "protected_floors": {
+      "agentic": {
+        "passed": true,
+        "required_minimum_loss_tokens": 1285,
+        "scheduled_fraction": 0.0050058193623224514,
+        "scheduled_loss_tokens": 1286
+      },
+      "indic": {
+        "passed": true,
+        "required_minimum_loss_tokens": 20553,
+        "scheduled_fraction": 0.08000747369609305,
+        "scheduled_loss_tokens": 20554
+      }
+    },
+    "sampling_policy": "deterministic_without_replacement",
+    "sampling_seed": "era6-schedule-v1",
+    "stages": [
+      {
+        "eligible_difficulty_bands": [
+          "B0",
+          "B1"
+        ],
+        "indic_tier_eligible_supply": {
+          "synthetic": 155333,
+          "translated": 10069,
+          "unverified_native": 235263,
+          "verified_native": 372401
+        },
+        "indic_tier_policy": "configured_four_tier_mixture",
+        "indic_tier_targets": {
+          "synthetic": 105,
+          "translated": 315,
+          "unverified_native": 210,
+          "verified_native": 419
+        },
+        "lane_eligible_supply": {
+          "agentic": 136087,
+          "code": 869003,
+          "general": 398978,
+          "indic": 773066,
+          "long_context": 971997,
+          "reasoning": 80891,
+          "science_math": 563593
+        },
+        "lane_targets": {
+          "agentic": 66,
+          "code": 1311,
+          "general": 6945,
+          "indic": 1049,
+          "long_context": 1114,
+          "reasoning": 1311,
+          "science_math": 1311
+        },
+        "name": "seed",
+        "permission": "train",
+        "sequence_length": 256,
+        "target_loss_tokens": 13107
+      },
+      {
+        "eligible_difficulty_bands": [
+          "B0",
+          "B1",
+          "B2"
+        ],
+        "indic_tier_eligible_supply": {
+          "synthetic": 601768,
+          "translated": 30545,
+          "unverified_native": 652223,
+          "verified_native": 1086736
+        },
+        "indic_tier_policy": "configured_four_tier_mixture",
+        "indic_tier_targets": {
+          "synthetic": 1154,
+          "translated": 3460,
+          "unverified_native": 2307,
+          "verified_native": 4614
+        },
+        "lane_eligible_supply": {
+          "agentic": 457472,
+          "code": 3144073,
+          "general": 1609035,
+          "indic": 2371272,
+          "long_context": 2590276,
+          "reasoning": 202076,
+          "science_math": 2345684
+        },
+        "lane_targets": {
+          "agentic": 721,
+          "code": 14418,
+          "general": 76414,
+          "indic": 11535,
+          "long_context": 12255,
+          "reasoning": 14418,
+          "science_math": 14418
+        },
+        "name": "general_foundation",
+        "permission": "train",
+        "sequence_length": 256,
+        "target_loss_tokens": 144179
+      },
+      {
+        "eligible_difficulty_bands": [
+          "B2",
+          "B3",
+          "B4"
+        ],
+        "indic_tier_eligible_supply": {
+          "synthetic": 2075608,
+          "translated": 66124,
+          "unverified_native": 1520008,
+          "verified_native": 2326596
+        },
+        "indic_tier_policy": "configured_four_tier_mixture",
+        "indic_tier_targets": {
+          "synthetic": 420,
+          "translated": 1258,
+          "unverified_native": 839,
+          "verified_native": 1678
+        },
+        "lane_eligible_supply": {
+          "agentic": 597920,
+          "code": 8724421,
+          "general": 5496605,
+          "indic": 5988336,
+          "long_context": 4496457,
+          "reasoning": 334786,
+          "science_math": 6874317
+        },
+        "lane_targets": {
+          "agentic": 263,
+          "code": 5243,
+          "general": 27785,
+          "indic": 4195,
+          "long_context": 4457,
+          "reasoning": 5243,
+          "science_math": 5243
+        },
+        "name": "reasoning_skill_build",
+        "permission": "train",
+        "sequence_length": 256,
+        "target_loss_tokens": 52429
+      },
+      {
+        "eligible_difficulty_bands": [
+          "B2",
+          "B3",
+          "B4"
+        ],
+        "indic_tier_eligible_supply": {
+          "synthetic": 2075608,
+          "translated": 66124,
+          "unverified_native": 1520008,
+          "verified_native": 2326596
+        },
+        "indic_tier_policy": "configured_four_tier_mixture",
+        "indic_tier_targets": {
+          "synthetic": 378,
+          "translated": 1132,
+          "unverified_native": 755,
+          "verified_native": 1510
+        },
+        "lane_eligible_supply": {
+          "agentic": 597920,
+          "code": 8724421,
+          "general": 5496605,
+          "indic": 5988336,
+          "long_context": 4496457,
+          "reasoning": 334786,
+          "science_math": 6874317
+        },
+        "lane_targets": {
+          "agentic": 236,
+          "code": 4719,
+          "general": 25008,
+          "indic": 3775,
+          "long_context": 4011,
+          "reasoning": 4719,
+          "science_math": 4718
+        },
+        "name": "long_context",
+        "permission": "train",
+        "sequence_length": 512,
+        "target_loss_tokens": 47186
+      },
+      {
+        "eligible_difficulty_bands": [
+          "B4",
+          "B5"
+        ],
+        "indic_tier_eligible_supply": {
+          "synthetic": 0,
+          "translated": 1576,
+          "unverified_native": 7257,
+          "verified_native": 41459
+        },
+        "indic_tier_policy": "renormalize_configured_weights_over_eligible_tiers",
+        "indic_tier_targets": {
+          "translated": 140,
+          "unverified_native": 93,
+          "verified_native": 187
+        },
+        "lane_eligible_supply": {
+          "agentic": 4758,
+          "code": 23128,
+          "general": 39539,
+          "indic": 50292,
+          "long_context": 31256,
+          "reasoning": 3090,
+          "science_math": 37750
+        },
+        "lane_targets": {
+          "agentic": 27,
+          "code": 524,
+          "general": 2778,
+          "indic": 420,
+          "long_context": 446,
+          "reasoning": 524,
+          "science_math": 524
+        },
+        "name": "anneal",
+        "permission": "anneal",
+        "sequence_length": 512,
+        "target_loss_tokens": 5243
+      }
+    ],
+    "total_loss_token_budget": 262144,
+    "transition_warmup_fraction": 0.05
+  },
+  "schedule_hash": "sha256:0477330cd06ea86f99f164c853751659987566a2f20f93ffe2bf515a49fe3382",
+  "schema_version": 1,
+  "status": "FROZEN",
+  "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be"
+}

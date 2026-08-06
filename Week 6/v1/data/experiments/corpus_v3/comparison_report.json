@@ -1,0 +1,194 @@
+{
+  "artifact": {
+    "canonical_uncompressed_sha256": "16d5138b8c60fe4df62f7ed1dd0b8beab28ecb22ac7bddd4c96c940343457674",
+    "compressed_bytes": 8101667,
+    "compressed_sha256": "63440bebba77185243d8d93ce703f35368bcb412da3b1b6c0a2fb43d041c67e9",
+    "path": "data/experiments/corpus_v3/wikipedia_general_en.jsonl.gz",
+    "records": 5183,
+    "uncompressed_bytes": 26265658
+  },
+  "inputs": {
+    "policy_sha256": "96350f11b495f4cf5e476a41f1162fc4b88ab451b67313ff6632d1debe2ed366",
+    "v2_snapshot_sha256": "4d2cdea8e375bb1260c9587946dc5ec170b8070055ba676bf6a943add968d61c"
+  },
+  "policy": {
+    "chunking": {
+      "algorithm": "paragraph-line-abbreviation-aware-sentence-word-v2",
+      "maximum_characters": 8000,
+      "minimum_continuation_characters": 300,
+      "repeat_title_on_each_chunk": true,
+      "shared_parent_group_id": true
+    },
+    "hard_rejections": [
+      "parent_below_300_characters",
+      "below_300_characters_after_wikitable_cleanup",
+      "no_language_content",
+      "excessive_replacement_characters",
+      "raw_wikitable_markup_after_cleanup",
+      "orphaned_table_footnotes"
+    ],
+    "manual_review_overrides": [
+      {
+        "content_sha256": "2e5de9dddb3ab7bce7cc9cfaeeb483b1db243121aa2d625705045190b45a4128",
+        "flag": "human_sensitive_context_reviewed",
+        "override_id": "wikipedia-v3-sensitive-context-001",
+        "parent_upstream_id": "72000",
+        "reason": "Named private individual associated with incarceration and infant death; human-reviewed for sensitive-context sampling"
+      }
+    ],
+    "minimum_parent_characters": 300,
+    "pii": {
+      "mask_emails": true,
+      "mask_ipv4": false,
+      "mask_secrets": true,
+      "phone_mode": "explicit-context-or-international"
+    },
+    "policy_id": "wikipedia-general-quality-v3",
+    "policy_status": "experimental_until_v3_salvage_review",
+    "quality_bands": {
+      "B0": {
+        "description": "Retained low-prose, list, short, category-tail, or conservatively salvaged material",
+        "sampling_weight": 0.25
+      },
+      "B1": {
+        "description": "Usable material with non-list structural quality warnings",
+        "sampling_weight": 0.5
+      },
+      "B2": {
+        "description": "Standard clean prose",
+        "sampling_weight": 1.0
+      },
+      "B3": {
+        "description": "Substantial multi-paragraph clean prose",
+        "sampling_weight": 1.15
+      },
+      "B4": {
+        "description": "Long, well-structured clean prose",
+        "sampling_weight": 1.25
+      }
+    },
+    "reviewed_signal_rules": {
+      "category_tail": {
+        "minimum_nonempty_lines": 4,
+        "minimum_short_line_fraction": 0.75
+      },
+      "linewise_list": {
+        "minimum_line_structure_ratio": 4.0,
+        "minimum_nonempty_lines": 12,
+        "minimum_short_line_fraction": 0.85
+      },
+      "orphaned_table_footnotes": {
+        "maximum_nonempty_lines": 40,
+        "minimum_duplicate_line_fraction": 0.2,
+        "minimum_list_line_fraction": 0.4,
+        "minimum_repeated_trigram_fraction": 0.35
+      },
+      "raw_wikitable_markup": {
+        "minimum_line_fraction": 0.05,
+        "minimum_lines": 3
+      },
+      "stat_heavy_list": {
+        "maximum_alpha_fraction": 0.45,
+        "minimum_digit_fraction": 0.15,
+        "minimum_nonempty_lines": 8,
+        "minimum_short_line_fraction": 0.9
+      }
+    },
+    "sampling_caps": {
+      "all_B0_combined": 0.05,
+      "general_category_tail": 0.005,
+      "general_disambiguation": 0.02,
+      "general_linewise_list": 0.03,
+      "general_sensitive_context_review": 0.001,
+      "general_short": 0.01,
+      "general_stat_heavy_list": 0.01,
+      "general_structured_low_prose": 0.02,
+      "general_table_salvage": 0.01
+    },
+    "schema_version": 3,
+    "scope": [
+      "wikipedia_general_en"
+    ],
+    "source_class": "public_reference",
+    "wikitable_handling": {
+      "algorithm": "drop-bracketed-table-blocks-and-orphan-marker-lines-v1",
+      "salvaged_band": "B0",
+      "salvaged_cap_group": "general_table_salvage"
+    }
+  },
+  "policy_hash": "sha256:9e16fced2e7d98f9314fb1e3d732cadae06bbd478b97e89eb21841c0835b2908",
+  "schema_version": 3,
+  "source_revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+  "v2": {
+    "artifact_sha256": "4d2cdea8e375bb1260c9587946dc5ec170b8070055ba676bf6a943add968d61c",
+    "parents": 4293,
+    "records": 5144,
+    "text_characters": 15884148
+  },
+  "v3": {
+    "admitted_parent_documents": 4328,
+    "chunk_end_boundary_counts": {
+      "line": 9,
+      "paragraph": 5174
+    },
+    "chunk_rejection_counts": {
+      "orphaned_table_footnotes": 2,
+      "raw_wikitable_markup": 8
+    },
+    "cleanup_counts": {
+      "parents_with_table_cleanup": 64,
+      "removed_table_blocks": 15,
+      "removed_table_characters": 53206,
+      "removed_table_lines": 2293
+    },
+    "flag_counts": {
+      "category_tail": 27,
+      "disambiguation_page": 106,
+      "duplicate_lines": 18,
+      "human_sensitive_context_reviewed": 1,
+      "linewise_list": 336,
+      "low_language_content": 2,
+      "repetitive_language": 10,
+      "short_continuation_chunk": 27,
+      "short_document": 304,
+      "stat_heavy_list": 1,
+      "table_markup_removed": 84
+    },
+    "parent_rejection_counts": {
+      "all_chunks_rejected": 8,
+      "parent_below_300_characters": 464
+    },
+    "quality_band_counts": {
+      "B0": 820,
+      "B1": 1,
+      "B2": 1328,
+      "B3": 1611,
+      "B4": 1423
+    },
+    "records": 5183,
+    "rejected_parent_documents": 472,
+    "rejected_title_counts": {
+      "Darren Bennett (football player)": 1,
+      "Jacksonville Dixie Blues": 1,
+      "Jleana Valentino": 1,
+      "List of peers 1100–1109": 1,
+      "Politics of Bangladesh": 1,
+      "Politics of Benin": 1,
+      "Politics of Bhutan": 1,
+      "Results of the 1994 Sri Lankan general election by electoral district": 1,
+      "Results of the 1994 Sri Lankan general election by province": 1,
+      "Sam Flanders": 1
+    },
+    "sampling_cap_group_counts": {
+      "general_category_tail": 27,
+      "general_disambiguation": 106,
+      "general_linewise_list": 336,
+      "general_sensitive_context_review": 1,
+      "general_short": 304,
+      "general_stat_heavy_list": 1,
+      "general_structured_low_prose": 26,
+      "general_table_salvage": 84
+    },
+    "text_characters": 16000341
+  }
+}

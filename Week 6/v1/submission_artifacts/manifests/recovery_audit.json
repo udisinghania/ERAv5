@@ -1,0 +1,71 @@
+{
+  "audit_hash": "sha256:4f446db0ad2ac10135eaff14d46b00b4e3e58350af75382f871021d0c8b0c994",
+  "baseline_final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+  "comparisons": {
+    "crash_checkpoint_hash_valid": true,
+    "fork_consumption_ledger_exact": true,
+    "fork_diverges_at_next_optimizer_update": true,
+    "fork_final_parameters_different": true,
+    "fork_learning_ledger_different": true,
+    "fork_prefix_preserved_through_checkpoint": true,
+    "planned_crash_exit_code_observed": true,
+    "recovery_consumption_ledger_exact": true,
+    "recovery_final_parameters_exact": true,
+    "recovery_learning_ledger_exact": true,
+    "replay_consumption_ledger_exact": true,
+    "replay_final_parameters_exact": true,
+    "replay_interval_batch_ids_matched": true,
+    "replay_interval_payload_hashes_matched": true,
+    "replay_interval_proof_hashes_matched": true,
+    "replay_interval_sequence_ids_matched": true,
+    "replay_interval_token_spans_matched": true,
+    "replay_learning_ledger_exact": true,
+    "resume_next_batch_id_matched": true,
+    "resume_next_batch_payload_hashes_matched": true,
+    "resume_next_batch_proof_hash_matched": true,
+    "resume_next_batch_sequence_ids_matched": true,
+    "resume_next_batch_token_spans_matched": true
+  },
+  "fork": {
+    "common_learning_prefix_microbatches": 128,
+    "first_divergent_microbatch": 128,
+    "learning_rate_scale": 0.5,
+    "parent_checkpoint_sha256": "a6d50a78b453f84097b1d5860fac21d21dbcb6a997e4b859cecce46bfd5ecbf7"
+  },
+  "fork_final_parameter_hash": "sha256:ab89d70a4403608c66f352a1676cb4f53b02a799e21be82b4b21f14e38af95da",
+  "planned_crash": {
+    "checkpoint": "artifacts/recovery_v1/checkpoint_000032.pt",
+    "checkpoint_sha256": "a6d50a78b453f84097b1d5860fac21d21dbcb6a997e4b859cecce46bfd5ecbf7",
+    "completed_microbatches": 125,
+    "observed_exit_code": 86,
+    "optimizer_update": 32
+  },
+  "protocol_id": "era6-recovery-v1",
+  "recovery_config_sha256": "730441595b1a899df01565a96be55f5f411ec329f3b0f639323be7cd02dc9229",
+  "recovery_final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+  "replay_final_parameter_hash": "sha256:273f9217325fa97113ffb6c72c5483af2656d4fdd6a4287760651d2fea43b0d2",
+  "replay_interval": {
+    "batches": 28,
+    "crosses_crash_boundary": true,
+    "end_batch_index_exclusive": 140,
+    "report": "artifacts/recovery_audit_v1/replay_interval_report.json",
+    "report_hash": "sha256:9c56a8d55862c2034f23267b5d9727e5c6599de6330ca728be3143d01b679a5d",
+    "start_batch_index": 112
+  },
+  "report_hashes": {
+    "baseline_training_report": "a6775db24effa19ee6af60d1717f0c6daf474abb7dd9da103bd2887b3ec9de20",
+    "crash_event": "c092bb2d6a64a79e59697ee62e961490793340c85ba064a99dc9b13e735bfd06",
+    "fork_execution_report": "1cdd821c0836ad758ed2700097e9675664281f6b4aa3dff0bfed0f0a066d2a61",
+    "recovery_execution_report": "8df83763e9fbed2c8a0e11d1814784dd90f374d399a633c3b096f661cceeed78",
+    "replay_execution_report": "7ae8f7a572a11cf1e0c704a597c4c5d847298d33d8d01902517c0a24ffa18882",
+    "replay_interval_report": "2efa4a752320c72ade34e90e092c2a419e25cedb1d412073212c9f80734519ae",
+    "resume_event": "4a56497a5d52727b6ef3aaacd123c8ffb2a556cba628a62805d4317747feb7ed"
+  },
+  "resume_next_batch": {
+    "batch_index": 125,
+    "event": "artifacts/recovery_v1/resume_event.json",
+    "proof_hash": "sha256:03c9f87e311619af8233886688b2b10d3336cacb80d2d9261af77edf85a5b391"
+  },
+  "schema_version": 1,
+  "status": "PASS"
+}

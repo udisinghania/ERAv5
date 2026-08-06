@@ -1,0 +1,372 @@
+{
+  "admitted_training_records": 23842,
+  "artifacts": [
+    {
+      "canonical_uncompressed_sha256": "d2399fc6b486600b9d8338c71763b39e948f01f2d97549c0ba9d91948d5d9e71",
+      "compressed_bytes": 74254,
+      "compressed_sha256": "f799374b53aaf45c773eb827c272886bb0b280fdbc2688848d1c8d4c518bc40b",
+      "lane": "agentic",
+      "path": "data/frozen_corpus_v1/agentic/anneal.jsonl.gz",
+      "permission": "anneal",
+      "records": 40,
+      "uncompressed_bytes": 278874
+    },
+    {
+      "canonical_uncompressed_sha256": "c2799668c17f2ad4650a274fdcce20d95597d3d5e2b013c7c17ea988680c78af",
+      "compressed_bytes": 3319103,
+      "compressed_sha256": "838181c64f972114813b95f52fcce16f3286768d5211c443740d33b500a0a841",
+      "lane": "agentic",
+      "path": "data/frozen_corpus_v1/agentic/train.jsonl.gz",
+      "permission": "train",
+      "records": 1779,
+      "uncompressed_bytes": 12557184
+    },
+    {
+      "canonical_uncompressed_sha256": "4e403d8c5970f39bc289bf2cb6957dedf3b1c781644251754cb50fd8b0476915",
+      "compressed_bytes": 399928,
+      "compressed_sha256": "98cfc063fd7a7551bd686e9af2e4fe0ea47c31eacc8711ed22835fcbb36f0129",
+      "lane": "agentic",
+      "path": "data/frozen_corpus_v1/agentic/validation.jsonl.gz",
+      "permission": "validation",
+      "records": 202,
+      "uncompressed_bytes": 1479582
+    },
+    {
+      "canonical_uncompressed_sha256": "c2ef409521aea996b85f288dcd79eb3b0e35f197dfcfb2433ca54c0ed47368d3",
+      "compressed_bytes": 101066,
+      "compressed_sha256": "395b464997a60ee7a2ddde158c2af514d59650cdc5ca00a5f96be235fc2c3d63",
+      "lane": "code",
+      "path": "data/frozen_corpus_v1/code/anneal.jsonl.gz",
+      "permission": "anneal",
+      "records": 53,
+      "uncompressed_bytes": 400209
+    },
+    {
+      "canonical_uncompressed_sha256": "17b5318995ccc26657421dbfdd040138e9f0dd96a107934968b6235027fbc3de",
+      "compressed_bytes": 6839215,
+      "compressed_sha256": "67a656d65b6aa3a256b46a944059ce93328aa237d35c6d44aaa260910fe9f8c1",
+      "lane": "code",
+      "path": "data/frozen_corpus_v1/code/train.jsonl.gz",
+      "permission": "train",
+      "records": 3592,
+      "uncompressed_bytes": 27400904
+    },
+    {
+      "canonical_uncompressed_sha256": "4be7af295fc1a4e6c52e72b0f200dd82b7acf767c1862965b30d154713a3d4eb",
+      "compressed_bytes": 938745,
+      "compressed_sha256": "70bde771211d921c787fa0bc5e09b017e75d6950b00940acd4b2b13480d44c12",
+      "lane": "code",
+      "path": "data/frozen_corpus_v1/code/validation.jsonl.gz",
+      "permission": "validation",
+      "records": 454,
+      "uncompressed_bytes": 3677466
+    },
+    {
+      "canonical_uncompressed_sha256": "5b40f873e996d87996180493ea5542fc7ebf7a2865b8e6bb1f5dde07204fddd2",
+      "compressed_bytes": 134462,
+      "compressed_sha256": "50c781119c8164162f62177e307ef7adb5a91a5d7484240cfbed1880214edb7e",
+      "lane": "general",
+      "path": "data/frozen_corpus_v1/general/anneal.jsonl.gz",
+      "permission": "anneal",
+      "records": 87,
+      "uncompressed_bytes": 450129
+    },
+    {
+      "canonical_uncompressed_sha256": "ebdbb37fa00e04802460bba933bbbbd57bb0dec688cdea4028a9ade76a938636",
+      "compressed_bytes": 7159454,
+      "compressed_sha256": "1b4aef337bdac93e16d677c76fe9487cf34053e03229c7751b663723b03486f0",
+      "lane": "general",
+      "path": "data/frozen_corpus_v1/general/train.jsonl.gz",
+      "permission": "train",
+      "records": 4557,
+      "uncompressed_bytes": 24297065
+    },
+    {
+      "canonical_uncompressed_sha256": "77be5fd6e9ef7f52aaccaaf7254ba5557c010021d10057ed0b3dcf4590756744",
+      "compressed_bytes": 842517,
+      "compressed_sha256": "6b791028b6cf92913b64a8550d561cdaa8c278db33ddb3d6f0471d6b2a7f549f",
+      "lane": "general",
+      "path": "data/frozen_corpus_v1/general/validation.jsonl.gz",
+      "permission": "validation",
+      "records": 539,
+      "uncompressed_bytes": 2863643
+    },
+    {
+      "canonical_uncompressed_sha256": "fc5bc56f5ad79646878501f128052883a6425934663baad96db43aab01e31e71",
+      "compressed_bytes": 119721,
+      "compressed_sha256": "942f0ed5753b5783f93c66783feec64f68cd43e889739972f307abc03d6590b7",
+      "lane": "indic",
+      "path": "data/frozen_corpus_v1/indic/anneal.jsonl.gz",
+      "permission": "anneal",
+      "records": 104,
+      "uncompressed_bytes": 551479
+    },
+    {
+      "canonical_uncompressed_sha256": "e6b5e34158c542f8acdfb7a939ddf91f9860382e817cdb366097607b3834dcc5",
+      "compressed_bytes": 5979789,
+      "compressed_sha256": "ecea7a7ea18a29d496bfe399a379357599c201530f0d5e4bc0a408fcd35515c9",
+      "lane": "indic",
+      "path": "data/frozen_corpus_v1/indic/train.jsonl.gz",
+      "permission": "train",
+      "records": 4637,
+      "uncompressed_bytes": 28306758
+    },
+    {
+      "canonical_uncompressed_sha256": "e0bc92f97f089a1b99474e570d78fd4042a3c07fb53784d41566e2d42ec9b3c7",
+      "compressed_bytes": 771533,
+      "compressed_sha256": "988b9d6578d1269937a9f854989279f87039567ad78c6b42169cddc3ceaa0d6f",
+      "lane": "indic",
+      "path": "data/frozen_corpus_v1/indic/validation.jsonl.gz",
+      "permission": "validation",
+      "records": 563,
+      "uncompressed_bytes": 3693612
+    },
+    {
+      "canonical_uncompressed_sha256": "4edbb30b4daedd340d7f0db4d93add0d4afec75a7f3ac6408e760bc7ba82940a",
+      "compressed_bytes": 107695,
+      "compressed_sha256": "86043c9553b15a2cf37d7e37f60a8aafeadc5b2aa3b09478c9df6c8fde19fdfd",
+      "lane": "long_context",
+      "path": "data/frozen_corpus_v1/long_context/anneal.jsonl.gz",
+      "permission": "anneal",
+      "records": 26,
+      "uncompressed_bytes": 328454
+    },
+    {
+      "canonical_uncompressed_sha256": "1e8840fb99e415be5704d5226d3952d08ecac2311da13496c3de31cebb076786",
+      "compressed_bytes": 4846356,
+      "compressed_sha256": "7f2c85600fd61e0f528cff9b755e76c4ea04724e5e7fa56d24bef111f5967cb7",
+      "lane": "long_context",
+      "path": "data/frozen_corpus_v1/long_context/train.jsonl.gz",
+      "permission": "train",
+      "records": 1184,
+      "uncompressed_bytes": 13746075
+    },
+    {
+      "canonical_uncompressed_sha256": "97bb9f3851590452c3b4fd616b5c42243856f4cce09244076ea96e1fba8ea26a",
+      "compressed_bytes": 525156,
+      "compressed_sha256": "208002a3462b2d5490d1f32e3e6b36d31b4fda399c94828e6d1592d8af417fde",
+      "lane": "long_context",
+      "path": "data/frozen_corpus_v1/long_context/validation.jsonl.gz",
+      "permission": "validation",
+      "records": 131,
+      "uncompressed_bytes": 1493464
+    },
+    {
+      "canonical_uncompressed_sha256": "0cd8608ba1350f5e6e0156dd7fa7f9476542c8a403f3c35ed15371646db8f865",
+      "compressed_bytes": 20793,
+      "compressed_sha256": "3562621f9d6ddbddd7e0c15e6fc7f121798bbab0e2dd218d0de9d58c2006ede9",
+      "lane": "reasoning",
+      "path": "data/frozen_corpus_v1/reasoning/anneal.jsonl.gz",
+      "permission": "anneal",
+      "records": 58,
+      "uncompressed_bytes": 94842
+    },
+    {
+      "canonical_uncompressed_sha256": "1c6909fae395cf0789eafc52dab4edcb693883ae4013376b6c5170e8e1866c53",
+      "compressed_bytes": 319621,
+      "compressed_sha256": "5e7ce374228e693130ed37c8a475e976fe8b946182502cdca5557d0a899f979b",
+      "lane": "reasoning",
+      "path": "data/frozen_corpus_v1/reasoning/never_train.jsonl.gz",
+      "permission": "never_train",
+      "records": 1000,
+      "uncompressed_bytes": 1079732
+    },
+    {
+      "canonical_uncompressed_sha256": "9970d5473653982b53d2f9508fe5cb413db7f40039f5f076037803530a30d570",
+      "compressed_bytes": 924176,
+      "compressed_sha256": "066afb7e7578cdf7db221ef8d03a3cee7691d32e0c41240c00cc78992c2b3841",
+      "lane": "reasoning",
+      "path": "data/frozen_corpus_v1/reasoning/train.jsonl.gz",
+      "permission": "train",
+      "records": 2641,
+      "uncompressed_bytes": 4361120
+    },
+    {
+      "canonical_uncompressed_sha256": "66e96a345faf2fe20195285f9ecbefd54fdae85b84aa626c31ca0ab425fa3a13",
+      "compressed_bytes": 107028,
+      "compressed_sha256": "e6c150a2207c93303f4235d8bf88eac6cd2cf3a02d0518782f0e42171ae585a9",
+      "lane": "reasoning",
+      "path": "data/frozen_corpus_v1/reasoning/validation.jsonl.gz",
+      "permission": "validation",
+      "records": 297,
+      "uncompressed_bytes": 496609
+    },
+    {
+      "canonical_uncompressed_sha256": "64afbeafaecbdc8be09e19b359ec74ab3e514e50253ba9e11f2f6cf2bc14803e",
+      "compressed_bytes": 101815,
+      "compressed_sha256": "6a6ac0a1f6a6c9920be2855df003e6f0c736dc4a99ea95c27fd1816ade4ea016",
+      "lane": "science_math",
+      "path": "data/frozen_corpus_v1/science_math/anneal.jsonl.gz",
+      "permission": "anneal",
+      "records": 43,
+      "uncompressed_bytes": 319943
+    },
+    {
+      "canonical_uncompressed_sha256": "47937a812f8866548360f87d975a9c9b7d0f2f0b6cfd2f0b2a80540a4b060616",
+      "compressed_bytes": 6458155,
+      "compressed_sha256": "955a69e36f3cf237ce84465947f88616ac743c77b40a25a9620938774ad02ff5",
+      "lane": "science_math",
+      "path": "data/frozen_corpus_v1/science_math/train.jsonl.gz",
+      "permission": "train",
+      "records": 2625,
+      "uncompressed_bytes": 20137667
+    },
+    {
+      "canonical_uncompressed_sha256": "678375a4473ee6129d66421f206568078893348eb99b0c1757710e7581b44926",
+      "compressed_bytes": 517911,
+      "compressed_sha256": "3018420a7cf337778adcbcc7b8c1a927938f0c49185c75d0886000ae4bfa75f4",
+      "lane": "science_math",
+      "path": "data/frozen_corpus_v1/science_math/validation.jsonl.gz",
+      "permission": "validation",
+      "records": 230,
+      "uncompressed_bytes": 1589854
+    }
+  ],
+  "cleaning_pipeline_hash": "sha256:fb68af7ce2dba96fce832c8abd73c7ab2b3a696d5adead2d653462d9ea8957f3",
+  "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+  "corpus_id": "era6-reviewed-corpus-v1",
+  "evaluation_registry_hash": "sha256:48c53c5eabd26931c768ad1c1f0fa4af4efc1a79fb5bfd421db9b8d256843c78",
+  "freeze_config_sha256": "002d51e51aaf4ddb020db9924b587130d89f64a03d9880fd0f72574c159896a2",
+  "input_artifacts": [
+    {
+      "compressed_sha256": "8d2a73cbafcff50f3e46c81b7ae68d6d6a4c2b2abc0afe629e342dfaea23e943",
+      "path": "data/experiments/remaining_lanes_v2/gsm8k_reasoning_train.jsonl.gz",
+      "source_id": "gsm8k_reasoning_train"
+    },
+    {
+      "compressed_sha256": "8bc425b520ff1cac62a085766f91dd82b7273b2131b76a2271e3f0fb473442a8",
+      "path": "data/experiments/remaining_lanes_v2/codeparrot_permissive_python.jsonl.gz",
+      "source_id": "codeparrot_permissive_python"
+    },
+    {
+      "compressed_sha256": "b3e018a2397a382d4bd01017b3c86708ad33c6266fb9e3d6054c118c418f8c77",
+      "path": "data/experiments/remaining_lanes_v2/hermes_function_calling.jsonl.gz",
+      "source_id": "hermes_function_calling"
+    },
+    {
+      "compressed_sha256": "a979d44778a2a7013446e7b99d06df04ca63f2900b117cc4b45734e52a749f3f",
+      "path": "data/experiments/remaining_lanes_v2/hermes_glaive_function_calling.jsonl.gz",
+      "source_id": "hermes_glaive_function_calling"
+    },
+    {
+      "compressed_sha256": "05542f6b157e5b2fe7dc1e5b58f99f301f0509da90dcc506153710fb2ef66919",
+      "path": "data/experiments/remaining_lanes_v2/hermes_json_agentic.jsonl.gz",
+      "source_id": "hermes_json_agentic"
+    },
+    {
+      "compressed_sha256": "444db047fb84af0655fa93319be6af3004c8f8ed9429b2897fd65adde7262182",
+      "path": "data/experiments/remaining_lanes_v2/openwebmath_science_math.jsonl.gz",
+      "source_id": "openwebmath_science_math"
+    },
+    {
+      "compressed_sha256": "ec95ce50fabc4f626fd7bc6c993a3edf3372f0bde30b9f4fa333fde10ce8678c",
+      "path": "data/experiments/remaining_lanes_v2/wikipedia_long_en.jsonl.gz",
+      "source_id": "wikipedia_long_en"
+    },
+    {
+      "compressed_sha256": "792348a4466f191455fb43562569403a14c173ae34e7e595f9d9d4ba92afd956",
+      "path": "data/experiments/remaining_lanes_v2/assignment4_samanantar_translated.jsonl.gz",
+      "source_id": "assignment4_samanantar_translated"
+    },
+    {
+      "compressed_sha256": "0ae2572fd77a776926640694ec52e2d1a84e853d1654bb2ae300da1cc6eddc1e",
+      "path": "data/experiments/remaining_lanes_v2/sangraha_synthetic_hindi.jsonl.gz",
+      "source_id": "sangraha_synthetic_hindi"
+    },
+    {
+      "compressed_sha256": "9c8f70322d0fe6a823c104084873eae2904171013239ffae1994da41b87be03c",
+      "path": "data/experiments/remaining_lanes_v2/sangraha_unverified_hindi.jsonl.gz",
+      "source_id": "sangraha_unverified_hindi"
+    },
+    {
+      "compressed_sha256": "002f04101e38262f9c8d06382351896a7c682b9f54bb9f9dc291d53cfdae49a8",
+      "path": "data/experiments/remaining_lanes_v2/sangraha_verified_hindi.jsonl.gz",
+      "source_id": "sangraha_verified_hindi"
+    },
+    {
+      "compressed_sha256": "63440bebba77185243d8d93ce703f35368bcb412da3b1b6c0a2fb43d041c67e9",
+      "path": "data/experiments/corpus_v3/wikipedia_general_en.jsonl.gz",
+      "source_id": "wikipedia_general_en"
+    }
+  ],
+  "input_never_train_records": 1000,
+  "input_training_records": 23895,
+  "lane_permission_counts": {
+    "agentic": {
+      "anneal": 40,
+      "train": 1779,
+      "validation": 202
+    },
+    "code": {
+      "anneal": 53,
+      "train": 3592,
+      "validation": 454
+    },
+    "general": {
+      "anneal": 87,
+      "train": 4557,
+      "validation": 539
+    },
+    "indic": {
+      "anneal": 104,
+      "train": 4637,
+      "validation": 563
+    },
+    "long_context": {
+      "anneal": 26,
+      "train": 1184,
+      "validation": 131
+    },
+    "reasoning": {
+      "anneal": 58,
+      "never_train": 1000,
+      "train": 2641,
+      "validation": 297
+    },
+    "science_math": {
+      "anneal": 43,
+      "train": 2625,
+      "validation": 230
+    }
+  },
+  "partition": {
+    "anneal_fraction": 0.02,
+    "seed": "era6-partition-v1",
+    "validation_fraction": 0.1
+  },
+  "rejection_counts": {
+    "cross_source_exact_duplicate": 49,
+    "evaluation_13gram_overlap": 4
+  },
+  "schema_version": 1,
+  "source_admitted_counts": {
+    "assignment4_samanantar_translated": 1000,
+    "codeparrot_permissive_python": 4099,
+    "gsm8k_reasoning_train": 2996,
+    "hermes_function_calling": 1034,
+    "hermes_glaive_function_calling": 500,
+    "hermes_json_agentic": 487,
+    "openwebmath_science_math": 2898,
+    "sangraha_synthetic_hindi": 1177,
+    "sangraha_unverified_hindi": 1073,
+    "sangraha_verified_hindi": 2054,
+    "wikipedia_general_en": 5183,
+    "wikipedia_long_en": 1341
+  },
+  "source_config_sha256": "068a6b65be033e48e74c5f0fc1274eb61c74e4a85b27f84cb25bdf66f8d08ed2",
+  "source_input_counts": {
+    "assignment4_samanantar_translated": 1000,
+    "codeparrot_permissive_python": 4099,
+    "gsm8k_reasoning_train": 3000,
+    "hermes_function_calling": 1035,
+    "hermes_glaive_function_calling": 500,
+    "hermes_json_agentic": 500,
+    "openwebmath_science_math": 2898,
+    "sangraha_synthetic_hindi": 1177,
+    "sangraha_unverified_hindi": 1073,
+    "sangraha_verified_hindi": 2089,
+    "wikipedia_general_en": 5183,
+    "wikipedia_long_en": 1341
+  },
+  "status": "FROZEN"
+}

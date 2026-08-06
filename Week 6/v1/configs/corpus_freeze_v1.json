@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "corpus_id": "era6-reviewed-corpus-v1",
+  "status": "frozen_after_human_quality_gates",
+  "partition": {
+    "seed": "era6-partition-v1",
+    "validation_fraction": 0.10,
+    "anneal_fraction": 0.02
+  },
+  "evaluation_firewall": {
+    "source_id": "gsm8k_eval_never_train",
+    "ngram_size": 13
+  },
+  "training_sources": [
+    {
+      "source_id": "wikipedia_general_en",
+      "path": "data/experiments/corpus_v3/wikipedia_general_en.jsonl.gz"
+    },
+    {
+      "source_id": "wikipedia_long_en",
+      "path": "data/experiments/remaining_lanes_v2/wikipedia_long_en.jsonl.gz"
+    },
+    {
+      "source_id": "openwebmath_science_math",
+      "path": "data/experiments/remaining_lanes_v2/openwebmath_science_math.jsonl.gz"
+    },
+    {
+      "source_id": "codeparrot_permissive_python",
+      "path": "data/experiments/remaining_lanes_v2/codeparrot_permissive_python.jsonl.gz"
+    },
+    {
+      "source_id": "gsm8k_reasoning_train",
+      "path": "data/experiments/remaining_lanes_v2/gsm8k_reasoning_train.jsonl.gz"
+    },
+    {
+      "source_id": "sangraha_verified_hindi",
+      "path": "data/experiments/remaining_lanes_v2/sangraha_verified_hindi.jsonl.gz"
+    },
+    {
+      "source_id": "sangraha_unverified_hindi",
+      "path": "data/experiments/remaining_lanes_v2/sangraha_unverified_hindi.jsonl.gz"
+    },
+    {
+      "source_id": "sangraha_synthetic_hindi",
+      "path": "data/experiments/remaining_lanes_v2/sangraha_synthetic_hindi.jsonl.gz"
+    },
+    {
+      "source_id": "assignment4_samanantar_translated",
+      "path": "data/experiments/remaining_lanes_v2/assignment4_samanantar_translated.jsonl.gz"
+    },
+    {
+      "source_id": "hermes_function_calling",
+      "path": "data/experiments/remaining_lanes_v2/hermes_function_calling.jsonl.gz"
+    },
+    {
+      "source_id": "hermes_json_agentic",
+      "path": "data/experiments/remaining_lanes_v2/hermes_json_agentic.jsonl.gz"
+    },
+    {
+      "source_id": "hermes_glaive_function_calling",
+      "path": "data/experiments/remaining_lanes_v2/hermes_glaive_function_calling.jsonl.gz"
+    }
+  ],
+  "quality_inputs": [
+    "configs/quality_policy_v3.json",
+    "configs/remaining_lanes_policy_v2.json",
+    "src/era6/cleaning.py",
+    "src/era6/chunking.py",
+    "src/era6/quality.py"
+  ]
+}

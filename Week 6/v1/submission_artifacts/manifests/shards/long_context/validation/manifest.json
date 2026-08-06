@@ -1,0 +1,41 @@
+{
+  "manifest": {
+    "capability_lane": "long_context",
+    "cleaning_pipeline_hash": "sha256:fb68af7ce2dba96fce832c8abd73c7ab2b3a696d5adead2d653462d9ea8957f3",
+    "content_hash": "sha256:b46821c3908ac09e5cb6756c0d0f4c637c3512894446a7ef1a100be371163b03",
+    "dedup_status": "passed",
+    "eval_overlap_status": "clear",
+    "extra": {
+      "corpus_hash": "sha256:0b7be48f0803e32751e8b2bcf5091a30f5e1c99c99cce182c68082960c7cbafb",
+      "index_canonical_uncompressed_sha256": "8c4b1772cc8f7e7f5984a9ba4cfe63e71a1d37b76709df17c701df21ad448874",
+      "index_path": "data/tokenized_v1/long_context/validation/index.jsonl.gz",
+      "index_sha256": "fa824a06c8548be331f1ddfe19026a6eef2cec544e8d885cd0bfbe4679db3e48",
+      "input_artifact": "data/frozen_corpus_v1/long_context/validation.jsonl.gz",
+      "input_compressed_sha256": "208002a3462b2d5490d1f32e3e6b36d31b4fda399c94828e6d1592d8af417fde",
+      "loss_path": "data/tokenized_v1/long_context/validation/loss.uint8.bin",
+      "loss_policy_records": {
+        "full_text_causal": 131
+      },
+      "tokens_path": "data/tokenized_v1/long_context/validation/tokens.uint16.bin",
+      "tokens_sha256": "6d45fea7c9babed3effbef621aeb61372874ff91d2498a155777531f2764b901"
+    },
+    "language_distribution": {
+      "en": 131
+    },
+    "loss_bearing_token_count": 644964,
+    "loss_mask_hash": "sha256:cc3c5576de6392310816edcdf1ca846383ffb305002c25fdeb1faca6e8e49b43",
+    "parent_manifest_ids": [],
+    "permission": "validation",
+    "pii_screen_status": "passed_human_reviewed",
+    "position_policy": "document_reset_causal",
+    "record_count": 131,
+    "shard_id": "long_context-validation-v1",
+    "source_lock_hashes": [
+      "sha256:457fad381a3b1516e9401762d52b473a1b61f60fa22ec7e70fd6ee6ac786bdb2"
+    ],
+    "token_count": 645095,
+    "tokenizer_hash": "sha256:1ac8ae0f659f554dfa77e272b08aab33d552a91329a9715f9fdbd6034f9c01be"
+  },
+  "manifest_hash": "sha256:7a919855a577c90f31047eff7c58037918d5a2e4473294b86645c71eaa519a77",
+  "schema_version": 1
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "protocol_id": "era6-recovery-v1",
+  "checkpoint_every_optimizer_updates": 8,
+  "deliberate_crash_after_optimizer_update": 32,
+  "planned_crash_exit_code": 86,
+  "checkpoint_retention": {
+    "preserve_crash_checkpoint": true,
+    "latest_periodic_checkpoints": 1
+  },
+  "resume_requirements": {
+    "restore_model": true,
+    "restore_optimizer": true,
+    "restore_rng": true,
+    "restore_batch_cursor": true,
+    "restore_ledger_tails": true,
+    "require_exact_final_parameter_hash": true,
+    "require_exact_logical_ledgers": true
+  },
+  "replay_requirements": {
+    "fresh_process": true,
+    "require_exact_final_parameter_hash": true,
+    "require_exact_logical_ledgers": true,
+    "interval_start_batch_index": 112,
+    "interval_end_batch_index_exclusive": 140,
+    "require_batch_ids": true,
+    "require_sequence_ids": true,
+    "require_token_spans": true,
+    "require_payload_hashes": true
+  },
+  "fork": {
+    "parent_optimizer_update": 32,
+    "learning_rate_scale_after_fork": 0.5,
+    "require_exact_consumption_ledger": true,
+    "require_different_learning_ledger": true,
+    "require_different_final_parameter_hash": true
+  }
+}
