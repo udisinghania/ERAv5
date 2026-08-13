@@ -1,0 +1,45 @@
+{
+  "claim_scope": "V2 removes the explicit 32-byte cutoff; fixed-dimensional Fourier summation is not claimed to be injective for arbitrary strings.",
+  "long_input": {
+    "text": "Fourier_Kronecker_preserves_every_byte_beyond_position_thirty_two_0123456789",
+    "utf8_bytes": 76,
+    "v1": {
+      "input_bytes": 76,
+      "encoded_bytes": 32,
+      "truncated_bytes": 44,
+      "term_shape": [
+        32,
+        8192
+      ],
+      "vector_shape": [
+        8192
+      ]
+    },
+    "v2": {
+      "input_bytes": 76,
+      "encoded_bytes": 76,
+      "truncated_bytes": 0,
+      "term_shape": [
+        76,
+        8192
+      ],
+      "vector_shape": [
+        8192
+      ]
+    }
+  },
+  "shared_prefix_collision": {
+    "shared_prefix_bytes": 32,
+    "v1_l2_distance": 0.0,
+    "v2_l2_distance": 8.61790943145752
+  },
+  "typo_robustness": {
+    "pair": [
+      "separate",
+      "seperate"
+    ],
+    "v1_cosine": 0.8748710751533508,
+    "v2_cosine": 0.9210761785507202
+  },
+  "interference_figure": "figures/v2_naive/fourier_interference.png"
+}

@@ -1,0 +1,3 @@
+09da460fd30ddedb96cd752a823c1c8a6fee35af1452fe4562c1415e2af6ffad  data/week6_v2/tokenizer.json
+e1ce47a8803f6efae0ab67ecf9338fd2487501f3c62b5160f4504286d7c4fe5c  data/week6_v2/train/tokens.uint16.bin
+265267867fa528c4782c0d6b1bec50e362ef570a5b39aafec1c0b8a730dbc656  data/week6_v2/validation/tokens.uint16.bin

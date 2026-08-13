@@ -1,0 +1,17 @@
+# Local environments and Python caches
+.grader_test_env/
+.grader_py312_env/
+__pycache__/
+*.py[cod]
+
+# Generated smoke/full-run outputs (archived evidence lives in reports/figures)
+verification_temp/
+scripts/fourier_kronecker_run/
+scripts/fourier_kronecker_v3_run/
+scripts/fourier_kronecker_phase1_dual_proof_run/
+scripts/phase1_polish_representation_run/
+
+# Optional model checkpoints
+*.pt
+*.pth
+*.ckpt

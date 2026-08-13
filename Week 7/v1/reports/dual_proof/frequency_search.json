@@ -1,0 +1,143 @@
+{
+  "method": "golden-ratio perturbation of 16 DCT midpoint frequencies",
+  "objective": "empirical weighted local conditioning + long-lag recurrence penalty",
+  "grid": {
+    "strength": [
+      0.05,
+      0.35,
+      61
+    ],
+    "phase_count": 72
+  },
+  "selected_strength": 0.13,
+  "selected_phase_radians": 3.839724354387525,
+  "objective_value": 0.017194822179288242,
+  "max_positive_cosine_lag_32_to_256": 0.4339341388380399,
+  "omegas_radians_per_byte": [
+    0.12348138534438675,
+    0.2736111275347656,
+    0.49640869886545314,
+    0.6999741292470061,
+    0.8592340948776652,
+    1.1030651431296692,
+    1.266481487511827,
+    1.4639173492196578,
+    1.69159804815094,
+    1.840656026374314,
+    2.0754170620939467,
+    2.2624112838136914,
+    2.434145972134124,
+    2.6761512844997437,
+    2.8297853878365493,
+    3.0434732256401706
+  ],
+  "metrics": [
+    {
+      "window": 8.0,
+      "rms_off_diagonal_cosine": 0.000420689278771726,
+      "max_abs_off_diagonal_cosine": 0.00102052253429337,
+      "effective_rank": 7.99999433592453,
+      "rank_ceiling": 8.0,
+      "condition_number": 1.002143443598437
+    },
+    {
+      "window": 16.0,
+      "rms_off_diagonal_cosine": 0.02554504501798434,
+      "max_abs_off_diagonal_cosine": 0.10599516602734625,
+      "effective_rank": 15.916354533595584,
+      "rank_ceiling": 16.0,
+      "condition_number": 1.1878841510334248
+    },
+    {
+      "window": 32.0,
+      "rms_off_diagonal_cosine": 0.04914432960969712,
+      "max_abs_off_diagonal_cosine": 0.15439878702543997,
+      "effective_rank": 30.769498298975805,
+      "rank_ceiling": 32.0,
+      "condition_number": 1.5081038962694275
+    }
+  ],
+  "profile": {
+    "token_occurrences": 6114695,
+    "type_histogram": [
+      0,
+      256,
+      1022,
+      1585,
+      1481,
+      1097,
+      1130,
+      614,
+      429,
+      290,
+      149,
+      71,
+      41,
+      11,
+      4,
+      2,
+      5,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    "occurrence_histogram": [
+      0,
+      3019333,
+      1021880,
+      893045,
+      462361,
+      283382,
+      163051,
+      118479,
+      75950,
+      35527,
+      26858,
+      8439,
+      4263,
+      2000,
+      127,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "bucket_mass_le8_9to16_17plus": [
+      0.9873723873390251,
+      0.012627612660974914,
+      0.0
+    ],
+    "search_weights_8_16_32": [
+      0.8892665292381714,
+      0.060733470761828674,
+      0.049999999999999996
+    ]
+  }
+}
