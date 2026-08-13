@@ -260,16 +260,16 @@ The intuition was acoustic: phase would encode “where,” while amplitude woul
 The problem is the normalization applied immediately afterward. For
 
 $$
-Z_\epsilon(x)=\frac{x-\mu(x)}{\sqrt{\operatorname{Var}(x)+\epsilon}},
+Z_{\epsilon}(x)=\frac{x-\mu(x)}{\sqrt{\mathrm{Var}(x)+\epsilon}},
 $$
 
 and positive scalar $\lambda$, the idealized zero-epsilon normalization satisfies
 
 $$
-Z_0(\lambda x)=Z_0(x).
+Z_{0}(\lambda x)=Z_{0}(x).
 $$
 
-With nonzero $\epsilon$, the identity is approximate rather than exact; the included demo measures a maximum coordinate difference of only `1.86 × 10⁻⁵` between $Z_\epsilon(x)$ and $Z_\epsilon(7x)$. Therefore, **global pre-normalization loudness is mathematically unidentifiable in the zero-epsilon limit and numerically suppressed in the implemented normalization**. Relative byte-specific gates can still rotate the vector, so it is more precise to say that normalization erases global amplitude while changing the meaning of relative amplitude; it does not erase every possible nonuniform gate identically.
+With nonzero $\epsilon$, the identity is approximate rather than exact; the included demo measures a maximum coordinate difference of only `1.86 × 10⁻⁵` between $Z_{\epsilon}(x)$ and $Z_{\epsilon}(7x)$. Therefore, **global pre-normalization loudness is mathematically unidentifiable in the zero-epsilon limit and numerically suppressed in the implemented normalization**. Relative byte-specific gates can still rotate the vector, so it is more precise to say that normalization erases global amplitude while changing the meaning of relative amplitude; it does not erase every possible nonuniform gate identically.
 
 Empirically, the final short-token ablation found almost no benefit:
 
@@ -300,7 +300,8 @@ The controlled task uses 64-byte DNA tokens. Four tokens share exactly the same 
 V1 sees the same input representation for all four cases. Its information-theoretic optimum is therefore
 
 $$
-L^*_{V1}=\ln4=1.386294, \qquad A^*_{V1}=25\%.
+L_{\mathrm{V1}}^{\star}=\ln(4)=1.386294,
+\qquad A_{\mathrm{V1}}^{\star}=25\%.
 $$
 
 V3 sees the suffix phase.
