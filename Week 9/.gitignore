@@ -1,0 +1,20 @@
+# Local data, temporary tooling, and Python caches
+work/
+**/__pycache__/
+*.py[cod]
+
+# Model checkpoints are approximately 196 MiB each and exceed GitHub's
+# ordinary per-file limit. Their hashes and metadata remain in the JSON logs.
+*.pt
+
+# Earlier exploratory runs are not part of the Assignment 9 submission.
+outputs/mtp_17m_run/
+outputs/mtp_17m_reproduction_run/
+outputs/mtp_17m_config.json
+outputs/MTP_17M_RUN_GUIDE.md
+outputs/train_mtp_17m.py
+outputs/mtp_98m_*/
+outputs/mtp_98m_config.json
+outputs/MTP_98M_LONG_RUN_GUIDE.md
+outputs/scale_calibration*/
+outputs/SCALE_*

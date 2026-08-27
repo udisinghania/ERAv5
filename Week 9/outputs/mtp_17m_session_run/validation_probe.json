@@ -1,0 +1,3057 @@
+{
+  "schema_version": 2,
+  "permission": "validation",
+  "selection_seed": "assignment9-mtp-validation-100k-v1",
+  "sequence_length": 512,
+  "target_loss_bearing_tokens": 100000,
+  "head1_loss_bearing_tokens": 102019,
+  "head2_loss_bearing_tokens": 101860,
+  "balanced_target_per_lane": 14286,
+  "lanes": [
+    "agentic",
+    "code",
+    "general",
+    "indic",
+    "long_context",
+    "reasoning",
+    "science_math"
+  ],
+  "sequences": 301,
+  "sequences_by_lane": {
+    "agentic": 57,
+    "code": 29,
+    "general": 32,
+    "indic": 35,
+    "long_context": 28,
+    "reasoning": 91,
+    "science_math": 29
+  },
+  "loss_bearing_tokens_by_lane": {
+    "agentic": 14592,
+    "code": 14563,
+    "general": 14783,
+    "indic": 14740,
+    "long_context": 14308,
+    "reasoning": 14327,
+    "science_math": 14706
+  },
+  "selected": [
+    {
+      "lane": "agentic",
+      "record_id": "rec_63181b1cb722a46a0492c66a",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 1713,
+      "record_token_end": 2225,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 333,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_1962826c625e886109a6ff47",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 2816,
+      "record_token_end": 3328,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_2c055a39393e4781557a42ab",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 5850,
+      "record_token_end": 6362,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 153,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_b32401a1c77674c406579c0d",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 541,
+      "record_token_end": 1053,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 224,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_f2d33b0b90edfdc79a436b5f",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 278,
+      "record_token_end": 790,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 94,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_fee0483344e9be7df1274b86",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 685,
+      "record_token_end": 1197,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 193,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_9086bddb7a796407c5f9e66d",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 898,
+      "record_token_end": 1410,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 355,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_e107954590e56398607c29fe",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 2304,
+      "record_token_end": 2816,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_f64ecf017f46cd585a09c33b",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 182,
+      "record_token_end": 694,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 140,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_ee4715528f760c4f79ac9255",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 1792,
+      "record_token_end": 2304,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_cd0584d72c89b5e978739846",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 717,
+      "record_token_end": 1229,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 230,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_83e6c33b86c1c3e33eb35acb",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 30,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_3075098604b86d41e8ede8f1",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 5062,
+      "record_token_end": 5574,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 128,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_2994cfb0519d790ba2348576",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 625,
+      "record_token_end": 1137,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 236,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_c382c505b4a5e7b9dc165750",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 777,
+      "record_token_end": 1289,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 350,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_d6ea2f84724f8cac9c1fccb1",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 1280,
+      "record_token_end": 1792,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_0feda937e5ee11e60877bd26",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 768,
+      "record_token_end": 1280,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 64,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_b81ff75bebec4d1767e8bd4b",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 197,
+      "record_token_end": 709,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 200,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_b2583bc9791a7357fced1723",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 4810,
+      "record_token_end": 5322,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 125,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_9ea7b6257d22c23cb6fb9d7b",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 4527,
+      "record_token_end": 5039,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 187,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_c294b431e5397a9e520603e4",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 553,
+      "record_token_end": 1065,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 182,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_36a056675eef6e02ce58bce4",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 361,
+      "record_token_end": 873,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 125,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_8288da273007f41c79bef11c",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 874,
+      "record_token_end": 1386,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 299,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_cbd398cd3c5e6116e3c2b5cd",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 548,
+      "record_token_end": 1060,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 221,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_9557febf2606453a7013dbc0",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 4280,
+      "record_token_end": 4792,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 141,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_a82784e7a6572b1538434004",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 506,
+      "record_token_end": 1018,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 221,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_f5ff0ce54762384df7785feb",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 512,
+      "record_token_end": 1024,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_4897f05ccc19cc09f90161af",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 344,
+      "record_token_end": 856,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 201,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_c78e132cd5c775816a245f3d",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 895,
+      "record_token_end": 1407,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 211,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_cec177d3af326895970bf2d6",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 1700,
+      "record_token_end": 2212,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_c76195f2d21cbbdfd4521313",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 788,
+      "record_token_end": 1300,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 365,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_f5fe2e4710e827f3d60a925b",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 5805,
+      "record_token_end": 6317,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 117,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_b14fe311bb08dbf5162e0b7a",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 5096,
+      "record_token_end": 5608,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 168,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_3dcfe47a9315d5e6ba97fa3a",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 1280,
+      "record_token_end": 1792,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_45d5d931b47eb7923f30ca48",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 5592,
+      "record_token_end": 6104,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 142,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_1866d193c8a164cf72fb09df",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 521,
+      "record_token_end": 1033,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 373,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_517b79a54695c119036bf8b6",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 1792,
+      "record_token_end": 2304,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 468,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_6a50d445265ed350b0ea74bc",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 1792,
+      "record_token_end": 2304,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_901961a9f7048b48a800fa25",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 367,
+      "record_token_end": 879,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 206,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_b03e7b7947be98dfd7f95f31",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 484,
+      "record_token_end": 996,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 275,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_64c214d8f62d20c0ba2c253f",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 4048,
+      "record_token_end": 4560,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 135,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_bdca0c119645bfecf0f81d18",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 0,
+      "record_token_end": 413,
+      "nonpadding_tokens": 413,
+      "loss_bearing_tokens": 47,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_9fece5592c8d28cb32590a07",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 30,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_0008422a151b4a688a0c5319",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 778,
+      "record_token_end": 1290,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 260,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_fee2812f07b1c877a928388e",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 644,
+      "record_token_end": 1156,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 363,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_66b11d1e227974270d5922b0",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 588,
+      "record_token_end": 1100,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 277,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_d865a02f5cf2843a6c346049",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 216,
+      "record_token_end": 728,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 60,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_f366f5a3fb460cb8bbadd75e",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 127,
+      "record_token_end": 639,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 204,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_0076a50f4be61060fd4581a8",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 5798,
+      "record_token_end": 6310,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 113,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_bcf656eaac4f7c64ac521df4",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 0,
+      "record_token_end": 302,
+      "nonpadding_tokens": 302,
+      "loss_bearing_tokens": 49,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_5b8315442eac89b4d72415b3",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 216,
+      "record_token_end": 728,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 148,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_d344486eb81db28c8fc158c3",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 256,
+      "record_token_end": 768,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_7505c6a1dbe450752dc9c178",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 679,
+      "record_token_end": 1191,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 232,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_136b1861bbea1e7a7ff72ed0",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 1108,
+      "record_token_end": 1620,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 379,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_8aa3920fac6eb4d8bf95ada2",
+      "source_id": "hermes_json_agentic",
+      "record_token_start": 854,
+      "record_token_end": 1366,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 307,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_416ad62d9467bb8c73da71bf",
+      "source_id": "hermes_function_calling",
+      "record_token_start": 4812,
+      "record_token_end": 5324,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 151,
+      "permission": "validation"
+    },
+    {
+      "lane": "agentic",
+      "record_id": "rec_b0cae028c2c23a5074401d22",
+      "source_id": "hermes_glaive_function_calling",
+      "record_token_start": 256,
+      "record_token_end": 768,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 481,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_b56d0f1e7b2f2b0dd72085fd",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_2d6bd0198188f18c51b96a3e",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_e9267c20e3099b75c86d1c6f",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_443b9cda59f6fc33893db8d5",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_063e314491d5e85ae5ca8812",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_b330c8b0c60495911a55713c",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 511,
+      "nonpadding_tokens": 511,
+      "loss_bearing_tokens": 510,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_1a5875b2f831e0fa5769f7ff",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_874eabb83658c18c741a699d",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_1292fe1a76f24d17e7155f09",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_876b4c7689e593f129968cd9",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_b355c3045a45b9b86d593889",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_b00bfc1a8c3684da0c0d6c4f",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_0d9de4df768da31392ef7deb",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 355,
+      "nonpadding_tokens": 355,
+      "loss_bearing_tokens": 354,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_ae423716bead2629da0e09d3",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_df3a44d292d3db7ba65fe60c",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_b22e3eafbaedfc54dbfad7a6",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_3cf8585d8817c0190d8d84c8",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_8d18946d08dbef5d3374b056",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 500,
+      "nonpadding_tokens": 500,
+      "loss_bearing_tokens": 499,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_0cf61e59cfd878fe90a2ca6f",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_d4b9297e124312fdd5b54915",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 426,
+      "nonpadding_tokens": 426,
+      "loss_bearing_tokens": 425,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_cd89001d662d9e446f3b1d77",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_3979764e038be87873e7e32c",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_598c0ce7e114fb55a90330d4",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_592715a1e0b97f31eb12b898",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_70469f593537157dff14c742",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_582816ec7b48ea61cc11d49d",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_e8bc0bc8fc1dc8754ffefccc",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_5ff3718d7fa2f75d36cbc231",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "code",
+      "record_id": "rec_177f781f566630b61fe01dcb",
+      "source_id": "codeparrot_permissive_python",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_5e61965549995989eebff2ea",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_29243ecb9215324fc1a5b496",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_98297d62afdcacd3963ab5aa",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 193,
+      "nonpadding_tokens": 193,
+      "loss_bearing_tokens": 192,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_333553d736d02d112c63fb61",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 173,
+      "nonpadding_tokens": 173,
+      "loss_bearing_tokens": 172,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_e8284050336462827ba986a6",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_15751a72efa4cfe6f7f9f98b",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_5b9abd05cc790dc405e39ad8",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_8968ac4df51dbb97331da950",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_5b8ad184332a10b87371455a",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_049aa72ff17766eade08ff6d",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 496,
+      "nonpadding_tokens": 496,
+      "loss_bearing_tokens": 495,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_e238d4384aad37862cebb61c",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_96e551d4b82244893de8cf8c",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_0b8ec84e8eb7a1ed63dbd63e",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 277,
+      "nonpadding_tokens": 277,
+      "loss_bearing_tokens": 276,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_586cf66d1592415cfca6a797",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_7993d487ede1a18758464ff6",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_1b7de11ce2f1b862ae7c6468",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 363,
+      "nonpadding_tokens": 363,
+      "loss_bearing_tokens": 362,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_1a3d7d8e6c303848b1d1d33a",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 145,
+      "nonpadding_tokens": 145,
+      "loss_bearing_tokens": 144,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_6fc89814386b73589ae2acf0",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_b5f8f5a5db5c18facfe62a73",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_21c8bbadf1072a86e2ea50eb",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_5191fcb0e49aebfea99b96bb",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 374,
+      "nonpadding_tokens": 374,
+      "loss_bearing_tokens": 373,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_846aaf353c725c62bb5a0934",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_a19e252d12f492b7cf434c53",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_cf8f2b4545eedbf491c67793",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 506,
+      "nonpadding_tokens": 506,
+      "loss_bearing_tokens": 505,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_916ddad282ca8c0b0696af33",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_044dfdf3fef9d6dce4c396e8",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_02293e9eba59e8b45b6f0871",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_97894c2193161e7ba4b51ca7",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_8a792ff9626c83e8aa6a86ba",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_33551b32c71d10a8cba2b7cc",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_4c67d7a1a755f93fa3309eab",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "general",
+      "record_id": "rec_12c2f8814e520d09de002296",
+      "source_id": "wikipedia_general_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_2191bcca090155b3c03265a0",
+      "source_id": "assignment4_samanantar_translated",
+      "record_token_start": 0,
+      "record_token_end": 181,
+      "nonpadding_tokens": 181,
+      "loss_bearing_tokens": 139,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_7db1fbe20108ccc905ed4071",
+      "source_id": "sangraha_unverified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_773a7f0dada5e6ea95081a60",
+      "source_id": "sangraha_synthetic_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_d0b2099ca4c6273d18cfc197",
+      "source_id": "assignment4_samanantar_translated",
+      "record_token_start": 0,
+      "record_token_end": 71,
+      "nonpadding_tokens": 71,
+      "loss_bearing_tokens": 41,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_51f78d41c7b375e51e1ad2a1",
+      "source_id": "sangraha_synthetic_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_1dd8d5af202f582674361845",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 327,
+      "nonpadding_tokens": 327,
+      "loss_bearing_tokens": 326,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_c96e527d7e20ef4b015925ab",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 235,
+      "nonpadding_tokens": 235,
+      "loss_bearing_tokens": 234,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_7d2aaed72b851b9e051e42c9",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_348f66e0144ceccb60a15712",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_da38533ac722a145a49f8cfc",
+      "source_id": "sangraha_synthetic_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_d7d089181965575c20d1ec14",
+      "source_id": "sangraha_synthetic_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_5f421ab0653efa7401ffc626",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_31a035acc9727f942d1062ee",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_e8a9a5ab41431f2296553b3c",
+      "source_id": "sangraha_unverified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_8c94ca1b470ab2b1753d8a11",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_14e763e50972168947553771",
+      "source_id": "sangraha_unverified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_c4f03e910aab4554197d284d",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_4c29e15fb263c53eca60bb9d",
+      "source_id": "sangraha_unverified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_3b6cc92b4ccd576b8b0d9a86",
+      "source_id": "sangraha_unverified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_3c279e76ffd6c050a5ab9aee",
+      "source_id": "sangraha_synthetic_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_bc0209c5f9591553c7067f62",
+      "source_id": "sangraha_unverified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_6bd39ed47e51f592f4a6569d",
+      "source_id": "sangraha_unverified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_4b771d8205da5620c41bbd64",
+      "source_id": "assignment4_samanantar_translated",
+      "record_token_start": 0,
+      "record_token_end": 78,
+      "nonpadding_tokens": 78,
+      "loss_bearing_tokens": 48,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_b244af6c435c3417681f108c",
+      "source_id": "assignment4_samanantar_translated",
+      "record_token_start": 0,
+      "record_token_end": 68,
+      "nonpadding_tokens": 68,
+      "loss_bearing_tokens": 41,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_28df62c33299f6e6410c58bd",
+      "source_id": "assignment4_samanantar_translated",
+      "record_token_start": 0,
+      "record_token_end": 124,
+      "nonpadding_tokens": 124,
+      "loss_bearing_tokens": 81,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_800d68a2d9a89f81583d048f",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_56577c63d249919db8cf490c",
+      "source_id": "sangraha_synthetic_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_40e2d3b5811233a8ef16f5e9",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_9ef0ef904fef1b89ad467d77",
+      "source_id": "assignment4_samanantar_translated",
+      "record_token_start": 0,
+      "record_token_end": 63,
+      "nonpadding_tokens": 63,
+      "loss_bearing_tokens": 33,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_2a66ef0c61adb8aac85fe46d",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_8d7390f91923f0a45d28a7fa",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_8f60deece7c1deaa54a27379",
+      "source_id": "sangraha_unverified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_ee1ab6cff20813ea33d6752f",
+      "source_id": "sangraha_synthetic_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_66b2b54825a0ee9c4ef9f032",
+      "source_id": "sangraha_synthetic_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "indic",
+      "record_id": "rec_c64e1d6a9c49c36b21df499a",
+      "source_id": "sangraha_verified_hindi",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_79dde68c5a7942ac755e106b",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_915ea93641e0771a8217aa8c",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_7e5adba9e89b05fd0d9f6e2e",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_c0cbe9e1db52441a86894ffc",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_3ed48f2d90bda779bd9d2527",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_54da4ceed55189396831a342",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_9dab124d1b3acc422121f618",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_d60de0f93d8b113ff8433469",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_2ffe3f116bff294d28c6f47c",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_aabd1e6103b89108ebf2cbf2",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_0a4dc54017c95ab2ffa9842b",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_6abccf7bef2c6dddb868de8c",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_915261358ff1728eac0e03d9",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_33ad38f44720a3c3d59e16bc",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_508cd6a5803693f153c869cd",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_56041befef8ce9948b3cc59c",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_def26edd3b88733ffae54165",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_4c45073312de9d40ff55b8b1",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_ec7b211de2945ef164731514",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_ddb16c87cde191c0e6271dc5",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_2cd9e241bda08faae7c573c7",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_e48049c1e2b3230264ec4fb6",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_557757670353d76c3dccbb28",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_07495529a28e188aaeb306e5",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_941f370c1e912b6eb0d5ab51",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_efc468d7a60bf938278c31a2",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_0488fd8f1a3c29c0758e0020",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "long_context",
+      "record_id": "rec_85743f6abbdcb9471b6c393d",
+      "source_id": "wikipedia_long_en",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_60b05a6ed583dfacae37d17e",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 228,
+      "nonpadding_tokens": 228,
+      "loss_bearing_tokens": 164,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_190ad2d8ad0aa71f882d09f5",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 177,
+      "nonpadding_tokens": 177,
+      "loss_bearing_tokens": 115,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_f88ea7fc5ef748d2380703d8",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 262,
+      "nonpadding_tokens": 262,
+      "loss_bearing_tokens": 164,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_e95213f16fd035e64466c7df",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 180,
+      "nonpadding_tokens": 180,
+      "loss_bearing_tokens": 74,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_377d67b589da53208637313f",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 419,
+      "nonpadding_tokens": 419,
+      "loss_bearing_tokens": 269,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_77b1bacd40b28c5d2f286e17",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 308,
+      "nonpadding_tokens": 308,
+      "loss_bearing_tokens": 183,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_41d44112615b3472cdc0c034",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 301,
+      "nonpadding_tokens": 301,
+      "loss_bearing_tokens": 146,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_8dcbf549ffdbe6ab52be0ab1",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 327,
+      "nonpadding_tokens": 327,
+      "loss_bearing_tokens": 227,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_f7c77c6f076ef3c245a8f257",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 197,
+      "nonpadding_tokens": 197,
+      "loss_bearing_tokens": 114,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_08d6e19ff96936166c3bc2b0",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 192,
+      "nonpadding_tokens": 192,
+      "loss_bearing_tokens": 111,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_438fb5bdefa95e75e0ec7aa5",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 244,
+      "nonpadding_tokens": 244,
+      "loss_bearing_tokens": 132,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_111a5e2115d256fe15a6c24f",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 238,
+      "nonpadding_tokens": 238,
+      "loss_bearing_tokens": 121,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_d85ffda07a894c406c80a220",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 488,
+      "nonpadding_tokens": 488,
+      "loss_bearing_tokens": 308,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_19cf333137c0b91f29af9531",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 324,
+      "nonpadding_tokens": 324,
+      "loss_bearing_tokens": 203,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_d1caaafcfc907f93b5a25125",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 288,
+      "nonpadding_tokens": 288,
+      "loss_bearing_tokens": 166,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_449363f83eb8b59e4787e2f5",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 297,
+      "nonpadding_tokens": 297,
+      "loss_bearing_tokens": 160,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_ac23d4f8ff46525f2afd9466",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 117,
+      "nonpadding_tokens": 117,
+      "loss_bearing_tokens": 65,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_f50ec632e94d486e3adf8acb",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 326,
+      "nonpadding_tokens": 326,
+      "loss_bearing_tokens": 173,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_32b48b5db19286681388ced1",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 202,
+      "nonpadding_tokens": 202,
+      "loss_bearing_tokens": 118,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_45da73e107a11ec2ef3b3b79",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 421,
+      "nonpadding_tokens": 421,
+      "loss_bearing_tokens": 218,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_e6ea6e8df6032e271acdad6d",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 148,
+      "nonpadding_tokens": 148,
+      "loss_bearing_tokens": 91,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_8b441d490065bbd713718aca",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 265,
+      "nonpadding_tokens": 265,
+      "loss_bearing_tokens": 123,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_f008c7634ea2aba2d8fb7bbc",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 302,
+      "nonpadding_tokens": 302,
+      "loss_bearing_tokens": 169,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_c67a041a36a73fb1097e3f68",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 215,
+      "nonpadding_tokens": 215,
+      "loss_bearing_tokens": 99,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_a6a5347339ab6f5221a50ffa",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 244,
+      "nonpadding_tokens": 244,
+      "loss_bearing_tokens": 104,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_f67b14661cafd42ca73ef17d",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 288,
+      "nonpadding_tokens": 288,
+      "loss_bearing_tokens": 181,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_822dd077f030c9731179554c",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 278,
+      "nonpadding_tokens": 278,
+      "loss_bearing_tokens": 152,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_6874d9a4aa3f36c122242909",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 308,
+      "nonpadding_tokens": 308,
+      "loss_bearing_tokens": 198,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_4b992a1066d944861d9c22ed",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 157,
+      "nonpadding_tokens": 157,
+      "loss_bearing_tokens": 91,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_c057ec46e5ed9d752883708c",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 501,
+      "nonpadding_tokens": 501,
+      "loss_bearing_tokens": 325,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_0846399c70f308179791020c",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 223,
+      "nonpadding_tokens": 223,
+      "loss_bearing_tokens": 111,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_a7cb7b9a06b25ea8260d08f4",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 279,
+      "nonpadding_tokens": 279,
+      "loss_bearing_tokens": 145,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_ffe2021134895f87e8b49582",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 251,
+      "nonpadding_tokens": 251,
+      "loss_bearing_tokens": 161,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_13a9a9e576129bab48ff2466",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 444,
+      "nonpadding_tokens": 444,
+      "loss_bearing_tokens": 284,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_08004eb012114c25a5041697",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 268,
+      "nonpadding_tokens": 268,
+      "loss_bearing_tokens": 196,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_77fdb02dc10abb82866b9cf7",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 235,
+      "nonpadding_tokens": 235,
+      "loss_bearing_tokens": 136,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_72f9b78a6dc9e3a5f4ac25cc",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 233,
+      "nonpadding_tokens": 233,
+      "loss_bearing_tokens": 77,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_9f06901b4b1a8d8a88cba9d7",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 355,
+      "nonpadding_tokens": 355,
+      "loss_bearing_tokens": 113,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_8cd5693ad777c6ced52c4362",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 156,
+      "nonpadding_tokens": 156,
+      "loss_bearing_tokens": 86,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_8c199923f48d3d5b71bb3b95",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 233,
+      "nonpadding_tokens": 233,
+      "loss_bearing_tokens": 130,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_dd9b91a78aab18c5e87159de",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 150,
+      "nonpadding_tokens": 150,
+      "loss_bearing_tokens": 77,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_d9cef3604c17ff65ca3d77c0",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 192,
+      "nonpadding_tokens": 192,
+      "loss_bearing_tokens": 105,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_9509acc855e8ba254bd6a320",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 154,
+      "nonpadding_tokens": 154,
+      "loss_bearing_tokens": 104,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_cbcedaeb06303e3032ae5146",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 252,
+      "nonpadding_tokens": 252,
+      "loss_bearing_tokens": 185,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_ad56b277733bbb39dc6fbdec",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 270,
+      "nonpadding_tokens": 270,
+      "loss_bearing_tokens": 185,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_ce23ce39018c0ee5ed810aa8",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 235,
+      "nonpadding_tokens": 235,
+      "loss_bearing_tokens": 157,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_00e2a8cebf506da201eaa794",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 376,
+      "nonpadding_tokens": 376,
+      "loss_bearing_tokens": 99,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_6542fe700810d8aa02f3dfc7",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 167,
+      "nonpadding_tokens": 167,
+      "loss_bearing_tokens": 89,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_5fb28b5a381b9af8bedaeb45",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 300,
+      "nonpadding_tokens": 300,
+      "loss_bearing_tokens": 187,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_8599e86f8c804acb92b7ce87",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 1,
+      "record_token_end": 513,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 282,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_11de5cf3890d20f68f8282a2",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 284,
+      "nonpadding_tokens": 284,
+      "loss_bearing_tokens": 139,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_249a819a6bfb31271ac81f26",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 185,
+      "nonpadding_tokens": 185,
+      "loss_bearing_tokens": 76,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_910f78431b69e59ba05fc019",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 438,
+      "nonpadding_tokens": 438,
+      "loss_bearing_tokens": 339,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_6b65c923de7ec25a0e1a92dc",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 215,
+      "nonpadding_tokens": 215,
+      "loss_bearing_tokens": 110,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_c0e4a4af6a96010e31f53e66",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 508,
+      "nonpadding_tokens": 508,
+      "loss_bearing_tokens": 337,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_b6d01d737c107e2b068c803c",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 430,
+      "nonpadding_tokens": 430,
+      "loss_bearing_tokens": 272,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_29b9e61ab37a393e4f07a824",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 284,
+      "nonpadding_tokens": 284,
+      "loss_bearing_tokens": 170,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_1d95ab7b7c09691ce8dbcbd4",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 7,
+      "record_token_end": 519,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 345,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_252bac77ad1748e5bdb16bae",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 311,
+      "nonpadding_tokens": 311,
+      "loss_bearing_tokens": 178,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_f380b1dfe5f807a0a2eaf458",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 139,
+      "nonpadding_tokens": 139,
+      "loss_bearing_tokens": 63,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_f5c66d6625b36ba081daeb2c",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 182,
+      "nonpadding_tokens": 182,
+      "loss_bearing_tokens": 105,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_fee1d2242379b835a24aa3d1",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 274,
+      "nonpadding_tokens": 274,
+      "loss_bearing_tokens": 111,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_8595b87759a650040b19cae0",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 288,
+      "nonpadding_tokens": 288,
+      "loss_bearing_tokens": 163,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_12f47ce7cf17179ea6fb4f0a",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 480,
+      "nonpadding_tokens": 480,
+      "loss_bearing_tokens": 295,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_252552fb0c2c51e7911bb8da",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 124,
+      "nonpadding_tokens": 124,
+      "loss_bearing_tokens": 57,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_c093de248bb34db0210fdfa4",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 356,
+      "nonpadding_tokens": 356,
+      "loss_bearing_tokens": 231,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_e456ac2725a4960099703b2d",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 123,
+      "nonpadding_tokens": 123,
+      "loss_bearing_tokens": 29,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_bc91ce61c68d37f064065037",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 328,
+      "nonpadding_tokens": 328,
+      "loss_bearing_tokens": 178,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_94641d3a99483206faa52a57",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 305,
+      "nonpadding_tokens": 305,
+      "loss_bearing_tokens": 162,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_56663fe98936a106a28736c7",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 226,
+      "nonpadding_tokens": 226,
+      "loss_bearing_tokens": 125,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_4e0c2eca36577e9927d74b55",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 202,
+      "nonpadding_tokens": 202,
+      "loss_bearing_tokens": 109,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_2e3d45400b169719e4e5474f",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 252,
+      "nonpadding_tokens": 252,
+      "loss_bearing_tokens": 150,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_02ff811598d5046a564cfc57",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 333,
+      "nonpadding_tokens": 333,
+      "loss_bearing_tokens": 185,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_e437823a28c714b6f0b79426",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 265,
+      "nonpadding_tokens": 265,
+      "loss_bearing_tokens": 153,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_a75712b5eecbe8511c9e4b57",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 223,
+      "nonpadding_tokens": 223,
+      "loss_bearing_tokens": 116,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_8c3f31e956708521e3b05d88",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 343,
+      "nonpadding_tokens": 343,
+      "loss_bearing_tokens": 214,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_bb985826527de3caa9a48e10",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 306,
+      "nonpadding_tokens": 306,
+      "loss_bearing_tokens": 156,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_d3543d1d477468c6e72e3fa6",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 132,
+      "nonpadding_tokens": 132,
+      "loss_bearing_tokens": 53,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_c50981474d2b9f86e94545bb",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 183,
+      "nonpadding_tokens": 183,
+      "loss_bearing_tokens": 110,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_70a248201acf29ccdc62aea4",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 206,
+      "nonpadding_tokens": 206,
+      "loss_bearing_tokens": 76,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_015bfd7b4a4b4d6b2187df49",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 305,
+      "nonpadding_tokens": 305,
+      "loss_bearing_tokens": 181,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_1c52226fd73e4a5d6ba105ef",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 356,
+      "nonpadding_tokens": 356,
+      "loss_bearing_tokens": 210,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_673fc3407876bdd1c8f5d997",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 215,
+      "nonpadding_tokens": 215,
+      "loss_bearing_tokens": 109,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_8c70c86551dfed03acbc3e31",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 310,
+      "nonpadding_tokens": 310,
+      "loss_bearing_tokens": 155,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_d611f62ceb5eb0f588c8dfd9",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 276,
+      "nonpadding_tokens": 276,
+      "loss_bearing_tokens": 142,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_5abae049fafb9126f0a43724",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 198,
+      "nonpadding_tokens": 198,
+      "loss_bearing_tokens": 110,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_1b226c65c006883d20d0da8c",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 95,
+      "record_token_end": 607,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 385,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_d06b7b7ef6f66460219bc03c",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 149,
+      "nonpadding_tokens": 149,
+      "loss_bearing_tokens": 69,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_0b1c0054a6913f28d1f3f29a",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 17,
+      "record_token_end": 529,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 246,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_4ba8080ae9ea157ceeceb013",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 247,
+      "nonpadding_tokens": 247,
+      "loss_bearing_tokens": 152,
+      "permission": "validation"
+    },
+    {
+      "lane": "reasoning",
+      "record_id": "rec_b7a691c6efb609b1f17b1d78",
+      "source_id": "gsm8k_reasoning_train",
+      "record_token_start": 0,
+      "record_token_end": 161,
+      "nonpadding_tokens": 161,
+      "loss_bearing_tokens": 88,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_14f2d63fd8309a1305376827",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_4fa74d3cf8246caa8255ec91",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_f322b32533151a5b8342013d",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_1b3837b1ae3f5e9dbc647682",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_a9a3b8b6b5d5bda8a0ab8b3a",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_2bb39a2037e3b67408cdc181",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_b0130398545413e06bc3eb46",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_e20583816d43bea37de50324",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 450,
+      "nonpadding_tokens": 450,
+      "loss_bearing_tokens": 449,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_0cfae2bae4cc6e46a7b71fbd",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_11c5e5199f131ebe5fae5f27",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 461,
+      "nonpadding_tokens": 461,
+      "loss_bearing_tokens": 460,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_e096daec93de803071513d1c",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_efc17058edb110d5f1998fd6",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_14439efb83808626dc63f0a9",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_64a2b777a6e04e8d70c7a3bf",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_9fec8318549bb3ee8553e003",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_2f4ff62edc58936f08b894c6",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_2884de791bab58da782d2ab6",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_f76140a6e771c81bc20e328a",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_a62dbaf40d7a6775cf6b940f",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_856741fb82821191711dd55a",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_fd968027f00ae227da875605",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_cd5e142c68cfbd4f1e8e2aa1",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_d7b449e1cfc814b7b695aef1",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_3e96f1d9054f54240d189566",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_d1146e4764823c32f0c04c98",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_19332f1bf1b2e572f1f39559",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_2ea9ddbdbfa0a68f40664a80",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_88fb992aeb11d814211d723e",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    },
+    {
+      "lane": "science_math",
+      "record_id": "rec_f298ecbfa53f1caf45611152",
+      "source_id": "openwebmath_science_math",
+      "record_token_start": 0,
+      "record_token_end": 512,
+      "nonpadding_tokens": 512,
+      "loss_bearing_tokens": 511,
+      "permission": "validation"
+    }
+  ],
+  "component_hashes": {
+    "input_ids": "e8e58368e50d1ba32070f55fe20cbaf95e965c086c37ccaa0a3588856a0f3a53",
+    "loss_mask": "a06f0009139435d42ddb9c329cc71bf9945d4cf7ad71b52ec36d97d31ee10450",
+    "position_ids": "f750649a806278d16f668f48a4815c9c659a1778d54a7c477018b41607424533",
+    "segment_ids": "445e06f2f6c215124298afd116c882661dfe4c78e9efea8da0cbb6009aa97d79"
+  },
+  "probe_hash": "sha256:2a86da59cd18d91774bcea4281c37571a2707eb3ab590b0230f8ea4d9e417d2c"
+}

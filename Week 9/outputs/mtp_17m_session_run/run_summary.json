@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "STOPPED_SAFELY",
+  "stop_reason": "validation_early_stopping",
+  "global_step": 7500,
+  "epoch_index": 8,
+  "next_superbatch_cursor": 76,
+  "active_training_seconds": 1620.8668477952015,
+  "session_wall_seconds": 1837.372689299984,
+  "head1_targets_seen": 80749499,
+  "head2_targets_seen": 80455090,
+  "physical_tokens_seen": 91955456,
+  "corpus_passes_by_head1_targets": 8.0749499,
+  "maximum_peak_allocated_mib": 1025.427734375,
+  "final_validation": {
+    "head1_loss": 2.6350093685216667,
+    "head2_loss": 3.3949816458309043,
+    "total_loss": 6.0299910143525715,
+    "head1_perplexity": 13.943443091999677,
+    "head2_perplexity": 29.814106256768547,
+    "head1_targets": 102019,
+    "head2_targets": 101860
+  },
+  "best_validation": {
+    "head1_loss": 2.5958998659951096,
+    "head2_loss": 3.3728417762623026,
+    "total_loss": 5.968741642257412,
+    "head1_perplexity": 13.408647920454529,
+    "head2_perplexity": 29.161279251652626,
+    "head1_targets": 102019,
+    "head2_targets": 101860
+  },
+  "best_validation_step": 6500,
+  "validations_without_improvement": 2,
+  "checkpoint_seconds": 0.21023200009949505,
+  "checkpoint_path": "C:\\Users\\udisi\\Documents\\Codex\\2026-08-23\\one-notebook-one-loss-harness-and\\outputs\\mtp_17m_session_run\\latest.pt",
+  "checkpoint_file_sha256": "42ba68c75e1ff769f93cf9c5fd3d53542bb40f6eb481f1ecca3d93ee51c0dba2",
+  "best_checkpoint_path": "C:\\Users\\udisi\\Documents\\Codex\\2026-08-23\\one-notebook-one-loss-harness-and\\outputs\\mtp_17m_session_run\\best.pt",
+  "best_checkpoint_file_sha256": "659a82bf78e97321044f3d85ad08c72c3471377042aa58831cbf0169f182e6b3",
+  "numbered_checkpoint_directory": "C:\\Users\\udisi\\Documents\\Codex\\2026-08-23\\one-notebook-one-loss-harness-and\\outputs\\mtp_17m_session_run\\checkpoints",
+  "numbered_checkpoint_count": 16
+}

@@ -1,0 +1,182 @@
+{
+  "batch_index": {
+    "canonical_uncompressed_sha256": "ba50620f7963f9d7c4943027534add298d430cad16440556fd0e453150a08777",
+    "compressed_bytes": 1158822,
+    "compressed_sha256": "a8d9f6407630a3c728c72557da5a618546d8b5a6ba6576453c5b5c017c88f46a",
+    "records": 2781,
+    "uncompressed_bytes": 3722593
+  },
+  "batch_plan_hash": "sha256:b79b5616706ae5b606179e6c2dbafa060422a0ac92e8953de7ecc5afdee8f312",
+  "batching_config_sha256": "eda065438d8cf6d81d089736f79374f96b084a8efc6952c96bba50066b04e840",
+  "candidate_generation_policy": "static_ranked_queues_v2",
+  "candidate_microbatches_maximum": 4,
+  "component_hashes": {
+    "batches": "a8d9f6407630a3c728c72557da5a618546d8b5a6ba6576453c5b5c017c88f46a",
+    "opus_decisions": "43ea6d24f85f6319cecae7cf4af86d80aa64c06b9d11c2ab734c89e3f81f7904"
+  },
+  "decision_index": {
+    "canonical_uncompressed_sha256": "890c593b22dd681d2690d45b073444b847607b1adfcd08cf65222d3c1f175449",
+    "compressed_bytes": 819615,
+    "compressed_sha256": "43ea6d24f85f6319cecae7cf4af86d80aa64c06b9d11c2ab734c89e3f81f7904",
+    "records": 2781,
+    "uncompressed_bytes": 10989752
+  },
+  "evaluation_firewall": {
+    "registered_evaluation_records": 1000,
+    "selected_record_overlap": 0,
+    "status": "PASS"
+  },
+  "implementation_version": "static-ranked-queues-v2",
+  "loss_bearing_tokens": 10000000,
+  "loss_by_stage_indic_tier": {
+    "anneal|translated": 2362,
+    "anneal|unverified_native": 7820,
+    "anneal|verified_native": 44486,
+    "general_foundation|synthetic": 44000,
+    "general_foundation|translated": 132000,
+    "general_foundation|unverified_native": 88000,
+    "general_foundation|verified_native": 176000,
+    "long_context|synthetic": 14400,
+    "long_context|translated": 43200,
+    "long_context|unverified_native": 28800,
+    "long_context|verified_native": 57600,
+    "reasoning_skill_build|synthetic": 16000,
+    "reasoning_skill_build|translated": 48000,
+    "reasoning_skill_build|unverified_native": 32000,
+    "reasoning_skill_build|verified_native": 64000,
+    "seed|synthetic": 4000,
+    "seed|translated": 12000,
+    "seed|unverified_native": 8000,
+    "seed|verified_native": 16000
+  },
+  "loss_by_stage_lane": {
+    "anneal|agentic": 5199,
+    "anneal|code": 27776,
+    "anneal|general": 39537,
+    "anneal|indic": 54668,
+    "anneal|long_context": 38975,
+    "anneal|reasoning": 2489,
+    "anneal|science_math": 31356,
+    "general_foundation|agentic": 27500,
+    "general_foundation|code": 550000,
+    "general_foundation|general": 2915000,
+    "general_foundation|indic": 440000,
+    "general_foundation|long_context": 467500,
+    "general_foundation|reasoning": 550000,
+    "general_foundation|science_math": 550000,
+    "long_context|agentic": 9000,
+    "long_context|code": 180000,
+    "long_context|general": 954000,
+    "long_context|indic": 144000,
+    "long_context|long_context": 153000,
+    "long_context|reasoning": 180000,
+    "long_context|science_math": 180000,
+    "reasoning_skill_build|agentic": 10000,
+    "reasoning_skill_build|code": 200000,
+    "reasoning_skill_build|general": 1060000,
+    "reasoning_skill_build|indic": 160000,
+    "reasoning_skill_build|long_context": 170000,
+    "reasoning_skill_build|reasoning": 200000,
+    "reasoning_skill_build|science_math": 200000,
+    "seed|agentic": 2500,
+    "seed|code": 50000,
+    "seed|general": 265000,
+    "seed|indic": 40000,
+    "seed|long_context": 42500,
+    "seed|reasoning": 50000,
+    "seed|science_math": 50000
+  },
+  "microbatch_physical_token_budget": 4096,
+  "microbatches": 2781,
+  "nonpadding_tokens": 11152347,
+  "opus_decisions": 2781,
+  "opus_summary": {
+    "candidate_count_distribution": {
+      "1": 5,
+      "4": 2776
+    },
+    "candidate_outcome_distribution": {
+      "accepted": 2781,
+      "deferred": 1736,
+      "rejected": 6592
+    },
+    "decision_outcome_distribution": {
+      "protected_floor_override": 503,
+      "proxy_accept": 2008,
+      "sparse_fallback": 270
+    },
+    "decisions_not_candidate_zero": 2160,
+    "protected_floor_overrides": 503,
+    "selected_candidate_id_distribution": {
+      "0": 621,
+      "1": 764,
+      "2": 642,
+      "3": 754
+    },
+    "sparse_fallbacks": 270
+  },
+  "packing_hash": "sha256:eded8403f138048fcae38afebbf46f19ed215250f9f5a6ce6a4b119c23a9568b",
+  "packing_report_sha256": "f8742b8940f38cbc65cfd9660c7618fe4c072ba597ef56ac7f9753543f67b8d9",
+  "paths": {
+    "batches": "data/batches_v2/batches.jsonl.gz",
+    "opus_decisions": "data/batches_v2/opus_decisions.jsonl.gz"
+  },
+  "physical_tokens": 11378944,
+  "proxy_version": "auditable-opus-v1",
+  "schedule_file_sha256": "4ce7f09f4c97e605d7073233f495c02b35a9884bcd5eb062ef349115defdc2e1",
+  "schedule_hash": "sha256:6ecf457c3bdcf6ed800c401cdbd6b98efb740f6d5795359edc587db61db03b6f",
+  "schema_version": 2,
+  "sequences": 39957,
+  "stage_summaries": [
+    {
+      "loss_bearing_tokens": 500000,
+      "microbatch_capacity_sequences": 16,
+      "microbatches": 154,
+      "sequence_length": 256,
+      "sequences": 2457,
+      "stage": "seed",
+      "zero_loss_sequences": 18
+    },
+    {
+      "loss_bearing_tokens": 5500000,
+      "microbatch_capacity_sequences": 16,
+      "microbatches": 1521,
+      "sequence_length": 256,
+      "sequences": 24328,
+      "stage": "general_foundation",
+      "zero_loss_sequences": 425
+    },
+    {
+      "loss_bearing_tokens": 2000000,
+      "microbatch_capacity_sequences": 16,
+      "microbatches": 543,
+      "sequence_length": 256,
+      "sequences": 8680,
+      "stage": "reasoning_skill_build",
+      "zero_loss_sequences": 139
+    },
+    {
+      "loss_bearing_tokens": 1800000,
+      "microbatch_capacity_sequences": 8,
+      "microbatches": 507,
+      "sequence_length": 512,
+      "sequences": 4049,
+      "stage": "long_context",
+      "zero_loss_sequences": 56
+    },
+    {
+      "loss_bearing_tokens": 200000,
+      "microbatch_capacity_sequences": 8,
+      "microbatches": 56,
+      "sequence_length": 512,
+      "sequences": 443,
+      "stage": "anneal",
+      "zero_loss_sequences": 35
+    }
+  ],
+  "status": "FROZEN",
+  "unique_batch_ids": 2781,
+  "unique_sequences": 39957,
+  "zero_loss_microbatches": 0,
+  "zero_loss_sequences": 673
+}

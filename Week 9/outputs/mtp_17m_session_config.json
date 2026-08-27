@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "run_name": "assignment9_mtp_17m_session9_architecture",
+  "session6_root": "repro_data/Assignment_6_v2",
+  "output_dir": "outputs/mtp_17m_reproduction_run",
+  "model": {
+    "vocab_size": 8192,
+    "maximum_context_length": 512,
+    "hidden_size": 384,
+    "layers": 6,
+    "heads": 6,
+    "feed_forward_size": 1024,
+    "normalization": "rmsnorm",
+    "normalization_epsilon": 1e-6,
+    "ffn_type": "swiglu",
+    "ffn_bias": false,
+    "activation_checkpointing": true,
+    "tie_head1_to_token_embedding": true,
+    "parameter_count_with_head2": 17109888
+  },
+  "data": {
+    "base_batches_per_superbatch": 3,
+    "preserve_frozen_batch_order": true,
+    "verify_base_batch_hashes": true,
+    "expected_loss_bearing_targets_per_pass": 10000000
+  },
+  "training": {
+    "target_wall_clock_hours": 6.0,
+    "maximum_corpus_passes": 12.0,
+    "planned_optimizer_steps": 11200,
+    "precision": "fp16_autocast",
+    "chunk_size": 512,
+    "learning_rate": 0.0003,
+    "minimum_learning_rate": 0.00003,
+    "warmup_steps": 100,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "epsilon": 1e-8,
+    "weight_decay": 0.1,
+    "gradient_clip_norm": 1.0,
+    "head1_loss_weight": 1.0,
+    "head2_loss_weight": 1.0,
+    "log_every_steps": 10,
+    "checkpoint_every_steps": 500,
+    "retain_numbered_checkpoints": true,
+    "validation_every_steps": 500,
+    "early_stopping_metric": "total_loss",
+    "early_stopping_patience_validations": 2,
+    "early_stopping_minimum_delta": 0.001,
+    "seed": 9202026
+  },
+  "validation": {
+    "frozen_probe_path": "data/validation_probe_v1/probe.npz",
+    "frozen_probe_manifest_path": "data/validation_probe_v1/validation_probe.json",
+    "sequence_length": 512,
+    "target_loss_bearing_tokens": 100000,
+    "maximum_sequences_per_lane": 200,
+    "evaluation_batch_size": 8,
+    "selection_seed": "assignment9-mtp-validation-100k-v1",
+    "minimum_loss_tokens_per_sequence": 16
+  }
+}
