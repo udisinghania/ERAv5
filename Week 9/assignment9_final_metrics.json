@@ -99,11 +99,12 @@
       "materialized_loss": 9.035694122314453,
       "chunked_loss": 9.03569507598877,
       "absolute_loss_difference": 9.5367431640625e-07,
-      "materialized_seconds": 0.07474510000065493,
-      "chunked_seconds": 0.03124240000033751
+      "materialized_seconds": 0.07375240000146732,
+      "chunked_seconds": 0.03650800000104937
     }
   },
   "part2_notebook_smoke": {
+    "result_scope": "in_notebook_smoke_test",
     "head1_initial_loss": 9.04089069366455,
     "head2_initial_loss": 9.086224238077799,
     "head1_final_loss": 4.244802951812744,

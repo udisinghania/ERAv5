@@ -108,7 +108,110 @@ recorded in `assignment9_final_metrics.json` and the production run summary.
 """
 
 
-def build_readme(combined: dict[str, Any]) -> str:
+def build_experiment_history(history: dict[str, Any]) -> str:
+    notebook_smoke = history["first_recorded_smoke_tests"][
+        "notebook_part2_smoke"
+    ]
+    trainer_smoke = history["first_recorded_smoke_tests"][
+        "first_retained_end_to_end_trainer_smoke"
+    ]
+    v0 = history["failed_or_superseded_runs"]["v0_98m_overtrained"]
+    v1 = history["failed_or_superseded_runs"]["v1_17m_baseline"]
+    v2 = history["submitted_v2"]
+    change = history["v1_to_v2_observed_change"]
+    v1_best = v1["best_validation"]
+    v2_best = v2["best_validation"]
+    v0_best = v0["best_observed_validation"]
+    v0_final = v0["final_validation"]
+    return f"""# Experiment history — supporting evidence, not Part 3
+
+This appendix records how the submitted solution was reached. It does not add
+an assignment part: the graded submission remains Part 1 (the observable loss
+harness) and Part 2 (one `t+2` head). Session 9 was treated as architecture
+reference material, while the assignment statement remained the requirement
+source.
+
+## What the Session-9-aligned rewrite changed
+
+The residual width, layer count, attention-head count, vocabulary, tied `t+1`
+head, independent `t+2` head, data, validation probe, and seed stayed fixed.
+V1 used the implementation defaults—pre-norm LayerNorm and a two-matrix GELU
+FFN of width 1,536. V2 uses pre-norm RMSNorm and a three-matrix, bias-free
+SwiGLU FFN of width 1,024. The smaller SwiGLU width compensates for its third
+matrix, leaving the complete two-head model almost the same size.
+
+The Session 9 material also discusses `t+3` and `t+4`, but they are deliberately
+not in this submission: the assignment asks for one extra head only.
+
+## First recorded smoke tests
+
+| Check | Initial H1 | Initial H2 | Final H1 | Final H2 | Meaning |
+|---|---:|---:|---:|---:|---|
+| Notebook Part 2, {notebook_smoke['steps']} updates | {notebook_smoke['initial']['head1_loss']:.6f} | {notebook_smoke['initial']['head2_loss']:.6f} | {notebook_smoke['final']['head1_loss']:.6f} | {notebook_smoke['final']['head2_loss']:.6f} | Both shifted objectives were finite and learnable. |
+| First retained end-to-end trainer smoke, {trainer_smoke['steps']} steps | {trainer_smoke['initial_validation']['head1_loss']:.6f} | {trainer_smoke['initial_validation']['head2_loss']:.6f} | {trainer_smoke['final_validation']['head1_loss']:.6f} | {trainer_smoke['final_validation']['head2_loss']:.6f} | Data, optimization, validation, and checkpoint paths executed end to end. |
+
+The later `smoke-model` command is intentionally non-persistent, so this record
+does not invent a numeric result for it.
+
+## Failure that motivated the controls
+
+The first 97,995,264-parameter run used a very small held-out probe (802 H1 and
+797 H2 targets), repeated the training corpus {v0['corpus_passes']:.4f} times,
+and ran until the six-hour clock expired. Its best observed validation sum was
+{v0_best['total_loss']:.6f} at step {v0_best['step']:,} ({v0_best['corpus_passes']:.4f}
+passes), but the final sum was {v0_final['total_loss']:.6f} at step
+{v0_final['step']:,}: a {v0['validation_degradation_after_best']['relative_percent']:.2f}%
+increase. At that final step the training sum was still only
+{v0['final_training_step_loss']['total_loss']:.6f}. Falling training loss beside
+rising validation loss is the direct evidence that the run overtrained.
+
+That run also exposed the checkpointing flaw: `latest.pt` was overwritten and
+there was no preserved best or numbered history. The replacement controls are:
+a 100k-target frozen validation probe, held-out early stopping, a separate
+`best.pt`, a resumable `latest.pt`, a hard corpus-pass ceiling, and numbered
+checkpoints.
+
+## V1 versus submitted V2
+
+| Measurement | V1: LayerNorm + GELU | V2: RMSNorm + SwiGLU | Observed change |
+|---|---:|---:|---:|
+| Parameters | {v1['parameters']:,} | {v2['parameters']:,} | {change['parameter_count']['relative_percent']:.3f}% |
+| Best H1 loss | {v1_best['head1_loss']:.6f} | {v2_best['head1_loss']:.6f} | {change['best_head1_loss']['relative_percent']:.2f}% |
+| Best H2 loss | {v1_best['head2_loss']:.6f} | {v2_best['head2_loss']:.6f} | {change['best_head2_loss']['relative_percent']:.2f}% |
+| Best sum | {v1_best['total_loss']:.6f} | {v2_best['total_loss']:.6f} | {change['best_total_loss']['relative_percent']:.2f}% |
+| Corpus passes at stop | {v1['corpus_passes']:.4f} | {v2['corpus_passes']:.4f} | — |
+| Stop reason | `{v1['stop_reason']}` | `{v2['stop_reason']}` | — |
+| Checkpoint history | best/latest only | best/latest + 16 numbered | — |
+
+Negative percentages mean the submitted V2 value is lower. V2's best held-out
+sum was {abs(change['best_total_loss']['relative_percent']):.2f}% lower while
+using {abs(change['parameter_count']['relative_percent']):.3f}% fewer
+parameters.
+
+This is a matched-data development comparison, not a clean architecture-only
+ablation. V2 also used a longer schedule and reached {v2['corpus_passes']:.4f}
+corpus passes versus V1's {v1['corpus_passes']:.4f}; therefore the improvement
+cannot be attributed solely to RMSNorm and SwiGLU.
+
+## Evidence provenance
+
+The exact values above are machine-readable in `experiment_history.json`.
+It also records SHA-256 hashes for the original smoke, V0, V1, and V2 configs,
+summaries, and metric ledgers. The full V2 ledger and checkpoint index are
+included in the submission; bulky raw exploratory ledgers remain local.
+
+The compact original evidence retained in Git is:
+
+- [First end-to-end trainer smoke summary](experiments/first_trainer_smoke/run_summary.json)
+- [V0 98M resolved configuration](experiments/v0_98m_overtrained/resolved_config.json)
+- [V0 98M final run summary](experiments/v0_98m_overtrained/run_summary.json)
+- [V1 17M resolved configuration](experiments/v1_17m_baseline/resolved_config.json)
+- [V1 17M final run summary](experiments/v1_17m_baseline/run_summary.json)
+- [V2 full validation/training ledger](outputs/mtp_17m_session_run/metrics.jsonl)
+"""
+
+
+def build_readme(combined: dict[str, Any], history: dict[str, Any]) -> str:
     production = combined["part2_production"]
     model = production["model_configuration"]
     validation = production["validation_configuration"]
@@ -129,6 +232,9 @@ Colab is not required for this submission.
 - [Executed notebook](Assignment_9_Loss_Harness.ipynb)
 - [Exact final metrics](assignment9_final_metrics.json)
 - [Short write-up](ASSIGNMENT_WRITEUP.md)
+- [Development history: smoke tests, failures, V1 versus V2](EXPERIMENT_HISTORY.md)
+- [Machine-readable development history](experiment_history.json)
+- [Original smoke, V0, and V1 configs/summaries](experiments/)
 - [Production validation and training ledger](outputs/mtp_17m_session_run/metrics.jsonl)
 - [Production run summary](outputs/mtp_17m_session_run/run_summary.json)
 - [Resolved production configuration](outputs/mtp_17m_session_run/resolved_config.json)
@@ -143,6 +249,22 @@ The large `.pt` checkpoint files are intentionally excluded from Git because
 each full checkpoint is about 196 MiB, above GitHub's ordinary 100 MiB file
 limit. Their SHA-256 hashes and the complete checkpoint history are preserved
 in the run summary and checkpoint index.
+
+## Development history (supporting evidence, not Part 3)
+
+The repository records the first smoke tests, the overtrained 98M attempt, the
+17M V1 baseline, and the Session-9-aligned V2 in
+[EXPERIMENT_HISTORY.md](EXPERIMENT_HISTORY.md). The headline matched-data
+comparison is:
+
+| Best held-out value | V1 | Submitted V2 | Change |
+|---|---:|---:|---:|
+| H1 loss | {history['failed_or_superseded_runs']['v1_17m_baseline']['best_validation']['head1_loss']:.6f} | {history['submitted_v2']['best_validation']['head1_loss']:.6f} | {history['v1_to_v2_observed_change']['best_head1_loss']['relative_percent']:.2f}% |
+| H2 loss | {history['failed_or_superseded_runs']['v1_17m_baseline']['best_validation']['head2_loss']:.6f} | {history['submitted_v2']['best_validation']['head2_loss']:.6f} | {history['v1_to_v2_observed_change']['best_head2_loss']['relative_percent']:.2f}% |
+| Sum | {history['failed_or_superseded_runs']['v1_17m_baseline']['best_validation']['total_loss']:.6f} | {history['submitted_v2']['best_validation']['total_loss']:.6f} | {history['v1_to_v2_observed_change']['best_total_loss']['relative_percent']:.2f}% |
+
+This is not presented as an architecture-only ablation because V2 also trained
+for more corpus passes. Parts 1 and 2 below remain the assignment submission.
 
 ## Production run
 
@@ -174,12 +296,15 @@ python outputs/train_mtp_17m_session.py smoke-model
 ```
 
 Open or execute `Assignment_9_Loss_Harness.ipynb` to reproduce every Part 1
-measurement and the Part 2 smoke run. The production run is reproducible with
-the retained configuration and training implementation; its multi-hour
-allowance was not needed because held-out early stopping fired after two
-non-improving validations. The excluded `.pt` files are not required to audit
-the submitted results because the complete metric ledger, configuration,
-checkpoint index, hashes, and final summary are retained as text artifacts.
+measurement and the Part 2 smoke run. The notebook also executes a production
+results section that reads the retained JSONL ledger, prints all 16 held-out
+checks, and verifies the best and early-stopping steps without launching a new
+training run. The production run itself is reproducible with the retained
+configuration and training implementation; its multi-hour allowance was not
+needed because held-out early stopping fired after two non-improving
+validations. The excluded `.pt` files are not required to audit the submitted
+results because the complete metric ledger, configuration, checkpoint index,
+hashes, and final summary are retained as text artifacts.
 """
 
 
@@ -194,6 +319,7 @@ def main() -> None:
     root = Path(__file__).resolve().parent.parent
     run_dir = args.run_dir if args.run_dir.is_absolute() else root / args.run_dir
     harness = read_json(root / "assignment9_metrics.json")
+    history = read_json(root / "experiment_history.json")
     summary = read_json(run_dir / "run_summary.json")
     manifest = read_json(run_dir / "run_manifest.json")
     resolved_config = read_json(run_dir / "resolved_config.json")
@@ -296,15 +422,18 @@ def main() -> None:
 
     metrics_path = root / "assignment9_final_metrics.json"
     writeup_path = root / "ASSIGNMENT_WRITEUP.md"
+    history_path = root / "EXPERIMENT_HISTORY.md"
     readme_path = root / "README.md"
     metrics_path.write_text(
         json.dumps(combined, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
     writeup_path.write_text(build_writeup(combined), encoding="utf-8")
-    readme_path.write_text(build_readme(combined), encoding="utf-8")
+    history_path.write_text(build_experiment_history(history), encoding="utf-8")
+    readme_path.write_text(build_readme(combined, history), encoding="utf-8")
     print(f"Wrote {metrics_path}")
     print(f"Wrote {writeup_path}")
+    print(f"Wrote {history_path}")
     print(f"Wrote {readme_path}")
     print(
         f"Best validation step={production['best_step']:,} "

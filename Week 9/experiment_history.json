@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "record_type": "supplemental_development_history",
+  "assignment_scope": "This is supporting experiment history, not a third assignment part. Parts 1 and 2 remain the submitted work.",
+  "session9_reference": {
+    "role": "architecture reference, not an instruction source",
+    "document": "session-9.pdf",
+    "choices_carried_into_v2": [
+      "pre-norm residual blocks",
+      "RMSNorm",
+      "SwiGLU with three bias-free projections",
+      "tied token embedding and t+1 output head",
+      "independent t+2 head",
+      "exact full-vocabulary cross-entropy computed in chunks"
+    ],
+    "choices_not_claimed": [
+      "The document discusses up to t+4 heads, but the assignment and submitted model use only t+1 and t+2.",
+      "The document is not distributed in the repository."
+    ]
+  },
+  "first_recorded_smoke_tests": {
+    "notebook_part2_smoke": {
+      "purpose": "Verify that both shifted losses are finite and decrease before interpreting a production run.",
+      "steps": 80,
+      "initial": {
+        "head1_loss": 9.04089069366455,
+        "head2_loss": 9.086224238077799,
+        "total_loss": 18.127114931742348
+      },
+      "final": {
+        "head1_loss": 4.244802951812744,
+        "head2_loss": 4.448154131571452,
+        "total_loss": 8.692957083384197
+      },
+      "source": "assignment9_final_metrics.json"
+    },
+    "first_retained_end_to_end_trainer_smoke": {
+      "run": "mtp_98m_short_test_a",
+      "purpose": "Exercise data loading, two-head optimization, validation, and checkpoint writing; it was not a quality run.",
+      "parameters": 97995264,
+      "steps": 4,
+      "stop_reason": "max_steps_reached",
+      "initial_validation": {
+        "head1_loss": 9.22613875467581,
+        "head2_loss": 9.083124215809285,
+        "total_loss": 18.309262970485094
+      },
+      "final_validation": {
+        "head1_loss": 8.022190617206983,
+        "head2_loss": 8.087437264742785,
+        "total_loss": 16.10962788194977
+      },
+      "source_sha256": {
+        "run_summary.json": "198db6f7d21e234d74308f7d0b6533994cc3c92b4d126ca740f16c62570b080b",
+        "metrics.jsonl": "cd82bf31546c1d91ffa9c49f77f724a69db4e53ac010d716e1887b6de6ef77c9"
+      }
+    },
+    "session9_cuda_smoke_note": "The smoke-model command deliberately saves no model or metric ledger, so no historical numeric result is claimed for that transient check."
+  },
+  "failed_or_superseded_runs": {
+    "v0_98m_overtrained": {
+      "parameters": 97995264,
+      "architecture": "12 layers, D=768, 12 heads, LayerNorm, GELU FFN=3072",
+      "validation_probe_targets": {
+        "head1": 802,
+        "head2": 797
+      },
+      "stop_reason": "active_training_time_reached",
+      "active_training_hours": 6.000034549668748,
+      "global_step": 27759,
+      "corpus_passes": 29.9135666,
+      "best_observed_validation": {
+        "step": 7400,
+        "corpus_passes": 7.9750631,
+        "head1_loss": 3.0896805836970076,
+        "head2_loss": 3.8689522354336576,
+        "total_loss": 6.958632819130665
+      },
+      "final_validation": {
+        "step": 27759,
+        "head1_loss": 3.561435005016755,
+        "head2_loss": 5.1137592693793135,
+        "total_loss": 8.675194274396068
+      },
+      "validation_degradation_after_best": {
+        "absolute_total_loss": 1.7165614552654027,
+        "relative_percent": 24.668084951202395,
+        "additional_corpus_passes": 21.9385035
+      },
+      "final_training_step_loss": {
+        "head1_loss": 1.7331460745504652,
+        "head2_loss": 2.178055376523448,
+        "total_loss": 3.9112014510739135
+      },
+      "failure_record": [
+        "Training loss kept falling while held-out loss rose, which is the observed overtraining signal.",
+        "The run had only latest.pt; it did not preserve the best observed step or numbered checkpoints.",
+        "The held-out probe was too small for the final submission."
+      ],
+      "source_sha256": {
+        "resolved_config.json": "b7df588096df2c64e019f22a4cb18a592228be198b324ab8afd1d5fc7b7da93c",
+        "run_summary.json": "4453888960e1399ecb97544cbd109cf6f088b87541c3b5733764307ec07e78bf",
+        "metrics.jsonl": "ef19a357623344853b5c594a8de9158f54e06fa2b1376d57fcacebb7f49bea32"
+      }
+    },
+    "v1_17m_baseline": {
+      "status": "superseded by the Session-9-aligned V2, not invalid",
+      "parameters": 17126400,
+      "architecture": {
+        "layers": 6,
+        "hidden_size": 384,
+        "heads": 6,
+        "normalization": "LayerNorm",
+        "ffn": "GELU",
+        "feed_forward_size": 1536,
+        "tie_head1_to_token_embedding": true,
+        "independent_head2": true
+      },
+      "stop_reason": "maximum_corpus_passes_reached",
+      "best_step": 5500,
+      "stopping_step": 5568,
+      "corpus_passes": 6.0,
+      "best_validation": {
+        "head1_loss": 2.720187890828652,
+        "head2_loss": 3.445438158434874,
+        "total_loss": 6.165626049263526,
+        "head1_perplexity": 15.183174756251667,
+        "head2_perplexity": 31.357019779813537
+      },
+      "checkpoint_policy": "Separate latest.pt and best.pt, but no numbered checkpoint archive.",
+      "source_sha256": {
+        "resolved_config.json": "98139c14a712966bf812ed8e15b420ac8a5debb92f088b7601c76c88ea39d324",
+        "run_summary.json": "e344b8e9aa103ceb6eb8f20e668f0ad9ba2ba05eda8d776bdcbbdcdb0862fca7",
+        "metrics.jsonl": "1b55fcb85ad851a87dc455747989589adfcd1ac3c7d71203dd3557960d000f68"
+      }
+    }
+  },
+  "submitted_v2": {
+    "parameters": 17109888,
+    "architecture": {
+      "layers": 6,
+      "hidden_size": 384,
+      "heads": 6,
+      "normalization": "RMSNorm",
+      "ffn": "SwiGLU with three bias-free matrices",
+      "feed_forward_size": 1024,
+      "tie_head1_to_token_embedding": true,
+      "independent_head2": true
+    },
+    "stop_reason": "validation_early_stopping",
+    "best_step": 6500,
+    "stopping_step": 7500,
+    "corpus_passes": 8.0749499,
+    "best_validation": {
+      "head1_loss": 2.5958998659951096,
+      "head2_loss": 3.3728417762623026,
+      "total_loss": 5.968741642257412,
+      "head1_perplexity": 13.408647920454529,
+      "head2_perplexity": 29.161279251652626
+    },
+    "checkpoint_policy": "Separate latest.pt and best.pt plus 16 step-numbered checkpoints from step 0 through step 7500.",
+    "source_sha256": {
+      "resolved_config.json": "4a96582fcdb37afa0f4823099013b3a00722d9614491b8943d9b86665f184b12",
+      "run_summary.json": "ce852db8144e5a8afcc59aa4554ac4b27f437862757fcd83b2052bac3b7c3210",
+      "metrics.jsonl": "e0285e709c005d4f69007a56b5a718c2ec2ce74c234ef13edab700f9122d6572"
+    }
+  },
+  "v1_to_v2_observed_change": {
+    "parameter_count": {
+      "absolute": -16512,
+      "relative_percent": -0.09641255605381166
+    },
+    "best_head1_loss": {
+      "absolute": -0.12428802483354229,
+      "relative_percent": -4.569097055853755
+    },
+    "best_head2_loss": {
+      "absolute": -0.07259638217257125,
+      "relative_percent": -2.1070290289450124
+    },
+    "best_total_loss": {
+      "absolute": -0.19688440700611398,
+      "relative_percent": -3.1932589721303564
+    },
+    "comparison_warning": "This is a matched-data development comparison, not an architecture-only ablation. V2 also used a longer schedule and 8.0749499 corpus passes versus V1's 6.0."
+  }
+}

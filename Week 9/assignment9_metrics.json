@@ -104,6 +104,7 @@
     }
   },
   "part2": {
+    "result_scope": "in_notebook_smoke_test",
     "head1_initial_loss": 9.04089069366455,
     "head2_initial_loss": 9.086224238077799,
     "head1_final_loss": 4.244802951812744,

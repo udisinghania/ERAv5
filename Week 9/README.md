@@ -10,6 +10,9 @@ Colab is not required for this submission.
 - [Executed notebook](Assignment_9_Loss_Harness.ipynb)
 - [Exact final metrics](assignment9_final_metrics.json)
 - [Short write-up](ASSIGNMENT_WRITEUP.md)
+- [Development history: smoke tests, failures, V1 versus V2](EXPERIMENT_HISTORY.md)
+- [Machine-readable development history](experiment_history.json)
+- [Original smoke, V0, and V1 configs/summaries](experiments/)
 - [Production validation and training ledger](outputs/mtp_17m_session_run/metrics.jsonl)
 - [Production run summary](outputs/mtp_17m_session_run/run_summary.json)
 - [Resolved production configuration](outputs/mtp_17m_session_run/resolved_config.json)
@@ -24,6 +27,22 @@ The large `.pt` checkpoint files are intentionally excluded from Git because
 each full checkpoint is about 196 MiB, above GitHub's ordinary 100 MiB file
 limit. Their SHA-256 hashes and the complete checkpoint history are preserved
 in the run summary and checkpoint index.
+
+## Development history (supporting evidence, not Part 3)
+
+The repository records the first smoke tests, the overtrained 98M attempt, the
+17M V1 baseline, and the Session-9-aligned V2 in
+[EXPERIMENT_HISTORY.md](EXPERIMENT_HISTORY.md). The headline matched-data
+comparison is:
+
+| Best held-out value | V1 | Submitted V2 | Change |
+|---|---:|---:|---:|
+| H1 loss | 2.720188 | 2.595900 | -4.57% |
+| H2 loss | 3.445438 | 3.372842 | -2.11% |
+| Sum | 6.165626 | 5.968742 | -3.19% |
+
+This is not presented as an architecture-only ablation because V2 also trained
+for more corpus passes. Parts 1 and 2 below remain the assignment submission.
 
 ## Production run
 
@@ -117,9 +136,12 @@ python outputs/train_mtp_17m_session.py smoke-model
 ```
 
 Open or execute `Assignment_9_Loss_Harness.ipynb` to reproduce every Part 1
-measurement and the Part 2 smoke run. The production run is reproducible with
-the retained configuration and training implementation; its multi-hour
-allowance was not needed because held-out early stopping fired after two
-non-improving validations. The excluded `.pt` files are not required to audit
-the submitted results because the complete metric ledger, configuration,
-checkpoint index, hashes, and final summary are retained as text artifacts.
+measurement and the Part 2 smoke run. The notebook also executes a production
+results section that reads the retained JSONL ledger, prints all 16 held-out
+checks, and verifies the best and early-stopping steps without launching a new
+training run. The production run itself is reproducible with the retained
+configuration and training implementation; its multi-hour allowance was not
+needed because held-out early stopping fired after two non-improving
+validations. The excluded `.pt` files are not required to audit the submitted
+results because the complete metric ledger, configuration, checkpoint index,
+hashes, and final summary are retained as text artifacts.

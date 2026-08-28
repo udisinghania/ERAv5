@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "STOPPED_SAFELY",
+  "stop_reason": "active_training_time_reached",
+  "global_step": 27759,
+  "epoch_index": 29,
+  "next_superbatch_cursor": 847,
+  "active_training_seconds": 21600.124378807493,
+  "session_wall_seconds": 22676.758883600007,
+  "head1_targets_seen": 299135666,
+  "head2_targets_seen": 298045603,
+  "physical_tokens_seen": 340383232,
+  "corpus_passes_by_head1_targets": 29.9135666,
+  "maximum_peak_allocated_mib": 2945.46044921875,
+  "final_validation": {
+    "head1_loss": 3.561435005016755,
+    "head2_loss": 5.1137592693793135,
+    "total_loss": 8.675194274396068,
+    "head1_perplexity": 35.213692731459645,
+    "head2_perplexity": 166.29432646968772,
+    "head1_targets": 802,
+    "head2_targets": 797
+  },
+  "checkpoint_seconds": 1.2386915000388399,
+  "checkpoint_path": "C:\\Users\\udisi\\Documents\\Codex\\2026-08-23\\one-notebook-one-loss-harness-and\\outputs\\mtp_98m_full_run\\latest.pt",
+  "checkpoint_file_sha256": "7c5478b7a5020ecec4506d1077ad4effb11f700bc31efab70ad3677e2ad000f1"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "STOPPED_SAFELY",
+  "stop_reason": "max_steps_reached",
+  "global_step": 4,
+  "epoch_index": 0,
+  "next_superbatch_cursor": 4,
+  "active_training_seconds": 35.85798579978291,
+  "session_wall_seconds": 20.027349999989383,
+  "head1_targets_seen": 35910,
+  "head2_targets_seen": 35747,
+  "physical_tokens_seen": 49152,
+  "final_validation": {
+    "head1_loss": 8.022190617206983,
+    "head2_loss": 8.087437264742785,
+    "total_loss": 16.10962788194977,
+    "head1_perplexity": 3047.8466906762897,
+    "head2_perplexity": 3253.3394300979353,
+    "head1_targets": 802,
+    "head2_targets": 797
+  },
+  "checkpoint_seconds": 1.5697583000874147,
+  "checkpoint_path": "C:\\Users\\udisi\\Documents\\Codex\\2026-08-23\\one-notebook-one-loss-harness-and\\outputs\\mtp_98m_short_test_a\\latest.pt"
+}
