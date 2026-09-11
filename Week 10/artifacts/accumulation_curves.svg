@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="system-ui" font-size="20" font-weight="600">Unequal micro-batches: correct weighting vs mean-of-means</text>
+<line x1="85" y1="55.00" x2="875" y2="55.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="59.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">5.717</text>
+<line x1="85" y1="134.00" x2="875" y2="134.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="138.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">5.121</text>
+<line x1="85" y1="213.00" x2="875" y2="213.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="217.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">4.526</text>
+<line x1="85" y1="292.00" x2="875" y2="292.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="296.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">3.930</text>
+<line x1="85" y1="371.00" x2="875" y2="371.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="375.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">3.334</text>
+<line x1="85" y1="450.00" x2="875" y2="450.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="454.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">2.739</text>
+<line x1="85" y1="55" x2="85" y2="450" stroke="#333"/>
+<line x1="85" y1="450" x2="875" y2="450" stroke="#333"/>
+<text x="85.00" y="472" text-anchor="middle" font-family="monospace" font-size="12">1</text>
+<text x="186.28" y="472" text-anchor="middle" font-family="monospace" font-size="12">6</text>
+<text x="287.56" y="472" text-anchor="middle" font-family="monospace" font-size="12">11</text>
+<text x="388.85" y="472" text-anchor="middle" font-family="monospace" font-size="12">16</text>
+<text x="490.13" y="472" text-anchor="middle" font-family="monospace" font-size="12">21</text>
+<text x="591.41" y="472" text-anchor="middle" font-family="monospace" font-size="12">26</text>
+<text x="692.69" y="472" text-anchor="middle" font-family="monospace" font-size="12">31</text>
+<text x="793.97" y="472" text-anchor="middle" font-family="monospace" font-size="12">36</text>
+<text x="480.0" y="502" text-anchor="middle" font-family="system-ui" font-size="14">optimizer step</text>
+<text x="20" y="252.5" transform="rotate(-90 20 252.5)" text-anchor="middle" font-family="system-ui" font-size="14">token-weighted evaluation loss</text>
+<polyline points="85.00,84.57 105.26,109.14 125.51,134.95 145.77,162.91 166.03,193.09 186.28,223.75 206.54,252.35 226.79,277.06 247.05,297.41 267.31,314.10 287.56,328.03 307.82,339.84 328.08,349.95 348.33,358.53 368.59,365.73 388.85,371.81 409.10,376.92 429.36,381.21 449.62,384.66 469.87,387.56 490.13,390.01 510.38,392.01 530.64,393.88 550.90,395.65 571.15,397.38 591.41,399.10 611.67,400.93 631.92,402.94 652.18,405.14 672.44,407.47 692.69,409.77 712.95,412.06 733.21,414.31 753.46,416.41 773.72,418.12 793.97,419.47 814.23,420.18 834.49,420.82 854.74,421.66 875.00,422.76" fill="none" stroke="#176B87" stroke-width="3" stroke-linejoin="round"/>
+<line x1="103" y1="73" x2="133" y2="73" stroke="#176B87" stroke-width="3"/>
+<text x="141" y="77" font-family="system-ui" font-size="13">correct token-weighted accumulation</text>
+<polyline points="85.00,82.24 105.26,104.37 125.51,127.28 145.77,152.23 166.03,179.56 186.28,208.37 206.54,236.75 226.79,262.69 247.05,284.85 267.31,303.17 287.56,318.41 307.82,331.24 328.08,342.18 348.33,351.61 368.59,359.72 388.85,366.70 409.10,372.59 429.36,377.58 449.62,381.56 469.87,384.73 490.13,387.21 510.38,389.14 530.64,390.93 550.90,392.57 571.15,394.23 591.41,395.88 611.67,397.50 631.92,399.13 652.18,400.84 672.44,402.54 692.69,404.28 712.95,406.14 733.21,408.12 753.46,410.14 773.72,412.10 793.97,413.98 814.23,415.52 834.49,416.75 854.74,417.54 875.00,417.94" fill="none" stroke="#C44536" stroke-width="3" stroke-linejoin="round"/>
+<line x1="103" y1="97" x2="133" y2="97" stroke="#C44536" stroke-width="3"/>
+<text x="141" y="101" font-family="system-ui" font-size="13">BROKEN mean-of-means</text>
+</svg>

@@ -1,0 +1,195 @@
+targets: shape=(16, 64), dtype=int64 | dimensions: batch, sequence
+input_ids: shape=(16, 64), dtype=int64 | dimensions: batch, sequence
+position_indices: shape=(64,), dtype=int64 | dimensions: sequence
+token_embedding: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+position_embedding: shape=(64, 64), dtype=float32 | dimensions: sequence, model channel
+embedding_sum: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_0.ln1: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_0.qkv: shape=(16, 64, 192), dtype=float32 | dimensions: batch, sequence, concatenated Q/K/V channel
+block_0.q: shape=(16, 4, 64, 16), dtype=float32 | dimensions: batch, attention head, query position, head channel
+block_0.k: shape=(16, 4, 64, 16), dtype=float32 | dimensions: batch, attention head, key position, head channel
+block_0.v: shape=(16, 4, 64, 16), dtype=float32 | dimensions: batch, attention head, value position, head channel
+block_0.attention_scores: shape=(16, 4, 64, 64), dtype=float32 | dimensions: batch, attention head, query position, key position
+block_0.causal_mask: shape=(1, 1, 64, 64), dtype=bool | dimensions: broadcast batch, broadcast head, query position, key position
+block_0.masked_scores: shape=(16, 4, 64, 64), dtype=float32 | dimensions: batch, attention head, query position, key position
+block_0.attention_probabilities: shape=(16, 4, 64, 64), dtype=float32 | dimensions: batch, attention head, query position, key position
+block_0.attended_values: shape=(16, 4, 64, 16), dtype=float32 | dimensions: batch, attention head, query position, head channel
+block_0.merged_heads: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_0.attention_output: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_0.residual_after_attention: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_0.ln2: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_0.mlp_up: shape=(16, 64, 256), dtype=float32 | dimensions: batch, sequence, expanded MLP channel
+block_0.gelu: shape=(16, 64, 256), dtype=float32 | dimensions: batch, sequence, expanded MLP channel
+block_0.mlp_down: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_0.residual_after_mlp: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_1.ln1: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_1.qkv: shape=(16, 64, 192), dtype=float32 | dimensions: batch, sequence, concatenated Q/K/V channel
+block_1.q: shape=(16, 4, 64, 16), dtype=float32 | dimensions: batch, attention head, query position, head channel
+block_1.k: shape=(16, 4, 64, 16), dtype=float32 | dimensions: batch, attention head, key position, head channel
+block_1.v: shape=(16, 4, 64, 16), dtype=float32 | dimensions: batch, attention head, value position, head channel
+block_1.attention_scores: shape=(16, 4, 64, 64), dtype=float32 | dimensions: batch, attention head, query position, key position
+block_1.causal_mask: shape=(1, 1, 64, 64), dtype=bool | dimensions: broadcast batch, broadcast head, query position, key position
+block_1.masked_scores: shape=(16, 4, 64, 64), dtype=float32 | dimensions: batch, attention head, query position, key position
+block_1.attention_probabilities: shape=(16, 4, 64, 64), dtype=float32 | dimensions: batch, attention head, query position, key position
+block_1.attended_values: shape=(16, 4, 64, 16), dtype=float32 | dimensions: batch, attention head, query position, head channel
+block_1.merged_heads: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_1.attention_output: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_1.residual_after_attention: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_1.ln2: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_1.mlp_up: shape=(16, 64, 256), dtype=float32 | dimensions: batch, sequence, expanded MLP channel
+block_1.gelu: shape=(16, 64, 256), dtype=float32 | dimensions: batch, sequence, expanded MLP channel
+block_1.mlp_down: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+block_1.residual_after_mlp: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+final_norm: shape=(16, 64, 64), dtype=float32 | dimensions: batch, sequence, model channel
+logits: shape=(16, 64, 256), dtype=float32 | dimensions: batch, sequence, byte vocabulary
+flat_logits: shape=(1024, 256), dtype=float32 | dimensions: batch-times-sequence, byte vocabulary
+flat_targets: shape=(1024,), dtype=int64 | dimensions: batch-times-sequence
+per_token_cross_entropy: shape=(1024,), dtype=float32 | dimensions: batch-times-sequence
+loss_sum: shape=(), dtype=float32 | dimensions: scalar
+valid_token_count: shape=(), dtype=int64 | dimensions: scalar
+mean_loss: shape=(), dtype=float32 | dimensions: scalar
+parameter.token_embedding.weight: shape=(256, 64), dtype=float32 | dimensions: byte vocabulary, model channel
+gradient.token_embedding.weight: shape=(256, 64), dtype=float32 | dimensions: byte vocabulary, model channel
+optimizer.step.token_embedding.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.token_embedding.weight: shape=(256, 64), dtype=float32 | dimensions: byte vocabulary, model channel
+optimizer.exp_avg_sq.token_embedding.weight: shape=(256, 64), dtype=float32 | dimensions: byte vocabulary, model channel
+parameter.position_embedding.weight: shape=(64, 64), dtype=float32 | dimensions: maximum sequence position, model channel
+gradient.position_embedding.weight: shape=(64, 64), dtype=float32 | dimensions: maximum sequence position, model channel
+optimizer.step.position_embedding.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.position_embedding.weight: shape=(64, 64), dtype=float32 | dimensions: maximum sequence position, model channel
+optimizer.exp_avg_sq.position_embedding.weight: shape=(64, 64), dtype=float32 | dimensions: maximum sequence position, model channel
+parameter.blocks.0.ln1.weight: shape=(64,), dtype=float32 | dimensions: model channel
+gradient.blocks.0.ln1.weight: shape=(64,), dtype=float32 | dimensions: model channel
+optimizer.step.blocks.0.ln1.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.ln1.weight: shape=(64,), dtype=float32 | dimensions: model channel
+optimizer.exp_avg_sq.blocks.0.ln1.weight: shape=(64,), dtype=float32 | dimensions: model channel
+parameter.blocks.0.ln1.bias: shape=(64,), dtype=float32 | dimensions: output channel
+gradient.blocks.0.ln1.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.0.ln1.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.ln1.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.0.ln1.bias: shape=(64,), dtype=float32 | dimensions: output channel
+parameter.blocks.0.qkv.weight: shape=(192, 64), dtype=float32 | dimensions: output channel, input channel
+gradient.blocks.0.qkv.weight: shape=(192, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.step.blocks.0.qkv.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.qkv.weight: shape=(192, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.exp_avg_sq.blocks.0.qkv.weight: shape=(192, 64), dtype=float32 | dimensions: output channel, input channel
+parameter.blocks.0.qkv.bias: shape=(192,), dtype=float32 | dimensions: output channel
+gradient.blocks.0.qkv.bias: shape=(192,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.0.qkv.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.qkv.bias: shape=(192,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.0.qkv.bias: shape=(192,), dtype=float32 | dimensions: output channel
+parameter.blocks.0.attn_out.weight: shape=(64, 64), dtype=float32 | dimensions: output channel, input channel
+gradient.blocks.0.attn_out.weight: shape=(64, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.step.blocks.0.attn_out.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.attn_out.weight: shape=(64, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.exp_avg_sq.blocks.0.attn_out.weight: shape=(64, 64), dtype=float32 | dimensions: output channel, input channel
+parameter.blocks.0.attn_out.bias: shape=(64,), dtype=float32 | dimensions: output channel
+gradient.blocks.0.attn_out.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.0.attn_out.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.attn_out.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.0.attn_out.bias: shape=(64,), dtype=float32 | dimensions: output channel
+parameter.blocks.0.ln2.weight: shape=(64,), dtype=float32 | dimensions: model channel
+gradient.blocks.0.ln2.weight: shape=(64,), dtype=float32 | dimensions: model channel
+optimizer.step.blocks.0.ln2.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.ln2.weight: shape=(64,), dtype=float32 | dimensions: model channel
+optimizer.exp_avg_sq.blocks.0.ln2.weight: shape=(64,), dtype=float32 | dimensions: model channel
+parameter.blocks.0.ln2.bias: shape=(64,), dtype=float32 | dimensions: output channel
+gradient.blocks.0.ln2.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.0.ln2.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.ln2.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.0.ln2.bias: shape=(64,), dtype=float32 | dimensions: output channel
+parameter.blocks.0.mlp_up.weight: shape=(256, 64), dtype=float32 | dimensions: output channel, input channel
+gradient.blocks.0.mlp_up.weight: shape=(256, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.step.blocks.0.mlp_up.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.mlp_up.weight: shape=(256, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.exp_avg_sq.blocks.0.mlp_up.weight: shape=(256, 64), dtype=float32 | dimensions: output channel, input channel
+parameter.blocks.0.mlp_up.bias: shape=(256,), dtype=float32 | dimensions: output channel
+gradient.blocks.0.mlp_up.bias: shape=(256,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.0.mlp_up.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.mlp_up.bias: shape=(256,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.0.mlp_up.bias: shape=(256,), dtype=float32 | dimensions: output channel
+parameter.blocks.0.mlp_down.weight: shape=(64, 256), dtype=float32 | dimensions: output channel, input channel
+gradient.blocks.0.mlp_down.weight: shape=(64, 256), dtype=float32 | dimensions: output channel, input channel
+optimizer.step.blocks.0.mlp_down.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.mlp_down.weight: shape=(64, 256), dtype=float32 | dimensions: output channel, input channel
+optimizer.exp_avg_sq.blocks.0.mlp_down.weight: shape=(64, 256), dtype=float32 | dimensions: output channel, input channel
+parameter.blocks.0.mlp_down.bias: shape=(64,), dtype=float32 | dimensions: output channel
+gradient.blocks.0.mlp_down.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.0.mlp_down.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.0.mlp_down.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.0.mlp_down.bias: shape=(64,), dtype=float32 | dimensions: output channel
+parameter.blocks.1.ln1.weight: shape=(64,), dtype=float32 | dimensions: model channel
+gradient.blocks.1.ln1.weight: shape=(64,), dtype=float32 | dimensions: model channel
+optimizer.step.blocks.1.ln1.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.ln1.weight: shape=(64,), dtype=float32 | dimensions: model channel
+optimizer.exp_avg_sq.blocks.1.ln1.weight: shape=(64,), dtype=float32 | dimensions: model channel
+parameter.blocks.1.ln1.bias: shape=(64,), dtype=float32 | dimensions: output channel
+gradient.blocks.1.ln1.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.1.ln1.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.ln1.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.1.ln1.bias: shape=(64,), dtype=float32 | dimensions: output channel
+parameter.blocks.1.qkv.weight: shape=(192, 64), dtype=float32 | dimensions: output channel, input channel
+gradient.blocks.1.qkv.weight: shape=(192, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.step.blocks.1.qkv.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.qkv.weight: shape=(192, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.exp_avg_sq.blocks.1.qkv.weight: shape=(192, 64), dtype=float32 | dimensions: output channel, input channel
+parameter.blocks.1.qkv.bias: shape=(192,), dtype=float32 | dimensions: output channel
+gradient.blocks.1.qkv.bias: shape=(192,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.1.qkv.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.qkv.bias: shape=(192,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.1.qkv.bias: shape=(192,), dtype=float32 | dimensions: output channel
+parameter.blocks.1.attn_out.weight: shape=(64, 64), dtype=float32 | dimensions: output channel, input channel
+gradient.blocks.1.attn_out.weight: shape=(64, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.step.blocks.1.attn_out.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.attn_out.weight: shape=(64, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.exp_avg_sq.blocks.1.attn_out.weight: shape=(64, 64), dtype=float32 | dimensions: output channel, input channel
+parameter.blocks.1.attn_out.bias: shape=(64,), dtype=float32 | dimensions: output channel
+gradient.blocks.1.attn_out.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.1.attn_out.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.attn_out.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.1.attn_out.bias: shape=(64,), dtype=float32 | dimensions: output channel
+parameter.blocks.1.ln2.weight: shape=(64,), dtype=float32 | dimensions: model channel
+gradient.blocks.1.ln2.weight: shape=(64,), dtype=float32 | dimensions: model channel
+optimizer.step.blocks.1.ln2.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.ln2.weight: shape=(64,), dtype=float32 | dimensions: model channel
+optimizer.exp_avg_sq.blocks.1.ln2.weight: shape=(64,), dtype=float32 | dimensions: model channel
+parameter.blocks.1.ln2.bias: shape=(64,), dtype=float32 | dimensions: output channel
+gradient.blocks.1.ln2.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.1.ln2.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.ln2.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.1.ln2.bias: shape=(64,), dtype=float32 | dimensions: output channel
+parameter.blocks.1.mlp_up.weight: shape=(256, 64), dtype=float32 | dimensions: output channel, input channel
+gradient.blocks.1.mlp_up.weight: shape=(256, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.step.blocks.1.mlp_up.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.mlp_up.weight: shape=(256, 64), dtype=float32 | dimensions: output channel, input channel
+optimizer.exp_avg_sq.blocks.1.mlp_up.weight: shape=(256, 64), dtype=float32 | dimensions: output channel, input channel
+parameter.blocks.1.mlp_up.bias: shape=(256,), dtype=float32 | dimensions: output channel
+gradient.blocks.1.mlp_up.bias: shape=(256,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.1.mlp_up.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.mlp_up.bias: shape=(256,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.1.mlp_up.bias: shape=(256,), dtype=float32 | dimensions: output channel
+parameter.blocks.1.mlp_down.weight: shape=(64, 256), dtype=float32 | dimensions: output channel, input channel
+gradient.blocks.1.mlp_down.weight: shape=(64, 256), dtype=float32 | dimensions: output channel, input channel
+optimizer.step.blocks.1.mlp_down.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.mlp_down.weight: shape=(64, 256), dtype=float32 | dimensions: output channel, input channel
+optimizer.exp_avg_sq.blocks.1.mlp_down.weight: shape=(64, 256), dtype=float32 | dimensions: output channel, input channel
+parameter.blocks.1.mlp_down.bias: shape=(64,), dtype=float32 | dimensions: output channel
+gradient.blocks.1.mlp_down.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.step.blocks.1.mlp_down.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.blocks.1.mlp_down.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.blocks.1.mlp_down.bias: shape=(64,), dtype=float32 | dimensions: output channel
+parameter.final_norm.weight: shape=(64,), dtype=float32 | dimensions: model channel
+gradient.final_norm.weight: shape=(64,), dtype=float32 | dimensions: model channel
+optimizer.step.final_norm.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.final_norm.weight: shape=(64,), dtype=float32 | dimensions: model channel
+optimizer.exp_avg_sq.final_norm.weight: shape=(64,), dtype=float32 | dimensions: model channel
+parameter.final_norm.bias: shape=(64,), dtype=float32 | dimensions: output channel
+gradient.final_norm.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.step.final_norm.bias: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.final_norm.bias: shape=(64,), dtype=float32 | dimensions: output channel
+optimizer.exp_avg_sq.final_norm.bias: shape=(64,), dtype=float32 | dimensions: output channel
+parameter.lm_head.weight: shape=(256, 64), dtype=float32 | dimensions: output byte vocabulary, input model channel
+gradient.lm_head.weight: shape=(256, 64), dtype=float32 | dimensions: output byte vocabulary, input model channel
+optimizer.step.lm_head.weight: shape=(), dtype=float32 | dimensions: scalar optimizer step
+optimizer.exp_avg.lm_head.weight: shape=(256, 64), dtype=float32 | dimensions: output byte vocabulary, input model channel
+optimizer.exp_avg_sq.lm_head.weight: shape=(256, 64), dtype=float32 | dimensions: output byte vocabulary, input model channel

@@ -1,0 +1,118 @@
+{
+  "environment": {
+    "torch": "2.5.1+cu121",
+    "device": "cuda",
+    "cuda_device": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "seed": 1729,
+    "tf32_enabled": false
+  },
+  "model": {
+    "vocab_size": 256,
+    "max_seq_len": 64,
+    "d_model": 64,
+    "n_heads": 4,
+    "n_layers": 2,
+    "mlp_ratio": 4,
+    "parameter_count": 136960,
+    "tokenization": "UTF-8 bytes"
+  },
+  "data": {
+    "path": "data\\general_anneal.jsonl.gz",
+    "bytes_loaded": 255898,
+    "short_microbatch": [
+      16,
+      8
+    ],
+    "long_microbatch": [
+      16,
+      64
+    ]
+  },
+  "gradient_check": {
+    "parameter": "lm_head.weight[105, 0]",
+    "epsilon": 1e-05,
+    "loss_plus": 5.659547824005586,
+    "loss_minus": 5.659547552736764,
+    "autograd": 0.013563441054856254,
+    "finite_difference": 0.01356344112579677,
+    "absolute_error": 7.094051561462589e-11,
+    "relative_error": 5.230274158060207e-09,
+    "agreement_decimals": 10
+  },
+  "accumulation": {
+    "correct_formula": "(sum loss in short + sum loss in long) / (tokens_short + tokens_long)",
+    "broken_formula": "0.5 * mean(loss_short) + 0.5 * mean(loss_long)",
+    "short_token_weight_correct": 0.1111111111111111,
+    "short_token_weight_broken": 0.5,
+    "final_correct_eval_loss": 2.9440718756781683,
+    "final_broken_eval_loss": 2.98044165858516,
+    "final_absolute_gap": 0.03636978290699178,
+    "final_relative_gap_percent": 1.2353564873009093
+  },
+  "grad_norm_leads_loss": {
+    "step": 38,
+    "previous_step": 37,
+    "loss_before": 2.963501117847584,
+    "loss_after": 2.958693186442057,
+    "loss_absolute_change": -0.004807931405526933,
+    "loss_relative_change": 0.0016223821805132215,
+    "loss_same_at_2_decimals": true,
+    "grad_norm_before": 0.3675478931930704,
+    "grad_norm_after": 0.3090123584677088,
+    "grad_norm_absolute_change": -0.058535534725361604,
+    "grad_norm_relative_change": 0.1592596116300231
+  },
+  "mfu": {
+    "available": true,
+    "device": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "compute_capability": "8.6",
+    "streaming_multiprocessors": 40,
+    "cuda_cores_per_sm_assumption": 128,
+    "driver_reported_max_clock_ghz": 2.1,
+    "peak_fp32_tflops_upper_bound": 21.504,
+    "batch_size": 32,
+    "sequence_length": 64,
+    "tokens_per_step": 2048,
+    "median_step_seconds": 0.008269200014183298,
+    "tokens_per_second": 247666.03740232173,
+    "forward_matmul_flops_per_token": 262144,
+    "training_matmul_flops_per_token": 786432,
+    "achieved_tflops": 0.1947724971263827,
+    "mfu": 0.009057500796427767,
+    "mfu_percent": 0.9057500796427767,
+    "target_40_percent_tflops": 8.6016,
+    "counting_scope": "Matmul FLOPs only; backward=2x forward approximation; elementwise ops and optimizer excluded from numerator but included in elapsed time."
+  },
+  "float_representations": {
+    "fp32": {
+      "bits": "00111101110011001100110011001101",
+      "grouped": "0 01111011 10011001100110011001101",
+      "hex": "0x3DCCCCCD",
+      "stored_value": 0.10000000149011612,
+      "fields": "sign | 8-bit exponent (bias 127) | 23-bit fraction"
+    },
+    "bf16": {
+      "bits": "0011110111001101",
+      "grouped": "0 01111011 1001101",
+      "hex": "0x3DCD",
+      "stored_value": 0.10009765625,
+      "fields": "sign | 8-bit exponent (bias 127) | 7-bit fraction"
+    },
+    "fp8_e4m3": {
+      "bits": "00011101",
+      "grouped": "0 0011 101",
+      "hex": "0x1D",
+      "stored_value": 0.1015625,
+      "fields": "sign | 4-bit exponent (bias 7) | 3-bit fraction",
+      "torch_check": 0.1015625
+    }
+  },
+  "artifacts": {
+    "shape_ledger_entries": 195,
+    "training_steps": 40,
+    "training_log": "artifacts/training_log.csv",
+    "shape_ledger": "artifacts/shape_ledger.txt",
+    "accumulation_plot": "artifacts/accumulation_curves.svg",
+    "grad_norm_plot": "artifacts/grad_norms.svg"
+  }
+}

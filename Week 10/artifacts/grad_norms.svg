@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="system-ui" font-size="20" font-weight="600">Global L2 gradient norm at every step</text>
+<line x1="85" y1="55.00" x2="875" y2="55.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="59.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">1.437</text>
+<line x1="85" y1="134.00" x2="875" y2="134.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="138.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">1.182</text>
+<line x1="85" y1="213.00" x2="875" y2="213.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="217.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">0.926</text>
+<line x1="85" y1="292.00" x2="875" y2="292.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="296.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">0.671</text>
+<line x1="85" y1="371.00" x2="875" y2="371.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="375.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">0.415</text>
+<line x1="85" y1="450.00" x2="875" y2="450.00" stroke="#dedbd3" stroke-width="1"/>
+<text x="75" y="454.00" text-anchor="end" font-family="monospace" font-size="12" fill="#444">0.160</text>
+<line x1="85" y1="55" x2="85" y2="450" stroke="#333"/>
+<line x1="85" y1="450" x2="875" y2="450" stroke="#333"/>
+<text x="85.00" y="472" text-anchor="middle" font-family="monospace" font-size="12">1</text>
+<text x="186.28" y="472" text-anchor="middle" font-family="monospace" font-size="12">6</text>
+<text x="287.56" y="472" text-anchor="middle" font-family="monospace" font-size="12">11</text>
+<text x="388.85" y="472" text-anchor="middle" font-family="monospace" font-size="12">16</text>
+<text x="490.13" y="472" text-anchor="middle" font-family="monospace" font-size="12">21</text>
+<text x="591.41" y="472" text-anchor="middle" font-family="monospace" font-size="12">26</text>
+<text x="692.69" y="472" text-anchor="middle" font-family="monospace" font-size="12">31</text>
+<text x="793.97" y="472" text-anchor="middle" font-family="monospace" font-size="12">36</text>
+<text x="480.0" y="502" text-anchor="middle" font-family="system-ui" font-size="14">optimizer step</text>
+<text x="20" y="252.5" transform="rotate(-90 20 252.5)" text-anchor="middle" font-family="system-ui" font-size="14">gradient norm</text>
+<polyline points="85.00,279.24 105.26,261.60 125.51,258.13 145.77,213.53 166.03,144.96 186.28,129.91 206.54,97.56 226.79,108.85 247.05,142.31 267.31,157.95 287.56,179.96 307.82,205.58 328.08,232.18 348.33,278.50 368.59,307.59 388.85,326.19 409.10,331.57 429.36,309.85 449.62,380.64 469.87,385.02 490.13,373.63 510.38,422.76 530.64,381.92 550.90,388.61 571.15,403.26 591.41,414.95 611.67,399.82 631.92,373.27 652.18,407.53 672.44,404.21 692.69,406.65 712.95,391.56 733.21,377.60 753.46,362.67 773.72,390.59 793.97,361.64 814.23,385.77 834.49,403.87 854.74,352.28 875.00,399.25" fill="none" stroke="#176B87" stroke-width="3" stroke-linejoin="round"/>
+<line x1="103" y1="73" x2="133" y2="73" stroke="#176B87" stroke-width="3"/>
+<text x="141" y="77" font-family="system-ui" font-size="13">correct run</text>
+<polyline points="85.00,235.62 105.26,225.46 125.51,228.68 145.77,189.10 166.03,152.07 186.28,131.49 206.54,111.53 226.79,82.24 247.05,123.50 267.31,134.65 287.56,167.59 307.82,214.95 328.08,209.02 348.33,229.26 368.59,276.75 388.85,278.23 409.10,319.44 429.36,276.35 449.62,366.85 469.87,367.65 490.13,356.10 510.38,384.95 530.64,343.01 550.90,365.26 571.15,353.85 591.41,354.81 611.67,374.44 631.92,329.73 652.18,375.40 672.44,378.51 692.69,369.14 712.95,362.95 733.21,376.39 753.46,348.40 773.72,386.77 793.97,325.42 814.23,339.24 834.49,287.95 854.74,361.84 875.00,392.89" fill="none" stroke="#C44536" stroke-width="3" stroke-linejoin="round"/>
+<line x1="103" y1="97" x2="133" y2="97" stroke="#C44536" stroke-width="3"/>
+<text x="141" y="101" font-family="system-ui" font-size="13">broken run</text>
+</svg>
