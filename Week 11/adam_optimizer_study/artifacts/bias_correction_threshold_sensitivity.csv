@@ -1,0 +1,5 @@
+tolerance_fraction,tolerance_percent,first_step_permanently_below
+0.1,10.0,1660
+0.05,5.0,2327
+0.01,1.0,3916
+0.001,0.1,6213
