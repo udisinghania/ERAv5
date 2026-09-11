@@ -115,8 +115,8 @@ The deliberately broken loss is
 
 $$
 L_{\text{broken}} =
-\frac{1}{2}\operatorname{mean}(L_{\text{short}}) +
-\frac{1}{2}\operatorname{mean}(L_{\text{long}})
+\frac{1}{2}\,\text{mean}(L_{\text{short}}) +
+\frac{1}{2}\,\text{mean}(L_{\text{long}})
 $$
 
 The short source owns only `128 / 1152 = 11.11%` of the tokens, but the broken
@@ -186,7 +186,7 @@ $$
 Therefore:
 
 $$
-\operatorname{MFU}_{6N}
+MFU_{6N}
 = \frac{0.18995}{21.504}
 = \mathbf{0.883\%}
 $$
