@@ -81,10 +81,10 @@ The shape trace is explicit code, not a profiler guess: see `record(...)`,
 I checked `lm_head.weight[105, 0]` in float64 with a central difference and
 `epsilon = 1e-5`:
 
-\[
-\frac{\partial L}{\partial w}\approx
+$$
+\frac{\partial L}{\partial w} \approx
 \frac{L(w+\epsilon)-L(w-\epsilon)}{2\epsilon}
-\]
+$$
 
 Measured values:
 
@@ -105,17 +105,19 @@ of a one-sided nudge because its truncation error is quadratic in `epsilon`.
 There are two micro-batches per optimizer step: `(B=16, T=8)` and `(B=16, T=64)`.
 The correct loss is
 
-\[
-L_{correct}=\frac{\sum L_{short}+\sum L_{long}}
-{N_{short}+N_{long}}.
-\]
+$$
+L_{\text{correct}} =
+\frac{\sum L_{\text{short}}+\sum L_{\text{long}}}
+{N_{\text{short}}+N_{\text{long}}}
+$$
 
 The deliberately broken loss is
 
-\[
-L_{broken}=\tfrac12\operatorname{mean}(L_{short})+
-\tfrac12\operatorname{mean}(L_{long}).
-\]
+$$
+L_{\text{broken}} =
+\frac{1}{2}\operatorname{mean}(L_{\text{short}}) +
+\frac{1}{2}\operatorname{mean}(L_{\text{long}})
+$$
 
 The short source owns only `128 / 1152 = 11.11%` of the tokens, but the broken
 objective gives it 50% of the gradient. Because the two lengths sample different
@@ -153,16 +155,18 @@ The benchmark uses a fixed `B=32, T=64` batch, 20 warm-up steps, then 60 individ
 synchronized steps. TF32 is disabled, so I compare against an FP32 CUDA-core peak.
 I use the Session 10 convention as the primary result:
 
-\[
-F_{train/token}\approx6N=6\times136{,}960=821{,}760.
-\]
+$$
+F_{\text{train/token}} \approx 6N
+= 6 \times 136{,}960
+= 821{,}760
+$$
 
 As a cross-check, counting this architecture's matrix multiplications explicitly,
 one forward token costs:
 
-\[
-F_{fwd/token}=L(24d^2+4Td)+2dV=262{,}144.
-\]
+$$
+F_{\text{forward/token}} = L(24d^2+4Td)+2dV = 262{,}144
+$$
 
 Approximating backward as twice forward gives `786,432` FLOPs/token by that second
 method. The two estimates differ by 4.5%, mostly because `6N` treats every parameter
@@ -174,15 +178,18 @@ the lesson's `6N` estimate, that yields **0.18995 TFLOP/s**.
 The device reports 40 SMs and a 2.1 GHz maximum SM clock. For compute capability
 8.6 I use 128 FP32 lanes/SM, giving this upper bound:
 
-\[
-F_{peak}=40\times128\times2\times2.1\text{ GHz}=21.504\text{ TFLOP/s}.
-\]
+$$
+F_{\text{peak}} = 40 \times 128 \times 2 \times 2.1\text{ GHz}
+= 21.504\text{ TFLOP/s}
+$$
 
 Therefore:
 
-\[
-MFU_{6N}=\frac{0.18995}{21.504}=\mathbf{0.883\%}.
-\]
+$$
+\operatorname{MFU}_{6N}
+= \frac{0.18995}{21.504}
+= \mathbf{0.883\%}
+$$
 
 The explicit architecture-aware count gives 0.18179 TFLOP/s and **0.845% MFU**, so
 the conclusion is insensitive to the counting convention. This is honest but
