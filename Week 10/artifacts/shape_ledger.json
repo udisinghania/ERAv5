@@ -1,5 +1,459 @@
 {
-  "targets": {
+  "accumulation.total_token_count": {
+    "shape": [],
+    "dtype": "int64",
+    "dims": "scalar"
+  },
+  "microbatch_0_short.targets": {
+    "shape": [
+      16,
+      8
+    ],
+    "dtype": "int64",
+    "dims": "batch, sequence"
+  },
+  "microbatch_0_short.input_ids": {
+    "shape": [
+      16,
+      8
+    ],
+    "dtype": "int64",
+    "dims": "batch, sequence"
+  },
+  "microbatch_0_short.position_indices": {
+    "shape": [
+      8
+    ],
+    "dtype": "int64",
+    "dims": "sequence"
+  },
+  "microbatch_0_short.token_embedding": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.position_embedding": {
+    "shape": [
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "sequence, model channel"
+  },
+  "microbatch_0_short.embedding_sum": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_0.ln1": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_0.qkv": {
+    "shape": [
+      16,
+      8,
+      192
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, concatenated Q/K/V channel"
+  },
+  "microbatch_0_short.block_0.q": {
+    "shape": [
+      16,
+      4,
+      8,
+      16
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, query position, head channel"
+  },
+  "microbatch_0_short.block_0.k": {
+    "shape": [
+      16,
+      4,
+      8,
+      16
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, key position, head channel"
+  },
+  "microbatch_0_short.block_0.v": {
+    "shape": [
+      16,
+      4,
+      8,
+      16
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, value position, head channel"
+  },
+  "microbatch_0_short.block_0.attention_scores": {
+    "shape": [
+      16,
+      4,
+      8,
+      8
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, query position, key position"
+  },
+  "microbatch_0_short.block_0.causal_mask": {
+    "shape": [
+      1,
+      1,
+      8,
+      8
+    ],
+    "dtype": "bool",
+    "dims": "broadcast batch, broadcast head, query position, key position"
+  },
+  "microbatch_0_short.block_0.masked_scores": {
+    "shape": [
+      16,
+      4,
+      8,
+      8
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, query position, key position"
+  },
+  "microbatch_0_short.block_0.attention_probabilities": {
+    "shape": [
+      16,
+      4,
+      8,
+      8
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, query position, key position"
+  },
+  "microbatch_0_short.block_0.attended_values": {
+    "shape": [
+      16,
+      4,
+      8,
+      16
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, query position, head channel"
+  },
+  "microbatch_0_short.block_0.merged_heads": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_0.attention_output": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_0.residual_after_attention": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_0.ln2": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_0.mlp_up": {
+    "shape": [
+      16,
+      8,
+      256
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, expanded MLP channel"
+  },
+  "microbatch_0_short.block_0.gelu": {
+    "shape": [
+      16,
+      8,
+      256
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, expanded MLP channel"
+  },
+  "microbatch_0_short.block_0.mlp_down": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_0.residual_after_mlp": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_1.ln1": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_1.qkv": {
+    "shape": [
+      16,
+      8,
+      192
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, concatenated Q/K/V channel"
+  },
+  "microbatch_0_short.block_1.q": {
+    "shape": [
+      16,
+      4,
+      8,
+      16
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, query position, head channel"
+  },
+  "microbatch_0_short.block_1.k": {
+    "shape": [
+      16,
+      4,
+      8,
+      16
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, key position, head channel"
+  },
+  "microbatch_0_short.block_1.v": {
+    "shape": [
+      16,
+      4,
+      8,
+      16
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, value position, head channel"
+  },
+  "microbatch_0_short.block_1.attention_scores": {
+    "shape": [
+      16,
+      4,
+      8,
+      8
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, query position, key position"
+  },
+  "microbatch_0_short.block_1.causal_mask": {
+    "shape": [
+      1,
+      1,
+      8,
+      8
+    ],
+    "dtype": "bool",
+    "dims": "broadcast batch, broadcast head, query position, key position"
+  },
+  "microbatch_0_short.block_1.masked_scores": {
+    "shape": [
+      16,
+      4,
+      8,
+      8
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, query position, key position"
+  },
+  "microbatch_0_short.block_1.attention_probabilities": {
+    "shape": [
+      16,
+      4,
+      8,
+      8
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, query position, key position"
+  },
+  "microbatch_0_short.block_1.attended_values": {
+    "shape": [
+      16,
+      4,
+      8,
+      16
+    ],
+    "dtype": "float32",
+    "dims": "batch, attention head, query position, head channel"
+  },
+  "microbatch_0_short.block_1.merged_heads": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_1.attention_output": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_1.residual_after_attention": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_1.ln2": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_1.mlp_up": {
+    "shape": [
+      16,
+      8,
+      256
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, expanded MLP channel"
+  },
+  "microbatch_0_short.block_1.gelu": {
+    "shape": [
+      16,
+      8,
+      256
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, expanded MLP channel"
+  },
+  "microbatch_0_short.block_1.mlp_down": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.block_1.residual_after_mlp": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.final_norm": {
+    "shape": [
+      16,
+      8,
+      64
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, model channel"
+  },
+  "microbatch_0_short.logits": {
+    "shape": [
+      16,
+      8,
+      256
+    ],
+    "dtype": "float32",
+    "dims": "batch, sequence, byte vocabulary"
+  },
+  "microbatch_0_short.flat_logits": {
+    "shape": [
+      128,
+      256
+    ],
+    "dtype": "float32",
+    "dims": "batch-times-sequence, byte vocabulary"
+  },
+  "microbatch_0_short.flat_targets": {
+    "shape": [
+      128
+    ],
+    "dtype": "int64",
+    "dims": "batch-times-sequence"
+  },
+  "microbatch_0_short.per_token_cross_entropy": {
+    "shape": [
+      128
+    ],
+    "dtype": "float32",
+    "dims": "batch-times-sequence"
+  },
+  "microbatch_0_short.loss_sum": {
+    "shape": [],
+    "dtype": "float32",
+    "dims": "scalar"
+  },
+  "microbatch_0_short.valid_token_count": {
+    "shape": [],
+    "dtype": "int64",
+    "dims": "scalar"
+  },
+  "microbatch_0_short.mean_loss": {
+    "shape": [],
+    "dtype": "float32",
+    "dims": "scalar"
+  },
+  "microbatch_0_short.token_weighted_loss_contribution": {
+    "shape": [],
+    "dtype": "float32",
+    "dims": "scalar"
+  },
+  "microbatch_1_long.targets": {
     "shape": [
       16,
       64
@@ -7,7 +461,7 @@
     "dtype": "int64",
     "dims": "batch, sequence"
   },
-  "input_ids": {
+  "microbatch_1_long.input_ids": {
     "shape": [
       16,
       64
@@ -15,14 +469,14 @@
     "dtype": "int64",
     "dims": "batch, sequence"
   },
-  "position_indices": {
+  "microbatch_1_long.position_indices": {
     "shape": [
       64
     ],
     "dtype": "int64",
     "dims": "sequence"
   },
-  "token_embedding": {
+  "microbatch_1_long.token_embedding": {
     "shape": [
       16,
       64,
@@ -31,7 +485,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "position_embedding": {
+  "microbatch_1_long.position_embedding": {
     "shape": [
       64,
       64
@@ -39,7 +493,7 @@
     "dtype": "float32",
     "dims": "sequence, model channel"
   },
-  "embedding_sum": {
+  "microbatch_1_long.embedding_sum": {
     "shape": [
       16,
       64,
@@ -48,7 +502,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_0.ln1": {
+  "microbatch_1_long.block_0.ln1": {
     "shape": [
       16,
       64,
@@ -57,7 +511,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_0.qkv": {
+  "microbatch_1_long.block_0.qkv": {
     "shape": [
       16,
       64,
@@ -66,7 +520,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, concatenated Q/K/V channel"
   },
-  "block_0.q": {
+  "microbatch_1_long.block_0.q": {
     "shape": [
       16,
       4,
@@ -76,7 +530,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, query position, head channel"
   },
-  "block_0.k": {
+  "microbatch_1_long.block_0.k": {
     "shape": [
       16,
       4,
@@ -86,7 +540,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, key position, head channel"
   },
-  "block_0.v": {
+  "microbatch_1_long.block_0.v": {
     "shape": [
       16,
       4,
@@ -96,7 +550,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, value position, head channel"
   },
-  "block_0.attention_scores": {
+  "microbatch_1_long.block_0.attention_scores": {
     "shape": [
       16,
       4,
@@ -106,7 +560,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, query position, key position"
   },
-  "block_0.causal_mask": {
+  "microbatch_1_long.block_0.causal_mask": {
     "shape": [
       1,
       1,
@@ -116,7 +570,7 @@
     "dtype": "bool",
     "dims": "broadcast batch, broadcast head, query position, key position"
   },
-  "block_0.masked_scores": {
+  "microbatch_1_long.block_0.masked_scores": {
     "shape": [
       16,
       4,
@@ -126,7 +580,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, query position, key position"
   },
-  "block_0.attention_probabilities": {
+  "microbatch_1_long.block_0.attention_probabilities": {
     "shape": [
       16,
       4,
@@ -136,7 +590,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, query position, key position"
   },
-  "block_0.attended_values": {
+  "microbatch_1_long.block_0.attended_values": {
     "shape": [
       16,
       4,
@@ -146,7 +600,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, query position, head channel"
   },
-  "block_0.merged_heads": {
+  "microbatch_1_long.block_0.merged_heads": {
     "shape": [
       16,
       64,
@@ -155,7 +609,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_0.attention_output": {
+  "microbatch_1_long.block_0.attention_output": {
     "shape": [
       16,
       64,
@@ -164,7 +618,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_0.residual_after_attention": {
+  "microbatch_1_long.block_0.residual_after_attention": {
     "shape": [
       16,
       64,
@@ -173,7 +627,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_0.ln2": {
+  "microbatch_1_long.block_0.ln2": {
     "shape": [
       16,
       64,
@@ -182,7 +636,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_0.mlp_up": {
+  "microbatch_1_long.block_0.mlp_up": {
     "shape": [
       16,
       64,
@@ -191,7 +645,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, expanded MLP channel"
   },
-  "block_0.gelu": {
+  "microbatch_1_long.block_0.gelu": {
     "shape": [
       16,
       64,
@@ -200,7 +654,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, expanded MLP channel"
   },
-  "block_0.mlp_down": {
+  "microbatch_1_long.block_0.mlp_down": {
     "shape": [
       16,
       64,
@@ -209,7 +663,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_0.residual_after_mlp": {
+  "microbatch_1_long.block_0.residual_after_mlp": {
     "shape": [
       16,
       64,
@@ -218,7 +672,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_1.ln1": {
+  "microbatch_1_long.block_1.ln1": {
     "shape": [
       16,
       64,
@@ -227,7 +681,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_1.qkv": {
+  "microbatch_1_long.block_1.qkv": {
     "shape": [
       16,
       64,
@@ -236,7 +690,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, concatenated Q/K/V channel"
   },
-  "block_1.q": {
+  "microbatch_1_long.block_1.q": {
     "shape": [
       16,
       4,
@@ -246,7 +700,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, query position, head channel"
   },
-  "block_1.k": {
+  "microbatch_1_long.block_1.k": {
     "shape": [
       16,
       4,
@@ -256,7 +710,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, key position, head channel"
   },
-  "block_1.v": {
+  "microbatch_1_long.block_1.v": {
     "shape": [
       16,
       4,
@@ -266,7 +720,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, value position, head channel"
   },
-  "block_1.attention_scores": {
+  "microbatch_1_long.block_1.attention_scores": {
     "shape": [
       16,
       4,
@@ -276,7 +730,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, query position, key position"
   },
-  "block_1.causal_mask": {
+  "microbatch_1_long.block_1.causal_mask": {
     "shape": [
       1,
       1,
@@ -286,7 +740,7 @@
     "dtype": "bool",
     "dims": "broadcast batch, broadcast head, query position, key position"
   },
-  "block_1.masked_scores": {
+  "microbatch_1_long.block_1.masked_scores": {
     "shape": [
       16,
       4,
@@ -296,7 +750,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, query position, key position"
   },
-  "block_1.attention_probabilities": {
+  "microbatch_1_long.block_1.attention_probabilities": {
     "shape": [
       16,
       4,
@@ -306,7 +760,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, query position, key position"
   },
-  "block_1.attended_values": {
+  "microbatch_1_long.block_1.attended_values": {
     "shape": [
       16,
       4,
@@ -316,7 +770,7 @@
     "dtype": "float32",
     "dims": "batch, attention head, query position, head channel"
   },
-  "block_1.merged_heads": {
+  "microbatch_1_long.block_1.merged_heads": {
     "shape": [
       16,
       64,
@@ -325,7 +779,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_1.attention_output": {
+  "microbatch_1_long.block_1.attention_output": {
     "shape": [
       16,
       64,
@@ -334,7 +788,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_1.residual_after_attention": {
+  "microbatch_1_long.block_1.residual_after_attention": {
     "shape": [
       16,
       64,
@@ -343,7 +797,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_1.ln2": {
+  "microbatch_1_long.block_1.ln2": {
     "shape": [
       16,
       64,
@@ -352,7 +806,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_1.mlp_up": {
+  "microbatch_1_long.block_1.mlp_up": {
     "shape": [
       16,
       64,
@@ -361,7 +815,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, expanded MLP channel"
   },
-  "block_1.gelu": {
+  "microbatch_1_long.block_1.gelu": {
     "shape": [
       16,
       64,
@@ -370,7 +824,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, expanded MLP channel"
   },
-  "block_1.mlp_down": {
+  "microbatch_1_long.block_1.mlp_down": {
     "shape": [
       16,
       64,
@@ -379,7 +833,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "block_1.residual_after_mlp": {
+  "microbatch_1_long.block_1.residual_after_mlp": {
     "shape": [
       16,
       64,
@@ -388,7 +842,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "final_norm": {
+  "microbatch_1_long.final_norm": {
     "shape": [
       16,
       64,
@@ -397,7 +851,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, model channel"
   },
-  "logits": {
+  "microbatch_1_long.logits": {
     "shape": [
       16,
       64,
@@ -406,7 +860,7 @@
     "dtype": "float32",
     "dims": "batch, sequence, byte vocabulary"
   },
-  "flat_logits": {
+  "microbatch_1_long.flat_logits": {
     "shape": [
       1024,
       256
@@ -414,31 +868,46 @@
     "dtype": "float32",
     "dims": "batch-times-sequence, byte vocabulary"
   },
-  "flat_targets": {
+  "microbatch_1_long.flat_targets": {
     "shape": [
       1024
     ],
     "dtype": "int64",
     "dims": "batch-times-sequence"
   },
-  "per_token_cross_entropy": {
+  "microbatch_1_long.per_token_cross_entropy": {
     "shape": [
       1024
     ],
     "dtype": "float32",
     "dims": "batch-times-sequence"
   },
-  "loss_sum": {
+  "microbatch_1_long.loss_sum": {
     "shape": [],
     "dtype": "float32",
     "dims": "scalar"
   },
-  "valid_token_count": {
+  "microbatch_1_long.valid_token_count": {
     "shape": [],
     "dtype": "int64",
     "dims": "scalar"
   },
-  "mean_loss": {
+  "microbatch_1_long.mean_loss": {
+    "shape": [],
+    "dtype": "float32",
+    "dims": "scalar"
+  },
+  "microbatch_1_long.token_weighted_loss_contribution": {
+    "shape": [],
+    "dtype": "float32",
+    "dims": "scalar"
+  },
+  "accumulation.gradient_squared_sum": {
+    "shape": [],
+    "dtype": "float32",
+    "dims": "scalar"
+  },
+  "accumulation.global_gradient_l2_norm": {
     "shape": [],
     "dtype": "float32",
     "dims": "scalar"

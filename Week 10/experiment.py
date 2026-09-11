@@ -173,12 +173,14 @@ def loss_parts(model: TinyTransformer, x: torch.Tensor, y: torch.Tensor, ledger:
     return loss_sum, mean_loss, token_loss.numel()
 
 
-def grad_norm(model: nn.Module) -> float:
+def grad_norm(model: nn.Module, ledger: ShapeLedger | None = None) -> float:
     squares = torch.zeros((), device=next(model.parameters()).device)
     for parameter in model.parameters():
         if parameter.grad is not None:
             squares += parameter.grad.detach().float().pow(2).sum()
-    return math.sqrt(squares.item())
+    record(ledger, "accumulation.gradient_squared_sum", squares, "scalar")
+    norm = record(ledger, "accumulation.global_gradient_l2_norm", squares.sqrt(), "scalar")
+    return norm.item()
 
 
 def parameter_dims(name: str, tensor: torch.Tensor) -> str:
@@ -287,15 +289,23 @@ def train_pair(cfg: Config, stream: torch.Tensor, steps: int, device: torch.devi
     for step in range(steps):
         batches = make_batches(short_stream, long_stream, batch_size=16, step=step, device=device)
         total_tokens = sum(x.numel() for x, _ in batches)
+        if step == 0:
+            record(ledger, "accumulation.total_token_count", torch.tensor(total_tokens, device=device), "scalar")
 
         optim_correct.zero_grad(set_to_none=True)
         correct_pre_loss = 0.0
         for micro_index, (x, y) in enumerate(batches):
-            this_ledger = ledger if step == 0 and micro_index == 1 else None
+            this_ledger: ShapeLedger | None = {} if step == 0 else None
             loss_sum, _, count = loss_parts(correct, x, y, this_ledger)
-            (loss_sum / total_tokens).backward()
+            contribution = loss_sum / total_tokens
+            record(this_ledger, "token_weighted_loss_contribution", contribution, "scalar")
+            contribution.backward()
+            if this_ledger is not None:
+                length_label = "short" if micro_index == 0 else "long"
+                for tensor_name, item in this_ledger.items():
+                    ledger[f"microbatch_{micro_index}_{length_label}.{tensor_name}"] = item
             correct_pre_loss += loss_sum.item()
-        norm_correct = grad_norm(correct)
+        norm_correct = grad_norm(correct, ledger if step == 0 else None)
         optim_correct.step()
         if step == 0:
             add_backward_and_optimizer_shapes(ledger, correct, optim_correct)
@@ -330,14 +340,13 @@ def train_pair(cfg: Config, stream: torch.Tensor, steps: int, device: torch.devi
 
 
 def find_grad_lead(rows: Sequence[Dict[str, float]]) -> Dict[str, object]:
-    """Find a step where grad norm visibly changes while loss is stable at plot precision."""
+    """Find the clearest abrupt grad-norm move not mirrored by the loss trend."""
     candidates: List[Tuple[float, Dict[str, object]]] = []
     for previous, current in zip(rows, rows[1:]):
         loss_delta = current["correct_eval_loss"] - previous["correct_eval_loss"]
         norm_delta = current["correct_grad_norm"] - previous["correct_grad_norm"]
         loss_relative = abs(loss_delta) / max(abs(previous["correct_eval_loss"]), 1e-12)
         norm_relative = abs(norm_delta) / max(abs(previous["correct_grad_norm"]), 1e-12)
-        same_two_decimals = round(current["correct_eval_loss"], 2) == round(previous["correct_eval_loss"], 2)
         item = {
             "step": int(current["step"]),
             "previous_step": int(previous["step"]),
@@ -345,29 +354,13 @@ def find_grad_lead(rows: Sequence[Dict[str, float]]) -> Dict[str, object]:
             "loss_after": current["correct_eval_loss"],
             "loss_absolute_change": loss_delta,
             "loss_relative_change": loss_relative,
-            "loss_same_at_2_decimals": same_two_decimals,
             "grad_norm_before": previous["correct_grad_norm"],
             "grad_norm_after": current["correct_grad_norm"],
             "grad_norm_absolute_change": norm_delta,
             "grad_norm_relative_change": norm_relative,
+            "relative_signal_ratio": norm_relative / max(loss_relative, 1e-12),
         }
-        if same_two_decimals:
-            candidates.append((norm_relative, item))
-    if candidates:
-        return max(candidates, key=lambda pair: pair[0])[1]
-    # Honest fallback: report the strongest ratio instead of claiming a rounded tie.
-    for previous, current in zip(rows, rows[1:]):
-        loss_relative = abs(current["correct_eval_loss"] - previous["correct_eval_loss"]) / max(abs(previous["correct_eval_loss"]), 1e-12)
-        norm_relative = abs(current["correct_grad_norm"] - previous["correct_grad_norm"]) / max(abs(previous["correct_grad_norm"]), 1e-12)
-        candidates.append((norm_relative / max(loss_relative, 1e-12), {
-            "step": int(current["step"]), "previous_step": int(previous["step"]),
-            "loss_before": previous["correct_eval_loss"], "loss_after": current["correct_eval_loss"],
-            "loss_absolute_change": current["correct_eval_loss"] - previous["correct_eval_loss"],
-            "loss_relative_change": loss_relative, "loss_same_at_2_decimals": False,
-            "grad_norm_before": previous["correct_grad_norm"], "grad_norm_after": current["correct_grad_norm"],
-            "grad_norm_absolute_change": current["correct_grad_norm"] - previous["correct_grad_norm"],
-            "grad_norm_relative_change": norm_relative,
-        }))
+        candidates.append((item["relative_signal_ratio"], item))
     return max(candidates, key=lambda pair: pair[0])[1]
 
 
@@ -411,13 +404,16 @@ def benchmark_mfu(cfg: Config, stream: torch.Tensor, device: torch.device) -> Di
     tokens_per_step = x.numel()
     tokens_per_second = tokens_per_step / median_step
 
-    # Count matmul FLOPs explicitly. One multiply-add is two FLOPs. Backward is
-    # approximated as 2x forward, so training is 3x forward. LayerNorm, softmax,
-    # GELU, embedding lookup, optimizer, and memory traffic are excluded.
+    # Report both the course's conventional 6N estimate and an architecture-aware
+    # matmul count. One multiply-add is two FLOPs. Backward is approximated as 2x
+    # forward. LayerNorm, softmax, GELU, optimizer, and memory traffic are excluded.
     d, layers, seq, vocab = cfg.d_model, cfg.n_layers, cfg.max_seq_len, cfg.vocab_size
+    parameter_count = sum(parameter.numel() for parameter in model.parameters())
+    standard_6n_flops_per_token = 6 * parameter_count
     forward_flops_per_token = layers * (24 * d * d + 4 * seq * d) + 2 * d * vocab
     train_flops_per_token = 3 * forward_flops_per_token
-    achieved_flops = tokens_per_second * train_flops_per_token
+    standard_achieved_flops = tokens_per_second * standard_6n_flops_per_token
+    attention_aware_achieved_flops = tokens_per_second * train_flops_per_token
 
     props = torch.cuda.get_device_properties(device)
     clock_ghz = get_max_clock_ghz()
@@ -425,7 +421,8 @@ def benchmark_mfu(cfg: Config, stream: torch.Tensor, device: torch.device) -> Di
     peak_flops = None
     if clock_ghz is not None and cuda_cores_per_sm is not None:
         peak_flops = props.multi_processor_count * cuda_cores_per_sm * 2 * clock_ghz * 1e9
-    mfu = achieved_flops / peak_flops if peak_flops else None
+    standard_mfu = standard_achieved_flops / peak_flops if peak_flops else None
+    attention_aware_mfu = attention_aware_achieved_flops / peak_flops if peak_flops else None
     return {
         "available": True,
         "device": props.name,
@@ -439,13 +436,22 @@ def benchmark_mfu(cfg: Config, stream: torch.Tensor, device: torch.device) -> Di
         "tokens_per_step": tokens_per_step,
         "median_step_seconds": median_step,
         "tokens_per_second": tokens_per_second,
+        "parameter_count": parameter_count,
+        "standard_6n_flops_per_token": standard_6n_flops_per_token,
+        "standard_6n_achieved_tflops": standard_achieved_flops / 1e12,
+        "standard_6n_mfu": standard_mfu,
+        "standard_6n_mfu_percent": 100 * standard_mfu if standard_mfu is not None else None,
         "forward_matmul_flops_per_token": forward_flops_per_token,
         "training_matmul_flops_per_token": train_flops_per_token,
-        "achieved_tflops": achieved_flops / 1e12,
-        "mfu": mfu,
-        "mfu_percent": 100 * mfu if mfu is not None else None,
+        "attention_aware_achieved_tflops": attention_aware_achieved_flops / 1e12,
+        "attention_aware_mfu": attention_aware_mfu,
+        "attention_aware_mfu_percent": 100 * attention_aware_mfu if attention_aware_mfu is not None else None,
+        # Primary aliases deliberately use the Session 10 convention.
+        "achieved_tflops": standard_achieved_flops / 1e12,
+        "mfu": standard_mfu,
+        "mfu_percent": 100 * standard_mfu if standard_mfu is not None else None,
         "target_40_percent_tflops": 0.4 * peak_flops / 1e12 if peak_flops else None,
-        "counting_scope": "Matmul FLOPs only; backward=2x forward approximation; elementwise ops and optimizer excluded from numerator but included in elapsed time.",
+        "counting_scope": "Primary MFU uses the Session 10 6N approximation. The architecture-aware comparison counts explicit matmuls; both include optimizer and elementwise time in the denominator but not numerator.",
     }
 
 

@@ -50,17 +50,17 @@
     "final_relative_gap_percent": 1.2353564873009093
   },
   "grad_norm_leads_loss": {
-    "step": 38,
-    "previous_step": 37,
-    "loss_before": 2.963501117847584,
-    "loss_after": 2.958693186442057,
-    "loss_absolute_change": -0.004807931405526933,
-    "loss_relative_change": 0.0016223821805132215,
-    "loss_same_at_2_decimals": true,
-    "grad_norm_before": 0.3675478931930704,
-    "grad_norm_after": 0.3090123584677088,
-    "grad_norm_absolute_change": -0.058535534725361604,
-    "grad_norm_relative_change": 0.1592596116300231
+    "step": 39,
+    "previous_step": 38,
+    "loss_before": 2.958693186442057,
+    "loss_after": 2.952354148582176,
+    "loss_absolute_change": -0.006339037859881103,
+    "loss_relative_change": 0.0021425127447919127,
+    "grad_norm_before": 0.30901235342025757,
+    "grad_norm_after": 0.4758599102497101,
+    "grad_norm_absolute_change": 0.16684755682945251,
+    "grad_norm_relative_change": 0.5399381448111216,
+    "relative_signal_ratio": 252.011637328002
   },
   "mfu": {
     "available": true,
@@ -73,15 +73,23 @@
     "batch_size": 32,
     "sequence_length": 64,
     "tokens_per_step": 2048,
-    "median_step_seconds": 0.008269200014183298,
-    "tokens_per_second": 247666.03740232173,
+    "median_step_seconds": 0.00885995001590345,
+    "tokens_per_second": 231152.54559268133,
+    "parameter_count": 136960,
+    "standard_6n_flops_per_token": 821760,
+    "standard_6n_achieved_tflops": 0.18995191586624183,
+    "standard_6n_mfu": 0.00883332942086318,
+    "standard_6n_mfu_percent": 0.8833329420863181,
     "forward_matmul_flops_per_token": 262144,
     "training_matmul_flops_per_token": 786432,
-    "achieved_tflops": 0.1947724971263827,
-    "mfu": 0.009057500796427767,
-    "mfu_percent": 0.9057500796427767,
+    "attention_aware_achieved_tflops": 0.1817857587355436,
+    "attention_aware_mfu": 0.008453578810246632,
+    "attention_aware_mfu_percent": 0.8453578810246631,
+    "achieved_tflops": 0.18995191586624183,
+    "mfu": 0.00883332942086318,
+    "mfu_percent": 0.8833329420863181,
     "target_40_percent_tflops": 8.6016,
-    "counting_scope": "Matmul FLOPs only; backward=2x forward approximation; elementwise ops and optimizer excluded from numerator but included in elapsed time."
+    "counting_scope": "Primary MFU uses the Session 10 6N approximation. The architecture-aware comparison counts explicit matmuls; both include optimizer and elementwise time in the denominator but not numerator."
   },
   "float_representations": {
     "fp32": {
@@ -108,7 +116,7 @@
     }
   },
   "artifacts": {
-    "shape_ledger_entries": 195,
+    "shape_ledger_entries": 250,
     "training_steps": 40,
     "training_log": "artifacts/training_log.csv",
     "shape_ledger": "artifacts/shape_ledger.txt",
