@@ -1,4 +1,4 @@
-# Assignment 6 — Adam, warmup, schedules, and width scaling
+# Assignment 11 — Adam, warmup, schedules, and width scaling
 
 All five assignment questions are answered directly below. Supporting methodology, uncertainty analysis, reproducibility details, and limitations are in [`METHODS_AND_REPRODUCIBILITY.md`](METHODS_AND_REPRODUCIBILITY.md).
 
