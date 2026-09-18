@@ -7,6 +7,8 @@ The purpose is to show what each rank owns, how much persistent memory it uses, 
 ## Files
 
 - `assignment_12_zero_simulation.ipynb` — complete executable experiment and explanation.
+- `ownership_diagram.svg` — at-a-glance comparison of full versus sharded state.
+- `loss_comparison.svg` — evaluation-loss curve across the four Adam updates.
 - `memory_comparison.svg` — memory chart rendered directly in this README.
 - `requirements.txt` — minimal environment requirements.
 
@@ -44,11 +46,26 @@ jupyter notebook assignment_12_zero_simulation.ipynb
 - Four Adam training steps with optimizer state carried between steps.
 - FP32 correctness checks for master parameters and both Adam moments.
 - Measured toy-model state memory and projected 30B-model memory.
+- A state-ownership diagram for Data Parallel and all three ZeRO stages.
+- A per-step loss table and curve showing that all four strategies match.
 - A bar chart comparing 30B per-rank memory across all four strategies.
 - Example shard ranges for ranks 0, 1, 15, 30, and 31.
 - Exact 32-rank ring communication estimates and the rounded Session 12 values.
 
 The controller emulates collectives, while each rank owns real NumPy arrays and performs model or optimizer work on a worker thread. This is a conceptual simulator, not a GPU performance benchmark.
+
+## Ownership at a glance
+
+“Full” means that every rank stores a complete copy. “Sharded” means the 32 ranks divide that state, so each rank keeps only its assigned piece.
+
+| Strategy | Parameters | Gradients | Optimizer state |
+|---|---|---|---|
+| Data Parallel | Full | Full | Full |
+| ZeRO-1 | Full | Full | Sharded |
+| ZeRO-2 | Full | Sharded | Sharded |
+| ZeRO-3 | Sharded | Sharded | Sharded |
+
+![Persistent state ownership by distributed strategy](ownership_diagram.svg)
 
 ## Memory assumptions
 
@@ -82,7 +99,7 @@ This is the easiest strategy to reason about, but it wastes memory by replicatin
 
 ### ZeRO-1
 
-ZeRO-1 shards the 12 optimizer bytes: the FP32 master parameter and the two FP32 Adam moments. Parameters remain replicated and each rank still allocates a full-sized gradient buffer. Each rank updates only the parameter shard for which it owns optimizer state. The updated parameter shards are then all-gathered so that every rank again has a complete model.
+ZeRO-1 shards the 12 optimizer bytes: the FP32 master parameter and the two FP32 Adam moments. Parameters remain replicated and each rank still allocates a full-sized local gradient buffer during backward. After reduce-scatter, only the owned averaged gradient shard is required for that rank's optimizer update; the simulator does not retain a full synchronized averaged gradient on every rank. The updated parameter shards are then all-gathered so that every rank again has a complete model.
 
 The important result for me is that this first stage removes most of the redundant memory because optimizer state is 12 of the original 16 bytes.
 
@@ -111,7 +128,7 @@ The notebook creates actual per-rank arrays and sums their `nbytes` values:
 | ZeRO-2 | 4,096 | 128 | 768 | 4,992 |
 | ZeRO-3 | 128 | 128 | 768 | 1,024 |
 
-Every strategy produces a temporary 4,096-byte full FP16 gradient before its collective. ZeRO-2 and ZeRO-3 can release non-owned gradient data after reduce-scatter; real implementations do this bucket by bucket during backward. ZeRO-3 gathers only the active layer, so its largest temporary FP16 parameter buffer is the 2,048-byte `W2` matrix rather than the 4,096-byte full model. These temporary buffers are not counted as persistent state.
+Every strategy produces a temporary 4,096-byte full FP16 gradient before its collective. ZeRO-2 and ZeRO-3 can release non-owned gradient data after reduce-scatter; real implementations do this bucket by bucket during backward. ZeRO-3 gathers only the active layer, so its largest temporary FP16 parameter communication buffer is the 2,048-byte `W2` matrix rather than the 4,096-byte full model. The NumPy simulator converts that gathered layer to FP32 for CPU matrix multiplication, so this figure is conceptual GPU-style FP16 accounting rather than literal Python process memory. These temporary buffers are not counted as persistent state.
 
 The notebook also prints representative layer ownership ranges. Every rank owns 16 parameters from `W1`, 32 from `W2`, and 16 from `W3`, for 64 total. For example, rank 0 owns global ranges `[0:16)`, `[512:544)`, and `[1536:1552)`. An assertion verifies that all layer shards cover every parameter exactly once without gaps or overlap.
 
@@ -166,6 +183,18 @@ The experiment runs four Adam steps. It reconstructs the full FP32 master parame
 
 All stages produce zero maximum difference in the included run. The FP16 neural-network weights are also identical, and the evaluation loss drops from `5.572334` to `4.105666`.
 
+| Adam update step | Data Parallel | ZeRO-1 | ZeRO-2 | ZeRO-3 |
+|---:|---:|---:|---:|---:|
+| 0 | 5.572334 | 5.572334 | 5.572334 | 5.572334 |
+| 1 | 5.143653 | 5.143653 | 5.143653 | 5.143653 |
+| 2 | 4.759675 | 4.759675 | 4.759675 | 4.759675 |
+| 3 | 4.414552 | 4.414552 | 4.414552 | 4.414552 |
+| 4 | 4.105666 | 4.105666 | 4.105666 | 4.105666 |
+
+Because every value is identical at every step, the four lines overlap exactly in the curve below. This is the expected result: ZeRO changes where state is stored and how it is communicated, not the mathematical update.
+
+![Evaluation loss for Data Parallel and ZeRO stages](loss_comparison.svg)
+
 This shows that ZeRO changes storage and communication, not the intended optimization result.
 
 ## What I learned
@@ -176,7 +205,6 @@ The result that stood out to me was how much memory ZeRO-1 removes immediately. 
 
 The three-layer execution made the ZeRO-3 trade-off clearer to me. It never needs a permanent full-model parameter copy, but each layer must be assembled before its computation. The three forward gathers together equal one model copy, and the three backward gathers equal another. Whether that trade is worthwhile depends on activation memory, layer sizes, interconnect, bucket configuration, and how much communication overlaps with computation.
 
-For the Session 12 30B example, I would prefer ZeRO-2 if 32 GPUs provide enough real headroom after measuring activations. I would choose ZeRO-3 if memory remains the binding constraint or if fewer GPUs must hold the model. I would make the final decision from measured step time and peak memory rather than from the state table alone.
 
 ## Limitations
 
