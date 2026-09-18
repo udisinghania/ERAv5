@@ -1,12 +1,13 @@
 # Assignment 12: Data Parallelism and ZeRO on 32 Virtual GPUs
 
-This project simulates distributed training with 32 CPU worker threads acting as virtual GPU ranks. I use a small linear regression model and compare ordinary data parallelism with ZeRO stages 1, 2, and 3.
+This project simulates distributed training with 32 CPU worker threads acting as virtual GPU ranks. I use a three-layer ReLU neural network and compare ordinary data parallelism with ZeRO stages 1, 2, and 3.
 
 The purpose is to show what each rank owns, how much persistent memory it uses, how optimizer computation changes, which collective operations are required, and why every stage still produces the same mathematical update.
 
 ## Files
 
 - `assignment_12_zero_simulation.ipynb` — complete executable experiment and explanation.
+- `memory_comparison.svg` — memory chart rendered directly in this README.
 - `requirements.txt` — minimal environment requirements.
 
 ## How to run
@@ -31,17 +32,20 @@ jupyter notebook assignment_12_zero_simulation.ipynb
 ## What I built
 
 - 32 simultaneous CPU worker threads, one for each virtual rank.
-- A deterministic 1,024-parameter linear model.
+- A deterministic 2,048-parameter neural network: `16 → 32 → 32 → 16`.
+- Three weight matrices with ReLU activations after the first two layers.
 - A global batch split into 32 different microbatches.
 - Separate forward and backward worker phases.
 - A normal data-parallel implementation.
 - ZeRO-1 with sharded FP32 master parameters and Adam states.
 - ZeRO-2 with sharded optimizer state and gradients.
 - ZeRO-3 with sharded parameters, gradients, and optimizer state.
-- Explicit ZeRO-3 parameter all-gathers before forward and backward.
+- Explicit ZeRO-3 layer-by-layer parameter gathers during forward and backward.
 - Four Adam training steps with optimizer state carried between steps.
 - FP32 correctness checks for master parameters and both Adam moments.
 - Measured toy-model state memory and projected 30B-model memory.
+- A bar chart comparing 30B per-rank memory across all four strategies.
+- Example shard ranges for ranks 0, 1, 15, 30, and 31.
 - Exact 32-rank ring communication estimates and the rounded Session 12 values.
 
 The controller emulates collectives, while each rank owns real NumPy arrays and performs model or optimizer work on a worker thread. This is a conceptual simulator, not a GPU performance benchmark.
@@ -92,7 +96,7 @@ ZeRO-2 reduces memory further without increasing the simplified communication be
 
 ZeRO-3 shards every persistent state, including the FP16 parameters. A rank cannot perform the full model computation from its persistent state alone, so parameter shards must be all-gathered when they are needed.
 
-The notebook explicitly gathers parameters before the forward pass, releases the temporary full copy, gathers again before backward, and releases it again. Gradients are reduce-scattered and each rank updates only its owned shard.
+The notebook explicitly gathers `W1`, `W2`, and `W3` one layer at a time during the forward pass, releasing each gathered layer after use. Backward repeats the process in reverse order: `W3`, `W2`, and `W1`. Gradients are reduce-scattered and each rank updates only its owned pieces from all three layers.
 
 This provides the lowest persistent memory, but the extra parameter materialization raises communication from about `2P` to about `3P` per step. It also creates a transient memory peak equal to the gathered layer or bucket.
 
@@ -102,12 +106,14 @@ The notebook creates actual per-rank arrays and sums their `nbytes` values:
 
 | Strategy | Parameter bytes | Gradient bytes | Optimizer bytes | Persistent bytes per rank |
 |---|---:|---:|---:|---:|
-| Data parallel | 2,048 | 2,048 | 12,288 | 16,384 |
-| ZeRO-1 | 2,048 | 2,048 | 384 | 4,480 |
-| ZeRO-2 | 2,048 | 64 | 384 | 2,496 |
-| ZeRO-3 | 64 | 64 | 384 | 512 |
+| Data parallel | 4,096 | 4,096 | 24,576 | 32,768 |
+| ZeRO-1 | 4,096 | 4,096 | 768 | 8,960 |
+| ZeRO-2 | 4,096 | 128 | 768 | 4,992 |
+| ZeRO-3 | 128 | 128 | 768 | 1,024 |
 
-Every strategy produces a temporary 2,048-byte full FP16 gradient before its collective. ZeRO-2 and ZeRO-3 can release non-owned gradient data after reduce-scatter; real implementations do this bucket by bucket during backward. ZeRO-3 additionally materializes a temporary 2,048-byte full FP16 parameter vector during forward and backward. These temporary buffers are not counted as persistent state.
+Every strategy produces a temporary 4,096-byte full FP16 gradient before its collective. ZeRO-2 and ZeRO-3 can release non-owned gradient data after reduce-scatter; real implementations do this bucket by bucket during backward. ZeRO-3 gathers only the active layer, so its largest temporary FP16 parameter buffer is the 2,048-byte `W2` matrix rather than the 4,096-byte full model. These temporary buffers are not counted as persistent state.
+
+The notebook also prints representative layer ownership ranges. Every rank owns 16 parameters from `W1`, 32 from `W2`, and 16 from `W3`, for 64 total. For example, rank 0 owns global ranges `[0:16)`, `[512:544)`, and `[1536:1552)`. An assertion verifies that all layer shards cover every parameter exactly once without gaps or overlap.
 
 ## Projected memory for the 30B model
 
@@ -122,6 +128,10 @@ At world size 32:
 
 These are lower bounds for training state. Real peak memory also includes activations, communication buffers, the largest gathered layer, allocator fragmentation, framework overhead, and possibly uneven layer sizes.
 
+The accompanying bar chart places the four values on the same scale and marks the 74.5 GiB card limit. This makes it visually clear why data parallelism and ZeRO-1 do not fit while ZeRO-2 and ZeRO-3 cross below the state-only limit.
+
+![Persistent memory per rank for a 30B model on 32 GPUs](memory_comparison.svg)
+
 ## Computation changes
 
 Forward and backward model work per rank remains approximately the same in all four strategies because every rank still processes its local microbatch.
@@ -130,10 +140,10 @@ The optimizer work changes:
 
 | Strategy | Optimizer elements updated per rank | Optimizer elements updated globally |
 |---|---:|---:|
-| Data parallel | 1,024 | 32,768 |
-| ZeRO-1 | 32 | 1,024 |
-| ZeRO-2 | 32 | 1,024 |
-| ZeRO-3 | 32 | 1,024 |
+| Data parallel | 2,048 | 65,536 |
+| ZeRO-1 | 64 | 2,048 |
+| ZeRO-2 | 64 | 2,048 |
+| ZeRO-3 | 64 | 2,048 |
 
 Data parallelism repeats the same full optimizer update 32 times. Every ZeRO stage assigns one shard to each rank, so optimizer work is `1/32` per rank and one complete model update globally.
 
@@ -146,7 +156,7 @@ Let `P` be one complete FP16 parameter copy. With 32 ranks, the exact ring facto
 | Data parallel | Gradient all-reduce | `1.9375P` | `2P` |
 | ZeRO-1 | Gradient reduce-scatter + parameter all-gather | `1.9375P` | `2P` |
 | ZeRO-2 | Gradient reduce-scatter + parameter all-gather | `1.9375P` | `2P` |
-| ZeRO-3 | Two parameter all-gathers + gradient reduce-scatter | `2.90625P` | `3P` |
+| ZeRO-3 | Six layer all-gathers + gradient reduce-scatter | `2.90625P` | `3P` |
 
 For the 30B example, `P = 60 GB`, so the rounded lesson estimates are 120 GB per rank per step for data parallelism, ZeRO-1, and ZeRO-2, and 180 GB for ZeRO-3.
 
@@ -154,7 +164,7 @@ For the 30B example, `P = 60 GB`, so the rounded lesson estimates are 120 GB per
 
 The experiment runs four Adam steps. It reconstructs the full FP32 master parameters and both Adam moment vectors from the sharded states and compares them with the data-parallel reference.
 
-All stages produce zero maximum difference in the included run. The FP16 compute parameters are also identical, and the evaluation loss drops from `65.242112` to `62.032010`.
+All stages produce zero maximum difference in the included run. The FP16 neural-network weights are also identical, and the evaluation loss drops from `5.572334` to `4.105666`.
 
 This shows that ZeRO changes storage and communication, not the intended optimization result.
 
@@ -164,7 +174,7 @@ My main takeaway is that ZeRO is a progression of ownership decisions. It is not
 
 The result that stood out to me was how much memory ZeRO-1 removes immediately. Sharding the optimizer state attacks 12 of the 16 bytes stored per parameter. ZeRO-2 then removes non-owned gradient storage while keeping the same approximate communication volume.
 
-ZeRO-3 is the strongest option when model state does not otherwise fit, but it is not automatically the fastest. It saves persistent memory by requiring parameter data to move during computation. Whether that trade is worthwhile depends on the model's activation memory, layer sizes, interconnect, bucket configuration, and how much communication overlaps with computation.
+The three-layer execution made the ZeRO-3 trade-off clearer to me. It never needs a permanent full-model parameter copy, but each layer must be assembled before its computation. The three forward gathers together equal one model copy, and the three backward gathers equal another. Whether that trade is worthwhile depends on activation memory, layer sizes, interconnect, bucket configuration, and how much communication overlaps with computation.
 
 For the Session 12 30B example, I would prefer ZeRO-2 if 32 GPUs provide enough real headroom after measuring activations. I would choose ZeRO-3 if memory remains the binding constraint or if fewer GPUs must hold the model. I would make the final decision from measured step time and peak memory rather than from the state table alone.
 
@@ -172,9 +182,9 @@ For the Session 12 30B example, I would prefer ZeRO-2 if 32 GPUs provide enough 
 
 - CPU thread timing does not predict CUDA, NVLink, or InfiniBand performance.
 - Collectives are emulated by a central controller.
-- The model has one flat parameter vector rather than many uneven transformer layers.
+- The model is a small three-layer MLP rather than a transformer with many uneven layers.
 - Activation memory and framework overhead are explained but not fully allocated.
-- Real ZeRO-3 gathers layer-sized or bucket-sized groups, not necessarily the entire model.
+- Real frameworks use more sophisticated layer wrapping, prefetching, bucketing, and communication overlap.
 
 ## Submission check
 
