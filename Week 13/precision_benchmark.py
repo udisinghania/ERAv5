@@ -18,7 +18,8 @@ import torch
 from model_precise import Decoder
 
 ROOT=Path(__file__).resolve().parent
-CORPUS=ROOT.parent/'Corpus_20M_v1'
+DATA_ROOT=ROOT/'data' if (ROOT/'data').is_dir() else ROOT.parent
+CORPUS=DATA_ROOT/'Corpus_20M_v1'
 sys.path.insert(0,str(CORPUS))
 from packed_dataset import PackedDataset
 

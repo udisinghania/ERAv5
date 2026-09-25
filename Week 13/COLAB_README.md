@@ -29,7 +29,8 @@ Colab run.
 
 ## What the notebook does
 
-1. Mounts Drive, installs Git LFS, and asks for the GitHub HTTPS clone URL.
+1. Mounts Drive, installs Git LFS, and clones the submitted repository. Set
+   `ASSIGNMENT13_REPO_URL` only when testing a fork.
 2. Installs the small Python dependency file without replacing Colab's CUDA
    PyTorch build.
 3. Copies repository data into Drive when it is not already present, then

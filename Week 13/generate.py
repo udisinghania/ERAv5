@@ -7,7 +7,8 @@ import torch
 from model_precise import Decoder
 
 ROOT=Path(__file__).resolve().parent
-sys.path.insert(0,str(ROOT.parent/'Corpus_20M_v1'))
+DATA_ROOT=ROOT/'data' if (ROOT/'data').is_dir() else ROOT.parent
+sys.path.insert(0,str(DATA_ROOT/'Corpus_20M_v1'))
 from build_corpus import FastTokenizer
 
 

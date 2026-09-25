@@ -1,5 +1,7 @@
 # Assignment 13: Reversible Training for a 20M LLM
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/udisinghania/ERAv5/blob/main/Week%2013/Reversibility_20M_50M_Colab.ipynb)
+
 ## Result
 
 A 20,166,912-parameter decoder-only language model was trained from scratch for
@@ -152,6 +154,33 @@ This is approximately 402 MiB and contains the exact packed training arrays,
 tokenizer, and validation arrays used by the experiment. Large model checkpoints
 are not included.
 
+### Source mix
+
+| Packed source | Selected training tokens | Share |
+| --- | ---: | ---: |
+| Frozen Assignment 6 corpus lanes | 35,728,273 | 71.46% |
+| [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu), `sample-10BT` | 9,505,720 | 19.01% |
+| [Wikipedia](https://huggingface.co/datasets/wikimedia/wikipedia), `20231101.en` | 2,851,073 | 5.70% |
+| [Cosmopedia v2](https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus) | 1,914,934 | 3.83% |
+| **Total** | **50,000,000** | **100%** |
+
+### Upstream licences
+
+| Dataset | Licence used by the source snapshot |
+| --- | --- |
+| FineWeb-Edu | ODC-By 1.0 |
+| Wikipedia | CC BY-SA 3.0 and GFDL |
+| Cosmopedia v2 in SmolLM Corpus | ODC-By 1.0 repository metadata |
+| [OpenWebMath](https://huggingface.co/datasets/open-web-math/open-web-math) | ODC-By 1.0; underlying page terms also apply |
+| [CodeParrot Clean](https://huggingface.co/datasets/codeparrot/codeparrot-clean) | Per-record; only Apache-2.0, BSD-2/3-Clause, ISC, MIT and Unlicense rows were retained |
+| [GSM8K](https://huggingface.co/datasets/openai/gsm8k) | MIT |
+| [Sangraha](https://huggingface.co/datasets/ai4bharat/sangraha) | CC BY 4.0 |
+| [Samanantar](https://huggingface.co/datasets/ai4bharat/samanantar) | CC BY-NC 4.0 |
+| [Hermes Function Calling](https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1) | Apache-2.0 |
+
+The repository's MIT licence covers the code. Packed text remains subject to
+the applicable upstream licences and source terms.
+
 ## Reproduce
 
 The easiest path is the checkpoint-aware Colab notebook:
@@ -173,6 +202,8 @@ The notebook:
 For a local run:
 
 ```powershell
+git clone https://github.com/udisinghania/ERAv5.git
+Set-Location ".\ERAv5\Week 13"
 git lfs install
 git lfs pull
 python -m pip install -r requirements.txt

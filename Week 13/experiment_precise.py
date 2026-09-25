@@ -17,8 +17,9 @@ import torch
 from model_precise import Decoder, CONFIG, allowed_attention, forward_pair
 
 ROOT=Path(__file__).resolve().parent
-CORPUS=ROOT.parent/'Corpus_20M_v1'
-VALIDATION=ROOT.parent/'Run_20M_50M_v1'/'validation'
+DATA_ROOT=ROOT/'data' if (ROOT/'data').is_dir() else ROOT.parent
+CORPUS=DATA_ROOT/'Corpus_20M_v1'
+VALIDATION=DATA_ROOT/'Run_20M_50M_v1'/'validation'
 sys.path.insert(0,str(CORPUS))
 from packed_dataset import PackedDataset
 SEED=20260919
@@ -304,4 +305,3 @@ def main():
 
 
 if __name__=='__main__':main()
-
