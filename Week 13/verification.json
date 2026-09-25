@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "run": "baseline_precise_b32",
+      "status": "PASS",
+      "sha256": "61712b53cac7b9ca84d392ff09b3e711ac0e14b70e4747e94ab15cacf0dd0cc2"
+    },
+    {
+      "run": "midpoint_precise_b32",
+      "status": "PASS",
+      "sha256": "4e9106dc3993ffac6856f9810448fcd62cef4c4e0a94e0d6b72204a3f4ae3de7"
+    },
+    {
+      "run": "midpoint_precise_b100",
+      "status": "PASS",
+      "sha256": "0468cd50c1949568899255333c4eac3e8e318cac262f3375fb88044f17db1d37"
+    },
+    {
+      "run": "euler_precise_b32",
+      "status": "PASS",
+      "sha256": "c9c6958dff940ff3079defcb5d4d3a6b40760d31ebf2d4572c95d2dc25859e05"
+    },
+    {
+      "run": "euler_precise_b102",
+      "status": "PASS",
+      "sha256": "efb60e70ce2e1c497c9825e8925945277d9e3c8d63d7045fb4f773b97c75ede9"
+    }
+  ],
+  "identical_initial_parameter_sha256": "d3e27733dc0f8b85d173f00eb8c835373f3522dec3512a6d434e0b984dc3069d"
+}

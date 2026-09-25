@@ -1,0 +1,16 @@
+{
+  "selected": "midpoint",
+  "criterion": "Lowest fixed-probe validation loss after equal 5M-target pilots; gradient audit must pass.",
+  "pilots": [
+    {
+      "variant": "midpoint",
+      "loss": 4.445596241899151,
+      "tokens": 5000000
+    },
+    {
+      "variant": "euler",
+      "loss": 4.45587355428405,
+      "tokens": 5000000
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "variant": "euler",
+  "precision": "fp16",
+  "policy": "FP16 AMP matrix ops, FP32 weights/Adam, FP64 residuals",
+  "gradient_scaler": true,
+  "fp16_initial_scale": 1024.0,
+  "batch": 32,
+  "context": 512,
+  "steps": 20,
+  "supervised_targets_per_step": 10638,
+  "initial_loss": 9.107524871826172,
+  "final_loss": 4.329176425933838,
+  "mean_step_seconds": 0.2589693799983555,
+  "target_tokens_per_second": 41078.21550203176,
+  "physical_tokens_per_second": 63266.166834488475,
+  "peak_allocated_bytes": 1456935936,
+  "peak_reserved_bytes": 1826619392,
+  "final_scaler_scale": 1024.0,
+  "all_parameters_finite": true
+}

@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "variant": "midpoint",
+      "device": "cpu",
+      "amp": false,
+      "parameter_dtype": "torch.float64",
+      "loss": 4.165389537811279,
+      "gradient_relative_l2": 0.0,
+      "gradient_cosine": 1.0000042915344238,
+      "gradient_max_abs": 0.0,
+      "reconstruction_relative_l2": 1.1345366610720326e-16,
+      "status": "PASS"
+    },
+    {
+      "variant": "midpoint",
+      "device": "cuda",
+      "amp": true,
+      "parameter_dtype": "torch.float32",
+      "loss": 9.077696800231934,
+      "gradient_relative_l2": 0.0050572496838867664,
+      "gradient_cosine": 0.9999872446060181,
+      "gradient_max_abs": 0.0007174387574195862,
+      "reconstruction_relative_l2": 0.014317849650979042,
+      "status": "PASS"
+    },
+    {
+      "variant": "midpoint",
+      "device": "cuda",
+      "amp": false,
+      "parameter_dtype": "torch.float32",
+      "loss": 9.077862739562988,
+      "gradient_relative_l2": 1.6619520692984224e-06,
+      "gradient_cosine": 0.9999999403953552,
+      "gradient_max_abs": 2.8312206268310547e-07,
+      "reconstruction_relative_l2": 3.996635314251762e-06,
+      "status": "PASS"
+    },
+    {
+      "variant": "euler",
+      "device": "cpu",
+      "amp": false,
+      "parameter_dtype": "torch.float64",
+      "loss": 4.16532564163208,
+      "gradient_relative_l2": 0.0,
+      "gradient_cosine": 1.0000052452087402,
+      "gradient_max_abs": 0.0,
+      "reconstruction_relative_l2": 1.3932700101422943e-16,
+      "status": "PASS"
+    },
+    {
+      "variant": "euler",
+      "device": "cuda",
+      "amp": true,
+      "parameter_dtype": "torch.float32",
+      "loss": 9.099445343017578,
+      "gradient_relative_l2": 0.004391864407807589,
+      "gradient_cosine": 0.9999903440475464,
+      "gradient_max_abs": 0.0007476806640625,
+      "reconstruction_relative_l2": 0.012481775134801865,
+      "status": "PASS"
+    },
+    {
+      "variant": "euler",
+      "device": "cuda",
+      "amp": false,
+      "parameter_dtype": "torch.float32",
+      "loss": 9.099318504333496,
+      "gradient_relative_l2": 1.7983460338655277e-06,
+      "gradient_cosine": 0.9999998807907104,
+      "gradient_max_abs": 4.6938657760620117e-07,
+      "reconstruction_relative_l2": 2.645335825945949e-06,
+      "status": "PASS"
+    },
+    {
+      "variant": "baseline",
+      "masking_and_shift": "PASS"
+    },
+    {
+      "variant": "midpoint",
+      "masking_and_shift": "PASS"
+    },
+    {
+      "variant": "euler",
+      "masking_and_shift": "PASS"
+    },
+    {
+      "stack_saved_bytes_depth_3": 12576,
+      "stack_saved_bytes_depth_12": 12576,
+      "status": "PASS"
+    }
+  ]
+}

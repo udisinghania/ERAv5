@@ -1,0 +1,20 @@
+{
+  "captured_utc": "2026-09-19T15:28:36.498831+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.5",
+  "pytorch": "2.5.1+cu121",
+  "pytorch_cuda": "12.1",
+  "cudnn": 90100,
+  "numpy": "1.26.4",
+  "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+  "compute_capability": [
+    8,
+    6
+  ],
+  "bf16_supported": true,
+  "driver": "546.30",
+  "gpu_memory_bytes": 8589410304,
+  "precision_policy": "BF16 matrix operations; FP32 parameters, normalization, loss and Adam; FP64 reversible residual streams; TF32 disabled",
+  "measured_gpu_power_watts_20_sample_average": 114.21,
+  "power_measurement_note": "Twenty one-second nvidia-smi samples during a midpoint batch-100 LR pilot; min 109.04 W, max 115.04 W."
+}

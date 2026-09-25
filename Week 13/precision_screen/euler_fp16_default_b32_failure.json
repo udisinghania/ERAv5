@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "variant": "euler",
+  "precision": "fp16",
+  "policy": "FP16 AMP matrix ops, FP32 weights/Adam, FP64 residuals",
+  "gradient_scaler": true,
+  "fp16_initial_scale": 65536.0,
+  "batch": 32,
+  "context": 512,
+  "requested_steps": 20,
+  "failure": "Non-finite total gradient norm before step 20",
+  "exception": "RuntimeError: The total norm of order 2.0 for gradients is non-finite"
+}

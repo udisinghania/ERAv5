@@ -1,0 +1,116 @@
+{
+  "criterion": "Lowest fixed-probe loss after 5M supervised targets; same maximum batch and seed.",
+  "pilot_tokens": 5000000,
+  "variants": {
+    "midpoint": {
+      "batch": 100,
+      "candidates": [
+        {
+          "name": "lrpilot_midpoint_b100_lr450",
+          "peak_lr": 0.00045,
+          "min_lr": 4.4999999999999996e-05,
+          "loss": 4.731366636475885,
+          "perplexity": 113.4505020457272
+        },
+        {
+          "name": "lrpilot_midpoint_b100_lr600",
+          "peak_lr": 0.0006,
+          "min_lr": 5.9999999999999995e-05,
+          "loss": 4.768049774997556,
+          "perplexity": 117.68949700672368
+        },
+        {
+          "name": "lrpilot_midpoint_b100_lr750",
+          "peak_lr": 0.00075,
+          "min_lr": 7.500000000000001e-05,
+          "loss": 4.788788938857897,
+          "perplexity": 120.15576453583208
+        },
+        {
+          "name": "lrpilot_midpoint_b100_lr900",
+          "peak_lr": 0.0009,
+          "min_lr": 8.999999999999999e-05,
+          "loss": 4.687952743308917,
+          "perplexity": 108.63055736710552
+        },
+        {
+          "name": "lrpilot_midpoint_b100_lr1200",
+          "peak_lr": 0.0012,
+          "min_lr": 0.00011999999999999999,
+          "loss": 4.934668382852409,
+          "perplexity": 139.02703113933225
+        },
+        {
+          "name": "lrpilot_midpoint_b100_lr1500",
+          "peak_lr": 0.0015,
+          "min_lr": 0.00015000000000000001,
+          "loss": 4.821691210034202,
+          "perplexity": 124.17491916716614
+        }
+      ],
+      "selected": {
+        "name": "lrpilot_midpoint_b100_lr900",
+        "peak_lr": 0.0009,
+        "min_lr": 8.999999999999999e-05,
+        "loss": 4.687952743308917,
+        "perplexity": 108.63055736710552
+      },
+      "full_run": "midpoint_precise_b100_lr900_tuned"
+    },
+    "euler": {
+      "batch": 102,
+      "candidates": [
+        {
+          "name": "lrpilot_euler_b102_lr450",
+          "peak_lr": 0.00045,
+          "min_lr": 4.4999999999999996e-05,
+          "loss": 4.747404849657748,
+          "perplexity": 115.28471481398847
+        },
+        {
+          "name": "lrpilot_euler_b102_lr600",
+          "peak_lr": 0.0006,
+          "min_lr": 5.9999999999999995e-05,
+          "loss": 4.690438012390283,
+          "perplexity": 108.90086929242352
+        },
+        {
+          "name": "lrpilot_euler_b102_lr750",
+          "peak_lr": 0.00075,
+          "min_lr": 7.500000000000001e-05,
+          "loss": 4.710917215664119,
+          "perplexity": 111.15406541381877
+        },
+        {
+          "name": "lrpilot_euler_b102_lr900",
+          "peak_lr": 0.0009,
+          "min_lr": 8.999999999999999e-05,
+          "loss": 4.728279860212044,
+          "perplexity": 113.1008456620371
+        },
+        {
+          "name": "lrpilot_euler_b102_lr1200",
+          "peak_lr": 0.0012,
+          "min_lr": 0.00011999999999999999,
+          "loss": 4.745833887483223,
+          "perplexity": 115.10374907010151
+        },
+        {
+          "name": "lrpilot_euler_b102_lr1500",
+          "peak_lr": 0.0015,
+          "min_lr": 0.00015000000000000001,
+          "loss": 4.731135074505871,
+          "perplexity": 113.42423426540128
+        }
+      ],
+      "selected": {
+        "name": "lrpilot_euler_b102_lr600",
+        "peak_lr": 0.0006,
+        "min_lr": 5.9999999999999995e-05,
+        "loss": 4.690438012390283,
+        "perplexity": 108.90086929242352
+      },
+      "full_run": "euler_precise_b102"
+    }
+  }
+}

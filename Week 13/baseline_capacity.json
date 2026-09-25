@@ -1,0 +1,8 @@
+{
+  "variant": "baseline",
+  "largest_stress_pass_batch": 54,
+  "next_batch": 55,
+  "next_result": "OOM",
+  "allocator_fraction": 0.9,
+  "note": "Capacity benchmark only; the matched full baseline uses fixed batch 32."
+}

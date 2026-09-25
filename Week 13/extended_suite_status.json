@@ -1,0 +1,12 @@
+{
+  "state": "COMPLETE",
+  "additional_seed": 20260920,
+  "lr_tuning": "lr_tuning.json",
+  "runs": [
+    "baseline_precise_b32_seed20260920",
+    "midpoint_precise_b32_seed20260920",
+    "euler_precise_b32_seed20260920",
+    "midpoint_precise_b100_lr900_tuned",
+    "euler_precise_b102"
+  ]
+}

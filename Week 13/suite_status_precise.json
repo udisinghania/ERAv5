@@ -1,0 +1,15 @@
+{
+  "state": "COMPLETE",
+  "selected_variant": "midpoint",
+  "midpoint_max_batch": 100,
+  "euler_max_batch": 102,
+  "full_runs": [
+    "baseline_precise_b32",
+    "midpoint_precise_b32",
+    "midpoint_precise_b100",
+    "euler_precise_b32",
+    "euler_precise_b102"
+  ],
+  "suite_wall_seconds": 23.714722156524658,
+  "note": "suite_wall_seconds covers the original orchestrator pass; individual result.json files contain measured run times."
+}

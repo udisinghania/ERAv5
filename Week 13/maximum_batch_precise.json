@@ -1,0 +1,10 @@
+{
+  "variant": "midpoint",
+  "largest_stress_pass_batch": 100,
+  "next_batch": 101,
+  "next_result": "OOM",
+  "allocator_fraction": 0.9,
+  "scope": "Maximum tested integer microbatch on the real packed corpus at context 512, BF16 matrix ops / FP64 residuals, unchunked output loss, 90% CUDA allocator cap. Batch 100 passed 22 optimizer steps / 1M supervised targets before the full run; batches 101, 102, 104 and 105 failed on their first real-data backward pass. Synthetic fully-supervised stress had overestimated the limit as 105.",
+  "stress_steps": 22,
+  "gradient_accumulation": 1
+}

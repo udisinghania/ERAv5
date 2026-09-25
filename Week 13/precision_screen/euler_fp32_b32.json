@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "variant": "euler",
+  "precision": "fp32",
+  "policy": "FP32 matrix ops, FP32 weights/Adam, FP64 residuals",
+  "gradient_scaler": false,
+  "batch": 32,
+  "context": 512,
+  "steps": 20,
+  "supervised_targets_per_step": 10638,
+  "initial_loss": 9.107514381408691,
+  "final_loss": 4.420353889465332,
+  "mean_step_seconds": 0.5791386000035952,
+  "target_tokens_per_second": 18368.659937248118,
+  "physical_tokens_per_second": 28290.291822887117,
+  "peak_allocated_bytes": 1457054208,
+  "peak_reserved_bytes": 1790967808,
+  "final_scaler_scale": null,
+  "all_parameters_finite": true
+}

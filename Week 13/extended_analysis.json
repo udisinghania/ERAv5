@@ -1,0 +1,299 @@
+{
+  "seed_statistics": {
+    "baseline": {
+      "seeds": [
+        20260919,
+        20260920
+      ],
+      "validation_loss": {
+        "n": 2,
+        "mean": 3.490572113846656,
+        "sample_sd": 0.008057087927843366,
+        "values": [
+          3.49626933535705,
+          3.4848748923362614
+        ]
+      },
+      "target_tokens_per_second": {
+        "n": 2,
+        "mean": 64151.04176109421,
+        "sample_sd": 2797.1769124182138,
+        "values": [
+          62173.13899814484,
+          66128.94452404357
+        ]
+      },
+      "peak_allocated_gib": {
+        "n": 2,
+        "mean": 3.9331469535827637,
+        "sample_sd": 0.0,
+        "values": [
+          3.9331469535827637,
+          3.9331469535827637
+        ]
+      }
+    },
+    "midpoint": {
+      "seeds": [
+        20260919,
+        20260920
+      ],
+      "validation_loss": {
+        "n": 2,
+        "mean": 3.545772271595524,
+        "sample_sd": 0.03794617845816951,
+        "values": [
+          3.572604271703411,
+          3.518940271487638
+        ]
+      },
+      "target_tokens_per_second": {
+        "n": 2,
+        "mean": 44865.674621259284,
+        "sample_sd": 291.2521310637103,
+        "values": [
+          44659.7282643491,
+          45071.62097816946
+        ]
+      },
+      "peak_allocated_gib": {
+        "n": 2,
+        "mean": 1.8882479667663574,
+        "sample_sd": 0.0,
+        "values": [
+          1.8882479667663574,
+          1.8882479667663574
+        ]
+      }
+    },
+    "euler": {
+      "seeds": [
+        20260919,
+        20260920
+      ],
+      "validation_loss": {
+        "n": 2,
+        "mean": 3.6774221563234524,
+        "sample_sd": 0.049780363168665284,
+        "values": [
+          3.7126221886899446,
+          3.64222212395696
+        ]
+      },
+      "target_tokens_per_second": {
+        "n": 2,
+        "mean": 46904.809321435154,
+        "sample_sd": 167.7949626240554,
+        "values": [
+          46786.16036551474,
+          47023.45827735557
+        ]
+      },
+      "peak_allocated_gib": {
+        "n": 2,
+        "mean": 1.8878588676452637,
+        "sample_sd": 0.0,
+        "values": [
+          1.8878588676452637,
+          1.8878588676452637
+        ]
+      }
+    }
+  },
+  "memory_analysis": {
+    "baseline_b32_allocated_gib": 3.9331469535827637,
+    "midpoint_b32_allocated_gib": 1.8882479667663574,
+    "euler_b32_allocated_gib": 1.8878588676452637,
+    "midpoint_saved_gib": 2.0448989868164062,
+    "euler_saved_gib": 2.0452880859375,
+    "midpoint_saved_percent": 51.991420888906184,
+    "euler_saved_percent": 52.001313708210574,
+    "baseline_max_batch": 54,
+    "midpoint_max_batch": 100,
+    "euler_max_batch": 102,
+    "midpoint_capacity_multiple": 1.8518518518518519,
+    "euler_capacity_multiple": 1.8888888888888888
+  },
+  "cost_estimate": {
+    "scope": "Original five, one additional tuned maximum-batch run, and three second-seed fixed-batch runs. Euler tuning retained its original 6e-4 run.",
+    "measured_training_hours": 2.901619470555484,
+    "measured_wall_hours": 3.0055036639444492,
+    "lr_pilot_training_hours": 0.3164015657221656,
+    "lr_pilot_wall_hours": 0.3253107374444436,
+    "measured_training_hours_including_lr_pilots": 3.2180210362776496,
+    "measured_wall_hours_including_lr_pilots": 3.330814401388893,
+    "run_training_hours": {
+      "baseline_precise_b32": 0.22339050452806178,
+      "midpoint_precise_b32": 0.310993582555586,
+      "midpoint_precise_b100": 0.2808990258609427,
+      "euler_precise_b32": 0.29685891683315274,
+      "euler_precise_b102": 0.2885638722499344,
+      "midpoint_precise_b100_lr900_tuned": 0.6873738052778289,
+      "baseline_precise_b32_seed20260920": 0.21002737891633944,
+      "midpoint_precise_b32_seed20260920": 0.30815152833344955,
+      "euler_precise_b32_seed20260920": 0.2953608560001885
+    },
+    "run_wall_hours": {
+      "baseline_precise_b32": 0.23420729052777461,
+      "midpoint_precise_b32": 0.3229896544444475,
+      "midpoint_precise_b100": 0.29338592658333557,
+      "euler_precise_b32": 0.3091490410555545,
+      "euler_precise_b102": 0.30018158225000663,
+      "midpoint_precise_b100_lr900_tuned": 0.6985520473333356,
+      "baseline_precise_b32_seed20260920": 0.22079234952777269,
+      "midpoint_precise_b32_seed20260920": 0.3198470778055586,
+      "euler_precise_b32_seed20260920": 0.3063986944166633
+    },
+    "measured_gpu_power_watts_during_midpoint_b100": 114.21,
+    "estimated_gpu_energy_kwh": 0.34325857345909555,
+    "estimated_gpu_energy_kwh_including_lr_pilots": 0.38041231278262544,
+    "assumed_whole_laptop_power_watts": 160.0,
+    "whole_laptop_power_sensitivity_watts": [
+      140,
+      200
+    ],
+    "estimated_whole_laptop_energy_kwh": 0.48088058623111185,
+    "estimated_whole_laptop_energy_kwh_including_lr_pilots": 0.5329303042222229,
+    "assumed_electricity_inr_per_kwh": 8.0,
+    "estimated_local_electricity_inr": 3.847044689848895,
+    "estimated_local_electricity_inr_including_lr_pilots": 4.263442433777783,
+    "local_cost_formula": "wall_hours * assumed_whole_laptop_kW * local_tariff_per_kWh",
+    "assumed_grid_kg_co2e_per_kwh": 0.7,
+    "illustrative_operational_kg_co2e": 0.33661641036177825,
+    "gcp_t4_gpu_only_usd_per_hour": 0.35,
+    "illustrative_gcp_t4_gpu_only_usd": 1.051926282380557,
+    "illustrative_gcp_t4_gpu_only_usd_including_lr_pilots": 1.1657850404861125,
+    "cloud_caveat": "GPU-only lower bound using published Google Cloud T4 on-demand price; excludes VM CPU/RAM/storage and does not adjust for T4 performance.",
+    "colab_caveat": "Free Colab can have zero direct charge, but GPU type, limits, availability, and runtime duration are not guaranteed.",
+    "thermal_caveat": "Second-seed and tuned-midpoint throughput was measured while the laptop was in Quiet Mode and thermally constrained. Those runs remain valid for loss, but their speed is excluded from controlled performance comparisons.",
+    "approximate_6NT_flops_per_run": 6050073600000000,
+    "approximate_6NT_pflops_per_run": 6.0500736,
+    "flops_caveat": "6*N*T is a coarse dense-transformer training estimate; reversible recomputation, attention, padding and implementation details are not captured."
+  },
+  "data_compute_context": {
+    "parameters": 20166912,
+    "training_tokens": 50000000,
+    "tokens_per_parameter": 2.4793086814679413,
+    "illustrative_20_tokens_per_parameter_target": 403338240,
+    "additional_tokens_to_20_per_parameter": 353338240,
+    "note": "The 20 tokens/parameter value is a rough Chinchilla-era compute-optimal reference, not a quality guarantee or a fitted law for this tokenizer/model/data mixture."
+  },
+  "lr_tuning": {
+    "criterion": "Lowest fixed-probe loss after 5M supervised targets; same maximum batch and seed.",
+    "pilot_tokens": 5000000,
+    "variants": {
+      "midpoint": {
+        "batch": 100,
+        "candidates": [
+          {
+            "name": "lrpilot_midpoint_b100_lr450",
+            "peak_lr": 0.00045,
+            "min_lr": 4.4999999999999996e-05,
+            "loss": 4.731366636475885,
+            "perplexity": 113.4505020457272
+          },
+          {
+            "name": "lrpilot_midpoint_b100_lr600",
+            "peak_lr": 0.0006,
+            "min_lr": 5.9999999999999995e-05,
+            "loss": 4.768049774997556,
+            "perplexity": 117.68949700672368
+          },
+          {
+            "name": "lrpilot_midpoint_b100_lr750",
+            "peak_lr": 0.00075,
+            "min_lr": 7.500000000000001e-05,
+            "loss": 4.788788938857897,
+            "perplexity": 120.15576453583208
+          },
+          {
+            "name": "lrpilot_midpoint_b100_lr900",
+            "peak_lr": 0.0009,
+            "min_lr": 8.999999999999999e-05,
+            "loss": 4.687952743308917,
+            "perplexity": 108.63055736710552
+          },
+          {
+            "name": "lrpilot_midpoint_b100_lr1200",
+            "peak_lr": 0.0012,
+            "min_lr": 0.00011999999999999999,
+            "loss": 4.934668382852409,
+            "perplexity": 139.02703113933225
+          },
+          {
+            "name": "lrpilot_midpoint_b100_lr1500",
+            "peak_lr": 0.0015,
+            "min_lr": 0.00015000000000000001,
+            "loss": 4.821691210034202,
+            "perplexity": 124.17491916716614
+          }
+        ],
+        "selected": {
+          "name": "lrpilot_midpoint_b100_lr900",
+          "peak_lr": 0.0009,
+          "min_lr": 8.999999999999999e-05,
+          "loss": 4.687952743308917,
+          "perplexity": 108.63055736710552
+        },
+        "full_run": "midpoint_precise_b100_lr900_tuned"
+      },
+      "euler": {
+        "batch": 102,
+        "candidates": [
+          {
+            "name": "lrpilot_euler_b102_lr450",
+            "peak_lr": 0.00045,
+            "min_lr": 4.4999999999999996e-05,
+            "loss": 4.747404849657748,
+            "perplexity": 115.28471481398847
+          },
+          {
+            "name": "lrpilot_euler_b102_lr600",
+            "peak_lr": 0.0006,
+            "min_lr": 5.9999999999999995e-05,
+            "loss": 4.690438012390283,
+            "perplexity": 108.90086929242352
+          },
+          {
+            "name": "lrpilot_euler_b102_lr750",
+            "peak_lr": 0.00075,
+            "min_lr": 7.500000000000001e-05,
+            "loss": 4.710917215664119,
+            "perplexity": 111.15406541381877
+          },
+          {
+            "name": "lrpilot_euler_b102_lr900",
+            "peak_lr": 0.0009,
+            "min_lr": 8.999999999999999e-05,
+            "loss": 4.728279860212044,
+            "perplexity": 113.1008456620371
+          },
+          {
+            "name": "lrpilot_euler_b102_lr1200",
+            "peak_lr": 0.0012,
+            "min_lr": 0.00011999999999999999,
+            "loss": 4.745833887483223,
+            "perplexity": 115.10374907010151
+          },
+          {
+            "name": "lrpilot_euler_b102_lr1500",
+            "peak_lr": 0.0015,
+            "min_lr": 0.00015000000000000001,
+            "loss": 4.731135074505871,
+            "perplexity": 113.42423426540128
+          }
+        ],
+        "selected": {
+          "name": "lrpilot_euler_b102_lr600",
+          "peak_lr": 0.0006,
+          "min_lr": 5.9999999999999995e-05,
+          "loss": 4.690438012390283,
+          "perplexity": 108.90086929242352
+        },
+        "full_run": "euler_precise_b102"
+      }
+    }
+  },
+  "training_curve": "training_curves.png",
+  "seed_errorbar_figure": "seed_loss_errorbars.png"
+}

@@ -1,0 +1,12 @@
+{
+  "precision": "fp8",
+  "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+  "compute_capability": [
+    8,
+    6
+  ],
+  "torch_exposes_fp8_dtype": true,
+  "native_matrix_multiply": "UNAVAILABLE",
+  "status": "UNSUPPORTED_ON_THIS_GPU",
+  "error": "RuntimeError('\"addmm_cuda\" not implemented for \\'Float8_e4m3fn\\'')"
+}

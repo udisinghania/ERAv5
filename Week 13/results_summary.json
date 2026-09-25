@@ -1,0 +1,78 @@
+{
+  "status": "COMPLETE",
+  "hardware": "NVIDIA GeForce RTX 3070 Laptop GPU (8 GiB)",
+  "parameters": 20166912,
+  "training_targets_per_run": 50000000,
+  "validation_targets": 5049456,
+  "context_length": 512,
+  "fixed_batch": 32,
+  "precision": "BF16 matrix operations; FP32 parameters, normalization, loss, and Adam state; FP64 reversible residual streams",
+  "selected_reversible_variant": "midpoint",
+  "controlled_runs": [
+    {
+      "run": "baseline_fixed",
+      "variant": "baseline",
+      "batch": 32,
+      "updates": 3277,
+      "final_loss": 3.4963,
+      "perplexity": 32.99,
+      "target_tokens_per_second": 62173,
+      "peak_allocated_gib": 3.93,
+      "training_minutes": 13.40
+    },
+    {
+      "run": "midpoint_fixed",
+      "variant": "midpoint",
+      "batch": 32,
+      "updates": 3277,
+      "final_loss": 3.5726,
+      "perplexity": 35.61,
+      "target_tokens_per_second": 44660,
+      "peak_allocated_gib": 1.89,
+      "training_minutes": 18.66
+    },
+    {
+      "run": "euler_fixed",
+      "variant": "euler",
+      "batch": 32,
+      "updates": 3277,
+      "final_loss": 3.7126,
+      "perplexity": 40.96,
+      "target_tokens_per_second": 46786,
+      "peak_allocated_gib": 1.89,
+      "training_minutes": 17.81
+    },
+    {
+      "run": "midpoint_maximum",
+      "variant": "midpoint",
+      "batch": 100,
+      "updates": 1049,
+      "final_loss": 3.8140,
+      "perplexity": 45.33,
+      "target_tokens_per_second": 49444,
+      "peak_allocated_gib": 5.36,
+      "training_minutes": 16.85
+    },
+    {
+      "run": "euler_maximum",
+      "variant": "euler",
+      "batch": 102,
+      "updates": 1029,
+      "final_loss": 3.8980,
+      "perplexity": 49.30,
+      "target_tokens_per_second": 48131,
+      "peak_allocated_gib": 5.46,
+      "training_minutes": 17.31
+    }
+  ],
+  "memory_findings": {
+    "baseline_maximum_batch": 54,
+    "midpoint_maximum_batch": 100,
+    "euler_maximum_batch": 102,
+    "midpoint_saved_gib_at_batch_32": 2.04,
+    "midpoint_saved_percent_at_batch_32": 52.0,
+    "euler_saved_gib_at_batch_32": 2.05,
+    "euler_saved_percent_at_batch_32": 52.0
+  },
+  "verification": "PASS"
+}

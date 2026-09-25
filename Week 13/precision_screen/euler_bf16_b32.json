@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "variant": "euler",
+  "precision": "bf16",
+  "policy": "BF16 AMP matrix ops, FP32 weights/Adam, FP64 residuals",
+  "gradient_scaler": false,
+  "batch": 32,
+  "context": 512,
+  "steps": 20,
+  "supervised_targets_per_step": 10638,
+  "initial_loss": 9.107401847839355,
+  "final_loss": 4.251683235168457,
+  "mean_step_seconds": 0.2477013399999123,
+  "target_tokens_per_second": 42946.88111095308,
+  "physical_tokens_per_second": 66144.17184826614,
+  "peak_allocated_bytes": 1456934400,
+  "peak_reserved_bytes": 1826619392,
+  "final_scaler_scale": null,
+  "all_parameters_finite": true
+}

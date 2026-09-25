@@ -1,0 +1,10 @@
+{
+  "variant": "euler",
+  "largest_stress_pass_batch": 102,
+  "next_batch": 103,
+  "next_result": "OOM",
+  "allocator_fraction": 0.9,
+  "scope": "Maximum tested integer microbatch on the real packed corpus at context 512, BF16 matrix ops / FP64 residuals, unchunked output loss, and a 90% CUDA allocator cap. Batch 102 passed 21 optimizer steps / 1M supervised targets and the complete 50M-target run; batches 103 and 104 failed on their first real-data backward pass.",
+  "stress_steps": 21,
+  "gradient_accumulation": 1
+}

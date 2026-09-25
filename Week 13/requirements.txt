@@ -1,0 +1,4 @@
+# Colab already supplies a CUDA-compatible PyTorch build. Do not replace it
+# blindly: the wheel must match the runtime's CUDA stack.
+numpy==1.26.4
+pandas>=2.0,<3

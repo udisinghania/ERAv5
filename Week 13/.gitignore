@@ -1,0 +1,26 @@
+# Checkpoints and resumable optimizer state
+*.pt
+
+# Python / notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Per-run training directories (large and reproducible)
+baseline_precise_b*/
+midpoint_precise_b*/
+euler_precise_b*/
+pilot_*/
+pilot-*/
+lrpilot_*/
+real_capacity_*/
+euler_real_capacity_*/
+capacity_*/
+batch_search/
+batch_search_precise/
+
+# Local scratch files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

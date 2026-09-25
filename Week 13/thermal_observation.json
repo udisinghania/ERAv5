@@ -1,0 +1,11 @@
+{
+  "timestamp_local": "2026-09-19 21:39:41.953",
+  "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+  "performance_state": "P0",
+  "temperature_c": 88,
+  "power_draw_watts": 84.75,
+  "sm_clock_mhz": 900,
+  "memory_used_mib": 3450,
+  "memory_total_mib": 8192,
+  "context": "Single nvidia-smi observation during the second-seed Euler batch-32 run while the laptop was in Quiet Mode. This documents thermal/power throttling and is not used as an energy average."
+}

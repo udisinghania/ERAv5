@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "run": "baseline_precise_b32",
+      "status": "PASS",
+      "seed": 20260919,
+      "sha256": "61712b53cac7b9ca84d392ff09b3e711ac0e14b70e4747e94ab15cacf0dd0cc2"
+    },
+    {
+      "run": "midpoint_precise_b32",
+      "status": "PASS",
+      "seed": 20260919,
+      "sha256": "4e9106dc3993ffac6856f9810448fcd62cef4c4e0a94e0d6b72204a3f4ae3de7"
+    },
+    {
+      "run": "midpoint_precise_b100",
+      "status": "PASS",
+      "seed": 20260919,
+      "sha256": "0468cd50c1949568899255333c4eac3e8e318cac262f3375fb88044f17db1d37"
+    },
+    {
+      "run": "euler_precise_b32",
+      "status": "PASS",
+      "seed": 20260919,
+      "sha256": "c9c6958dff940ff3079defcb5d4d3a6b40760d31ebf2d4572c95d2dc25859e05"
+    },
+    {
+      "run": "euler_precise_b102",
+      "status": "PASS",
+      "seed": 20260919,
+      "sha256": "efb60e70ce2e1c497c9825e8925945277d9e3c8d63d7045fb4f773b97c75ede9"
+    },
+    {
+      "run": "midpoint_precise_b100_lr900_tuned",
+      "status": "PASS",
+      "seed": 20260919,
+      "sha256": "9a6615087168aa7fed94b0e1e0e58febbce514daea1d747f4501c3281d45350d"
+    },
+    {
+      "run": "baseline_precise_b32_seed20260920",
+      "status": "PASS",
+      "seed": 20260920,
+      "sha256": "7a7451b6a9fdd9e9a8418d7e549f52c5b96003bcfb86b42cf9b4987a863ee614"
+    },
+    {
+      "run": "midpoint_precise_b32_seed20260920",
+      "status": "PASS",
+      "seed": 20260920,
+      "sha256": "e5d19c777689b55cc44cf4786a225ed874306a3d9f7b2371ede0effe9c105455"
+    },
+    {
+      "run": "euler_precise_b32_seed20260920",
+      "status": "PASS",
+      "seed": 20260920,
+      "sha256": "18613938f56a1fd9e36b50447f432b0eaad4bded9afc5fae2301480635f67135"
+    }
+  ],
+  "identical_initial_parameters_within_seed": {
+    "20260919": "d3e27733dc0f8b85d173f00eb8c835373f3522dec3512a6d434e0b984dc3069d",
+    "20260920": "bbb82ae4b046c5f0838f25041fd2c8493639110b78751007be66e177774e773f"
+  },
+  "notes": [
+    "Nine complete 50M-token checkpoints verified.",
+    "Initialization equality is asserted among model variants within each seed.",
+    "Euler maximum-batch LR tuning selected the original 6e-4 run, so it is not duplicated."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "sequences": 11623,
+  "context_length": 512,
+  "loss_tokens": 5049456,
+  "sources": [
+    {
+      "id": "agentic-validation-v2",
+      "first": 0,
+      "stop": 477,
+      "loss_tokens": 75219
+    },
+    {
+      "id": "code-validation-v2",
+      "first": 477,
+      "stop": 3193,
+      "loss_tokens": 1270689
+    },
+    {
+      "id": "general-validation-v2",
+      "first": 3193,
+      "stop": 4861,
+      "loss_tokens": 715992
+    },
+    {
+      "id": "indic-validation-v2",
+      "first": 4861,
+      "stop": 7190,
+      "loss_tokens": 1030306
+    },
+    {
+      "id": "long_context-validation-v2",
+      "first": 7190,
+      "stop": 8394,
+      "loss_tokens": 578574
+    },
+    {
+      "id": "reasoning-validation-v2",
+      "first": 8394,
+      "stop": 8700,
+      "loss_tokens": 45321
+    },
+    {
+      "id": "science_math-validation-v2",
+      "first": 8700,
+      "stop": 9950,
+      "loss_tokens": 580068
+    },
+    {
+      "id": "fineweb_edu-validation",
+      "first": 9950,
+      "stop": 11055,
+      "loss_tokens": 501703
+    },
+    {
+      "id": "wikipedia_en-validation",
+      "first": 11055,
+      "stop": 11389,
+      "loss_tokens": 150796
+    },
+    {
+      "id": "cosmopedia_v2-validation",
+      "first": 11389,
+      "stop": 11623,
+      "loss_tokens": 100788
+    }
+  ],
+  "catalog_sha256": "e3bad8e4e21a9d2e394e5c021b57b5f524bd7de62423a72e377022b5f2e55c67",
+  "files": {
+    "input_ids.bin": "82ed22fbbf0ac69fe5c0ec7fbe4584e75ab48b455ffbeb2aaf9871801acc593b",
+    "loss_mask.bin": "83b1045d4c2b26c784ce6803a4ae9ff0263da0359c5bcd96b83241ae7e61a4e0",
+    "segment_ids.bin": "4d7172808929fd0cd92b6e05c805b8e6b130f05e3e5654de2d8c0f1692b57813",
+    "position_ids.bin": "59740abc73d5a3f8adf24df13065bc8ff88b4556995e773b328a3b0f81bddea6"
+  }
+}

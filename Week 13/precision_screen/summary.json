@@ -1,0 +1,81 @@
+{
+  "status": "COMPLETE",
+  "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+  "variant": "euler",
+  "purpose": "Performance and stability screen on one repeated real packed batch; not a quality comparison.",
+  "results": [
+    {
+      "status": "PASS",
+      "variant": "euler",
+      "precision": "fp32",
+      "policy": "FP32 matrix ops, FP32 weights/Adam, FP64 residuals",
+      "gradient_scaler": false,
+      "batch": 32,
+      "context": 512,
+      "steps": 20,
+      "supervised_targets_per_step": 10638,
+      "initial_loss": 9.107514381408691,
+      "final_loss": 4.420353889465332,
+      "mean_step_seconds": 0.5791386000035952,
+      "target_tokens_per_second": 18368.659937248118,
+      "physical_tokens_per_second": 28290.291822887117,
+      "peak_allocated_bytes": 1457054208,
+      "peak_reserved_bytes": 1790967808,
+      "final_scaler_scale": null,
+      "all_parameters_finite": true
+    },
+    {
+      "status": "PASS",
+      "variant": "euler",
+      "precision": "bf16",
+      "policy": "BF16 AMP matrix ops, FP32 weights/Adam, FP64 residuals",
+      "gradient_scaler": false,
+      "batch": 32,
+      "context": 512,
+      "steps": 20,
+      "supervised_targets_per_step": 10638,
+      "initial_loss": 9.107401847839355,
+      "final_loss": 4.251683235168457,
+      "mean_step_seconds": 0.2477013399999123,
+      "target_tokens_per_second": 42946.88111095308,
+      "physical_tokens_per_second": 66144.17184826614,
+      "peak_allocated_bytes": 1456934400,
+      "peak_reserved_bytes": 1826619392,
+      "final_scaler_scale": null,
+      "all_parameters_finite": true
+    },
+    {
+      "status": "PASS",
+      "variant": "euler",
+      "precision": "fp16",
+      "policy": "FP16 AMP matrix ops, FP32 weights/Adam, FP64 residuals",
+      "gradient_scaler": true,
+      "fp16_initial_scale": 1024.0,
+      "batch": 32,
+      "context": 512,
+      "steps": 20,
+      "supervised_targets_per_step": 10638,
+      "initial_loss": 9.107524871826172,
+      "final_loss": 4.329176425933838,
+      "mean_step_seconds": 0.2589693799983555,
+      "target_tokens_per_second": 41078.21550203176,
+      "physical_tokens_per_second": 63266.166834488475,
+      "peak_allocated_bytes": 1456935936,
+      "peak_reserved_bytes": 1826619392,
+      "final_scaler_scale": 1024.0,
+      "all_parameters_finite": true
+    }
+  ],
+  "fp8": {
+    "precision": "fp8",
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "compute_capability": [
+      8,
+      6
+    ],
+    "torch_exposes_fp8_dtype": true,
+    "native_matrix_multiply": "UNAVAILABLE",
+    "status": "UNSUPPORTED_ON_THIS_GPU",
+    "error": "RuntimeError('\"addmm_cuda\" not implemented for \\'Float8_e4m3fn\\'')"
+  }
+}

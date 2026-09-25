@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "variant": "midpoint",
+      "device": "cpu",
+      "amp": false,
+      "parameter_dtype": "torch.float64",
+      "loss": 4.165389537811279,
+      "gradient_relative_l2": 0.0,
+      "gradient_cosine": 1.0000042915344238,
+      "gradient_max_abs": 0.0,
+      "reconstruction_relative_l2": 1.1345366610720326e-16,
+      "status": "PASS"
+    },
+    {
+      "variant": "midpoint",
+      "device": "cuda",
+      "amp": true,
+      "parameter_dtype": "torch.float32",
+      "loss": 9.07774543762207,
+      "gradient_relative_l2": 0.0,
+      "gradient_cosine": 0.9999998807907104,
+      "gradient_max_abs": 0.0,
+      "reconstruction_relative_l2": 0.0,
+      "status": "PASS"
+    },
+    {
+      "variant": "midpoint",
+      "device": "cuda",
+      "amp": false,
+      "parameter_dtype": "torch.float32",
+      "loss": 9.077862739562988,
+      "gradient_relative_l2": 0.0,
+      "gradient_cosine": 1.0,
+      "gradient_max_abs": 0.0,
+      "reconstruction_relative_l2": 0.0,
+      "status": "PASS"
+    },
+    {
+      "variant": "euler",
+      "device": "cpu",
+      "amp": false,
+      "parameter_dtype": "torch.float64",
+      "loss": 4.16532564163208,
+      "gradient_relative_l2": 0.0,
+      "gradient_cosine": 1.0000052452087402,
+      "gradient_max_abs": 0.0,
+      "reconstruction_relative_l2": 1.3932700101422943e-16,
+      "status": "PASS"
+    },
+    {
+      "variant": "euler",
+      "device": "cuda",
+      "amp": true,
+      "parameter_dtype": "torch.float32",
+      "loss": 9.09940242767334,
+      "gradient_relative_l2": 0.0,
+      "gradient_cosine": 1.0000001192092896,
+      "gradient_max_abs": 0.0,
+      "reconstruction_relative_l2": 0.0,
+      "status": "PASS"
+    },
+    {
+      "variant": "euler",
+      "device": "cuda",
+      "amp": false,
+      "parameter_dtype": "torch.float32",
+      "loss": 9.099318504333496,
+      "gradient_relative_l2": 0.0,
+      "gradient_cosine": 0.9999998807907104,
+      "gradient_max_abs": 0.0,
+      "reconstruction_relative_l2": 0.0,
+      "status": "PASS"
+    },
+    {
+      "variant": "baseline",
+      "masking_and_shift": "PASS"
+    },
+    {
+      "variant": "midpoint",
+      "masking_and_shift": "PASS"
+    },
+    {
+      "variant": "euler",
+      "masking_and_shift": "PASS"
+    },
+    {
+      "stack_saved_bytes_depth_3": 12576,
+      "stack_saved_bytes_depth_12": 12576,
+      "status": "PASS"
+    }
+  ]
+}

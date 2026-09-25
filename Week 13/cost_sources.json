@@ -1,0 +1,16 @@
+{
+  "retrieved_date": "2026-09-19",
+  "google_cloud_gpu_pricing": {
+    "url": "https://cloud.google.com/products/compute/gpus-pricing",
+    "t4_on_demand_gpu_only_usd_per_hour": 0.35,
+    "note": "GPU component only; Google states that machine type, disk and network are additional. Region and discounts can change the price."
+  },
+  "google_colab_faq": {
+    "url": "https://research.google.com/colaboratory/faq.html",
+    "note": "Free GPU access exists but GPU types, availability, limits and maximum runtime are dynamic and not guaranteed."
+  },
+  "local_electricity": {
+    "assumption_inr_per_kwh": 8.0,
+    "note": "Illustrative assumption only. Replace with the user's actual marginal tariff; the report includes the formula."
+  }
+}
