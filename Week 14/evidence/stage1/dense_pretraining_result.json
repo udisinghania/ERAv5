@@ -1,0 +1,188 @@
+{
+  "state": "COMPLETE",
+  "parameters": 20166912,
+  "training_tokens": 50000000,
+  "updates": 3277,
+  "initial_validation": {
+    "scope": "full_validation",
+    "loss_tokens": 5049456,
+    "cross_entropy_nats": 9.118243907696133,
+    "perplexity": 9120.171682221056,
+    "sources": [
+      {
+        "source": "agentic-validation-v2",
+        "loss_tokens": 75219,
+        "cross_entropy_nats": 9.150631484191162,
+        "perplexity": 9420.387326530225
+      },
+      {
+        "source": "code-validation-v2",
+        "loss_tokens": 1270689,
+        "cross_entropy_nats": 9.124629789921059,
+        "perplexity": 9178.598378905954
+      },
+      {
+        "source": "general-validation-v2",
+        "loss_tokens": 715992,
+        "cross_entropy_nats": 9.137950142239282,
+        "perplexity": 9301.678458256123
+      },
+      {
+        "source": "indic-validation-v2",
+        "loss_tokens": 1030306,
+        "cross_entropy_nats": 9.047840975156895,
+        "perplexity": 8500.166029388633
+      },
+      {
+        "source": "long_context-validation-v2",
+        "loss_tokens": 578574,
+        "cross_entropy_nats": 9.145796848155983,
+        "perplexity": 9374.953099967675
+      },
+      {
+        "source": "reasoning-validation-v2",
+        "loss_tokens": 45321,
+        "cross_entropy_nats": 9.164022162739128,
+        "perplexity": 9547.38107363841
+      },
+      {
+        "source": "science_math-validation-v2",
+        "loss_tokens": 580068,
+        "cross_entropy_nats": 9.137804213390714,
+        "perplexity": 9300.321174064831
+      },
+      {
+        "source": "fineweb_edu-validation",
+        "loss_tokens": 501703,
+        "cross_entropy_nats": 9.143621761779379,
+        "perplexity": 9354.58392758385
+      },
+      {
+        "source": "wikipedia_en-validation",
+        "loss_tokens": 150796,
+        "cross_entropy_nats": 9.138559528477215,
+        "perplexity": 9307.348500545668
+      },
+      {
+        "source": "cosmopedia_v2-validation",
+        "loss_tokens": 100788,
+        "cross_entropy_nats": 9.145214653840238,
+        "perplexity": 9369.49664407542
+      }
+    ]
+  },
+  "final_validation": {
+    "scope": "full_validation",
+    "loss_tokens": 5049456,
+    "cross_entropy_nats": 3.5141916687720913,
+    "perplexity": 33.588766098981345,
+    "sources": [
+      {
+        "source": "agentic-validation-v2",
+        "loss_tokens": 75219,
+        "cross_entropy_nats": 3.3881831198733035,
+        "perplexity": 29.612101726054803
+      },
+      {
+        "source": "code-validation-v2",
+        "loss_tokens": 1270689,
+        "cross_entropy_nats": 3.936587232399116,
+        "perplexity": 51.24342065936106
+      },
+      {
+        "source": "general-validation-v2",
+        "loss_tokens": 715992,
+        "cross_entropy_nats": 3.6447995055777946,
+        "perplexity": 38.275098138528975
+      },
+      {
+        "source": "indic-validation-v2",
+        "loss_tokens": 1030306,
+        "cross_entropy_nats": 2.7474369246096546,
+        "perplexity": 15.602589976500456
+      },
+      {
+        "source": "long_context-validation-v2",
+        "loss_tokens": 578574,
+        "cross_entropy_nats": 3.6089045275539515,
+        "perplexity": 36.9255796951659
+      },
+      {
+        "source": "reasoning-validation-v2",
+        "loss_tokens": 45321,
+        "cross_entropy_nats": 3.0872480300247127,
+        "perplexity": 21.91668086067055
+      },
+      {
+        "source": "science_math-validation-v2",
+        "loss_tokens": 580068,
+        "cross_entropy_nats": 3.700579759446037,
+        "perplexity": 40.47076086574523
+      },
+      {
+        "source": "fineweb_edu-validation",
+        "loss_tokens": 501703,
+        "cross_entropy_nats": 3.524757932295103,
+        "perplexity": 33.945555498906195
+      },
+      {
+        "source": "wikipedia_en-validation",
+        "loss_tokens": 150796,
+        "cross_entropy_nats": 3.6171237109033063,
+        "perplexity": 37.23032848243459
+      },
+      {
+        "source": "cosmopedia_v2-validation",
+        "loss_tokens": 100788,
+        "cross_entropy_nats": 3.562145488860281,
+        "perplexity": 35.23872038103376
+      }
+    ]
+  },
+  "elapsed_seconds": 634.1870000000054,
+  "peak_allocated_bytes": 4223634944,
+  "samples": [
+    {
+      "prompt": "The sun is",
+      "continuation": " that the other species are no and high of a genam with these other woments of the body of the body is a high in s.\nThe important are that are to be also of be for the",
+      "temperature": 0.8,
+      "top_k": 40
+    },
+    {
+      "prompt": "A computer is a machine that",
+      "continuation": " I need to the following to the problem about the field of the second first work of your list way to make the good of the field of it is a point or to do I's that was the",
+      "temperature": 0.8,
+      "top_k": 40
+    },
+    {
+      "prompt": "Once upon a time,",
+      "continuation": " a new series of the following company for a single way to help a own more: which were the first way. This is been been still seen to the life, but the right would have no than the ",
+      "temperature": 0.8,
+      "top_k": 40
+    },
+    {
+      "prompt": "def add(a, b):\n",
+      "continuation": "def test_c.t(b):\nself._is.t.assert(self.r):\nself.__(self._t)\nself._(self.path)\n\ndef =None%d(self):\nself.self.assertEqual(self.__):\nself._block_id:\nself.test_assertEqual(self.path):",
+      "temperature": 0.8,
+      "top_k": 40
+    },
+    {
+      "prompt": "The answer is found by",
+      "continuation": " the system of the new \"I is important a first year of the same point of the number of the first time is the following of the final final game of the year.\n\nA is a way from the",
+      "temperature": 0.8,
+      "top_k": 40
+    },
+    {
+      "prompt": "भारत एक",
+      "continuation": " लाने किए कुए वाक नहीं ही हो क्या हैं, इस पोत के के स्कर भीराय के बियात ना\nख मुषा के न",
+      "temperature": 0.8,
+      "top_k": 40
+    }
+  ],
+  "checkpoint_sha256": {
+    "last.pt": "35cdfb83465c701c790b559b8820dd950b768a5b6a689db4b049eb70efbf37a2",
+    "best.pt": "e7ca6a7f4c055f502d731b4565c84dadb463271163b9fae0b2b14d0efd4b660f",
+    "final.pt": "53f025cc3df1879e46b4300721f37a7098589d46aa50f33f5921c87bc34a63f4"
+  },
+  "limitation": "Small base model trained on 2.48 tokens per parameter; not an instruction-tuned assistant."
+}

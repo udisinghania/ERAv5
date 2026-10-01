@@ -1,0 +1,37 @@
+{
+  "checked_on_user_local_date": "2026-10-01",
+  "status": "PASS",
+  "checks": {
+    "Session_14_MoE_recorded_audit_pass": true,
+    "Session_14_MoE_Extended_recorded_audit_pass": true,
+    "all_manifest_files_match": true,
+    "original_dense_training_complete": true,
+    "original_dense_training_code_available": true,
+    "dense_pretraining_loss_reduced": true,
+    "original_inputs_match": true,
+    "Session_14_MoE_figure_loss_curves.png": true,
+    "Session_14_MoE_figure_expert_usage.png": true,
+    "Session_14_MoE_Extended_figure_learning_comparison.png": true,
+    "Session_14_MoE_Extended_figure_expert_usage_comparison.png": true,
+    "architecture_document_available": true
+  },
+  "manifest_file_counts": {
+    "Session_14_MoE": 41,
+    "Session_14_MoE_Extended": 63
+  },
+  "mismatches": [],
+  "interpretation": "Complete experimental evidence under dense-Transformer interpretation of assignment wording Linear model.",
+  "submission_gaps": [
+    "No single final submission entry point/package yet.",
+    "Reproduction currently depends on absolute local dataset, tokenizer, prior-checkpoint and environment paths.",
+    "Original dense pretraining evidence/code live in a separate prior-assignment folder and must be included or explicitly linked.",
+    "Portal format, file-size limit and any additional rubric outside the supplied PDF have not been provided."
+  ],
+  "not_required_by_pdf": [
+    "Compute-matched study",
+    "Multiple training seeds",
+    "Expert parallelism",
+    "Semantic labeling of experts",
+    "Fluent generation"
+  ]
+}

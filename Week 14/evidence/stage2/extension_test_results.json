@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Only boundary sequence overlaps",
+    "Boundary masks are disjoint and exhaustive",
+    "74 previously unused boundary targets retained",
+    "Exactly 40M additional targets",
+    "Combined plan covers all packed sequences",
+    "No repeated sequence within extension",
+    "Real GPU batch loads correctly"
+  ]
+}

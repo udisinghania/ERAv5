@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all_first_experiment_files_unchanged": true,
+    "all_original_inputs_unchanged": true,
+    "boundary_accounting_tests": true,
+    "routing_diagnostic_tests": true,
+    "indices_unchanged": true,
+    "exact_40m_targets": true,
+    "moe_code_identity": true,
+    "moe_checkpoint_hash": true,
+    "moe_finite_weights": true,
+    "moe_load_and_forward": true,
+    "moe_budget": true,
+    "moe_holdout_count": true,
+    "moe_final_validation_matches_checkpoint": true,
+    "moe_heldout_improved": true,
+    "dense_code_identity": true,
+    "dense_checkpoint_hash": true,
+    "dense_finite_weights": true,
+    "dense_load_and_forward": true,
+    "dense_budget": true,
+    "dense_holdout_count": true,
+    "dense_final_validation_matches_checkpoint": true,
+    "dense_heldout_improved": true,
+    "diagnostics_use_final_model": true,
+    "learned_diagnostic_reproduces_result": true,
+    "every_ablation_has_full_holdout": true,
+    "three_random_routing_seeds": true
+  },
+  "details": {
+    "moe": {
+      "initial_loss": 3.417105053807212,
+      "final_loss": 3.017127224389041
+    },
+    "dense": {
+      "initial_loss": 3.4272966349501623,
+      "final_loss": 3.077944414200978
+    }
+  }
+}

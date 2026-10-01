@@ -1,0 +1,98 @@
+[
+  {
+    "path": "src/pretrain/train.py",
+    "original_sha256": "f47a78bd2f160bd024f5345db2a0032c150e1af9f16a3b64cc29bf1a8a75248e",
+    "packaged_sha256": "e475bc6685969ee13fed5c7efccbcd1b46cfcf04b5aa703a95cdb0a36f956c80",
+    "changed": true
+  },
+  {
+    "path": "src/pretrain/model.py",
+    "original_sha256": "3dbf03f702822d0d58be90e52e3eb1cc3caacf57a2a57b6fe153b30b214b3cb5",
+    "packaged_sha256": "b2f2ac51afd811823d0b57e163974658f87467de0bb163e826b7018eb8d2bb03",
+    "changed": false
+  },
+  {
+    "path": "src/pretrain/test_model.py",
+    "original_sha256": "fd53f828b6f3af1b7e8cefb6c26dbe725fc1f4bc689302f5d35f92d046bd9bef",
+    "packaged_sha256": "8012ca8698907ec6f6b18e80415fde03f33608642ee945e15425db677aa8d0d9",
+    "changed": false
+  },
+  {
+    "path": "src/stage1/experiment.py",
+    "original_sha256": "b9b67ee97033cb0d14f090055f0a847c2ce2cc2468e5898139c6b6a81369749e",
+    "packaged_sha256": "28321439de8d61c0b20a685dc41e6c263900035d4fb5b6c2ea7f9ea58d1f44e1",
+    "changed": true
+  },
+  {
+    "path": "src/stage1/dense_model.py",
+    "original_sha256": "3dbf03f702822d0d58be90e52e3eb1cc3caacf57a2a57b6fe153b30b214b3cb5",
+    "packaged_sha256": "b2f2ac51afd811823d0b57e163974658f87467de0bb163e826b7018eb8d2bb03",
+    "changed": false
+  },
+  {
+    "path": "src/stage1/moe_model.py",
+    "original_sha256": "0e8d7041086670b51521db3d338bb249919c0ba5262e3f9e53eddd82fc56c4e3",
+    "packaged_sha256": "f53e5872777cdfad44e4b2d07baeca1d08ee23afa3bf89700cbe877b81d1097a",
+    "changed": false
+  },
+  {
+    "path": "src/stage1/packed_dataset.py",
+    "original_sha256": "6428648aba9733b4d74a3beb9c88d5b71a4023cbbf2d1c6e620d90f4639de40b",
+    "packaged_sha256": "55f51b914e931b28c6850ba41e2d8a95c1a43cb98ad2f37c923d215294321eb4",
+    "changed": false
+  },
+  {
+    "path": "src/stage1/test_moe.py",
+    "original_sha256": "78db6388d1e24c41268e4b71b55109530308a15fc8ef37cdbfa4040043b3c741",
+    "packaged_sha256": "6946760090da08cb32be7c11497ce674406515cb24cde4c69252beca1e31be12",
+    "changed": false
+  },
+  {
+    "path": "src/stage2/extend.py",
+    "original_sha256": "af87098f62708580be282a4576b078307f28fd48c329e26b20f01022e23765ea",
+    "packaged_sha256": "4a9164de4720b491f886b89c553e24457be21c3b307fdf470f699071ffbb8177",
+    "changed": true
+  },
+  {
+    "path": "src/stage2/base_experiment.py",
+    "original_sha256": "b9b67ee97033cb0d14f090055f0a847c2ce2cc2468e5898139c6b6a81369749e",
+    "packaged_sha256": "28321439de8d61c0b20a685dc41e6c263900035d4fb5b6c2ea7f9ea58d1f44e1",
+    "changed": true
+  },
+  {
+    "path": "src/stage2/dense_model.py",
+    "original_sha256": "3dbf03f702822d0d58be90e52e3eb1cc3caacf57a2a57b6fe153b30b214b3cb5",
+    "packaged_sha256": "b2f2ac51afd811823d0b57e163974658f87467de0bb163e826b7018eb8d2bb03",
+    "changed": false
+  },
+  {
+    "path": "src/stage2/moe_model.py",
+    "original_sha256": "0e8d7041086670b51521db3d338bb249919c0ba5262e3f9e53eddd82fc56c4e3",
+    "packaged_sha256": "f53e5872777cdfad44e4b2d07baeca1d08ee23afa3bf89700cbe877b81d1097a",
+    "changed": false
+  },
+  {
+    "path": "src/stage2/packed_dataset.py",
+    "original_sha256": "6428648aba9733b4d74a3beb9c88d5b71a4023cbbf2d1c6e620d90f4639de40b",
+    "packaged_sha256": "55f51b914e931b28c6850ba41e2d8a95c1a43cb98ad2f37c923d215294321eb4",
+    "changed": false
+  },
+  {
+    "path": "src/stage2/diagnostics.py",
+    "original_sha256": "1cec40ceb3fa921c1b7fd657e1fa538199215cb5ea51f07cdce9c0257c49d47f",
+    "packaged_sha256": "93722989ada6b5c0216891ff16aa2b3a2dd01946cfcd22778145a32e361cf50c",
+    "changed": false
+  },
+  {
+    "path": "src/stage2/test_diagnostics.py",
+    "original_sha256": "5a879eee84bac0ee2a1900676c5512c0e66c52e22adca7b5cd7dbc0cab8ebfd4",
+    "packaged_sha256": "4182398b55dec23b78aa49d8ba6ef6d8f4294c15c697b70912cad4cfb7e64b03",
+    "changed": false
+  },
+  {
+    "path": "src/stage2/test_extension.py",
+    "original_sha256": "e4726cabdb7cd15aa28fc1b20d66250bde11a921a0298e5278bd6f36ea337160",
+    "packaged_sha256": "fec6aa64a77c3b7f224763295cda2210eba4bab9e008cc39da785a79a4fe33f8",
+    "changed": false
+  }
+]

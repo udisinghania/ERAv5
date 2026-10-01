@@ -1,0 +1,92 @@
+{
+  "model": {
+    "vocab_size": 8192,
+    "context_length": 512,
+    "hidden_size": 384,
+    "layers": 9,
+    "heads": 6,
+    "intermediate_size": 1664,
+    "norm_eps": 1e-05
+  },
+  "training": {
+    "seed": 20260919,
+    "global_batch_sequences": 32,
+    "peak_lr": 0.0006,
+    "min_lr": 6e-05,
+    "warmup_fraction": 0.02,
+    "weight_decay": 0.1,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "grad_clip": 1.0,
+    "precision": "bfloat16",
+    "checkpoint_every": 250,
+    "log_every": 25,
+    "context_length": 512,
+    "epochs": 1,
+    "expected_loss_tokens": 50000000,
+    "validation_probe_fragments_per_source": 12,
+    "microbatch_sequences": 32
+  },
+  "data": {
+    "packing_report_sha256": "e72e1bf9447848964621b9f7c5d7256f49bb4e16faea22d3cee59dae19ead09f",
+    "tokenizer_sha256": "09da460fd30ddedb96cd752a823c1c8a6fee35af1452fe4562c1415e2af6ffad",
+    "catalog_sha256": "e3bad8e4e21a9d2e394e5c021b57b5f524bd7de62423a72e377022b5f2e55c67",
+    "model_code_sha256": "3dbf03f702822d0d58be90e52e3eb1cc3caacf57a2a57b6fe153b30b214b3cb5",
+    "training_code_sha256": "f47a78bd2f160bd024f5345db2a0032c150e1af9f16a3b64cc29bf1a8a75248e"
+  },
+  "parameters": 20166912,
+  "signature": "aa399f96bd076982381fda05ca5e816bec6782840a7d51bcdbf3039f28061034",
+  "environment": {
+    "results": [
+      {
+        "microbatch": 4,
+        "parameters": 20166912,
+        "seconds_per_microbatch": 0.03250538571072476,
+        "supervised_tokens_per_second": 47161.415454122885,
+        "peak_allocated_bytes": 761196032,
+        "peak_reserved_bytes": 817889280,
+        "final_loss": 5.311341285705566,
+        "status": "PASS"
+      },
+      {
+        "microbatch": 8,
+        "parameters": 20166912,
+        "seconds_per_microbatch": 0.04759381429175846,
+        "supervised_tokens_per_second": 75156.82559234189,
+        "peak_allocated_bytes": 1595243008,
+        "peak_reserved_bytes": 1650458624,
+        "final_loss": 5.661311149597168,
+        "status": "PASS"
+      },
+      {
+        "microbatch": 16,
+        "parameters": 20166912,
+        "seconds_per_microbatch": 0.08253228570850167,
+        "supervised_tokens_per_second": 86656.99657538105,
+        "peak_allocated_bytes": 2519527936,
+        "peak_reserved_bytes": 2824863744,
+        "final_loss": 5.548610687255859,
+        "status": "PASS"
+      },
+      {
+        "microbatch": 32,
+        "parameters": 20166912,
+        "seconds_per_microbatch": 0.15705711429473013,
+        "supervised_tokens_per_second": 94366.94457652658,
+        "peak_allocated_bytes": 4419665408,
+        "peak_reserved_bytes": 4722786304,
+        "final_loss": 5.791285514831543,
+        "status": "PASS"
+      }
+    ],
+    "selected_microbatch": 32,
+    "device": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "torch_version": "2.5.1+cu121",
+    "cuda_version": "12.1",
+    "precision": "bfloat16",
+    "estimated_training_minutes": 8.830775830169474,
+    "estimate_note": "Short benchmark; excludes evaluation/checkpoint I/O and sustained thermal changes."
+  }
+}

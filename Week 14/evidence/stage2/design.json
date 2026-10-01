@@ -1,0 +1,17 @@
+{
+  "preregistered": true,
+  "additional_tokens_per_arm": 40000000,
+  "source": "Prior 10M final model and matching AdamW state",
+  "peak_lr": 0.0002,
+  "min_lr": 2e-05,
+  "warmup_updates": 50,
+  "global_batch": 32,
+  "microbatch": 16,
+  "auxiliary_coefficient": 0.001,
+  "primary_measure": "Full held-out task cross-entropy after all 40M additional tokens",
+  "comparisons": [
+    "MoE vs dense at same target exposure",
+    "MoE learned routing vs uniform selected weights vs random expert selection"
+  ],
+  "limits": "Single seed, validation already inspected; exploratory findings, not an untouched test-set claim. Equal tokens do not imply equal compute."
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="700" height="435" preserveAspectRatio="xMinYMin meet" viewBox="0 0 700 435" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="700" height="435"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-435)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="700" height="435" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="25" y="402" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,804) scale(1,-1)">Final MoE expert usage on the full holdout</text>
+			<text x="25" y="380" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,760) scale(1,-1)">Share of routed assignments within each layer; uniform use would be 25%.</text>
+			<text x="148.297" y="348" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,696) scale(1,-1)">Expert 0</text>
+			<text x="268.297" y="348" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,696) scale(1,-1)">Expert 1</text>
+			<text x="388.297" y="348" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,696) scale(1,-1)">Expert 2</text>
+			<text x="508.297" y="348" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,696) scale(1,-1)">Expert 3</text>
+			<text x="25" y="319" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,638) scale(1,-1)">Layer 1</text>
+			<rect x="115" y="310" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,80%,83%); fill-rule: evenodd;"/>
+			<text x="154.4075" y="318" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,636) scale(1,-1)">16.9%</text>
+			<rect x="235" y="310" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(11%,49%,57%); fill-rule: evenodd;"/>
+			<text x="274.4075" y="318" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,636) scale(1,-1)">49.6%</text>
+			<rect x="355" y="310" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(43%,67%,72%); fill-rule: evenodd;"/>
+			<text x="394.4075" y="318" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,636) scale(1,-1)">30.2%</text>
+			<rect x="475" y="310" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(86%,92%,94%); fill-rule: evenodd;"/>
+			<text x="517.4655" y="318" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,636) scale(1,-1)">3.3%</text>
+			<text x="25" y="288" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,576) scale(1,-1)">Layer 2</text>
+			<rect x="115" y="279" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(37%,64%,70%); fill-rule: evenodd;"/>
+			<text x="154.4075" y="287" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,574) scale(1,-1)">33.6%</text>
+			<rect x="235" y="279" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,70%,75%); fill-rule: evenodd;"/>
+			<text x="274.4075" y="287" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,574) scale(1,-1)">26.6%</text>
+			<rect x="355" y="279" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(58%,76%,80%); fill-rule: evenodd;"/>
+			<text x="394.4075" y="287" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,574) scale(1,-1)">20.6%</text>
+			<rect x="475" y="279" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(60%,77%,81%); fill-rule: evenodd;"/>
+			<text x="514.4075" y="287" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,574) scale(1,-1)">19.2%</text>
+			<text x="25" y="257" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,514) scale(1,-1)">Layer 3</text>
+			<rect x="115" y="248" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(60%,77%,81%); fill-rule: evenodd;"/>
+			<text x="154.4075" y="256" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,512) scale(1,-1)">19.6%</text>
+			<rect x="235" y="248" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(40%,65%,71%); fill-rule: evenodd;"/>
+			<text x="274.4075" y="256" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,512) scale(1,-1)">32.0%</text>
+			<rect x="355" y="248" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(47%,70%,75%); fill-rule: evenodd;"/>
+			<text x="394.4075" y="256" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,512) scale(1,-1)">27.2%</text>
+			<rect x="475" y="248" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(57%,76%,80%); fill-rule: evenodd;"/>
+			<text x="514.4075" y="256" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,512) scale(1,-1)">21.2%</text>
+			<text x="25" y="226" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,452) scale(1,-1)">Layer 4</text>
+			<rect x="115" y="217" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(40%,66%,71%); fill-rule: evenodd;"/>
+			<text x="154.4075" y="225" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(100%,100%,100%); stroke:none;" transform="translate(0,450) scale(1,-1)">31.6%</text>
+			<rect x="235" y="217" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(50%,71%,76%); fill-rule: evenodd;"/>
+			<text x="274.4075" y="225" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,450) scale(1,-1)">25.7%</text>
+			<rect x="355" y="217" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,70%,75%); fill-rule: evenodd;"/>
+			<text x="394.4075" y="225" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,450) scale(1,-1)">27.1%</text>
+			<rect x="475" y="217" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(66%,81%,84%); fill-rule: evenodd;"/>
+			<text x="514.4075" y="225" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,450) scale(1,-1)">15.6%</text>
+			<text x="25" y="195" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,390) scale(1,-1)">Layer 5</text>
+			<rect x="115" y="186" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(49%,71%,76%); fill-rule: evenodd;"/>
+			<text x="154.4075" y="194" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,388) scale(1,-1)">26.1%</text>
+			<rect x="235" y="186" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(50%,71%,76%); fill-rule: evenodd;"/>
+			<text x="274.4075" y="194" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,388) scale(1,-1)">25.8%</text>
+			<rect x="355" y="186" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(52%,73%,77%); fill-rule: evenodd;"/>
+			<text x="394.4075" y="194" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,388) scale(1,-1)">24.1%</text>
+			<rect x="475" y="186" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(53%,73%,77%); fill-rule: evenodd;"/>
+			<text x="514.4075" y="194" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,388) scale(1,-1)">24.0%</text>
+			<text x="25" y="164" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,328) scale(1,-1)">Layer 6</text>
+			<rect x="115" y="155" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(52%,73%,77%); fill-rule: evenodd;"/>
+			<text x="154.4075" y="163" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,326) scale(1,-1)">24.1%</text>
+			<rect x="235" y="155" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(59%,77%,81%); fill-rule: evenodd;"/>
+			<text x="274.4075" y="163" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,326) scale(1,-1)">19.9%</text>
+			<rect x="355" y="155" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(45%,68%,73%); fill-rule: evenodd;"/>
+			<text x="394.4075" y="163" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,326) scale(1,-1)">28.8%</text>
+			<rect x="475" y="155" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(47%,70%,75%); fill-rule: evenodd;"/>
+			<text x="514.4075" y="163" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,326) scale(1,-1)">27.2%</text>
+			<text x="25" y="133" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,266) scale(1,-1)">Layer 7</text>
+			<rect x="115" y="124" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(51%,72%,76%); fill-rule: evenodd;"/>
+			<text x="154.4075" y="132" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,264) scale(1,-1)">25.1%</text>
+			<rect x="235" y="124" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(56%,75%,79%); fill-rule: evenodd;"/>
+			<text x="274.4075" y="132" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,264) scale(1,-1)">21.8%</text>
+			<rect x="355" y="124" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(50%,71%,76%); fill-rule: evenodd;"/>
+			<text x="394.4075" y="132" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,264) scale(1,-1)">25.6%</text>
+			<rect x="475" y="124" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(47%,70%,74%); fill-rule: evenodd;"/>
+			<text x="514.4075" y="132" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,264) scale(1,-1)">27.6%</text>
+			<text x="25" y="102" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,204) scale(1,-1)">Layer 8</text>
+			<rect x="115" y="93" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(56%,75%,79%); fill-rule: evenodd;"/>
+			<text x="154.4075" y="101" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,202) scale(1,-1)">22.1%</text>
+			<rect x="235" y="93" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,71%,75%); fill-rule: evenodd;"/>
+			<text x="274.4075" y="101" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,202) scale(1,-1)">26.5%</text>
+			<rect x="355" y="93" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(48%,70%,75%); fill-rule: evenodd;"/>
+			<text x="394.4075" y="101" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,202) scale(1,-1)">26.8%</text>
+			<rect x="475" y="93" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(52%,72%,77%); fill-rule: evenodd;"/>
+			<text x="514.4075" y="101" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,202) scale(1,-1)">24.6%</text>
+			<text x="25" y="71" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,142) scale(1,-1)">Layer 9</text>
+			<rect x="115" y="62" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(47%,69%,74%); fill-rule: evenodd;"/>
+			<text x="154.4075" y="70" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,140) scale(1,-1)">27.7%</text>
+			<rect x="235" y="62" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(47%,70%,75%); fill-rule: evenodd;"/>
+			<text x="274.4075" y="70" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,140) scale(1,-1)">27.3%</text>
+			<rect x="355" y="62" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(58%,76%,80%); fill-rule: evenodd;"/>
+			<text x="394.4075" y="70" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,140) scale(1,-1)">20.8%</text>
+			<rect x="475" y="62" width="110" height="27" style="stroke: rgb(100%,100%,100%); stroke-linecap: butt; stroke-width: 1; fill: rgb(52%,73%,77%); fill-rule: evenodd;"/>
+			<text x="514.4075" y="70" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,17%,23%); stroke:none;" transform="translate(0,140) scale(1,-1)">24.2%</text>
+			<text x="25" y="20" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,40) scale(1,-1)">Dead experts: 0 / 36. Usage is measured over all non-padding validation inputs.</text>
+		</g>
+	</g>
+</svg>

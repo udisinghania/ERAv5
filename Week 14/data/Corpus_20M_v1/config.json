@@ -1,0 +1,51 @@
+{
+  "baseline": "C:\\Users\\udisi\\Documents\\Codex\\2026-08-01\\now\\outputs\\Assignment_6_v2",
+  "context_length": 512,
+  "packed_training_tokens": 50000000,
+  "policy": {
+    "eval_exact_ngram_words": 13,
+    "fineweb_min_int_score": 3,
+    "fineweb_min_language_score": 0.9,
+    "jaccard_threshold": 0.8,
+    "lsh_bands": 32,
+    "lsh_rows": 4,
+    "max_characters": 120000,
+    "max_duplicate_line_fraction": 0.25,
+    "min_alpha_fraction": 0.6,
+    "min_unique_word_fraction": 0.15,
+    "min_words": 80,
+    "minhash_permutations": 128,
+    "note": "Heuristic screening, not human review or proof of zero semantic overlap.",
+    "sampling_seed": 20260919,
+    "shingle_words": 5,
+    "validation_probability": 0.05,
+    "version": 1,
+    "wikipedia_max_disallowed_title_fraction": 0
+  },
+  "sources": [
+    {
+      "config": "sample-10BT",
+      "dataset": "HuggingFaceFW/fineweb-edu",
+      "id": "fineweb_edu",
+      "license": "odc-by",
+      "train": 10000000,
+      "validation": 500000
+    },
+    {
+      "config": "20231101.en",
+      "dataset": "wikimedia/wikipedia",
+      "id": "wikipedia_en",
+      "license": "cc-by-sa-3.0 AND gfdl",
+      "train": 3000000,
+      "validation": 150000
+    },
+    {
+      "config": "cosmopedia-v2",
+      "dataset": "HuggingFaceTB/smollm-corpus",
+      "id": "cosmopedia_v2",
+      "license": "odc-by (repository metadata)",
+      "train": 2000000,
+      "validation": 100000
+    }
+  ]
+}

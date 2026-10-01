@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "checkpoints": [
+    {
+      "model": "pretrained_dense",
+      "parameters": 20166912,
+      "sample_loss": 3.4399542808532715,
+      "sha256": "53f025cc3df1879e46b4300721f37a7098589d46aa50f33f5921c87bc34a63f4"
+    },
+    {
+      "model": "final_dense",
+      "parameters": 20166912,
+      "sample_loss": 3.313715934753418,
+      "sha256": "f35b807fbde4eb82864e08dfd5500e49fa92364bf755e2f12690cd9961574b69"
+    },
+    {
+      "model": "final_moe",
+      "parameters": 54685440,
+      "sample_loss": 3.240464925765991,
+      "sha256": "ddd4a6205d3e985c89df7a0d7dd64e4349d330e737ca28919ea4f4946b5e46e5",
+      "counts": {
+        "total": 54685440,
+        "active_per_token": 31682304,
+        "convention": "Includes full tied embedding table; theoretical active weights, not measured FLOPs."
+      }
+    }
+  ],
+  "tokenizer_roundtrip_and_reference_parity": "PASS"
+}

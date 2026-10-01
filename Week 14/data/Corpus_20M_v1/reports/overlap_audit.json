@@ -1,0 +1,14 @@
+{
+  "all_train_vs_new_heldout_13word_overlaps": 0,
+  "audit": "Recomputed independently from exported text; exact 64-bit 13-word hashes, not Bloom results.",
+  "counts": {
+    "baseline_documents": 24842,
+    "new_train_documents": 8239,
+    "new_validation_documents": 401
+  },
+  "elapsed_seconds": 44.812999999994645,
+  "new_train_vs_all_heldout_13word_overlaps": 0,
+  "normalized_addition_duplicates": 0,
+  "status": "PASS",
+  "training_documents_checked": 29665
+}

@@ -1,0 +1,13 @@
+{
+  "moe_loss": 3.017127224389041,
+  "dense_loss": 3.077944414200978,
+  "moe_perplexity": 20.43250927596671,
+  "dense_perplexity": 21.713722071075765,
+  "moe_advantage": 0.060817189811936956,
+  "random_mean_loss": 3.465750904336021,
+  "random_routing_penalty": 0.44862367994698005,
+  "uniform_weight_penalty": 0.08662253731805958,
+  "sources_with_lower_moe_loss": 10,
+  "dead_experts": 0,
+  "first_layer_top_two_assignment_share": 0.9848860479789515
+}

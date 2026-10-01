@@ -1,0 +1,66 @@
+{
+  "config": "cosmopedia-v2",
+  "dataset": "HuggingFaceTB/smollm-corpus",
+  "features": [
+    {
+      "feature_idx": 0,
+      "name": "prompt",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 1,
+      "name": "text",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 2,
+      "name": "token_length",
+      "type": {
+        "_type": "Value",
+        "dtype": "int64"
+      }
+    },
+    {
+      "feature_idx": 3,
+      "name": "audience",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 4,
+      "name": "format",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 5,
+      "name": "seed_data",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    }
+  ],
+  "id": "cosmopedia_v2",
+  "license": "odc-by (repository metadata)",
+  "license_metadata": "odc-by",
+  "num_rows": 39134000,
+  "readme_sha256": "e09544d7132303ae6bbc6e156e984db0305d81561615476be49eabd4be4b8bed",
+  "revision": "3ba9d605774198c5868892d7a8deda78031a781f",
+  "sampling": "Seeded random disjoint blocks of 100 rows across the complete config; shuffle rows within blocks.",
+  "token_counting": "Frozen 8192-token tokenizer; target-aligned loss mask; BOS excluded, EOS included.",
+  "train": 2000000,
+  "upstream_split": "train",
+  "validation": 100000,
+  "webpage": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus"
+}

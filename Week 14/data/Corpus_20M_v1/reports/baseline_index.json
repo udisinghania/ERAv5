@@ -1,0 +1,13 @@
+{
+  "baseline_rewritten": false,
+  "eval_13word_hashes": 1719494,
+  "inherited_baseline_preserved": true,
+  "normalized_exact_duplicates_observed": 0,
+  "records": {
+    "anneal": 411,
+    "never_train": 1000,
+    "train": 21015,
+    "validation": 2416
+  },
+  "tokenizer_parity_records": 66
+}

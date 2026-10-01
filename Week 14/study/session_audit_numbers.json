@@ -1,0 +1,257 @@
+{
+  "expert_sparsity_E_over_K": 2.0,
+  "total_over_active": 1.7260562868155043,
+  "expert_parameter_percent": 84.12892353065094,
+  "router_parameter_percent": 0.025279123657046557,
+  "active_ffn_width": 3328,
+  "stored_ffn_width": 6656,
+  "expert_width_over_hidden": 4.333333333333333,
+  "routed_scaling_factor": 1,
+  "router_bias_parameters": 0,
+  "z_loss_coefficient": 0,
+  "balance_scope_sequences": 16,
+  "effective_batch_sequences": 32,
+  "balanced_aux_unscaled": 1,
+  "balanced_aux_scaled": 0.001,
+  "same_pair_probability_mass_limit_aux_unscaled": 2,
+  "theoretical_train_flops_per_target": 190093824,
+  "dense_theoretical_train_flops_per_target": 121001472,
+  "theoretical_50m_continuation_flops": 9504691200000000,
+  "moe_extension_targets_per_second": 35522.02276606422,
+  "dense_extension_targets_per_second": 57520.35501562973,
+  "moe_over_dense_elapsed": 1.6192871502402588,
+  "hypothetical_bf16_kv_bytes_per_token": 13824,
+  "hypothetical_bf16_kv_bytes_per_512_sequence": 7077888,
+  "hypothetical_bf16_kv_bytes_batch16": 113246208,
+  "actual_kv_cache_implemented": false,
+  "actual_cross_gpu_moe_traffic_bytes": 0,
+  "balanced_tokens_per_expert_sequence": 256.0,
+  "balanced_tokens_per_expert_microbatch": 4096.0,
+  "balanced_tokens_per_expert_full_update": 8192.0,
+  "hypothetical_capacity_factor_1_25_per_microbatch": 5120,
+  "actual_capacity_limit": null,
+  "actual_overflow_dropped_assignments": 0,
+  "max_possible_maxvio": 1.0,
+  "full_validation_assignments_all_layers": 93972708,
+  "same_pair_routes_per_layer": 6,
+  "theoretical_pair_paths_across_layers": 10077696,
+  "warnings": [
+    "6P compute is a rough architecture proxy, not a profiler measurement; masked/context inputs and attention operations make exact work differ.",
+    "Timing includes validation and saving, and excludes recorded downtime/discarded work.",
+    "KV values assume a future BF16 cache; none exists in current generation.",
+    "Token load arithmetic assumes every input position is non-padding.",
+    "No semantic expert roles, per-token entropy statistics, MFU or activation-memory breakdown have been established."
+  ],
+  "layers": [
+    {
+      "layer": 1,
+      "maxvio": 0.9942996215454385,
+      "busiest_over_average": 1.9942996215454385,
+      "assignment_entropy_bits": 1.1125678734622464,
+      "effective_assignment_experts": 2.1623017615707787,
+      "dead_experts": 0,
+      "shares_10m": [
+        0.16908929558569283,
+        0.49629140196747334,
+        0.3020538793029142,
+        0.032565423143919615
+      ],
+      "shares_50m": [
+        0.008945150330242692,
+        0.4985749053863596,
+        0.4863111425925919,
+        0.006168801690805803
+      ]
+    },
+    {
+      "layer": 2,
+      "maxvio": 0.442215286591507,
+      "busiest_over_average": 1.442215286591507,
+      "assignment_entropy_bits": 1.905212974197595,
+      "effective_assignment_experts": 3.7456418898139936,
+      "dead_experts": 0,
+      "shares_10m": [
+        0.33552866221541683,
+        0.26646750458654445,
+        0.20618858828671832,
+        0.19181524491132043
+      ],
+      "shares_50m": [
+        0.36055382164787675,
+        0.3162797330475993,
+        0.15419083166146494,
+        0.168975613643059
+      ]
+    },
+    {
+      "layer": 3,
+      "maxvio": 0.6294826791625501,
+      "busiest_over_average": 1.62948267916255,
+      "assignment_entropy_bits": 1.8634472735139782,
+      "effective_assignment_experts": 3.6387609442143702,
+      "dead_experts": 0,
+      "shares_10m": [
+        0.195783673702369,
+        0.31998153123351514,
+        0.2719556512088595,
+        0.21227914385525637
+      ],
+      "shares_50m": [
+        0.16169853272718288,
+        0.4073706697906375,
+        0.13567101844080093,
+        0.2952597790413787
+      ]
+    },
+    {
+      "layer": 4,
+      "maxvio": 0.4788532432203614,
+      "busiest_over_average": 1.4788532432203614,
+      "assignment_entropy_bits": 1.840022262955508,
+      "effective_assignment_experts": 3.5801555304730197,
+      "dead_experts": 0,
+      "shares_10m": [
+        0.31636679023871483,
+        0.25675540817659526,
+        0.27051724421946,
+        0.1563605573652299
+      ],
+      "shares_50m": [
+        0.36971331080509034,
+        0.2060645629154371,
+        0.3349561342852863,
+        0.08926599199418622
+      ]
+    },
+    {
+      "layer": 5,
+      "maxvio": 0.1259373732211697,
+      "busiest_over_average": 1.1259373732211697,
+      "assignment_entropy_bits": 1.9915460799731393,
+      "effective_assignment_experts": 3.9766292974966664,
+      "dead_experts": 0,
+      "shares_10m": [
+        0.261347411633599,
+        0.2577873567291474,
+        0.24126305905752976,
+        0.23960217257972388
+      ],
+      "shares_50m": [
+        0.24567855382011553,
+        0.28148434330529243,
+        0.2637489067570555,
+        0.2090881961175366
+      ]
+    },
+    {
+      "layer": 6,
+      "maxvio": 0.14209993820759115,
+      "busiest_over_average": 1.1420999382075911,
+      "assignment_entropy_bits": 1.981262981570414,
+      "effective_assignment_experts": 3.9483858492034822,
+      "dead_experts": 0,
+      "shares_10m": [
+        0.24136783415882831,
+        0.1986737042844397,
+        0.2879156573842695,
+        0.2720428041724625
+      ],
+      "shares_50m": [
+        0.25114342772797393,
+        0.18566818357517165,
+        0.2855249845518978,
+        0.27766340414495666
+      ]
+    },
+    {
+      "layer": 7,
+      "maxvio": 0.09121716488153142,
+      "busiest_over_average": 1.0912171648815314,
+      "assignment_entropy_bits": 1.9910606466311136,
+      "effective_assignment_experts": 3.9752914792702336,
+      "dead_experts": 0,
+      "shares_10m": [
+        0.25124236070753647,
+        0.2175312112959435,
+        0.25557587422084294,
+        0.2756505537756771
+      ],
+      "shares_50m": [
+        0.268484185855323,
+        0.2041952755048838,
+        0.2545162474194103,
+        0.27280429122038286
+      ]
+    },
+    {
+      "layer": 8,
+      "maxvio": 0.12373690454892494,
+      "busiest_over_average": 1.123736904548925,
+      "assignment_entropy_bits": 1.994859046793046,
+      "effective_assignment_experts": 3.985771617147459,
+      "dead_experts": 0,
+      "shares_10m": [
+        0.2206130741704283,
+        0.2654625638754605,
+        0.268286128351223,
+        0.2456382336028882
+      ],
+      "shares_50m": [
+        0.2231340933582546,
+        0.28093422613723124,
+        0.25516673415434615,
+        0.24076494635016796
+      ]
+    },
+    {
+      "layer": 9,
+      "maxvio": 0.12707246874273337,
+      "busiest_over_average": 1.1270724687427334,
+      "assignment_entropy_bits": 1.9915298496418556,
+      "effective_assignment_experts": 3.9765845606354353,
+      "dead_experts": 0,
+      "shares_10m": [
+        0.2769246151765681,
+        0.27308126525416293,
+        0.20826244573051997,
+        0.24173167383874902
+      ],
+      "shares_50m": [
+        0.2522964327046955,
+        0.28176811718568334,
+        0.20775082910242407,
+        0.25818462100719713
+      ]
+    }
+  ],
+  "top_k_counterfactuals": [
+    {
+      "top_k": 1,
+      "total": 54685440,
+      "active": 20180736,
+      "selected_width": 1664,
+      "trained": false
+    },
+    {
+      "top_k": 2,
+      "total": 54685440,
+      "active": 31682304,
+      "selected_width": 3328,
+      "trained": true
+    },
+    {
+      "top_k": 3,
+      "total": 54685440,
+      "active": 43183872,
+      "selected_width": 4992,
+      "trained": false
+    },
+    {
+      "top_k": 4,
+      "total": 54685440,
+      "active": 54685440,
+      "selected_width": 6656,
+      "trained": false
+    }
+  ]
+}

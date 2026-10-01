@@ -1,0 +1,170 @@
+[
+  {
+    "model": "dense_original",
+    "prompt": "The sun is",
+    "continuation": " a small of the water of the water of the water of the water of the water of the water and the water of the water of the the water of the",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "dense_original",
+    "prompt": "A computer is a machine that",
+    "continuation": " is a first way to the same of the same of the same of the same of the same of the same of the same of the same of the same of",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "dense_original",
+    "prompt": "Water is",
+    "continuation": " a most of the most of the most of the most of the most of the most of the most of the most of the other of the most of the most",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "dense_original",
+    "prompt": "Once upon a time,",
+    "continuation": " and the first of the first time of the first time of the first time of the first time of the first time of the first time of the first time of",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "dense_original",
+    "prompt": "def add(a, b):\n",
+    "continuation": "return self._file(self._(self._(self._(self._(self._(self._(self._(self._(self._(self._(self._(self.self._(self._(self._",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "dense_original",
+    "prompt": "The answer is found by",
+    "continuation": " the same of the same of the same of the same of the same of the same of the same of the same of the same of the same of the same",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_10m",
+    "prompt": "The sun is",
+    "continuation": " a small of the most of the most of the most of the most of the most of the most of the most of the most of the most of the most",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_10m",
+    "prompt": "A computer is a machine that",
+    "continuation": " is a first way to be a single of the same of the same of the same time of the same time of the same time of the same of the same",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_10m",
+    "prompt": "Water is",
+    "continuation": " a most of the most of the most of the most of the most of the most important of the most of the most of the most of the most of the",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_10m",
+    "prompt": "Once upon a time,",
+    "continuation": " and the same of the same of the same of the same of the same of the same of the same of the same of the same of the same of the",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_10m",
+    "prompt": "def add(a, b):\n",
+    "continuation": "return self._(self._(self._(self._(self._(self._(self._(self._(self._(self._(self._(self._(self._(self._(self._(self.",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_10m",
+    "prompt": "The answer is found by",
+    "continuation": " the same of the same of the same of the same of the same of the same of the same of the same of the same of the same of the same",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_50m",
+    "prompt": "The sun is",
+    "continuation": " a small and a small and a small and a white and a white and a white and a white and a white and a a white and a a a a",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_50m",
+    "prompt": "A computer is a machine that",
+    "continuation": " is a single and a single line of a single line of the two and the two and the two and the two and the two and the two and the two",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_50m",
+    "prompt": "Water is",
+    "continuation": " a large population of the United States and the United States is a population of the population of the population of the population of the population of the population of the population",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_50m",
+    "prompt": "Once upon a time,",
+    "continuation": " the first time of the first year and the first time of the first time of the first time of the first time of the end of the end of the first",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_50m",
+    "prompt": "def add(a, b):\n",
+    "continuation": "\"\"\"\nA list of the list of the list of the list of the object of the object of the object of the object of the object of the object of the ",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "moe_after_50m",
+    "prompt": "The answer is found by",
+    "continuation": " the first time of the first time of the first time of the first time of the first time of the first time of the first time of the first time of",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "dense_after_50m",
+    "prompt": "The sun is",
+    "continuation": " a small of the water of the water of the water of the water and the water is the water of the water and the water is the water of the water",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "dense_after_50m",
+    "prompt": "A computer is a machine that",
+    "continuation": " is a single line of the same time of the same time of the same time of the same time of the same time of the first time of the same time",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "dense_after_50m",
+    "prompt": "Water is",
+    "continuation": " a new system of the world of the world of the world of the world of the world of the world of the world of the world of the world of the",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "dense_after_50m",
+    "prompt": "Once upon a time,",
+    "continuation": " the first time of the first time of the first time of the first time of the first time of the first time of the first time of the first time of",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "dense_after_50m",
+    "prompt": "def add(a, b):\n",
+    "continuation": "\"\"\"\nA = self._(a, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, ",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  },
+  {
+    "model": "dense_after_50m",
+    "prompt": "The answer is found by",
+    "continuation": " the first time of the first time of the first time of the first time of the first time of the first time of the first time of the first time of",
+    "decoding": "greedy",
+    "max_new_tokens": 64
+  }
+]

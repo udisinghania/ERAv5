@@ -1,0 +1,68 @@
+{
+  "scope": "full_validation",
+  "loss_tokens": 5049456,
+  "cross_entropy_nats": 3.5141916687720913,
+  "perplexity": 33.588766098981345,
+  "sources": [
+    {
+      "source": "agentic-validation-v2",
+      "loss_tokens": 75219,
+      "cross_entropy_nats": 3.3881831198733035,
+      "perplexity": 29.612101726054803
+    },
+    {
+      "source": "code-validation-v2",
+      "loss_tokens": 1270689,
+      "cross_entropy_nats": 3.936587232399116,
+      "perplexity": 51.24342065936106
+    },
+    {
+      "source": "general-validation-v2",
+      "loss_tokens": 715992,
+      "cross_entropy_nats": 3.6447995055777946,
+      "perplexity": 38.275098138528975
+    },
+    {
+      "source": "indic-validation-v2",
+      "loss_tokens": 1030306,
+      "cross_entropy_nats": 2.7474369246096546,
+      "perplexity": 15.602589976500456
+    },
+    {
+      "source": "long_context-validation-v2",
+      "loss_tokens": 578574,
+      "cross_entropy_nats": 3.6089045275539515,
+      "perplexity": 36.9255796951659
+    },
+    {
+      "source": "reasoning-validation-v2",
+      "loss_tokens": 45321,
+      "cross_entropy_nats": 3.0872480300247127,
+      "perplexity": 21.91668086067055
+    },
+    {
+      "source": "science_math-validation-v2",
+      "loss_tokens": 580068,
+      "cross_entropy_nats": 3.700579759446037,
+      "perplexity": 40.47076086574523
+    },
+    {
+      "source": "fineweb_edu-validation",
+      "loss_tokens": 501703,
+      "cross_entropy_nats": 3.524757932295103,
+      "perplexity": 33.945555498906195
+    },
+    {
+      "source": "wikipedia_en-validation",
+      "loss_tokens": 150796,
+      "cross_entropy_nats": 3.6171237109033063,
+      "perplexity": 37.23032848243459
+    },
+    {
+      "source": "cosmopedia_v2-validation",
+      "loss_tokens": 100788,
+      "cross_entropy_nats": 3.562145488860281,
+      "perplexity": 35.23872038103376
+    }
+  ]
+}

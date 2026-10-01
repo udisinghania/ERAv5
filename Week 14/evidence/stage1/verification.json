@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "checks": {
+    "upstream_files_unchanged": true,
+    "sequence_indices_unchanged": true,
+    "no_repeated_sequence_in_continuation": true,
+    "exact_10m_supervised_targets": true,
+    "semantic_tests_passed": true,
+    "conversion_equivalence_passed": true,
+    "moe_code_unchanged": true,
+    "moe_final_checkpoint_hash": true,
+    "moe_checkpoint_load_and_forward": true,
+    "moe_finite_weights": true,
+    "moe_token_budget": true,
+    "moe_full_holdout": true,
+    "moe_validation_loss_decreased": true,
+    "moe_checkpoint_validation_matches": true,
+    "all_36_experts_updated": true,
+    "experts_diverged_from_identical_copies": true,
+    "dense_code_unchanged": true,
+    "dense_final_checkpoint_hash": true,
+    "dense_checkpoint_load_and_forward": true,
+    "dense_finite_weights": true,
+    "dense_token_budget": true,
+    "dense_full_holdout": true,
+    "dense_validation_loss_decreased": true,
+    "dense_checkpoint_validation_matches": true
+  },
+  "details": {
+    "expert_0_vs_1_weight_distance_by_layer": [
+      0.7879068851470947,
+      1.0295653343200684,
+      1.3242741823196411,
+      1.7128795385360718,
+      1.8972370624542236,
+      1.7946970462799072,
+      2.0356037616729736,
+      2.0494272708892822,
+      1.9089338779449463
+    ],
+    "final_validation_dead_experts": 0
+  },
+  "caveat": "Historical pretraining metrics are inherited from the verified prior result; continuation metrics and checkpoint checks are new."
+}

@@ -1,0 +1,51 @@
+{
+  "results": [
+    {
+      "microbatch": 4,
+      "parameters": 20166912,
+      "seconds_per_microbatch": 0.03250538571072476,
+      "supervised_tokens_per_second": 47161.415454122885,
+      "peak_allocated_bytes": 761196032,
+      "peak_reserved_bytes": 817889280,
+      "final_loss": 5.311341285705566,
+      "status": "PASS"
+    },
+    {
+      "microbatch": 8,
+      "parameters": 20166912,
+      "seconds_per_microbatch": 0.04759381429175846,
+      "supervised_tokens_per_second": 75156.82559234189,
+      "peak_allocated_bytes": 1595243008,
+      "peak_reserved_bytes": 1650458624,
+      "final_loss": 5.661311149597168,
+      "status": "PASS"
+    },
+    {
+      "microbatch": 16,
+      "parameters": 20166912,
+      "seconds_per_microbatch": 0.08253228570850167,
+      "supervised_tokens_per_second": 86656.99657538105,
+      "peak_allocated_bytes": 2519527936,
+      "peak_reserved_bytes": 2824863744,
+      "final_loss": 5.548610687255859,
+      "status": "PASS"
+    },
+    {
+      "microbatch": 32,
+      "parameters": 20166912,
+      "seconds_per_microbatch": 0.15705711429473013,
+      "supervised_tokens_per_second": 94366.94457652658,
+      "peak_allocated_bytes": 4419665408,
+      "peak_reserved_bytes": 4722786304,
+      "final_loss": 5.791285514831543,
+      "status": "PASS"
+    }
+  ],
+  "selected_microbatch": 32,
+  "device": "NVIDIA GeForce RTX 3070 Laptop GPU",
+  "torch_version": "2.5.1+cu121",
+  "cuda_version": "12.1",
+  "precision": "bfloat16",
+  "estimated_training_minutes": 8.830775830169474,
+  "estimate_note": "Short benchmark; excludes evaluation/checkpoint I/O and sustained thermal changes."
+}

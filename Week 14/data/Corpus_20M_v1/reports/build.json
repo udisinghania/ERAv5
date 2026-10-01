@@ -1,0 +1,8 @@
+{
+  "added_train_loss_tokens": 15003209,
+  "added_validation_loss_tokens": 753287,
+  "elapsed_seconds": 398.9059999999881,
+  "packed_training_tokens": 50000000,
+  "status": "PASS",
+  "training_pool_loss_tokens": 52693755
+}

@@ -1,0 +1,235 @@
+{
+  "added_train_loss_tokens": 15003209,
+  "added_validation_loss_tokens": 753287,
+  "policy": {
+    "eval_exact_ngram_words": 13,
+    "fineweb_min_int_score": 3,
+    "fineweb_min_language_score": 0.9,
+    "jaccard_threshold": 0.8,
+    "lsh_bands": 32,
+    "lsh_rows": 4,
+    "max_characters": 120000,
+    "max_duplicate_line_fraction": 0.25,
+    "min_alpha_fraction": 0.6,
+    "min_unique_word_fraction": 0.15,
+    "min_words": 80,
+    "minhash_permutations": 128,
+    "note": "Heuristic screening, not human review or proof of zero semantic overlap.",
+    "sampling_seed": 20260919,
+    "shingle_words": 5,
+    "validation_probability": 0.05,
+    "version": 1,
+    "wikipedia_max_disallowed_title_fraction": 0
+  },
+  "sources": [
+    {
+      "filters": {
+        "accepted_train": 4986,
+        "accepted_validation": 246,
+        "encoding_damage": 3,
+        "evaluation_13word_overlap": 10,
+        "fineweb_score_or_language": 687,
+        "repeated_lines": 1,
+        "repetitive_words": 3,
+        "seen": 5995,
+        "too_long": 2,
+        "too_short": 27,
+        "validation_overlap_training_conservative_bloom": 7,
+        "validation_quota_filled": 23
+      },
+      "source": "fineweb_edu",
+      "splits": {
+        "train": {
+          "files": {
+            "documents.jsonl.gz": {
+              "bytes": 10354015,
+              "sha256": "ba1d1c3e0d9f7bbba473c540f5b1dd10f52c0c808420cf0b7d54615c677d7431"
+            },
+            "index.jsonl.gz": {
+              "bytes": 162185,
+              "sha256": "73d1f4e073615b8f218091ee6abebbfb4289bb4f8f2eea650748ce7ac41ee6eb"
+            },
+            "loss.uint8.bin": {
+              "bytes": 10005120,
+              "sha256": "d55497532963df83c4051ce0f3182d7c3523c0c61ea6d495c41d43e6a24d5913"
+            },
+            "tokens.uint16.bin": {
+              "bytes": 20010240,
+              "sha256": "ebc1b783a801e12d81d12a20e9da14453f3cb653300ab396083ddb9b31c75196"
+            }
+          },
+          "loss_bearing_token_count": 10000134,
+          "permission": "train",
+          "records": 4986,
+          "source": "fineweb_edu",
+          "token_count": 10005120,
+          "tokenizer_hash": "sha256:d3ae34ff50fd48e3a67a0f53bc4526caf6cba5c9e7e185ef856771cb721fe76e"
+        },
+        "validation": {
+          "files": {
+            "documents.jsonl.gz": {
+              "bytes": 519186,
+              "sha256": "961efe29bd919aaaa2c4029b8ef5411dca3811022b81e8400aa8382201795045"
+            },
+            "index.jsonl.gz": {
+              "bytes": 8202,
+              "sha256": "ca4a1424b76788cc0732ddb51161328dfa1e86db8bebcdb353b37d90c2764784"
+            },
+            "loss.uint8.bin": {
+              "bytes": 501949,
+              "sha256": "97eb7ce9c18292618b12def3cc935fec0688bec5dd6ccb8d1168bae105ab3fbb"
+            },
+            "tokens.uint16.bin": {
+              "bytes": 1003898,
+              "sha256": "dde6881d69e36cd69bb8ad226629d87947fe91209b61472dca8530b915ef91ac"
+            }
+          },
+          "loss_bearing_token_count": 501703,
+          "permission": "validation",
+          "records": 246,
+          "source": "fineweb_edu",
+          "token_count": 501949,
+          "tokenizer_hash": "sha256:d3ae34ff50fd48e3a67a0f53bc4526caf6cba5c9e7e185ef856771cb721fe76e"
+        }
+      }
+    },
+    {
+      "filters": {
+        "accepted_train": 1888,
+        "accepted_validation": 88,
+        "evaluation_13word_overlap": 36,
+        "normalized_exact_duplicate": 1,
+        "repeated_lines": 15,
+        "seen": 3191,
+        "too_long": 1,
+        "too_short": 778,
+        "train_quota_filled": 283,
+        "validation_overlap_training_conservative_bloom": 15,
+        "wiki_list_or_disambiguation": 86
+      },
+      "source": "wikipedia_en",
+      "splits": {
+        "train": {
+          "files": {
+            "documents.jsonl.gz": {
+              "bytes": 3013278,
+              "sha256": "bfa57745cd4df9bba57694699a84d16c31e1765ed06eb2d55f028f580bd1273f"
+            },
+            "index.jsonl.gz": {
+              "bytes": 61185,
+              "sha256": "9dce7ea8fb1a61454c51099edbf5797387a196d012267d5f6617b73825f0ed08"
+            },
+            "loss.uint8.bin": {
+              "bytes": 3004043,
+              "sha256": "6e46b59cd0d4a68f191bc953eb39a99866900e7236b21d619f7a5c0f012697f2"
+            },
+            "tokens.uint16.bin": {
+              "bytes": 6008086,
+              "sha256": "244a74ef7e26f1e5771c394945460bd0234b7cb78c3a5abda6dedee74f418224"
+            }
+          },
+          "loss_bearing_token_count": 3002155,
+          "permission": "train",
+          "records": 1888,
+          "source": "wikipedia_en",
+          "token_count": 3004043,
+          "tokenizer_hash": "sha256:d3ae34ff50fd48e3a67a0f53bc4526caf6cba5c9e7e185ef856771cb721fe76e"
+        },
+        "validation": {
+          "files": {
+            "documents.jsonl.gz": {
+              "bytes": 148534,
+              "sha256": "6bfd49de5315da1c1006221067d89a675d3d3d855d3a4a2a4cd8c40bb91eb532"
+            },
+            "index.jsonl.gz": {
+              "bytes": 3008,
+              "sha256": "e718910b76f87e476032d25655845e03ffe461019be4de71c715e314569e3db8"
+            },
+            "loss.uint8.bin": {
+              "bytes": 150884,
+              "sha256": "b663657a84a4cb38a328e3f73cec5dae11dee30815760ff4dd169066054a599d"
+            },
+            "tokens.uint16.bin": {
+              "bytes": 301768,
+              "sha256": "b98ef0422de91173a181cbe88fe018f928e29b935da387e7364c4a1acaf0ae05"
+            }
+          },
+          "loss_bearing_token_count": 150796,
+          "permission": "validation",
+          "records": 88,
+          "source": "wikipedia_en",
+          "token_count": 150884,
+          "tokenizer_hash": "sha256:d3ae34ff50fd48e3a67a0f53bc4526caf6cba5c9e7e185ef856771cb721fe76e"
+        }
+      }
+    },
+    {
+      "filters": {
+        "accepted_train": 1365,
+        "accepted_validation": 67,
+        "evaluation_13word_overlap": 3,
+        "repeated_lines": 11,
+        "seen": 1462,
+        "too_short": 3,
+        "validation_overlap_training_conservative_bloom": 1,
+        "validation_quota_filled": 12
+      },
+      "source": "cosmopedia_v2",
+      "splits": {
+        "train": {
+          "files": {
+            "documents.jsonl.gz": {
+              "bytes": 2185879,
+              "sha256": "b4798892f7e3eab0fa64224fedd35bc8975c59723320dc9a95e1386bab21f2df"
+            },
+            "index.jsonl.gz": {
+              "bytes": 44219,
+              "sha256": "b73cfafe0f76c88cb10deb9846c83380eddf87afd3950ca45f2f1aaa7486602d"
+            },
+            "loss.uint8.bin": {
+              "bytes": 2002285,
+              "sha256": "cfa7bb00b1eb9d7fc1f7acf9d6b7b3467ca96af3f74b012b6343821bfb2f5e9c"
+            },
+            "tokens.uint16.bin": {
+              "bytes": 4004570,
+              "sha256": "57e1bdf6fa6a584c325f4e2728c6b94f6f1e94480a97662b07df1eb8528a421c"
+            }
+          },
+          "loss_bearing_token_count": 2000920,
+          "permission": "train",
+          "records": 1365,
+          "source": "cosmopedia_v2",
+          "token_count": 2002285,
+          "tokenizer_hash": "sha256:d3ae34ff50fd48e3a67a0f53bc4526caf6cba5c9e7e185ef856771cb721fe76e"
+        },
+        "validation": {
+          "files": {
+            "documents.jsonl.gz": {
+              "bytes": 109304,
+              "sha256": "d277ee603356230e712ddb916f8347a90c772f79b0e65c08a55e38f141cb9920"
+            },
+            "index.jsonl.gz": {
+              "bytes": 2317,
+              "sha256": "52e24d9c189a285edf8ae4906fe6c9c6319ca4efe855377cf4cbaf3e437fb7f2"
+            },
+            "loss.uint8.bin": {
+              "bytes": 100855,
+              "sha256": "14e9dfc8518ee36c6e46d9ce51bef9bd47dc5b9d6757168dd559f3bf87623943"
+            },
+            "tokens.uint16.bin": {
+              "bytes": 201710,
+              "sha256": "de25fb7519f2a1f7cb14d254b16303bbdb91ef06a0439188a156759775b2e8ff"
+            }
+          },
+          "loss_bearing_token_count": 100788,
+          "permission": "validation",
+          "records": 67,
+          "source": "cosmopedia_v2",
+          "token_count": 100855,
+          "tokenizer_hash": "sha256:d3ae34ff50fd48e3a67a0f53bc4526caf6cba5c9e7e185ef856771cb721fe76e"
+        }
+      }
+    }
+  ],
+  "tokenizer_hash": "sha256:d3ae34ff50fd48e3a67a0f53bc4526caf6cba5c9e7e185ef856771cb721fe76e"
+}

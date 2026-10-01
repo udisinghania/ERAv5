@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "fp32_max_logit_difference": 2.09808349609375e-05,
+  "dense_parameters": 20166912,
+  "moe_parameters": {
+    "total": 54685440,
+    "active_per_token": 31682304,
+    "convention": "Includes full tied embedding table; theoretical active weights, not measured FLOPs."
+  },
+  "initialization": "Four exact full FFN copies per layer; top-2 weights sum to one; learned router initialized at std 0.01."
+}

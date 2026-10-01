@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "lock": {
+        "capability_lane": "general",
+        "config": "20231101.en",
+        "license_id": "cc-by-sa-3.0-and-gfdl",
+        "parent_manifest_ids": [],
+        "provenance_tier": "curated",
+        "revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+        "source_id": "wikipedia_general_en",
+        "source_url": "https://huggingface.co/datasets/wikimedia/wikipedia",
+        "split": "train"
+      },
+      "lock_hash": "sha256:5759bd4fe1c3a7bab5c37544324c7f7d852361ff939c9a57522f99568f4601c6"
+    },
+    {
+      "lock": {
+        "capability_lane": "long_context",
+        "config": "20231101.en",
+        "license_id": "cc-by-sa-3.0-and-gfdl",
+        "parent_manifest_ids": [],
+        "provenance_tier": "curated-long",
+        "revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+        "source_id": "wikipedia_long_en",
+        "source_url": "https://huggingface.co/datasets/wikimedia/wikipedia",
+        "split": "train"
+      },
+      "lock_hash": "sha256:457fad381a3b1516e9401762d52b473a1b61f60fa22ec7e70fd6ee6ac786bdb2"
+    },
+    {
+      "lock": {
+        "capability_lane": "science_math",
+        "config": "default",
+        "license_id": "odc-by-1.0",
+        "parent_manifest_ids": [],
+        "provenance_tier": "curated-math-web",
+        "revision": "fde8ef8de2300f5e778f56261843dab89f230815",
+        "source_id": "openwebmath_science_math",
+        "source_url": "https://huggingface.co/datasets/open-web-math/open-web-math",
+        "split": "train"
+      },
+      "lock_hash": "sha256:d79448765a38c3d560021a73734a233e1326b65a07bf8c7d21d6c7b543bcab28"
+    },
+    {
+      "lock": {
+        "capability_lane": "code",
+        "config": "default",
+        "license_id": "per-record-permissive",
+        "parent_manifest_ids": [],
+        "provenance_tier": "curated-permissive",
+        "revision": "35a59fb025bc0a102f7d96eac09d145b896d487b",
+        "source_id": "codeparrot_permissive_python",
+        "source_url": "https://huggingface.co/datasets/codeparrot/codeparrot-clean",
+        "split": "train"
+      },
+      "lock_hash": "sha256:375b72c3a543d876718b92c455658c681f9bc3b6c5185fc662395f1b5ed4ec93"
+    },
+    {
+      "lock": {
+        "capability_lane": "reasoning",
+        "config": "main",
+        "license_id": "mit",
+        "parent_manifest_ids": [],
+        "provenance_tier": "human-authored",
+        "revision": "740312add88f781978c0658806c59bc2815b9866",
+        "source_id": "gsm8k_reasoning_train",
+        "source_url": "https://huggingface.co/datasets/openai/gsm8k",
+        "split": "train"
+      },
+      "lock_hash": "sha256:416b1db02e8fdc761b256b9c26685c44a5534b2a9d515ada7171eab0281e164d"
+    },
+    {
+      "lock": {
+        "capability_lane": "reasoning",
+        "config": "main",
+        "license_id": "mit",
+        "parent_manifest_ids": [],
+        "provenance_tier": "registered-evaluation",
+        "revision": "740312add88f781978c0658806c59bc2815b9866",
+        "source_id": "gsm8k_eval_never_train",
+        "source_url": "https://huggingface.co/datasets/openai/gsm8k",
+        "split": "test"
+      },
+      "lock_hash": "sha256:ac7fc5d61ec69fff6f595375d244b9e022c37dbdda3112611df9f10df9edd796"
+    },
+    {
+      "lock": {
+        "capability_lane": "indic",
+        "config": "verified",
+        "license_id": "cc-by-4.0",
+        "parent_manifest_ids": [],
+        "provenance_tier": "verified",
+        "revision": "8b813c3f62d37b2fa174d68c31e8b35ae2fe85e8",
+        "source_id": "sangraha_verified_hindi",
+        "source_url": "https://huggingface.co/datasets/ai4bharat/sangraha",
+        "split": "hin"
+      },
+      "lock_hash": "sha256:8b370c4d8d58c1315162b6440675c8aa1f5adb73eb56b0ccc6c626e4c83da562"
+    },
+    {
+      "lock": {
+        "capability_lane": "indic",
+        "config": "unverified",
+        "license_id": "cc-by-4.0",
+        "parent_manifest_ids": [],
+        "provenance_tier": "unverified",
+        "revision": "8b813c3f62d37b2fa174d68c31e8b35ae2fe85e8",
+        "source_id": "sangraha_unverified_hindi",
+        "source_url": "https://huggingface.co/datasets/ai4bharat/sangraha",
+        "split": "hin"
+      },
+      "lock_hash": "sha256:9faa4b61c5244d616aa8497eeeb78c6cad16d7003371cc9eff749f986cfd01c1"
+    },
+    {
+      "lock": {
+        "capability_lane": "indic",
+        "config": "synthetic",
+        "license_id": "cc-by-4.0",
+        "parent_manifest_ids": [],
+        "provenance_tier": "synthetic",
+        "revision": "8b813c3f62d37b2fa174d68c31e8b35ae2fe85e8",
+        "source_id": "sangraha_synthetic_hindi",
+        "source_url": "https://huggingface.co/datasets/ai4bharat/sangraha",
+        "split": "hin_Deva"
+      },
+      "lock_hash": "sha256:764d10ddd3f2d9e34d05b3c8f6db09e1304378481a5354516c5aff0809ae9a0f"
+    },
+    {
+      "lock": {
+        "capability_lane": "indic",
+        "config": "twm_final",
+        "license_id": "cc-by-nc-4.0",
+        "parent_manifest_ids": [
+          "shard_671c3827f6de"
+        ],
+        "provenance_tier": "translated",
+        "revision": "sha256:671c3827f6dec98ddfe9f61a1cfb0dcfb34b856a0a3e1085dfdb417f09dbd7df",
+        "source_id": "assignment4_samanantar_translated",
+        "source_url": "https://huggingface.co/datasets/ai4bharat/samanantar",
+        "split": "train"
+      },
+      "lock_hash": "sha256:f7db77df4677b2bc79754e07bb3d412d81ddb43098a0c702dd18d80df7bbaccf"
+    },
+    {
+      "lock": {
+        "capability_lane": "agentic",
+        "config": "func_calling",
+        "license_id": "apache-2.0",
+        "parent_manifest_ids": [],
+        "provenance_tier": "synthetic-function-calling",
+        "revision": "dae3e1d28cfbcf4b915c04ea1e072030529b4bda",
+        "source_id": "hermes_function_calling",
+        "source_url": "https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1",
+        "split": "train"
+      },
+      "lock_hash": "sha256:5119692298e0f570cf487aff2fde83ef2f05d7329ac9f9019ef46ca973fb6e2f"
+    },
+    {
+      "lock": {
+        "capability_lane": "agentic",
+        "config": "json_mode_agentic",
+        "license_id": "apache-2.0",
+        "parent_manifest_ids": [],
+        "provenance_tier": "synthetic-json-agentic",
+        "revision": "dae3e1d28cfbcf4b915c04ea1e072030529b4bda",
+        "source_id": "hermes_json_agentic",
+        "source_url": "https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1",
+        "split": "train"
+      },
+      "lock_hash": "sha256:cbe23138d9f446a261c8d47c601d4e98f03b095bf17d35b37cc09365252db430"
+    },
+    {
+      "lock": {
+        "capability_lane": "agentic",
+        "config": "glaive_func_calling",
+        "license_id": "apache-2.0",
+        "parent_manifest_ids": [],
+        "provenance_tier": "synthetic-function-calling",
+        "revision": "dae3e1d28cfbcf4b915c04ea1e072030529b4bda",
+        "source_id": "hermes_glaive_function_calling",
+        "source_url": "https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1",
+        "split": "train"
+      },
+      "lock_hash": "sha256:54f63581530fc7b944d54f5eee1469ac74df37751d6df2cf77d07f33c5b35063"
+    }
+  ]
+}

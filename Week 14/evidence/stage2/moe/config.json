@@ -1,0 +1,19 @@
+{
+  "kind": "moe",
+  "budget": 40000000,
+  "peak_lr": 0.0002,
+  "min_lr": 2e-05,
+  "warmup_updates": 50,
+  "global_batch": 32,
+  "microbatch": 16,
+  "auxiliary_coefficient": 0.001,
+  "optimizer": "Preserved AdamW state from matching 10M parent; LR schedule restarted for both arms",
+  "data_plan_sha256": "0d3d99502c311e2a8abd1a70ab05217ebdadc17d461fa55d96fa479b2792f63b",
+  "code_sha256": {
+    "extend.py": "af87098f62708580be282a4576b078307f28fd48c329e26b20f01022e23765ea",
+    "base_experiment.py": "b9b67ee97033cb0d14f090055f0a847c2ce2cc2468e5898139c6b6a81369749e",
+    "dense_model.py": "3dbf03f702822d0d58be90e52e3eb1cc3caacf57a2a57b6fe153b30b214b3cb5",
+    "moe_model.py": "0e8d7041086670b51521db3d338bb249919c0ba5262e3f9e53eddd82fc56c4e3",
+    "packed_dataset.py": "6428648aba9733b4d74a3beb9c88d5b71a4023cbbf2d1c6e620d90f4639de40b"
+  }
+}

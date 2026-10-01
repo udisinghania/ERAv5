@@ -1,0 +1,98 @@
+{
+  "config": "sample-10BT",
+  "dataset": "HuggingFaceFW/fineweb-edu",
+  "features": [
+    {
+      "feature_idx": 0,
+      "name": "text",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 1,
+      "name": "id",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 2,
+      "name": "dump",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 3,
+      "name": "url",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 4,
+      "name": "file_path",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 5,
+      "name": "language",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 6,
+      "name": "language_score",
+      "type": {
+        "_type": "Value",
+        "dtype": "float64"
+      }
+    },
+    {
+      "feature_idx": 7,
+      "name": "token_count",
+      "type": {
+        "_type": "Value",
+        "dtype": "int64"
+      }
+    },
+    {
+      "feature_idx": 8,
+      "name": "score",
+      "type": {
+        "_type": "Value",
+        "dtype": "float64"
+      }
+    },
+    {
+      "feature_idx": 9,
+      "name": "int_score",
+      "type": {
+        "_type": "Value",
+        "dtype": "int64"
+      }
+    }
+  ],
+  "id": "fineweb_edu",
+  "license": "odc-by",
+  "license_metadata": "odc-by",
+  "num_rows": 9672101,
+  "readme_sha256": "a0cc8998a20499432b28b6575f3046b714938eb8e11b8d59a1d25ddf3716061e",
+  "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+  "sampling": "Seeded random disjoint blocks of 100 rows across the complete config; shuffle rows within blocks.",
+  "token_counting": "Frozen 8192-token tokenizer; target-aligned loss mask; BOS excluded, EOS included.",
+  "train": 10000000,
+  "upstream_split": "train",
+  "validation": 500000,
+  "webpage": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu"
+}

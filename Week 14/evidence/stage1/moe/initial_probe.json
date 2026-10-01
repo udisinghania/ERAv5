@@ -1,0 +1,213 @@
+{
+  "scope": "fixed_32_fragments_per_source",
+  "loss_tokens": 124925,
+  "cross_entropy_nats": 3.5731921379390132,
+  "perplexity": 35.63014816129485,
+  "sources": [
+    {
+      "source": "agentic-validation-v2",
+      "loss_tokens": 4619,
+      "cross_entropy_nats": 3.3883381439096665
+    },
+    {
+      "source": "code-validation-v2",
+      "loss_tokens": 15540,
+      "cross_entropy_nats": 4.03615493283462
+    },
+    {
+      "source": "general-validation-v2",
+      "loss_tokens": 13679,
+      "cross_entropy_nats": 3.7192214685832297
+    },
+    {
+      "source": "indic-validation-v2",
+      "loss_tokens": 12431,
+      "cross_entropy_nats": 2.8622540171748048
+    },
+    {
+      "source": "long_context-validation-v2",
+      "loss_tokens": 16039,
+      "cross_entropy_nats": 3.67426285635794
+    },
+    {
+      "source": "reasoning-validation-v2",
+      "loss_tokens": 4920,
+      "cross_entropy_nats": 3.078265728213923
+    },
+    {
+      "source": "science_math-validation-v2",
+      "loss_tokens": 14407,
+      "cross_entropy_nats": 3.669034448315055
+    },
+    {
+      "source": "fineweb_edu-validation",
+      "loss_tokens": 15072,
+      "cross_entropy_nats": 3.532528628209594
+    },
+    {
+      "source": "wikipedia_en-validation",
+      "loss_tokens": 14412,
+      "cross_entropy_nats": 3.616412863412434
+    },
+    {
+      "source": "cosmopedia_v2-validation",
+      "loss_tokens": 13806,
+      "cross_entropy_nats": 3.567591904108721
+    }
+  ],
+  "routing": [
+    {
+      "layer": 0,
+      "counts": [
+        67152,
+        115492,
+        65286,
+        27550
+      ],
+      "shares": [
+        0.24376361260345578,
+        0.41923914621751124,
+        0.23698998112385655,
+        0.10000726005517642
+      ],
+      "dead_experts": 0,
+      "max_violation": 0.676956584870045
+    },
+    {
+      "layer": 1,
+      "counts": [
+        124588,
+        49340,
+        42844,
+        58708
+      ],
+      "shares": [
+        0.45225787715986643,
+        0.17910556120226515,
+        0.15552490198925512,
+        0.21311165964861334
+      ],
+      "dead_experts": 0,
+      "max_violation": 0.8090315086394657
+    },
+    {
+      "layer": 2,
+      "counts": [
+        30819,
+        51586,
+        94662,
+        98413
+      ],
+      "shares": [
+        0.11187382024103383,
+        0.18725860316538406,
+        0.3436256715551038,
+        0.3572419050384783
+      ],
+      "dead_experts": 0,
+      "max_violation": 0.4289676201539132
+    },
+    {
+      "layer": 3,
+      "counts": [
+        63286,
+        56733,
+        74647,
+        80814
+      ],
+      "shares": [
+        0.2297299259474372,
+        0.20594235516189924,
+        0.27097066937708725,
+        0.29335704951357633
+      ],
+      "dead_experts": 0,
+      "max_violation": 0.17342819805430532
+    },
+    {
+      "layer": 4,
+      "counts": [
+        38100,
+        40217,
+        128524,
+        68639
+      ],
+      "shares": [
+        0.13830405111078845,
+        0.14598881951502832,
+        0.4665456657470597,
+        0.24916146362712357
+      ],
+      "dead_experts": 0,
+      "max_violation": 0.8661826629882388
+    },
+    {
+      "layer": 5,
+      "counts": [
+        80842,
+        57935,
+        116963,
+        19740
+      ],
+      "shares": [
+        0.29345869028604615,
+        0.21030564832292725,
+        0.42457891679976767,
+        0.0716567445912589
+      ],
+      "dead_experts": 0,
+      "max_violation": 0.6983156671990707
+    },
+    {
+      "layer": 6,
+      "counts": [
+        53326,
+        64196,
+        66181,
+        91777
+      ],
+      "shares": [
+        0.19357485116886888,
+        0.233033251052708,
+        0.2402388558153042,
+        0.3331530419631189
+      ],
+      "dead_experts": 0,
+      "max_violation": 0.3326121678524756
+    },
+    {
+      "layer": 7,
+      "counts": [
+        103155,
+        35510,
+        62208,
+        74607
+      ],
+      "shares": [
+        0.3744554958617686,
+        0.1289022796573254,
+        0.22581675620734717,
+        0.27082546827355886
+      ],
+      "dead_experts": 0,
+      "max_violation": 0.4978219834470743
+    },
+    {
+      "layer": 8,
+      "counts": [
+        78566,
+        62738,
+        90540,
+        43636
+      ],
+      "shares": [
+        0.28519674749528096,
+        0.2277406708290983,
+        0.32866269783650354,
+        0.15839988383911718
+      ],
+      "dead_experts": 0,
+      "max_violation": 0.31465079134601415
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": [
+    "All policies preserve the identical-copy function",
+    "Every policy selects two experts per valid token",
+    "Random routing remains causal with fixed RNG",
+    "Restoring learned policy restores outputs"
+  ]
+}

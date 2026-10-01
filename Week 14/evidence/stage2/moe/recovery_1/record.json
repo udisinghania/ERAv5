@@ -1,0 +1,8 @@
+{
+  "status": "VERIFIED",
+  "resume_update": 1500,
+  "resume_targets": 22902306,
+  "resume_cursor": 48000,
+  "checkpoint_sha256": "f5a5a9abba65b3f6f6266012873bbfe11fc5f84dea89703aad9ab79c5be4472c",
+  "log_policy": "Uncommitted progress logs archived; resume from last committed optimizer state. No committed target is skipped or repeated."
+}

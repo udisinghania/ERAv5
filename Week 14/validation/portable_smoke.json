@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "pretraining_input_hashes": "PASS",
+  "pretraining_validation_loader": "PASS",
+  "pretraining_one_GPU_optimizer_step": "PASS",
+  "extension_boundary": "437 + 74 disjoint targets",
+  "remaining_targets": 40000000,
+  "scope": "Loader and optimizer smoke checks; no full retraining"
+}

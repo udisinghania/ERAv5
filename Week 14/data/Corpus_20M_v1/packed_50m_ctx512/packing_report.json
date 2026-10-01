@@ -1,0 +1,77 @@
+{
+  "attention_policy": "causal_within_segment_only",
+  "context_length": 512,
+  "continuation_overlap_tokens": 104770,
+  "files": {
+    "input_ids.uint16.bin": {
+      "bytes": 107379712,
+      "sha256": "5ccbe16231505ad9a8432142d3d03a944130b702a03a37c6c3df11069f060c0c"
+    },
+    "loss_mask.uint8.bin": {
+      "bytes": 53689856,
+      "sha256": "2ec133e9eb7b98306502e9f8f7e7c014b9f967dae7c97f07d13bd324bb6795a0"
+    },
+    "position_ids.uint16.bin": {
+      "bytes": 107379712,
+      "sha256": "216db9f68ee5b01ff85e5c4dfb0cc43b8b284fea407a194d1adc65e1ec5e5bbf"
+    },
+    "segment_ids.int16.bin": {
+      "bytes": 107379712,
+      "sha256": "f6df843ea74ad86a5b099c5f7c69e89d26c27a17d5df91e007e15330a86a8ce5"
+    },
+    "segments.jsonl.gz": {
+      "bytes": 2135450,
+      "sha256": "a5edd9a872cad967caea7bc424dc671177f1fff75289d5e86ad34a8a2f003d4c"
+    }
+  },
+  "fully_consumed_records": 28150,
+  "last_record_partial": true,
+  "loss_bearing_tokens": 50000000,
+  "mask_convention": "Target-aligned; multiply shifted labels' losses by loss_mask[:,1:].",
+  "nonpadding_tokens": 53689750,
+  "padding_tokens": 106,
+  "physical_tokens": 53689856,
+  "position_policy": "reset_per_fragment",
+  "sampling": "One shuffled pass over train/anneal records; no record resampling; stop at exact token budget.",
+  "selected_loss_tokens_by_shard": {
+    "agentic-anneal-v2": 13106,
+    "agentic-train-v2": 675826,
+    "code-anneal-v2": 130122,
+    "code-train-v2": 8707338,
+    "cosmopedia_v2-train": 1914934,
+    "fineweb_edu-train": 9505720,
+    "general-anneal-v2": 105650,
+    "general-train-v2": 5776567,
+    "indic-anneal-v2": 141457,
+    "indic-train-v2": 7327752,
+    "long_context-anneal-v2": 120799,
+    "long_context-train-v2": 5082760,
+    "reasoning-anneal-v2": 7469,
+    "reasoning-train-v2": 375742,
+    "science_math-anneal-v2": 115653,
+    "science_math-train-v2": 7148032,
+    "wikipedia_en-train": 2851073
+  },
+  "selected_records_by_shard": {
+    "agentic-anneal-v2": 37,
+    "agentic-train-v2": 1674,
+    "code-anneal-v2": 53,
+    "code-train-v2": 3411,
+    "cosmopedia_v2-train": 1307,
+    "fineweb_edu-train": 4746,
+    "general-anneal-v2": 83,
+    "general-train-v2": 4321,
+    "indic-anneal-v2": 102,
+    "indic-train-v2": 4393,
+    "long_context-anneal-v2": 25,
+    "long_context-train-v2": 1126,
+    "reasoning-anneal-v2": 54,
+    "reasoning-train-v2": 2489,
+    "science_math-anneal-v2": 42,
+    "science_math-train-v2": 2507,
+    "wikipedia_en-train": 1781
+  },
+  "sequences": 104863,
+  "status": "COMPLETE",
+  "utilization": 0.9999980256978153
+}

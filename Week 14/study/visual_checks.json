@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "name": "moe-real-routing",
+      "width": 736,
+      "overflow": false,
+      "interaction": "PASS"
+    },
+    {
+      "name": "moe-capacity-compute",
+      "width": 736,
+      "overflow": false,
+      "interaction": "PASS"
+    },
+    {
+      "name": "moe-expert-balance",
+      "width": 736,
+      "overflow": false,
+      "interaction": "PASS"
+    },
+    {
+      "name": "moe-real-routing",
+      "width": 320,
+      "overflow": false,
+      "interaction": "PASS"
+    },
+    {
+      "name": "moe-capacity-compute",
+      "width": 320,
+      "overflow": false,
+      "interaction": "PASS"
+    },
+    {
+      "name": "moe-expert-balance",
+      "width": 320,
+      "overflow": false,
+      "interaction": "PASS"
+    }
+  ]
+}

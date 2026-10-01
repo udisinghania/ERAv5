@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "all_fragments_match_source_tokens_and_masks": true,
+    "all_positions_reset_and_increment": true,
+    "all_segment_boundaries_and_padding_masked": true,
+    "all_shard_sizes_ids_and_loss_counts": true,
+    "exact_50m_shifted_supervised_targets": true,
+    "no_evaluation_shards_in_packing": true,
+    "no_resampled_record_spans": true,
+    "original_baseline_files_unchanged": true
+  },
+  "limitations": [
+    "MinHash LSH plus Jaccard is heuristic near-duplicate detection, not exhaustive pairwise comparison.",
+    "Inherited baseline records and source permissions are preserved, not re-curated.",
+    "13-word screening is symmetric for additions: exact hashes against held-out text, conservative Bloom membership against training text; false-positive rejections are possible.",
+    "Data screened automatically; no claim of human review or benchmark improvement."
+  ],
+  "packed_fragments_verified": 132921,
+  "status": "PASS"
+}

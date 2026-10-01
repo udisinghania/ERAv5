@@ -1,0 +1,53 @@
+{
+  "config": "20231101.en",
+  "dataset": "wikimedia/wikipedia",
+  "features": [
+    {
+      "feature_idx": 0,
+      "name": "id",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 1,
+      "name": "url",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 2,
+      "name": "title",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    },
+    {
+      "feature_idx": 3,
+      "name": "text",
+      "type": {
+        "_type": "Value",
+        "dtype": "string"
+      }
+    }
+  ],
+  "id": "wikipedia_en",
+  "license": "cc-by-sa-3.0 AND gfdl",
+  "license_metadata": [
+    "cc-by-sa-3.0",
+    "gfdl"
+  ],
+  "num_rows": 6407814,
+  "readme_sha256": "a0f2055ac612f924721e9981fa2a49a18adec1c67cc8026f6c97d12f17211b21",
+  "revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+  "sampling": "Seeded random disjoint blocks of 100 rows across the complete config; shuffle rows within blocks.",
+  "token_counting": "Frozen 8192-token tokenizer; target-aligned loss mask; BOS excluded, EOS included.",
+  "train": 3000000,
+  "upstream_split": "train",
+  "validation": 150000,
+  "webpage": "https://huggingface.co/datasets/wikimedia/wikipedia"
+}

@@ -1,0 +1,54 @@
+{
+  "checkpoint_sha256": "ddd4a6205d3e985c89df7a0d7dd64e4349d330e737ca28919ea4f4946b5e46e5",
+  "same_weights": true,
+  "same_full_holdout": true,
+  "learned_reproduction_passed": true,
+  "experiments": [
+    {
+      "mode": "learned",
+      "seed": null,
+      "scope": "full_validation",
+      "loss_tokens": 5049456,
+      "cross_entropy_nats": 3.017127224389041,
+      "perplexity": 20.43250927596671
+    },
+    {
+      "mode": "uniform_selected",
+      "seed": null,
+      "scope": "full_validation",
+      "loss_tokens": 5049456,
+      "cross_entropy_nats": 3.1037497617071006,
+      "perplexity": 22.28134456388738
+    },
+    {
+      "mode": "random",
+      "seed": 17,
+      "scope": "full_validation",
+      "loss_tokens": 5049456,
+      "cross_entropy_nats": 3.4660418585219177,
+      "perplexity": 32.00979208100534
+    },
+    {
+      "mode": "random",
+      "seed": 29,
+      "scope": "full_validation",
+      "loss_tokens": 5049456,
+      "cross_entropy_nats": 3.4655824646731785,
+      "perplexity": 31.995090356623336
+    },
+    {
+      "mode": "random",
+      "seed": 43,
+      "scope": "full_validation",
+      "loss_tokens": 5049456,
+      "cross_entropy_nats": 3.465628389812967,
+      "perplexity": 31.996559769361742
+    }
+  ],
+  "definitions": {
+    "learned": "Normal learned top-2 selection and normalized learned weights",
+    "uniform_selected": "Normal learned top-2 choices; replace selected output weights with 1/2 each",
+    "random": "Choose two distinct experts uniformly per token; weight each 1/2; three fixed RNG seeds"
+  },
+  "limitations": "Inference perturbations without retraining; measure sensitivity of this trained model, not quality of separately trained routing designs. The holdout was already used during development."
+}
