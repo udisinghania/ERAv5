@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "stages": 6,
+  "seeds": [
+    31415,
+    27182
+  ],
+  "checkpoint_reloads_passed": true,
+  "every_stage_reduced_validation_loss": true,
+  "original_seed_reference_loss_differences": {
+    "pretrained": 0.0,
+    "dense_control": 0.0,
+    "moe": 0.0
+  },
+  "suite_wall_seconds": 134.52963920000184,
+  "source_sha256": "391a1f2c7121efb7aaa679bcedbf22739cb269dfc56f21b6af355371ec0f2fd3",
+  "limitations": [
+    "Two seeds do not establish a confidence interval",
+    "One laptop; synchronized timing includes overhead and is not an optimized throughput ceiling",
+    "Same fixed data subset; seed changes initialization and sampling, not the data split"
+  ]
+}

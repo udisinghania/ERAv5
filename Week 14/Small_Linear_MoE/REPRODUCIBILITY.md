@@ -1,5 +1,18 @@
 # Reproducibility audit — 2 October 2026
 
+## README-completion update
+
+The README now includes a second initialization/sampling seed, measured per-stage training cost, exact source-group counts for the selected byte subset, and a separate Colab training workflow. Historical results below remain unchanged.
+
+- **Two-seed study:** seeds 31415 and 27182 each train a baseline and matched dense/MoE continuations. Every stage reduces held-out loss; every checkpoint is reloaded and evaluated. The instrumented original-seed run matches the three original losses exactly. Configuration and six stage histories/checkpoints are under results/extended_study/.
+- **Measurement scope:** each stage uses its own process. Time sums synchronized optimizer steps including feature preparation and transfers; it excludes validation, serialization and process startup. Peak memory is PyTorch allocated memory during training. The README reports both measured seeds, not an extrapolated or theoretical cost.
+- **Data attribution:** all 1,079,116 selected context/target pairs were reconstructed from their original frozen corpus fragments and compared elementwise. data/source_mix.json records the contributing source fragments, exact intervals and source-group counts. This audit does not change the bundled data or its SHA-256.
+- **Colab notebook:** actual notebook cells are executed locally with the package and Python interpreter explicitly overridden. This exercises CUDA preflight, file verification, checkpoint evaluation, fresh training, all deep-dive arms, the two-seed study and output archiving. It does not execute a Google-hosted GPU runtime, Drive authorization or a fresh internet dependency installation. See validation/colab_local_execution.json for exact scope and results.
+- **Reference drift:** local defaults remain strict. The explicit --allow-reference-drift flag preserves correctness checks while recording REFERENCE_DRIFT for cross-hardware loss mismatches; it never relabels a mismatch PASS.
+- **Safe update:** the copier accepts previously published bytes from commit 9e797ca only when -UpdatePublished is provided. Differing local edits are refused before mutation. The previous manifest is bundled for auditing.
+
+The earlier packaging/reproduction records below describe the original release. New validation records accompany this update; they do not erase or retroactively relabel the earlier checks. The Colab workflow's hosted-runtime status remains **not independently tested**.
+
 The complete numerical experiment was rerun from a separate copy in a directory containing spaces, launched from an unrelated working directory. The copy had no sibling Transformer package. It used only this package's source, bundled byte dataset and the installed Python dependencies.
 
 ## Fresh training, not just checkpoint evaluation

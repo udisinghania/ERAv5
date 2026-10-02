@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "strict_rejects_loss_mismatch": true,
+  "optional_drift_is_labeled": true,
+  "correctness_assertions_remain_active": true
+}

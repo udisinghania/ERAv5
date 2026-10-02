@@ -1,0 +1,6 @@
+{"seed": 27182, "arm": "dense_control", "step": 100, "loss": 2.3763579311647614, "targets": 79116}
+{"seed": 27182, "arm": "dense_control", "step": 200, "loss": 2.36880825047932, "targets": 79116}
+{"seed": 27182, "arm": "dense_control", "step": 300, "loss": 2.3639101383026584, "targets": 79116}
+{"seed": 27182, "arm": "dense_control", "step": 400, "loss": 2.3581536149007074, "targets": 79116}
+{"seed": 27182, "arm": "dense_control", "step": 500, "loss": 2.355028790177358, "targets": 79116}
+{"seed": 27182, "arm": "dense_control", "step": 600, "loss": 2.351382650109886, "targets": 79116}

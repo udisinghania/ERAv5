@@ -1,0 +1,13 @@
+{
+  "seeds": [
+    31415,
+    27182
+  ],
+  "data_sha256": "9483267374a25bb511daedb30522f7c93d87337c30bb2171fe67b5583c8d3097",
+  "fixed_dataset": true,
+  "comparison": "Independent initialization and batch-sampling seeds; same batches for dense/MoE continuation within each seed",
+  "optimizer": "Fresh AdamW per stage; betas .9/.999, eps 1e-8, weight_decay .01, clip 1",
+  "metric_definition": "Sum of synchronized training-step wall time including one-hot construction/transfers and optimizer; excludes validation/checkpoint IO/process startup. No discarded warmup training steps.",
+  "memory_definition": "Maximum torch.cuda.max_memory_allocated during training steps; includes model, gradients, Adam state and workspaces; isolated process per stage; not nvidia-smi and not inference memory",
+  "precision": "FP32; TF32 disabled; batch 1024; no autocast, compilation or expert parallelism"
+}

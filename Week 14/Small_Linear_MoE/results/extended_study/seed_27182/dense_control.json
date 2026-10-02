@@ -1,0 +1,60 @@
+{
+  "seed": 27182,
+  "arm": "dense_control",
+  "updates": 600,
+  "batch": 1024,
+  "exposures": 614400,
+  "learning_rate": 0.003,
+  "history": [
+    {
+      "step": 0,
+      "loss": 2.3914880461817933,
+      "targets": 79116
+    },
+    {
+      "step": 100,
+      "loss": 2.3763579311647614,
+      "targets": 79116
+    },
+    {
+      "step": 200,
+      "loss": 2.36880825047932,
+      "targets": 79116
+    },
+    {
+      "step": 300,
+      "loss": 2.3639101383026584,
+      "targets": 79116
+    },
+    {
+      "step": 400,
+      "loss": 2.3581536149007074,
+      "targets": 79116
+    },
+    {
+      "step": 500,
+      "loss": 2.355028790177358,
+      "targets": 79116
+    },
+    {
+      "step": 600,
+      "loss": 2.351382650109886,
+      "targets": 79116
+    }
+  ],
+  "training_seconds": 18.3910002001503,
+  "training_targets_per_second": 33407.644680194106,
+  "peak_training_allocated_bytes": 37998080,
+  "peak_training_reserved_bytes": 88080384,
+  "loop_wall_seconds_including_periodic_validation": 19.554516599993804,
+  "conversion_max_logit_difference": null,
+  "checkpoint_reload_loss": 2.351382650109886,
+  "checkpoint_sha256": "5c2a9f02306bbf79467eeaac865cfc4d1fd20f2a3c7545d05e704f9107c4eb71",
+  "environment": {
+    "python": "3.12.5",
+    "torch": "2.5.1+cu121",
+    "numpy": "1.26.4",
+    "cuda": "12.1",
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU"
+  }
+}

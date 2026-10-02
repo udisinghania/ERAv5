@@ -1,4 +1,4 @@
-param([string]$Repository = 'D:\github_repos\ERAv5')
+param([string]$Repository = 'D:\github_repos\ERAv5', [switch]$UpdatePublished)
 $ErrorActionPreference = 'Stop'
 function Get-Sha256([string]$Path) {
     $Stream = [System.IO.File]::OpenRead($Path)
@@ -16,6 +16,9 @@ if ($Package.TrimEnd('\') -eq $Destination.TrimEnd('\')) {
     throw 'Source and destination are identical. Run this script from the prepared source package.'
 }
 $Manifest = Get-Content -LiteralPath (Join-Path $Package 'MANIFEST.json') -Raw | ConvertFrom-Json
+$PreviousPath = Join-Path $Package 'updates\published_9e797ca_manifest.json'
+$Previous = $null
+if ($UpdatePublished) { $Previous = Get-Content -LiteralPath $PreviousPath -Raw | ConvertFrom-Json }
 $Files = @($Manifest.files.PSObject.Properties.Name) + @('MANIFEST.json')
 # Validate every input and all pre-existing destination files before copying.
 foreach ($Relative in $Files) {
@@ -32,7 +35,14 @@ foreach ($Relative in $Files) {
     }
     if ((Test-Path -LiteralPath $TargetFile) -and
         (Get-Sha256 $TargetFile) -ne $SourceHash) {
-        throw "Different existing file: $TargetFile. Review it before replacement; nothing was copied."
+        $AllowedOldHash = $null
+        if ($UpdatePublished -and $Relative -eq 'MANIFEST.json') { $AllowedOldHash = Get-Sha256 $PreviousPath }
+        elseif ($UpdatePublished -and $Previous.files.PSObject.Properties.Name -contains $Relative) {
+            $AllowedOldHash = $Previous.files.$Relative.sha256
+        }
+        if (-not $AllowedOldHash -or (Get-Sha256 $TargetFile) -ne $AllowedOldHash) {
+            throw "Different existing file: $TargetFile. It matches neither the verified update nor the published baseline; nothing was copied."
+        }
     }
 }
 foreach ($Relative in $Files) {

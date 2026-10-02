@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "original_checkpoints_data_main_results_and_deep_dive_preserved": true,
+  "independent_training_seeds": [
+    31415,
+    27182
+  ],
+  "stage_checkpoints_verified": 6,
+  "exact_subset_source_counts": true,
+  "relative_document_links_checked": 50,
+  "colab_notebook_matches_locally_executed_version": true,
+  "training_code_matches_notebook_test": true,
+  "hosted_colab_gpu_tested": false,
+  "figures_visually_reviewed": true
+}

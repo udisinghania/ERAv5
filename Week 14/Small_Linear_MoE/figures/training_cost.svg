@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="950" height="365" preserveAspectRatio="xMinYMin meet" viewBox="0 0 950 365" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="950" height="365"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-365)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="950" height="365" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="24" y="332" style="font-family: Helvetica-Bold; font-size: 19px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,664) scale(1,-1)">The loss improvement has a compute cost</text>
+			<text x="24" y="309" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,618) scale(1,-1)">RTX 3070 Laptop, FP32, batch 1,024. Separate process per stage; both measured seeds shown.</text>
+			<text x="24" y="273" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,546) scale(1,-1)">Stage / seed</text>
+			<text x="295" y="273" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,546) scale(1,-1)">Training targets / second</text>
+			<text x="670" y="273" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,546) scale(1,-1)">Peak allocated MiB</text>
+			<text x="24" y="244" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,488) scale(1,-1)">Linear pretraining / 31415</text>
+			<rect x="295" y="241" width="96.67952816097466" height="15" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,58%,63%); fill-rule: evenodd;"/>
+			<text x="399.67952816097466" y="244" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,488) scale(1,-1)">33,338</text>
+			<text x="715" y="244" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,488) scale(1,-1)">36.24</text>
+			<text x="24" y="213" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,426) scale(1,-1)">Linear pretraining / 27182</text>
+			<rect x="295" y="210" width="98.8491000233737" height="15" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,58%,63%); fill-rule: evenodd;"/>
+			<text x="401.8491000233737" y="213" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,426) scale(1,-1)">34,086</text>
+			<text x="715" y="213" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,426) scale(1,-1)">36.24</text>
+			<text x="24" y="182" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,364) scale(1,-1)">Dense continuation / 31415</text>
+			<rect x="295" y="179" width="92.26377781989754" height="15" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,58%,63%); fill-rule: evenodd;"/>
+			<text x="395.26377781989754" y="182" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,364) scale(1,-1)">31,815</text>
+			<text x="715" y="182" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,364) scale(1,-1)">36.24</text>
+			<text x="24" y="151" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,302) scale(1,-1)">Dense continuation / 27182</text>
+			<rect x="295" y="148" width="96.88216957256293" height="15" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(46%,58%,63%); fill-rule: evenodd;"/>
+			<text x="399.88216957256293" y="151" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,302) scale(1,-1)">33,408</text>
+			<text x="715" y="151" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,302) scale(1,-1)">36.24</text>
+			<text x="24" y="120" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,240) scale(1,-1)">MoE continuation / 31415</text>
+			<rect x="295" y="117" width="87.82705338193603" height="15" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="390.827053381936" y="120" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,240) scale(1,-1)">30,285</text>
+			<text x="715" y="120" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,240) scale(1,-1)">48.67</text>
+			<text x="24" y="89" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,178) scale(1,-1)">MoE continuation / 27182</text>
+			<rect x="295" y="86" width="86.75637724747361" height="15" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="389.7563772474736" y="89" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,178) scale(1,-1)">29,916</text>
+			<text x="715" y="89" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,178) scale(1,-1)">48.75</text>
+			<text x="24" y="32" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,64) scale(1,-1)">Timing includes input preparation and synchronized training steps; excludes validation, saves and startup.</text>
+			<text x="24" y="14" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,27%); stroke:none;" transform="translate(0,28) scale(1,-1)">These are two observations on one laptop, not a hardware-independent speed guarantee.</text>
+		</g>
+	</g>
+</svg>

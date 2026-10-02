@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "executed_code_cells": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+  ],
+  "fresh_training": true,
+  "all_deep_dive_arms": true,
+  "two_seed_study": true,
+  "output_archive_exists": true,
+  "notebook_sha256": "acc3c2c3cbd904e3ba4047dc21053d778e56996d309485dbb4a66d71911e3eb0",
+  "overrides": [
+    "Existing local package replaces GitHub clone",
+    "Existing pinned GPU interpreter replaces fresh dependency installation",
+    "Drive persistence disabled"
+  ],
+  "hosted_colab_gpu_tested": false,
+  "google_drive_mount_tested": false,
+  "bootstrap_network_install_executed": false,
+  "run_root": "C:\\Users\\udisi\\Documents\\Codex\\2026-09-26\\go\\work\\slm_20261002_073922_4413da\\outputs",
+  "reproduction": {
+    "status": "PASS",
+    "fresh_training": true,
+    "dense_pretraining_updates": 400,
+    "continuation_updates_per_arm": 600,
+    "balancing_updates_per_arm": 200,
+    "evaluation": {
+      "status": "PASS",
+      "data_shape_range_and_hash_checks": true,
+      "scores": {
+        "pretrained": {
+          "loss": 2.393201353841788,
+          "targets": 79116
+        },
+        "moe": {
+          "loss": 2.2335704091984003,
+          "targets": 79116,
+          "expert_counts": [
+            42153,
+            38507,
+            33450,
+            44122
+          ]
+        },
+        "dense_control": {
+          "loss": 2.3524556857424934,
+          "targets": 79116
+        }
+      },
+      "reference_loss_differences": {
+        "pretrained": 0.0,
+        "moe": 0.0,
+        "dense_control": 0.0
+      },
+      "reference_tolerance": 0.0001,
+      "reference_match": true,
+      "environment": {
+        "python": "3.12.5",
+        "torch": "2.5.1+cu121",
+        "numpy": "1.26.4",
+        "cuda": "12.1",
+        "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+        "platform": "Windows-11-10.0.26300-SP0"
+      },
+      "scope": "All 79,116 bundled held-out byte targets; original shipped reference losses"
+    },
+    "deep_dive": {
+      "status": "PASS",
+      "intervention_cases": 22,
+      "balancing_arms": 6,
+      "max_absolute_reference_loss_difference": 0.0,
+      "tolerance": 0.0001
+    },
+    "data_source": "Bundled frozen byte subset; no upstream corpus reconstruction",
+    "checkpoints": "All three baseline/continuation checkpoints and six balancing checkpoints saved and evaluated",
+    "byte_identical_checkpoint_requirement": false
+  },
+  "study": {
+    "status": "PASS",
+    "stages": 6,
+    "seeds": [
+      31415,
+      27182
+    ],
+    "checkpoint_reloads_passed": true,
+    "every_stage_reduced_validation_loss": true,
+    "original_seed_reference_loss_differences": {
+      "pretrained": 0.0,
+      "dense_control": 0.0,
+      "moe": 0.0
+    },
+    "suite_wall_seconds": 133.59253429999808,
+    "source_sha256": "c7ef518cfc27d18e34fdd39ef03a5b4a0eacff84ce8f69ff05036d31d00d3019",
+    "limitations": [
+      "Two seeds do not establish a confidence interval",
+      "One laptop; synchronized timing includes overhead and is not an optimized throughput ceiling",
+      "Same fixed data subset; seed changes initialization and sampling, not the data split"
+    ]
+  }
+}

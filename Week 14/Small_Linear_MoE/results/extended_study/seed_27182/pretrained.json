@@ -1,0 +1,50 @@
+{
+  "seed": 27182,
+  "arm": "pretrained",
+  "updates": 400,
+  "batch": 1024,
+  "exposures": 409600,
+  "learning_rate": 0.01,
+  "history": [
+    {
+      "step": 0,
+      "loss": 5.538048067868699,
+      "targets": 79116
+    },
+    {
+      "step": 100,
+      "loss": 2.727620603172873,
+      "targets": 79116
+    },
+    {
+      "step": 200,
+      "loss": 2.4978646922023517,
+      "targets": 79116
+    },
+    {
+      "step": 300,
+      "loss": 2.4244553160815685,
+      "targets": 79116
+    },
+    {
+      "step": 400,
+      "loss": 2.3914880461817933,
+      "targets": 79116
+    }
+  ],
+  "training_seconds": 12.016700199790648,
+  "training_targets_per_second": 34085.89655978402,
+  "peak_training_allocated_bytes": 37998080,
+  "peak_training_reserved_bytes": 88080384,
+  "loop_wall_seconds_including_periodic_validation": 12.859902999989572,
+  "conversion_max_logit_difference": null,
+  "checkpoint_reload_loss": 2.3914880461817933,
+  "checkpoint_sha256": "21e2441ba6a4a93dc4b9edfbb70d612c1a9a4aaa433318804ec6ba6c221325d9",
+  "environment": {
+    "python": "3.12.5",
+    "torch": "2.5.1+cu121",
+    "numpy": "1.26.4",
+    "cuda": "12.1",
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU"
+  }
+}

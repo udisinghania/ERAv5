@@ -1,0 +1,102 @@
+{
+  "seed": 31415,
+  "arm": "moe",
+  "updates": 600,
+  "batch": 1024,
+  "exposures": 614400,
+  "learning_rate": 0.003,
+  "history": [
+    {
+      "step": 0,
+      "loss": 2.3932013569276442,
+      "targets": 79116,
+      "expert_counts": [
+        31922,
+        45095,
+        47856,
+        33359
+      ]
+    },
+    {
+      "step": 100,
+      "loss": 2.3586659966901844,
+      "targets": 79116,
+      "expert_counts": [
+        33770,
+        44448,
+        36648,
+        43366
+      ]
+    },
+    {
+      "step": 200,
+      "loss": 2.323625895244009,
+      "targets": 79116,
+      "expert_counts": [
+        37832,
+        40955,
+        36383,
+        43062
+      ]
+    },
+    {
+      "step": 300,
+      "loss": 2.2951025426420935,
+      "targets": 79116,
+      "expert_counts": [
+        39519,
+        38806,
+        35483,
+        44424
+      ]
+    },
+    {
+      "step": 400,
+      "loss": 2.2697089891642492,
+      "targets": 79116,
+      "expert_counts": [
+        38885,
+        40665,
+        35079,
+        43603
+      ]
+    },
+    {
+      "step": 500,
+      "loss": 2.2501284240910895,
+      "targets": 79116,
+      "expert_counts": [
+        39889,
+        39021,
+        34724,
+        44598
+      ]
+    },
+    {
+      "step": 600,
+      "loss": 2.2335704091984003,
+      "targets": 79116,
+      "expert_counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ]
+    }
+  ],
+  "training_seconds": 20.28714309987845,
+  "training_targets_per_second": 30285.190821357257,
+  "peak_training_allocated_bytes": 51034624,
+  "peak_training_reserved_bytes": 111149056,
+  "loop_wall_seconds_including_periodic_validation": 21.868161199992755,
+  "conversion_max_logit_difference": 9.5367431640625e-07,
+  "checkpoint_reload_loss": 2.2335704091984003,
+  "checkpoint_sha256": "81d3645c0f3a1efd478d637b1cb4bf0e9762c25e288392037291e68fa3628185",
+  "environment": {
+    "python": "3.12.5",
+    "torch": "2.5.1+cu121",
+    "numpy": "1.26.4",
+    "cuda": "12.1",
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU"
+  }
+}

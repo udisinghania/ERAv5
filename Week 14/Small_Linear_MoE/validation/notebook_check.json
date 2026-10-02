@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "executed_code_cells": 4,
-  "method": "Python exec with captured stdout; read-only review cells, optional training disabled",
+  "executed_code_cells": 6,
+  "method": "Python code-cell execution with actual captured output; training disabled",
   "notebook_ui_tested": false
 }

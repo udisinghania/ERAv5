@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "upgrade_from_published_commit": "9e797ca",
+  "default_refuses_overwrite_without_mutation": true,
+  "explicit_update_accepts_published_bytes": true,
+  "repeat_update_idempotent": true,
+  "user_edit_refused_before_mutation": true,
+  "parent_20m_sentinel_unchanged": true,
+  "destination_D_drive_unchanged": true
+}

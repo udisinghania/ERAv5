@@ -1,0 +1,4 @@
+{"seed": 27182, "arm": "pretrained", "step": 100, "loss": 2.727620603172873, "targets": 79116}
+{"seed": 27182, "arm": "pretrained", "step": 200, "loss": 2.4978646922023517, "targets": 79116}
+{"seed": 27182, "arm": "pretrained", "step": 300, "loss": 2.4244553160815685, "targets": 79116}
+{"seed": 27182, "arm": "pretrained", "step": 400, "loss": 2.3914880461817933, "targets": 79116}

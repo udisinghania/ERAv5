@@ -1,0 +1,50 @@
+{
+  "seed": 31415,
+  "arm": "pretrained",
+  "updates": 400,
+  "batch": 1024,
+  "exposures": 409600,
+  "learning_rate": 0.01,
+  "history": [
+    {
+      "step": 0,
+      "loss": 5.541113742894137,
+      "targets": 79116
+    },
+    {
+      "step": 100,
+      "loss": 2.726270053376924,
+      "targets": 79116
+    },
+    {
+      "step": 200,
+      "loss": 2.4962718532953194,
+      "targets": 79116
+    },
+    {
+      "step": 300,
+      "loss": 2.4247691446045208,
+      "targets": 79116
+    },
+    {
+      "step": 400,
+      "loss": 2.393201353841788,
+      "targets": 79116
+    }
+  ],
+  "training_seconds": 12.286365299820318,
+  "training_targets_per_second": 33337.768331370564,
+  "peak_training_allocated_bytes": 37998080,
+  "peak_training_reserved_bytes": 88080384,
+  "loop_wall_seconds_including_periodic_validation": 12.953167800005758,
+  "conversion_max_logit_difference": null,
+  "checkpoint_reload_loss": 2.393201353841788,
+  "checkpoint_sha256": "768b6f6c0948d1428d9eec86ca2f55e7b48627b1eeff2386d4bf40c86c13bec0",
+  "environment": {
+    "python": "3.12.5",
+    "torch": "2.5.1+cu121",
+    "numpy": "1.26.4",
+    "cuda": "12.1",
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU"
+  }
+}
