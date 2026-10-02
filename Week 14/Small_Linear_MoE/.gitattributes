@@ -1,0 +1,5 @@
+# Keep manifest bytes stable; small checkpoints use ordinary Git, not parent LFS rules.
+* -text
+*.pt -filter -diff -merge -text
+*.npz -filter -diff -merge -text
+*.npy -filter -diff -merge -text

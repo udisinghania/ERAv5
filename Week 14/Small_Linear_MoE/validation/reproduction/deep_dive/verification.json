@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "original_inputs_unchanged": true,
+  "full_selected_holdout_targets": 79116,
+  "balancing_arms": 6,
+  "same_training_order": true,
+  "checkpoint_reload_loss_parity": true,
+  "limitations": [
+    "Single training seed",
+    "Short 204,800-exposure continuation per arm",
+    "Top-k changed at evaluation only",
+    "Byte groups are descriptive, not semantic expert labels",
+    "Full selected byte holdout is a subset of original corpus validation"
+  ]
+}

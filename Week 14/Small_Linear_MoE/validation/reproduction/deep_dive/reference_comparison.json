@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "intervention_cases": 22,
+  "balancing_arms": 6,
+  "max_absolute_reference_loss_difference": 0.0,
+  "tolerance": 0.0001
+}

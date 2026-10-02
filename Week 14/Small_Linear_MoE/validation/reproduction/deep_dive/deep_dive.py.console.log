@@ -1,0 +1,14 @@
+{"stage": "diagnostics", "baseline": 2.2335703814256913, "cases": 22}
+{"stage": "balancing", "arm": "no_balance", "step": 100, "loss": 2.231880174487659}
+{"stage": "balancing", "arm": "no_balance", "step": 200, "loss": 2.2298871863930416}
+{"stage": "balancing", "arm": "aux_micro_001", "step": 100, "loss": 2.231910042492985}
+{"stage": "balancing", "arm": "aux_micro_001", "step": 200, "loss": 2.2299141382639496}
+{"stage": "balancing", "arm": "aux_micro_01", "step": 100, "loss": 2.2318650630482457}
+{"stage": "balancing", "arm": "aux_micro_01", "step": 200, "loss": 2.229854226359475}
+{"stage": "balancing", "arm": "aux_micro_001_z001", "step": 100, "loss": 2.231932837715151}
+{"stage": "balancing", "arm": "aux_micro_001_z001", "step": 200, "loss": 2.229965733785083}
+{"stage": "balancing", "arm": "aux_whole_001", "step": 100, "loss": 2.231928178071795}
+{"stage": "balancing", "arm": "aux_whole_001", "step": 200, "loss": 2.2299146474302765}
+{"stage": "balancing", "arm": "bias_whole", "step": 100, "loss": 2.2316083938457454}
+{"stage": "balancing", "arm": "bias_whole", "step": 200, "loss": 2.229752513442485}
+PASS: small-model deep dive complete

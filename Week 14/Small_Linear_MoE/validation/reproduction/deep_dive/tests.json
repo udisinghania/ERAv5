@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "normal_forward_parity": true,
+  "identical_clone_reroute_parity": true,
+  "zero_removes_only_original_contribution": true,
+  "fixed_mixture_is_affine": true,
+  "all_off_zero_logits": true,
+  "whole_batch_gradient_parity": true,
+  "bias_changes_selection_but_uses_original_probability_weights": true
+}

@@ -1,0 +1,59 @@
+{
+  "configs": [
+    {
+      "name": "no_balance",
+      "alpha": 0.0,
+      "z": 0.0,
+      "scope": "micro",
+      "bias": false
+    },
+    {
+      "name": "aux_micro_001",
+      "alpha": 0.001,
+      "z": 0.0,
+      "scope": "micro",
+      "bias": false
+    },
+    {
+      "name": "aux_micro_01",
+      "alpha": 0.01,
+      "z": 0.0,
+      "scope": "micro",
+      "bias": false
+    },
+    {
+      "name": "aux_micro_001_z001",
+      "alpha": 0.001,
+      "z": 0.001,
+      "scope": "micro",
+      "bias": false
+    },
+    {
+      "name": "aux_whole_001",
+      "alpha": 0.001,
+      "z": 0.0,
+      "scope": "whole",
+      "bias": false
+    },
+    {
+      "name": "bias_whole",
+      "alpha": 0.0,
+      "z": 0.0,
+      "scope": "whole",
+      "bias": true
+    }
+  ],
+  "updates": 200,
+  "batch": 1024,
+  "microbatch": 256,
+  "exposures_per_arm": 204800,
+  "learning_rate": 0.0003,
+  "optimizer": "Fresh AdamW, default betas (.9,.999), weight_decay .01, clip 1",
+  "seed": 20261001,
+  "precision": "FP32, TF32 disabled",
+  "evaluation": "All 79,116 selected byte-holdout targets; one seed, short continuation",
+  "bias_gamma": 0.001,
+  "bias_rule": "Select using p+b; weight using original p; b += gamma*sign(mean_count-count), then center b",
+  "order_sha256": "650c0298cc2eecc6e2e01dab2b7b28d372e3f3e4ef8371adfcc9cd2da04f7e07",
+  "scope": "Four 256-example microbatches per 1024-example optimizer update; one GPU"
+}

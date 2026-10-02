@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="950" height="530" preserveAspectRatio="xMinYMin meet" viewBox="0 0 950 530" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="950" height="530"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-530)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="950" height="530" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="25" y="500" style="font-family: Helvetica-Bold; font-size: 21px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,1000) scale(1,-1)">Small linear MoE: what is actually helping?</text>
+			<text x="25" y="477" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,954) scale(1,-1)">Same trained weights; all 79,116 selected held-out byte targets. Lower loss is better.</text>
+			<text x="25" y="442" style="font-family: Helvetica-Bold; font-size: 13px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,884) scale(1,-1)">Routing intervention</text>
+			<text x="400" y="442" style="font-family: Helvetica-Bold; font-size: 13px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,884) scale(1,-1)">Held-out loss</text>
+			<text x="25" y="410" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,820) scale(1,-1)">Learned top-2</text>
+			<rect x="400" y="407" width="46.99853399596759" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="456.9985339959676" y="410" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,820) scale(1,-1)">2.2336</text>
+			<text x="25" y="372" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,744) scale(1,-1)">Top-2 IDs, equal weights</text>
+			<rect x="400" y="369" width="109.08289751164375" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(63%,35%,16%); fill-rule: evenodd;"/>
+			<text x="519.0828975116438" y="372" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,744) scale(1,-1)">2.2779</text>
+			<text x="25" y="334" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,668) scale(1,-1)">All four, equal fixed weights</text>
+			<rect x="400" y="331" width="240.59191505096135" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(63%,35%,16%); fill-rule: evenodd;"/>
+			<text x="650.5919150509613" y="334" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,668) scale(1,-1)">2.3719</text>
+			<text x="25" y="296" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,592) scale(1,-1)">Random pairs (3-seed mean)</text>
+			<rect x="400" y="293" width="292.6765152312605" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(63%,35%,16%); fill-rule: evenodd;"/>
+			<text x="702.6765152312605" y="296" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,592) scale(1,-1)">2.4091</text>
+			<text x="400" y="254" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,508) scale(1,-1)">Bars start at loss 2.20 to show the differences.</text>
+			<text x="25" y="220" style="font-family: Helvetica-Bold; font-size: 13px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,440) scale(1,-1)">Turn off one expert</text>
+			<text x="230" y="220" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,440) scale(1,-1)">Usage share</text>
+			<text x="400" y="220" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,440) scale(1,-1)">Discard its output</text>
+			<text x="655" y="220" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,440) scale(1,-1)">Reroute to survivors</text>
+			<text x="25" y="190" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,380) scale(1,-1)">E0</text>
+			<text x="230" y="190" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,380) scale(1,-1)">26.64%</text>
+			<text x="400" y="190" style="font-family: Helvetica; font-size: 12px;fill: rgb(63%,35%,16%); stroke:none;" transform="translate(0,380) scale(1,-1)">2.6122</text>
+			<text x="655" y="190" style="font-family: Helvetica; font-size: 12px;fill: rgb(3%,49%,54%); stroke:none;" transform="translate(0,380) scale(1,-1)">2.2811</text>
+			<text x="25" y="158" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,316) scale(1,-1)">E1</text>
+			<text x="230" y="158" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,316) scale(1,-1)">24.34%</text>
+			<text x="400" y="158" style="font-family: Helvetica; font-size: 12px;fill: rgb(63%,35%,16%); stroke:none;" transform="translate(0,316) scale(1,-1)">2.6800</text>
+			<text x="655" y="158" style="font-family: Helvetica; font-size: 12px;fill: rgb(3%,49%,54%); stroke:none;" transform="translate(0,316) scale(1,-1)">2.3085</text>
+			<text x="25" y="126" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,252) scale(1,-1)">E2</text>
+			<text x="230" y="126" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,252) scale(1,-1)">21.14%</text>
+			<text x="400" y="126" style="font-family: Helvetica; font-size: 12px;fill: rgb(63%,35%,16%); stroke:none;" transform="translate(0,252) scale(1,-1)">2.6322</text>
+			<text x="655" y="126" style="font-family: Helvetica; font-size: 12px;fill: rgb(3%,49%,54%); stroke:none;" transform="translate(0,252) scale(1,-1)">2.2880</text>
+			<text x="25" y="94" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,188) scale(1,-1)">E3</text>
+			<text x="230" y="94" style="font-family: Helvetica; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,188) scale(1,-1)">27.88%</text>
+			<text x="400" y="94" style="font-family: Helvetica; font-size: 12px;fill: rgb(63%,35%,16%); stroke:none;" transform="translate(0,188) scale(1,-1)">2.7101</text>
+			<text x="655" y="94" style="font-family: Helvetica; font-size: 12px;fill: rgb(3%,49%,54%); stroke:none;" transform="translate(0,188) scale(1,-1)">2.2860</text>
+			<text x="25" y="48" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,96) scale(1,-1)">Rerouting compensates for some damage. It does not establish safe permanent pruning.</text>
+			<text x="25" y="27" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,54) scale(1,-1)">Fixed-weight averaging is an affine model; adaptive routing allows a nonlinear input-to-logit map.</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="950" height="345" preserveAspectRatio="xMinYMin meet" viewBox="0 0 950 345" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="950" height="345"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-345)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="950" height="345" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="25" y="313" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,626) scale(1,-1)">Balancing the small model: measure prediction and utilization</text>
+			<text x="25" y="291" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,582) scale(1,-1)">200 additional updates / 204,800 byte exposures per arm; same batches and starting checkpoint.</text>
+			<text x="25" y="270" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,540) scale(1,-1)">Full selected byte holdout; one training seed. These small gaps do not establish a winning method.</text>
+			<text x="25" y="236" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,472) scale(1,-1)">Method</text>
+			<text x="310" y="236" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,472) scale(1,-1)">Loss</text>
+			<text x="440" y="236" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,472) scale(1,-1)">Loss change</text>
+			<text x="590" y="236" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,472) scale(1,-1)">Max load violation</text>
+			<text x="835" y="236" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,472) scale(1,-1)">Dead / 4</text>
+			<text x="25" y="208" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,416) scale(1,-1)">No balancing</text>
+			<text x="310" y="208" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,416) scale(1,-1)">2.229887</text>
+			<text x="440" y="208" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,416) scale(1,-1)">-0.003683</text>
+			<rect x="590" y="205" width="100.49670338630676" height="14" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="700.4967033863068" y="208" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,416) scale(1,-1)">0.1182</text>
+			<text x="860" y="208" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,416) scale(1,-1)">0</text>
+			<text x="25" y="181" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,362) scale(1,-1)">Aux .001, micro</text>
+			<text x="310" y="181" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,362) scale(1,-1)">2.229914</text>
+			<text x="440" y="181" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,362) scale(1,-1)">-0.003656</text>
+			<rect x="590" y="178" width="99.91660118103027" height="14" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="699.9166011810303" y="181" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,362) scale(1,-1)">0.1175</text>
+			<text x="860" y="181" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,362) scale(1,-1)">0</text>
+			<text x="25" y="154" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,308) scale(1,-1)">Aux .01, micro</text>
+			<text x="310" y="154" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,308) scale(1,-1)">2.229854</text>
+			<text x="440" y="154" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,308) scale(1,-1)">-0.003716</text>
+			<rect x="590" y="151" width="96.26373052597046" height="14" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="696.2637305259705" y="154" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,308) scale(1,-1)">0.1133</text>
+			<text x="860" y="154" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,308) scale(1,-1)">0</text>
+			<text x="25" y="127" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">Aux .001 + z .001</text>
+			<text x="310" y="127" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">2.229966</text>
+			<text x="440" y="127" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">-0.003605</text>
+			<rect x="590" y="124" width="99.22899007797241" height="14" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="699.2289900779724" y="127" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">0.1167</text>
+			<text x="860" y="127" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,254) scale(1,-1)">0</text>
+			<text x="25" y="100" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,200) scale(1,-1)">Aux .001, whole</text>
+			<text x="310" y="100" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,200) scale(1,-1)">2.229915</text>
+			<text x="440" y="100" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,200) scale(1,-1)">-0.003656</text>
+			<rect x="590" y="97" width="99.91660118103027" height="14" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="699.9166011810303" y="100" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,200) scale(1,-1)">0.1175</text>
+			<text x="860" y="100" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,200) scale(1,-1)">0</text>
+			<text x="25" y="73" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,146) scale(1,-1)">Bias .001, whole</text>
+			<text x="310" y="73" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,146) scale(1,-1)">2.229753</text>
+			<text x="440" y="73" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,146) scale(1,-1)">-0.003818</text>
+			<rect x="590" y="70" width="24.88248348236084" height="14" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="624.8824834823608" y="73" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,146) scale(1,-1)">0.0293</text>
+			<text x="860" y="73" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,146) scale(1,-1)">0</text>
+			<text x="25" y="26" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,20%,26%); stroke:none;" transform="translate(0,52) scale(1,-1)">Max load violation = busiest expert count / uniform count - 1. Lower means more even utilization.</text>
+		</g>
+	</g>
+</svg>

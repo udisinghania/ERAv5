@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "dense_pretraining": [
+    {
+      "step": 0,
+      "loss": 5.541113742894137,
+      "targets": 79116
+    },
+    {
+      "step": 100,
+      "loss": 2.726270053376924,
+      "targets": 79116
+    },
+    {
+      "step": 200,
+      "loss": 2.4962718532953194,
+      "targets": 79116
+    },
+    {
+      "step": 300,
+      "loss": 2.4247691446045208,
+      "targets": 79116
+    },
+    {
+      "step": 400,
+      "loss": 2.393201353841788,
+      "targets": 79116
+    }
+  ],
+  "moe_continuation": [
+    {
+      "step": 0,
+      "loss": 2.3932013569276442,
+      "targets": 79116,
+      "expert_counts": [
+        31922,
+        45095,
+        47856,
+        33359
+      ]
+    },
+    {
+      "step": 100,
+      "loss": 2.3586659966901844,
+      "targets": 79116,
+      "expert_counts": [
+        33770,
+        44448,
+        36648,
+        43366
+      ]
+    },
+    {
+      "step": 200,
+      "loss": 2.323625895244009,
+      "targets": 79116,
+      "expert_counts": [
+        37832,
+        40955,
+        36383,
+        43062
+      ]
+    },
+    {
+      "step": 300,
+      "loss": 2.2951025426420935,
+      "targets": 79116,
+      "expert_counts": [
+        39519,
+        38806,
+        35483,
+        44424
+      ]
+    },
+    {
+      "step": 400,
+      "loss": 2.2697089891642492,
+      "targets": 79116,
+      "expert_counts": [
+        38885,
+        40665,
+        35079,
+        43603
+      ]
+    },
+    {
+      "step": 500,
+      "loss": 2.2501284240910895,
+      "targets": 79116,
+      "expert_counts": [
+        39889,
+        39021,
+        34724,
+        44598
+      ]
+    },
+    {
+      "step": 600,
+      "loss": 2.2335704091984003,
+      "targets": 79116,
+      "expert_counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ]
+    }
+  ],
+  "dense_continuation": [
+    {
+      "step": 0,
+      "loss": 2.393201353841788,
+      "targets": 79116
+    },
+    {
+      "step": 100,
+      "loss": 2.3779350013449396,
+      "targets": 79116
+    },
+    {
+      "step": 200,
+      "loss": 2.369697270315502,
+      "targets": 79116
+    },
+    {
+      "step": 300,
+      "loss": 2.36438069130691,
+      "targets": 79116
+    },
+    {
+      "step": 400,
+      "loss": 2.359769656362967,
+      "targets": 79116
+    },
+    {
+      "step": 500,
+      "loss": 2.355725413030787,
+      "targets": 79116
+    },
+    {
+      "step": 600,
+      "loss": 2.3524556857424934,
+      "targets": 79116
+    }
+  ],
+  "conversion_max_logit_difference": 9.5367431640625e-07,
+  "dense_parameters": 263424,
+  "moe_parameters": 1057808,
+  "router_parameters": 4112,
+  "active_parameters": 530960,
+  "validation_targets": 79116
+}

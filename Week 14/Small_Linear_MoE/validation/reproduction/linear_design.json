@@ -1,0 +1,16 @@
+{
+  "baseline": "Single affine map of fixed four-byte one-hot features to 256 logits; softmax classification loss",
+  "dense_parameters": 263424,
+  "experts": 4,
+  "top_k": 2,
+  "pretraining_updates": 400,
+  "continuation_updates": 600,
+  "batch": 1024,
+  "pretrain_lr": 0.01,
+  "continuation_lr": 0.003,
+  "seed": 31415,
+  "dense_training_exposures": 409600,
+  "continuation_exposures_per_arm": 614400,
+  "selection": "Random batches with replacement from fixed 1M-byte training subset",
+  "limitations": "Small next-byte task on a selected corpus subset; byte loss is not comparable to the 8192-token Transformer loss; only the pre-conversion logits are affine, routed MoE is nonlinear"
+}

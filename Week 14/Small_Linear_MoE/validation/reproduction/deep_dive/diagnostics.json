@@ -1,0 +1,2499 @@
+{
+  "baseline": {
+    "loss": 2.2335703814256913,
+    "targets": 79116,
+    "counts": [
+      42153,
+      38507,
+      33450,
+      44122
+    ],
+    "assignment_share": [
+      0.26639997959136963,
+      0.243357852101326,
+      0.21139845252037048,
+      0.2788437306880951
+    ],
+    "gate_mass_per_target": [
+      0.26453009247779846,
+      0.24523471295833588,
+      0.22158846259117126,
+      0.26864689588546753
+    ],
+    "max_load_violation": 0.11537492275238037,
+    "dead_experts": 0,
+    "target_byte_groups": {
+      "ASCII letters": {
+        "targets": 52388,
+        "counts": [
+          26464,
+          26395,
+          23919,
+          27998
+        ],
+        "loss": 2.466799358907634
+      },
+      "ASCII digits": {
+        "targets": 1425,
+        "counts": [
+          792,
+          531,
+          712,
+          815
+        ],
+        "loss": 3.7252051550881906
+      },
+      "Whitespace": {
+        "targets": 11293,
+        "counts": [
+          7061,
+          5687,
+          4549,
+          5289
+        ],
+        "loss": 1.1336135357568191
+      },
+      "Other bytes": {
+        "targets": 14010,
+        "counts": [
+          7836,
+          5894,
+          4270,
+          10020
+        ],
+        "loss": 2.096370637663597
+      }
+    },
+    "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution."
+  },
+  "experiments": [
+    {
+      "policy": "normal",
+      "loss": 2.2335703814256913,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.2645300328731537,
+        0.2452346682548523,
+        0.22158849239349365,
+        0.2686470150947571
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 2.466799358907634
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 3.7252051550881906
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 1.1336135357568191
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 2.096370637663597
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.0
+    },
+    {
+      "policy": "uniform",
+      "loss": 2.27791635536546,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.26639994978904724,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 2.509911996131181
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 3.762944823147958
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 1.2293045691156856
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 2.104613048872039
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.04434597393976869
+    },
+    {
+      "policy": "fixed",
+      "fixed": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "loss": 2.371851367893544,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.2645300626754761,
+        0.24523469805717468,
+        0.22158849239349365,
+        0.26864689588546753
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 2.6130534528347975
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 3.8205932101868747
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 1.3602368898559776
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 2.1379907361615307
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.1382809864678527
+    },
+    {
+      "policy": "all_off",
+      "loss": 5.545177457981002,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.2645300626754761,
+        0.2452346682548523,
+        0.22158846259117126,
+        0.2686469256877899
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 5.545177498455037
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 5.545177502548485
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 5.545177451947556
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 5.545177435211247
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 3.311607076555311
+    },
+    {
+      "policy": "normal",
+      "k": 1,
+      "loss": 2.2434335194919486,
+      "targets": 79116,
+      "counts": [
+        21434,
+        18800,
+        17359,
+        21523
+      ],
+      "assignment_share": [
+        0.2709186375141144,
+        0.23762576282024384,
+        0.21941199898719788,
+        0.2720435857772827
+      ],
+      "gate_mass_per_target": [
+        0.2709186375141144,
+        0.23762576282024384,
+        0.21941199898719788,
+        0.2720435857772827
+      ],
+      "max_load_violation": 0.08817434310913086,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            14354,
+            11724,
+            12846,
+            13464
+          ],
+          "loss": 2.481799875168962
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            466,
+            138,
+            393,
+            428
+          ],
+          "loss": 3.7173259748492327
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            3646,
+            3443,
+            2368,
+            1836
+          ],
+          "loss": 1.1199790922837294
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            2968,
+            3495,
+            1752,
+            5795
+          ],
+          "loss": 2.1077688757646604
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.009863138066257271
+    },
+    {
+      "policy": "normal",
+      "k": 3,
+      "loss": 2.247975783037328,
+      "targets": 79116,
+      "counts": [
+        59339,
+        61099,
+        55759,
+        61151
+      ],
+      "assignment_share": [
+        0.2500084340572357,
+        0.2574236989021301,
+        0.23492509126663208,
+        0.2576427757740021
+      ],
+      "gate_mass_per_target": [
+        0.2535170316696167,
+        0.25459593534469604,
+        0.22861874103546143,
+        0.26327580213546753
+      ],
+      "max_load_violation": 0.0305711030960083,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            38687,
+            39586,
+            38612,
+            40279
+          ],
+          "loss": 2.4815955959022102
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            1069,
+            845,
+            1252,
+            1109
+          ],
+          "loss": 3.7367637500428317
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            9236,
+            9193,
+            7110,
+            8340
+          ],
+          "loss": 1.1625736479445492
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            10347,
+            11475,
+            8785,
+            11423
+          ],
+          "loss": 2.0978722479069427
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.014405401611636837
+    },
+    {
+      "policy": "normal",
+      "k": 4,
+      "loss": 2.2572002969235836,
+      "targets": 79116,
+      "counts": [
+        79116,
+        79116,
+        79116,
+        79116
+      ],
+      "assignment_share": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "gate_mass_per_target": [
+        0.24970969557762146,
+        0.25337129831314087,
+        0.2353510856628418,
+        0.261567622423172
+      ],
+      "max_load_violation": 0.0,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            52388,
+            52388,
+            52388,
+            52388
+          ],
+          "loss": 2.4896805358313507
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            1425,
+            1425,
+            1425,
+            1425
+          ],
+          "loss": 3.747012496412846
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            11293,
+            11293,
+            11293,
+            11293
+          ],
+          "loss": 1.1842483247571003
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            14010,
+            14010,
+            14010,
+            14010
+          ],
+          "loss": 2.1012179541468705
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.023629915497892284
+    },
+    {
+      "policy": "zero",
+      "expert": 0,
+      "loss": 2.612154810534334,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.26453012228012085,
+        0.2452346235513687,
+        0.22158849239349365,
+        0.2686469554901123
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 2.81847623516478
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 3.6357267493532417
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 1.9423224583346017
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 2.2764702338818394
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.3785844291086429
+    },
+    {
+      "policy": "zero",
+      "expert": 1,
+      "loss": 2.680010755814642,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.2645300030708313,
+        0.2452346682548523,
+        0.22158850729465485,
+        0.2686469852924347
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 2.861070273950499
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 3.7147779404489616
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 2.0614248005691267
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 2.396342021716143
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.4464403743889509
+    },
+    {
+      "policy": "zero",
+      "expert": 2,
+      "loss": 2.6321553390798402,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.2645300030708313,
+        0.24523459374904633,
+        0.22158849239349365,
+        0.2686469256877899
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 2.92045121995003
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 4.012922790928891
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 1.672373585965734
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 2.187328470953016
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.3985849576541489
+    },
+    {
+      "policy": "zero",
+      "expert": 3,
+      "loss": 2.7101219112057375,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.2645300328731537,
+        0.24523471295833588,
+        0.22158846259117126,
+        0.2686469256877899
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 2.8964643639317447
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 3.9725185133281506
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 1.4772351568207351
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 2.8787133793419044
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.4765515297800462
+    },
+    {
+      "policy": "reroute",
+      "expert": 0,
+      "loss": 2.281065780537044,
+      "targets": 79116,
+      "counts": [
+        0,
+        53382,
+        49968,
+        54882
+      ],
+      "assignment_share": [
+        0.0,
+        0.33736538887023926,
+        0.31578946113586426,
+        0.3468451499938965
+      ],
+      "gate_mass_per_target": [
+        0.0,
+        0.3489917516708374,
+        0.3055526316165924,
+        0.34546053409576416
+      ],
+      "max_load_violation": 0.38738059997558594,
+      "dead_experts": 1,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            0,
+            34015,
+            35816,
+            34945
+          ],
+          "loss": 2.505192434149698
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            0,
+            697,
+            1124,
+            1029
+          ],
+          "loss": 3.7522444099292422
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            0,
+            8180,
+            6551,
+            7855
+          ],
+          "loss": 1.279044673280911
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            0,
+            10490,
+            6477,
+            11053
+          ],
+          "loss": 2.1010408705085792
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.047495399111352476
+    },
+    {
+      "policy": "reroute",
+      "expert": 1,
+      "loss": 2.3084890715748867,
+      "targets": 79116,
+      "counts": [
+        53056,
+        0,
+        47479,
+        57697
+      ],
+      "assignment_share": [
+        0.3353051245212555,
+        0.0,
+        0.30005940794944763,
+        0.3646354675292969
+      ],
+      "gate_mass_per_target": [
+        0.3432527482509613,
+        0.0,
+        0.29521676898002625,
+        0.3615243434906006
+      ],
+      "max_load_violation": 0.4585418701171875,
+      "dead_experts": 1,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            34222,
+            0,
+            32875,
+            37679
+          ],
+          "loss": 2.5452002544043366
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            869,
+            0,
+            1005,
+            976
+          ],
+          "loss": 3.7384735803436815
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            8486,
+            0,
+            6109,
+            7991
+          ],
+          "loss": 1.264069344633645
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            9479,
+            0,
+            7490,
+            11051
+          ],
+          "loss": 2.1197722686179445
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.07491869014919539
+    },
+    {
+      "policy": "reroute",
+      "expert": 2,
+      "loss": 2.287967233856971,
+      "targets": 79116,
+      "counts": [
+        52061,
+        52326,
+        0,
+        53845
+      ],
+      "assignment_share": [
+        0.32901689410209656,
+        0.3306916356086731,
+        0.0,
+        0.34029147028923035
+      ],
+      "gate_mass_per_target": [
+        0.31888118386268616,
+        0.3250419497489929,
+        0.0,
+        0.3560755252838135
+      ],
+      "max_load_violation": 0.3611658811569214,
+      "dead_experts": 1,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            33193,
+            35651,
+            0,
+            35932
+          ],
+          "loss": 2.5261838070771216
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            1035,
+            787,
+            0,
+            1028
+          ],
+          "loss": 3.7966587789435136
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            8595,
+            7868,
+            0,
+            6123
+          ],
+          "loss": 1.2103274078625863
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            9238,
+            8020,
+            0,
+            10762
+          ],
+          "loss": 2.112393521207473
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.054396852431279896
+    },
+    {
+      "policy": "reroute",
+      "expert": 3,
+      "loss": 2.2859568909052452,
+      "targets": 79116,
+      "counts": [
+        55714,
+        54997,
+        47521,
+        0
+      ],
+      "assignment_share": [
+        0.35210323333740234,
+        0.3475719094276428,
+        0.30032482743263245,
+        0.0
+      ],
+      "gate_mass_per_target": [
+        0.3628036379814148,
+        0.3350568413734436,
+        0.30214008688926697,
+        0.0
+      ],
+      "max_load_violation": 0.4084129333496094,
+      "dead_experts": 1,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            36423,
+            35901,
+            32452,
+            0
+          ],
+          "loss": 2.5356768173890014
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            1026,
+            737,
+            1087,
+            0
+          ],
+          "loss": 3.7648336510909233
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            8452,
+            8025,
+            6109,
+            0
+          ],
+          "loss": 1.145637748662188
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            9813,
+            10334,
+            7873,
+            0
+          ],
+          "loss": 2.1209245778423473
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.05238650947955392
+    },
+    {
+      "policy": "single",
+      "expert": 0,
+      "loss": 2.4600921882356683,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.2645300328731537,
+        0.24523474276065826,
+        0.22158849239349365,
+        0.26864686608314514
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 2.73058977641886
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 3.8135451802036218
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 1.3489981100450086
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 2.2065651468172147
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.22652180680997702
+    },
+    {
+      "policy": "single",
+      "expert": 1,
+      "loss": 2.474089124276379,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.2645300626754761,
+        0.24523471295833588,
+        0.22158856689929962,
+        0.26864689588546753
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 2.7077189382363924
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 3.9113495026973255
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 1.5853803643595072
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 2.17064108620534
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.24051874285068786
+    },
+    {
+      "policy": "single",
+      "expert": 2,
+      "loss": 2.4971456413436837,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.2645299732685089,
+        0.24523454904556274,
+        0.22158849239349365,
+        0.26864680647850037
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 2.7452497503416513
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 3.907873539171721
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 1.5820915190415419
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 2.1635081087666523
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.26357525991799235
+    },
+    {
+      "policy": "single",
+      "expert": 3,
+      "loss": 2.5206203320865486,
+      "targets": 79116,
+      "counts": [
+        42153,
+        38507,
+        33450,
+        44122
+      ],
+      "assignment_share": [
+        0.26639997959136963,
+        0.243357852101326,
+        0.21139845252037048,
+        0.2788437306880951
+      ],
+      "gate_mass_per_target": [
+        0.2645300328731537,
+        0.2452346384525299,
+        0.22158849239349365,
+        0.2686469256877899
+      ],
+      "max_load_violation": 0.11537492275238037,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26464,
+            26395,
+            23919,
+            27998
+          ],
+          "loss": 2.7911587875563106
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            792,
+            531,
+            712,
+            815
+          ],
+          "loss": 3.967097487198679
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            7061,
+            5687,
+            4549,
+            5289
+          ],
+          "loss": 1.4771684676838925
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7836,
+            5894,
+            4270,
+            10020
+          ],
+          "loss": 2.2029546232584285
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.28704995066085726
+    },
+    {
+      "policy": "random",
+      "seed": 17,
+      "loss": 2.408167415468268,
+      "targets": 79116,
+      "counts": [
+        39673,
+        39417,
+        39392,
+        39750
+      ],
+      "assignment_share": [
+        0.2507267892360687,
+        0.2491089105606079,
+        0.24895091354846954,
+        0.251213401556015
+      ],
+      "gate_mass_per_target": [
+        0.2507267892360687,
+        0.24910889565944672,
+        0.24895089864730835,
+        0.251213401556015
+      ],
+      "max_load_violation": 0.004853606224060059,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26234,
+            26088,
+            26140,
+            26314
+          ],
+          "loss": 2.654304471190325
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            727,
+            709,
+            696,
+            718
+          ],
+          "loss": 3.8505745208472537
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            5722,
+            5669,
+            5508,
+            5687
+          ],
+          "loss": 1.398616968112852
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            6990,
+            6951,
+            7048,
+            7031
+          ],
+          "loss": 2.154833642931005
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.17459703404257665
+    },
+    {
+      "policy": "random",
+      "seed": 29,
+      "loss": 2.4090102246029566,
+      "targets": 79116,
+      "counts": [
+        39709,
+        39479,
+        39637,
+        39407
+      ],
+      "assignment_share": [
+        0.2509543001651764,
+        0.24950073659420013,
+        0.25049927830696106,
+        0.2490456998348236
+      ],
+      "gate_mass_per_target": [
+        0.2509543001651764,
+        0.24950072169303894,
+        0.25049924850463867,
+        0.2490456998348236
+      ],
+      "max_load_violation": 0.0038172006607055664,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26394,
+            26073,
+            26234,
+            26075
+          ],
+          "loss": 2.654923670217446
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            719,
+            711,
+            712,
+            708
+          ],
+          "loss": 3.854646552905702
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            5661,
+            5700,
+            5655,
+            5570
+          ],
+          "loss": 1.4038134775623676
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            6935,
+            6995,
+            7036,
+            7054
+          ],
+          "loss": 2.1526747295807125
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.17543984317726524
+    },
+    {
+      "policy": "random",
+      "seed": 43,
+      "loss": 2.409986321138621,
+      "targets": 79116,
+      "counts": [
+        39678,
+        39604,
+        39567,
+        39383
+      ],
+      "assignment_share": [
+        0.2507583796977997,
+        0.25029072165489197,
+        0.2500568926334381,
+        0.24889403581619263
+      ],
+      "gate_mass_per_target": [
+        0.2507583796977997,
+        0.25029072165489197,
+        0.2500568628311157,
+        0.24889402091503143
+      ],
+      "max_load_violation": 0.0030335187911987305,
+      "dead_experts": 0,
+      "target_byte_groups": {
+        "ASCII letters": {
+          "targets": 52388,
+          "counts": [
+            26177,
+            26219,
+            26311,
+            26069
+          ],
+          "loss": 2.656436498123079
+        },
+        "ASCII digits": {
+          "targets": 1425,
+          "counts": [
+            713,
+            717,
+            714,
+            706
+          ],
+          "loss": 3.850382188495837
+        },
+        "Whitespace": {
+          "targets": 11293,
+          "counts": [
+            5720,
+            5646,
+            5605,
+            5615
+          ],
+          "loss": 1.4034169496958326
+        },
+        "Other bytes": {
+          "targets": 14010,
+          "counts": [
+            7068,
+            7022,
+            6937,
+            6993
+          ],
+          "loss": 2.1532832230779633
+        }
+      },
+      "counts_note": "Router selections are diagnostic only for fixed/single/all_off interventions; those policies override expert execution.",
+      "delta": 0.17641593971292968
+    }
+  ],
+  "expert_divergence": [
+    {
+      "expert": 0,
+      "relative_L2_from_pretrained": 0.4052508771419525
+    },
+    {
+      "expert": 1,
+      "relative_L2_from_pretrained": 0.3760320842266083
+    },
+    {
+      "expert": 2,
+      "relative_L2_from_pretrained": 0.4294986128807068
+    },
+    {
+      "expert": 3,
+      "relative_L2_from_pretrained": 0.4694173038005829
+    }
+  ],
+  "pairwise_experts": [
+    {
+      "experts": [
+        0,
+        1
+      ],
+      "relative_L2": 0.2504040002822876,
+      "cosine": 0.9828169345855713
+    },
+    {
+      "experts": [
+        0,
+        2
+      ],
+      "relative_L2": 0.23698033392429352,
+      "cosine": 0.9851136207580566
+    },
+    {
+      "experts": [
+        0,
+        3
+      ],
+      "relative_L2": 0.23922394216060638,
+      "cosine": 0.9866405725479126
+    },
+    {
+      "experts": [
+        1,
+        2
+      ],
+      "relative_L2": 0.2667924165725708,
+      "cosine": 0.981408953666687
+    },
+    {
+      "experts": [
+        1,
+        3
+      ],
+      "relative_L2": 0.2602909803390503,
+      "cosine": 0.985262393951416
+    },
+    {
+      "experts": [
+        2,
+        3
+      ],
+      "relative_L2": 0.24444983899593353,
+      "cosine": 0.9854785203933716
+    }
+  ],
+  "router_gradients": [
+    {
+      "stage": "fresh_exact_copies",
+      "task_router_gradient_norm": 4.275012344123752e-09,
+      "aux_gradient_norm": 0.059885673224925995,
+      "cosine": 0.016575466841459274,
+      "alpha001_aux_to_task_norm_ratio": 14008.3046875
+    },
+    {
+      "stage": "trained_moe",
+      "task_router_gradient_norm": 0.013942742720246315,
+      "aux_gradient_norm": 0.01629563793540001,
+      "cosine": 0.10986759513616562,
+      "alpha001_aux_to_task_norm_ratio": 0.0011687541846185923
+    }
+  ],
+  "routing_traces": [
+    {
+      "context_byte_ids": [
+        119,
+        115,
+        58,
+        10
+      ],
+      "target_byte": 10,
+      "router_probabilities": [
+        0.2074315845966339,
+        0.2699199616909027,
+        0.4392794966697693,
+        0.08336900174617767
+      ],
+      "selected": [
+        2,
+        1
+      ],
+      "weights": [
+        0.6194019317626953,
+        0.3805980980396271
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          10,
+          34,
+          84
+        ],
+        [
+          10,
+          114,
+          34
+        ],
+        [
+          10,
+          114,
+          115
+        ],
+        [
+          10,
+          102,
+          84
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        10,
+        114,
+        115
+      ]
+    },
+    {
+      "context_byte_ids": [
+        115,
+        58,
+        10,
+        10
+      ],
+      "target_byte": 123,
+      "router_probabilities": [
+        0.1526663601398468,
+        0.09071075916290283,
+        0.6108889579772949,
+        0.14573389291763306
+      ],
+      "selected": [
+        2,
+        0
+      ],
+      "weights": [
+        0.8000586032867432,
+        0.1999414563179016
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          84,
+          35,
+          100
+        ],
+        [
+          10,
+          84,
+          101
+        ],
+        [
+          35,
+          10,
+          84
+        ],
+        [
+          10,
+          34,
+          102
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        35,
+        84,
+        10
+      ]
+    },
+    {
+      "context_byte_ids": [
+        58,
+        10,
+        10,
+        123
+      ],
+      "target_byte": 116,
+      "router_probabilities": [
+        0.10407592356204987,
+        0.013169442303478718,
+        0.2956468462944031,
+        0.58710777759552
+      ],
+      "selected": [
+        3,
+        2
+      ],
+      "weights": [
+        0.665086030960083,
+        0.334913969039917
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          34,
+          101,
+          115
+        ],
+        [
+          34,
+          108,
+          101
+        ],
+        [
+          34,
+          101,
+          108
+        ],
+        [
+          34,
+          108,
+          101
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        34,
+        108,
+        101
+      ]
+    },
+    {
+      "context_byte_ids": [
+        10,
+        10,
+        123,
+        116
+      ],
+      "target_byte": 111,
+      "router_probabilities": [
+        0.09792914241552353,
+        0.16873812675476074,
+        0.13086865842342377,
+        0.6024641394615173
+      ],
+      "selected": [
+        3,
+        1
+      ],
+      "weights": [
+        0.781201183795929,
+        0.21879880130290985
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          104,
+          101,
+          115
+        ],
+        [
+          104,
+          117,
+          101
+        ],
+        [
+          104,
+          111,
+          101
+        ],
+        [
+          104,
+          32,
+          117
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        104,
+        117,
+        32
+      ]
+    },
+    {
+      "context_byte_ids": [
+        10,
+        123,
+        116,
+        111
+      ],
+      "target_byte": 111,
+      "router_probabilities": [
+        0.059913359582424164,
+        0.2531738579273224,
+        0.6343725919723511,
+        0.052540123462677
+      ],
+      "selected": [
+        2,
+        1
+      ],
+      "weights": [
+        0.7147486209869385,
+        0.2852514088153839
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          114,
+          110,
+          102
+        ],
+        [
+          114,
+          110,
+          102
+        ],
+        [
+          32,
+          114,
+          110
+        ],
+        [
+          114,
+          110,
+          117
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        114,
+        32,
+        110
+      ]
+    },
+    {
+      "context_byte_ids": [
+        123,
+        116,
+        111,
+        111
+      ],
+      "target_byte": 108,
+      "router_probabilities": [
+        0.030836571007966995,
+        0.0966884195804596,
+        0.8380575180053711,
+        0.034417517483234406
+      ],
+      "selected": [
+        2,
+        1
+      ],
+      "weights": [
+        0.896561861038208,
+        0.10343818366527557
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          32,
+          109,
+          110
+        ],
+        [
+          110,
+          109,
+          114
+        ],
+        [
+          102,
+          110,
+          32
+        ],
+        [
+          116,
+          110,
+          109
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        102,
+        110,
+        109
+      ]
+    },
+    {
+      "context_byte_ids": [
+        116,
+        111,
+        111,
+        108
+      ],
+      "target_byte": 95,
+      "router_probabilities": [
+        0.07534860819578171,
+        0.07947328686714172,
+        0.776524007320404,
+        0.0686541497707367
+      ],
+      "selected": [
+        2,
+        1
+      ],
+      "weights": [
+        0.9071570634841919,
+        0.09284291416406631
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          32,
+          108,
+          101
+        ],
+        [
+          32,
+          115,
+          101
+        ],
+        [
+          101,
+          32,
+          105
+        ],
+        [
+          32,
+          108,
+          101
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        101,
+        32,
+        105
+      ]
+    },
+    {
+      "context_byte_ids": [
+        111,
+        111,
+        108,
+        95
+      ],
+      "target_byte": 99,
+      "router_probabilities": [
+        0.5022231340408325,
+        0.28246229887008667,
+        0.07019055634737015,
+        0.14512401819229126
+      ],
+      "selected": [
+        0,
+        1
+      ],
+      "weights": [
+        0.6400311589241028,
+        0.3599688410758972
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          100,
+          115,
+          99
+        ],
+        [
+          99,
+          115,
+          103
+        ],
+        [
+          99,
+          115,
+          103
+        ],
+        [
+          103,
+          99,
+          97
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        115,
+        99,
+        100
+      ]
+    },
+    {
+      "context_byte_ids": [
+        111,
+        108,
+        95,
+        99
+      ],
+      "target_byte": 97,
+      "router_probabilities": [
+        0.33925193548202515,
+        0.029864532873034477,
+        0.563325047492981,
+        0.06755843758583069
+      ],
+      "selected": [
+        2,
+        0
+      ],
+      "weights": [
+        0.6241296529769897,
+        0.37587034702301025
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          111,
+          101,
+          105
+        ],
+        [
+          97,
+          101,
+          111
+        ],
+        [
+          97,
+          111,
+          101
+        ],
+        [
+          97,
+          111,
+          101
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        111,
+        97,
+        101
+      ]
+    },
+    {
+      "context_byte_ids": [
+        108,
+        95,
+        99,
+        97
+      ],
+      "target_byte": 108,
+      "router_probabilities": [
+        0.137618750333786,
+        0.07141369581222534,
+        0.07106868177652359,
+        0.7198988199234009
+      ],
+      "selected": [
+        3,
+        0
+      ],
+      "weights": [
+        0.8395149111747742,
+        0.16048504412174225
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          110,
+          109,
+          108
+        ],
+        [
+          108,
+          116,
+          110
+        ],
+        [
+          110,
+          108,
+          109
+        ],
+        [
+          110,
+          108,
+          109
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        110,
+        108,
+        109
+      ]
+    },
+    {
+      "context_byte_ids": [
+        95,
+        99,
+        97,
+        108
+      ],
+      "target_byte": 108,
+      "router_probabilities": [
+        0.3191055953502655,
+        0.22159306704998016,
+        0.10941653698682785,
+        0.3498847186565399
+      ],
+      "selected": [
+        3,
+        0
+      ],
+      "weights": [
+        0.5230041742324829,
+        0.4769958257675171
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          101,
+          108,
+          115
+        ],
+        [
+          101,
+          105,
+          108
+        ],
+        [
+          100,
+          101,
+          105
+        ],
+        [
+          108,
+          97,
+          100
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        108,
+        115,
+        101
+      ]
+    },
+    {
+      "context_byte_ids": [
+        99,
+        97,
+        108,
+        108
+      ],
+      "target_byte": 125,
+      "router_probabilities": [
+        0.21034182608127594,
+        0.3847717046737671,
+        0.08367957919836044,
+        0.32120683789253235
+      ],
+      "selected": [
+        1,
+        3
+      ],
+      "weights": [
+        0.5450190305709839,
+        0.4549810290336609
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          32,
+          101,
+          115
+        ],
+        [
+          101,
+          32,
+          121
+        ],
+        [
+          101,
+          105,
+          111
+        ],
+        [
+          101,
+          121,
+          97
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        101,
+        121,
+        32
+      ]
+    },
+    {
+      "context_byte_ids": [
+        97,
+        108,
+        108,
+        125
+      ],
+      "target_byte": 10,
+      "router_probabilities": [
+        0.33526933193206787,
+        0.24404118955135345,
+        0.10702526569366455,
+        0.31366419792175293
+      ],
+      "selected": [
+        0,
+        3
+      ],
+      "weights": [
+        0.5166466236114502,
+        0.4833533465862274
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          32,
+          44,
+          46
+        ],
+        [
+          44,
+          46,
+          41
+        ],
+        [
+          46,
+          32,
+          44
+        ],
+        [
+          32,
+          44,
+          41
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        32,
+        44,
+        46
+      ]
+    },
+    {
+      "context_byte_ids": [
+        34,
+        63,
+        10,
+        10
+      ],
+      "target_byte": 10,
+      "router_probabilities": [
+        0.08607460558414459,
+        0.056827206164598465,
+        0.7389109134674072,
+        0.11818729341030121
+      ],
+      "selected": [
+        2,
+        3
+      ],
+      "weights": [
+        0.8621076345443726,
+        0.13789235055446625
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          35,
+          84,
+          69
+        ],
+        [
+          35,
+          84,
+          69
+        ],
+        [
+          35,
+          84,
+          69
+        ],
+        [
+          35,
+          84,
+          10
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        35,
+        84,
+        69
+      ]
+    },
+    {
+      "context_byte_ids": [
+        63,
+        10,
+        10,
+        10
+      ],
+      "target_byte": 123,
+      "router_probabilities": [
+        0.1097835898399353,
+        0.019443726167082787,
+        0.6633330583572388,
+        0.2074396163225174
+      ],
+      "selected": [
+        2,
+        3
+      ],
+      "weights": [
+        0.7617752552032471,
+        0.23822477459907532
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          35,
+          115,
+          73
+        ],
+        [
+          35,
+          102,
+          101
+        ],
+        [
+          35,
+          73,
+          115
+        ],
+        [
+          35,
+          102,
+          115
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        35,
+        115,
+        102
+      ]
+    },
+    {
+      "context_byte_ids": [
+        10,
+        10,
+        10,
+        123
+      ],
+      "target_byte": 34,
+      "router_probabilities": [
+        0.05008888989686966,
+        0.010862689465284348,
+        0.2367844432592392,
+        0.7022639513015747
+      ],
+      "selected": [
+        3,
+        2
+      ],
+      "weights": [
+        0.7478463649749756,
+        0.252153605222702
+      ],
+      "expert_top_prediction_bytes": [
+        [
+          101,
+          82,
+          115
+        ],
+        [
+          101,
+          108,
+          102
+        ],
+        [
+          101,
+          34,
+          104
+        ],
+        [
+          34,
+          102,
+          101
+        ]
+      ],
+      "mixture_top_prediction_bytes": [
+        34,
+        101,
+        102
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "full_training_code_matches_delivered_source": true,
+  "copies_with_spaces_in_path": true,
+  "copy_idempotent": true,
+  "copy_refuses_conflicting_existing_files": true,
+  "parent_sentinel_unchanged": true,
+  "checkpoint_filter": "unset; ordinary Git blobs",
+  "checkpoint_files": 9,
+  "local_git_commit_clone_and_evaluate": true,
+  "remote_github_clone_tested": false,
+  "destination_repository_untouched": true
+}

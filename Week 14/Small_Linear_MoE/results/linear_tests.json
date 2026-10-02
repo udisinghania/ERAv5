@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "precision": "float64 algebra checks; original training and real-feature conversion check used float32",
+  "checks": [
+    "Dense affine identity",
+    "Copied MoE output equivalence",
+    "Final MoE state loads and forwards"
+  ]
+}

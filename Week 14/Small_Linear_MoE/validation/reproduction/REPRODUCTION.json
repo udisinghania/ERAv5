@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "fresh_training": true,
+  "dense_pretraining_updates": 400,
+  "continuation_updates_per_arm": 600,
+  "balancing_updates_per_arm": 200,
+  "evaluation": {
+    "status": "PASS",
+    "data_shape_range_and_hash_checks": true,
+    "scores": {
+      "pretrained": {
+        "loss": 2.393201353841788,
+        "targets": 79116
+      },
+      "moe": {
+        "loss": 2.2335704091984003,
+        "targets": 79116,
+        "expert_counts": [
+          42153,
+          38507,
+          33450,
+          44122
+        ]
+      },
+      "dense_control": {
+        "loss": 2.3524556857424934,
+        "targets": 79116
+      }
+    },
+    "reference_loss_differences": {
+      "pretrained": 0.0,
+      "moe": 0.0,
+      "dense_control": 0.0
+    },
+    "reference_tolerance": 0.0001,
+    "reference_match": true,
+    "environment": {
+      "python": "3.12.5",
+      "torch": "2.5.1+cu121",
+      "numpy": "1.26.4",
+      "cuda": "12.1",
+      "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+      "platform": "Windows-11-10.0.26300-SP0"
+    },
+    "scope": "All 79,116 bundled held-out byte targets; original shipped reference losses"
+  },
+  "deep_dive": {
+    "status": "PASS",
+    "intervention_cases": 22,
+    "balancing_arms": 6,
+    "max_absolute_reference_loss_difference": 0.0,
+    "tolerance": 0.0001
+  },
+  "data_source": "Bundled frozen byte subset; no upstream corpus reconstruction",
+  "checkpoints": "All three baseline/continuation checkpoints and six balancing checkpoints saved and evaluated",
+  "byte_identical_checkpoint_requirement": false
+}

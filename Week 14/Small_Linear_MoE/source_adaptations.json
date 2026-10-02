@@ -1,0 +1,12 @@
+{
+  "original_source": "C:\\Users\\udisi\\Documents\\Codex\\2026-09-26\\go\\outputs\\Session_14_Followup",
+  "changes": [
+    "Replaced Transformer utility imports with standalone common.py (seed/thread/hash/JSON helpers).",
+    "Replaced optional upstream corpus extraction with mandatory bundled dataset loading.",
+    "Separated immutable data/checkpoints/results from new run outputs using package-relative paths.",
+    "Adapted deep-dive input/output locations; retained model, optimization and intervention formulas.",
+    "Retained historical data extraction code as evidence, not a runtime dependency."
+  ],
+  "original_linear_source_sha256": "fd6d237bbb6661a2c1839119f2236f05ee6c16646677b07662653c729b087f62",
+  "dataset_sha256": "9483267374a25bb511daedb30522f7c93d87337c30bb2171fe67b5583c8d3097"
+}

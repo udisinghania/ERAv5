@@ -1,0 +1,9 @@
+# Data and provenance
+
+The included linear_data.npz is the complete input for this experiment: 1,000,000 training target positions and 79,116 held-out byte targets. It contains train_x (N x 4), train_y (N), val_x (N x 4), val_y (N). Byte IDs are 0..255; 256 is context padding. The fixed features contain four one-hot vectors of length 257. All arrays are uint16. Context never crosses a source document segment boundary.
+
+The subset was derived from the original corpus's separate training and validation splits using seed 31415. Training packed sequences were permuted; eight validation fragments were selected per source. Frozen tokenizer pieces were decoded to bytes, skipping special tokens. A target byte inherited its original token loss mask. Fragment indices and the dataset SHA-256 are in linear_data_provenance.json; validation source boundaries and upstream source/license records are under provenance/.
+
+Training samples this fixed subset with replacement. There are 409,600 baseline training exposures and 614,400 continuation exposures per arm. These are exposures, not new unique data. The six deep-dive arms each add 204,800 exposures. Validation gets no optimizer updates but has been inspected during development; it is not an untouched test set. The reported byte loss is not comparable numerically to the Transformer BPE-token loss.
+
+Reproduction starts from this frozen bundled subset. It does not reacquire upstream datasets or repeat the original tokenizer/50M-corpus construction. The original extraction implementation is retained under evidence/ for audit; its upstream corpus dependencies are not needed by the standalone training commands. Upstream source licenses apply to the underlying text. The included source metadata does not relicense third-party content.

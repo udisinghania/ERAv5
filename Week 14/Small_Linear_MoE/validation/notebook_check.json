@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "executed_code_cells": 4,
+  "method": "Python exec with captured stdout; read-only review cells, optional training disabled",
+  "notebook_ui_tested": false
+}
